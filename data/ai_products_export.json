@@ -1,0 +1,2110 @@
+{
+  "categories": [
+    {
+      "id": "cat-case",
+      "slug": "case",
+      "name": "Vỏ Case"
+    },
+    {
+      "id": "cat-cpu",
+      "slug": "cpu",
+      "name": "CPU - Vi xử lý"
+    },
+    {
+      "id": "cat-ssd",
+      "slug": "ssd",
+      "name": "Ổ cứng SSD"
+    },
+    {
+      "id": "cat-laptop",
+      "slug": "laptop",
+      "name": "Laptop"
+    },
+    {
+      "id": "cat-ram",
+      "slug": "ram",
+      "name": "RAM - Bộ nhớ trong"
+    },
+    {
+      "id": "cat-monitor",
+      "slug": "monitor",
+      "name": "Màn hình"
+    },
+    {
+      "id": "cat-mainboard",
+      "slug": "mainboard",
+      "name": "Mainboard - Bo mạch chủ"
+    },
+    {
+      "id": "cat-accessories",
+      "slug": "accessories",
+      "name": "Chuột & Phụ kiện"
+    },
+    {
+      "id": "cat-psu",
+      "slug": "psu",
+      "name": "Nguồn máy tính PSU"
+    },
+    {
+      "id": "cat-vga",
+      "slug": "vga",
+      "name": "Card đồ họa VGA"
+    }
+  ],
+  "brands": [
+    {
+      "id": "b-amd",
+      "name": "AMD",
+      "slug": "amd"
+    },
+    {
+      "id": "b-aoc",
+      "name": "AOC",
+      "slug": "aoc"
+    },
+    {
+      "id": "b-acer",
+      "name": "Acer",
+      "slug": "acer"
+    },
+    {
+      "id": "b-apple",
+      "name": "Apple",
+      "slug": "apple"
+    },
+    {
+      "id": "b-asus",
+      "name": "Asus",
+      "slug": "asus"
+    },
+    {
+      "id": "b-corsair",
+      "name": "Corsair",
+      "slug": "corsair"
+    },
+    {
+      "id": "b-crucial",
+      "name": "Crucial",
+      "slug": "crucial"
+    },
+    {
+      "id": "b-dell",
+      "name": "Dell",
+      "slug": "dell"
+    },
+    {
+      "id": "b-g-skill",
+      "name": "G.Skill",
+      "slug": "g-skill"
+    },
+    {
+      "id": "b-hp",
+      "name": "HP",
+      "slug": "hp"
+    },
+    {
+      "id": "b-intel",
+      "name": "Intel",
+      "slug": "intel"
+    },
+    {
+      "id": "b-kingston",
+      "name": "Kingston",
+      "slug": "kingston"
+    },
+    {
+      "id": "b-lenovo",
+      "name": "Lenovo",
+      "slug": "lenovo"
+    },
+    {
+      "id": "b-logitech",
+      "name": "Logitech",
+      "slug": "logitech"
+    },
+    {
+      "id": "b-msi",
+      "name": "MSI",
+      "slug": "msi"
+    },
+    {
+      "id": "b-nzxt",
+      "name": "NZXT",
+      "slug": "nzxt"
+    },
+    {
+      "id": "b-razer",
+      "name": "Razer",
+      "slug": "razer"
+    },
+    {
+      "id": "b-samsung",
+      "name": "Samsung",
+      "slug": "samsung"
+    },
+    {
+      "id": "b-teamgroup",
+      "name": "TEAMGROUP",
+      "slug": "teamgroup"
+    },
+    {
+      "id": "b-western-digital",
+      "name": "Western Digital",
+      "slug": "western-digital"
+    }
+  ],
+  "products": [
+    {
+      "id": "aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-acer",
+      "brandName": "Acer",
+      "name": "Acer Aspire 5 5P-A515-58P",
+      "slug": "acer-aspire-5-5p-a515-58p",
+      "description": "Acer Aspire 5 5P-A515-58P chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i3 1305U mạnh mẽ",
+        "Đồ họa Intel UHD Graphics",
+        "RAM 8GB DDR5 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/acer-aspire-5-5p-a515-58p-aab3847c5592.png",
+      "images": [
+        "/images/laptop/acer-aspire-5-5p-a515-58p-aab3847c5592.png"
+      ],
+      "price": 11990000,
+      "originalPrice": 13490000,
+      "discountPercent": 11,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-aab3847c-1",
+          "productId": "aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0",
+          "sku": "SKU-AAB3847C",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 11990000,
+          "originalPrice": 13490000,
+          "costPrice": 9831800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i3 1305U",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR5",
+        "screen_inch": 15.6,
+        "gpu_model": "Intel UHD Graphics",
+        "gpu_type": "integrated",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-acer",
+      "brandName": "Acer",
+      "name": "Acer Nitro 5 AN515-58-59JP",
+      "slug": "acer-nitro-5-an515-58-59jp",
+      "description": "Acer Nitro 5 AN515-58-59JP chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i5 12450H mạnh mẽ",
+        "Đồ họa Nvidia RTX 3050 Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/acer-nitro-5-an515-58-59jp-e8984ab22bac.webp",
+      "images": [
+        "/images/laptop/acer-nitro-5-an515-58-59jp-e8984ab22bac.webp"
+      ],
+      "price": 17490000,
+      "originalPrice": 19990000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-e8984ab2-1",
+          "productId": "e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8",
+          "sku": "SKU-E8984AB2",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 17490000,
+          "originalPrice": 19990000,
+          "costPrice": 14341800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i5 12450H",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 15.6,
+        "gpu_model": "Nvidia RTX 3050 Graphics",
+        "gpu_type": "discrete",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "gaming",
+          "design_graphics"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-apple",
+      "brandName": "Apple",
+      "name": "Apple MacBook Air (Late 2020)",
+      "slug": "apple-macbook-air-late-2020",
+      "description": "Apple MacBook Air (Late 2020) chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 13.3 inch 2560x1600 sắc nét",
+        "Bộ vi xử lý Apple M1 Chip mạnh mẽ",
+        "Đồ họa Apple 7-core GPU",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/apple-macbook-air-late-2020-15bf0f5ed3d4.jpg",
+      "images": [
+        "/images/laptop/apple-macbook-air-late-2020-15bf0f5ed3d4.jpg"
+      ],
+      "price": 18490000,
+      "originalPrice": 19990000,
+      "discountPercent": 8,
+      "isHot": true,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-15bf0f5e-1",
+          "productId": "15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa",
+          "sku": "SKU-15BF0F5E",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 18490000,
+          "originalPrice": 19990000,
+          "costPrice": 15161800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Apple M1 Chip",
+        "cpu_brand": "Apple",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 13.3,
+        "gpu_model": "Apple 7-core GPU",
+        "gpu_type": "integrated",
+        "resolution": "2560x1600",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-asus",
+      "brandName": "Asus",
+      "name": "Asus TUF Gaming A15 FA506NF",
+      "slug": "asus-tuf-gaming-a15-fa506nf",
+      "description": "Asus TUF Gaming A15 FA506NF chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Ryzen 5 7535HS mạnh mẽ",
+        "Đồ họa Nvidia RTX 2050 Graphics",
+        "RAM 8GB DDR5 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/asus-tuf-gaming-a15-fa506nf-7910e2f35be3.jpg",
+      "images": [
+        "/images/laptop/asus-tuf-gaming-a15-fa506nf-7910e2f35be3.jpg"
+      ],
+      "price": 15490000,
+      "originalPrice": 17990000,
+      "discountPercent": 14,
+      "isHot": true,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-7910e2f3-1",
+          "productId": "7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2",
+          "sku": "SKU-7910E2F3",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 15490000,
+          "originalPrice": 17990000,
+          "costPrice": 12701800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Ryzen 5 7535HS",
+        "cpu_brand": "AMD",
+        "ram_gb": 8,
+        "ram_type": "DDR5",
+        "screen_inch": 15.6,
+        "gpu_model": "Nvidia RTX 2050 Graphics",
+        "gpu_type": "discrete",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "gaming",
+          "design_graphics"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "ffaf140f9309bbce695b9e9e7fb77e48d436075a598b1685d32fb1e20d73ce50",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-asus",
+      "brandName": "Asus",
+      "name": "Asus VivoBook 15 X1500EA",
+      "slug": "asus-vivobook-15-x1500ea",
+      "description": "Asus VivoBook 15 X1500EA chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i3 1115G4 mạnh mẽ",
+        "Đồ họa Intel UHD Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/asus-vivobook-15-x1500ea-ffaf140f9309.webp",
+      "images": [
+        "/images/laptop/asus-vivobook-15-x1500ea-ffaf140f9309.webp"
+      ],
+      "price": 10490000,
+      "originalPrice": 11990000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-ffaf140f-1",
+          "productId": "ffaf140f9309bbce695b9e9e7fb77e48d436075a598b1685d32fb1e20d73ce50",
+          "sku": "SKU-FFAF140F",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 10490000,
+          "originalPrice": 11990000,
+          "costPrice": 8601800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i3 1115G4",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 15.6,
+        "gpu_model": "Intel UHD Graphics",
+        "gpu_type": "integrated",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-asus",
+      "brandName": "Asus",
+      "name": "Asus ZenBook 14 UM425UA",
+      "slug": "asus-zenbook-14-um425ua",
+      "description": "Asus ZenBook 14 UM425UA chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 14.0 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Ryzen 5 5500U mạnh mẽ",
+        "Đồ họa AMD Radeon Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/asus-zenbook-14-um425ua-675dc82b5a64.png",
+      "images": [
+        "/images/laptop/asus-zenbook-14-um425ua-675dc82b5a64.png"
+      ],
+      "price": 17990000,
+      "originalPrice": 20490000,
+      "discountPercent": 12,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-675dc82b-1",
+          "productId": "675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc",
+          "sku": "SKU-675DC82B",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 17990000,
+          "originalPrice": 20490000,
+          "costPrice": 14751800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Ryzen 5 5500U",
+        "cpu_brand": "AMD",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 14.0,
+        "gpu_model": "AMD Radeon Graphics",
+        "gpu_type": "integrated",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-dell",
+      "brandName": "Dell",
+      "name": "Dell Inspiron 15 3520",
+      "slug": "dell-inspiron-15-3520",
+      "description": "Dell Inspiron 15 3520 chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i3 1215U mạnh mẽ",
+        "Đồ họa Intel UHD Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/dell-inspiron-15-3520-beb1ccb3c40b.jpg",
+      "images": [
+        "/images/laptop/dell-inspiron-15-3520-beb1ccb3c40b.jpg"
+      ],
+      "price": 12990000,
+      "originalPrice": 14990000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-beb1ccb3-1",
+          "productId": "beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090",
+          "sku": "SKU-BEB1CCB3",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 12990000,
+          "originalPrice": 14990000,
+          "costPrice": 10651800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i3 1215U",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 15.6,
+        "gpu_model": "Intel UHD Graphics",
+        "gpu_type": "integrated",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-hp",
+      "brandName": "HP",
+      "name": "HP Victus Gaming 15-fa1251TX",
+      "slug": "hp-victus-gaming-15-fa1251tx",
+      "description": "HP Victus Gaming 15-fa1251TX chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i7 13700H mạnh mẽ",
+        "Đồ họa Nvidia RTX 3050 Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/hp-victus-gaming-15-fa1251tx-4dd041b2a1a0.webp",
+      "images": [
+        "/images/laptop/hp-victus-gaming-15-fa1251tx-4dd041b2a1a0.webp"
+      ],
+      "price": 18990000,
+      "originalPrice": 21490000,
+      "discountPercent": 12,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-4dd041b2-1",
+          "productId": "4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c",
+          "sku": "SKU-4DD041B2",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 18990000,
+          "originalPrice": 21490000,
+          "costPrice": 15571800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i7 13700H",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 15.6,
+        "gpu_model": "Nvidia RTX 3050 Graphics",
+        "gpu_type": "discrete",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "gaming",
+          "design_graphics"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-lenovo",
+      "brandName": "Lenovo",
+      "name": "Lenovo IdeaPad Slim 3i 15ITL6",
+      "slug": "lenovo-ideapad-slim-3i-15itl6",
+      "description": "Lenovo IdeaPad Slim 3i 15ITL6 chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i7 1165G7 mạnh mẽ",
+        "Đồ họa Intel Iris Xe Graphics",
+        "RAM 8GB DDR4 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/lenovo-ideapad-slim-3i-15itl6-01eec94bf55b.webp",
+      "images": [
+        "/images/laptop/lenovo-ideapad-slim-3i-15itl6-01eec94bf55b.webp"
+      ],
+      "price": 14490000,
+      "originalPrice": 16490000,
+      "discountPercent": 12,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-01eec94b-1",
+          "productId": "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+          "sku": "SKU-01EEC94B",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 14490000,
+          "originalPrice": 16490000,
+          "costPrice": 11881800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i7 1165G7",
+        "cpu_brand": "Intel",
+        "ram_gb": 8,
+        "ram_type": "DDR4",
+        "screen_inch": 15.6,
+        "gpu_model": "Intel Iris Xe Graphics",
+        "gpu_type": "integrated",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "study_office",
+          "thin_light"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-lenovo",
+      "brandName": "Lenovo",
+      "name": "Lenovo LOQ Gaming 15IRH8",
+      "slug": "lenovo-loq-gaming-15irh8",
+      "description": "Lenovo LOQ Gaming 15IRH8 chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 15.6 inch 1920x1080 sắc nét",
+        "Bộ vi xử lý Core i5 12450H mạnh mẽ",
+        "Đồ họa Nvidia RTX 2050 Graphics",
+        "RAM 16GB DDR5 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/lenovo-loq-gaming-15irh8-68999d66ddb7.png",
+      "images": [
+        "/images/laptop/lenovo-loq-gaming-15irh8-68999d66ddb7.png"
+      ],
+      "price": 16990000,
+      "originalPrice": 18990000,
+      "discountPercent": 11,
+      "isHot": true,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-68999d66-1",
+          "productId": "68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+          "sku": "SKU-68999D66",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 16990000,
+          "originalPrice": 18990000,
+          "costPrice": 13931800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i5 12450H",
+        "cpu_brand": "Intel",
+        "ram_gb": 16,
+        "ram_type": "DDR5",
+        "screen_inch": 15.6,
+        "gpu_model": "Nvidia RTX 2050 Graphics",
+        "gpu_type": "discrete",
+        "resolution": "1920x1080",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "gaming",
+          "design_graphics"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf",
+      "categoryId": "cat-laptop",
+      "categorySlug": "laptop",
+      "brandId": "b-lenovo",
+      "brandName": "Lenovo",
+      "name": "Lenovo Legion Slim 5i 16IRH8",
+      "slug": "lenovo-legion-slim-5i-16irh8",
+      "description": "Lenovo Legion Slim 5i 16IRH8 chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Màn hình 16.0 inch 2560x1600 sắc nét",
+        "Bộ vi xử lý Core i5 13500H mạnh mẽ",
+        "Đồ họa Nvidia RTX 4050 Graphics",
+        "RAM 16GB DDR5 & SSD 512GB NVMe tốc độ cao"
+      ],
+      "imageUrl": "/images/laptop/lenovo-legion-slim-5i-16irh8-7bf3496c4c55.png",
+      "images": [
+        "/images/laptop/lenovo-legion-slim-5i-16irh8-7bf3496c4c55.png"
+      ],
+      "price": 26990000,
+      "originalPrice": 29990000,
+      "discountPercent": 10,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-7bf3496c-1",
+          "productId": "7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf",
+          "sku": "SKU-7BF3496C",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 26990000,
+          "originalPrice": 29990000,
+          "costPrice": 22131800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "cpu_model": "Core i5 13500H",
+        "cpu_brand": "Intel",
+        "ram_gb": 16,
+        "ram_type": "DDR5",
+        "screen_inch": 16.0,
+        "gpu_model": "Nvidia RTX 4050 Graphics",
+        "gpu_type": "discrete",
+        "resolution": "2560x1600",
+        "panel": "IPS",
+        "storage_gb": 512,
+        "storage_type": "NVMe",
+        "warranty_months": 24,
+        "demand": [
+          "gaming",
+          "design_graphics"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "a8126e19618722d49b8b39daf606b809c3b3e9d657ac4b8c63ca4a31122fde17",
+      "categoryId": "cat-accessories",
+      "categorySlug": "accessories",
+      "brandId": "b-logitech",
+      "brandName": "Logitech",
+      "name": "Logitech G305 LIGHTSPEED",
+      "slug": "logitech-g305-lightspeed",
+      "description": "Logitech G305 LIGHTSPEED chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Cảm biến quang học chính xác cao (12000 DPI)",
+        "Kết nối Wired, Wireless độ trễ siêu thấp",
+        "Thiết kế công thái học nhẹ nhàng cho cả ngày sử dụng"
+      ],
+      "imageUrl": "/images/mouse/logitech-g305-lightspeed-a8126e196187.jpg",
+      "images": [
+        "/images/mouse/logitech-g305-lightspeed-a8126e196187.jpg"
+      ],
+      "price": 760000,
+      "originalPrice": 870000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-a8126e19-1",
+          "productId": "a8126e19618722d49b8b39daf606b809c3b3e9d657ac4b8c63ca4a31122fde17",
+          "sku": "SKU-A8126E19",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 760000,
+          "originalPrice": 870000,
+          "costPrice": 623200,
+          "status": "active"
+        }
+      ],
+      "specs": {},
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "95a534457590f6c18dea18ccbf2f99caa583b2f99c73cae3b7f5816b15ecf850",
+      "categoryId": "cat-accessories",
+      "categorySlug": "accessories",
+      "brandId": "b-razer",
+      "brandName": "Razer",
+      "name": "Razer DeathAdder Essential",
+      "slug": "razer-deathadder-essential",
+      "description": "Razer DeathAdder Essential chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Cảm biến quang học chính xác cao (6400 DPI)",
+        "Kết nối Wired độ trễ siêu thấp",
+        "Thiết kế công thái học nhẹ nhàng cho cả ngày sử dụng"
+      ],
+      "imageUrl": "/images/mouse/razer-deathadder-essential-95a534457590.png",
+      "images": [
+        "/images/mouse/razer-deathadder-essential-95a534457590.png"
+      ],
+      "price": 530000,
+      "originalPrice": 610000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-95a53445-1",
+          "productId": "95a534457590f6c18dea18ccbf2f99caa583b2f99c73cae3b7f5816b15ecf850",
+          "sku": "SKU-95A53445",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 530000,
+          "originalPrice": 610000,
+          "costPrice": 434600,
+          "status": "active"
+        }
+      ],
+      "specs": {},
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "349a9bcb6e003baee5b28124c6d755ef4c51d12df241ed8bddf0127f9af0c9f6",
+      "categoryId": "cat-case",
+      "categorySlug": "case",
+      "brandId": "b-corsair",
+      "brandName": "Corsair",
+      "name": "Corsair 4000D Airflow",
+      "slug": "corsair-4000d-airflow",
+      "description": "Corsair 4000D Airflow chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ bo mạch chủ ATX, Micro-ATX, Mini-ITX",
+        "Mặt kính cường lực cao cấp, tối ưu luồng gió Airflow",
+        "Không gian rộng rãi lắp card đồ họa dài tới 360mm"
+      ],
+      "imageUrl": "/images/case/corsair-4000d-airflow-349a9bcb6e00.jpg",
+      "images": [
+        "/images/case/corsair-4000d-airflow-349a9bcb6e00.jpg"
+      ],
+      "price": 2420000,
+      "originalPrice": 2780000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-349a9bcb-1",
+          "productId": "349a9bcb6e003baee5b28124c6d755ef4c51d12df241ed8bddf0127f9af0c9f6",
+          "sku": "SKU-349A9BCB",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2420000,
+          "originalPrice": 2780000,
+          "costPrice": 1984399,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "supported_form_factors": [
+          "ATX",
+          "mATX",
+          "ITX"
+        ],
+        "max_gpu_length_mm": 360,
+        "max_cooler_height_mm": 170
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438",
+      "categoryId": "cat-case",
+      "categorySlug": "case",
+      "brandId": "b-nzxt",
+      "brandName": "NZXT",
+      "name": "NZXT H5 Flow (2024)",
+      "slug": "nzxt-h5-flow-2024",
+      "description": "NZXT H5 Flow (2024) chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ bo mạch chủ ATX, Micro-ATX, Mini-ITX",
+        "Mặt kính cường lực cao cấp, tối ưu luồng gió Airflow",
+        "Không gian rộng rãi lắp card đồ họa dài tới 360mm"
+      ],
+      "imageUrl": "/images/case/nzxt-h5-flow-2024-6d80f639a090.jpg",
+      "images": [
+        "/images/case/nzxt-h5-flow-2024-6d80f639a090.jpg"
+      ],
+      "price": 2170000,
+      "originalPrice": 2500000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": true,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-6d80f639-1",
+          "productId": "6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438",
+          "sku": "SKU-6D80F639",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2170000,
+          "originalPrice": 2500000,
+          "costPrice": 1779400,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "supported_form_factors": [
+          "ATX",
+          "mATX",
+          "ITX"
+        ],
+        "max_gpu_length_mm": 360,
+        "max_cooler_height_mm": 170
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "c9ab253a5d81db91a15166655f5abdfad3fcf5210f55424a67e41111296e620f",
+      "categoryId": "cat-cpu",
+      "categorySlug": "cpu",
+      "brandId": "b-amd",
+      "brandName": "AMD",
+      "name": "AMD Ryzen 5 7600X",
+      "slug": "amd-ryzen-5-7600x",
+      "description": "AMD Ryzen 5 7600X chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Socket chuẩn AM5, công suất TDP 105W",
+        "Số nhân xử lý: 6 nhân đa nhiệm vượt trội",
+        "Tương thích hoàn hảo tản nhiệt và bo mạch chủ đời mới"
+      ],
+      "imageUrl": "/images/cpu/amd-ryzen-5-7600x-c9ab253a5d81.webp",
+      "images": [
+        "/images/cpu/amd-ryzen-5-7600x-c9ab253a5d81.webp"
+      ],
+      "price": 4350000,
+      "originalPrice": 5000000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-c9ab253a-1",
+          "productId": "c9ab253a5d81db91a15166655f5abdfad3fcf5210f55424a67e41111296e620f",
+          "sku": "SKU-C9AB253A",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 4350000,
+          "originalPrice": 5000000,
+          "costPrice": 3567000,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "AM5",
+        "cores": 6,
+        "tdp_w": 105,
+        "has_igpu": true
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215",
+      "categoryId": "cat-cpu",
+      "categorySlug": "cpu",
+      "brandId": "b-amd",
+      "brandName": "AMD",
+      "name": "AMD Ryzen 7 9800X3D",
+      "slug": "amd-ryzen-7-9800x3d",
+      "description": "AMD Ryzen 7 9800X3D chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Socket chuẩn AM5, công suất TDP 120W",
+        "Số nhân xử lý: 8 nhân đa nhiệm vượt trội",
+        "Tương thích hoàn hảo tản nhiệt và bo mạch chủ đời mới"
+      ],
+      "imageUrl": "/images/cpu/amd-ryzen-7-9800x3d-20627684ea05.jpg",
+      "images": [
+        "/images/cpu/amd-ryzen-7-9800x3d-20627684ea05.jpg"
+      ],
+      "price": 11510000,
+      "originalPrice": 13240000,
+      "discountPercent": 13,
+      "isHot": true,
+      "isNew": true,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-20627684-1",
+          "productId": "20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215",
+          "sku": "SKU-20627684",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 11510000,
+          "originalPrice": 13240000,
+          "costPrice": 9438200,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "AM5",
+        "cores": 8,
+        "tdp_w": 120,
+        "has_igpu": true
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "7719e96537610f3d2ae0fac067c7809bcbca00d7b7c13b69099130fe73992cb4",
+      "categoryId": "cat-cpu",
+      "categorySlug": "cpu",
+      "brandId": "b-intel",
+      "brandName": "Intel",
+      "name": "Intel Core i5-12400F",
+      "slug": "intel-core-i5-12400f",
+      "description": "Intel Core i5-12400F chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Socket chuẩn LGA1700, công suất TDP 65W",
+        "Số nhân xử lý: 6 nhân đa nhiệm vượt trội",
+        "Tương thích hoàn hảo tản nhiệt và bo mạch chủ đời mới"
+      ],
+      "imageUrl": "/images/cpu/intel-core-i5-12400f-7719e9653761.jpg",
+      "images": [
+        "/images/cpu/intel-core-i5-12400f-7719e9653761.jpg"
+      ],
+      "price": 2780000,
+      "originalPrice": 3200000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-7719e965-1",
+          "productId": "7719e96537610f3d2ae0fac067c7809bcbca00d7b7c13b69099130fe73992cb4",
+          "sku": "SKU-7719E965",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2780000,
+          "originalPrice": 3200000,
+          "costPrice": 2279600,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "LGA1700",
+        "cores": 6,
+        "tdp_w": 65,
+        "has_igpu": false
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb",
+      "categoryId": "cat-cpu",
+      "categorySlug": "cpu",
+      "brandId": "b-intel",
+      "brandName": "Intel",
+      "name": "Intel Core i5-14400F",
+      "slug": "intel-core-i5-14400f",
+      "description": "Intel Core i5-14400F chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Socket chuẩn LGA1700, công suất TDP 65W",
+        "Số nhân xử lý: 10 nhân đa nhiệm vượt trội",
+        "Tương thích hoàn hảo tản nhiệt và bo mạch chủ đời mới"
+      ],
+      "imageUrl": "/images/cpu/intel-core-i5-14400f-37519dda6cf1.jpg",
+      "images": [
+        "/images/cpu/intel-core-i5-14400f-37519dda6cf1.jpg"
+      ],
+      "price": 3210000,
+      "originalPrice": 3690000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-37519dda-1",
+          "productId": "37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb",
+          "sku": "SKU-37519DDA",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 3210000,
+          "originalPrice": 3690000,
+          "costPrice": 2632200,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "LGA1700",
+        "cores": 10,
+        "tdp_w": 65,
+        "has_igpu": false
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "6eb51f4a845a42d927919d341984360495448ada42f55ef7d5870e6b5f333972",
+      "categoryId": "cat-mainboard",
+      "categorySlug": "mainboard",
+      "brandId": "b-asus",
+      "brandName": "ASUS",
+      "name": "Asus PRIME B550M-A WIFI II",
+      "slug": "asus-prime-b550m-a-wifi-ii",
+      "description": "Asus PRIME B550M-A WIFI II chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ CPU Socket AM4 chuẩn mATX",
+        "Hỗ trợ RAM DDR4 tốc độ cao với 4 khe cắm",
+        "Tích hợp WiFi kết nối nhanh và cổng xuất hình cao cấp"
+      ],
+      "imageUrl": "/images/motherboard/asus-prime-b550m-a-wifi-ii-6eb51f4a845a.png",
+      "images": [
+        "/images/motherboard/asus-prime-b550m-a-wifi-ii-6eb51f4a845a.png"
+      ],
+      "price": 2550000,
+      "originalPrice": 2930000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-6eb51f4a-1",
+          "productId": "6eb51f4a845a42d927919d341984360495448ada42f55ef7d5870e6b5f333972",
+          "sku": "SKU-6EB51F4A",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2550000,
+          "originalPrice": 2930000,
+          "costPrice": 2090999,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "AM4",
+        "form_factor": "mATX",
+        "ram_type": "DDR4",
+        "ram_slots": 4,
+        "supported_form_factors": [
+          "mATX"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "c6488d4e841b7392e018b629fdd6b8c8ce461577492399eef5b7cb292af86aa6",
+      "categoryId": "cat-mainboard",
+      "categorySlug": "mainboard",
+      "brandId": "b-asus",
+      "brandName": "ASUS",
+      "name": "Asus PRIME B650-PLUS WIFI",
+      "slug": "asus-prime-b650-plus-wifi",
+      "description": "Asus PRIME B650-PLUS WIFI chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ CPU Socket AM5 chuẩn ATX",
+        "Hỗ trợ RAM DDR5 tốc độ cao với 4 khe cắm",
+        "Tích hợp WiFi kết nối nhanh và cổng xuất hình cao cấp"
+      ],
+      "imageUrl": "/images/motherboard/asus-prime-b650-plus-wifi-c6488d4e841b.png",
+      "images": [
+        "/images/motherboard/asus-prime-b650-plus-wifi-c6488d4e841b.png"
+      ],
+      "price": 4080000,
+      "originalPrice": 4690000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-c6488d4e-1",
+          "productId": "c6488d4e841b7392e018b629fdd6b8c8ce461577492399eef5b7cb292af86aa6",
+          "sku": "SKU-C6488D4E",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 4080000,
+          "originalPrice": 4690000,
+          "costPrice": 3345600,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "AM5",
+        "form_factor": "ATX",
+        "ram_type": "DDR5",
+        "ram_slots": 4,
+        "supported_form_factors": [
+          "ATX"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "7ac8293143f64b96e17d87991c1b33ff6a850b5d8a7a8c75e9bb2ed3524c7b3d",
+      "categoryId": "cat-mainboard",
+      "categorySlug": "mainboard",
+      "brandId": "b-asus",
+      "brandName": "ASUS",
+      "name": "Asus TUF GAMING B850-PLUS WIFI",
+      "slug": "asus-tuf-gaming-b850-plus-wifi",
+      "description": "Asus TUF GAMING B850-PLUS WIFI chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ CPU Socket AM5 chuẩn ATX",
+        "Hỗ trợ RAM DDR5 tốc độ cao với 4 khe cắm",
+        "Tích hợp WiFi kết nối nhanh và cổng xuất hình cao cấp"
+      ],
+      "imageUrl": "/images/motherboard/asus-tuf-gaming-b850-plus-wifi-7ac8293143f6.jpg",
+      "images": [
+        "/images/motherboard/asus-tuf-gaming-b850-plus-wifi-7ac8293143f6.jpg"
+      ],
+      "price": 5560000,
+      "originalPrice": 6390000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-7ac82931-1",
+          "productId": "7ac8293143f64b96e17d87991c1b33ff6a850b5d8a7a8c75e9bb2ed3524c7b3d",
+          "sku": "SKU-7AC82931",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 5560000,
+          "originalPrice": 6390000,
+          "costPrice": 4559200,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "AM5",
+        "form_factor": "ATX",
+        "ram_type": "DDR5",
+        "ram_slots": 4,
+        "supported_form_factors": [
+          "ATX"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "ee2d7931b81ddeaeb317d9e95d25217653675002f1d27ad1719734052a4797e8",
+      "categoryId": "cat-mainboard",
+      "categorySlug": "mainboard",
+      "brandId": "b-msi",
+      "brandName": "MSI",
+      "name": "MSI B760 GAMING PLUS WIFI",
+      "slug": "msi-b760-gaming-plus-wifi",
+      "description": "MSI B760 GAMING PLUS WIFI chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Hỗ trợ CPU Socket LGA1700 chuẩn ATX",
+        "Hỗ trợ RAM DDR5 tốc độ cao với 4 khe cắm",
+        "Tích hợp WiFi kết nối nhanh và cổng xuất hình cao cấp"
+      ],
+      "imageUrl": "/images/motherboard/msi-b760-gaming-plus-wifi-ee2d7931b81d.jpg",
+      "images": [
+        "/images/motherboard/msi-b760-gaming-plus-wifi-ee2d7931b81d.jpg"
+      ],
+      "price": 4330000,
+      "originalPrice": 4980000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-ee2d7931-1",
+          "productId": "ee2d7931b81ddeaeb317d9e95d25217653675002f1d27ad1719734052a4797e8",
+          "sku": "SKU-EE2D7931",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 4330000,
+          "originalPrice": 4980000,
+          "costPrice": 3550600,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "socket": "LGA1700",
+        "form_factor": "ATX",
+        "ram_type": "DDR5",
+        "ram_slots": 4,
+        "supported_form_factors": [
+          "ATX"
+        ]
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12",
+      "categoryId": "cat-monitor",
+      "categorySlug": "monitor",
+      "brandId": "b-aoc",
+      "brandName": "AOC",
+      "name": "AOC 24G4XE",
+      "slug": "aoc-24g4xe",
+      "description": "AOC 24G4XE chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Kích thước 24 inch độ phân giải 1920 x 1080",
+        "Tần số quét cao 180Hz chuyên game mượt mà",
+        "Tấm nền IPS góc nhìn rộng 178 độ chuẩn màu"
+      ],
+      "imageUrl": "/images/monitor/aoc-24g4xe-a0778acc1ac5.png",
+      "images": [
+        "/images/monitor/aoc-24g4xe-a0778acc1ac5.png"
+      ],
+      "price": 3570000,
+      "originalPrice": 4110000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-a0778acc-1",
+          "productId": "a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12",
+          "sku": "SKU-A0778ACC",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 3570000,
+          "originalPrice": 4110000,
+          "costPrice": 2927400,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "screen_inch": 24,
+        "panel": "IPS",
+        "refresh_hz": 180,
+        "resolution": "1920 x 1080"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "80c7806acde7949635c084a5fa6fcdf20a0dd8816d86fa7c56f59a5e4be6738f",
+      "categoryId": "cat-monitor",
+      "categorySlug": "monitor",
+      "brandId": "b-asus",
+      "brandName": "ASUS",
+      "name": "Asus TUF Gaming VG27AQ",
+      "slug": "asus-tuf-gaming-vg27aq",
+      "description": "Asus TUF Gaming VG27AQ chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Kích thước 27 inch độ phân giải 2560 x 1440",
+        "Tần số quét cao 165Hz chuyên game mượt mà",
+        "Tấm nền IPS góc nhìn rộng 178 độ chuẩn màu"
+      ],
+      "imageUrl": "/images/monitor/asus-tuf-gaming-vg27aq-80c7806acde7.jpg",
+      "images": [
+        "/images/monitor/asus-tuf-gaming-vg27aq-80c7806acde7.jpg"
+      ],
+      "price": 6350000,
+      "originalPrice": 7300000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-80c7806a-1",
+          "productId": "80c7806acde7949635c084a5fa6fcdf20a0dd8816d86fa7c56f59a5e4be6738f",
+          "sku": "SKU-80C7806A",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 6350000,
+          "originalPrice": 7300000,
+          "costPrice": 5207000,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "screen_inch": 27,
+        "panel": "IPS",
+        "refresh_hz": 165,
+        "resolution": "2560 x 1440"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "3335cb6d8ee5ff7444645ea3146c243526098ee5d1a9bf95e406f666661a8a1d",
+      "categoryId": "cat-psu",
+      "categorySlug": "psu",
+      "brandId": "b-corsair",
+      "brandName": "Corsair",
+      "name": "Corsair RM750e (2025)",
+      "slug": "corsair-rm750e-2025",
+      "description": "Corsair RM750e (2025) chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Công suất thực 750W đạt chuẩn 80 Plus Gold",
+        "Thiết kế full modular dây cáp gọn gàng",
+        "Linh kiện tụ điện Nhật Bản bền bỉ, an toàn điện áp"
+      ],
+      "imageUrl": "/images/power-supply/corsair-rm750e-2025-3335cb6d8ee5.jpg",
+      "images": [
+        "/images/power-supply/corsair-rm750e-2025-3335cb6d8ee5.jpg"
+      ],
+      "price": 2550000,
+      "originalPrice": 2930000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": true,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-3335cb6d-1",
+          "productId": "3335cb6d8ee5ff7444645ea3146c243526098ee5d1a9bf95e406f666661a8a1d",
+          "sku": "SKU-3335CB6D",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2550000,
+          "originalPrice": 2930000,
+          "costPrice": 2090999,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "psu_watt": 750,
+        "modular": "full",
+        "certification": "80 Plus Gold"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe",
+      "categoryId": "cat-psu",
+      "categorySlug": "psu",
+      "brandId": "b-msi",
+      "brandName": "MSI",
+      "name": "MSI MAG A650BN",
+      "slug": "msi-mag-a650bn",
+      "description": "MSI MAG A650BN chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Công suất thực 650W đạt chuẩn 80 Plus Bronze",
+        "Thiết kế non modular dây cáp gọn gàng",
+        "Linh kiện tụ điện Nhật Bản bền bỉ, an toàn điện áp"
+      ],
+      "imageUrl": "/images/power-supply/msi-mag-a650bn-3df5e885dd92.jpg",
+      "images": [
+        "/images/power-supply/msi-mag-a650bn-3df5e885dd92.jpg"
+      ],
+      "price": 1910000,
+      "originalPrice": 2200000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-3df5e885-1",
+          "productId": "3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe",
+          "sku": "SKU-3DF5E885",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 1910000,
+          "originalPrice": 2200000,
+          "costPrice": 1566200,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "psu_watt": 650,
+        "modular": "non",
+        "certification": "80 Plus Bronze"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+      "categoryId": "cat-ram",
+      "categorySlug": "ram",
+      "brandId": "b-corsair",
+      "brandName": "Corsair",
+      "name": "Corsair Vengeance RGB 32 GB",
+      "slug": "corsair-vengeance-rgb-32-gb",
+      "description": "Corsair Vengeance RGB 32 GB chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 32GB chuẩn DDR5 Bus 6000MHz",
+        "Độ trễ tối ưu, tản nhiệt nhôm cao cấp",
+        "Hỗ trợ Intel XMP 3.0 và AMD EXPO ép xung ổn định"
+      ],
+      "imageUrl": "/images/memory/corsair-vengeance-rgb-32-gb-3d8f348c2fc4.jpg",
+      "images": [
+        "/images/memory/corsair-vengeance-rgb-32-gb-3d8f348c2fc4.jpg"
+      ],
+      "price": 2420000,
+      "originalPrice": 2780000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-3d8f348c-1",
+          "productId": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+          "sku": "SKU-3D8F348C",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2420000,
+          "originalPrice": 2780000,
+          "costPrice": 1984399,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "ram_type": "DDR5",
+        "ram_gb": 32,
+        "ram_speed_mhz": 6000
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+      "categoryId": "cat-ram",
+      "categorySlug": "ram",
+      "brandId": "b-g-skill",
+      "brandName": "G.Skill",
+      "name": "G.Skill Ripjaws V 32 GB",
+      "slug": "g-skill-ripjaws-v-32-gb",
+      "description": "G.Skill Ripjaws V 32 GB chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 32GB chuẩn DDR4 Bus 3200MHz",
+        "Độ trễ tối ưu, tản nhiệt nhôm cao cấp",
+        "Hỗ trợ Intel XMP 3.0 và AMD EXPO ép xung ổn định"
+      ],
+      "imageUrl": "/images/memory/g-skill-ripjaws-v-32-gb-c63a970ec7f2.jpg",
+      "images": [
+        "/images/memory/g-skill-ripjaws-v-32-gb-c63a970ec7f2.jpg"
+      ],
+      "price": 1840000,
+      "originalPrice": 2120000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-c63a970e-1",
+          "productId": "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+          "sku": "SKU-C63A970E",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 1840000,
+          "originalPrice": 2120000,
+          "costPrice": 1508800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "ram_type": "DDR4",
+        "ram_gb": 32,
+        "ram_speed_mhz": 3200
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "f93e886025717109d535f8b601c627694977190384d0a14e5f50ddb22867d94e",
+      "categoryId": "cat-ram",
+      "categorySlug": "ram",
+      "brandId": "b-kingston",
+      "brandName": "Kingston",
+      "name": "Kingston FURY Beast 32 GB",
+      "slug": "kingston-fury-beast-32-gb",
+      "description": "Kingston FURY Beast 32 GB chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 32GB chuẩn DDR5 Bus 6000MHz",
+        "Độ trễ tối ưu, tản nhiệt nhôm cao cấp",
+        "Hỗ trợ Intel XMP 3.0 và AMD EXPO ép xung ổn định"
+      ],
+      "imageUrl": "/images/memory/kingston-fury-beast-32-gb-f93e88602571.webp",
+      "images": [
+        "/images/memory/kingston-fury-beast-32-gb-f93e88602571.webp"
+      ],
+      "price": 3140000,
+      "originalPrice": 3610000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-f93e8860-1",
+          "productId": "f93e886025717109d535f8b601c627694977190384d0a14e5f50ddb22867d94e",
+          "sku": "SKU-F93E8860",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 3140000,
+          "originalPrice": 3610000,
+          "costPrice": 2574800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "ram_type": "DDR5",
+        "ram_gb": 32,
+        "ram_speed_mhz": 6000
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "0cce20938aae4a0802e0d840347b6878e13884e9ea5da7b72577c6ca59fd0e86",
+      "categoryId": "cat-ram",
+      "categorySlug": "ram",
+      "brandId": "b-teamgroup",
+      "brandName": "TEAMGROUP",
+      "name": "TEAMGROUP T-Force Delta RGB 32 GB",
+      "slug": "teamgroup-t-force-delta-rgb-32-gb",
+      "description": "TEAMGROUP T-Force Delta RGB 32 GB chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 32GB chuẩn DDR5 Bus 6000MHz",
+        "Độ trễ tối ưu, tản nhiệt nhôm cao cấp",
+        "Hỗ trợ Intel XMP 3.0 và AMD EXPO ép xung ổn định"
+      ],
+      "imageUrl": "/images/memory/teamgroup-t-force-delta-rgb-32-gb-0cce20938aae.jpg",
+      "images": [
+        "/images/memory/teamgroup-t-force-delta-rgb-32-gb-0cce20938aae.jpg"
+      ],
+      "price": 2700000,
+      "originalPrice": 3100000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-0cce2093-1",
+          "productId": "0cce20938aae4a0802e0d840347b6878e13884e9ea5da7b72577c6ca59fd0e86",
+          "sku": "SKU-0CCE2093",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 2700000,
+          "originalPrice": 3100000,
+          "costPrice": 2214000,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "ram_type": "DDR5",
+        "ram_gb": 32,
+        "ram_speed_mhz": 6000
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c",
+      "categoryId": "cat-ssd",
+      "categorySlug": "ssd",
+      "brandId": "b-crucial",
+      "brandName": "Crucial",
+      "name": "Crucial P3 Plus",
+      "slug": "crucial-p3-plus",
+      "description": "Crucial P3 Plus chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 1000GB chuẩn NVMe M.2 PCIe Gen 4x4",
+        "Tốc độ đọc ghi cực nhanh lên tới 7450 MB/s",
+        "Bảo hành chính hãng 5 năm an tâm dữ liệu"
+      ],
+      "imageUrl": "/images/internal-hard-drive/crucial-p3-plus-64dc7f047585.jpg",
+      "images": [
+        "/images/internal-hard-drive/crucial-p3-plus-64dc7f047585.jpg"
+      ],
+      "price": 1450000,
+      "originalPrice": 1670000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-64dc7f04-1",
+          "productId": "64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c",
+          "sku": "SKU-64DC7F04",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 1450000,
+          "originalPrice": 1670000,
+          "costPrice": 1189000,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "storage_gb": 1000,
+        "storage_type": "NVMe",
+        "interface": "NVMe M.2"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "cdc875d18109ca5c457ea2feee66cd5cb9f055700d6d0c0cffeacb398a8ea0bd",
+      "categoryId": "cat-ssd",
+      "categorySlug": "ssd",
+      "brandId": "b-kingston",
+      "brandName": "Kingston",
+      "name": "Kingston NV2",
+      "slug": "kingston-nv2",
+      "description": "Kingston NV2 chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 1000GB chuẩn NVMe M.2 PCIe Gen 4x4",
+        "Tốc độ đọc ghi cực nhanh lên tới 7450 MB/s",
+        "Bảo hành chính hãng 5 năm an tâm dữ liệu"
+      ],
+      "imageUrl": "/images/internal-hard-drive/kingston-nv2-cdc875d18109.jpg",
+      "images": [
+        "/images/internal-hard-drive/kingston-nv2-cdc875d18109.jpg"
+      ],
+      "price": 1680000,
+      "originalPrice": 1930000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-cdc875d1-1",
+          "productId": "cdc875d18109ca5c457ea2feee66cd5cb9f055700d6d0c0cffeacb398a8ea0bd",
+          "sku": "SKU-CDC875D1",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 1680000,
+          "originalPrice": 1930000,
+          "costPrice": 1377600,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "storage_gb": 1000,
+        "storage_type": "NVMe",
+        "interface": "NVMe M.2"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "b182cda76ba681d381cb42f7cd4a01b11f7b0aa88fdec3667cd7b6ab66b69a58",
+      "categoryId": "cat-ssd",
+      "categorySlug": "ssd",
+      "brandId": "b-samsung",
+      "brandName": "Samsung",
+      "name": "Samsung 990 Pro",
+      "slug": "samsung-990-pro",
+      "description": "Samsung 990 Pro chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 2000GB chuẩn NVMe M.2 PCIe Gen 4x4",
+        "Tốc độ đọc ghi cực nhanh lên tới 7450 MB/s",
+        "Bảo hành chính hãng 5 năm an tâm dữ liệu"
+      ],
+      "imageUrl": "/images/internal-hard-drive/samsung-990-pro-b182cda76ba6.png",
+      "images": [
+        "/images/internal-hard-drive/samsung-990-pro-b182cda76ba6.png"
+      ],
+      "price": 3820000,
+      "originalPrice": 4390000,
+      "discountPercent": 13,
+      "isHot": true,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-b182cda7-1",
+          "productId": "b182cda76ba681d381cb42f7cd4a01b11f7b0aa88fdec3667cd7b6ab66b69a58",
+          "sku": "SKU-B182CDA7",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 3820000,
+          "originalPrice": 4390000,
+          "costPrice": 3132400,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "storage_gb": 2000,
+        "storage_type": "NVMe",
+        "interface": "NVMe M.2"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "9db57a7d1b0bc53af235b27053f8656666b2d00f1383fa0f1ff664debf32b860",
+      "categoryId": "cat-ssd",
+      "categorySlug": "ssd",
+      "brandId": "b-western-digital",
+      "brandName": "Western Digital",
+      "name": "Western Digital WD_Black SN850X",
+      "slug": "western-digital-wd-black-sn850x",
+      "description": "Western Digital WD_Black SN850X chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "Dung lượng 2000GB chuẩn NVMe M.2 PCIe Gen 4x4",
+        "Tốc độ đọc ghi cực nhanh lên tới 7450 MB/s",
+        "Bảo hành chính hãng 5 năm an tâm dữ liệu"
+      ],
+      "imageUrl": "/images/internal-hard-drive/western-digital-wd-black-sn850x-9db57a7d1b0b.jpg",
+      "images": [
+        "/images/internal-hard-drive/western-digital-wd-black-sn850x-9db57a7d1b0b.jpg"
+      ],
+      "price": 3940000,
+      "originalPrice": 4530000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-9db57a7d-1",
+          "productId": "9db57a7d1b0bc53af235b27053f8656666b2d00f1383fa0f1ff664debf32b860",
+          "sku": "SKU-9DB57A7D",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 3940000,
+          "originalPrice": 4530000,
+          "costPrice": 3230800,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "storage_gb": 2000,
+        "storage_type": "NVMe",
+        "interface": "NVMe M.2"
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "dca21cffcb61642e2da871ecfe078cd88013985349e2f9e3f27faac21a60e910",
+      "categoryId": "cat-vga",
+      "categorySlug": "vga",
+      "brandId": "b-msi",
+      "brandName": "MSI",
+      "name": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION",
+      "slug": "msi-rtx-4060-ti-8g-gaming-slim-monster-hunter-edition",
+      "description": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "VRAM 8GB GDDR6 hiệu năng đỉnh cao",
+        "Chiều dài VGA 307mm phù hợp đa số case",
+        "Hỗ trợ Ray Tracing thế hệ mới và DLSS 3.5 siêu mượt"
+      ],
+      "imageUrl": "/images/video-card/msi-rtx-4060-ti-8g-gaming-slim-monster-hunter-edition-dca21cffcb61.webp",
+      "images": [
+        "/images/video-card/msi-rtx-4060-ti-8g-gaming-slim-monster-hunter-edition-dca21cffcb61.webp"
+      ],
+      "price": 11220000,
+      "originalPrice": 12900000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": false,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-dca21cff-1",
+          "productId": "dca21cffcb61642e2da871ecfe078cd88013985349e2f9e3f27faac21a60e910",
+          "sku": "SKU-DCA21CFF",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 11220000,
+          "originalPrice": 12900000,
+          "costPrice": 9200400,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "vram_gb": 8,
+        "length_mm": 307,
+        "tgp_w": 160
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    },
+    {
+      "id": "3a40ad6ac20ca8e772a09d6f23a7eb4f24755e6c8a31f3754bb5eb897d277e2a",
+      "categoryId": "cat-vga",
+      "categorySlug": "vga",
+      "brandId": "b-msi",
+      "brandName": "MSI",
+      "name": "MSI RTX 5060 Ti 16G INSPIRE 2X OC",
+      "slug": "msi-rtx-5060-ti-16g-inspire-2x-oc",
+      "description": "MSI RTX 5060 Ti 16G INSPIRE 2X OC chính hãng phân phối tại Việt Nam, bảo hành đầy đủ, hỗ trợ trả góp 0%, tư vấn thông số kỹ thuật chuẩn.",
+      "highlights": [
+        "VRAM 16GB GDDR6 hiệu năng đỉnh cao",
+        "Chiều dài VGA 204mm phù hợp đa số case",
+        "Hỗ trợ Ray Tracing thế hệ mới và DLSS 3.5 siêu mượt"
+      ],
+      "imageUrl": "/images/video-card/msi-rtx-5060-ti-16g-inspire-2x-oc-3a40ad6ac20c.jpg",
+      "images": [
+        "/images/video-card/msi-rtx-5060-ti-16g-inspire-2x-oc-3a40ad6ac20c.jpg"
+      ],
+      "price": 13770000,
+      "originalPrice": 15840000,
+      "discountPercent": 13,
+      "isHot": false,
+      "isNew": true,
+      "hasInstallment0": true,
+      "status": "active",
+      "createdAt": "2026-10-19T08:00:00Z",
+      "variants": [
+        {
+          "id": "var-3a40ad6a-1",
+          "productId": "3a40ad6ac20ca8e772a09d6f23a7eb4f24755e6c8a31f3754bb5eb897d277e2a",
+          "sku": "SKU-3A40AD6A",
+          "name": "Bản tiêu chuẩn chính hãng",
+          "price": 13770000,
+          "originalPrice": 15840000,
+          "costPrice": 11291400,
+          "status": "active"
+        }
+      ],
+      "specs": {
+        "vram_gb": 16,
+        "length_mm": 204,
+        "tgp_w": 200
+      },
+      "stockStatus": {
+        "status": "in_stock",
+        "availableQty": 20
+      }
+    }
+  ]
+}
