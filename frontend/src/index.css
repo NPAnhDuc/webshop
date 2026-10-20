@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-200;
+  }
+}
+
+/* Custom scrollbars and styling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Cute Robot Animations */
+@keyframes robot-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes robot-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-28deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  45% {
+    transform: rotate(-24deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes robot-blink {
+  0%, 45%, 55%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes robot-pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.6));
+    opacity: 0.9;
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 1));
+    opacity: 1;
+  }
+}
+
+.animate-robot-float {
+  animation: robot-float 3s ease-in-out infinite;
+}
+
+.animate-robot-wave {
+  transform-origin: 75% 70%;
+  animation: robot-wave 2.2s ease-in-out infinite;
+}
+
+.animate-robot-blink {
+  transform-origin: center;
+  animation: robot-blink 3.5s infinite;
+}
+
+.animate-robot-glow {
+  animation: robot-pulse-glow 2s ease-in-out infinite;
+}
+

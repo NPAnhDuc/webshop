@@ -1,0 +1,23 @@
+{
+  "name": "techstore-chatbot-shop",
+  "version": "1.0.0",
+  "description": "Hệ thống Website & Chatbot AI Cửa Hàng Laptop & Đồ Điện Tử",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend run start",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "keywords": [
+    "ecommerce",
+    "laptop",
+    "electronics",
+    "pc-builder",
+    "ai-chatbot",
+    "rag"
+  ],
+  "author": "",
+  "license": "ISC"
+}
