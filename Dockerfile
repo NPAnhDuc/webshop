@@ -1,4 +1,4 @@
-FROM node:24-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -7,12 +7,11 @@ COPY package*.json ./
 
 RUN npm install
 
-# Copy TypeScript configuration and source files
+# Copy TypeScript configuration, source files, initial state, and images
 COPY tsconfig.json ./
 COPY src/ ./src/
-
-# Create data directory for state persistence
-RUN mkdir -p /app/data
+COPY data/ ./data/
+COPY public/ ./public/
 
 EXPOSE 5000
 
