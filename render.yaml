@@ -1,0 +1,31 @@
+services:
+  # 1. Backend API & AI Engine (Docker Container)
+  - type: web
+    name: techstore-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: singapore
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /api/categories
+    autoDeploy: true
+
+  # 2. Frontend Web Storefront (Static Site)
+  - type: web
+    name: techstore-frontend
+    runtime: static
+    plan: free
+    region: singapore
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true

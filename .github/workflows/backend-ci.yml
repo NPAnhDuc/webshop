@@ -69,3 +69,16 @@ jobs:
           else
             docker build -t techstore-backend:ci .
           fi
+
+      - name: 🚀 Trigger Render Deploy (Optional Hook)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/backend'
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$RENDER_DEPLOY_HOOK" ]; then
+            echo "Triggering Render automated deployment..."
+            curl -s -X POST "$RENDER_DEPLOY_HOOK"
+            echo " Deployment triggered successfully!"
+          else
+            echo "ℹ️ RENDER_DEPLOY_HOOK secret is not set. Render will use automatic git push deploy."
+          fi
