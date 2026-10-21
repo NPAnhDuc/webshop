@@ -1,0 +1,71 @@
+name: Backend CI & Health Pipeline
+
+on:
+  push:
+    branches:
+      - backend
+      - main
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'data/**'
+      - 'package.json'
+      - 'tsconfig.json'
+      - 'Dockerfile'
+      - '.github/workflows/backend-ci.yml'
+  pull_request:
+    branches:
+      - backend
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    name: ⚙️ Build & Smoke Test Backend
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: |
+          if [ -d "backend" ]; then
+            cd backend && npm install
+          else
+            npm install
+          fi
+
+      - name: 🔍 TypeScript Compilation Check
+        run: |
+          if [ -d "backend" ]; then
+            cd backend && npm run build
+          else
+            npm run build
+          fi
+
+      - name: 🚀 Start Server & Run Automated Smoke Tests
+        run: |
+          if [ -d "backend" ]; then
+            cd backend
+            npm run start &
+            sleep 4
+            node scripts/smoke_test.js
+          else
+            npm run start &
+            sleep 4
+            node scripts/smoke_test.js
+          fi
+
+      - name: 🐳 Docker Container Build Check
+        run: |
+          if [ -d "backend" ]; then
+            docker build -t techstore-backend:ci ./backend
+          else
+            docker build -t techstore-backend:ci .
+          fi

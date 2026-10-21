@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "tsx src/server.ts"
+    "start": "tsx src/server.ts",
+    "test": "node scripts/smoke_test.js"
   },
   "keywords": ["ecommerce", "electronics", "chatbot", "rag", "analytics"],
   "author": "",

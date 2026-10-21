@@ -1,0 +1,78 @@
+name: Frontend CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - frontend
+      - main
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'vite.config.ts'
+      - 'tailwind.config.js'
+      - '.github/workflows/frontend-ci-cd.yml'
+  pull_request:
+    branches:
+      - frontend
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build-and-test:
+    name: 🏗️ Build & Validate Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: |
+          if [ -d "frontend" ]; then
+            cd frontend && npm install
+          else
+            npm install
+          fi
+
+      - name: 🔍 TypeCheck & Build Production Assets
+        run: |
+          if [ -d "frontend" ]; then
+            cd frontend && npm run build
+          else
+            npm run build
+          fi
+
+      - name: 📤 Upload Pages Artifact
+        if: github.ref == 'refs/heads/frontend' || github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ hashFiles('frontend/dist/index.html') != '' && 'frontend/dist' || 'dist' }}
+
+  deploy-pages:
+    name: 🚀 Deploy to GitHub Pages
+    needs: build-and-test
+    if: github.ref == 'refs/heads/frontend' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 🌐 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
