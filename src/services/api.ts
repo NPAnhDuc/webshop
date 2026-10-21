@@ -1,6 +1,14 @@
 import { Product, Category, Brand, Order, ChartSpec, StrategyProposal, StrategicDocument } from '../types';
 
-const BASE_URL = '';
+export const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+const BASE_URL = API_BASE_URL;
+
+export function formatImageUrl(url?: string): string {
+  if (!url) return 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop&q=80';
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  if (!API_BASE_URL) return url;
+  return `${API_BASE_URL}/${url.replace(/^\/+/, '')}`;
+}
 
 export async function fetchCategories(): Promise<Category[]> {
   const res = await fetch(`${BASE_URL}/api/categories`);
