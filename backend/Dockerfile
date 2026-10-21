@@ -13,9 +13,9 @@ COPY src/ ./src/
 COPY data/ ./data/
 COPY public/ ./public/
 
-EXPOSE 5000
-
-ENV PORT=5000
+ENV PORT=10000
 ENV NODE_ENV=production
+
+EXPOSE 10000 5000
 
 CMD ["npm", "start"]

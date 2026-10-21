@@ -401,6 +401,6 @@ app.put('/admin/settings', (req: Request, res: Response) => {
   res.json({ success: true, data: updated });
 });
 
-app.listen(PORT, () => {
+app.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`[TechStore Backend Server] Running cleanly on http://localhost:${PORT}`);
 });
