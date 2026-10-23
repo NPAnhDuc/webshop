@@ -7,9 +7,55 @@ import fs from 'fs';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const AI_SERVICE_URL = (process.env.AI_SERVICE_URL || '').trim();
+
+if (AI_SERVICE_URL) {
+  console.log(`[AI Bridge] Active: Forwarding chatbot requests to Docker AI Service at ${AI_SERVICE_URL}`);
+} else {
+  console.log(`[AI Bridge] Standalone: Using built-in TechStore Knowledge Engine (AI_SERVICE_URL not set).`);
+}
 
 app.use(cors());
 app.use(express.json());
+
+// Diagnostic endpoint to check AI Microservice status
+app.get('/api/ai/status', async (req: Request, res: Response) => {
+  if (!AI_SERVICE_URL) {
+    return res.json({
+      configured: false,
+      online: false,
+      url: null,
+      message: 'AI_SERVICE_URL chưa được cấu hình. Đang chạy chế độ Dự phòng (Built-in Knowledge Engine).'
+    });
+  }
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 3000);
+    const start = Date.now();
+    const response = await fetch(`${AI_SERVICE_URL}/health`, { signal: controller.signal });
+    clearTimeout(timeout);
+    const latencyMs = Date.now() - start;
+
+    return res.json({
+      configured: true,
+      online: response.ok,
+      url: AI_SERVICE_URL,
+      latencyMs,
+      message: response.ok
+        ? 'Đã kết nối thành công tới Docker Model AI Container'
+        : `Docker Model AI phản hồi mã lỗi: ${response.status}`
+    });
+  } catch (err: any) {
+    return res.json({
+      configured: true,
+      online: false,
+      url: AI_SERVICE_URL,
+      error: err.message,
+      message: 'Không thể kết nối tới Docker Model AI Container (Đang khởi động hoặc sai cổng kết nối)'
+    });
+  }
+});
 
 // Serve local product images
 const publicImages = path.join(process.cwd(), 'public', 'images');
@@ -188,12 +234,56 @@ app.post('/api/pc-builder/validate', (req: Request, res: Response) => {
   res.json({ success: true, data: result });
 });
 
-// Customer Shopping Chatbot (CU-01..CU-11)
-app.post('/api/chat/customer', (req: Request, res: Response) => {
+// Customer Shopping Chatbot (CU-01..CU-11) with Docker AI Model Bridge
+app.post('/api/chat/customer', async (req: Request, res: Response) => {
   const { message, pageContext } = req.body;
   if (!message) {
     return res.status(400).json({ success: false, message: 'Tin nhắn không được để trống' });
   }
+
+  // 1. If AI_SERVICE_URL is set, forward to Docker Model AI Service
+  if (AI_SERVICE_URL) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000); // 12s timeout for AI inference
+
+      const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/customer`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message,
+          role: 'customer',
+          pageContext
+        }),
+        signal: controller.signal
+      });
+      clearTimeout(timeout);
+
+      if (aiRes.ok) {
+        const aiData: any = await aiRes.json();
+        const replyText = aiData.replyText || aiData.answer || aiData.response || aiData.data?.replyText || '';
+        if (replyText) {
+          return res.json({
+            success: true,
+            data: {
+              replyText,
+              products: aiData.products || aiData.data?.products || [],
+              suggestedPills: aiData.suggestedPills || aiData.data?.suggestedPills || [
+                'Tư vấn laptop sinh viên',
+                'Build PC đồ họa 25 triệu',
+                'Chính sách trả góp 0%'
+              ],
+              action: aiData.action || 'ai_inference'
+            }
+          });
+        }
+      }
+    } catch (err: any) {
+      console.warn(`[AI Bridge Warning] Docker AI request failed (${AI_SERVICE_URL}): ${err.message}. Seamlessly falling back to local store engine.`);
+    }
+  }
+
+  // 2. Fallback: Internal high-performance TechStore rule-based engine
   const result = store.processCustomerChat(message, pageContext);
   res.json({ success: true, data: result });
 });
@@ -290,12 +380,49 @@ app.post('/admin/documents', (req: Request, res: Response) => {
   res.json({ success: true, data: newDoc });
 });
 
-// Admin Data Science & Analytics Chatbot
-app.post('/admin/chat', (req: Request, res: Response) => {
+// Admin Data Science & Analytics Chatbot with Docker AI Bridge
+app.post('/admin/chat', async (req: Request, res: Response) => {
   const { query } = req.body;
   if (!query) {
     return res.status(400).json({ success: false, message: 'Câu hỏi không được để trống' });
   }
+
+  if (AI_SERVICE_URL) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+
+      const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/admin`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query,
+          role: 'admin'
+        }),
+        signal: controller.signal
+      });
+      clearTimeout(timeout);
+
+      if (aiRes.ok) {
+        const aiData: any = await aiRes.json();
+        const data = aiData.data || aiData;
+        if (data.thoughtSummary || data.insight || data.answer) {
+          return res.json({
+            success: true,
+            data: {
+              thoughtSummary: data.thoughtSummary || 'Phân tích tổng hợp từ Docker AI RAG Engine',
+              insight: data.insight || data.answer || '',
+              chartSpec: data.chartSpec,
+              proposal: data.proposal
+            }
+          });
+        }
+      }
+    } catch (err: any) {
+      console.warn(`[AI Bridge Warning] Docker AI Admin request failed: ${err.message}.`);
+    }
+  }
+
   const result = store.processAdminChat(query);
   res.json({ success: true, data: result });
 });

@@ -9,7 +9,24 @@ services:
     environment:
       - PORT=5000
       - NODE_ENV=production
+      - AI_SERVICE_URL=http://ai-model:8000
     volumes:
       - ./backend/data:/app/data
       - ./AI/data/product_images/images:/app/public/images:ro
+    depends_on:
+      - ai-model
+    restart: unless-stopped
+
+  ai-model:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    container_name: techstore-ai-model
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./AI/data:/app/data:ro
     restart: unless-stopped
