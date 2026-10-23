@@ -45,6 +45,7 @@ import {
   CheckCircle2,
   Lock,
   ArrowRight,
+  ArrowLeft,
   ShieldCheck,
   Zap,
   RotateCcw,
@@ -83,13 +84,24 @@ const AppContent: React.FC = () => {
 
   useEffect(() => {
     const syncViewFromHash = () => {
-      const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+      const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+      const hash = rawHash.toLowerCase();
+
       if (hash.startsWith('admin')) {
         setCurrentView('admin');
       } else if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) {
         setCurrentView('pc-builder');
+      } else if (hash.startsWith('category/')) {
+        const cat = rawHash.substring('category/'.length).trim();
+        setCurrentView('storefront');
+        if (cat) {
+          setCurrentCategory(cat);
+        }
       } else {
         setCurrentView('storefront');
+        if (hash === '' || hash === '/') {
+          setCurrentCategory('all');
+        }
       }
     };
 
@@ -110,7 +122,15 @@ const AppContent: React.FC = () => {
   const [totalProducts, setTotalProducts] = useState(0);
 
   // Filters State
-  const [currentCategory, setCurrentCategory] = useState<string>('all');
+  const [currentCategory, setCurrentCategory] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+      if (rawHash.toLowerCase().startsWith('category/')) {
+        return rawHash.substring('category/'.length).trim() || 'all';
+      }
+    }
+    return 'all';
+  });
   const [selectedBrand, setSelectedBrand] = useState<string | undefined>();
   const [selectedPriceRange, setSelectedPriceRange] = useState<string | undefined>();
   const [selectedDemand, setSelectedDemand] = useState<string | undefined>();
@@ -215,6 +235,24 @@ const AppContent: React.FC = () => {
     setSortBy('featured');
     setCurrentCategory('all');
     setWishlistFilterOnly(false);
+  };
+
+  const handleSelectCategory = (cat: string, pushHistory = true) => {
+    setCurrentCategory(cat);
+    if (currentView !== 'storefront') {
+      setCurrentView('storefront');
+    }
+    const targetHash = cat === 'all' ? '#/' : `#/category/${cat}`;
+    if (window.location.hash !== targetHash) {
+      if (pushHistory) {
+        window.history.pushState(null, '', targetHash);
+      } else {
+        window.history.replaceState(null, '', targetHash);
+      }
+    }
+    setTimeout(() => {
+      document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
   };
 
   const handleNavigateHome = () => {
@@ -354,10 +392,7 @@ const AppContent: React.FC = () => {
           onNavigateAdmin={handleAdminClick}
           onNavigateHome={handleNavigateHome}
           onNavigateSection={handleScrollToSection}
-          onSelectCategory={cat => {
-            setCurrentCategory(cat);
-            navigateToView('storefront');
-          }}
+          onSelectCategory={cat => handleSelectCategory(cat)}
           currentCategory={currentCategory}
           onToggleWishlistFilter={() => {
             setWishlistFilterOnly(prev => !prev);
@@ -402,7 +437,7 @@ const AppContent: React.FC = () => {
         onNavigateAdmin={handleAdminClick}
         onNavigateHome={handleNavigateHome}
         onNavigateSection={handleScrollToSection}
-        onSelectCategory={cat => setCurrentCategory(cat)}
+        onSelectCategory={cat => handleSelectCategory(cat)}
         currentCategory={currentCategory}
         onToggleWishlistFilter={() => setWishlistFilterOnly(prev => !prev)}
         isWishlistFilterActive={wishlistFilterOnly}
@@ -441,7 +476,7 @@ const AppContent: React.FC = () => {
           <HeroBannerCarousel
             onNavigatePCBuilder={() => navigateToView('pc-builder')}
             onFilterDemand={demand => setSelectedDemand(demand)}
-            onSelectCategory={cat => setCurrentCategory(cat)}
+            onSelectCategory={cat => handleSelectCategory(cat)}
           />
         )}
 
@@ -556,10 +591,7 @@ const AppContent: React.FC = () => {
               products={products}
               onSelectProduct={prod => setSelectedProduct(prod)}
               onNavigatePCBuilder={() => navigateToView('pc-builder')}
-              onFilterCategory={cat => {
-                setCurrentCategory(cat);
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onFilterCategory={cat => handleSelectCategory(cat)}
               onFilterDemand={dem => {
                 setSelectedDemand(dem);
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -574,28 +606,59 @@ const AppContent: React.FC = () => {
 
         {/* Catalog Section with Sidebar Filters & Product Grid */}
         <div id="product-catalog-section" className="scroll-mt-24 pt-4 border-t border-gray-200 dark:border-slate-800">
-          <div className="mb-4 flex items-center justify-between">
+          {/* Breadcrumb Navigation when filtered or in specific category */}
+          {currentCategory !== 'all' && (
+            <div className="mb-3 flex items-center space-x-2 text-xs">
+              <button
+                onClick={handleNavigateHome}
+                className="text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 font-bold flex items-center space-x-1 cursor-pointer"
+              >
+                <span>🏠</span>
+                <span>Trang Chủ</span>
+              </button>
+              <span className="text-slate-400">/</span>
+              <span className="text-slate-500 dark:text-slate-400">Danh mục</span>
+              <span className="text-slate-400">/</span>
+              <span className="font-extrabold text-[#059669] dark:text-emerald-400 uppercase">
+                {currentCategory}
+              </span>
+            </div>
+          )}
+
+          <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center space-x-2.5">
-              <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold shadow-xs">
+              <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold shadow-xs flex-shrink-0">
                 <SlidersHorizontal className="w-4 h-4" />
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-black uppercase text-slate-900 dark:text-slate-100">
-                  {currentCategory !== 'all' ? `DANH MỤC: ${currentCategory.toUpperCase()}` : 'TOÀN BỘ KHO SẢN PHẨM & BỘ LỌC ĐA CHIỀU'}
+                <h3 className="text-base sm:text-lg font-black uppercase text-slate-900 dark:text-slate-100 flex items-center space-x-2">
+                  <span>{currentCategory !== 'all' ? `DANH MỤC: ${currentCategory.toUpperCase()}` : 'TOÀN BỘ KHO SẢN PHẨM & BỘ LỌC ĐA CHIỀU'}</span>
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
                   Tùy chọn lọc thông số chi tiết theo tiêu chuẩn Showroom Máy tính chuyên nghiệp
                 </p>
               </div>
             </div>
-            {(selectedBrand || selectedPriceRange || selectedDemand || selectedPanel || inStockOnly || hasInstallment0) && (
-              <button
-                onClick={handleResetFilters}
-                className="text-xs text-red-500 hover:underline font-bold cursor-pointer"
-              >
-                Xóa tất cả bộ lọc ×
-              </button>
-            )}
+
+            <div className="flex items-center space-x-2">
+              {currentCategory !== 'all' && (
+                <button
+                  onClick={handleNavigateHome}
+                  className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 cursor-pointer shadow-xs active:scale-95"
+                >
+                  <ArrowLeft className="w-3.5 h-3.5" />
+                  <span>Về Trang Chủ</span>
+                </button>
+              )}
+              {(currentCategory !== 'all' || selectedBrand || selectedPriceRange || selectedDemand || selectedPanel || inStockOnly || hasInstallment0 || searchQuery) && (
+                <button
+                  onClick={handleNavigateHome}
+                  className="px-3 py-1.5 text-xs text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl border border-rose-200 dark:border-rose-900/50 font-bold cursor-pointer transition"
+                >
+                  Xóa tất cả bộ lọc ×
+                </button>
+              )}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
