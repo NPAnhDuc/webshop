@@ -148,7 +148,10 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({
             <span>Về trang bán lẻ Storefront</span>
           </button>
           <button
-            onClick={logout}
+            onClick={() => {
+              logout();
+              onBackToStorefront();
+            }}
             className="w-full flex items-center space-x-2 px-3 py-2 rounded-xl text-xs font-semibold text-red-400 hover:bg-red-500/10 transition cursor-pointer"
           >
             <LogOut className="w-4 h-4" />

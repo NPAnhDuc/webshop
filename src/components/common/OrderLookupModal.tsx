@@ -137,7 +137,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
             {/* Items */}
             <div className="p-3 bg-slate-50 dark:bg-slate-900/60 rounded-lg space-y-2 border border-slate-100 dark:border-slate-800">
               <span className="font-bold text-slate-700 dark:text-slate-300 block text-[11px]">Sản phẩm trong đơn:</span>
-              {order.items.map((it, idx) => (
+              {(order.items || []).map((it, idx) => (
                 <div key={idx} className="flex justify-between text-slate-800 dark:text-slate-200">
                   <span>{it.productName} <strong className="text-slate-400">x{it.qty}</strong></span>
                   <span className="font-bold">{new Intl.NumberFormat('vi-VN').format(it.price * it.qty)}₫</span>
@@ -153,7 +153,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
             <div className="space-y-2 pt-1">
               <span className="font-bold text-slate-700 dark:text-slate-300 block text-[11px]">Lịch sử tiến độ:</span>
               <div className="space-y-2 pl-3 border-l-2 border-emerald-300 dark:border-emerald-700 text-[11px]">
-                {order.statusTimeline?.map((t, idx) => (
+                {(order.statusTimeline || []).map((t, idx) => (
                   <div key={idx} className="relative pl-3">
                     <span className="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-emerald-600 dark:bg-emerald-400 ring-2 ring-white dark:ring-slate-900" />
                     <p className="font-bold text-slate-800 dark:text-slate-200">{t.note || t.status}</p>
