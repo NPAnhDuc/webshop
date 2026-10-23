@@ -59,8 +59,49 @@ const AppContent: React.FC = () => {
   const { t, lang } = useLanguage();
 
   // Navigation Views: 'storefront' | 'pc-builder' | 'admin'
-  const [currentView, setCurrentView] = useState<'storefront' | 'pc-builder' | 'admin'>('storefront');
+  const [currentView, setCurrentView] = useState<'storefront' | 'pc-builder' | 'admin'>(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+      if (hash.startsWith('admin')) return 'admin';
+      if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) return 'pc-builder';
+    }
+    return 'storefront';
+  });
   const [adminTab, setAdminTab] = useState<AdminTabType>('dashboard');
+
+  const navigateToView = (view: 'storefront' | 'pc-builder' | 'admin', pushHistory = true) => {
+    setCurrentView(view);
+    const targetHash = view === 'storefront' ? '#/' : `#/${view}`;
+    if (window.location.hash !== targetHash) {
+      if (pushHistory) {
+        window.history.pushState(null, '', targetHash);
+      } else {
+        window.history.replaceState(null, '', targetHash);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const syncViewFromHash = () => {
+      const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+      if (hash.startsWith('admin')) {
+        setCurrentView('admin');
+      } else if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) {
+        setCurrentView('pc-builder');
+      } else {
+        setCurrentView('storefront');
+      }
+    };
+
+    window.addEventListener('popstate', syncViewFromHash);
+    window.addEventListener('hashchange', syncViewFromHash);
+    syncViewFromHash();
+
+    return () => {
+      window.removeEventListener('popstate', syncViewFromHash);
+      window.removeEventListener('hashchange', syncViewFromHash);
+    };
+  }, []);
 
   // Storefront Product State
   const [products, setProducts] = useState<Product[]>([]);
@@ -119,10 +160,10 @@ const AppContent: React.FC = () => {
     let minPrice: number | undefined;
     let maxPrice: number | undefined;
 
-    if (selectedPriceRange === 'under15m') maxPrice = 15000000;
-    else if (selectedPriceRange === 'from15to20m') { minPrice = 15000000; maxPrice = 20000000; }
-    else if (selectedPriceRange === 'from20to30m') { minPrice = 20000000; maxPrice = 30000000; }
-    else if (selectedPriceRange === 'above30m') minPrice = 30000000;
+    if (selectedPriceRange === 'under15m' || selectedPriceRange === 'under_15') maxPrice = 15000000;
+    else if (selectedPriceRange === 'from15to20m' || selectedPriceRange === '15_to_20') { minPrice = 15000000; maxPrice = 20000000; }
+    else if (selectedPriceRange === 'from20to30m' || selectedPriceRange === '20_to_30') { minPrice = 20000000; maxPrice = 30000000; }
+    else if (selectedPriceRange === 'above30m' || selectedPriceRange === 'above_30') minPrice = 30000000;
 
     fetchProducts({
       category: currentCategory,
@@ -173,6 +214,53 @@ const AppContent: React.FC = () => {
     setSearchQuery('');
     setSortBy('featured');
     setCurrentCategory('all');
+    setWishlistFilterOnly(false);
+  };
+
+  const handleNavigateHome = () => {
+    // 1. Reset all filters and search query
+    setSelectedBrand(undefined);
+    setSelectedPriceRange(undefined);
+    setSelectedDemand(undefined);
+    setSelectedPanel(undefined);
+    setInStockOnly(false);
+    setHasInstallment0(false);
+    setSearchQuery('');
+    setSortBy('featured');
+    setCurrentCategory('all');
+    setWishlistFilterOnly(false);
+
+    // 2. Dismiss any open modals
+    setSelectedProduct(null);
+    setShowCheckout(false);
+    setShowOrderLookup(false);
+    setShowAdminLogin(false);
+    setShowComparisonModal(false);
+
+    // 3. Switch view to storefront with URL hash sync
+    navigateToView('storefront', true);
+
+    // 4. Smooth scroll to top of page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleScrollToSection = (sectionId: string) => {
+    if (currentView !== 'storefront') {
+      handleNavigateHome();
+    } else {
+      // If filters hide the showcases, clear them so sections exist in the DOM
+      if (currentCategory !== 'all' || searchQuery !== '') {
+        setCurrentCategory('all');
+        setSearchQuery('');
+      }
+    }
+
+    setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   };
 
   const handleToggleCompare = (product: Product) => {
@@ -195,7 +283,7 @@ const AppContent: React.FC = () => {
     if (!isAuthenticated) {
       setShowAdminLogin(true);
     } else {
-      setCurrentView('admin');
+      navigateToView('admin', true);
     }
   };
 
@@ -209,7 +297,7 @@ const AppContent: React.FC = () => {
         email: 'lan.techstore@gmail.com'
       });
       setShowAdminLogin(false);
-      setCurrentView('admin');
+      navigateToView('admin', true);
       addToast('Đăng nhập quản trị thành công', 'Chào mừng Chị Lan (Chủ shop)', 'success');
     } else if (loginUsername === 'kho' && loginPassword === 'kho123') {
       login('jwt-mock-wh', {
@@ -219,7 +307,7 @@ const AppContent: React.FC = () => {
         email: 'tuan.kho@techstore.vn'
       });
       setShowAdminLogin(false);
-      setCurrentView('admin');
+      navigateToView('admin', true);
       addToast('Đăng nhập thủ kho thành công', 'Chào mừng Anh Tuấn (Kho)', 'success');
     } else {
       setLoginError('Tên đăng nhập hoặc mật khẩu không đúng (Gợi ý: admin / admin123)');
@@ -229,23 +317,26 @@ const AppContent: React.FC = () => {
   // Render Admin View
   if (currentView === 'admin' && isAuthenticated) {
     return (
-      <AdminLayout
-        currentTab={adminTab}
-        onSelectTab={setAdminTab}
-        onBackToStorefront={() => setCurrentView('storefront')}
-      >
-        {adminTab === 'dashboard' && <DashboardView onNavigateToChatbot={() => setAdminTab('chatbot')} />}
-        {adminTab === 'products' && <ProductManagement />}
-        {adminTab === 'inventory' && <InventoryManagement />}
-        {adminTab === 'orders' && <OrderManagement />}
-        {adminTab === 'promotions' && <PromotionManagement />}
-        {adminTab === 'quotations' && <QuotationManagement />}
-        {adminTab === 'customers' && <CustomerManagement />}
-        {adminTab === 'reviews' && <ReviewManagement />}
-        {adminTab === 'documents' && <DocumentManagement />}
-        {adminTab === 'chatbot' && <AdminChatbotView />}
-        {adminTab === 'settings' && <StoreSettingsManagement />}
-      </AdminLayout>
+      <>
+        <AdminLayout
+          currentTab={adminTab}
+          onSelectTab={setAdminTab}
+          onBackToStorefront={handleNavigateHome}
+        >
+          {adminTab === 'dashboard' && <DashboardView onNavigateToChatbot={() => setAdminTab('chatbot')} />}
+          {adminTab === 'products' && <ProductManagement />}
+          {adminTab === 'inventory' && <InventoryManagement />}
+          {adminTab === 'orders' && <OrderManagement />}
+          {adminTab === 'promotions' && <PromotionManagement />}
+          {adminTab === 'quotations' && <QuotationManagement />}
+          {adminTab === 'customers' && <CustomerManagement />}
+          {adminTab === 'reviews' && <ReviewManagement />}
+          {adminTab === 'documents' && <DocumentManagement />}
+          {adminTab === 'chatbot' && <AdminChatbotView />}
+          {adminTab === 'settings' && <StoreSettingsManagement />}
+        </AdminLayout>
+        <ToastContainer toasts={toasts} onDismiss={removeToast} />
+      </>
     );
   }
 
@@ -256,25 +347,26 @@ const AppContent: React.FC = () => {
         <Navbar
           onSearch={q => {
             setSearchQuery(q);
-            setCurrentView('storefront');
+            navigateToView('storefront');
           }}
           onOpenLookup={() => setShowOrderLookup(true)}
-          onNavigatePCBuilder={() => setCurrentView('pc-builder')}
+          onNavigatePCBuilder={() => navigateToView('pc-builder')}
           onNavigateAdmin={handleAdminClick}
-          onNavigateHome={() => setCurrentView('storefront')}
+          onNavigateHome={handleNavigateHome}
+          onNavigateSection={handleScrollToSection}
           onSelectCategory={cat => {
             setCurrentCategory(cat);
-            setCurrentView('storefront');
+            navigateToView('storefront');
           }}
           currentCategory={currentCategory}
           onToggleWishlistFilter={() => {
             setWishlistFilterOnly(prev => !prev);
-            setCurrentView('storefront');
+            navigateToView('storefront');
           }}
           isWishlistFilterActive={wishlistFilterOnly}
         />
         <PCBuilderView
-          onBackToHome={() => setCurrentView('storefront')}
+          onBackToHome={handleNavigateHome}
           onSelectProduct={prod => setSelectedProduct(prod)}
           onToast={(title, msg) => addToast(title, msg, 'success')}
         />
@@ -298,7 +390,7 @@ const AppContent: React.FC = () => {
     <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-emerald-600 selection:text-white relative transition-colors duration-200">
       {/* Interactive Side Wings for Wide Screens */}
       <SideWings
-        onNavigatePCBuilder={() => setCurrentView('pc-builder')}
+        onNavigatePCBuilder={() => navigateToView('pc-builder')}
         onOpenLookup={() => setShowOrderLookup(true)}
       />
 
@@ -306,12 +398,10 @@ const AppContent: React.FC = () => {
       <Navbar
         onSearch={q => setSearchQuery(q)}
         onOpenLookup={() => setShowOrderLookup(true)}
-        onNavigatePCBuilder={() => setCurrentView('pc-builder')}
+        onNavigatePCBuilder={() => navigateToView('pc-builder')}
         onNavigateAdmin={handleAdminClick}
-        onNavigateHome={() => {
-          handleResetFilters();
-          setCurrentView('storefront');
-        }}
+        onNavigateHome={handleNavigateHome}
+        onNavigateSection={handleScrollToSection}
         onSelectCategory={cat => setCurrentCategory(cat)}
         currentCategory={currentCategory}
         onToggleWishlistFilter={() => setWishlistFilterOnly(prev => !prev)}
@@ -349,7 +439,7 @@ const AppContent: React.FC = () => {
         {/* Hero Banner Luxury Carousel (TechStore 3-Column Hero Layout) */}
         {!searchQuery && currentCategory === 'all' && (
           <HeroBannerCarousel
-            onNavigatePCBuilder={() => setCurrentView('pc-builder')}
+            onNavigatePCBuilder={() => navigateToView('pc-builder')}
             onFilterDemand={demand => setSelectedDemand(demand)}
             onSelectCategory={cat => setCurrentCategory(cat)}
           />
@@ -368,7 +458,7 @@ const AppContent: React.FC = () => {
         {!searchQuery && currentCategory === 'all' && (
           <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
             <button
-              onClick={() => setCurrentView('pc-builder')}
+              onClick={() => navigateToView('pc-builder')}
               className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
               <div className="w-9 h-9 rounded-lg bg-yellow-400 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
@@ -465,7 +555,7 @@ const AppContent: React.FC = () => {
             <PCStorefrontShowcases
               products={products}
               onSelectProduct={prod => setSelectedProduct(prod)}
-              onNavigatePCBuilder={() => setCurrentView('pc-builder')}
+              onNavigatePCBuilder={() => navigateToView('pc-builder')}
               onFilterCategory={cat => {
                 setCurrentCategory(cat);
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -565,10 +655,10 @@ const AppContent: React.FC = () => {
               <div className="flex items-center space-x-1.5 overflow-x-auto scrollbar-none pt-1 border-t border-gray-100 dark:border-slate-800">
                 <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap mr-1">Mức giá:</span>
                 {[
-                  { label: 'Dưới 15 triệu', val: 'under_15' },
-                  { label: '15 - 20 triệu', val: '15_to_20' },
-                  { label: '20 - 30 triệu', val: '20_to_30' },
-                  { label: 'Trên 30 triệu', val: 'above_30' }
+                  { label: 'Dưới 15 triệu', val: 'under15m' },
+                  { label: '15 - 20 triệu', val: 'from15to20m' },
+                  { label: '20 - 30 triệu', val: 'from20to30m' },
+                  { label: 'Trên 30 triệu', val: 'above30m' }
                 ].map(pr => (
                   <button
                     key={pr.val}

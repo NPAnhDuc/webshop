@@ -41,6 +41,7 @@ interface NavbarProps {
   onNavigateAdmin: () => void;
   onNavigateHome: () => void;
   onSelectCategory: (categorySlug: string) => void;
+  onNavigateSection?: (sectionId: string) => void;
   currentCategory?: string;
   onOpenBotChat?: () => void;
   onToggleWishlistFilter?: () => void;
@@ -54,6 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onNavigateAdmin,
   onNavigateHome,
   onSelectCategory,
+  onNavigateSection,
   currentCategory,
   onOpenBotChat,
   onToggleWishlistFilter,
@@ -545,8 +547,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* PC Gaming */}
             <button
               onClick={() => {
-                onSelectCategory('all');
-                document.getElementById('section-pc-gaming')?.scrollIntoView({ behavior: 'smooth' });
+                if (onNavigateSection) {
+                  onNavigateSection('section-pc-gaming');
+                } else {
+                  onSelectCategory('all');
+                  document.getElementById('section-pc-gaming')?.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               className="px-3 py-1.5 rounded-lg whitespace-nowrap transition flex items-center space-x-1 cursor-pointer hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-[#059669]"
             >
@@ -557,8 +563,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* PC Đồ Họa - AI */}
             <button
               onClick={() => {
-                onSelectCategory('all');
-                document.getElementById('section-pc-workstation')?.scrollIntoView({ behavior: 'smooth' });
+                if (onNavigateSection) {
+                  onNavigateSection('section-pc-workstation');
+                } else {
+                  onSelectCategory('all');
+                  document.getElementById('section-pc-workstation')?.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               className="px-3 py-1.5 rounded-lg whitespace-nowrap transition flex items-center space-x-1 cursor-pointer hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-[#059669]"
             >
@@ -582,8 +592,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Linh Kiện PC */}
             <button
               onClick={() => {
-                onSelectCategory('all');
-                document.getElementById('section-pc-components')?.scrollIntoView({ behavior: 'smooth' });
+                if (onNavigateSection) {
+                  onNavigateSection('section-pc-components');
+                } else {
+                  onSelectCategory('all');
+                  document.getElementById('section-pc-components')?.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               className="px-3 py-1.5 rounded-lg whitespace-nowrap transition flex items-center space-x-1 cursor-pointer hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-[#059669]"
             >
@@ -607,8 +621,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Khuyến Mãi */}
             <button
               onClick={() => {
-                onSelectCategory('all');
-                window.scrollTo({ top: 400, behavior: 'smooth' });
+                if (onNavigateSection) {
+                  onNavigateSection('section-flash-sale');
+                } else {
+                  onSelectCategory('all');
+                  window.scrollTo({ top: 400, behavior: 'smooth' });
+                }
               }}
               className="px-3 py-1.5 rounded-lg whitespace-nowrap transition flex items-center space-x-1 cursor-pointer text-red-600 dark:text-rose-400 hover:bg-red-50 dark:hover:bg-red-950/30"
             >
@@ -668,6 +686,19 @@ export const Navbar: React.FC<NavbarProps> = ({
           </form>
 
           <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
+            <button
+              onClick={() => {
+                onNavigateHome();
+                setMobileMenuOpen(false);
+              }}
+              className="p-2.5 rounded-lg bg-emerald-600 text-white text-left font-bold col-span-2 flex items-center justify-between cursor-pointer shadow-xs"
+            >
+              <span className="flex items-center space-x-1.5">
+                <span>🏠</span>
+                <span>{lang === 'vi' ? 'Về Trang Chủ (Làm Mới Toàn Bộ)' : 'Home (Reset View)'}</span>
+              </span>
+              <ChevronRight className="w-4 h-4" />
+            </button>
             {categories.map(cat => (
               <button
                 key={cat.slug}

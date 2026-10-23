@@ -149,7 +149,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
       .catch(err => {
         console.error(err);
         setDetailedProduct(product);
-        setSelectedVariant(product.variants[0]);
+        setSelectedVariant(product.variants?.[0] || null);
         setSelectedImage(product.imageUrl);
       })
       .finally(() => setLoading(false));
@@ -368,7 +368,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <div className="grid grid-cols-3 gap-2 pt-2 border-t border-gray-200 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-400">
                   <div className="flex items-center space-x-1.5">
                     <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-                    <span>Bảo hành {product.specs.warranty_months || 12}T</span>
+                    <span>Bảo hành {product.specs?.warranty_months || 12}T</span>
                   </div>
                   <div className="flex items-center space-x-1.5">
                     <RotateCcw className="w-4 h-4 text-[#059669] dark:text-emerald-400 flex-shrink-0" />
@@ -390,7 +390,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   Đặc điểm nổi bật
                 </h3>
                 <ul className="space-y-2">
-                  {product.highlights.map((h, i) => (
+                  {(product.highlights || []).map((h, i) => (
                     <li key={i} className="flex items-start space-x-2 text-xs text-slate-600 dark:text-slate-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span>{h}</span>
@@ -408,7 +408,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   Thông số kỹ thuật chi tiết
                 </h3>
                 <div className="border border-gray-200 dark:border-slate-800 rounded-2xl overflow-hidden divide-y divide-gray-200 dark:divide-slate-800 text-xs bg-white dark:bg-[#151c2c]">
-                  {product.specs.cpu_model && (
+                  {product.specs?.cpu_model && (
                     <div className="grid grid-cols-3 p-3">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Vi xử lý (CPU)</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -416,7 +416,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.ram_gb && (
+                  {product.specs?.ram_gb && (
                     <div className="grid grid-cols-3 p-3 bg-gray-50/50 dark:bg-slate-900/40">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Bộ nhớ RAM</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -424,7 +424,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.storage_gb && (
+                  {product.specs?.storage_gb && (
                     <div className="grid grid-cols-3 p-3">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Ổ cứng lưu trữ</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -432,7 +432,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.screen_inch && (
+                  {product.specs?.screen_inch && (
                     <div className="grid grid-cols-3 p-3 bg-gray-50/50 dark:bg-slate-900/40">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Màn hình</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -440,7 +440,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.gpu_model && (
+                  {product.specs?.gpu_model && (
                     <div className="grid grid-cols-3 p-3">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Card đồ họa</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -448,7 +448,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.weight_kg && (
+                  {product.specs?.weight_kg && (
                     <div className="grid grid-cols-3 p-3 bg-gray-50/50 dark:bg-slate-900/40">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Trọng lượng</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">
@@ -456,7 +456,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       </span>
                     </div>
                   )}
-                  {product.specs.warranty_months && (
+                  {product.specs?.warranty_months && (
                     <div className="grid grid-cols-3 p-3">
                       <span className="text-slate-500 dark:text-slate-400 font-medium">Bảo hành</span>
                       <span className="col-span-2 font-semibold text-slate-900 dark:text-slate-100">

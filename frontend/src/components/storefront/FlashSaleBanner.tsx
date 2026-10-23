@@ -53,7 +53,7 @@ export const FlashSaleBanner: React.FC<FlashSaleBannerProps> = ({
   }).slice(0, 5);
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 dark:from-[#1a0808] dark:via-[#260e0e] dark:to-[#18110b] rounded-3xl p-4 sm:p-6 text-white shadow-xl mb-8 border border-red-500/30 dark:border-rose-900/50 select-none">
+    <div id="section-flash-sale" className="relative scroll-mt-24 overflow-hidden bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 dark:from-[#1a0808] dark:via-[#260e0e] dark:to-[#18110b] rounded-3xl p-4 sm:p-6 text-white shadow-xl mb-8 border border-red-500/30 dark:border-rose-900/50 select-none">
       {/* Background Subtle Flame Aura */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-red-400/20 dark:bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-400/20 dark:bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
