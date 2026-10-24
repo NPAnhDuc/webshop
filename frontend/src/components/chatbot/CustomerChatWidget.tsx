@@ -129,7 +129,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
           />
           <button
             onClick={() => setIsOpen(true)}
-            className="mt-1 flex items-center space-x-1.5 bg-[#059669] hover:bg-[#047857] text-white px-3.5 py-1.5 rounded-full shadow-lg text-[11px] font-bold tracking-wide transition-all duration-300 hover:shadow-xl active:scale-95 cursor-pointer"
+            className="mt-1 flex items-center space-x-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white px-3.5 py-1.5 rounded-full shadow-lg text-[11px] font-bold tracking-wide transition-all duration-300 hover:shadow-xl active:scale-95 cursor-pointer"
             aria-label="Mở trợ lý AI"
           >
             <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-spin-slow" />
@@ -142,7 +142,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
       {isOpen && (
         <div className="bg-white dark:bg-[#151c2c] rounded-2xl shadow-2xl border border-gray-200 dark:border-slate-800 w-[92vw] sm:w-[420px] h-[580px] max-h-[85vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200 transition-colors">
           {/* Header with Cute Robot */}
-          <div className="bg-[#059669] text-white px-4 py-3 flex items-center justify-between border-b border-emerald-700">
+          <div className="bg-[#d70018] text-white px-4 py-3 flex items-center justify-between border-b border-emerald-700">
             <div className="flex items-center space-x-3">
               <CuteRobotAvatar mode="customer" size="sm" isWaving={false} />
               <div>
@@ -169,7 +169,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
               <span className="truncate">Đang xem: <strong>{currentProduct.name}</strong></span>
               <button
                 onClick={() => handleSend(`Con ${currentProduct.name} này còn hàng không?`)}
-                className="text-[#059669] dark:text-emerald-400 font-bold hover:underline ml-2 flex-shrink-0 cursor-pointer"
+                className="text-[#d70018] dark:text-red-400 font-bold hover:underline ml-2 flex-shrink-0 cursor-pointer"
               >
                 Hỏi về máy này
               </button>
@@ -192,7 +192,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                   <div
                     className={`rounded-2xl px-3.5 py-2.5 leading-relaxed shadow-xs whitespace-pre-wrap ${
                       msg.sender === 'user'
-                        ? 'bg-[#059669] text-white rounded-br-none'
+                        ? 'bg-[#d70018] text-white rounded-br-none'
                         : 'bg-white dark:bg-[#151c2c] text-slate-800 dark:text-slate-100 border border-gray-200 dark:border-slate-800 rounded-bl-none'
                     }`}
                   >
@@ -206,7 +206,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                     {msg.products.map(p => (
                       <div
                         key={p.id}
-                        className="bg-white dark:bg-[#151c2c] rounded-xl border border-gray-200 dark:border-slate-800 p-2.5 flex items-center space-x-3 shadow-xs hover:border-[#059669] dark:hover:border-emerald-500 transition"
+                        className="bg-white dark:bg-[#151c2c] rounded-xl border border-gray-200 dark:border-slate-800 p-2.5 flex items-center space-x-3 shadow-xs hover:border-[#d70018] dark:hover:border-emerald-500 transition"
                       >
                         <img
                           src={p.imageUrl}
@@ -216,12 +216,12 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                         <div className="flex-1 min-w-0">
                           <h5
                             onClick={() => onSelectProduct(p)}
-                            className="font-bold text-slate-900 dark:text-slate-100 text-xs line-clamp-1 hover:text-[#059669] dark:hover:text-emerald-400 cursor-pointer"
+                            className="font-bold text-slate-900 dark:text-slate-100 text-xs line-clamp-1 hover:text-[#d70018] dark:hover:text-emerald-400 cursor-pointer"
                           >
                             {p.name}
                           </h5>
                           <div className="flex items-center space-x-1.5 mt-0.5">
-                            <span className="font-bold text-[#059669] dark:text-emerald-400 font-mono">
+                            <span className="font-bold text-[#d70018] dark:text-red-400 font-mono">
                               {new Intl.NumberFormat('vi-VN').format(p.price)}₫
                             </span>
                             {p.specs.panel && (
@@ -233,14 +233,14 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                           <div className="flex items-center space-x-2 mt-1">
                             <button
                               onClick={() => onSelectProduct(p)}
-                              className="text-[11px] text-[#059669] dark:text-emerald-400 font-semibold hover:underline cursor-pointer"
+                              className="text-[11px] text-[#d70018] dark:text-red-400 font-semibold hover:underline cursor-pointer"
                             >
                               Xem chi tiết &rarr;
                             </button>
                             <span className="text-slate-300 dark:text-slate-700">•</span>
                             <button
                               onClick={() => addToCart(p)}
-                              className="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold hover:underline cursor-pointer"
+                              className="text-[11px] text-emerald-600 dark:text-red-400 font-semibold hover:underline cursor-pointer"
                             >
                               + Thêm giỏ
                             </button>
@@ -258,7 +258,7 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                       <button
                         key={idx}
                         onClick={() => handleSend(pill)}
-                        className="text-[11px] px-2.5 py-1 bg-white dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 hover:text-[#059669] dark:hover:text-emerald-400 border border-gray-200 dark:border-slate-700 rounded-full transition shadow-2xs text-left cursor-pointer"
+                        className="text-[11px] px-2.5 py-1 bg-white dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 hover:text-[#d70018] dark:hover:text-emerald-400 border border-gray-200 dark:border-slate-700 rounded-full transition shadow-2xs text-left cursor-pointer"
                       >
                         {pill}
                       </button>
@@ -274,9 +274,9 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
 
             {loading && (
               <div className="flex items-center space-x-2 text-slate-400 dark:text-slate-500 text-xs py-1">
-                <div className="w-2 h-2 bg-[#059669] rounded-full animate-bounce" />
-                <div className="w-2 h-2 bg-[#059669] rounded-full animate-bounce delay-100" />
-                <div className="w-2 h-2 bg-[#059669] rounded-full animate-bounce delay-200" />
+                <div className="w-2 h-2 bg-[#d70018] rounded-full animate-bounce" />
+                <div className="w-2 h-2 bg-[#d70018] rounded-full animate-bounce delay-100" />
+                <div className="w-2 h-2 bg-[#d70018] rounded-full animate-bounce delay-200" />
                 <span className="text-[11px] text-slate-500 dark:text-slate-400 italic ml-1">Trợ lý AI đang đối chiếu dữ liệu kho...</span>
               </div>
             )}
@@ -297,12 +297,12 @@ export const CustomerChatWidget: React.FC<CustomerChatWidgetProps> = ({
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 placeholder="Nhập câu hỏi... (VD: laptop 20tr màn OLED)"
-                className="flex-1 px-3.5 py-2 border border-gray-200 dark:border-slate-700 rounded-xl text-xs focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100"
+                className="flex-1 px-3.5 py-2 border border-gray-200 dark:border-slate-700 rounded-xl text-xs focus:outline-none focus:border-[#d70018] focus:ring-1 focus:ring-[#059669] bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100"
               />
               <button
                 type="submit"
                 disabled={!input.trim() || loading}
-                className="p-2 bg-[#059669] hover:bg-[#047857] disabled:bg-gray-300 dark:disabled:bg-slate-800 text-white rounded-xl transition cursor-pointer"
+                className="p-2 bg-[#d70018] hover:bg-[#b91c1c] disabled:bg-gray-300 dark:disabled:bg-slate-800 text-white rounded-xl transition cursor-pointer"
               >
                 <Send className="w-4 h-4" />
               </button>

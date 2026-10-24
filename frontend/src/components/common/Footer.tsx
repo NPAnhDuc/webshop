@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
       <div className="border-b border-gray-200 dark:border-slate-800 py-6 bg-gray-50/70 dark:bg-[#151c2c]/40">
         <div className="max-w-[1440px] xl:max-w-[1536px] mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           <div className="flex items-center space-x-3 bg-white dark:bg-[#151c2c] p-3 rounded-xl border border-gray-150 dark:border-slate-800 shadow-2xs">
-            <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-red-50 dark:bg-red-950/60 text-[#d70018] dark:text-red-400 flex items-center justify-center flex-shrink-0">
               <Truck className="w-5 h-5" />
             </div>
             <div>
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-3 bg-white dark:bg-[#151c2c] p-3 rounded-xl border border-gray-150 dark:border-slate-800 shadow-2xs">
-            <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-red-50 dark:bg-red-950/60 text-[#d70018] dark:text-red-400 flex items-center justify-center flex-shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-3 bg-white dark:bg-[#151c2c] p-3 rounded-xl border border-gray-150 dark:border-slate-800 shadow-2xs">
-            <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-red-50 dark:bg-red-950/60 text-[#d70018] dark:text-red-400 flex items-center justify-center flex-shrink-0">
               <RotateCcw className="w-5 h-5" />
             </div>
             <div>
@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-3 bg-white dark:bg-[#151c2c] p-3 rounded-xl border border-gray-150 dark:border-slate-800 shadow-2xs">
-            <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-red-50 dark:bg-red-950/60 text-[#d70018] dark:text-red-400 flex items-center justify-center flex-shrink-0">
               <CreditCard className="w-5 h-5" />
             </div>
             <div>
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
         
         {/* Col 1: Hotlines & Payments */}
         <div className="space-y-3">
-          <h3 className="font-black text-slate-900 dark:text-slate-100 text-xs uppercase tracking-wider text-[#059669] dark:text-emerald-400">
+          <h3 className="font-black text-slate-900 dark:text-slate-100 text-xs uppercase tracking-wider text-[#d70018] dark:text-red-400">
             {lang === 'vi' ? 'Tổng Đài Hỗ Trợ Miễn Phí' : 'Toll-Free Support Lines'}
           </h3>
           <ul className="space-y-1.5 text-[11px]">
@@ -99,7 +99,7 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="flex flex-wrap gap-1.5">
               <span className="px-2 py-1 bg-gray-100 dark:bg-slate-800 rounded border border-gray-200 dark:border-slate-700 font-bold text-[10px] text-slate-700 dark:text-slate-300">VISA / MASTER</span>
-              <span className="px-2 py-1 bg-emerald-50 dark:bg-emerald-950/60 rounded border border-emerald-200 dark:border-emerald-800 font-bold text-[10px] text-[#059669] dark:text-emerald-400">VNPAY QR</span>
+              <span className="px-2 py-1 bg-emerald-50 dark:bg-emerald-950/60 rounded border border-emerald-200 dark:border-emerald-800 font-bold text-[10px] text-[#d70018] dark:text-red-400">VNPAY QR</span>
               <span className="px-2 py-1 bg-pink-50 dark:bg-pink-950/60 rounded border border-pink-200 dark:border-pink-900/60 font-bold text-[10px] text-pink-700 dark:text-pink-300">MOMO</span>
               <span className="px-2 py-1 bg-blue-50 dark:bg-blue-950/60 rounded border border-blue-200 dark:border-blue-900/60 font-bold text-[10px] text-blue-700 dark:text-blue-300">ZALOPAY</span>
               <span className="px-2 py-1 bg-yellow-50 dark:bg-yellow-950/60 rounded border border-yellow-200 dark:border-yellow-800/60 font-bold text-[10px] text-yellow-800 dark:text-yellow-300">TRẢ GÓP 0%</span>
@@ -113,12 +113,12 @@ export const Footer: React.FC = () => {
             {lang === 'vi' ? 'Thông Tin & Chính Sách' : 'Information & Policies'}
           </h3>
           <ul className="space-y-2 text-[11px] text-slate-600 dark:text-slate-400">
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Mua hàng và thanh toán Online' : 'Online Purchase & Checkout'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Chính sách mua hàng trả góp 0%' : '0% Installment Policy'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Chính sách giao hàng hỏa tốc 2 giờ' : '2-Hour Delivery Policy'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Chính sách bảo hành & 1 đổi 1 trong 30 ngày' : '30-Day Hardware Replacement'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Tra cứu hóa đơn điện tử VAT' : 'E-VAT Invoice Lookup'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Chính sách bảo mật thông tin khách hàng' : 'Customer Privacy Policy'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Mua hàng và thanh toán Online' : 'Online Purchase & Checkout'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Chính sách mua hàng trả góp 0%' : '0% Installment Policy'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Chính sách giao hàng hỏa tốc 2 giờ' : '2-Hour Delivery Policy'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Chính sách bảo hành & 1 đổi 1 trong 30 ngày' : '30-Day Hardware Replacement'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Tra cứu hóa đơn điện tử VAT' : 'E-VAT Invoice Lookup'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Chính sách bảo mật thông tin khách hàng' : 'Customer Privacy Policy'}</a></li>
           </ul>
         </div>
 
@@ -128,11 +128,11 @@ export const Footer: React.FC = () => {
             {lang === 'vi' ? 'Dịch Vụ & T-Member' : 'Services & T-Member'}
           </h3>
           <ul className="space-y-2 text-[11px] text-slate-600 dark:text-slate-400">
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Khách hàng doanh nghiệp (B2B) chiết khấu cao' : 'Corporate B2B Discount Program'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Đặc quyền hội viên T-Member & T-VIP' : 'T-Member & T-VIP Perks'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Thu cũ đổi mới - Lên đời trợ giá 4 triệu' : 'Trade-in & Upgrade Subsidy up to 4M'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Dịch vụ kỹ thuật bảo dưỡng phòng Lab' : 'Lab Maintenance & Stress-Testing'}</a></li>
-            <li><a href="#" className="hover:text-[#059669] dark:hover:text-emerald-400 transition">{lang === 'vi' ? 'Tin công nghệ TechStore News mới nhất' : 'TechStore News & Updates'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Khách hàng doanh nghiệp (B2B) chiết khấu cao' : 'Corporate B2B Discount Program'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Đặc quyền hội viên T-Member & T-VIP' : 'T-Member & T-VIP Perks'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Thu cũ đổi mới - Lên đời trợ giá 4 triệu' : 'Trade-in & Upgrade Subsidy up to 4M'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Dịch vụ kỹ thuật bảo dưỡng phòng Lab' : 'Lab Maintenance & Stress-Testing'}</a></li>
+            <li><a href="#" className="hover:text-[#d70018] dark:hover:text-red-400 transition">{lang === 'vi' ? 'Tin công nghệ TechStore News mới nhất' : 'TechStore News & Updates'}</a></li>
           </ul>
         </div>
 
@@ -141,8 +141,8 @@ export const Footer: React.FC = () => {
           <h3 className="font-black text-slate-900 dark:text-slate-100 text-xs uppercase tracking-wider">
             {lang === 'vi' ? 'Chứng Nhận & Công Nghệ' : 'Certifications & AI'}
           </h3>
-          <div className="p-3 bg-emerald-50/60 dark:bg-emerald-950/40 rounded-xl border border-emerald-200/80 dark:border-emerald-800 text-[11px] space-y-1.5">
-            <div className="flex items-center space-x-1.5 text-[#059669] dark:text-emerald-400 font-bold">
+          <div className="p-3 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 text-[11px] space-y-1.5">
+            <div className="flex items-center space-x-1.5 text-[#d70018] dark:text-red-400 font-bold">
               <Sparkles className="w-4 h-4" />
               <span>{lang === 'vi' ? 'Trợ Lý AI TechStore' : 'TechStore AI Assistant'}</span>
             </div>
@@ -167,21 +167,21 @@ export const Footer: React.FC = () => {
       <div className="border-t border-gray-200 dark:border-slate-800 py-6 bg-gray-50 dark:bg-[#111726]/60">
         <div className="max-w-[1440px] xl:max-w-[1536px] mx-auto px-4 space-y-3">
           <div className="flex items-center space-x-2 text-slate-900 dark:text-slate-100 font-bold text-xs">
-            <MapPin className="w-4 h-4 text-[#059669] dark:text-emerald-400" />
+            <MapPin className="w-4 h-4 text-[#d70018] dark:text-red-400" />
             <span className="uppercase tracking-wide">{lang === 'vi' ? 'Hệ thống Showroom TechStore PC trên toàn quốc:' : 'TechStore PC Flagship Showroom Network:'}</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[11px] text-slate-600 dark:text-slate-400">
             <div>
-              <strong className="text-slate-800 dark:text-slate-200">Showroom 1 (Thái Hà):</strong> 377-379 Thái Hà, Q. Đống Đa, Hà Nội • <span className="text-[#059669] dark:text-emerald-400 font-mono">097.111.3323</span>
+              <strong className="text-slate-800 dark:text-slate-200">Showroom 1 (Thái Hà):</strong> 377-379 Thái Hà, Q. Đống Đa, Hà Nội • <span className="text-[#d70018] dark:text-red-400 font-mono">097.111.3323</span>
             </div>
             <div>
-              <strong className="text-slate-800 dark:text-slate-200">Showroom 2 (Lê Thanh Nghị):</strong> 131 Lê Thanh Nghị, Q. Hai Bà Trưng, Hà Nội • <span className="text-[#059669] dark:text-emerald-400 font-mono">098.333.6623</span>
+              <strong className="text-slate-800 dark:text-slate-200">Showroom 2 (Lê Thanh Nghị):</strong> 131 Lê Thanh Nghị, Q. Hai Bà Trưng, Hà Nội • <span className="text-[#d70018] dark:text-red-400 font-mono">098.333.6623</span>
             </div>
             <div>
-              <strong className="text-slate-800 dark:text-slate-200">Showroom 3 (TP.HCM):</strong> 249 Lý Thường Kiệt, P.15, Q.10, TP.HCM • <span className="text-[#059669] dark:text-emerald-400 font-mono">090.888.6623</span>
+              <strong className="text-slate-800 dark:text-slate-200">Showroom 3 (TP.HCM):</strong> 249 Lý Thường Kiệt, P.15, Q.10, TP.HCM • <span className="text-[#d70018] dark:text-red-400 font-mono">090.888.6623</span>
             </div>
             <div>
-              <strong className="text-slate-800 dark:text-slate-200">Showroom 4 (Đà Nẵng):</strong> 83-85 Nguyễn Văn Linh, Q. Hải Châu, Đà Nẵng • <span className="text-[#059669] dark:text-emerald-400 font-mono">091.777.9923</span>
+              <strong className="text-slate-800 dark:text-slate-200">Showroom 4 (Đà Nẵng):</strong> 83-85 Nguyễn Văn Linh, Q. Hải Châu, Đà Nẵng • <span className="text-[#d70018] dark:text-red-400 font-mono">091.777.9923</span>
             </div>
           </div>
         </div>

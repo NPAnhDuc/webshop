@@ -175,7 +175,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         {loading ? (
           <div className="p-16 text-center text-slate-400">
-            <div className="w-8 h-8 border-2 border-[#059669] dark:border-emerald-400 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+            <div className="w-8 h-8 border-2 border-[#d70018] dark:border-emerald-400 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
             <span>Đang tải thông số kỹ thuật...</span>
           </div>
         ) : (
@@ -200,7 +200,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                         key={idx}
                         onClick={() => setSelectedImage(img)}
                         className={`w-16 h-16 rounded-xl border p-1 bg-white dark:bg-slate-800 flex-shrink-0 transition cursor-pointer ${
-                          selectedImage === img ? 'border-[#059669] dark:border-emerald-400 ring-2 ring-emerald-200 dark:ring-emerald-900/50' : 'border-gray-200 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-600'
+                          selectedImage === img ? 'border-[#d70018] dark:border-emerald-400 ring-2 ring-emerald-200 dark:ring-emerald-900/50' : 'border-gray-200 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-600'
                         }`}
                       >
                         <img src={img} alt="thumb" className="w-full h-full object-contain" />
@@ -212,7 +212,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {/* AI Assistant Context Action */}
                 <div className="bg-emerald-50/60 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 rounded-2xl p-3.5 flex items-center justify-between">
                   <div className="flex items-center space-x-2.5">
-                    <Sparkles className="w-5 h-5 text-[#059669] dark:text-emerald-400" />
+                    <Sparkles className="w-5 h-5 text-[#d70018] dark:text-red-400" />
                     <div>
                       <p className="text-xs font-bold text-slate-900 dark:text-slate-100">Trợ lý AI TechStore</p>
                       <p className="text-[11px] text-slate-500 dark:text-slate-400">Tư vấn ưu nhược điểm & ước tính trả góp</p>
@@ -223,7 +223,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       onClose();
                       onAskBot(product);
                     }}
-                    className="px-3 py-1.5 bg-[#059669] hover:bg-[#047857] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-xs transition cursor-pointer"
+                    className="px-3 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-xs transition cursor-pointer"
                   >
                     Hỏi ngay
                   </button>
@@ -233,7 +233,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               {/* Right Column: Title, Variants, Pricing & Actions */}
               <div className="space-y-4">
                 <div>
-                  <div className="flex items-center space-x-2 text-xs text-[#059669] dark:text-emerald-400 font-bold mb-1">
+                  <div className="flex items-center space-x-2 text-xs text-[#d70018] dark:text-red-400 font-bold mb-1">
                     <span className="uppercase">{product.brandName}</span>
                     <span>•</span>
                     <span className="uppercase text-slate-400 dark:text-slate-500">{product.categorySlug}</span>
@@ -258,7 +258,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {/* Pricing & Stock Status */}
                 <div className="bg-gray-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-gray-200 dark:border-slate-800 space-y-2">
                   <div className="flex items-baseline space-x-3">
-                    <span className="text-2xl font-black text-[#059669] dark:text-emerald-400 font-mono">
+                    <span className="text-2xl font-black text-[#d70018] dark:text-red-400 font-mono">
                       {new Intl.NumberFormat('vi-VN').format(currentPrice)}₫
                     </span>
                     {originalPrice && originalPrice > currentPrice && (
@@ -306,7 +306,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                           onClick={() => setSelectedVariant(v)}
                           className={`p-3 rounded-xl border text-xs text-left transition flex items-center justify-between cursor-pointer ${
                             selectedVariant?.id === v.id
-                              ? 'border-[#059669] dark:border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-[#059669] dark:text-emerald-300 font-bold shadow-2xs'
+                              ? 'border-[#d70018] dark:border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-[#d70018] dark:text-emerald-300 font-bold shadow-2xs'
                               : 'border-gray-200 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-600 text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800/80'
                           }`}
                         >
@@ -348,7 +348,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                           addToCart(product, selectedVariant || undefined, quantity);
                           onClose();
                         }}
-                        className="flex-1 py-3 px-4 bg-[#059669] hover:bg-[#047857] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition shadow-sm active:scale-95 cursor-pointer"
+                        className="flex-1 py-3 px-4 bg-[#d70018] hover:bg-[#b91c1c] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition shadow-sm active:scale-95 cursor-pointer"
                       >
                         <ShoppingCart className="w-4 h-4" />
                         <span>Thêm vào giỏ hàng</span>
@@ -367,11 +367,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {/* Store Commitments */}
                 <div className="grid grid-cols-3 gap-2 pt-2 border-t border-gray-200 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-400">
                   <div className="flex items-center space-x-1.5">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                    <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-red-400 flex-shrink-0" />
                     <span>Bảo hành {product.specs?.warranty_months || 12}T</span>
                   </div>
                   <div className="flex items-center space-x-1.5">
-                    <RotateCcw className="w-4 h-4 text-[#059669] dark:text-emerald-400 flex-shrink-0" />
+                    <RotateCcw className="w-4 h-4 text-[#d70018] dark:text-red-400 flex-shrink-0" />
                     <span>1 đổi 1 30 ngày</span>
                   </div>
                   <div className="flex items-center space-x-1.5">
@@ -392,7 +392,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <ul className="space-y-2">
                   {(product.highlights || []).map((h, i) => (
                     <li key={i} className="flex items-start space-x-2 text-xs text-slate-600 dark:text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                       <span>{h}</span>
                     </li>
                   ))}
@@ -473,7 +473,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-gray-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-gray-200 dark:border-slate-800">
                 <div className="flex items-center space-x-4">
                   <div className="text-center">
-                    <span className="text-3xl font-black text-[#059669] dark:text-emerald-400 font-mono">4.9</span>
+                    <span className="text-3xl font-black text-[#d70018] dark:text-red-400 font-mono">4.9</span>
                     <div className="flex items-center justify-center text-amber-400 mt-0.5">
                       {[1, 2, 3, 4, 5].map(s => (
                         <Star key={s} className="w-3.5 h-3.5 fill-amber-400" />
@@ -494,7 +494,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
                 <button
                   onClick={() => setShowReviewForm(!showReviewForm)}
-                  className="px-4 py-2 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-xs font-bold transition shadow-xs flex items-center justify-center space-x-1.5 cursor-pointer self-start sm:self-auto"
+                  className="px-4 py-2 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-xl text-xs font-bold transition shadow-xs flex items-center justify-center space-x-1.5 cursor-pointer self-start sm:self-auto"
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
                   <span>{showReviewForm ? 'Đóng lại' : 'Viết đánh giá'}</span>
@@ -504,7 +504,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               {/* Success Notification after submitting review */}
               {reviewSubmitted && (
                 <div className="p-3 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 rounded-xl text-xs text-emerald-800 dark:text-emerald-300 font-bold flex items-center space-x-2 animate-in fade-in">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-red-400" />
                   <span>Cảm ơn bạn! Đánh giá của bạn đã được xuất bản công khai trên TechStore.</span>
                 </div>
               )}
@@ -522,7 +522,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                         onChange={e => setNewAuthor(e.target.value)}
                         placeholder="Ví dụ: Hoàng Long"
                         required
-                        className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#059669]"
+                        className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#d70018]"
                       />
                     </div>
                     <div>
@@ -530,7 +530,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       <select
                         value={newRating}
                         onChange={e => setNewRating(Number(e.target.value))}
-                        className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#059669]"
+                        className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#d70018]"
                       >
                         <option value={5}>⭐⭐⭐⭐⭐ Tuyệt vời (5 sao)</option>
                         <option value={4}>⭐⭐⭐⭐ Rất tốt (4 sao)</option>
@@ -546,7 +546,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       rows={2}
                       placeholder="Chia sẻ trải nghiệm sử dụng thực tế của bạn để giúp khách hàng khác có thêm thông tin..."
                       required
-                      className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#059669]"
+                      className="w-full px-3 py-2 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:border-[#d70018]"
                     />
                   </div>
                   <div className="flex justify-end space-x-2">
@@ -559,7 +559,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-1.5 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-xs font-bold transition shadow-xs cursor-pointer"
+                      className="px-4 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-xl text-xs font-bold transition shadow-xs cursor-pointer"
                     >
                       Gửi đánh giá
                     </button>
@@ -576,7 +576,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-[#059669] dark:text-emerald-400 font-bold text-xs flex items-center justify-center">
+                        <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-[#d70018] dark:text-red-400 font-bold text-xs flex items-center justify-center">
                           {rev.author.charAt(0)}
                         </div>
                         <div>
@@ -584,8 +584,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                             <span className="font-bold text-xs text-slate-900 dark:text-slate-100">{rev.author}</span>
                             <span className="text-[10px] text-slate-400">({rev.location})</span>
                             {rev.verified && (
-                              <span className="text-[10px] bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 px-1.5 py-0.2 rounded font-semibold border border-emerald-200 dark:border-emerald-800 flex items-center space-x-1">
-                                <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                              <span className="text-[10px] bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-red-400 px-1.5 py-0.2 rounded font-semibold border border-emerald-200 dark:border-emerald-800 flex items-center space-x-1">
+                                <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-red-400" />
                                 <span>Đã mua tại TechStore</span>
                               </span>
                             )}
@@ -603,7 +603,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
                       <button
                         onClick={() => sound.playPop()}
-                        className="flex items-center space-x-1 text-[11px] text-slate-400 hover:text-[#059669] dark:hover:text-emerald-400 transition"
+                        className="flex items-center space-x-1 text-[11px] text-slate-400 hover:text-[#d70018] dark:hover:text-emerald-400 transition"
                       >
                         <ThumbsUp className="w-3 h-3" />
                         <span>Hữu ích ({rev.helpful})</span>

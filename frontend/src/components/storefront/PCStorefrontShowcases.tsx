@@ -65,13 +65,13 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
     return true;
   }).slice(0, 5);
 
-  // 2. PC Đồ Họa & Workstation AI (Nguyễn Công PC Signature)
+  // 2. PC Đồ Họa & Workstation AI
   const workstationProducts = products.filter(p => {
     const isDesign = p.specs.demand?.includes('design_graphics') || p.specs.demand?.includes('technical') || p.specs.panel === 'OLED' || (p.specs.cores && p.specs.cores >= 8);
     if (!isDesign && p.categorySlug !== 'cpu' && p.categorySlug !== 'vga') return false;
     if (workstationTab === '2d') return p.price <= 25000000;
     if (workstationTab === '3d') return (p.specs.vram_gb && p.specs.vram_gb >= 8) || p.price > 20000000;
-    if (workstationTab === 'video') return (p.specs.storage_gb && p.specs.storage_gb >= 1000) || p.specs.ram_gb && p.specs.ram_gb >= 16;
+    if (workstationTab === 'video') return (p.specs.storage_gb && p.specs.storage_gb >= 1000) || (p.specs.ram_gb && p.specs.ram_gb >= 16);
     if (workstationTab === 'ai') return p.price > 30000000 || p.specs.demand?.includes('technical');
     return true;
   }).slice(0, 5);
@@ -102,13 +102,13 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
   return (
     <div className="space-y-12">
       {/* ========================================================================= */}
-      {/* SECTION 1: 🎮 PC GAMING - ESPORTS CHIẾN GAME (BEST SELLERS)             */}
+      {/* SECTION 1: PC GAMING - ESPORTS CHIẾN GAME                                 */}
       {/* ========================================================================= */}
       <section id="section-pc-gaming" className="scroll-mt-24 space-y-3">
         {/* Header Bar */}
-        <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 dark:from-[#0b131e] dark:via-[#09221b] dark:to-[#071318] text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-emerald-900/50 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div className="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 flex items-center justify-center font-black shadow-md flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-[#d70018] text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
               <Gamepad2 className="w-6 h-6" />
             </div>
             <div>
@@ -116,11 +116,11 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 <h3 className="text-base sm:text-lg font-black tracking-tight text-white uppercase">
                   PC Gaming - Esports Chiến Game
                 </h3>
-                <span className="bg-red-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full animate-pulse">
+                <span className="bg-red-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
                   HOT DEALS
                 </span>
               </div>
-              <p className="text-[11px] text-emerald-200/90 dark:text-emerald-400">
+              <p className="text-[11px] text-slate-300">
                 Tối ưu FPS mượt mà cho Black Myth: Wukong, CS2, Cyberpunk 2077, GTA V, Valorant
               </p>
             </div>
@@ -139,8 +139,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 onClick={() => setGamingTab(tab.id as any)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                   gamingTab === tab.id
-                    ? 'bg-yellow-400 text-slate-950 shadow-sm'
-                    : 'bg-white/10 hover:bg-white/20 text-white/90'
+                    ? 'bg-[#d70018] text-white shadow-sm'
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
                 }`}
               >
                 {tab.label}
@@ -165,46 +165,25 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
         </div>
 
         {/* Bottom Action Footer */}
-        <div className="flex items-center justify-between pt-1">
-          <div className="hidden sm:flex items-center space-x-2 text-xs text-slate-500 dark:text-slate-400">
-            <span className="flex items-center space-x-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-              <span>Cài đặt sẵn Windows 11 & Game bản quyền</span>
-            </span>
-            <span>•</span>
-            <span className="flex items-center space-x-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-              <span>Test Stress-Test nhiệt độ FurMark 24h</span>
-            </span>
-          </div>
-
-          <div className="flex items-center space-x-2 w-full sm:w-auto justify-end">
-            <button
-              onClick={onNavigatePCBuilder}
-              className="px-3.5 py-1.5 bg-yellow-400 hover:bg-yellow-300 text-slate-950 text-xs font-extrabold rounded-xl transition flex items-center space-x-1 cursor-pointer shadow-xs"
-            >
-              <SlidersHorizontal className="w-3.5 h-3.5" />
-              <span>Tự Ráp PC Theo Ý</span>
-            </button>
-            <button
-              onClick={() => onFilterCategory('pc')}
-              className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-emerald-500 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
-            >
-              <span>Xem tất cả dàn Gaming</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
+        <div className="flex items-center justify-end space-x-2 pt-1">
+          <button
+            onClick={() => onFilterCategory('pc')}
+            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 hover:text-[#d70018] dark:hover:text-red-400 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
+          >
+            <span>Xem tất cả cấu hình PC Gaming</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
         </div>
       </section>
 
       {/* ========================================================================= */}
-      {/* SECTION 2: 🎨 PC ĐỒ HỌA - WORKSTATION - AI RENDER (NGUYỄN CÔNG PC SPECIAL) */}
+      {/* SECTION 2: PC ĐỒ HỌA - WORKSTATION - AI RENDER                            */}
       {/* ========================================================================= */}
       <section id="section-pc-workstation" className="scroll-mt-24 space-y-3">
         {/* Header Bar */}
-        <div className="bg-gradient-to-r from-teal-950 via-emerald-900 to-slate-950 dark:from-[#06181b] dark:via-[#09221b] dark:to-[#09101b] text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-teal-800/50 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div className="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-teal-400 text-slate-950 flex items-center justify-center font-black shadow-md flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
               <Palette className="w-6 h-6" />
             </div>
             <div>
@@ -212,11 +191,11 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 <h3 className="text-base sm:text-lg font-black tracking-tight text-white uppercase">
                   PC Đồ Họa - Workstation - AI Render
                 </h3>
-                <span className="bg-yellow-400 text-slate-950 text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
-                  NGUYỄN CÔNG SPEC
+                <span className="bg-blue-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
+                  STUDIO PRO
                 </span>
               </div>
-              <p className="text-[11px] text-teal-200/90 dark:text-teal-400">
+              <p className="text-[11px] text-slate-300">
                 Chuyên dụng cho Premiere 4K/8K, 3ds Max, Blender, Lumion Kiến Trúc & Deep Learning AI
               </p>
             </div>
@@ -236,8 +215,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 onClick={() => setWorkstationTab(tab.id as any)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                   workstationTab === tab.id
-                    ? 'bg-teal-400 text-slate-950 shadow-sm'
-                    : 'bg-white/10 hover:bg-white/20 text-white/90'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
                 }`}
               >
                 {tab.label}
@@ -246,15 +225,15 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
           </div>
         </div>
 
-        {/* Exclusive Nguyễn Công PC Privilege Banner */}
-        <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-teal-950/40 dark:to-emerald-950/30 border border-teal-200 dark:border-teal-900/60 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-teal-950 dark:text-teal-200">
+        {/* Exclusive Privilege Banner */}
+        <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-800 dark:text-slate-200">
           <div className="flex items-center space-x-2">
-            <span className="text-base">🎁</span>
+            <Sparkles className="w-4 h-4 text-blue-600 flex-shrink-0" />
             <span>
-              <strong>ĐẶC QUYỀN ĐỒ HỌA:</strong> Tặng gói <strong>Cân màu màn hình SpyderX Elite trọn đời</strong> + Cài đặt sẵn trọn bộ Adobe 2026, AutoCAD, 3ds Max, V-Ray theo yêu cầu!
+              <strong>ĐẶC QUYỀN ĐỒ HỌA:</strong> Tặng gói <strong>Cân màu màn hình SpyderX Elite trọn đời</strong> + Hỗ trợ cài đặt trọn bộ Adobe 2026, AutoCAD, 3ds Max, V-Ray theo yêu cầu!
             </span>
           </div>
-          <span className="text-[11px] font-bold text-teal-700 dark:text-teal-400 underline whitespace-nowrap">
+          <span className="text-[11px] font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">
             Cam kết hoàn tiền 100% nếu giật lag render
           </span>
         </div>
@@ -280,7 +259,7 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
             onClick={() => {
               if (onFilterDemand) onFilterDemand('design_graphics');
             }}
-            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-teal-500 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
+            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-blue-500 hover:text-blue-600 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
           >
             <span>Xem tất cả cấu hình Đồ Họa & AI</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -289,13 +268,13 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
       </section>
 
       {/* ========================================================================= */}
-      {/* SECTION 3: 💻 LAPTOP GAMING & ĐỒ HỌA CHÍNH HÃNG                         */}
+      {/* SECTION 3: LAPTOP GAMING & ĐỒ HỌA CHÍNH HÃNG                             */}
       {/* ========================================================================= */}
       <section id="section-laptops" className="scroll-mt-24 space-y-3">
         {/* Header Bar */}
-        <div className="bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 dark:from-[#061813] dark:via-[#0c121e] dark:to-[#071813] text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-emerald-800/50 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div className="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-slate-700 text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
               <Laptop className="w-6 h-6" />
             </div>
             <div>
@@ -307,7 +286,7 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                   TRẢ GÓP 0%
                 </span>
               </div>
-              <p className="text-[11px] text-emerald-200/90 dark:text-emerald-400">
+              <p className="text-[11px] text-slate-300">
                 Phân phối chính hãng ASUS ROG, Lenovo Legion, Acer Predator, Dell XPS, MSI, Apple MacBook
               </p>
             </div>
@@ -321,8 +300,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 onClick={() => setLaptopTab(brand as any)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                   laptopTab === brand
-                    ? 'bg-emerald-500 text-white shadow-sm'
-                    : 'bg-white/10 hover:bg-white/20 text-white/90'
+                    ? 'bg-[#d70018] text-white shadow-sm'
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
                 }`}
               >
                 {brand === 'all' ? 'Tất cả hãng' : brand}
@@ -350,22 +329,22 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
         <div className="flex items-center justify-end space-x-2 pt-1">
           <button
             onClick={() => onFilterCategory('laptop')}
-            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-emerald-500 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
+            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 hover:text-[#d70018] text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
           >
-            <span>Xem toàn bộ 19+ Laptop chính hãng</span>
+            <span>Xem toàn bộ Laptop chính hãng</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
       </section>
 
       {/* ========================================================================= */}
-      {/* SECTION 4: ⚙️ LINH KIỆN MÁY TÍNH - NÂNG CẤP BUILD DÀN PC                  */}
+      {/* SECTION 4: LINH KIỆN MÁY TÍNH - NÂNG CẤP BUILD DÀN PC                      */}
       {/* ========================================================================= */}
       <section id="section-pc-components" className="scroll-mt-24 space-y-3">
         {/* Header Bar */}
-        <div className="bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-950 dark:from-[#0a111a] dark:via-[#09221b] dark:to-[#081018] text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-700 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div className="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-yellow-400 text-slate-950 flex items-center justify-center font-black shadow-md flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-[#d70018] text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
               <Cpu className="w-6 h-6" />
             </div>
             <div>
@@ -373,11 +352,11 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 <h3 className="text-base sm:text-lg font-black tracking-tight text-white uppercase">
                   Linh Kiện Máy Tính - Nâng Cấp Build Dàn Máy
                 </h3>
-                <span className="bg-emerald-500 text-slate-950 text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
+                <span className="bg-slate-800 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full border border-slate-700">
                   GENUINE 100%
                 </span>
               </div>
-              <p className="text-[11px] text-emerald-200/90 dark:text-emerald-400">
+              <p className="text-[11px] text-slate-300">
                 CPU Intel & AMD, Card VGA Nvidia, Bo Mạch Chủ B760/Z790, RAM DDR5, Ổ Cứng NVMe PCIe 4.0
               </p>
             </div>
@@ -398,8 +377,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                 onClick={() => setComponentTab(tab.id as any)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                   componentTab === tab.id
-                    ? 'bg-yellow-400 text-slate-950 shadow-sm'
-                    : 'bg-white/10 hover:bg-white/20 text-white/90'
+                    ? 'bg-[#d70018] text-white shadow-sm'
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
                 }`}
               >
                 {tab.label}
@@ -408,10 +387,10 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
           </div>
         </div>
 
-        {/* Big Interactive Callout Banner (HACOM / Nguyễn Công PC Style) */}
-        <div className="bg-gradient-to-r from-yellow-50 via-amber-50 to-orange-50 dark:from-yellow-950/30 dark:via-amber-950/20 dark:to-orange-950/20 border border-yellow-200 dark:border-yellow-800/60 rounded-2xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-2xs">
+        {/* Big Interactive Callout Banner */}
+        <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-2xs">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-xl bg-yellow-400 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 shadow-sm">
+            <div className="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold flex-shrink-0 shadow-sm">
               <Wrench className="w-6 h-6" />
             </div>
             <div>
@@ -426,9 +405,9 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
 
           <button
             onClick={onNavigatePCBuilder}
-            className="px-5 py-2.5 bg-yellow-400 hover:bg-yellow-300 text-slate-950 text-xs font-black rounded-xl transition flex items-center justify-center space-x-1.5 shadow-md flex-shrink-0 cursor-pointer active:scale-95"
+            className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-black rounded-xl transition flex items-center justify-center space-x-1.5 shadow-md flex-shrink-0 cursor-pointer active:scale-95"
           >
-            <SlidersHorizontal className="w-4 h-4" />
+            <SlidersHorizontal className="w-4 h-4 text-amber-400" />
             <span>Mở Trình Xây Dựng Cấu Hình Ngay</span>
           </button>
         </div>
@@ -452,23 +431,23 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
         <div className="flex items-center justify-end space-x-2 pt-1">
           <button
             onClick={() => onFilterCategory('cpu')}
-            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-yellow-500 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
+            className="px-3.5 py-1.5 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 hover:text-[#d70018] text-slate-800 dark:text-slate-200 text-xs font-bold rounded-xl transition flex items-center space-x-1 cursor-pointer"
           >
-            <span>Xem kho 35+ linh kiện rời</span>
+            <span>Xem kho linh kiện rời</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
       </section>
 
       {/* ========================================================================= */}
-      {/* SECTION 5: 🖥️ MÀN HÌNH MÁY TÍNH CHUYÊN NGHIỆP                           */}
+      {/* SECTION 5: MÀN HÌNH MÁY TÍNH CHUYÊN NGHIỆP                                */}
       {/* ========================================================================= */}
       {monitorProducts.length > 0 && (
         <section id="section-monitors" className="scroll-mt-24 space-y-3">
           {/* Header Bar */}
-          <div className="bg-gradient-to-r from-purple-950 via-slate-900 to-emerald-950 dark:from-[#11071d] dark:via-[#0c121e] dark:to-[#071813] text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-purple-800/50 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-purple-500 text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-black shadow-md flex-shrink-0">
                 <Monitor className="w-6 h-6" />
               </div>
               <div>
@@ -476,11 +455,11 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                   <h3 className="text-base sm:text-lg font-black tracking-tight text-white uppercase">
                     Màn Hình Máy Tính Đồ Họa & Gaming
                   </h3>
-                  <span className="bg-amber-400 text-slate-950 text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
+                  <span className="bg-purple-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-full">
                     OLED / 240HZ
                   </span>
                 </div>
-                <p className="text-[11px] text-purple-200/90 dark:text-purple-400">
+                <p className="text-[11px] text-slate-300">
                   Tần số quét cao 144Hz - 240Hz, Tấm nền Fast-IPS & OLED chuẩn màu 100% sRGB / DCI-P3
                 </p>
               </div>
@@ -498,8 +477,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
                   onClick={() => setMonitorTab(tab.id as any)}
                   className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                     monitorTab === tab.id
-                      ? 'bg-purple-500 text-white shadow-sm'
-                      : 'bg-white/10 hover:bg-white/20 text-white/90'
+                      ? 'bg-purple-600 text-white shadow-sm'
+                      : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
                   }`}
                 >
                   {tab.label}
@@ -526,7 +505,7 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
       )}
 
       {/* ========================================================================= */}
-      {/* SECTION 6: 🏆 HỆ THỐNG SHOWROOM & ĐỐI TÁC CÔNG NGHỆ (NGUYỄN CÔNG & HACOM)  */}
+      {/* SECTION 6: HỆ THỐNG SHOWROOM & ĐỐI TÁC CÔNG NGHỆ                          */}
       {/* ========================================================================= */}
       <section id="section-showrooms" className="scroll-mt-24 space-y-4 pt-4 border-t border-gray-200 dark:border-slate-800">
         {/* Brand Partners Showcase */}
@@ -535,7 +514,7 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
             <h4 className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
               ĐỐI TÁC THƯƠNG HIỆU PHẦN CỨNG CHIẾN LƯỢC TOÀN CẦU
             </h4>
-            <span className="text-[11px] text-[#059669] dark:text-emerald-400 font-bold">
+            <span className="text-[11px] text-[#d70018] dark:text-red-400 font-bold">
               Ủy quyền chính thức 100%
             </span>
           </div>
@@ -553,9 +532,9 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
             ].map((p, idx) => (
               <div
                 key={idx}
-                className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-xl p-2.5 text-center shadow-2xs hover:border-[#059669] dark:hover:border-emerald-500 transition group cursor-pointer"
+                className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-xl p-2.5 text-center shadow-2xs hover:border-[#d70018] dark:hover:border-red-500 transition group cursor-pointer"
               >
-                <div className="font-black text-xs text-slate-800 dark:text-slate-100 group-hover:text-[#059669] dark:group-hover:text-emerald-400 tracking-wider">
+                <div className="font-black text-xs text-slate-800 dark:text-slate-100 group-hover:text-[#d70018] dark:group-hover:text-red-400 tracking-wider">
                   {p.name}
                 </div>
                 <div className="text-[9px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
@@ -570,7 +549,7 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
         <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 shadow-xs space-y-3">
           <div className="flex items-center justify-between border-b border-gray-150 dark:border-slate-800 pb-3">
             <div className="flex items-center space-x-2">
-              <MapPin className="w-5 h-5 text-[#059669] dark:text-emerald-400" />
+              <MapPin className="w-5 h-5 text-[#d70018] dark:text-red-400" />
               <h4 className="text-sm font-black text-slate-900 dark:text-slate-100 uppercase">
                 HỆ THỐNG SHOWROOM TRẢI NGHIỆM THỰC TẾ
               </h4>
@@ -582,8 +561,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
             <div className="p-3 bg-gray-50 dark:bg-slate-800/50 rounded-xl border border-gray-150 dark:border-slate-700/60 space-y-1">
-              <div className="font-bold text-[#059669] dark:text-emerald-400 flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              <div className="font-bold text-[#d70018] dark:text-red-400 flex items-center space-x-1">
+                <span className="w-2 h-2 rounded-full bg-red-500" />
                 <span>Showroom 1 (Thái Hà - HN)</span>
               </div>
               <p className="text-slate-700 dark:text-slate-300">Số 377-379 Thái Hà, Q. Đống Đa, Hà Nội</p>
@@ -591,8 +570,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
             </div>
 
             <div className="p-3 bg-gray-50 dark:bg-slate-800/50 rounded-xl border border-gray-150 dark:border-slate-700/60 space-y-1">
-              <div className="font-bold text-[#059669] dark:text-emerald-400 flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              <div className="font-bold text-[#d70018] dark:text-red-400 flex items-center space-x-1">
+                <span className="w-2 h-2 rounded-full bg-red-500" />
                 <span>Showroom 2 (Lê Thanh Nghị - HN)</span>
               </div>
               <p className="text-slate-700 dark:text-slate-300">Số 131 Lê Thanh Nghị, Q. Hai Bà Trưng, Hà Nội</p>
@@ -609,8 +588,8 @@ export const PCStorefrontShowcases: React.FC<PCStorefrontShowcasesProps> = ({
             </div>
 
             <div className="p-3 bg-gray-50 dark:bg-slate-800/50 rounded-xl border border-gray-150 dark:border-slate-700/60 space-y-1">
-              <div className="font-bold text-amber-600 dark:text-amber-400 flex items-center space-x-1">
-                <span className="w-2 h-2 rounded-full bg-amber-500" />
+              <div className="font-bold text-slate-800 dark:text-slate-200 flex items-center space-x-1">
+                <span className="w-2 h-2 rounded-full bg-slate-500" />
                 <span>Showroom 4 (Nguyễn Văn Linh - ĐN)</span>
               </div>
               <p className="text-slate-700 dark:text-slate-300">Số 83-85 Nguyễn Văn Linh, Q. Hải Châu, Đà Nẵng</p>

@@ -1,15 +1,17 @@
-// Web Audio API Synthesizer for subtle, high-class tactile audio feedback
-// Zero external files, zero latency, works offline
+// Web Audio API Synthesizer for optional subtle feedback
+// Default to muted for clean, professional e-commerce experience
 
 class SoundManager {
   private ctx: AudioContext | null = null;
-  private isMuted: boolean = false;
+  private isMuted: boolean = true;
 
   constructor() {
-    // Load mute preference from localStorage
+    // Default muted so it doesn't feel like an arcade game
     const saved = localStorage.getItem('techstore_sound_muted');
     if (saved !== null) {
       this.isMuted = saved === 'true';
+    } else {
+      this.isMuted = true;
     }
   }
 
@@ -38,53 +40,47 @@ class SoundManager {
     return this.isMuted;
   }
 
-  // Sweet gentle chime when adding item to cart
   public playCartAdd() {
     if (this.isMuted) return;
     this.initContext();
     if (!this.ctx) return;
 
     const now = this.ctx.currentTime;
-    // Two-tone rising major third (C5 -> E5)
-    this.playTone(523.25, now, 0.08, 0.12);
-    this.playTone(659.25, now + 0.07, 0.14, 0.15);
+    this.playTone(523.25, now, 0.08, 0.06);
+    this.playTone(659.25, now + 0.07, 0.1, 0.08);
   }
 
-  // Pop sound for heart / wishlist toggle
   public playPop() {
     if (this.isMuted) return;
     this.initContext();
     if (!this.ctx) return;
 
     const now = this.ctx.currentTime;
-    this.playTone(880, now, 0.05, 0.15, 'sine');
+    this.playTone(880, now, 0.04, 0.08, 'sine');
   }
 
-  // Celebratory fanfare chime for coupon success
   public playVoucherSuccess() {
     if (this.isMuted) return;
     this.initContext();
     if (!this.ctx) return;
 
     const now = this.ctx.currentTime;
-    // C5 -> E5 -> G5 -> C6
-    this.playTone(523.25, now, 0.08, 0.1);
-    this.playTone(659.25, now + 0.08, 0.08, 0.1);
-    this.playTone(783.99, now + 0.16, 0.08, 0.1);
-    this.playTone(1046.50, now + 0.24, 0.25, 0.15);
+    this.playTone(523.25, now, 0.06, 0.06);
+    this.playTone(659.25, now + 0.06, 0.06, 0.06);
+    this.playTone(783.99, now + 0.12, 0.06, 0.06);
+    this.playTone(1046.50, now + 0.18, 0.15, 0.08);
   }
 
-  // Subtle click for tabs and toggles
   public playClick() {
     if (this.isMuted) return;
     this.initContext();
     if (!this.ctx) return;
 
     const now = this.ctx.currentTime;
-    this.playTone(440, now, 0.02, 0.04, 'triangle');
+    this.playTone(440, now, 0.02, 0.03, 'triangle');
   }
 
-  private playTone(freq: number, startTime: number, duration: number, volume: number = 0.1, type: OscillatorType = 'sine') {
+  private playTone(freq: number, startTime: number, duration: number, volume: number = 0.05, type: OscillatorType = 'sine') {
     if (!this.ctx) return;
     try {
       const osc = this.ctx.createOscillator();
@@ -109,7 +105,7 @@ class SoundManager {
   private playChime(freq: number, duration: number, type: OscillatorType) {
     this.initContext();
     if (!this.ctx) return;
-    this.playTone(freq, this.ctx.currentTime, duration, 0.08, type);
+    this.playTone(freq, this.ctx.currentTime, duration, 0.05, type);
   }
 }
 

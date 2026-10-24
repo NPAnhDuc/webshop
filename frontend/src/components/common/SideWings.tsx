@@ -32,9 +32,9 @@ export const SideWings: React.FC<SideWingsProps> = ({
       <a
         href="tel:18006868"
         title="Hotline miễn phí 1800.6868"
-        className="w-10 h-10 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg flex items-center justify-center transition-all hover:scale-110 active:scale-95"
+        className="w-10 h-10 rounded-full bg-slate-900 hover:bg-red-600 dark:bg-slate-800 dark:hover:bg-red-600 text-white shadow-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95"
       >
-        <PhoneCall className="w-4 h-4 animate-bounce" />
+        <PhoneCall className="w-4 h-4" />
       </a>
 
       {/* Track Order Quick Icon */}
@@ -42,9 +42,9 @@ export const SideWings: React.FC<SideWingsProps> = ({
         <button
           onClick={onOpenLookup}
           title={lang === 'vi' ? 'Tra cứu tiến độ đơn hàng' : 'Track Order'}
-          className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-lg flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
+          className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer hover:border-red-500 hover:text-red-600"
         >
-          <FileText className="w-4 h-4 text-[#059669] dark:text-emerald-400" />
+          <FileText className="w-4 h-4" />
         </button>
       )}
 
@@ -53,7 +53,7 @@ export const SideWings: React.FC<SideWingsProps> = ({
         <button
           onClick={scrollToTop}
           title={lang === 'vi' ? 'Lên đầu trang' : 'Back to top'}
-          className="w-10 h-10 rounded-full bg-slate-900/80 dark:bg-slate-700/80 backdrop-blur-md text-white shadow-lg flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer animate-in fade-in"
+          className="w-10 h-10 rounded-full bg-slate-900/90 dark:bg-slate-700/90 backdrop-blur-md text-white shadow-md flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer animate-in fade-in"
         >
           <ArrowUp className="w-4 h-4" />
         </button>

@@ -38,11 +38,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   return (
-    <div className="group bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden relative rounded-2xl text-slate-800 dark:text-slate-100 p-3 select-none">
+    <div className="group bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden relative rounded-2xl text-slate-800 dark:text-slate-100 p-3 select-none">
       {/* 1. Status Badges at Top Left (z-30 to guarantee never covered by images) */}
       <div className="absolute top-2.5 left-2.5 z-30 flex flex-col gap-1 items-start pointer-events-none">
         {product.discountPercent && product.discountPercent > 0 && (
-          <span className="bg-[#059669] text-white text-[10px] font-black px-1.5 py-0.5 rounded shadow-sm">
+          <span className="bg-[#d70018] text-white text-[10px] font-black px-1.5 py-0.5 rounded shadow-sm">
             {lang === 'vi' ? 'Giảm' : 'Save'} {product.discountPercent}%
           </span>
         )}
@@ -52,7 +52,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </span>
         )}
         {product.isHot && (
-          <span className="bg-amber-400 text-slate-950 text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded shadow-sm">
+          <span className="bg-slate-900 text-amber-400 text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded shadow-sm border border-slate-700">
             HOT
           </span>
         )}
@@ -85,7 +85,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             }}
             className={`p-1.5 rounded-lg border transition cursor-pointer ${
               isComparing
-                ? 'bg-[#059669] border-[#059669] text-white shadow-xs'
+                ? 'bg-slate-900 border-slate-900 text-white shadow-xs'
                 : 'bg-white/90 dark:bg-slate-800/90 border-gray-200 dark:border-slate-700 text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:border-gray-300'
             }`}
             title={isComparing ? (lang === 'vi' ? 'Bỏ chọn so sánh' : 'Remove compare') : (lang === 'vi' ? 'Chọn so sánh' : 'Compare')}
@@ -116,8 +116,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Quick view on hover */}
         <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
-          <span className="bg-white/95 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-[11px] font-bold px-3 py-1 rounded-full shadow-md border border-gray-200 dark:border-slate-700 flex items-center space-x-1 hover:text-[#059669] dark:hover:text-emerald-400 transition">
-            <Eye className="w-3.5 h-3.5 text-[#059669] dark:text-emerald-400" />
+          <span className="bg-white/95 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-[11px] font-bold px-3 py-1 rounded-full shadow-md border border-gray-200 dark:border-slate-700 flex items-center space-x-1 hover:text-[#d70018] dark:hover:text-red-400 transition">
+            <Eye className="w-3.5 h-3.5 text-[#d70018] dark:text-red-400" />
             <span>{lang === 'vi' ? 'Xem nhanh' : 'Quick View'}</span>
           </span>
         </div>
@@ -128,62 +128,62 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <div>
           {/* Brand & Category */}
           <div className="flex items-center justify-between text-[11px] mb-1">
-            <span className="font-extrabold text-[#059669] dark:text-emerald-400 uppercase tracking-wider">{product.brandName}</span>
+            <span className="font-extrabold text-[#d70018] dark:text-red-400 uppercase tracking-wider">{product.brandName}</span>
             <span className="uppercase text-slate-400 dark:text-slate-500 font-semibold text-[10px]">{product.categorySlug}</span>
           </div>
 
           {/* Name */}
           <h3
             onClick={() => onSelect(product)}
-            className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 line-clamp-2 group-hover:text-[#059669] dark:group-hover:text-emerald-400 cursor-pointer min-h-[38px] transition leading-snug"
+            className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 line-clamp-2 group-hover:text-[#d70018] dark:group-hover:text-red-400 cursor-pointer min-h-[38px] transition leading-snug"
             title={product.name}
           >
             {product.name}
           </h3>
 
-          {/* Tech Spec Badges */}
+          {/* Tech Spec Badges (Clean neutral professional look) */}
           <div className="mt-2 flex flex-wrap gap-1">
             {product.specs.panel && (
               <span className={`text-[10px] px-1.5 py-0.5 rounded font-bold ${
                 product.specs.panel === 'OLED'
-                  ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800'
-                  : 'bg-gray-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-gray-200 dark:border-slate-700'
+                  ? 'bg-slate-900 text-amber-400 border border-slate-700'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700'
               }`}>
                 {product.specs.panel} {product.specs.refresh_hz ? `${product.specs.refresh_hz}Hz` : ''}
               </span>
             )}
             {product.specs.cpu_model && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-gray-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-gray-200 dark:border-slate-700 rounded font-medium">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-medium">
                 {product.specs.cpu_model}
               </span>
             )}
             {product.specs.socket && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 rounded font-bold">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-bold">
                 {product.specs.socket}
               </span>
             )}
             {product.specs.vram_gb && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-teal-50 dark:bg-teal-950/40 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800/60 rounded font-bold">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-bold">
                 {product.specs.vram_gb}GB VRAM
               </span>
             )}
             {product.specs.storage_gb && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-green-50 dark:bg-green-950/40 text-green-800 dark:text-green-300 border border-green-200 dark:border-green-800/60 rounded font-medium">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-medium">
                 {product.specs.storage_gb >= 1000 ? `${product.specs.storage_gb / 1000}TB` : `${product.specs.storage_gb}GB`} SSD
               </span>
             )}
             {product.specs.cores && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60 rounded font-bold">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-bold">
                 {product.specs.cores} Cores
               </span>
             )}
             {product.specs.chipset && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 rounded font-bold">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-bold">
                 {product.specs.chipset}
               </span>
             )}
             {product.specs.ram_gb && (
-              <span className="text-[10px] px-1.5 py-0.5 bg-gray-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-gray-200 dark:border-slate-700 rounded font-medium">
+              <span className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded font-medium">
                 {product.specs.ram_gb}GB {product.specs.ram_type || ''}
               </span>
             )}
@@ -194,7 +194,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <div className="pt-2 border-t border-gray-100 dark:border-slate-800 space-y-1.5">
           {/* Price */}
           <div className="flex items-baseline space-x-2">
-            <span className="text-base sm:text-lg font-black text-[#d70018] dark:text-rose-400 font-mono">
+            <span className="text-base sm:text-lg font-black text-[#d70018] dark:text-red-400 font-mono">
               {new Intl.NumberFormat('vi-VN').format(product.price)}₫
             </span>
             {product.originalPrice && product.originalPrice > product.price && (
@@ -204,14 +204,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             )}
           </div>
 
-          {/* Promotion Gift Note Box (Nguyễn Công PC / HACOM style) */}
-          <div className="bg-red-50/70 dark:bg-rose-950/40 border border-red-200/80 dark:border-rose-900/60 rounded-lg px-2 py-1 text-[10px] text-red-800 dark:text-rose-300 line-clamp-1">
-            <strong className="text-[#d70018] dark:text-rose-400">[KM]</strong> {lang === 'vi' ? 'Tặng Balo Gaming + Chuột không dây + Gói bảo dưỡng PC' : 'Free Gaming Backpack + Wireless Mouse + Free Maintenance'}
+          {/* Promotion Gift Note Box */}
+          <div className="bg-red-50/70 dark:bg-red-950/30 border border-red-200/80 dark:border-red-900/40 rounded-lg px-2 py-1 text-[10px] text-red-800 dark:text-red-300 line-clamp-1">
+            <strong className="text-[#d70018] dark:text-red-400">[KM]</strong> {lang === 'vi' ? 'Tặng Balo Gaming + Chuột không dây + Gói bảo dưỡng PC' : 'Free Gaming Backpack + Wireless Mouse + Free Maintenance'}
           </div>
 
           {/* Smember / T-Member Cashback Tag */}
-          <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 rounded-lg px-2 py-1 flex items-center space-x-1.5 text-[10px] text-emerald-900 dark:text-emerald-300 font-semibold">
-            <Award className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+          <div className="bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 flex items-center space-x-1.5 text-[10px] text-slate-700 dark:text-slate-300 font-semibold">
+            <Award className="w-3.5 h-3.5 text-slate-600 dark:text-slate-400 flex-shrink-0" />
             <span className="truncate">{t('tMemberPerk')}</span>
           </div>
 
@@ -234,8 +234,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 <span>{lang === 'vi' ? `Còn ${stock?.availableQty} máy` : `${stock?.availableQty} left`}</span>
               </span>
             ) : (
-              <span className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center space-x-1">
-                <CheckCircle2 className="w-3.5 h-3.5" />
+              <span className="text-slate-700 dark:text-slate-300 font-semibold flex items-center space-x-1">
+                <CheckCircle2 className="w-3.5 h-3.5 text-slate-500" />
                 <span>{lang === 'vi' ? 'Sẵn hàng tại HN & HCM' : t('inStock')}</span>
               </span>
             )}
@@ -254,7 +254,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <>
                 <button
                   onClick={handleAddToCart}
-                  className="flex-1 py-2 px-3 bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold rounded-xl flex items-center justify-center space-x-1.5 transition shadow-xs active:scale-95 cursor-pointer"
+                  className="flex-1 py-2 px-3 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-bold rounded-xl flex items-center justify-center space-x-1.5 transition shadow-xs active:scale-95 cursor-pointer"
                 >
                   <ShoppingCart className="w-3.5 h-3.5" />
                   <span>{t('buyNow')}</span>
@@ -263,9 +263,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   <button
                     onClick={() => onAskBot(product)}
                     title={t('askAIConsult')}
-                    className="p-2 border border-gray-200 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-slate-800 rounded-xl transition cursor-pointer"
+                    className="p-2 border border-gray-200 dark:border-slate-700 hover:border-red-500 dark:hover:border-red-500 text-slate-500 dark:text-slate-400 hover:text-[#d70018] dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-slate-800 rounded-xl transition cursor-pointer"
                   >
-                    <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                    <Sparkles className="w-4 h-4 text-slate-600 dark:text-slate-400" />
                   </button>
                 )}
               </>
