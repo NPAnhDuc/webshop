@@ -52,7 +52,9 @@ import {
   Award,
   Activity,
   Wrench,
-  CreditCard
+  CreditCard,
+  Home,
+  Heart
 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
@@ -381,7 +383,7 @@ const AppContent: React.FC = () => {
   // Render PC Builder View
   if (currentView === 'pc-builder') {
     return (
-      <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors duration-200">
+      <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white transition-colors duration-200">
         <Navbar
           onSearch={q => {
             setSearchQuery(q);
@@ -422,7 +424,7 @@ const AppContent: React.FC = () => {
 
   // Render Main Storefront View
   return (
-    <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-emerald-600 selection:text-white relative transition-colors duration-200">
+    <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white relative transition-colors duration-200">
       {/* Interactive Side Wings for Wide Screens */}
       <SideWings
         onNavigatePCBuilder={() => navigateToView('pc-builder')}
@@ -494,13 +496,13 @@ const AppContent: React.FC = () => {
           <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
             <button
               onClick={() => navigateToView('pc-builder')}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-yellow-400 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
                 <SlidersHorizontal className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">Tự Ráp PC</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Tự Ráp PC</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Quà tặng 2 triệu</span>
               </div>
             </button>
@@ -510,13 +512,13 @@ const AppContent: React.FC = () => {
                 setSelectedDemand('gaming');
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-rose-500 text-white flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
-                <Flame className="w-4 h-4 fill-white" />
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                <Flame className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">Laptop Gaming</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Laptop Gaming</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">RTX 40 Series</span>
               </div>
             </button>
@@ -526,13 +528,13 @@ const AppContent: React.FC = () => {
                 setHasInstallment0(true);
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
                 <CreditCard className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">Trả Góp 0%</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Trả Góp 0%</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Duyệt nhanh 15P</span>
               </div>
             </button>
@@ -542,13 +544,13 @@ const AppContent: React.FC = () => {
                 setSelectedDemand('thin_light');
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-slate-700 transition flex items-center justify-center font-bold flex-shrink-0">
                 <Award className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">Sinh Viên Giảm 500k</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Sinh Viên Giảm 500k</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Ưu đãi T-Student</span>
               </div>
             </button>
@@ -558,26 +560,26 @@ const AppContent: React.FC = () => {
                 setSelectedPanel('OLED');
                 document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-purple-600 text-white flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-purple-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
                 <Sparkles className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">Màn Hình OLED</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Màn Hình OLED</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chuẩn màu 100% P3</span>
               </div>
             </button>
 
             <button
               onClick={handleResetFilters}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold flex-shrink-0 group-hover:scale-110 transition">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-red-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#059669] dark:group-hover:text-emerald-400">1 Đổi 1 30 Ngày</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">1 Đổi 1 30 Ngày</span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chính hãng 100%</span>
               </div>
             </button>
@@ -611,15 +613,15 @@ const AppContent: React.FC = () => {
             <div className="mb-3 flex items-center space-x-2 text-xs">
               <button
                 onClick={handleNavigateHome}
-                className="text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 font-bold flex items-center space-x-1 cursor-pointer"
+                className="text-slate-500 hover:text-[#d70018] dark:text-slate-400 dark:hover:text-red-400 font-bold flex items-center space-x-1.5 cursor-pointer"
               >
-                <span>🏠</span>
+                <Home className="w-3.5 h-3.5" />
                 <span>Trang Chủ</span>
               </button>
               <span className="text-slate-400">/</span>
               <span className="text-slate-500 dark:text-slate-400">Danh mục</span>
               <span className="text-slate-400">/</span>
-              <span className="font-extrabold text-[#059669] dark:text-emerald-400 uppercase">
+              <span className="font-extrabold text-[#d70018] dark:text-red-400 uppercase">
                 {currentCategory}
               </span>
             </div>
@@ -627,7 +629,7 @@ const AppContent: React.FC = () => {
 
           <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center space-x-2.5">
-              <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold shadow-xs flex-shrink-0">
+              <div className="w-8 h-8 rounded-lg bg-[#d70018] text-white flex items-center justify-center font-bold shadow-xs flex-shrink-0">
                 <SlidersHorizontal className="w-4 h-4" />
               </div>
               <div>
@@ -644,7 +646,7 @@ const AppContent: React.FC = () => {
               {currentCategory !== 'all' && (
                 <button
                   onClick={handleNavigateHome}
-                  className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 cursor-pointer shadow-xs active:scale-95"
+                  className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 cursor-pointer shadow-xs active:scale-95"
                 >
                   <ArrowLeft className="w-3.5 h-3.5" />
                   <span>Về Trang Chủ</span>
@@ -751,15 +753,15 @@ const AppContent: React.FC = () => {
               <div className="text-slate-600 dark:text-slate-300">
                 {wishlistFilterOnly ? (
                   <span className="font-bold text-rose-500 flex items-center space-x-1.5">
-                    <span>❤️ {lang === 'vi' ? 'Danh sách sản phẩm Yêu thích' : 'Wishlist Products'}</span>
+                    <span className="flex items-center space-x-1"><Heart className="w-3.5 h-3.5 fill-rose-500 text-rose-500" /><span>{lang === 'vi' ? 'Danh sách sản phẩm Yêu thích' : 'Wishlist Products'}</span></span>
                     <span className="text-xs text-slate-500 font-normal">
                       ({products.filter(p => wishlistIds.includes(p.id)).length} {lang === 'vi' ? 'sản phẩm' : 'items'})
                     </span>
                   </span>
                 ) : (
                   <>
-                    {t('found')} <strong className="text-[#059669] dark:text-emerald-400 font-bold">{totalProducts}</strong> {t('productsMatch')}
-                    {searchQuery && <span> {t('forKeyword')} "<span className="text-[#059669] dark:text-emerald-400 font-bold">{searchQuery}</span>"</span>}
+                    {t('found')} <strong className="text-[#d70018] dark:text-red-400 font-bold">{totalProducts}</strong> {t('productsMatch')}
+                    {searchQuery && <span> {t('forKeyword')} "<span className="text-[#d70018] dark:text-red-400 font-bold">{searchQuery}</span>"</span>}
                   </>
                 )}
               </div>
@@ -770,7 +772,7 @@ const AppContent: React.FC = () => {
                 <select
                   value={sortBy}
                   onChange={e => setSortBy(e.target.value as any)}
-                  className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold focus:outline-none focus:border-[#059669] text-xs cursor-pointer"
+                  className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold focus:outline-none focus:border-[#d70018] text-xs cursor-pointer"
                 >
                   <option value="featured">{t('sortFeatured')}</option>
                   <option value="price_asc">{t('sortPriceAsc')}</option>
@@ -804,7 +806,7 @@ const AppContent: React.FC = () => {
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
                   {wishlistFilterOnly
-                    ? (lang === 'vi' ? 'Hãy bấm icon trái tim ❤️ trên sản phẩm để lưu lại xem sau!' : 'Click the heart ❤️ icon on any product to save it here!')
+                    ? (lang === 'vi' ? 'Hãy bấm icon trái tim trên sản phẩm để lưu lại xem sau!' : 'Click the heart ❤️ icon on any product to save it here!')
                     : t('noProductFoundSub')}
                 </p>
                 <button
@@ -815,7 +817,7 @@ const AppContent: React.FC = () => {
                       handleResetFilters();
                     }
                   }}
-                  className="mt-2 px-5 py-2.5 bg-[#059669] text-white rounded-xl text-xs font-bold hover:bg-[#047857] transition shadow-xs cursor-pointer"
+                  className="mt-2 px-5 py-2.5 bg-[#d70018] text-white rounded-xl text-xs font-bold hover:bg-[#b91c1c] transition shadow-xs cursor-pointer"
                 >
                   {wishlistFilterOnly ? (lang === 'vi' ? 'Xem tất cả sản phẩm' : 'View all products') : t('clearFilters')}
                 </button>

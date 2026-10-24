@@ -472,12 +472,12 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             <div className="flex flex-wrap items-center gap-2">
               <button
                 onClick={onBackToHome}
-                className="inline-flex items-center space-x-1 text-xs text-[#059669] dark:text-emerald-400 hover:underline font-bold transition pr-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer"
+                className="inline-flex items-center space-x-1 text-xs text-[#d70018] dark:text-red-400 hover:underline font-bold transition pr-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>Trang chủ</span>
               </button>
-              <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
+              <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-[#d70018] dark:text-red-400 border border-emerald-200 dark:border-emerald-800">
                 <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
                 <span>TECHSTORE BUILD PC • TỰ RÁP MÁY THEO NHU CẦU</span>
               </div>
@@ -496,12 +496,12 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
 
             {/* TechStore Perks */}
             <div className="pt-1 flex flex-wrap items-center gap-3 text-[11px] text-slate-600 dark:text-slate-400 font-medium">
-              <span className="flex items-center space-x-1 text-emerald-600 dark:text-emerald-400">
+              <span className="flex items-center space-x-1 text-emerald-600 dark:text-red-400">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span>Bảo hành 1 đổi 1 30 ngày</span>
               </span>
               <span>•</span>
-              <span className="flex items-center space-x-1 text-[#059669] dark:text-emerald-400">
+              <span className="flex items-center space-x-1 text-[#d70018] dark:text-red-400">
                 <Wrench className="w-3.5 h-3.5" />
                 <span>Miễn phí ráp máy & vệ sinh trọn đời</span>
               </span>
@@ -521,7 +521,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               className="px-3 py-2 rounded-xl border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold transition flex items-center space-x-1.5 disabled:opacity-40 shadow-xs cursor-pointer"
               title="Sao chép danh sách linh kiện dạng text để gửi bạn bè"
             >
-              {copied ? <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" /> : <Copy className="w-4 h-4 text-slate-500" />}
+              {copied ? <Check className="w-4 h-4 text-emerald-600 dark:text-red-400" /> : <Copy className="w-4 h-4 text-slate-500" />}
               <span>{copied ? 'Đã sao chép' : 'Sao chép cấu hình'}</span>
             </button>
 
@@ -531,10 +531,10 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 sound.playPop();
               }}
               disabled={Object.keys(selectedParts).length === 0}
-              className="px-3.5 py-2 rounded-xl border border-emerald-300 dark:border-emerald-700 bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-[#059669] dark:text-emerald-400 text-xs font-bold transition flex items-center space-x-1.5 disabled:opacity-40 shadow-xs cursor-pointer"
+              className="px-3.5 py-2 rounded-xl border border-emerald-300 dark:border-emerald-700 bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-[#d70018] dark:text-red-400 text-xs font-bold transition flex items-center space-x-1.5 disabled:opacity-40 shadow-xs cursor-pointer"
               title="Mở giao diện in bảng báo giá chính hãng TechStore có mã & dấu mộc"
             >
-              <Printer className="w-4 h-4 text-[#059669] dark:text-emerald-400" />
+              <Printer className="w-4 h-4 text-[#d70018] dark:text-red-400" />
               <span>In báo giá / Tải PDF</span>
             </button>
 
@@ -563,7 +563,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             <button
               onClick={handleAddAllToCart}
               disabled={Object.keys(selectedParts).length === 0 || errors.length > 0}
-              className="px-4 py-2 bg-[#059669] hover:bg-[#047857] disabled:opacity-40 text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 shadow-sm active:scale-95"
+              className="px-4 py-2 bg-[#d70018] hover:bg-[#b91c1c] disabled:opacity-40 text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 shadow-sm active:scale-95"
             >
               <ShoppingCart className="w-4 h-4" />
               <span>Thêm vào giỏ ({new Intl.NumberFormat('vi-VN').format(totalPrice)}₫)</span>
@@ -586,7 +586,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
 
               {/* Status Badge on Case */}
               <div className="absolute bottom-2.5 left-2.5 right-2.5 bg-white/95 dark:bg-slate-800/95 backdrop-blur-xs rounded-xl p-2 border border-gray-200 dark:border-slate-700 text-center shadow-xs">
-                <span className="text-[9px] text-[#059669] dark:text-emerald-400 font-bold block uppercase tracking-wider">THÙNG MÁY CHÍNH HÃNG</span>
+                <span className="text-[9px] text-[#d70018] dark:text-red-400 font-bold block uppercase tracking-wider">THÙNG MÁY CHÍNH HÃNG</span>
                 <span className="text-xs font-bold text-slate-800 dark:text-slate-100 truncate block">
                   {caseProduct?.name || 'Vỏ Case NZXT H5 Flow / Corsair 4000D'}
                 </span>
@@ -602,7 +602,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               </button>
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-2 font-mono">
-              ★ Đã lắp: <strong className="text-[#059669] dark:text-emerald-400 font-bold">{Object.keys(selectedParts).length}/8</strong> linh kiện
+              ★ Đã lắp: <strong className="text-[#d70018] dark:text-red-400 font-bold">{Object.keys(selectedParts).length}/8</strong> linh kiện
             </p>
           </div>
 
@@ -618,7 +618,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   Nhấp trực tiếp vào ô linh kiện bên dưới để chọn hoặc đổi sản phẩm
                 </p>
               </div>
-              <span className="text-xs px-2.5 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-[#059669] dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 font-bold font-mono">
+              <span className="text-xs px-2.5 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-[#d70018] dark:text-red-400 border border-emerald-200 dark:border-emerald-800 font-bold font-mono">
                 {new Intl.NumberFormat('vi-VN').format(totalPrice)}₫
               </span>
             </div>
@@ -633,13 +633,13 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                     onClick={() => handleOpenSlot(slot)}
                     className={`p-2.5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between h-26 group relative overflow-hidden ${
                       part
-                        ? 'bg-emerald-50/50 dark:bg-emerald-950/40 border-[#059669] dark:border-emerald-500 shadow-xs'
+                        ? 'bg-emerald-50/50 dark:bg-emerald-950/40 border-[#d70018] dark:border-emerald-500 shadow-xs'
                         : 'bg-gray-50 dark:bg-slate-800/60 border-gray-200 dark:border-slate-700/80 hover:border-gray-300 dark:hover:border-slate-600 hover:bg-white dark:hover:bg-slate-800'
                     }`}
                   >
                     {/* Header: Label + LED */}
                     <div className="flex items-center justify-between z-10">
-                      <span className="text-[9px] font-mono font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider group-hover:text-[#059669] dark:group-hover:text-emerald-400 transition">
+                      <span className="text-[9px] font-mono font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider group-hover:text-[#d70018] dark:group-hover:text-emerald-400 transition">
                         {slot.schematicLabel}
                       </span>
                       <span className={`w-2 h-2 rounded-full ${part ? 'bg-emerald-500 animate-pulse' : 'bg-gray-300 dark:bg-slate-600'}`} />
@@ -665,12 +665,12 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                       {part ? (
                         <div>
                           <p className="text-[10px] font-bold text-slate-800 dark:text-slate-100 truncate">{part.name}</p>
-                          <p className="text-[10px] text-[#059669] dark:text-emerald-400 font-bold font-mono">
+                          <p className="text-[10px] text-[#d70018] dark:text-red-400 font-bold font-mono">
                             {new Intl.NumberFormat('vi-VN').format(part.price)}₫
                           </p>
                         </div>
                       ) : (
-                        <p className="text-[10px] text-slate-500 dark:text-slate-400 group-hover:text-[#059669] dark:group-hover:text-emerald-400 font-bold flex items-center justify-center space-x-1 transition">
+                        <p className="text-[10px] text-slate-500 dark:text-slate-400 group-hover:text-[#d70018] dark:group-hover:text-emerald-400 font-bold flex items-center justify-center space-x-1 transition">
                           <Plus className="w-3 h-3" />
                           <span>Chọn {slot.name.split(' ')[1] || 'ngay'}</span>
                         </p>
@@ -698,7 +698,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               </p>
             </div>
           </div>
-          <span className="text-[11px] text-emerald-600 dark:text-emerald-400 font-bold hidden sm:inline-block">
+          <span className="text-[11px] text-emerald-600 dark:text-red-400 font-bold hidden sm:inline-block">
             ✓ Trả góp 0% duyệt 15P
           </span>
         </div>
@@ -712,7 +712,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 onClick={() => handleApplyPreset(preset)}
                 className={`p-3.5 rounded-2xl border-2 transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ${
                   isActive
-                    ? 'border-[#059669] dark:border-emerald-500 bg-emerald-50/40 dark:bg-emerald-950/30 shadow-md ring-2 ring-emerald-100 dark:ring-emerald-900/40'
+                    ? 'border-[#d70018] dark:border-emerald-500 bg-emerald-50/40 dark:bg-emerald-950/30 shadow-md ring-2 ring-emerald-100 dark:ring-emerald-900/40'
                     : 'border-gray-200 dark:border-slate-700/80 hover:border-gray-300 dark:hover:border-slate-600 bg-white dark:bg-[#151c2c] hover:shadow-xs'
                 }`}
               >
@@ -722,7 +722,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                     <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${preset.badgeColor} dark:bg-opacity-20`}>
                       {preset.badge}
                     </span>
-                    <span className="text-sm font-black text-[#059669] dark:text-emerald-400 font-mono">
+                    <span className="text-sm font-black text-[#d70018] dark:text-red-400 font-mono">
                       {preset.targetPrice}
                     </span>
                   </div>
@@ -747,7 +747,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   </div>
 
                   {/* Title & Tagline */}
-                  <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 group-hover:text-[#059669] dark:group-hover:text-emerald-400 transition">
+                  <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 group-hover:text-[#d70018] dark:group-hover:text-emerald-400 transition">
                     {preset.title}
                   </h4>
                   <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 leading-snug">
@@ -755,7 +755,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   </p>
                 </div>
 
-                <div className="mt-3 pt-2.5 border-t border-gray-150 dark:border-slate-800 flex items-center justify-between text-[11px] font-bold text-[#059669] dark:text-emerald-400">
+                <div className="mt-3 pt-2.5 border-t border-gray-150 dark:border-slate-800 flex items-center justify-between text-[11px] font-bold text-[#d70018] dark:text-red-400">
                   <span>{isActive ? '✓ Đang áp dụng' : 'Nạp cấu hình này'}</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -771,7 +771,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
         <div className="lg:col-span-1 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-2.5">
           <div className="flex items-center justify-between pb-2 border-b border-gray-150 dark:border-slate-800 text-xs">
             <div className="flex items-center space-x-1.5 font-bold text-slate-900 dark:text-slate-100">
-              <ShieldCheck className="w-4 h-4 text-[#059669] dark:text-emerald-400" />
+              <ShieldCheck className="w-4 h-4 text-[#d70018] dark:text-red-400" />
               <span>Thẩm Định Kỹ Thuật Phần Cứng</span>
             </div>
             <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
@@ -789,7 +789,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
 
           <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 pt-1">
             <span>Kiểm tra: <strong>Socket CPU • RAM Type • TDP</strong></span>
-            <span className="text-[#059669] dark:text-emerald-400 font-bold">Kỹ thuật TechStore</span>
+            <span className="text-[#d70018] dark:text-red-400 font-bold">Kỹ thuật TechStore</span>
           </div>
         </div>
 
@@ -830,9 +830,9 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 <div className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1">
                   <div className="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-medium">
                     <span>CS2 / Valorant</span>
-                    <span className="text-[9px] text-emerald-600 dark:text-emerald-400 font-bold">{fpsData.cs2.note}</span>
+                    <span className="text-[9px] text-emerald-600 dark:text-red-400 font-bold">{fpsData.cs2.note}</span>
                   </div>
-                  <span className="text-base font-black text-emerald-600 dark:text-emerald-400 font-mono block">
+                  <span className="text-base font-black text-emerald-600 dark:text-red-400 font-mono block">
                     {fpsData.cs2.fps}
                   </span>
                   <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
@@ -919,7 +919,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                     <div className="flex items-center space-x-2">
                       <h4 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100">{slot.name}</h4>
                       {slot.required && (
-                        <span className="text-[10px] text-[#059669] dark:text-emerald-400 font-bold">*Bắt buộc</span>
+                        <span className="text-[10px] text-[#d70018] dark:text-red-400 font-bold">*Bắt buộc</span>
                       )}
                     </div>
 
@@ -929,7 +929,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                           {selected.name}
                         </p>
                         <div className="flex flex-wrap items-center gap-1.5">
-                          <span className="text-sm font-black text-[#059669] dark:text-emerald-400 font-mono">
+                          <span className="text-sm font-black text-[#d70018] dark:text-red-400 font-mono">
                             {new Intl.NumberFormat('vi-VN').format(selected.price)}₫
                           </span>
                           <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold">
@@ -966,7 +966,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                     <>
                       <button
                         onClick={() => handleOpenSlot(slot)}
-                        className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 hover:border-[#059669] dark:hover:border-emerald-500 text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-[#059669] dark:hover:text-emerald-400 rounded-xl transition bg-gray-50 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-slate-700 cursor-pointer"
+                        className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 hover:border-[#d70018] dark:hover:border-emerald-500 text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-[#d70018] dark:hover:text-emerald-400 rounded-xl transition bg-gray-50 dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-slate-700 cursor-pointer"
                       >
                         Đổi
                       </button>
@@ -981,7 +981,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   ) : (
                     <button
                       onClick={() => handleOpenSlot(slot)}
-                      className="px-3.5 py-2 bg-[#059669] hover:bg-[#047857] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white rounded-xl text-xs font-bold flex items-center space-x-1.5 transition active:scale-95 shadow-xs cursor-pointer"
+                      className="px-3.5 py-2 bg-[#d70018] hover:bg-[#b91c1c] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white rounded-xl text-xs font-bold flex items-center space-x-1.5 transition active:scale-95 shadow-xs cursor-pointer"
                     >
                       <Plus className="w-3.5 h-3.5" />
                       <span>Chọn linh kiện</span>
@@ -1031,10 +1031,10 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               </div>
             ) : Object.keys(selectedParts).length > 0 ? (
               <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 rounded-xl p-3.5 flex items-start space-x-2 text-xs text-emerald-800 dark:text-emerald-300">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-bold">Cấu hình tương thích 100%</p>
-                  <p className="text-[11px] text-emerald-700 dark:text-emerald-400 mt-0.5 leading-relaxed">
+                  <p className="text-[11px] text-emerald-700 dark:text-red-400 mt-0.5 leading-relaxed">
                     Khớp chân Socket CPU, chuẩn RAM, kích thước vỏ case và công suất nguồn đáp ứng dồi dào.
                   </p>
                 </div>
@@ -1054,7 +1054,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               </div>
               <div className="flex justify-between items-center text-slate-600 dark:text-slate-400">
                 <span>Khuyến nghị công suất nguồn:</span>
-                <span className="font-bold text-[#059669] dark:text-emerald-400 font-mono">{validationResult?.recommendedWattage || 500}W</span>
+                <span className="font-bold text-[#d70018] dark:text-red-400 font-mono">{validationResult?.recommendedWattage || 500}W</span>
               </div>
               <div className="w-full bg-gray-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
                 <div
@@ -1068,21 +1068,21 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             <div className="pt-3 border-t border-gray-150 dark:border-slate-800 space-y-3">
               <div className="flex items-baseline justify-between">
                 <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">Tổng tiền cấu hình:</span>
-                <span className="text-xl sm:text-2xl font-black text-[#059669] dark:text-emerald-400 font-mono">
+                <span className="text-xl sm:text-2xl font-black text-[#d70018] dark:text-red-400 font-mono">
                   {new Intl.NumberFormat('vi-VN').format(totalPrice)}₫
                 </span>
               </div>
 
               {totalPrice > 0 && (
                 <div className="text-[11px] text-slate-500 dark:text-slate-400 bg-gray-50 dark:bg-slate-900/60 p-2 rounded-lg text-center">
-                  Trả góp 0% chỉ từ <strong className="text-[#059669] dark:text-emerald-400">{new Intl.NumberFormat('vi-VN').format(Math.round(totalPrice / 12))}₫</strong>/tháng
+                  Trả góp 0% chỉ từ <strong className="text-[#d70018] dark:text-red-400">{new Intl.NumberFormat('vi-VN').format(Math.round(totalPrice / 12))}₫</strong>/tháng
                 </div>
               )}
 
               <button
                 onClick={handleAddAllToCart}
                 disabled={Object.keys(selectedParts).length === 0 || errors.length > 0}
-                className="w-full py-3 bg-[#059669] hover:bg-[#047857] dark:bg-emerald-600 dark:hover:bg-emerald-500 disabled:opacity-40 text-white font-bold rounded-xl text-xs flex items-center justify-center space-x-1.5 transition shadow-sm active:scale-95 cursor-pointer"
+                className="w-full py-3 bg-[#d70018] hover:bg-[#b91c1c] dark:bg-emerald-600 dark:hover:bg-emerald-500 disabled:opacity-40 text-white font-bold rounded-xl text-xs flex items-center justify-center space-x-1.5 transition shadow-sm active:scale-95 cursor-pointer"
               >
                 <ShoppingCart className="w-4 h-4" />
                 <span>Thêm toàn bộ vào giỏ hàng</span>
@@ -1123,7 +1123,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   {availableProducts.map(prod => (
                     <div
                       key={prod.id}
-                      className="p-3 border border-gray-200 dark:border-slate-700/80 hover:border-[#059669] dark:hover:border-emerald-500 rounded-xl flex flex-col justify-between space-y-2.5 transition cursor-pointer bg-white dark:bg-slate-900/60 hover:shadow-xs group"
+                      className="p-3 border border-gray-200 dark:border-slate-700/80 hover:border-[#d70018] dark:hover:border-emerald-500 rounded-xl flex flex-col justify-between space-y-2.5 transition cursor-pointer bg-white dark:bg-slate-900/60 hover:shadow-xs group"
                       onClick={() => handleSelectPart(prod)}
                     >
                       <div className="flex items-center space-x-3">
@@ -1135,13 +1135,13 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <span className="text-[10px] font-bold text-[#059669] dark:text-emerald-400 uppercase block">
+                          <span className="text-[10px] font-bold text-[#d70018] dark:text-red-400 uppercase block">
                             {prod.brandName}
                           </span>
-                          <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 line-clamp-2 leading-snug group-hover:text-[#059669] dark:group-hover:text-emerald-400 transition">
+                          <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 line-clamp-2 leading-snug group-hover:text-[#d70018] dark:group-hover:text-emerald-400 transition">
                             {prod.name}
                           </h4>
-                          <span className="text-xs font-black text-[#059669] dark:text-emerald-400 font-mono mt-0.5 block">
+                          <span className="text-xs font-black text-[#d70018] dark:text-red-400 font-mono mt-0.5 block">
                             {new Intl.NumberFormat('vi-VN').format(prod.price)}₫
                           </span>
                         </div>
@@ -1161,7 +1161,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                           e.stopPropagation();
                           handleSelectPart(prod);
                         }}
-                        className="w-full py-2 bg-[#059669] hover:bg-[#047857] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition shadow-xs cursor-pointer"
+                        className="w-full py-2 bg-[#d70018] hover:bg-[#b91c1c] dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition shadow-xs cursor-pointer"
                       >
                         Gắn linh kiện này
                       </button>
@@ -1181,13 +1181,13 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             {/* Modal Close & Action Header (Hidden in Print) */}
             <div className="flex items-center justify-between pb-4 border-b border-slate-100 print:hidden">
               <div className="flex items-center space-x-2">
-                <Printer className="w-5 h-5 text-[#059669]" />
+                <Printer className="w-5 h-5 text-[#d70018]" />
                 <h3 className="font-bold text-sm text-slate-900">Bảng Báo Giá Linh Kiện & Cấu Hình Máy Tính</h3>
               </div>
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => window.print()}
-                  className="px-3.5 py-1.5 bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold rounded-xl flex items-center space-x-1.5 transition shadow-xs cursor-pointer"
+                  className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-bold rounded-xl flex items-center space-x-1.5 transition shadow-xs cursor-pointer"
                 >
                   <Printer className="w-4 h-4" />
                   <span>In / Lưu PDF (Ctrl + P)</span>
@@ -1207,7 +1207,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               <div className="flex justify-between items-start border-b border-slate-200 pb-5">
                 <div>
                   <div className="flex items-baseline space-x-1.5">
-                    <span className="text-2xl font-black text-slate-900 tracking-tight">Tech<span className="text-[#059669]">Store</span></span>
+                    <span className="text-2xl font-black text-slate-900 tracking-tight">Tech<span className="text-[#d70018]">Store</span></span>
                     <span className="text-[10px] font-black uppercase px-1.5 py-0.5 rounded bg-emerald-600 text-white">STUDIO</span>
                   </div>
                   <p className="text-xs text-slate-600 font-medium mt-1">CÔNG TY CỔ PHẦN CÔNG NGHỆ & GIẢI PHÁP MÁY TÍNH TECHSTORE</p>
@@ -1215,7 +1215,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                   <p className="text-[11px] text-slate-500">Hotline: 1800.6868 (Miễn phí) | Website: www.techstore.vn</p>
                 </div>
                 <div className="text-right">
-                  <span className="inline-block px-2.5 py-1 bg-emerald-50 border border-emerald-200 text-[#059669] font-mono font-bold text-xs rounded-lg">
+                  <span className="inline-block px-2.5 py-1 bg-emerald-50 border border-emerald-200 text-[#d70018] font-mono font-bold text-xs rounded-lg">
                     MÃ: TS-RIG-2026-9821
                   </span>
                   <p className="text-[11px] text-slate-400 mt-1">Ngày lập: {new Date().toLocaleDateString('vi-VN')}</p>
@@ -1287,7 +1287,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
 
                 <div className="text-right space-y-1">
                   <span className="text-xs text-slate-500">Tổng thanh toán dự kiến:</span>
-                  <div className="text-2xl font-black text-[#059669] font-mono">
+                  <div className="text-2xl font-black text-[#d70018] font-mono">
                     {new Intl.NumberFormat('vi-VN').format(totalPrice)}₫
                   </div>
                   <div className="pt-2 flex justify-end">
@@ -1315,7 +1315,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
 
             {submittedQuoteId ? (
               <div className="text-center py-6 space-y-4">
-                <div className="w-14 h-14 mx-auto rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-[#059669] flex items-center justify-center">
+                <div className="w-14 h-14 mx-auto rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-[#d70018] flex items-center justify-center">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">
@@ -1323,7 +1323,7 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 </h3>
                 <div className="p-3 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-2xl text-xs space-y-1">
                   <span className="text-slate-500 dark:text-slate-400 block">Mã báo giá kỹ thuật của bạn:</span>
-                  <strong className="text-sm font-mono text-[#059669] dark:text-emerald-400">{submittedQuoteId}</strong>
+                  <strong className="text-sm font-mono text-[#d70018] dark:text-red-400">{submittedQuoteId}</strong>
                 </div>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
                   Kỹ thuật viên phòng Lab TechStore đã nhận được cấu hình và sẽ liên hệ số <strong>{customerPhone}</strong> trong vòng 15 phút để tư vấn và tiến hành ráp máy!

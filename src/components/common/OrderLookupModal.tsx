@@ -65,7 +65,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
         </button>
 
         <div className="flex items-center space-x-2.5 pb-4 border-b border-slate-100 dark:border-slate-800">
-          <div className="w-8 h-8 rounded-lg bg-[#059669] text-white flex items-center justify-center font-bold shadow-sm shadow-emerald-500/20">
+          <div className="w-8 h-8 rounded-lg bg-[#d70018] text-white flex items-center justify-center font-bold shadow-sm shadow-emerald-500/20">
             <PackageCheck className="w-4 h-4" />
           </div>
           <div>
@@ -84,7 +84,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
                 value={phone}
                 onChange={e => setPhone(e.target.value)}
                 placeholder="Ví dụ: 0981234567"
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
                 required
               />
             </div>
@@ -95,7 +95,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
                 value={orderCode}
                 onChange={e => setOrderCode(e.target.value)}
                 placeholder="Ví dụ: ORD-2026-1005"
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none uppercase font-mono"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none uppercase font-mono"
                 required
               />
             </div>
@@ -104,7 +104,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2.5 bg-[#059669] hover:bg-[#047857] disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold rounded-xl text-xs flex items-center justify-center space-x-1.5 transition shadow-xs active:scale-95"
+            className="w-full py-2.5 bg-[#d70018] hover:bg-[#b91c1c] disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold rounded-xl text-xs flex items-center justify-center space-x-1.5 transition shadow-xs active:scale-95"
           >
             <Search className="w-3.5 h-3.5" />
             <span>{loading ? 'Đang tra cứu dữ liệu...' : 'Tìm kiếm đơn hàng'}</span>
@@ -123,7 +123,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
           <div className="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800 space-y-4 text-xs">
             <div className="flex justify-between items-start">
               <div>
-                <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400 text-sm">{order.orderCode}</span>
+                <span className="font-mono font-bold text-emerald-600 dark:text-red-400 text-sm">{order.orderCode}</span>
                 <p className="text-slate-500 dark:text-slate-400 text-[11px] mt-0.5">
                   Người nhận: <strong className="text-slate-800 dark:text-slate-200">{order.customerName}</strong> ({order.customerPhone})
                 </p>
@@ -145,7 +145,7 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({
               ))}
               <div className="pt-2 border-t border-slate-200 dark:border-slate-700 flex justify-between font-bold text-slate-900 dark:text-slate-100 text-sm">
                 <span>Tổng cộng:</span>
-                <span className="text-emerald-600 dark:text-emerald-400 font-black">{new Intl.NumberFormat('vi-VN').format(order.total)}₫</span>
+                <span className="text-emerald-600 dark:text-red-400 font-black">{new Intl.NumberFormat('vi-VN').format(order.total)}₫</span>
               </div>
             </div>
 

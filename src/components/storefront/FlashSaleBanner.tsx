@@ -186,7 +186,7 @@ export const FlashSaleBanner: React.FC<FlashSaleBannerProps> = ({
                       style={{ width: `${soldPct}%` }}
                     />
                     <span className="absolute inset-0 flex items-center justify-center text-[9px] font-black text-white drop-shadow-xs uppercase">
-                      🔥 Đã bán {soldCount}/{totalSlot}
+                      Đã bán {soldCount}/{totalSlot}
                     </span>
                   </div>
 

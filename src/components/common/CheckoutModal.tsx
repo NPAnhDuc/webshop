@@ -121,7 +121,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         </button>
 
         <div className="flex items-center space-x-2.5 pb-4 border-b border-slate-100 dark:border-slate-800">
-          <div className="w-8 h-8 rounded-lg bg-[#059669] text-white flex items-center justify-center font-bold shadow-sm shadow-emerald-500/20">
+          <div className="w-8 h-8 rounded-lg bg-[#d70018] text-white flex items-center justify-center font-bold shadow-sm shadow-emerald-500/20">
             <Truck className="w-4 h-4" />
           </div>
           <div>
@@ -145,7 +145,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 value={name}
                 onChange={e => setName(e.target.value)}
                 placeholder="Nguyễn Văn A"
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
                 required
               />
             </div>
@@ -156,7 +156,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 value={phone}
                 onChange={e => setPhone(e.target.value)}
                 placeholder="0912 345 678"
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
                 required
               />
             </div>
@@ -170,7 +170,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 value={address}
                 onChange={e => setAddress(e.target.value)}
                 placeholder="Số 45, Đường Xuân Thủy, Cầu Giấy"
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
                 required
               />
             </div>
@@ -179,7 +179,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               <select
                 value={city}
                 onChange={e => setCity(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
               >
                 <option value="Hà Nội">Hà Nội</option>
                 <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
@@ -197,7 +197,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               value={notes}
               onChange={e => setNotes(e.target.value)}
               placeholder="Giao trong giờ hành chính / Gọi trước khi đến"
-              className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#059669] dark:focus:border-emerald-500 focus:outline-none"
+              className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900/80 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:border-[#d70018] dark:focus:border-emerald-500 focus:outline-none"
             />
           </div>
 
@@ -209,22 +209,22 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 onClick={() => setPaymentMethod('cod')}
                 className={`p-3 rounded-xl border flex items-center space-x-2.5 cursor-pointer transition select-none ${
                   paymentMethod === 'cod'
-                    ? 'border-[#059669] bg-emerald-50 dark:bg-emerald-950/40 text-[#059669] dark:text-emerald-400 font-bold'
+                    ? 'border-[#d70018] bg-emerald-50 dark:bg-emerald-950/40 text-[#d70018] dark:text-red-400 font-bold'
                     : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60'
                 }`}
               >
-                <Banknote className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                <Banknote className="w-4 h-4 text-emerald-600 dark:text-red-400" />
                 <span>Thanh toán COD khi nhận</span>
               </label>
               <label
                 onClick={() => setPaymentMethod('bank_transfer')}
                 className={`p-3 rounded-xl border flex items-center space-x-2.5 cursor-pointer transition select-none ${
                   paymentMethod === 'bank_transfer'
-                    ? 'border-[#059669] bg-emerald-50 dark:bg-emerald-950/40 text-[#059669] dark:text-emerald-400 font-bold'
+                    ? 'border-[#d70018] bg-emerald-50 dark:bg-emerald-950/40 text-[#d70018] dark:text-red-400 font-bold'
                     : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60'
                 }`}
               >
-                <CreditCard className="w-4 h-4 text-[#059669] dark:text-emerald-400" />
+                <CreditCard className="w-4 h-4 text-[#d70018] dark:text-red-400" />
                 <span>Chuyển khoản QR ngân hàng</span>
               </label>
             </div>
@@ -233,7 +233,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           {/* Voucher Input */}
           <div className="p-3 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-100 dark:border-slate-800 space-y-2">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-semibold text-slate-700 dark:text-slate-300 flex items-center space-x-1 text-[#059669] dark:text-emerald-400">
+              <span className="font-semibold text-slate-700 dark:text-slate-300 flex items-center space-x-1 text-[#d70018] dark:text-red-400">
                 <Tag className="w-3.5 h-3.5" />
                 <span>Mã giảm giá / Voucher</span>
               </span>
@@ -257,18 +257,18 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   value={voucherCode}
                   onChange={e => setVoucherCode(e.target.value.toUpperCase())}
                   placeholder="Nhập mã (VD: TECH500)"
-                  className="flex-1 px-3 py-1.5 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 text-xs font-mono focus:border-[#059669] focus:outline-none"
+                  className="flex-1 px-3 py-1.5 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 text-xs font-mono focus:border-[#d70018] focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => handleApplyVoucher()}
-                  className="px-3.5 py-1.5 bg-[#059669] hover:bg-[#047857] text-white rounded-lg text-xs font-bold transition cursor-pointer"
+                  className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-lg text-xs font-bold transition cursor-pointer"
                 >
                   Áp dụng
                 </button>
               </div>
             ) : (
-              <div className="flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
+              <div className="flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-red-400">
                 <span>✓ Đã áp dụng: {appliedVoucherLabel}</span>
                 <span className="font-mono">-{new Intl.NumberFormat('vi-VN').format(discountAmount)}₫</span>
               </div>
@@ -283,17 +283,17 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             </div>
             <div className="flex justify-between text-slate-600 dark:text-slate-400">
               <span>Phí giao hàng:</span>
-              <span className="text-emerald-600 dark:text-emerald-400 font-semibold">Miễn phí toàn quốc</span>
+              <span className="text-emerald-600 dark:text-red-400 font-semibold">Miễn phí toàn quốc</span>
             </div>
             {discountAmount > 0 && (
-              <div className="flex justify-between text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
+              <div className="flex justify-between text-emerald-600 dark:text-red-400 text-xs font-semibold">
                 <span>Ưu đãi giảm giá:</span>
                 <span className="font-mono font-bold">-{new Intl.NumberFormat('vi-VN').format(discountAmount)}₫</span>
               </div>
             )}
             <div className="flex justify-between items-baseline pt-2 border-t border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-900 dark:text-slate-100">
               <span>Tổng thanh toán:</span>
-              <span className="text-lg text-[#059669] dark:text-emerald-400 font-black font-mono">
+              <span className="text-lg text-[#d70018] dark:text-red-400 font-black font-mono">
                 {new Intl.NumberFormat('vi-VN').format(finalCheckoutAmount)}₫
               </span>
             </div>
@@ -303,7 +303,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 bg-[#059669] hover:bg-[#047857] disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition shadow-sm active:scale-95"
+              className="w-full py-3 bg-[#d70018] hover:bg-[#b91c1c] disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition shadow-sm active:scale-95"
             >
               <span>{loading ? 'Đang xác thực và giữ hàng...' : 'Xác nhận đặt hàng ngay'}</span>
               <ArrowRight className="w-4 h-4" />
@@ -311,7 +311,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           </div>
 
           <div className="flex items-center justify-center space-x-1.5 text-[11px] text-slate-500 dark:text-slate-400 pt-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-red-400" />
             <span>Hệ thống tự động khóa và giữ hàng trong kho ngay khi bấm đặt</span>
           </div>
         </form>
