@@ -1,3 +1,4 @@
+import { OptimizedImage } from '../common/OptimizedImage';
 import React, { useState, useEffect } from 'react';
 import { Flame, Timer, Sparkles, ArrowRight, ShieldCheck, Zap, RotateCcw, Award, ShoppingCart, ChevronRight } from 'lucide-react';
 import { Product } from '../../types';

@@ -58,12 +58,13 @@ app.get('/api/ai/status', async (req: Request, res: Response) => {
 });
 
 // Serve local product images
+const staticOpts = { maxAge: '7d', immutable: true, etag: true };
 const publicImages = path.join(process.cwd(), 'public', 'images');
 const fallbackImages = path.resolve(process.cwd(), '..', 'AI', 'data', 'product_images', 'images');
 if (fs.existsSync(publicImages)) {
-  app.use('/images', express.static(publicImages));
+  app.use('/images', express.static(publicImages, staticOpts));
 } else if (fs.existsSync(fallbackImages)) {
-  app.use('/images', express.static(fallbackImages));
+  app.use('/images', express.static(fallbackImages, staticOpts));
 }
 
 

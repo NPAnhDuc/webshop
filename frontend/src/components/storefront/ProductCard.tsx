@@ -1,3 +1,4 @@
+import { OptimizedImage } from '../common/OptimizedImage';
 import React from 'react';
 import { ShoppingCart, Eye, Sparkles, CheckCircle2, AlertTriangle, XCircle, CheckSquare, Square, Star, Award, Heart } from 'lucide-react';
 import { Product } from '../../types';
@@ -104,14 +105,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         onClick={() => onSelect(product)}
         className="cursor-pointer relative aspect-square p-2 bg-white dark:bg-slate-900/60 rounded-xl flex items-center justify-center overflow-hidden z-0"
       >
-        <img
+        <OptimizedImage
           src={product.imageUrl}
           alt={product.name}
-          className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-xs relative z-0 mix-blend-multiply dark:mix-blend-normal"
-          loading="lazy"
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop&q=80';
-          }}
+          aspectRatio="square"
+          className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-xs mix-blend-multiply dark:mix-blend-normal"
         />
 
         {/* Quick view on hover */}

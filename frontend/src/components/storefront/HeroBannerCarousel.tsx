@@ -92,6 +92,16 @@ export const HeroBannerCarousel: React.FC<HeroBannerCarouselProps> = ({
     { title: 'OLED CHUẨN MÀU', sub: 'Cân màu free' }
   ];
 
+  // Preload all banner images into browser cache for instant slide switching
+  useEffect(() => {
+    slides.forEach(slide => {
+      const img = new Image();
+      img.src = slide.image;
+      const webp = new Image();
+      webp.src = slide.image.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    });
+  }, []);
+
   // Auto-rotate every 5.5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
@@ -154,7 +164,7 @@ export const HeroBannerCarousel: React.FC<HeroBannerCarouselProps> = ({
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-40 transform scale-105"
-              style={{ backgroundImage: `url(${active.image})` }}
+              style={{ backgroundImage: `url(${active.image.replace(/\.(png|jpg|jpeg)$/i, '.webp')})` }}
             />
             {/* Gradient Overlay */}
             <div className={`absolute inset-0 bg-gradient-to-r ${active.bgColor} opacity-95`} />
