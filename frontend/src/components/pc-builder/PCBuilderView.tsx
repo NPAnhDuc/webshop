@@ -24,12 +24,27 @@ import {
   FileText,
   Share2,
   Sparkles,
-  X
+  X,
+  CreditCard,
+  Scale,
+  Gauge,
+  ExternalLink,
+  Download
 } from 'lucide-react';
 import { Product } from '../../types';
 import { validatePCBuild, fetchProducts, submitPCQuotation } from '../../services/api';
 import { useCart } from '../../context/CartContext';
 import { sound } from '../../utils/sound';
+import {
+  calculatePowerTelemetry,
+  calculateBottleneckAnalysis,
+  calculateGamingTelemetry,
+  PowerTelemetry,
+  BottleneckAnalysis,
+  GameTelemetry
+} from '../../utils/hardwareBenchmarks';
+import { InstallmentCalculatorModal } from '../common/InstallmentCalculatorModal';
+
 
 interface PCBuilderViewProps {
   onBackToHome: () => void;
@@ -243,6 +258,13 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
   const [submittingQuote, setSubmittingQuote] = useState(false);
   const [submittedQuoteId, setSubmittedQuoteId] = useState<string | null>(null);
   const [gameResolution, setGameResolution] = useState<'1080p' | '1440p' | '4k'>('1080p');
+  const [showInstallmentModal, setShowInstallmentModal] = useState(false);
+  const [shareCopied, setShareCopied] = useState(false);
+  const [quoteCustomerName, setQuoteCustomerName] = useState('Quý Khách Hàng TechStore');
+  const [quoteCompany, setQuoteCompany] = useState('');
+  const [quotePhone, setQuotePhone] = useState('');
+  const [quoteVatPercent, setQuoteVatPercent] = useState<number>(0); // 0, 8, 10%
+
 
   const handleSubmitQuotation = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -277,6 +299,54 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
       alert('Không thể gửi yêu cầu báo giá, vui lòng thử lại.');
     } finally {
       setSubmittingQuote(false);
+    }
+  };
+
+
+  // Live Hardware Telemetry Calculations
+  const powerTelemetry = React.useMemo(() => calculatePowerTelemetry(selectedParts), [selectedParts]);
+  const bottleneckAnalysis = React.useMemo(() => calculateBottleneckAnalysis(selectedParts), [selectedParts]);
+  const gamingTelemetry = React.useMemo(() => calculateGamingTelemetry(selectedParts, gameResolution), [selectedParts, gameResolution]);
+
+  // Restore Build from Shareable URL Query Param
+  useEffect(() => {
+    if (allProducts.length === 0) return;
+    const searchParams = new URLSearchParams(window.location.search);
+    const buildParam = searchParams.get('pcbuild');
+    if (buildParam) {
+      try {
+        const pairs = buildParam.split(',');
+        const restored: Record<string, Product> = {};
+        pairs.forEach(pair => {
+          const [slot, prodId] = pair.split(':');
+          if (slot && prodId) {
+            const found = allProducts.find(p => p.id === prodId || p.slug === prodId);
+            if (found) restored[slot] = found;
+          }
+        });
+        if (Object.keys(restored).length > 0) {
+          setSelectedParts(restored);
+          if (onToast) {
+            onToast('Đã khôi phục cấu hình!', `Đã nạp ${Object.keys(restored).length} linh kiện từ liên kết chia sẻ.`);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to parse pcbuild param', err);
+      }
+    }
+  }, [allProducts]);
+
+  const handleCopyShareLink = () => {
+    if (Object.keys(selectedParts).length === 0) return;
+    const pairs = Object.entries(selectedParts).map(([slot, prod]) => `${slot}:${prod.id}`).join(',');
+    const url = new URL(window.location.href);
+    url.searchParams.set('pcbuild', pairs);
+    navigator.clipboard.writeText(url.toString());
+    setShareCopied(true);
+    sound.playVoucherSuccess();
+    setTimeout(() => setShareCopied(false), 2500);
+    if (onToast) {
+      onToast('Đã sao chép liên kết chia sẻ!', 'Bạn có thể gửi link này cho bạn bè mở lên đúng cấu hình này.');
     }
   };
 
@@ -516,14 +586,38 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
           {/* Quick Action Toolbar */}
           <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 flex-shrink-0">
             <button
+              onClick={handleCopyShareLink}
+              disabled={Object.keys(selectedParts).length === 0}
+              className="px-3 py-2 rounded-xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/70 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 text-xs font-bold transition flex items-center space-x-1.5 disabled:opacity-40 shadow-xs cursor-pointer"
+              title="Tạo liên kết chia sẻ cấu hình này cho bạn bè hoặc mạng xã hội"
+            >
+              {shareCopied ? <Check className="w-4 h-4 text-emerald-600" /> : <Share2 className="w-4 h-4 text-blue-600 dark:text-blue-400" />}
+              <span>{shareCopied ? 'Đã copy link!' : 'Chia sẻ link cấu hình'}</span>
+            </button>
+
+            <button
               onClick={handleCopySpecSheet}
               disabled={Object.keys(selectedParts).length === 0}
               className="px-3 py-2 rounded-xl border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold transition flex items-center space-x-1.5 disabled:opacity-40 shadow-xs cursor-pointer"
               title="Sao chép danh sách linh kiện dạng text để gửi bạn bè"
             >
               {copied ? <Check className="w-4 h-4 text-emerald-600 dark:text-red-400" /> : <Copy className="w-4 h-4 text-slate-500" />}
-              <span>{copied ? 'Đã sao chép' : 'Sao chép cấu hình'}</span>
+              <span>{copied ? 'Đã sao chép' : 'Sao chép text'}</span>
             </button>
+
+            {totalPrice >= 1000000 && (
+              <button
+                onClick={() => {
+                  setShowInstallmentModal(true);
+                  sound.playClick();
+                }}
+                className="px-3 py-2 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/50 hover:bg-amber-100 dark:hover:bg-amber-900/60 text-amber-800 dark:text-amber-300 text-xs font-bold transition flex items-center space-x-1.5 shadow-xs cursor-pointer"
+                title="Bảng tính trả góp 0% duyệt hồ sơ online"
+              >
+                <CreditCard className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                <span>Trả góp 0%</span>
+              </button>
+            )}
 
             <button
               onClick={() => {
@@ -765,40 +859,116 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
         </div>
       </div>
 
-      {/* 4. Professional Hardware Diagnostics & Live Gaming Telemetry */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        {/* Technical Inspection Diagnostic Box */}
-        <div className="lg:col-span-1 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-2.5">
-          <div className="flex items-center justify-between pb-2 border-b border-gray-150 dark:border-slate-800 text-xs">
-            <div className="flex items-center space-x-1.5 font-bold text-slate-900 dark:text-slate-100">
-              <ShieldCheck className="w-4 h-4 text-[#d70018] dark:text-red-400" />
-              <span>Thẩm Định Kỹ Thuật Phần Cứng</span>
+      {/* 4. Professional Hardware Diagnostics, Bottleneck & Live Gaming Telemetry */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        {/* Left Column (5 Cols): Power Telemetry & Bottleneck Index */}
+        <div className="lg:col-span-5 space-y-4">
+          {/* Smart Power & PSU Telemetry Box */}
+          <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-3">
+            <div className="flex items-center justify-between pb-2 border-b border-gray-150 dark:border-slate-800 text-xs">
+              <div className="flex items-center space-x-1.5 font-bold text-slate-900 dark:text-slate-100">
+                <Zap className="w-4 h-4 text-amber-500" />
+                <span>Công Suất Tiêu Thụ & Tải Nguồn (PSU)</span>
+              </div>
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                powerTelemetry.status === 'optimal'
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
+                  : powerTelemetry.status === 'adequate'
+                  ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300'
+                  : powerTelemetry.status === 'insufficient'
+                  ? 'bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-300'
+                  : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+              }`}>
+                {powerTelemetry.status === 'optimal' ? 'Dồi dào an toàn' : powerTelemetry.status === 'adequate' ? 'Sát công suất' : powerTelemetry.status === 'insufficient' ? 'QUÁ TẢI SẬP NGUỒN' : 'Chưa gắn Nguồn'}
+              </span>
             </div>
-            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-              errors.length > 0
-                ? 'bg-red-100 text-red-700 dark:bg-red-950/60 dark:text-red-300'
-                : 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
-            }`}>
-              {errors.length > 0 ? `${errors.length} Lỗi chân cắm` : 'Khớp 100%'}
-            </span>
+
+            {/* 3 Metric Pills */}
+            <div className="grid grid-cols-3 gap-2 text-center text-xs">
+              <div className="p-2 bg-gray-50 dark:bg-slate-900/60 rounded-xl border border-gray-150 dark:border-slate-800">
+                <span className="text-[10px] text-slate-400 block">Tải ước tính</span>
+                <strong className="text-sm font-black text-slate-800 dark:text-slate-200 font-mono">
+                  {powerTelemetry.estimatedWattage}W
+                </strong>
+              </div>
+              <div className="p-2 bg-gray-50 dark:bg-slate-900/60 rounded-xl border border-gray-150 dark:border-slate-800">
+                <span className="text-[10px] text-slate-400 block">Khuyến nghị PSU</span>
+                <strong className="text-sm font-black text-[#d70018] dark:text-red-400 font-mono">
+                  {powerTelemetry.recommendedPsuWattage}W
+                </strong>
+              </div>
+              <div className="p-2 bg-gray-50 dark:bg-slate-900/60 rounded-xl border border-gray-150 dark:border-slate-800">
+                <span className="text-[10px] text-slate-400 block">Nguồn đã chọn</span>
+                <strong className="text-sm font-black text-emerald-600 dark:text-emerald-400 font-mono">
+                  {powerTelemetry.selectedPsuWattage > 0 ? `${powerTelemetry.selectedPsuWattage}W` : 'Chưa có'}
+                </strong>
+              </div>
+            </div>
+
+            {/* Visual Wattage Bar */}
+            <div className="space-y-1">
+              <div className="w-full bg-gray-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden flex">
+                <div
+                  className={`h-full transition-all duration-500 rounded-full ${
+                    powerTelemetry.status === 'insufficient'
+                      ? 'bg-red-500'
+                      : powerTelemetry.status === 'adequate'
+                      ? 'bg-amber-500'
+                      : 'bg-emerald-500'
+                  }`}
+                  style={{ width: `${Math.min(100, (powerTelemetry.estimatedWattage / (powerTelemetry.selectedPsuWattage || 850)) * 100)}%` }}
+                />
+              </div>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-snug">
+                {powerTelemetry.statusMessage}
+              </p>
+            </div>
           </div>
 
-          <div className="text-xs text-slate-600 dark:text-slate-300 bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 leading-relaxed font-medium">
-            "{getRobotMessage()}"
-          </div>
+          {/* Bottleneck Diagnostic Box */}
+          <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs space-y-2.5">
+            <div className="flex items-center justify-between pb-2 border-b border-gray-150 dark:border-slate-800 text-xs">
+              <div className="flex items-center space-x-1.5 font-bold text-slate-900 dark:text-slate-100">
+                <Scale className="w-4 h-4 text-purple-500" />
+                <span>Thẩm Định Nghẽn Cổ Chai (Bottleneck)</span>
+              </div>
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                bottleneckAnalysis.dominantType === 'balanced'
+                  ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
+                  : 'bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300'
+              }`}>
+                {bottleneckAnalysis.title}
+              </span>
+            </div>
 
-          <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 pt-1">
-            <span>Kiểm tra: <strong>Socket CPU • RAM Type • TDP</strong></span>
-            <span className="text-[#d70018] dark:text-red-400 font-bold">Kỹ thuật TechStore</span>
+            {/* Balance Score Bar */}
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className="text-slate-500 dark:text-slate-400">Chỉ số cân bằng phần cứng:</span>
+                <span className="font-bold text-slate-800 dark:text-slate-200 font-mono">
+                  {bottleneckAnalysis.balanceScore}% Cân đối
+                </span>
+              </div>
+              <div className="w-full bg-gray-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div
+                  className="bg-gradient-to-r from-blue-500 to-purple-600 h-full rounded-full transition-all duration-500"
+                  style={{ width: `${bottleneckAnalysis.balanceScore}%` }}
+                />
+              </div>
+            </div>
+
+            <p className="text-xs text-slate-600 dark:text-slate-300 bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-150 dark:border-slate-800 leading-relaxed font-medium">
+              "{bottleneckAnalysis.summary}"
+            </p>
           </div>
         </div>
 
-        {/* Live Gaming Telemetry Bar */}
-        <div className="lg:col-span-2 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-3">
+        {/* Right Column (7 Cols): Live Gaming Telemetry across 6 AAA & Esports Games */}
+        <div className="lg:col-span-7 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-3">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 border-b border-gray-150 dark:border-slate-800 gap-2 text-xs">
             <span className="font-bold text-slate-900 dark:text-slate-100 flex items-center space-x-1.5">
               <Activity className="w-3.5 h-3.5 text-amber-500" />
-              <span>Ước Tính Hiệu Năng Thực Chiến (Live Gaming Telemetry)</span>
+              <span>Ước Tính Hiệu Năng 6 Tựa Game Đỉnh Cao (Gaming Telemetry)</span>
             </span>
 
             {/* Resolution Switcher */}
@@ -810,9 +980,9 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                     setGameResolution(res);
                     sound.playClick();
                   }}
-                  className={`px-2 py-0.5 rounded text-[10px] font-bold transition cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition cursor-pointer ${
                     gameResolution === res
-                      ? 'bg-[#059669] text-white shadow-2xs'
+                      ? 'bg-[#d70018] text-white shadow-2xs'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
                   }`}
                 >
@@ -822,65 +992,57 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             </div>
           </div>
 
-          {/* 4 Games Metric Cards with Animated Visual Progress Bars */}
-          {(() => {
-            const fpsData = getGameFps();
-            return (
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                <div className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1">
-                  <div className="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-medium">
-                    <span>CS2 / Valorant</span>
-                    <span className="text-[9px] text-emerald-600 dark:text-red-400 font-bold">{fpsData.cs2.note}</span>
+          {/* 6 Games Metric Cards Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            {gamingTelemetry.map(game => (
+              <div
+                key={game.id}
+                className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1.5 hover:border-gray-300 dark:hover:border-slate-600 transition"
+              >
+                <div className="flex justify-between items-start">
+                  <div className="min-w-0 flex-1 pr-1">
+                    <span className="text-[11px] font-bold text-slate-900 dark:text-slate-100 truncate block">
+                      {game.name}
+                    </span>
+                    <span className="text-[9px] text-slate-400 block truncate">{game.genre}</span>
                   </div>
-                  <span className="text-base font-black text-emerald-600 dark:text-red-400 font-mono block">
-                    {fpsData.cs2.fps}
+                  <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded flex-shrink-0 ${
+                    game.experienceRating === 'ultra'
+                      ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300'
+                      : game.experienceRating === 'smooth'
+                      ? 'bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300'
+                      : game.experienceRating === 'playable'
+                      ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300'
+                      : 'bg-red-100 text-red-800 dark:bg-red-950/80 dark:text-red-300'
+                  }`}>
+                    {game.badgeText}
                   </span>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
-                    <div className="bg-emerald-500 h-full rounded-full transition-all duration-500" style={{ width: `${fpsData.cs2.pct}%` }} />
-                  </div>
                 </div>
 
-                <div className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1">
-                  <div className="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-medium">
-                    <span>Black Myth Wukong</span>
-                    <span className="text-[9px] text-sky-600 dark:text-sky-400 font-bold">{fpsData.wukong.note}</span>
-                  </div>
-                  <span className="text-base font-black text-sky-600 dark:text-sky-400 font-mono block">
-                    {fpsData.wukong.fps}
+                <div className="flex items-baseline justify-between pt-0.5">
+                  <span className="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 font-mono tracking-tight">
+                    {game.fpsText}
                   </span>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
-                    <div className="bg-sky-500 h-full rounded-full transition-all duration-500" style={{ width: `${fpsData.wukong.pct}%` }} />
-                  </div>
+                  <span className="text-[9px] text-slate-500 dark:text-slate-400 font-medium">{game.settingsNote}</span>
                 </div>
 
-                <div className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1">
-                  <div className="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-medium">
-                    <span>Cyberpunk 2077</span>
-                    <span className="text-[9px] text-purple-600 dark:text-purple-400 font-bold">{fpsData.cyberpunk.note}</span>
-                  </div>
-                  <span className="text-base font-black text-purple-600 dark:text-purple-400 font-mono block">
-                    {fpsData.cyberpunk.fps}
-                  </span>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
-                    <div className="bg-purple-500 h-full rounded-full transition-all duration-500" style={{ width: `${fpsData.cyberpunk.pct}%` }} />
-                  </div>
-                </div>
-
-                <div className="bg-gray-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700/80 text-left space-y-1">
-                  <div className="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-medium">
-                    <span>GTA V / Forza 5</span>
-                    <span className="text-[9px] text-amber-600 dark:text-amber-400 font-bold">{fpsData.gta5.note}</span>
-                  </div>
-                  <span className="text-base font-black text-amber-600 dark:text-amber-400 font-mono block">
-                    {fpsData.gta5.fps}
-                  </span>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
-                    <div className="bg-amber-500 h-full rounded-full transition-all duration-500" style={{ width: `${fpsData.gta5.pct}%` }} />
-                  </div>
+                <div className="w-full bg-gray-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full rounded-full transition-all duration-500 ${
+                      game.experienceRating === 'ultra'
+                        ? 'bg-emerald-500'
+                        : game.experienceRating === 'smooth'
+                        ? 'bg-blue-500'
+                        : game.experienceRating === 'playable'
+                        ? 'bg-amber-500'
+                        : 'bg-red-500'
+                    }`}
+                    style={{ width: `${game.progressPct}%` }}
+                  />
                 </div>
               </div>
-            );
-          })()}
+            ))}
+          </div>
         </div>
       </div>
 
@@ -1073,10 +1235,21 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 </span>
               </div>
 
-              {totalPrice > 0 && (
-                <div className="text-[11px] text-slate-500 dark:text-slate-400 bg-gray-50 dark:bg-slate-900/60 p-2 rounded-lg text-center">
-                  Trả góp 0% chỉ từ <strong className="text-[#d70018] dark:text-red-400">{new Intl.NumberFormat('vi-VN').format(Math.round(totalPrice / 12))}₫</strong>/tháng
-                </div>
+              {totalPrice >= 1000000 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowInstallmentModal(true);
+                    sound.playClick();
+                  }}
+                  className="w-full text-xs text-slate-700 dark:text-slate-300 bg-amber-50/90 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/50 border border-amber-200 dark:border-amber-800/80 p-2.5 rounded-xl transition cursor-pointer flex items-center justify-between"
+                >
+                  <div className="flex items-center space-x-2">
+                    <CreditCard className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                    <span>Trả góp 0% chỉ từ <strong className="text-[#d70018] dark:text-red-400 font-mono font-bold">{new Intl.NumberFormat('vi-VN').format(Math.round(totalPrice / 12))}₫</strong>/tháng</span>
+                  </div>
+                  <span className="text-[11px] text-amber-700 dark:text-amber-300 font-bold underline">Bảng tính</span>
+                </button>
               )}
 
               <button
@@ -1174,32 +1347,75 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
         </div>
       )}
 
-      {/* 6. Printable Official Quotation Modal */}
-      {showQuoteModal && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 print:p-0 print:bg-white animate-in fade-in duration-200">
-          <div className="bg-white text-slate-800 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative print:border-none print:shadow-none print:p-0 print:max-w-none">
-            {/* Modal Close & Action Header (Hidden in Print) */}
-            <div className="flex items-center justify-between pb-4 border-b border-slate-100 print:hidden">
-              <div className="flex items-center space-x-2">
-                <Printer className="w-5 h-5 text-[#d70018]" />
-                <h3 className="font-bold text-sm text-slate-900">Bảng Báo Giá Linh Kiện & Cấu Hình Máy Tính</h3>
+      {/* 6. Printable Official B2B Quotation Modal */}
+      {showQuoteModal && (() => {
+        const vatAmount = Math.round((totalPrice * quoteVatPercent) / 100);
+        const grandTotalWithVat = totalPrice + vatAmount;
+
+        return (
+          <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 print:p-0 print:bg-white animate-in fade-in duration-200">
+            <div className="bg-white text-slate-800 rounded-3xl max-w-4xl w-full p-5 sm:p-8 shadow-2xl border border-slate-200 relative print:border-none print:shadow-none print:p-0 print:max-w-none space-y-4">
+              {/* Modal Action Header (Hidden in Print) */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-150 print:hidden gap-3">
+                <div className="flex items-center space-x-2">
+                  <Printer className="w-5 h-5 text-[#d70018]" />
+                  <div>
+                    <h3 className="font-bold text-sm sm:text-base text-slate-900">Bảng Báo Giá Chuẩn Doanh Nghiệp (B2B / B2C)</h3>
+                    <p className="text-[11px] text-slate-500">Tùy chỉnh thông tin khách hàng, xuất VAT và in PDF trực tiếp</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={() => window.print()}
+                    className="px-4 py-2 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-bold rounded-xl flex items-center space-x-1.5 transition shadow-xs cursor-pointer"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span>In / Lưu PDF (Ctrl + P)</span>
+                  </button>
+                  <button
+                    onClick={() => setShowQuoteModal(false)}
+                    className="p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition cursor-pointer"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <button
-                  onClick={() => window.print()}
-                  className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-bold rounded-xl flex items-center space-x-1.5 transition shadow-xs cursor-pointer"
-                >
-                  <Printer className="w-4 h-4" />
-                  <span>In / Lưu PDF (Ctrl + P)</span>
-                </button>
-                <button
-                  onClick={() => setShowQuoteModal(false)}
-                  className="p-1.5 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition cursor-pointer"
-                >
-                  <X className="w-5 h-5" />
-                </button>
+
+              {/* Editable Fields in Screen Mode (Hidden in Print) */}
+              <div className="bg-slate-50 p-3 rounded-2xl border border-slate-200 text-xs grid grid-cols-1 sm:grid-cols-3 gap-2.5 print:hidden">
+                <div>
+                  <label className="block text-slate-500 font-semibold mb-1">Tên khách hàng:</label>
+                  <input
+                    type="text"
+                    value={quoteCustomerName}
+                    onChange={e => setQuoteCustomerName(e.target.value)}
+                    placeholder="Tên khách hàng"
+                    className="w-full px-2.5 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-800 outline-none font-bold"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-500 font-semibold mb-1">Công ty / Cơ quan (tùy chọn):</label>
+                  <input
+                    type="text"
+                    value={quoteCompany}
+                    onChange={e => setQuoteCompany(e.target.value)}
+                    placeholder="Tên công ty xuất hóa đơn"
+                    className="w-full px-2.5 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-800 outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-500 font-semibold mb-1">Thuế GTGT (VAT):</label>
+                  <select
+                    value={quoteVatPercent}
+                    onChange={e => setQuoteVatPercent(Number(e.target.value))}
+                    className="w-full px-2.5 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-800 outline-none font-bold"
+                  >
+                    <option value={0}>Không xuất VAT (0%)</option>
+                    <option value={8}>VAT 8% (Linh kiện được giảm)</option>
+                    <option value={10}>VAT 10% (Chuẩn)</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
             {/* Printable Content Area */}
             <div className="pt-4 space-y-6">
@@ -1224,16 +1440,23 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
               </div>
 
               {/* Customer Box */}
-              <div className="grid grid-cols-2 gap-4 bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-xs">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs">
                 <div>
-                  <span className="text-slate-500 block">Khách hàng:</span>
-                  <strong className="text-slate-900 font-bold">Khách Hàng TechStore Studio</strong>
+                  <span className="text-slate-500 block">Kính gửi Quý Khách:</span>
+                  <strong className="text-slate-900 font-bold block">{quoteCustomerName || 'Khách Hàng TechStore'}</strong>
+                  {quoteCompany && <span className="text-slate-600 block text-[11px]">{quoteCompany}</span>}
                 </div>
                 <div>
-                  <span className="text-slate-500 block">Tình trạng tương thích:</span>
+                  <span className="text-slate-500 block">Thẩm định phần cứng:</span>
                   <strong className="text-emerald-700 font-bold flex items-center space-x-1">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Tương thích phần cứng 100% (Đã kiểm định)</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                    <span>{bottleneckAnalysis.title}</span>
+                  </strong>
+                </div>
+                <div>
+                  <span className="text-slate-500 block">Công suất tiêu thụ:</span>
+                  <strong className="text-slate-800 font-bold">
+                    ~{powerTelemetry.estimatedWattage}W (Nguồn: {powerTelemetry.recommendedPsuWattage}W)
                   </strong>
                 </div>
               </div>
@@ -1277,22 +1500,34 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
                 </table>
               </div>
 
-              {/* Pricing & Seal Summary */}
-              <div className="flex justify-between items-end pt-2">
-                <div className="space-y-1 text-xs text-slate-600">
-                  <p>• <strong>Công suất ước tính:</strong> ~{validationResult?.estimatedWattage || 380}W (Nguồn đề xuất: {validationResult?.recommendedWattage || 650}W)</p>
-                  <p>• <strong>Ưu đãi đi kèm:</strong> Tặng gói cân màu màn hình SpyderX & Miễn phí vệ sinh máy trọn đời.</p>
-                  <p>• <strong>Chính sách:</strong> Lỗi 1 đổi 1 trong 30 ngày ngay tại cửa hàng.</p>
+              {/* Pricing, VAT & Seal Summary */}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end pt-3 border-t border-slate-200 gap-4">
+                <div className="space-y-1 text-xs text-slate-600 max-w-md">
+                  <p>• <strong>Bảo hành chính hãng:</strong> Linh kiện đổi mới 1:1 trong 30 ngày đầu tiên nếu lỗi nhà sản xuất.</p>
+                  <p>• <strong>Hỗ trợ kỹ thuật:</strong> Miễn phí công lắp ráp, đi dây giấu nguồn chuyên nghiệp, cài đặt hệ điều hành và vệ sinh trọn đời.</p>
+                  <p>• <strong>Tư vấn thanh toán:</strong> Hỗ trợ trả góp 0% qua 25 ngân hàng hoặc ví trả sau duyệt online 15 phút.</p>
                 </div>
 
-                <div className="text-right space-y-1">
-                  <span className="text-xs text-slate-500">Tổng thanh toán dự kiến:</span>
-                  <div className="text-2xl font-black text-[#d70018] font-mono">
-                    {new Intl.NumberFormat('vi-VN').format(totalPrice)}₫
+                <div className="text-right space-y-1 w-full sm:w-auto">
+                  <div className="flex justify-between sm:justify-end sm:space-x-4 text-xs text-slate-600">
+                    <span>Tổng tiền linh kiện:</span>
+                    <span className="font-mono font-bold text-slate-800">{new Intl.NumberFormat('vi-VN').format(totalPrice)}₫</span>
+                  </div>
+                  {quoteVatPercent > 0 && (
+                    <div className="flex justify-between sm:justify-end sm:space-x-4 text-xs text-slate-600">
+                      <span>Thuế GTGT ({quoteVatPercent}% VAT):</span>
+                      <span className="font-mono font-bold text-slate-800">+{new Intl.NumberFormat('vi-VN').format(vatAmount)}₫</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between sm:justify-end sm:space-x-4 items-baseline pt-1">
+                    <span className="text-xs font-bold text-slate-900">Tổng thanh toán:</span>
+                    <div className="text-2xl font-black text-[#d70018] font-mono">
+                      {new Intl.NumberFormat('vi-VN').format(grandTotalWithVat)}₫
+                    </div>
                   </div>
                   <div className="pt-2 flex justify-end">
-                    <div className="border-2 border-red-500 rounded-lg px-3 py-1 text-red-600 text-[10px] font-black uppercase tracking-wider rotate-[-6deg] shadow-xs">
-                      ★ TECHSTORE VERIFIED ★<br />ĐÃ DUYỆT BÁO GIÁ
+                    <div className="border-2 border-red-500 rounded-lg px-3 py-1 text-red-600 text-[10px] font-black uppercase tracking-wider rotate-[-4deg] shadow-xs">
+                      ★ TECHSTORE VERIFIED ★<br />ĐÃ KIỂM ĐỊNH TƯƠNG THÍCH 100%
                     </div>
                   </div>
                 </div>
@@ -1300,7 +1535,22 @@ export const PCBuilderView: React.FC<PCBuilderViewProps> = ({ onBackToHome, onSe
             </div>
           </div>
         </div>
-      )}
+      );})()}
+
+      {/* 0% Installment Calculator Modal for Whole Rig */}
+      <InstallmentCalculatorModal
+        isOpen={showInstallmentModal}
+        onClose={() => setShowInstallmentModal(false)}
+        productName={`Dàn PC Custom (${Object.keys(selectedParts).length} linh kiện)`}
+        price={totalPrice}
+        onSelectPlan={(plan) => {
+          handleAddAllToCart();
+          setShowInstallmentModal(false);
+          if (onToast) {
+            onToast('Đã chọn gói trả góp!', `${plan.provider} • Kỳ hạn ${plan.termMonths} tháng`);
+          }
+        }}
+      />
 
       {/* 7. Modal Gửi Yêu Cầu Báo Giá Đến TechStore */}
       {showSubmitModal && (

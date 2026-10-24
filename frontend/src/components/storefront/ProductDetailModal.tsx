@@ -19,6 +19,7 @@ import { Product, ProductVariant } from '../../types';
 import { useCart } from '../../context/CartContext';
 import { fetchProductDetail, fetchProductReviews, submitProductReview } from '../../services/api';
 import { sound } from '../../utils/sound';
+import { InstallmentCalculatorModal } from '../common/InstallmentCalculatorModal';
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -45,6 +46,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   const [newComment, setNewComment] = useState('');
   const [showReviewForm, setShowReviewForm] = useState(false);
   const [reviewSubmitted, setReviewSubmitted] = useState(false);
+  const [showInstallmentModal, setShowInstallmentModal] = useState(false);
 
   const loadReviews = (slugOrId: string) => {
     fetchProductReviews(slugOrId)
@@ -294,6 +296,33 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   </div>
                 </div>
 
+                {/* 0% Installment Action Banner */}
+                {currentPrice >= 1000000 && (
+                  <div className="flex items-center justify-between p-3 bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 rounded-2xl text-xs">
+                    <div className="flex items-center space-x-2.5">
+                      <div className="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">
+                        0%
+                      </div>
+                      <div>
+                        <span className="text-slate-700 dark:text-slate-300 font-medium block">
+                          Trả góp 0% chỉ từ <strong className="text-[#d70018] dark:text-red-400 font-mono font-bold">{new Intl.NumberFormat('vi-VN').format(Math.round(currentPrice / 6))}₫</strong>/tháng
+                        </span>
+                        <span className="text-[10px] text-slate-400 dark:text-slate-500">Duyệt online 15 phút qua Fundiin hoặc Thẻ tín dụng</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowInstallmentModal(true);
+                        sound.playClick();
+                      }}
+                      className="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-bold text-[11px] transition shadow-2xs cursor-pointer flex-shrink-0"
+                    >
+                      Bảng tính
+                    </button>
+                  </div>
+                )}
+
                 {/* Variants Selector */}
                 {product.variants && product.variants.length > 0 && (
                   <div>
@@ -375,10 +404,18 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     <RotateCcw className="w-4 h-4 text-[#d70018] dark:text-red-400 flex-shrink-0" />
                     <span>1 đổi 1 30 ngày</span>
                   </div>
-                  <div className="flex items-center space-x-1.5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowInstallmentModal(true);
+                      sound.playClick();
+                    }}
+                    className="flex items-center space-x-1.5 hover:text-amber-600 dark:hover:text-amber-400 transition cursor-pointer text-left"
+                    title="Mở bảng tính toán trả góp 0% chi tiết"
+                  >
                     <CreditCard className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
-                    <span>Trả góp 0%</span>
-                  </div>
+                    <span className="underline decoration-dotted font-semibold">Trả góp 0%</span>
+                  </button>
                 </div>
               </div>
             </div>
