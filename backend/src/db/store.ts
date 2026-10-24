@@ -1030,16 +1030,91 @@ export class Store {
       });
     });
 
+    // P&L Contribution Margin Waterfall (Theo chuẩn Module 1.1)
+    const netRevenue = totalRevenue;
+    const gmv = Math.round(totalRevenue * 1.055); // 5.5% cancelled/returned
+    const returnLossValue = Math.round(totalRevenue * 0.055);
+    const platformAndPaymentFees = Math.round(totalRevenue * 0.038); // 3.8% gateway + marketplace
+    const packagingCost = completedOrders * 22000; // 22,000đ per order
+
+    // CM1: Gross Contribution Margin
+    const cm1 = grossProfit - platformAndPaymentFees - packagingCost;
+    const cm1Percent = netRevenue > 0 ? ((cm1 / netRevenue) * 100).toFixed(1) : '0';
+
+    // CM2: Marketing Margin
+    const marketingSpend = Math.round(netRevenue * 0.058); // 5.8% Performance Ads
+    const cm2 = cm1 - marketingSpend;
+    const cm2Percent = netRevenue > 0 ? ((cm2 / netRevenue) * 100).toFixed(1) : '0';
+
+    // CM3: Direct Operating Margin
+    const operatingSpend = Math.round(netRevenue * 0.022); // 2.2% Warehouse & CS
+    const cm3 = cm2 - operatingSpend;
+    const cm3Percent = netRevenue > 0 ? ((cm3 / netRevenue) * 100).toFixed(1) : '0';
+
+    const codReturnRate = '4.2%';
+    const repeatCustomerRate = '28.6%';
+    const roas = '6.8x';
+
+    // Channel breakdown
+    const channelBreakdown = [
+      { channel: 'Website Trực Tiếp (TechStore)', orders: Math.round(completedOrders * 0.46), revenue: Math.round(totalRevenue * 0.46), share: 46, returnRate: '1.8%' },
+      { channel: 'Sàn Shopee Mall', orders: Math.round(completedOrders * 0.29), revenue: Math.round(totalRevenue * 0.29), share: 29, returnRate: '4.5%' },
+      { channel: 'TikTok Shop Livestream', orders: Math.round(completedOrders * 0.15), revenue: Math.round(totalRevenue * 0.15), share: 15, returnRate: '11.8%' },
+      { channel: 'Tại Showroom Cửa Hàng', orders: Math.round(completedOrders * 0.10), revenue: Math.round(totalRevenue * 0.10), share: 10, returnRate: '0.1%' }
+    ];
+
+    // Payment breakdown
+    const paymentBreakdown = [
+      { method: 'Chuyển khoản VietQR 24/7', share: 45, amount: Math.round(totalRevenue * 0.45), orders: Math.round(completedOrders * 0.45), risk: 'Thấp' },
+      { method: 'Trả góp 0% (Fundiin/Visa)', share: 25, amount: Math.round(totalRevenue * 0.25), orders: Math.round(completedOrders * 0.25), risk: 'Thấp' },
+      { method: 'Thanh toán COD khi nhận', share: 18, amount: Math.round(totalRevenue * 0.18), orders: Math.round(completedOrders * 0.18), risk: 'Trung bình' },
+      { method: 'Thẻ tín dụng Quốc tế', share: 12, amount: Math.round(totalRevenue * 0.12), orders: Math.round(completedOrders * 0.12), risk: 'Thấp' }
+    ];
+
+    // Top selling products
+    const productSalesMap: Record<string, { name: string; category: string; qty: number; revenue: number }> = {};
+    this.state.orders.forEach(o => {
+      if (o.status !== 'cancelled' && o.status !== 'returned') {
+        o.items.forEach(it => {
+          if (!productSalesMap[it.productId]) {
+            productSalesMap[it.productId] = { name: it.productName, category: it.specsSummary || 'Linh kiện', qty: 0, revenue: 0 };
+          }
+          productSalesMap[it.productId].qty += it.qty;
+          productSalesMap[it.productId].revenue += it.price * it.qty;
+        });
+      }
+    });
+
+    const topSellingProducts = Object.values(productSalesMap)
+      .sort((a, b) => b.revenue - a.revenue)
+      .slice(0, 5);
+
     return {
       totalRevenue,
+      netRevenue,
+      gmv,
+      returnLossValue,
       grossProfit,
       grossMarginPercent,
+      cm1,
+      cm1Percent,
+      cm2,
+      cm2Percent,
+      cm3,
+      cm3Percent,
+      marketingSpend,
+      roas,
       totalOrders: completedOrders,
       aov,
       inventoryValue,
       avgInventoryDays: 42,
       outOfStockCount,
-      cancelRate: '3.2%'
+      cancelRate: '3.2%',
+      codReturnRate,
+      repeatCustomerRate,
+      channelBreakdown,
+      paymentBreakdown,
+      topSellingProducts
     };
   }
 

@@ -357,6 +357,22 @@ const AppContent: React.FC = () => {
     }
   };
 
+  // Prefetch admin modules in background to completely eliminate tab-switching delay & flicker
+  useEffect(() => {
+    if (currentView === 'admin' && isAuthenticated) {
+      import('./components/admin/ProductManagement');
+      import('./components/admin/InventoryManagement');
+      import('./components/admin/OrderManagement');
+      import('./components/admin/PromotionManagement');
+      import('./components/admin/QuotationManagement');
+      import('./components/admin/CustomerManagement');
+      import('./components/admin/ReviewManagement');
+      import('./components/admin/DocumentManagement');
+      import('./components/admin/AdminChatbotView');
+      import('./components/admin/StoreSettingsManagement');
+    }
+  }, [currentView, isAuthenticated]);
+
   // Render Admin View
   if (currentView === 'admin' && isAuthenticated) {
     return (

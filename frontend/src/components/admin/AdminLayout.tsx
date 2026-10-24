@@ -41,6 +41,47 @@ interface AdminLayoutProps {
   children: React.ReactNode;
 }
 
+
+// Sleek localized skeleton loader to prevent any layout shifts or screen flickering
+const AdminContentSkeleton: React.FC = () => (
+  <div className="space-y-6 animate-pulse">
+    {/* Header Skeleton */}
+    <div className="flex justify-between items-center pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div className="space-y-2">
+        <div className="h-6 w-64 bg-slate-200 dark:bg-slate-800 rounded-lg" />
+        <div className="h-3 w-96 bg-slate-100 dark:bg-slate-850 rounded" />
+      </div>
+      <div className="h-8 w-32 bg-slate-200 dark:bg-slate-800 rounded-xl" />
+    </div>
+
+    {/* Metric Cards Skeleton */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {[1, 2, 3, 4].map(i => (
+        <div key={i} className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-3">
+          <div className="flex justify-between items-center">
+            <div className="h-3 w-20 bg-slate-200 dark:bg-slate-800 rounded" />
+            <div className="w-5 h-5 rounded-full bg-slate-100 dark:bg-slate-850" />
+          </div>
+          <div className="h-7 w-28 bg-slate-200 dark:bg-slate-800 rounded-lg" />
+          <div className="h-2.5 w-36 bg-slate-100 dark:bg-slate-850 rounded" />
+        </div>
+      ))}
+    </div>
+
+    {/* Table / Chart Skeleton */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 h-64 space-y-4">
+        <div className="h-4 w-48 bg-slate-200 dark:bg-slate-800 rounded" />
+        <div className="h-40 bg-slate-100 dark:bg-slate-850 rounded-lg" />
+      </div>
+      <div className="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 h-64 space-y-4">
+        <div className="h-4 w-48 bg-slate-200 dark:bg-slate-800 rounded" />
+        <div className="h-40 bg-slate-100 dark:bg-slate-850 rounded-lg" />
+      </div>
+    </div>
+  </div>
+);
+
 export const AdminLayout: React.FC<AdminLayoutProps> = ({
   currentTab,
   onSelectTab,
@@ -103,7 +144,7 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({
               return (
                 <button
                   key={item.key}
-                  onClick={() => onSelectTab(item.key)}
+                  onClick={() => React.startTransition(() => onSelectTab(item.key))}
                   className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition cursor-pointer ${
                     isActive
                       ? 'bg-[#059669] text-white shadow-xs'
@@ -183,9 +224,11 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({
           </div>
         </header>
 
-        {/* Content Body */}
+        {/* Content Body with Localized Suspense Boundary to prevent screen flicker */}
         <div className="p-6 flex-1 bg-slate-50/70 dark:bg-[#0b0f19]">
-          {children}
+          <React.Suspense fallback={<AdminContentSkeleton />}>
+            {children}
+          </React.Suspense>
         </div>
       </main>
     </div>
