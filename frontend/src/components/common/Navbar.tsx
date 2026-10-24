@@ -50,6 +50,7 @@ interface NavbarProps {
   onNavigateAdmin: () => void;
   onNavigateHome: () => void;
   onSelectCategory: (categorySlug: string) => void;
+  onSelectProduct?: (product: Product) => void;
   onNavigateSection?: (sectionId: string) => void;
   currentCategory?: string;
   onOpenBotChat?: () => void;
@@ -64,6 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onNavigateAdmin,
   onNavigateHome,
   onSelectCategory,
+  onSelectProduct,
   onNavigateSection,
   currentCategory,
   onOpenBotChat,
@@ -435,7 +437,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                       key={p.id}
                       onClick={() => {
                         setShowSuggestions(false);
-                        onSearch(p.name);
+                        if (onSelectProduct) {
+                          onSelectProduct(p);
+                        } else {
+                          onSearch(p.name);
+                        }
                       }}
                       className="p-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/80 cursor-pointer flex items-center space-x-3 transition group"
                     >

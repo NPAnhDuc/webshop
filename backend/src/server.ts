@@ -529,6 +529,11 @@ app.put('/admin/settings', (req: Request, res: Response) => {
   res.json({ success: true, data: updated });
 });
 
-app.listen(Number(PORT), '0.0.0.0', () => {
-  console.log(`[TechStore Backend Server] Running cleanly on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(Number(PORT), '0.0.0.0', () => {
+    console.log('[TechStore Backend Server] Running cleanly on port ' + PORT);
+  });
+}
+
+export { app };
+

@@ -14,6 +14,9 @@ import type { AdminTabType } from './components/admin/AdminLayout';
 
 // Lazy-loaded heavy modules for lightning-fast initial page load
 const ProductDetailModal = React.lazy(() => import('./components/storefront/ProductDetailModal').then(m => ({ default: m.ProductDetailModal })));
+const ProductDetailPage = React.lazy(() => import('./components/storefront/ProductDetailPage').then(m => ({ default: m.ProductDetailPage })));
+const OrderTrackingPage = React.lazy(() => import('./components/storefront/OrderTrackingPage').then(m => ({ default: m.OrderTrackingPage })));
+const ComparisonPage = React.lazy(() => import('./components/storefront/ComparisonPage').then(m => ({ default: m.ComparisonPage })));
 const CheckoutModal = React.lazy(() => import('./components/common/CheckoutModal').then(m => ({ default: m.CheckoutModal })));
 const OrderLookupModal = React.lazy(() => import('./components/common/OrderLookupModal').then(m => ({ default: m.OrderLookupModal })));
 const CustomerChatWidget = React.lazy(() => import('./components/chatbot/CustomerChatWidget').then(m => ({ default: m.CustomerChatWidget })));
@@ -60,24 +63,47 @@ import {
   Heart
 } from 'lucide-react';
 
+export type AppView = 'storefront' | 'pc-builder' | 'admin' | 'product-detail' | 'track-order' | 'compare';
+
 const AppContent: React.FC = () => {
   const { isAuthenticated, login } = useAuth();
   const { t, lang } = useLanguage();
 
-  // Navigation Views: 'storefront' | 'pc-builder' | 'admin'
-  const [currentView, setCurrentView] = useState<'storefront' | 'pc-builder' | 'admin'>(() => {
+  // Navigation Views: 'storefront' | 'pc-builder' | 'admin' | 'product-detail' | 'track-order' | 'compare'
+  const [currentView, setCurrentView] = useState<AppView>(() => {
     if (typeof window !== 'undefined') {
       const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
       if (hash.startsWith('admin')) return 'admin';
       if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) return 'pc-builder';
+      if (hash.startsWith('product/')) return 'product-detail';
+      if (hash.startsWith('track-order') || hash.startsWith('lookup')) return 'track-order';
+      if (hash.startsWith('compare')) return 'compare';
     }
     return 'storefront';
   });
+
+  const [activeProductSlug, setActiveProductSlug] = useState<string | null>(() => {
+    if (typeof window !== 'undefined') {
+      const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+      if (rawHash.toLowerCase().startsWith('product/')) {
+        return rawHash.substring('product/'.length).trim() || null;
+      }
+    }
+    return null;
+  });
+
   const [adminTab, setAdminTab] = useState<AdminTabType>('dashboard');
 
-  const navigateToView = (view: 'storefront' | 'pc-builder' | 'admin', pushHistory = true) => {
+  const navigateToView = (view: AppView, pushHistory = true) => {
     setCurrentView(view);
-    const targetHash = view === 'storefront' ? '#/' : `#/${view}`;
+    let targetHash = '#/';
+    if (view === 'storefront') targetHash = currentCategory !== 'all' ? `#/category/${currentCategory}` : '#/';
+    else if (view === 'pc-builder') targetHash = '#/pc-builder';
+    else if (view === 'admin') targetHash = '#/admin';
+    else if (view === 'track-order') targetHash = '#/track-order';
+    else if (view === 'compare') targetHash = '#/compare';
+    else if (view === 'product-detail' && activeProductSlug) targetHash = `#/product/${activeProductSlug}`;
+
     if (window.location.hash !== targetHash) {
       if (pushHistory) {
         window.history.pushState(null, '', targetHash);
@@ -85,6 +111,21 @@ const AppContent: React.FC = () => {
         window.history.replaceState(null, '', targetHash);
       }
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigateToProduct = (productSlugOrId: string, pushHistory = true) => {
+    setActiveProductSlug(productSlugOrId);
+    setCurrentView('product-detail');
+    const targetHash = `#/product/${productSlugOrId}`;
+    if (window.location.hash !== targetHash) {
+      if (pushHistory) {
+        window.history.pushState(null, '', targetHash);
+      } else {
+        window.history.replaceState(null, '', targetHash);
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -96,6 +137,14 @@ const AppContent: React.FC = () => {
         setCurrentView('admin');
       } else if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) {
         setCurrentView('pc-builder');
+      } else if (hash.startsWith('product/')) {
+        const slug = rawHash.substring('product/'.length).trim();
+        setActiveProductSlug(slug || null);
+        setCurrentView('product-detail');
+      } else if (hash.startsWith('track-order') || hash.startsWith('lookup')) {
+        setCurrentView('track-order');
+      } else if (hash.startsWith('compare')) {
+        setCurrentView('compare');
       } else if (hash.startsWith('category/')) {
         const cat = rawHash.substring('category/'.length).trim();
         setCurrentView('storefront');
@@ -213,7 +262,7 @@ const AppContent: React.FC = () => {
   };
 
   useEffect(() => {
-    if (currentView === 'storefront') {
+    if (currentView === 'storefront' || currentView === 'product-detail') {
       loadProducts();
     }
   }, [
@@ -255,9 +304,7 @@ const AppContent: React.FC = () => {
         window.history.replaceState(null, '', targetHash);
       }
     }
-    setTimeout(() => {
-      document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-    }, 50);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleNavigateHome = () => {
@@ -273,8 +320,9 @@ const AppContent: React.FC = () => {
     setCurrentCategory('all');
     setWishlistFilterOnly(false);
 
-    // 2. Dismiss any open modals
+    // 2. Dismiss any open modals or detail views
     setSelectedProduct(null);
+    setActiveProductSlug(null);
     setShowCheckout(false);
     setShowOrderLookup(false);
     setShowAdminLogin(false);
@@ -312,8 +360,8 @@ const AppContent: React.FC = () => {
       if (exists) {
         return prev.filter(p => p.id !== product.id);
       } else {
-        if (prev.length >= 3) {
-          addToast('Chỉ so sánh tối đa 3 máy', 'Vui lòng bỏ bớt 1 máy để chọn máy mới', 'warning');
+        if (prev.length >= 4) {
+          addToast('Chỉ so sánh tối đa 4 máy', 'Vui lòng bỏ bớt 1 máy để chọn máy mới', 'warning');
           return prev;
         }
         addToast('Đã thêm vào danh sách so sánh', product.name, 'info');
@@ -399,474 +447,522 @@ const AppContent: React.FC = () => {
     );
   }
 
-  // Render PC Builder View
-  if (currentView === 'pc-builder') {
-    return (
-      <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white transition-colors duration-200">
-        <Navbar
-          onSearch={q => {
-            setSearchQuery(q);
-            navigateToView('storefront');
-          }}
-          onOpenLookup={() => setShowOrderLookup(true)}
-          onNavigatePCBuilder={() => navigateToView('pc-builder')}
-          onNavigateAdmin={handleAdminClick}
-          onNavigateHome={handleNavigateHome}
-          onNavigateSection={handleScrollToSection}
-          onSelectCategory={cat => handleSelectCategory(cat)}
-          currentCategory={currentCategory}
-          onToggleWishlistFilter={() => {
-            setWishlistFilterOnly(prev => !prev);
-            navigateToView('storefront');
-          }}
-          isWishlistFilterActive={wishlistFilterOnly}
-        />
-        <PCBuilderView
-          onBackToHome={handleNavigateHome}
-          onSelectProduct={prod => setSelectedProduct(prod)}
-          onToast={(title, msg) => addToast(title, msg, 'success')}
-        />
-        <Footer />
-        <CartDrawer onProceedToCheckout={() => setShowCheckout(true)} />
-        <CheckoutModal
-          isOpen={showCheckout}
-          onClose={() => setShowCheckout(false)}
-          onOrderSuccess={code => {
-            setSuccessOrderCode(code);
-            addToast('Đặt hàng thành công!', `Mã đơn: ${code}`, 'success');
-          }}
-        />
-        <ToastContainer toasts={toasts} onDismiss={removeToast} />
-      </div>
-    );
-  }
-
-  // Render Main Storefront View
+  // Render Customer-Facing Layout
   return (
     <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white relative transition-colors duration-200">
       {/* Interactive Side Wings for Wide Screens */}
       <SideWings
         onNavigatePCBuilder={() => navigateToView('pc-builder')}
-        onOpenLookup={() => setShowOrderLookup(true)}
+        onOpenLookup={() => navigateToView('track-order')}
       />
 
       {/* 1. Header Navigation */}
       <Navbar
-        onSearch={q => setSearchQuery(q)}
-        onOpenLookup={() => setShowOrderLookup(true)}
+        onSearch={q => {
+          setSearchQuery(q);
+          navigateToView('storefront');
+        }}
+        onOpenLookup={() => navigateToView('track-order')}
         onNavigatePCBuilder={() => navigateToView('pc-builder')}
         onNavigateAdmin={handleAdminClick}
         onNavigateHome={handleNavigateHome}
         onNavigateSection={handleScrollToSection}
         onSelectCategory={cat => handleSelectCategory(cat)}
+        onSelectProduct={prod => navigateToProduct(prod.slug || prod.id)}
         currentCategory={currentCategory}
-        onToggleWishlistFilter={() => setWishlistFilterOnly(prev => !prev)}
+        onToggleWishlistFilter={() => {
+          setWishlistFilterOnly(prev => !prev);
+          navigateToView('storefront');
+        }}
         isWishlistFilterActive={wishlistFilterOnly}
       />
 
-      {/* Main Container */}
-      <main className="max-w-[1440px] xl:max-w-[1536px] mx-auto px-4 sm:px-6 py-5 w-full flex-1">
-        {/* Order Placed Success Banner */}
-        {successOrderCode && (
-          <div className="mb-6 p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 rounded-2xl flex items-center justify-between text-xs text-emerald-900 dark:text-emerald-200 shadow-xs animate-in fade-in">
-            <div className="flex items-center space-x-3">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-              <div>
-                <p className="font-bold text-sm">
-                  {lang === 'vi' ? 'Đặt hàng thành công! Mã đơn: ' : 'Order placed successfully! Order Code: '}
-                  <span className="font-mono">{successOrderCode}</span>
-                </p>
-                <p className="text-emerald-700 dark:text-emerald-300">
-                  {lang === 'vi'
-                    ? 'Đơn hàng đã được lưu & giữ hàng trong kho. Chuyên viên TechStore sẽ gọi xác nhận trong 15 phút.'
-                    : 'Your order is confirmed & reserved. A TechStore specialist will contact you within 15 minutes.'}
-                </p>
+      {/* Main View Router */}
+      {currentView === 'pc-builder' ? (
+        <PCBuilderView
+          onBackToHome={handleNavigateHome}
+          onSelectProduct={prod => navigateToProduct(prod.slug || prod.id)}
+          onToast={(title, msg) => addToast(title, msg, 'success')}
+        />
+      ) : currentView === 'product-detail' && activeProductSlug ? (
+        <ProductDetailPage
+          productSlugOrId={activeProductSlug}
+          initialProduct={products.find(p => p.slug === activeProductSlug || p.id === activeProductSlug) || null}
+          onBack={() => {
+            if (window.history.length > 1) {
+              window.history.back();
+            } else {
+              handleNavigateHome();
+            }
+          }}
+          onSelectProduct={prod => navigateToProduct(prod.slug || prod.id)}
+          onNavigateCategory={cat => handleSelectCategory(cat)}
+          onNavigateHome={handleNavigateHome}
+          onNavigatePCBuilder={() => navigateToView('pc-builder')}
+          onProceedToCheckout={() => setShowCheckout(true)}
+          onToast={(title, msg, type) => addToast(title, msg, type === 'error' ? 'warning' : (type || 'success'))}
+          isComparing={prod => comparingProducts.some(p => p.id === prod.id)}
+          onToggleCompare={handleToggleCompare}
+        />
+      ) : currentView === 'track-order' ? (
+        <OrderTrackingPage
+          onBackToHome={handleNavigateHome}
+          onNavigateProduct={slug => navigateToProduct(slug)}
+        />
+      ) : currentView === 'compare' ? (
+        <ComparisonPage
+          products={comparingProducts}
+          onRemoveProduct={id => setComparingProducts(prev => prev.filter(p => p.id !== id))}
+          onClearAll={() => setComparingProducts([])}
+          onSelectProduct={slug => navigateToProduct(slug)}
+          onBackToHome={handleNavigateHome}
+          onToast={(title, msg, type) => addToast(title, msg, type || 'info')}
+        />
+      ) : (
+        /* Storefront View (Catalog & Category Mode) */
+        <main className="max-w-[1440px] xl:max-w-[1536px] mx-auto px-4 sm:px-6 py-5 w-full flex-1">
+          {/* Order Placed Success Banner */}
+          {successOrderCode && (
+            <div className="mb-6 p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 rounded-2xl flex items-center justify-between text-xs text-emerald-900 dark:text-emerald-200 shadow-xs animate-in fade-in">
+              <div className="flex items-center space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                <div>
+                  <p className="font-bold text-sm">
+                    {lang === 'vi' ? 'Đặt hàng thành công! Mã đơn: ' : 'Order placed successfully! Order Code: '}
+                    <span className="font-mono">{successOrderCode}</span>
+                  </p>
+                  <p className="text-emerald-700 dark:text-emerald-300">
+                    {lang === 'vi'
+                      ? 'Đơn hàng đã được lưu & giữ hàng trong kho. Chuyên viên TechStore sẽ gọi xác nhận trong 15 phút.'
+                      : 'Your order is confirmed & reserved. A TechStore specialist will contact you within 15 minutes.'}
+                  </p>
+                </div>
               </div>
-            </div>
-            <button
-              onClick={() => setSuccessOrderCode(null)}
-              className="text-emerald-700 dark:text-emerald-300 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold px-2 py-1 cursor-pointer"
-            >
-              {lang === 'vi' ? 'Đóng ×' : 'Close ×'}
-            </button>
-          </div>
-        )}
-
-        {/* Hero Banner Luxury Carousel (TechStore 3-Column Hero Layout) */}
-        {!searchQuery && currentCategory === 'all' && (
-          <HeroBannerCarousel
-            onNavigatePCBuilder={() => navigateToView('pc-builder')}
-            onFilterDemand={demand => setSelectedDemand(demand)}
-            onSelectCategory={cat => handleSelectCategory(cat)}
-          />
-        )}
-
-        {/* Flash Sale Banner with Live Timer (TechStore Hot Sale Cuối Tuần) */}
-        {!searchQuery && currentCategory === 'all' && (
-          <FlashSaleBanner
-            products={products}
-            onSelectProduct={prod => setSelectedProduct(prod)}
-            onAskBot={prod => setSelectedProduct(prod || null)}
-          />
-        )}
-
-        {/* CellphoneS-Style High-Conversion Quick Service & Event Bar */}
-        {!searchQuery && currentCategory === 'all' && (
-          <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
-            <button
-              onClick={() => navigateToView('pc-builder')}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
-                <SlidersHorizontal className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Tự Ráp PC</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Quà tặng 2 triệu</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => {
-                setSelectedDemand('gaming');
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
-                <Flame className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Laptop Gaming</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">RTX 40 Series</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => {
-                setHasInstallment0(true);
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
-                <CreditCard className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Trả Góp 0%</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Duyệt nhanh 15P</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => {
-                setSelectedDemand('thin_light');
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-slate-700 transition flex items-center justify-center font-bold flex-shrink-0">
-                <Award className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Sinh Viên Giảm 500k</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Ưu đãi T-Student</span>
-              </div>
-            </button>
-
-            <button
-              onClick={() => {
-                setSelectedPanel('OLED');
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-purple-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
-                <Sparkles className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Màn Hình OLED</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chuẩn màu 100% P3</span>
-              </div>
-            </button>
-
-            <button
-              onClick={handleResetFilters}
-              className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
-            >
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-red-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
-                <ShieldCheck className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">1 Đổi 1 30 Ngày</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chính hãng 100%</span>
-              </div>
-            </button>
-          </div>
-        )}
-
-        {/* Nguyễn Công PC & HACOM Signature Industry Showcases */}
-        {!searchQuery && currentCategory === 'all' && !selectedBrand && !selectedPriceRange && !selectedDemand && !selectedPanel && !hasInstallment0 && !inStockOnly && !wishlistFilterOnly && (
-          <div className="mb-10">
-            <PCStorefrontShowcases
-              products={products}
-              onSelectProduct={prod => setSelectedProduct(prod)}
-              onNavigatePCBuilder={() => navigateToView('pc-builder')}
-              onFilterCategory={cat => handleSelectCategory(cat)}
-              onFilterDemand={dem => {
-                setSelectedDemand(dem);
-                document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              onAskBot={prod => setSelectedProduct(prod)}
-              isComparing={prod => comparingProducts.some(p => p.id === prod.id)}
-              onToggleCompare={handleToggleCompare}
-              onAddToCartToast={name => addToast(lang === 'vi' ? 'Đã thêm vào giỏ hàng' : 'Added to cart', name, 'success')}
-            />
-          </div>
-        )}
-
-        {/* Catalog Section with Sidebar Filters & Product Grid */}
-        <div id="product-catalog-section" className="scroll-mt-24 pt-4 border-t border-gray-200 dark:border-slate-800">
-          {/* Breadcrumb Navigation when filtered or in specific category */}
-          {currentCategory !== 'all' && (
-            <div className="mb-3 flex items-center space-x-2 text-xs">
               <button
-                onClick={handleNavigateHome}
-                className="text-slate-500 hover:text-[#d70018] dark:text-slate-400 dark:hover:text-red-400 font-bold flex items-center space-x-1.5 cursor-pointer"
+                onClick={() => setSuccessOrderCode(null)}
+                className="text-emerald-700 dark:text-emerald-300 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold px-2 py-1 cursor-pointer"
               >
-                <Home className="w-3.5 h-3.5" />
-                <span>Trang Chủ</span>
+                {lang === 'vi' ? 'Đóng ×' : 'Close ×'}
               </button>
-              <span className="text-slate-400">/</span>
-              <span className="text-slate-500 dark:text-slate-400">Danh mục</span>
-              <span className="text-slate-400">/</span>
-              <span className="font-extrabold text-[#d70018] dark:text-red-400 uppercase">
-                {currentCategory}
-              </span>
             </div>
           )}
 
-          <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="flex items-center space-x-2.5">
-              <div className="w-8 h-8 rounded-lg bg-[#d70018] text-white flex items-center justify-center font-bold shadow-xs flex-shrink-0">
-                <SlidersHorizontal className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-base sm:text-lg font-black uppercase text-slate-900 dark:text-slate-100 flex items-center space-x-2">
-                  <span>{currentCategory !== 'all' ? `DANH MỤC: ${currentCategory.toUpperCase()}` : 'TOÀN BỘ KHO SẢN PHẨM & BỘ LỌC ĐA CHIỀU'}</span>
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Tùy chọn lọc thông số chi tiết theo tiêu chuẩn Showroom Máy tính chuyên nghiệp
-                </p>
-              </div>
-            </div>
+          {/* Hero Banner Luxury Carousel (TechStore 3-Column Hero Layout) */}
+          {!searchQuery && currentCategory === 'all' && (
+            <HeroBannerCarousel
+              onNavigatePCBuilder={() => navigateToView('pc-builder')}
+              onFilterDemand={demand => setSelectedDemand(demand)}
+              onSelectCategory={cat => handleSelectCategory(cat)}
+            />
+          )}
 
-            <div className="flex items-center space-x-2">
-              {currentCategory !== 'all' && (
+          {/* Flash Sale Banner with Live Timer (TechStore Hot Sale Cuối Tuần) */}
+          {!searchQuery && currentCategory === 'all' && (
+            <FlashSaleBanner
+              products={products}
+              onSelectProduct={prod => navigateToProduct(prod.slug || prod.id)}
+              onAskBot={prod => prod && navigateToProduct(prod.slug || prod.id)}
+            />
+          )}
+
+          {/* CellphoneS-Style High-Conversion Quick Service & Event Bar */}
+          {!searchQuery && currentCategory === 'all' && (
+            <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+              <button
+                onClick={() => navigateToView('pc-builder')}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                  <SlidersHorizontal className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Tự Ráp PC</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Quà tặng 2 triệu</span>
+                </div>
+              </button>
+
+              <button
+                onClick={() => {
+                  setSelectedDemand('gaming');
+                  document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#d70018] group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                  <Flame className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Laptop Gaming</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">RTX 40 Series</span>
+                </div>
+              </button>
+
+              <button
+                onClick={() => {
+                  setHasInstallment0(true);
+                  document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                  <CreditCard className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Trả Góp 0%</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Duyệt nhanh 15P</span>
+                </div>
+              </button>
+
+              <button
+                onClick={() => {
+                  setSelectedDemand('thin_light');
+                  document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-slate-700 transition flex items-center justify-center font-bold flex-shrink-0">
+                  <Award className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Sinh Viên Giảm 500k</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Ưu đãi T-Student</span>
+                </div>
+              </button>
+
+              <button
+                onClick={() => {
+                  setSelectedPanel('OLED');
+                  document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-purple-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                  <Sparkles className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">Màn Hình OLED</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chuẩn màu 100% P3</span>
+                </div>
+              </button>
+
+              <button
+                onClick={handleResetFilters}
+                className="p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 rounded-xl transition shadow-2xs hover:shadow-xs flex items-center space-x-2.5 text-left group cursor-pointer"
+              >
+                <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-red-600 group-hover:text-white transition flex items-center justify-center font-bold flex-shrink-0">
+                  <ShieldCheck className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-slate-900 dark:text-slate-100 block truncate group-hover:text-[#d70018] dark:group-hover:text-red-400">1 Đổi 1 30 Ngày</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 block truncate">Chính hãng 100%</span>
+                </div>
+              </button>
+            </div>
+          )}
+
+          {/* Dedicated Category Hero Banner when in a specific category */}
+          {currentCategory !== 'all' && (
+            <div className="mb-6 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 text-white rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-lg relative overflow-hidden">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="space-y-1.5">
+                  <div className="flex items-center space-x-2 text-xs text-red-400 font-bold uppercase tracking-wider">
+                    <button onClick={handleNavigateHome} className="flex items-center space-x-1 text-slate-400 hover:text-white transition cursor-pointer">
+                      <Home className="w-3.5 h-3.5" />
+                      <span>Trang Chủ</span>
+                    </button>
+                    <span>/</span>
+                    <span>Danh Mục Ngành Hàng</span>
+                  </div>
+                  <h1 className="text-2xl sm:text-3xl font-black uppercase text-white tracking-tight">
+                    {currentCategory === 'laptop' ? 'Laptop Gaming & Đồ Họa Cao Cấp'
+                      : currentCategory === 'pc' ? 'Bộ Máy Tính PC & Màn Hình Chuyên Nghiệp'
+                      : currentCategory === 'cpu' ? 'Vi Xử Lý CPU Intel & AMD Chính Hãng'
+                      : currentCategory === 'vga' ? 'Card Màn Hình VGA Đồ Họa & Gaming'
+                      : currentCategory === 'mainboard' ? 'Bo Mạch Chủ Mainboard'
+                      : currentCategory === 'ram' ? 'Bộ Nhớ Trong RAM DDR4 / DDR5'
+                      : currentCategory === 'ssd' ? 'Ổ Cứng SSD Tốc Độ Cao NVMe PCIe'
+                      : currentCategory === 'psu' ? 'Nguồn Máy Tính Chuẩn 80 Plus'
+                      : currentCategory === 'case' ? 'Vỏ Case & Tản Nhiệt Cao Cấp'
+                      : `Danh mục: ${currentCategory.toUpperCase()}`}
+                  </h1>
+                  <p className="text-xs text-slate-300 max-w-2xl">
+                    100% linh kiện chính hãng, bảo hành đổi mới 30 ngày, trả góp 0% lãi suất, hỗ trợ giao hàng hỏa tốc 2 giờ toàn quốc.
+                  </p>
+                </div>
                 <button
                   onClick={handleNavigateHome}
-                  className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 cursor-pointer shadow-xs active:scale-95"
+                  className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 self-start sm:self-auto cursor-pointer shadow-xs active:scale-95"
                 >
                   <ArrowLeft className="w-3.5 h-3.5" />
                   <span>Về Trang Chủ</span>
                 </button>
-              )}
-              {(currentCategory !== 'all' || selectedBrand || selectedPriceRange || selectedDemand || selectedPanel || inStockOnly || hasInstallment0 || searchQuery) && (
-                <button
-                  onClick={handleNavigateHome}
-                  className="px-3 py-1.5 text-xs text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl border border-rose-200 dark:border-rose-900/50 font-bold cursor-pointer transition"
-                >
-                  Xóa tất cả bộ lọc ×
-                </button>
-              )}
+              </div>
             </div>
-          </div>
+          )}
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          {/* Left Sidebar Filter */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-20">
-              <ProductFilters
-                facets={facets}
-                selectedBrand={selectedBrand}
-                selectedPriceRange={selectedPriceRange}
-                selectedDemand={selectedDemand}
-                selectedPanel={selectedPanel}
-                inStockOnly={inStockOnly}
-                hasInstallment0={hasInstallment0}
-                onFilterChange={newFilters => {
-                  if (newFilters.brand !== undefined) setSelectedBrand(newFilters.brand);
-                  if (newFilters.priceRange !== undefined) setSelectedPriceRange(newFilters.priceRange);
-                  if (newFilters.demand !== undefined) setSelectedDemand(newFilters.demand);
-                  if (newFilters.panel !== undefined) setSelectedPanel(newFilters.panel);
-                  if (newFilters.inStockOnly !== undefined) setInStockOnly(newFilters.inStockOnly);
-                  if (newFilters.hasInstallment0 !== undefined) setHasInstallment0(newFilters.hasInstallment0);
+          {/* Nguyễn Công PC & HACOM Signature Industry Showcases (Homepage only) */}
+          {!searchQuery && currentCategory === 'all' && !selectedBrand && !selectedPriceRange && !selectedDemand && !selectedPanel && !hasInstallment0 && !inStockOnly && !wishlistFilterOnly && (
+            <div className="mb-10">
+              <PCStorefrontShowcases
+                products={products}
+                onSelectProduct={prod => navigateToProduct(prod.slug || prod.id)}
+                onNavigatePCBuilder={() => navigateToView('pc-builder')}
+                onFilterCategory={cat => handleSelectCategory(cat)}
+                onFilterDemand={dem => {
+                  setSelectedDemand(dem);
+                  document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                onReset={handleResetFilters}
+                onAskBot={prod => navigateToProduct(prod.slug || prod.id)}
+                isComparing={prod => comparingProducts.some(p => p.id === prod.id)}
+                onToggleCompare={handleToggleCompare}
+                onAddToCartToast={name => addToast(lang === 'vi' ? 'Đã thêm vào giỏ hàng' : 'Added to cart', name, 'success')}
               />
             </div>
-          </div>
+          )}
 
-          {/* Right Column: Sorting Bar & Product Cards */}
-          <div className="lg:col-span-3 space-y-3.5">
-            {/* CellphoneS-style Quick Brand & Price Pills */}
-            <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-3 shadow-2xs space-y-2">
-              <div className="flex items-center space-x-1.5 overflow-x-auto scrollbar-none">
-                <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap mr-1">Thương hiệu:</span>
-                {['ASUS', 'Lenovo', 'Apple', 'Dell', 'Acer', 'MSI', 'HP'].map(brand => (
-                  <button
-                    key={brand}
-                    onClick={() => setSelectedBrand(selectedBrand === brand ? undefined : brand)}
-                    className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer border ${
-                      selectedBrand === brand
-                        ? 'bg-[#059669] text-white border-[#059669] shadow-xs'
-                        : 'bg-gray-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border-gray-200 dark:border-slate-700 hover:border-emerald-400'
-                    }`}
-                  >
-                    {brand}
-                  </button>
-                ))}
-                {selectedBrand && (
-                  <button
-                    onClick={() => setSelectedBrand(undefined)}
-                    className="px-2 py-0.5 text-xs text-red-500 hover:underline font-bold whitespace-nowrap"
-                  >
-                    Xóa lọc
-                  </button>
-                )}
-              </div>
-
-              <div className="flex items-center space-x-1.5 overflow-x-auto scrollbar-none pt-1 border-t border-gray-100 dark:border-slate-800">
-                <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap mr-1">Mức giá:</span>
-                {[
-                  { label: 'Dưới 15 triệu', val: 'under15m' },
-                  { label: '15 - 20 triệu', val: 'from15to20m' },
-                  { label: '20 - 30 triệu', val: 'from20to30m' },
-                  { label: 'Trên 30 triệu', val: 'above30m' }
-                ].map(pr => (
-                  <button
-                    key={pr.val}
-                    onClick={() => setSelectedPriceRange(selectedPriceRange === pr.val ? undefined : pr.val)}
-                    className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer border ${
-                      selectedPriceRange === pr.val
-                        ? 'bg-[#059669] text-white border-[#059669] shadow-xs'
-                        : 'bg-gray-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border-gray-200 dark:border-slate-700 hover:border-emerald-400'
-                    }`}
-                  >
-                    {pr.label}
-                  </button>
-                ))}
-                {selectedPriceRange && (
-                  <button
-                    onClick={() => setSelectedPriceRange(undefined)}
-                    className="px-2 py-0.5 text-xs text-red-500 hover:underline font-bold whitespace-nowrap"
-                  >
-                    Xóa lọc
-                  </button>
-                )}
-              </div>
-            </div>
-
-            {/* Sorting Toolbar */}
-            <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs shadow-xs text-slate-700 dark:text-slate-300 transition-colors">
-              <div className="text-slate-600 dark:text-slate-300">
-                {wishlistFilterOnly ? (
-                  <span className="font-bold text-rose-500 flex items-center space-x-1.5">
-                    <span className="flex items-center space-x-1"><Heart className="w-3.5 h-3.5 fill-rose-500 text-rose-500" /><span>{lang === 'vi' ? 'Danh sách sản phẩm Yêu thích' : 'Wishlist Products'}</span></span>
-                    <span className="text-xs text-slate-500 font-normal">
-                      ({products.filter(p => wishlistIds.includes(p.id)).length} {lang === 'vi' ? 'sản phẩm' : 'items'})
-                    </span>
-                  </span>
-                ) : (
-                  <>
-                    {t('found')} <strong className="text-[#d70018] dark:text-red-400 font-bold">{totalProducts}</strong> {t('productsMatch')}
-                    {searchQuery && <span> {t('forKeyword')} "<span className="text-[#d70018] dark:text-red-400 font-bold">{searchQuery}</span>"</span>}
-                  </>
-                )}
-              </div>
-
-              {/* Sort Options */}
-              <div className="flex items-center space-x-2">
-                <span className="text-slate-500 dark:text-slate-400 font-medium">{t('sort')}</span>
-                <select
-                  value={sortBy}
-                  onChange={e => setSortBy(e.target.value as any)}
-                  className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold focus:outline-none focus:border-[#d70018] text-xs cursor-pointer"
-                >
-                  <option value="featured">{t('sortFeatured')}</option>
-                  <option value="price_asc">{t('sortPriceAsc')}</option>
-                  <option value="price_desc">{t('sortPriceDesc')}</option>
-                  <option value="discount_desc">{t('sortDiscountDesc')}</option>
-                  <option value="newest">{t('sortNewest')}</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Product Grid */}
-            {loading ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                {[1, 2, 3, 4, 5, 6].map(n => (
-                  <div key={n} className="bg-white dark:bg-[#151c2c] rounded-2xl border border-gray-200 dark:border-slate-800 p-4 h-80 animate-pulse space-y-4 shadow-xs">
-                    <div className="bg-gray-100 dark:bg-slate-800 aspect-square rounded-xl" />
-                    <div className="h-4 bg-gray-100 dark:bg-slate-800 rounded w-3/4" />
-                    <div className="h-4 bg-gray-100 dark:bg-slate-800 rounded w-1/2" />
-                  </div>
-                ))}
-              </div>
-            ) : (wishlistFilterOnly ? products.filter(p => wishlistIds.includes(p.id)) : products).length === 0 ? (
-              <div className="bg-white dark:bg-[#151c2c] rounded-3xl border border-gray-200 dark:border-slate-800 p-12 text-center space-y-3 shadow-xs text-slate-800 dark:text-slate-200">
-                <div className="w-12 h-12 bg-gray-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto text-slate-400">
-                  <Laptop className="w-6 h-6" />
-                </div>
-                <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm">
-                  {wishlistFilterOnly
-                    ? (lang === 'vi' ? 'Chưa có sản phẩm yêu thích nào' : 'No wishlisted products yet')
-                    : t('noProductFound')}
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  {wishlistFilterOnly
-                    ? (lang === 'vi' ? 'Hãy bấm icon trái tim trên sản phẩm để lưu lại xem sau!' : 'Click the heart ❤️ icon on any product to save it here!')
-                    : t('noProductFoundSub')}
-                </p>
+          {/* Catalog Section with Sidebar Filters & Product Grid */}
+          <div id="product-catalog-section" className="scroll-mt-24 pt-4 border-t border-gray-200 dark:border-slate-800">
+            {/* Breadcrumb Navigation when filtered or in specific category */}
+            {currentCategory !== 'all' && (
+              <div className="mb-3 flex items-center space-x-2 text-xs">
                 <button
-                  onClick={() => {
-                    if (wishlistFilterOnly) {
-                      setWishlistFilterOnly(false);
-                    } else {
-                      handleResetFilters();
-                    }
-                  }}
-                  className="mt-2 px-5 py-2.5 bg-[#d70018] text-white rounded-xl text-xs font-bold hover:bg-[#b91c1c] transition shadow-xs cursor-pointer"
+                  onClick={handleNavigateHome}
+                  className="text-slate-500 hover:text-[#d70018] dark:text-slate-400 dark:hover:text-red-400 font-bold flex items-center space-x-1.5 cursor-pointer"
                 >
-                  {wishlistFilterOnly ? (lang === 'vi' ? 'Xem tất cả sản phẩm' : 'View all products') : t('clearFilters')}
+                  <Home className="w-3.5 h-3.5" />
+                  <span>Trang Chủ</span>
                 </button>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                {(wishlistFilterOnly ? products.filter(p => wishlistIds.includes(p.id)) : products).map(prod => (
-                  <ProductCard
-                    key={prod.id}
-                    product={prod}
-                    onSelect={p => setSelectedProduct(p)}
-                    onAskBot={p => setSelectedProduct(p)}
-                    isComparing={comparingProducts.some(p => p.id === prod.id)}
-                    onToggleCompare={handleToggleCompare}
-                    onAddToCartToast={name => addToast('Đã thêm vào giỏ hàng', name, 'success')}
-                  />
-                ))}
+                <span className="text-slate-400">/</span>
+                <span className="text-slate-500 dark:text-slate-400">Danh mục</span>
+                <span className="text-slate-400">/</span>
+                <span className="font-extrabold text-[#d70018] dark:text-red-400 uppercase">
+                  {currentCategory}
+                </span>
               </div>
             )}
+
+            <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center space-x-2.5">
+                <div className="w-8 h-8 rounded-lg bg-[#d70018] text-white flex items-center justify-center font-bold shadow-xs flex-shrink-0">
+                  <SlidersHorizontal className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-base sm:text-lg font-black uppercase text-slate-900 dark:text-slate-100 flex items-center space-x-2">
+                    <span>{currentCategory !== 'all' ? `DANH MỤC: ${currentCategory.toUpperCase()}` : 'TOÀN BỘ KHO SẢN PHẨM & BỘ LỌC ĐA CHIỀU'}</span>
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Tùy chọn lọc thông số chi tiết theo tiêu chuẩn Showroom Máy tính chuyên nghiệp
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                {currentCategory !== 'all' && (
+                  <button
+                    onClick={handleNavigateHome}
+                    className="px-3.5 py-1.5 bg-[#d70018] hover:bg-[#b91c1c] text-white rounded-xl text-xs font-bold transition flex items-center space-x-1.5 cursor-pointer shadow-xs active:scale-95"
+                  >
+                    <ArrowLeft className="w-3.5 h-3.5" />
+                    <span>Về Trang Chủ</span>
+                  </button>
+                )}
+                {(currentCategory !== 'all' || selectedBrand || selectedPriceRange || selectedDemand || selectedPanel || inStockOnly || hasInstallment0 || searchQuery) && (
+                  <button
+                    onClick={handleNavigateHome}
+                    className="px-3 py-1.5 text-xs text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl border border-rose-200 dark:border-rose-900/50 font-bold cursor-pointer transition"
+                  >
+                    Xóa tất cả bộ lọc ×
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+              {/* Left Sidebar Filter */}
+              <div className="lg:col-span-1">
+                <div className="sticky top-20">
+                  <ProductFilters
+                    facets={facets}
+                    selectedBrand={selectedBrand}
+                    selectedPriceRange={selectedPriceRange}
+                    selectedDemand={selectedDemand}
+                    selectedPanel={selectedPanel}
+                    inStockOnly={inStockOnly}
+                    hasInstallment0={hasInstallment0}
+                    onFilterChange={newFilters => {
+                      if (newFilters.brand !== undefined) setSelectedBrand(newFilters.brand);
+                      if (newFilters.priceRange !== undefined) setSelectedPriceRange(newFilters.priceRange);
+                      if (newFilters.demand !== undefined) setSelectedDemand(newFilters.demand);
+                      if (newFilters.panel !== undefined) setSelectedPanel(newFilters.panel);
+                      if (newFilters.inStockOnly !== undefined) setInStockOnly(newFilters.inStockOnly);
+                      if (newFilters.hasInstallment0 !== undefined) setHasInstallment0(newFilters.hasInstallment0);
+                    }}
+                    onReset={handleResetFilters}
+                  />
+                </div>
+              </div>
+
+              {/* Right Column: Sorting Bar & Product Cards */}
+              <div className="lg:col-span-3 space-y-3.5">
+                {/* CellphoneS-style Quick Brand & Price Pills */}
+                <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-3 shadow-2xs space-y-2">
+                  <div className="flex items-center space-x-1.5 overflow-x-auto scrollbar-none">
+                    <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap mr-1">Thương hiệu:</span>
+                    {['ASUS', 'Lenovo', 'Apple', 'Dell', 'Acer', 'MSI', 'HP'].map(brand => (
+                      <button
+                        key={brand}
+                        onClick={() => setSelectedBrand(selectedBrand === brand ? undefined : brand)}
+                        className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer border ${
+                          selectedBrand === brand
+                            ? 'bg-[#059669] text-white border-[#059669] shadow-xs'
+                            : 'bg-gray-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border-gray-200 dark:border-slate-700 hover:border-emerald-400'
+                        }`}
+                      >
+                        {brand}
+                      </button>
+                    ))}
+                    {selectedBrand && (
+                      <button
+                        onClick={() => setSelectedBrand(undefined)}
+                        className="px-2 py-0.5 text-xs text-red-500 hover:underline font-bold whitespace-nowrap"
+                      >
+                        Xóa lọc
+                      </button>
+                    )}
+                  </div>
+
+                  <div className="flex items-center space-x-1.5 overflow-x-auto scrollbar-none pt-1 border-t border-gray-100 dark:border-slate-800">
+                    <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap mr-1">Mức giá:</span>
+                    {[
+                      { label: 'Dưới 15 triệu', val: 'under15m' },
+                      { label: '15 - 20 triệu', val: 'from15to20m' },
+                      { label: '20 - 30 triệu', val: 'from20to30m' },
+                      { label: 'Trên 30 triệu', val: 'above30m' }
+                    ].map(pr => (
+                      <button
+                        key={pr.val}
+                        onClick={() => setSelectedPriceRange(selectedPriceRange === pr.val ? undefined : pr.val)}
+                        className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer border ${
+                          selectedPriceRange === pr.val
+                            ? 'bg-[#059669] text-white border-[#059669] shadow-xs'
+                            : 'bg-gray-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border-gray-200 dark:border-slate-700 hover:border-emerald-400'
+                        }`}
+                      >
+                        {pr.label}
+                      </button>
+                    ))}
+                    {selectedPriceRange && (
+                      <button
+                        onClick={() => setSelectedPriceRange(undefined)}
+                        className="px-2 py-0.5 text-xs text-red-500 hover:underline font-bold whitespace-nowrap"
+                      >
+                        Xóa lọc
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* Sorting Toolbar */}
+                <div className="bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs shadow-xs text-slate-700 dark:text-slate-300 transition-colors">
+                  <div className="text-slate-600 dark:text-slate-300">
+                    {wishlistFilterOnly ? (
+                      <span className="font-bold text-rose-500 flex items-center space-x-1.5">
+                        <span className="flex items-center space-x-1"><Heart className="w-3.5 h-3.5 fill-rose-500 text-rose-500" /><span>{lang === 'vi' ? 'Danh sách sản phẩm Yêu thích' : 'Wishlist Products'}</span></span>
+                        <span className="text-xs text-slate-500 font-normal">
+                          ({products.filter(p => wishlistIds.includes(p.id)).length} {lang === 'vi' ? 'sản phẩm' : 'items'})
+                        </span>
+                      </span>
+                    ) : (
+                      <>
+                        {t('found')} <strong className="text-[#d70018] dark:text-red-400 font-bold">{totalProducts}</strong> {t('productsMatch')}
+                        {searchQuery && <span> {t('forKeyword')} "<span className="text-[#d70018] dark:text-red-400 font-bold">{searchQuery}</span>"</span>}
+                      </>
+                    )}
+                  </div>
+
+                  {/* Sort Options */}
+                  <div className="flex items-center space-x-2">
+                    <span className="text-slate-500 dark:text-slate-400 font-medium">{t('sort')}</span>
+                    <select
+                      value={sortBy}
+                      onChange={e => setSortBy(e.target.value as any)}
+                      className="px-3 py-1.5 border border-gray-200 dark:border-slate-700 rounded-xl bg-gray-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold focus:outline-none focus:border-[#d70018] text-xs cursor-pointer"
+                    >
+                      <option value="featured">{t('sortFeatured')}</option>
+                      <option value="price_asc">{t('sortPriceAsc')}</option>
+                      <option value="price_desc">{t('sortPriceDesc')}</option>
+                      <option value="discount_desc">{t('sortDiscountDesc')}</option>
+                      <option value="newest">{t('sortNewest')}</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Product Grid */}
+                {loading ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                    {[1, 2, 3, 4, 5, 6].map(n => (
+                      <div key={n} className="bg-white dark:bg-[#151c2c] rounded-2xl border border-gray-200 dark:border-slate-800 p-4 h-80 animate-pulse space-y-4 shadow-xs">
+                        <div className="bg-gray-100 dark:bg-slate-800 aspect-square rounded-xl" />
+                        <div className="h-4 bg-gray-100 dark:bg-slate-800 rounded w-3/4" />
+                        <div className="h-4 bg-gray-100 dark:bg-slate-800 rounded w-1/2" />
+                      </div>
+                    ))}
+                  </div>
+                ) : (wishlistFilterOnly ? products.filter(p => wishlistIds.includes(p.id)) : products).length === 0 ? (
+                  <div className="bg-white dark:bg-[#151c2c] rounded-3xl border border-gray-200 dark:border-slate-800 p-12 text-center space-y-3 shadow-xs text-slate-800 dark:text-slate-200">
+                    <div className="w-12 h-12 bg-gray-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto text-slate-400">
+                      <Laptop className="w-6 h-6" />
+                    </div>
+                    <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm">
+                      {wishlistFilterOnly
+                        ? (lang === 'vi' ? 'Chưa có sản phẩm yêu thích nào' : 'No wishlisted products yet')
+                        : t('noProductFound')}
+                    </h3>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                      {wishlistFilterOnly
+                        ? (lang === 'vi' ? 'Hãy bấm icon trái tim trên sản phẩm để lưu lại xem sau!' : 'Click the heart ❤️ icon on any product to save it here!')
+                        : t('noProductFoundSub')}
+                    </p>
+                    <button
+                      onClick={() => {
+                        if (wishlistFilterOnly) {
+                          setWishlistFilterOnly(false);
+                        } else {
+                          handleResetFilters();
+                        }
+                      }}
+                      className="mt-2 px-5 py-2.5 bg-[#d70018] text-white rounded-xl text-xs font-bold hover:bg-[#b91c1c] transition shadow-xs cursor-pointer"
+                    >
+                      {wishlistFilterOnly ? (lang === 'vi' ? 'Xem tất cả sản phẩm' : 'View all products') : t('clearFilters')}
+                    </button>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                    {(wishlistFilterOnly ? products.filter(p => wishlistIds.includes(p.id)) : products).map(prod => (
+                      <ProductCard
+                        key={prod.id}
+                        product={prod}
+                        onSelect={p => navigateToProduct(p.slug || p.id)}
+                        onAskBot={p => navigateToProduct(p.slug || p.id)}
+                        isComparing={comparingProducts.some(p => p.id === prod.id)}
+                        onToggleCompare={handleToggleCompare}
+                        onAddToCartToast={name => addToast('Đã thêm vào giỏ hàng', name, 'success')}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      </main>
+        </main>
+      )}
 
       {/* Floating Comparison Bar (when items are selected for comparison) */}
       <ComparisonBar
         products={comparingProducts}
         onRemove={id => setComparingProducts(prev => prev.filter(p => p.id !== id))}
         onClear={() => setComparingProducts([])}
-        onOpenModal={() => setShowComparisonModal(true)}
+        onOpenModal={() => navigateToView('compare')}
       />
 
       {/* Side-by-Side Comparison Matrix Modal */}
@@ -876,8 +972,7 @@ const AppContent: React.FC = () => {
         onClose={() => setShowComparisonModal(false)}
         onAskBotCompare={prods => {
           setShowComparisonModal(false);
-          setSelectedProduct(prods[0]);
-          addToast('Đang mở trợ lý AI để phân tích khác biệt...', prods.map(p => p.name).join(' vs '), 'info');
+          navigateToProduct(prods[0].slug || prods[0].id);
         }}
       />
 
@@ -887,7 +982,7 @@ const AppContent: React.FC = () => {
       {/* Floating Customer AI Chatbot */}
       <CustomerChatWidget
         currentProduct={selectedProduct}
-        onSelectProduct={p => setSelectedProduct(p)}
+        onSelectProduct={p => navigateToProduct(p.slug || p.id)}
       />
 
       {/* Cart Drawer */}
@@ -898,7 +993,7 @@ const AppContent: React.FC = () => {
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
         onAskBot={prod => {
-          setSelectedProduct(prod);
+          navigateToProduct(prod.slug || prod.id);
         }}
       />
 
@@ -1006,4 +1101,3 @@ export function App() {
 }
 
 export default App;
-
