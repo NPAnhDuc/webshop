@@ -9,25 +9,28 @@ import { PCStorefrontShowcases } from './components/storefront/PCStorefrontShowc
 import { ComparisonBar } from './components/storefront/ComparisonBar';
 import { ComparisonModal } from './components/storefront/ComparisonModal';
 import { ToastContainer, ToastMessage } from './components/common/Toast';
-import { ProductDetailModal } from './components/storefront/ProductDetailModal';
 import { CartDrawer } from './components/storefront/CartDrawer';
-import { CheckoutModal } from './components/common/CheckoutModal';
-import { OrderLookupModal } from './components/common/OrderLookupModal';
-import { CustomerChatWidget } from './components/chatbot/CustomerChatWidget';
-import { PCBuilderView } from './components/pc-builder/PCBuilderView';
+import type { AdminTabType } from './components/admin/AdminLayout';
 
-import { AdminLayout, AdminTabType } from './components/admin/AdminLayout';
-import { DashboardView } from './components/admin/DashboardView';
-import { InventoryManagement } from './components/admin/InventoryManagement';
-import { OrderManagement } from './components/admin/OrderManagement';
-import { DocumentManagement } from './components/admin/DocumentManagement';
-import { AdminChatbotView } from './components/admin/AdminChatbotView';
-import { ProductManagement } from './components/admin/ProductManagement';
-import { PromotionManagement } from './components/admin/PromotionManagement';
-import { CustomerManagement } from './components/admin/CustomerManagement';
-import { QuotationManagement } from './components/admin/QuotationManagement';
-import { ReviewManagement } from './components/admin/ReviewManagement';
-import { StoreSettingsManagement } from './components/admin/StoreSettingsManagement';
+// Lazy-loaded heavy modules for lightning-fast initial page load
+const ProductDetailModal = React.lazy(() => import('./components/storefront/ProductDetailModal').then(m => ({ default: m.ProductDetailModal })));
+const CheckoutModal = React.lazy(() => import('./components/common/CheckoutModal').then(m => ({ default: m.CheckoutModal })));
+const OrderLookupModal = React.lazy(() => import('./components/common/OrderLookupModal').then(m => ({ default: m.OrderLookupModal })));
+const CustomerChatWidget = React.lazy(() => import('./components/chatbot/CustomerChatWidget').then(m => ({ default: m.CustomerChatWidget })));
+const PCBuilderView = React.lazy(() => import('./components/pc-builder/PCBuilderView').then(m => ({ default: m.PCBuilderView })));
+
+const AdminLayout = React.lazy(() => import('./components/admin/AdminLayout').then(m => ({ default: m.AdminLayout })));
+const DashboardView = React.lazy(() => import('./components/admin/DashboardView').then(m => ({ default: m.DashboardView })));
+const InventoryManagement = React.lazy(() => import('./components/admin/InventoryManagement').then(m => ({ default: m.InventoryManagement })));
+const OrderManagement = React.lazy(() => import('./components/admin/OrderManagement').then(m => ({ default: m.OrderManagement })));
+const DocumentManagement = React.lazy(() => import('./components/admin/DocumentManagement').then(m => ({ default: m.DocumentManagement })));
+const AdminChatbotView = React.lazy(() => import('./components/admin/AdminChatbotView').then(m => ({ default: m.AdminChatbotView })));
+const ProductManagement = React.lazy(() => import('./components/admin/ProductManagement').then(m => ({ default: m.ProductManagement })));
+const PromotionManagement = React.lazy(() => import('./components/admin/PromotionManagement').then(m => ({ default: m.PromotionManagement })));
+const CustomerManagement = React.lazy(() => import('./components/admin/CustomerManagement').then(m => ({ default: m.CustomerManagement })));
+const QuotationManagement = React.lazy(() => import('./components/admin/QuotationManagement').then(m => ({ default: m.QuotationManagement })));
+const ReviewManagement = React.lazy(() => import('./components/admin/ReviewManagement').then(m => ({ default: m.ReviewManagement })));
+const StoreSettingsManagement = React.lazy(() => import('./components/admin/StoreSettingsManagement').then(m => ({ default: m.StoreSettingsManagement })));
 
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider, useWishlist } from './context/WishlistContext';
@@ -971,7 +974,13 @@ export function App() {
         <AuthProvider>
           <WishlistProvider>
             <CartProvider>
+              <React.Suspense fallback={
+              <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full border-3 border-slate-300 dark:border-slate-700 border-t-[#d70018] animate-spin" />
+              </div>
+            }>
               <AppContent />
+            </React.Suspense>
             </CartProvider>
           </WishlistProvider>
         </AuthProvider>
