@@ -1,3 +1,6 @@
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from './lib/queryClient';
+import { useProductsQuery } from './hooks/useQueries';
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
@@ -169,11 +172,7 @@ const AppContent: React.FC = () => {
     };
   }, []);
 
-  // Storefront Product State
-  const [products, setProducts] = useState<Product[]>([]);
-  const [facets, setFacets] = useState<any>({});
-  const [loading, setLoading] = useState(false);
-  const [totalProducts, setTotalProducts] = useState(0);
+  
 
   // Filters State
   const [currentCategory, setCurrentCategory] = useState<string>(() => {
@@ -195,6 +194,51 @@ const AppContent: React.FC = () => {
   const [sortBy, setSortBy] = useState<'featured' | 'price_asc' | 'price_desc' | 'newest' | 'discount_desc'>('featured');
   const { wishlistIds } = useWishlist();
   const [wishlistFilterOnly, setWishlistFilterOnly] = useState(false);
+
+// Computed filter parameters memoized for TanStack Query
+  const productFilterParams = React.useMemo(() => {
+    let minPrice: number | undefined;
+    let maxPrice: number | undefined;
+
+    if (selectedPriceRange === 'under15m' || selectedPriceRange === 'under_15') maxPrice = 15000000;
+    else if (selectedPriceRange === 'from15to20m' || selectedPriceRange === '15_to_20') { minPrice = 15000000; maxPrice = 20000000; }
+    else if (selectedPriceRange === 'from20to30m' || selectedPriceRange === '20_to_30') { minPrice = 20000000; maxPrice = 30000000; }
+    else if (selectedPriceRange === 'above30m' || selectedPriceRange === 'above_30') minPrice = 30000000;
+
+    return {
+      category: currentCategory,
+      brand: selectedBrand,
+      minPrice,
+      maxPrice,
+      demand: selectedDemand,
+      panel: selectedPanel,
+      inStockOnly,
+      hasInstallment0,
+      q: searchQuery,
+      sort: sortBy,
+      limit: 24
+    };
+  }, [
+    currentCategory,
+    selectedBrand,
+    selectedPriceRange,
+    selectedDemand,
+    selectedPanel,
+    inStockOnly,
+    hasInstallment0,
+    searchQuery,
+    sortBy
+  ]);
+
+  // TanStack Query automatically manages caching, prefetching and stale-while-revalidate
+  const { data: productQueryResult, isLoading: loading } = useProductsQuery(
+    productFilterParams,
+    currentView === 'storefront' || currentView === 'product-detail'
+  );
+
+  const products = productQueryResult?.products || [];
+  const facets = productQueryResult?.facets || {};
+  const totalProducts = productQueryResult?.total || 0;
 
   // Comparison State (W-06)
   const [comparingProducts, setComparingProducts] = useState<Product[]>([]);
@@ -226,57 +270,6 @@ const AppContent: React.FC = () => {
   const removeToast = (id: string) => {
     setToasts(prev => prev.filter(t => t.id !== id));
   };
-
-  // Fetch Products with active filters
-  const loadProducts = () => {
-    setLoading(true);
-
-    let minPrice: number | undefined;
-    let maxPrice: number | undefined;
-
-    if (selectedPriceRange === 'under15m' || selectedPriceRange === 'under_15') maxPrice = 15000000;
-    else if (selectedPriceRange === 'from15to20m' || selectedPriceRange === '15_to_20') { minPrice = 15000000; maxPrice = 20000000; }
-    else if (selectedPriceRange === 'from20to30m' || selectedPriceRange === '20_to_30') { minPrice = 20000000; maxPrice = 30000000; }
-    else if (selectedPriceRange === 'above30m' || selectedPriceRange === 'above_30') minPrice = 30000000;
-
-    fetchProducts({
-      category: currentCategory,
-      brand: selectedBrand,
-      minPrice,
-      maxPrice,
-      demand: selectedDemand,
-      panel: selectedPanel,
-      inStockOnly,
-      hasInstallment0,
-      q: searchQuery,
-      sort: sortBy,
-      limit: 24
-    })
-      .then(res => {
-        setProducts(res.products || []);
-        setFacets(res.facets || {});
-        setTotalProducts(res.total || 0);
-      })
-      .catch(err => console.error(err))
-      .finally(() => setLoading(false));
-  };
-
-  useEffect(() => {
-    if (currentView === 'storefront' || currentView === 'product-detail') {
-      loadProducts();
-    }
-  }, [
-    currentCategory,
-    selectedBrand,
-    selectedPriceRange,
-    selectedDemand,
-    selectedPanel,
-    inStockOnly,
-    hasInstallment0,
-    searchQuery,
-    sortBy,
-    currentView
-  ]);
 
   const handleResetFilters = () => {
     setSelectedBrand(undefined);
@@ -1080,7 +1073,8 @@ const AppContent: React.FC = () => {
 
 export function App() {
   return (
-    <ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
       <LanguageProvider>
         <AuthProvider>
           <WishlistProvider>
@@ -1097,6 +1091,7 @@ export function App() {
         </AuthProvider>
       </LanguageProvider>
     </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 

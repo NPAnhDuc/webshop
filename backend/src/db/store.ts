@@ -1,3 +1,4 @@
+import { searchProducts } from '../utils/searchEngine.js';
 import fs from 'fs';
 import path from 'path';
 import {
@@ -329,16 +330,9 @@ export class Store {
       list = list.filter(p => brands.includes(p.brandName.toLowerCase()) || brands.includes(p.brandId));
     }
 
-    // Filter by Search Query
+    // Filter by Smart Search Query (Multi-keyword, diacritic-folding, synonym-aware)
     if (params.q) {
-      const qLower = params.q.toLowerCase().trim();
-      list = list.filter(p =>
-        p.name.toLowerCase().includes(qLower) ||
-        p.brandName.toLowerCase().includes(qLower) ||
-        p.description.toLowerCase().includes(qLower) ||
-        (p.specs.cpu_model && p.specs.cpu_model.toLowerCase().includes(qLower)) ||
-        (p.specs.gpu_model && p.specs.gpu_model.toLowerCase().includes(qLower))
-      );
+      list = searchProducts(list, params.q);
     }
 
     // Filter by Price

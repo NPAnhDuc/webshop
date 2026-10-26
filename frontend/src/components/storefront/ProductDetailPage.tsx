@@ -1,3 +1,4 @@
+import { useProductDetailQuery, useProductReviewsQuery, useSubmitReviewMutation } from '../../hooks/useQueries';
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   ArrowLeft,
@@ -63,8 +64,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const { addToCart } = useCart();
   const { toggleWishlist, isWishlisted } = useWishlist();
 
-  const [product, setProduct] = useState<Product | null>(initialProduct || null);
-  const [loading, setLoading] = useState(!initialProduct);
+  // TanStack Query for instantaneous 0ms cache loading and background sync
+  const { data: detailData, isLoading: detailLoading } = useProductDetailQuery(productSlugOrId);
+  const { data: serverReviews } = useProductReviewsQuery(productSlugOrId);
+  const submitReviewMutation = useSubmitReviewMutation(productSlugOrId);
+
+  const product = detailData || initialProduct || null;
+  const loading = detailLoading && !product;
+
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(null);
   const [selectedImage, setSelectedImage] = useState<string>('');
   const [quantity, setQuantity] = useState(1);
@@ -73,7 +80,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const [showInstallmentModal, setShowInstallmentModal] = useState(false);
 
   // Customer Reviews State
-  const [reviews, setReviews] = useState<any[]>([]);
+  const [localReviews, setLocalReviews] = useState<any[]>([]);
   const [newAuthor, setNewAuthor] = useState('');
   const [newRating, setNewRating] = useState(5);
   const [newComment, setNewComment] = useState('');
@@ -82,65 +89,53 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   // Related products
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
-  // Fetch product detail if needed
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    setLoading(true);
-
-    fetchProductDetail(productSlugOrId)
-      .then(data => {
-        if (data) {
-          setProduct(data);
-          if (data.variants && data.variants.length > 0) {
-            setSelectedVariant(data.variants[0]);
-          }
-          setSelectedImage(data.imageUrl || (data.images && data.images[0]) || '');
-
-          // Fetch related products in the same category
-          fetchProducts({ category: data.categorySlug, limit: 6 })
-            .then(res => {
-              if (res.products) {
-                setRelatedProducts(res.products.filter(p => p.id !== data.id).slice(0, 4));
-              }
-            })
-            .catch(() => {});
-        }
-      })
-      .catch(err => {
-        console.error('Failed to load product detail:', err);
-        if (initialProduct) {
-          setProduct(initialProduct);
-          setSelectedImage(initialProduct.imageUrl);
-        }
-      })
-      .finally(() => setLoading(false));
-
-    // Load customer reviews
-    fetchProductReviews(productSlugOrId)
-      .then(res => {
-        if (res && res.length > 0) {
-          setReviews(res);
-        } else {
-          setReviews([
-            {
-              id: 'rev-1',
-              customerName: 'Hoàng Anh Đức',
-              rating: 5,
-              createdAt: new Date().toISOString(),
-              comment: 'Sản phẩm chính hãng nguyên seal tem Viễn Sơn, test benchmark nhiệt độ cực mát, đóng gói 3 lớp xốp chống sốc rất cẩn thận!'
-            },
-            {
-              id: 'rev-2',
-              customerName: 'Nguyễn Thanh Tùng',
-              rating: 5,
-              createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
-              comment: 'Giao hàng hỏa tốc trong 2 giờ đúng hẹn. Kỹ thuật viên TechStore hỗ trợ cài đặt và test FPS game Wukong rất nhiệt tình 10/10!'
-            }
-          ]);
-        }
-      })
-      .catch(() => {});
   }, [productSlugOrId]);
+
+  useEffect(() => {
+    if (product) {
+      if (!selectedVariant && product.variants && product.variants.length > 0) {
+        setSelectedVariant(product.variants[0]);
+      }
+      if (!selectedImage) {
+        setSelectedImage(product.imageUrl || (product.images && product.images[0]) || '');
+      }
+
+      if (product.categorySlug) {
+        fetchProducts({ category: product.categorySlug, limit: 6 })
+          .then(res => {
+            if (res.products) {
+              setRelatedProducts(res.products.filter(p => p.id !== product.id).slice(0, 4));
+            }
+          })
+          .catch(() => {});
+      }
+    }
+  }, [product?.id, product?.categorySlug]);
+
+  const defaultReviews = [
+    {
+      id: 'rev-1',
+      customerName: 'Hoàng Anh Đức',
+      rating: 5,
+      createdAt: new Date().toISOString(),
+      comment: 'Sản phẩm chính hãng nguyên seal tem Viễn Sơn, test benchmark nhiệt độ cực mát, đóng gói 3 lớp xốp chống sốc rất cẩn thận!'
+    },
+    {
+      id: 'rev-2',
+      customerName: 'Nguyễn Thanh Tùng',
+      rating: 5,
+      createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
+      comment: 'Giao hàng hỏa tốc trong 2 giờ đúng hẹn. Kỹ thuật viên TechStore hỗ trợ cài đặt và test FPS game Wukong rất nhiệt tình 10/10!'
+    }
+  ];
+
+  const reviews = serverReviews && serverReviews.length > 0
+    ? [...localReviews, ...serverReviews]
+    : localReviews.length > 0
+    ? localReviews
+    : defaultReviews;
 
   const currentPrice = selectedVariant ? selectedVariant.price : (product?.price || 0);
   const originalPrice = selectedVariant?.originalPrice || product?.originalPrice;
@@ -176,7 +171,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
       });
 
       if (res.success && res.data) {
-        setReviews(prev => [
+        setLocalReviews(prev => [
           {
             id: res.data.id,
             customerName: newAuthor,
@@ -229,7 +224,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const allImages = [
     product.imageUrl,
     ...(product.images || []),
-    ...(product.variants?.map(v => (v as any).imageUrl).filter(Boolean) || [])
+    ...(product.variants?.map((v: any) => (v as any).imageUrl).filter(Boolean) || [])
   ].filter(Boolean);
 
   const uniqueImages = Array.from(new Set(allImages));
@@ -345,7 +340,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                   Đặc Điểm Nổi Bật:
                 </span>
                 <ul className="space-y-1.5 text-slate-600 dark:text-slate-300">
-                  {product.highlights.map((h, idx) => (
+                  {product.highlights.map((h: string, idx: number) => (
                     <li key={idx} className="flex items-start space-x-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
                       <span className="leading-snug">{h}</span>
@@ -460,7 +455,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                   Chọn phiên bản cấu hình:
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {product.variants.map(v => (
+                  {product.variants.map((v: any) => (
                     <button
                       key={v.id}
                       onClick={() => {
@@ -468,7 +463,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                         sound.playClick();
                       }}
                       className={`p-3 rounded-xl border text-xs text-left transition flex items-center justify-between cursor-pointer ${
-                        selectedVariant?.id === v.id
+                        selectedVariant?.id === (v as any).id
                           ? 'border-[#d70018] bg-red-50/60 dark:bg-red-950/40 text-[#d70018] dark:text-red-400 font-bold ring-2 ring-red-100 dark:ring-red-950/60 shadow-2xs'
                           : 'border-gray-200 dark:border-slate-800 hover:border-gray-300 text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900/60'
                       }`}

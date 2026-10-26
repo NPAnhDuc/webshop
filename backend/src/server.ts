@@ -1,3 +1,10 @@
+import {
+  validateBody,
+  CreateOrderSchema,
+  CreateReviewSchema,
+  CreateQuotationSchema,
+  UpdateSettingsSchema
+} from './validators/index.js';
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { store } from './db/store.js';
@@ -150,7 +157,7 @@ app.get('/api/products/:slug/reviews', (req: Request, res: Response) => {
   res.json({ success: true, data: reviews });
 });
 
-app.post('/api/products/:slug/reviews', (req: Request, res: Response) => {
+app.post('/api/products/:slug/reviews', validateBody(CreateReviewSchema), (req: Request, res: Response) => {
   const { author, customerName, rating, comment, productName } = req.body;
   if (!comment) {
     return res.status(400).json({ success: false, message: 'Nội dung nhận xét là bắt buộc' });
@@ -166,7 +173,7 @@ app.post('/api/products/:slug/reviews', (req: Request, res: Response) => {
 });
 
 // Customer PC Builder Quotation API
-app.post('/api/quotations', (req: Request, res: Response) => {
+app.post('/api/quotations', validateBody(CreateQuotationSchema), (req: Request, res: Response) => {
   const { customerName, phone, title, totalPrice, totalWatts, recommendedPsu, compatibilityScore, parts, note } = req.body;
   if (!customerName || !phone) {
     return res.status(400).json({ success: false, message: 'Vui lòng cung cấp họ tên và số điện thoại liên hệ' });
@@ -194,7 +201,7 @@ app.post('/api/cart/validate', (req: Request, res: Response) => {
   res.json({ success: true, data: result });
 });
 
-app.post('/api/orders', (req: Request, res: Response) => {
+app.post('/api/orders', validateBody(CreateOrderSchema), (req: Request, res: Response) => {
   const { customerName, customerPhone, customerAddress, customerCity, notes, items, paymentMethod } = req.body;
   if (!customerName || !customerPhone || !customerAddress || !items || items.length === 0) {
     return res.status(400).json({ success: false, message: 'Vui lòng điền đầy đủ thông tin đặt hàng' });
@@ -524,7 +531,7 @@ app.get('/admin/settings', (req: Request, res: Response) => {
   res.json({ success: true, data: settings });
 });
 
-app.put('/admin/settings', (req: Request, res: Response) => {
+app.put('/admin/settings', validateBody(UpdateSettingsSchema), (req: Request, res: Response) => {
   const updated = store.updateStoreSettings(req.body);
   res.json({ success: true, data: updated });
 });
