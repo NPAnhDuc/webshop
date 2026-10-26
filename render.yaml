@@ -15,7 +15,7 @@ services:
     healthCheckPath: /api/categories
     autoDeploy: true
 
-  # 2. Frontend Web Storefront (Static Site)
+  # 2. Frontend Web Storefront (Static Site - Khách Hàng)
   - type: web
     name: techstore-frontend
     runtime: static
@@ -28,4 +28,31 @@ services:
       - type: rewrite
         source: /*
         destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: techstore-backend
+          property: host
+    autoDeploy: true
+
+  # 3. Admin Portal 2FA (Static Site - Quản Trị Viên)
+  - type: web
+    name: techstore-admin
+    runtime: static
+    plan: free
+    region: singapore
+    rootDir: admin
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: techstore-backend
+          property: host
     autoDeploy: true
