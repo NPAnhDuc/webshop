@@ -48,7 +48,6 @@ interface NavbarProps {
   onSearch: (q: string) => void;
   onOpenLookup: () => void;
   onNavigatePCBuilder: () => void;
-  onNavigateAdmin: () => void;
   onNavigateHome: () => void;
   onSelectCategory: (categorySlug: string) => void;
   onSelectProduct?: (product: Product) => void;
@@ -63,7 +62,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onSearch,
   onOpenLookup,
   onNavigatePCBuilder,
-  onNavigateAdmin,
   onNavigateHome,
   onSelectCategory,
   onSelectProduct,
@@ -240,14 +238,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <FileText className="w-3 h-3 text-slate-400" />
               <span>{t('trackOrder')}</span>
             </button>
-            <span className="text-slate-700">|</span>
-            <button
-              onClick={onNavigateAdmin}
-              className="flex items-center space-x-1 text-slate-200 hover:text-white font-bold transition cursor-pointer"
-            >
-              <User className="w-3 h-3" />
-              <span>{t('account')}</span>
-            </button>
+            
             <span className="text-slate-700">|</span>
 
             {/* Language Switcher Toggle */}

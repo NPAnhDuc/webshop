@@ -14,7 +14,6 @@ import { ComparisonModal } from './components/storefront/ComparisonModal';
 import { ToastContainer, ToastMessage } from './components/common/Toast';
 import { CartDrawer } from './components/storefront/CartDrawer';
 import { MobileBottomNav } from './components/common/MobileBottomNav';
-import type { AdminTabType } from './components/admin/AdminLayout';
 
 // Lazy-loaded heavy modules for lightning-fast initial page load
 const ProductDetailModal = React.lazy(() => import('./components/storefront/ProductDetailModal').then(m => ({ default: m.ProductDetailModal })));
@@ -26,18 +25,7 @@ const OrderLookupModal = React.lazy(() => import('./components/common/OrderLooku
 const CustomerChatWidget = React.lazy(() => import('./components/chatbot/CustomerChatWidget').then(m => ({ default: m.CustomerChatWidget })));
 const PCBuilderView = React.lazy(() => import('./components/pc-builder/PCBuilderView').then(m => ({ default: m.PCBuilderView })));
 
-const AdminLayout = React.lazy(() => import('./components/admin/AdminLayout').then(m => ({ default: m.AdminLayout })));
-const DashboardView = React.lazy(() => import('./components/admin/DashboardView').then(m => ({ default: m.DashboardView })));
-const InventoryManagement = React.lazy(() => import('./components/admin/InventoryManagement').then(m => ({ default: m.InventoryManagement })));
-const OrderManagement = React.lazy(() => import('./components/admin/OrderManagement').then(m => ({ default: m.OrderManagement })));
-const DocumentManagement = React.lazy(() => import('./components/admin/DocumentManagement').then(m => ({ default: m.DocumentManagement })));
-const AdminChatbotView = React.lazy(() => import('./components/admin/AdminChatbotView').then(m => ({ default: m.AdminChatbotView })));
-const ProductManagement = React.lazy(() => import('./components/admin/ProductManagement').then(m => ({ default: m.ProductManagement })));
-const PromotionManagement = React.lazy(() => import('./components/admin/PromotionManagement').then(m => ({ default: m.PromotionManagement })));
-const CustomerManagement = React.lazy(() => import('./components/admin/CustomerManagement').then(m => ({ default: m.CustomerManagement })));
-const QuotationManagement = React.lazy(() => import('./components/admin/QuotationManagement').then(m => ({ default: m.QuotationManagement })));
-const ReviewManagement = React.lazy(() => import('./components/admin/ReviewManagement').then(m => ({ default: m.ReviewManagement })));
-const StoreSettingsManagement = React.lazy(() => import('./components/admin/StoreSettingsManagement').then(m => ({ default: m.StoreSettingsManagement })));
+
 
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider, useWishlist } from './context/WishlistContext';
@@ -68,7 +56,7 @@ import {
   X
 } from 'lucide-react';
 
-export type AppView = 'storefront' | 'pc-builder' | 'admin' | 'product-detail' | 'track-order' | 'compare';
+export type AppView = 'storefront' | 'pc-builder' | 'product-detail' | 'track-order' | 'compare';
 
 const AppContent: React.FC = () => {
   const { isAuthenticated, login } = useAuth();
@@ -78,8 +66,7 @@ const AppContent: React.FC = () => {
   const [currentView, setCurrentView] = useState<AppView>(() => {
     if (typeof window !== 'undefined') {
       const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
-      if (hash.startsWith('admin')) return 'admin';
-      if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) return 'pc-builder';
+            if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) return 'pc-builder';
       if (hash.startsWith('product/')) return 'product-detail';
       if (hash.startsWith('track-order') || hash.startsWith('lookup')) return 'track-order';
       if (hash.startsWith('compare')) return 'compare';
@@ -97,15 +84,13 @@ const AppContent: React.FC = () => {
     return null;
   });
 
-  const [adminTab, setAdminTab] = useState<AdminTabType>('dashboard');
 
   const navigateToView = (view: AppView, pushHistory = true) => {
     setCurrentView(view);
     let targetHash = '#/';
     if (view === 'storefront') targetHash = currentCategory !== 'all' ? `#/category/${currentCategory}` : '#/';
     else if (view === 'pc-builder') targetHash = '#/pc-builder';
-    else if (view === 'admin') targetHash = '#/admin';
-    else if (view === 'track-order') targetHash = '#/track-order';
+        else if (view === 'track-order') targetHash = '#/track-order';
     else if (view === 'compare') targetHash = '#/compare';
     else if (view === 'product-detail' && activeProductSlug) targetHash = `#/product/${activeProductSlug}`;
 
@@ -138,9 +123,7 @@ const AppContent: React.FC = () => {
       const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
       const hash = rawHash.toLowerCase();
 
-      if (hash.startsWith('admin')) {
-        setCurrentView('admin');
-      } else if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) {
+      if (hash.startsWith('pc-builder') || hash.startsWith('build-pc')) {
         setCurrentView('pc-builder');
       } else if (hash.startsWith('product/')) {
         const slug = rawHash.substring('product/'.length).trim();
@@ -269,12 +252,6 @@ const AppContent: React.FC = () => {
   const [showOrderLookup, setShowOrderLookup] = useState(false);
   const [successOrderCode, setSuccessOrderCode] = useState<string | null>(null);
 
-  // Admin login modal state
-  const [showAdminLogin, setShowAdminLogin] = useState(false);
-  const [loginUsername, setLoginUsername] = useState('admin');
-  const [loginPassword, setLoginPassword] = useState('admin123');
-  const [loginError, setLoginError] = useState('');
-
   const addToast = (title: string, message?: string, type: 'success' | 'warning' | 'info' = 'success') => {
     const id = `toast-${Date.now()}-${Math.random()}`;
     setToasts(prev => [...prev, { id, title, message, type }]);
@@ -334,7 +311,6 @@ const AppContent: React.FC = () => {
     setActiveProductSlug(null);
     setShowCheckout(false);
     setShowOrderLookup(false);
-    setShowAdminLogin(false);
     setShowComparisonModal(false);
 
     // 3. Switch view to storefront with URL hash sync
@@ -379,83 +355,6 @@ const AppContent: React.FC = () => {
     });
   };
 
-  const handleAdminClick = () => {
-    if (!isAuthenticated) {
-      setShowAdminLogin(true);
-    } else {
-      navigateToView('admin', true);
-    }
-  };
-
-  const handleAdminLoginSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (loginUsername === 'admin' && (loginPassword === 'admin123' || loginPassword === 'admin')) {
-      login('jwt-mock-owner', {
-        id: 'usr-1',
-        name: 'Chị Lan (Chủ Shop)',
-        role: 'owner',
-        email: 'lan.techstore@gmail.com'
-      });
-      setShowAdminLogin(false);
-      navigateToView('admin', true);
-      addToast('Đăng nhập quản trị thành công', 'Chào mừng Chị Lan (Chủ shop)', 'success');
-    } else if (loginUsername === 'kho' && loginPassword === 'kho123') {
-      login('jwt-mock-wh', {
-        id: 'usr-2',
-        name: 'Anh Tuấn (Nhân Viên Kho)',
-        role: 'warehouse',
-        email: 'tuan.kho@techstore.vn'
-      });
-      setShowAdminLogin(false);
-      navigateToView('admin', true);
-      addToast('Đăng nhập thủ kho thành công', 'Chào mừng Anh Tuấn (Kho)', 'success');
-    } else {
-      setLoginError('Tên đăng nhập hoặc mật khẩu không đúng (Gợi ý: admin / admin123)');
-    }
-  };
-
-  // Prefetch admin modules in background to completely eliminate tab-switching delay & flicker
-  useEffect(() => {
-    if (currentView === 'admin' && isAuthenticated) {
-      import('./components/admin/ProductManagement');
-      import('./components/admin/InventoryManagement');
-      import('./components/admin/OrderManagement');
-      import('./components/admin/PromotionManagement');
-      import('./components/admin/QuotationManagement');
-      import('./components/admin/CustomerManagement');
-      import('./components/admin/ReviewManagement');
-      import('./components/admin/DocumentManagement');
-      import('./components/admin/AdminChatbotView');
-      import('./components/admin/StoreSettingsManagement');
-    }
-  }, [currentView, isAuthenticated]);
-
-  // Render Admin View
-  if (currentView === 'admin' && isAuthenticated) {
-    return (
-      <>
-        <AdminLayout
-          currentTab={adminTab}
-          onSelectTab={setAdminTab}
-          onBackToStorefront={handleNavigateHome}
-        >
-          {adminTab === 'dashboard' && <DashboardView onNavigateToChatbot={() => setAdminTab('chatbot')} />}
-          {adminTab === 'products' && <ProductManagement />}
-          {adminTab === 'inventory' && <InventoryManagement />}
-          {adminTab === 'orders' && <OrderManagement />}
-          {adminTab === 'promotions' && <PromotionManagement />}
-          {adminTab === 'quotations' && <QuotationManagement />}
-          {adminTab === 'customers' && <CustomerManagement />}
-          {adminTab === 'reviews' && <ReviewManagement />}
-          {adminTab === 'documents' && <DocumentManagement />}
-          {adminTab === 'chatbot' && <AdminChatbotView />}
-          {adminTab === 'settings' && <StoreSettingsManagement />}
-        </AdminLayout>
-        <ToastContainer toasts={toasts} onDismiss={removeToast} />
-      </>
-    );
-  }
-
   // Render Customer-Facing Layout
   return (
     <div className="min-h-screen pb-16 md:pb-0 bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white relative transition-colors duration-200">
@@ -473,7 +372,6 @@ const AppContent: React.FC = () => {
         }}
         onOpenLookup={() => navigateToView('track-order')}
         onNavigatePCBuilder={() => navigateToView('pc-builder')}
-        onNavigateAdmin={handleAdminClick}
         onNavigateHome={handleNavigateHome}
         onNavigateSection={handleScrollToSection}
         onSelectCategory={cat => handleSelectCategory(cat)}
@@ -1132,64 +1030,7 @@ const AppContent: React.FC = () => {
         isWishlistActive={wishlistFilterOnly}
       />
 
-      {/* Admin Login Modal */}
-      {showAdminLogin && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-              <div className="flex items-center space-x-2">
-                <Lock className="w-4 h-4 text-blue-600" />
-                <h3 className="font-bold text-sm text-slate-900">Đăng Nhập Cổng Admin</h3>
-              </div>
-              <button onClick={() => setShowAdminLogin(false)} className="text-slate-400 hover:text-slate-600">&times;</button>
-            </div>
 
-            {loginError && (
-              <div className="p-2.5 bg-red-50 text-red-700 rounded text-xs font-medium">
-                {loginError}
-              </div>
-            )}
-
-            <form onSubmit={handleAdminLoginSubmit} className="space-y-3 text-xs">
-              <div>
-                <label className="block font-medium text-slate-700 mb-1">Tài khoản:</label>
-                <input
-                  type="text"
-                  value={loginUsername}
-                  onChange={e => setLoginUsername(e.target.value)}
-                  className="w-full px-3 py-2 border border-slate-200 rounded-lg text-xs"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block font-medium text-slate-700 mb-1">Mật khẩu:</label>
-                <input
-                  type="password"
-                  value={loginPassword}
-                  onChange={e => setLoginPassword(e.target.value)}
-                  className="w-full px-3 py-2 border border-slate-200 rounded-lg text-xs"
-                  required
-                />
-              </div>
-
-              <div className="p-2.5 bg-slate-50 rounded text-[11px] text-slate-500 space-y-1">
-                <p>Tài khoản mẫu:</p>
-                <p>• Chủ shop: <strong>admin</strong> / <strong>admin123</strong></p>
-                <p>• Thủ kho: <strong>kho</strong> / <strong>kho123</strong></p>
-              </div>
-
-              <div className="pt-2">
-                <button
-                  type="submit"
-                  className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition"
-                >
-                  Đăng nhập vào hệ thống
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

@@ -24,8 +24,8 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
   const { openCart, totalItems } = useCart();
   const { count: wishlistCount } = useWishlist();
 
-  // If on product detail page or admin view, hide the bottom navigation to give full screen focus to product buy actions or admin dashboard
-  if (currentView === 'product-detail' || currentView === 'admin') {
+  // If on product detail page, hide the bottom navigation to give full screen focus to product buy actions
+  if (currentView === 'product-detail') {
     return null;
   }
 

@@ -1,0 +1,80 @@
+import crypto from 'crypto';
+
+const ADMIN_TOTP_SECRET = process.env.ADMIN_TOTP_SECRET || 'JBSWY3DPEHPK3PXP'; // Base32 Secret
+const ADMIN_MASTER_OTP = process.env.ADMIN_MASTER_OTP || '888999'; // Emergency Recovery OTP
+const STEP_SECONDS = 30;
+
+function base32Decode(base32: string): Buffer {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+  let bits = 0;
+  let value = 0;
+  let index = 0;
+  const clean = base32.toUpperCase().replace(/=+$/, '');
+  const bytes = new Uint8Array((clean.length * 5 / 8) | 0);
+  for (let i = 0; i < clean.length; i++) {
+    const val = alphabet.indexOf(clean[i]);
+    if (val === -1) continue;
+    value = (value << 5) | val;
+    bits += 5;
+    if (bits >= 8) {
+      bytes[index++] = (value >>> (bits - 8)) & 255;
+      bits -= 8;
+    }
+  }
+  return Buffer.from(bytes.buffer, 0, index);
+}
+
+/**
+ * Generate 6-digit TOTP code compliant with RFC 6238 (Google Authenticator)
+ */
+export function generateTOTP(secret: string = ADMIN_TOTP_SECRET, stepOffset: number = 0): string {
+  const counter = Math.floor(Date.now() / 1000 / STEP_SECONDS) + stepOffset;
+  const buf = Buffer.alloc(8);
+  buf.writeBigInt64BE(BigInt(counter));
+  const key = base32Decode(secret);
+  const hmac = crypto.createHmac('sha1', key).update(buf).digest();
+  const offset = hmac[hmac.length - 1] & 0xf;
+  const binary =
+    ((hmac[offset] & 0x7f) << 24) |
+    ((hmac[offset + 1] & 0xff) << 16) |
+    ((hmac[offset + 2] & 0xff) << 8) |
+    (hmac[offset + 3] & 0xff);
+  return (binary % 1000000).toString().padStart(6, '0');
+}
+
+/**
+ * Verify OTP against TOTP window (±1 step, i.e. 30s drift tolerance) or Master Emergency OTP
+ */
+export function verifyAdminOTP(token: string, secret: string = ADMIN_TOTP_SECRET): boolean {
+  const cleanToken = token.trim();
+  
+  // 1. Check Master Emergency OTP
+  if (cleanToken === ADMIN_MASTER_OTP) {
+    return true;
+  }
+
+  // 2. Check TOTP window (-1, 0, +1) to account for time drift
+  for (const offset of [-1, 0, 1]) {
+    if (generateTOTP(secret, offset) === cleanToken) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+/**
+ * Information needed to pair with Google Authenticator or Microsoft Authenticator
+ */
+export function getAdminOTPSetupInfo(account = 'admin@techstore.vn', issuer = 'TechStore Studio Admin') {
+  const currentCode = generateTOTP(ADMIN_TOTP_SECRET);
+  const otpauthUrl = `otpauth://totp/${encodeURIComponent(issuer)}:${encodeURIComponent(account)}?secret=${ADMIN_TOTP_SECRET}&issuer=${encodeURIComponent(issuer)}&algorithm=SHA1&digits=6&period=30`;
+  
+  return {
+    secret: ADMIN_TOTP_SECRET,
+    masterOtp: ADMIN_MASTER_OTP,
+    otpauthUrl,
+    currentDevOtp: currentCode, // Helper for local development testing
+    stepSeconds: STEP_SECONDS
+  };
+}

@@ -8,6 +8,7 @@ import {
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { store } from './db/store.js';
+import { verifyAdminOTP, getAdminOTPSetupInfo } from './utils/totp.js';
 
 import path from 'path';
 import fs from 'fs';
@@ -297,24 +298,52 @@ app.post('/api/chat/customer', async (req: Request, res: Response) => {
 });
 
 // --- ADMIN APIS ---
+app.get('/admin/auth/otp-setup', (req: Request, res: Response) => {
+  const info = getAdminOTPSetupInfo();
+  res.json({ success: true, data: info });
+});
+
 app.post('/admin/auth/login', (req: Request, res: Response) => {
-  const { username, password } = req.body;
-  // Demo mock authentication with role support
+  const { username, password, otp } = req.body;
+  if (!username || !password) {
+    return res.status(400).json({ success: false, message: 'Vui lòng cung cấp đầy đủ tên đăng nhập và mật khẩu.' });
+  }
+
+  // 1. Verify user credentials
+  let user: any = null;
   if (username === 'admin' && (password === 'admin123' || password === 'admin')) {
-    return res.json({
-      success: true,
-      token: 'jwt-token-mock-super-admin',
-      user: { id: 'usr-1', name: 'Chị Lan (Chủ Shop)', role: 'owner', email: 'lan.techstore@gmail.com' }
+    user = { id: 'usr-1', name: 'Chị Lan (Chủ Shop)', role: 'owner', email: 'lan.techstore@gmail.com' };
+  } else if (username === 'kho' && password === 'kho123') {
+    user = { id: 'usr-2', name: 'Anh Tuấn (Nhân Viên Kho)', role: 'warehouse', email: 'tuan.kho@techstore.vn' };
+  } else {
+    return res.status(401).json({ success: false, message: 'Tên đăng nhập hoặc mật khẩu không chính xác' });
+  }
+
+  // 2. Verify 2FA OTP (Google Authenticator TOTP or Master OTP)
+  if (!otp || String(otp).trim().length !== 6) {
+    return res.status(400).json({
+      success: false,
+      requireOtp: true,
+      message: 'Vui lòng nhập mã OTP bảo mật 6 số từ ứng dụng Google Authenticator hoặc Master OTP.'
     });
   }
-  if (username === 'kho' && password === 'kho123') {
-    return res.json({
-      success: true,
-      token: 'jwt-token-mock-warehouse',
-      user: { id: 'usr-2', name: 'Anh Tuấn (Nhân Viên Kho)', role: 'warehouse', email: 'tuan.kho@techstore.vn' }
+
+  const cleanOtp = String(otp).trim();
+  const isValidOtp = verifyAdminOTP(cleanOtp);
+  if (!isValidOtp) {
+    return res.status(401).json({
+      success: false,
+      requireOtp: true,
+      message: 'Mã xác thực OTP không chính xác hoặc đã hết hiệu lực. Vui lòng thử lại!'
     });
   }
-  res.status(401).json({ success: false, message: 'Tên đăng nhập hoặc mật khẩu không chính xác' });
+
+  // 3. Issue Token
+  return res.json({
+    success: true,
+    token: `jwt-token-sec-${user.role}-${Date.now()}`,
+    user
+  });
 });
 
 app.get('/admin/dashboard/kpis', (req: Request, res: Response) => {
