@@ -1,6 +1,13 @@
 import { Product, Category, Brand, Order, ChartSpec, StrategyProposal, StrategicDocument } from '../types';
 
-export const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+const getApiBaseUrl = () => {
+  let url = (import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || '').trim();
+  if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+    url = `https://${url}`;
+  }
+  return url.replace(/\/+$/, '');
+};
+export const API_BASE_URL = getApiBaseUrl();
 const BASE_URL = API_BASE_URL;
 
 export function formatImageUrl(url?: string): string {
