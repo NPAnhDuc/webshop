@@ -89,9 +89,19 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   // Related products
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
+  const [showStickyBuyBar, setShowStickyBuyBar] = useState(false);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [productSlugOrId]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyBuyBar(window.scrollY > 480);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (product) {
@@ -962,6 +972,94 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
           onToast('Đã chọn gói trả góp!', `${plan.provider} • Kỳ hạn ${plan.termMonths} tháng`);
         }}
       />
+
+      {/* 6. Sticky Quick Buy Bar */}
+      {showStickyBuyBar && product && (
+        <aside
+          aria-label="Thanh mua hàng nhanh"
+          className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] px-4 py-2.5 transition-all duration-300 animate-in slide-in-from-bottom"
+        >
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+            {/* Product snapshot (thumbnail + title + variant) */}
+            <div className="flex items-center space-x-3 min-w-0">
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-11 h-11 object-contain rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-1 shrink-0"
+              />
+              <div className="min-w-0">
+                <h4 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 truncate max-w-[180px] sm:max-w-sm md:max-w-md lg:max-w-xl">
+                  {product.name}
+                </h4>
+                <div className="flex items-center space-x-2 text-xs">
+                  <span className="font-mono font-black text-sm text-[#d70018] dark:text-red-400">
+                    {formatVND(currentPrice)}
+                  </span>
+                  {originalPrice && originalPrice > currentPrice && (
+                    <span className="text-[11px] text-slate-400 line-through font-mono hidden sm:inline">
+                      {formatVND(originalPrice)}
+                    </span>
+                  )}
+                  {selectedVariant && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 truncate max-w-[120px] hidden sm:inline-block">
+                      {selectedVariant.name}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="flex items-center space-x-2 shrink-0">
+              <button
+                onClick={() => toggleWishlist(product.id)}
+                className={`p-2.5 rounded-xl border transition cursor-pointer hidden md:flex items-center justify-center ${
+                  isFav
+                    ? 'bg-rose-50 border-rose-200 text-rose-500 dark:bg-rose-950/40 dark:border-rose-800'
+                    : 'border-slate-200 dark:border-slate-700 text-slate-500 hover:text-rose-500'
+                }`}
+                title="Yêu thích"
+              >
+                <Heart className={`w-4 h-4 ${isFav ? 'fill-rose-500 text-rose-500' : ''}`} />
+              </button>
+
+              {!isOutOfStock ? (
+                <>
+                  <button
+                    onClick={() => {
+                      addToCart(product, selectedVariant || undefined, 1);
+                      sound.playPop();
+                      onToast('Đã thêm vào giỏ hàng!', product.name);
+                    }}
+                    className="py-2.5 px-3 sm:px-4 border-2 border-[#d70018] text-[#d70018] hover:bg-red-50 dark:hover:bg-red-950/40 font-bold rounded-xl text-xs sm:text-sm flex items-center space-x-1.5 transition cursor-pointer active:scale-95"
+                  >
+                    <ShoppingCart className="w-4 h-4" />
+                    <span className="hidden sm:inline">Thêm Giỏ</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      addToCart(product, selectedVariant || undefined, 1);
+                      sound.playVoucherSuccess();
+                      if (onProceedToCheckout) {
+                        onProceedToCheckout();
+                      }
+                    }}
+                    className="py-2.5 px-4 sm:px-6 bg-[#d70018] hover:bg-[#b91c1c] text-white font-bold rounded-xl text-xs sm:text-sm flex items-center space-x-1.5 transition cursor-pointer shadow-md active:scale-95"
+                  >
+                    <Zap className="w-4 h-4 fill-white" />
+                    <span>Mua Ngay</span>
+                  </button>
+                </>
+              ) : (
+                <span className="px-4 py-2 bg-gray-100 dark:bg-slate-800 text-slate-400 text-xs font-semibold rounded-xl border border-gray-200 dark:border-slate-700">
+                  Hết hàng
+                </span>
+              )}
+            </div>
+          </div>
+        </aside>
+      )}
     </div>
   );
 };

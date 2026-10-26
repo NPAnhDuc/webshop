@@ -1,20 +1,61 @@
 import React, { useState } from 'react';
-import { X, Trash2, ArrowRight, ShoppingBag, ShieldCheck, Tag, Sparkles, CheckCircle2 } from 'lucide-react';
+import {
+  X,
+  Trash2,
+  ArrowRight,
+  ShoppingBag,
+  ShieldCheck,
+  Tag,
+  Sparkles,
+  CheckCircle2,
+  Truck,
+  Plus
+} from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { triggerConfetti } from '../../utils/confetti';
 import { sound } from '../../utils/sound';
+import { Product } from '../../types';
 
 interface CartDrawerProps {
   onProceedToCheckout: () => void;
 }
 
+const FREESHIP_THRESHOLD = 500000; // 500,000 VND
+
+const UPSELL_ACCESSORIES = [
+  {
+    id: 'upsell-pad',
+    name: 'Lót chuột Gaming Speed Pad 80x30cm',
+    price: 49000,
+    originalPrice: 99000,
+    imageUrl: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=120&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 'upsell-paste',
+    name: 'Keo tản nhiệt Arctic MX-4 (4g) chính hãng',
+    price: 89000,
+    originalPrice: 150000,
+    imageUrl: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=120&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 'upsell-hdmi',
+    name: 'Cáp HDMI 2.1 8K 60Hz bọc dù chống đứt',
+    price: 120000,
+    originalPrice: 190000,
+    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=120&auto=format&fit=crop&q=80'
+  }
+];
+
 export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) => {
-  const { cart, isOpen, closeCart, removeFromCart, updateQty, totalAmount, totalItems } = useCart();
+  const { cart, isOpen, closeCart, removeFromCart, updateQty, totalAmount, totalItems, addToCart } = useCart();
   const [couponCode, setCouponCode] = useState('');
   const [appliedCoupon, setAppliedCoupon] = useState<{ code: string; discount: number; label: string } | null>(null);
   const [couponError, setCouponError] = useState<string | null>(null);
 
   if (!isOpen) return null;
+
+  const freeshipProgress = Math.min(100, Math.round((totalAmount / FREESHIP_THRESHOLD) * 100));
+  const freeshipRemaining = Math.max(0, FREESHIP_THRESHOLD - totalAmount);
 
   const handleApplyCoupon = (codeToApply?: string) => {
     const code = (codeToApply || couponCode).trim().toUpperCase();
@@ -40,6 +81,43 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
     } else {
       setCouponError('Mã giảm giá không hợp lệ hoặc đã hết lượt.');
     }
+  };
+
+  const handleAddUpsell = (acc: typeof UPSELL_ACCESSORIES[0]) => {
+    const dummyProduct: Product = {
+      id: acc.id,
+      name: acc.name,
+      slug: acc.id,
+      brandId: 'b-techstore',
+      brandName: 'TechStore Gear',
+      categoryId: 'cat-acc',
+      categorySlug: 'accessories' as any,
+      price: acc.price,
+      originalPrice: acc.originalPrice,
+      imageUrl: acc.imageUrl,
+      images: [acc.imageUrl],
+      description: acc.name,
+      highlights: ['Chính hãng 100%', 'Bảo hành 12 tháng'],
+      status: 'active',
+      createdAt: new Date().toISOString(),
+      stockStatus: { status: 'in_stock', availableQty: 99 },
+      variants: [
+        {
+          id: `var-${acc.id}`,
+          productId: acc.id,
+          sku: `SKU-${acc.id.toUpperCase()}`,
+          name: 'Tiêu chuẩn',
+          price: acc.price,
+          originalPrice: acc.originalPrice,
+          costPrice: acc.price * 0.7,
+          status: 'active'
+        }
+      ],
+      specs: {}
+    };
+
+    addToCart(dummyProduct, dummyProduct.variants[0], 1);
+    sound.playPop();
   };
 
   const finalAmount = appliedCoupon ? Math.max(0, totalAmount - appliedCoupon.discount) : totalAmount;
@@ -70,6 +148,36 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
             </button>
           </div>
 
+          {/* Freeship Progress Bar Callout */}
+          {cart.length > 0 && (
+            <div className="bg-red-50/60 dark:bg-slate-900/90 px-4 py-3 border-b border-red-100 dark:border-slate-800">
+              <div className="flex items-center justify-between text-xs mb-1.5 font-medium">
+                <span className="flex items-center space-x-1.5 text-slate-700 dark:text-slate-300">
+                  <Truck className="w-4 h-4 text-[#d70018]" />
+                  {freeshipRemaining > 0 ? (
+                    <span>
+                      Mua thêm <strong className="font-mono font-bold text-[#d70018]">{new Intl.NumberFormat('vi-VN').format(freeshipRemaining)}₫</strong> để được <strong>FREESHIP</strong>
+                    </span>
+                  ) : (
+                    <span className="text-emerald-600 dark:text-emerald-400 font-bold flex items-center space-x-1">
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      <span>Đủ điều kiện FREESHIP TOÀN QUỐC!</span>
+                    </span>
+                  )}
+                </span>
+                <span className="font-mono font-bold text-[11px] text-slate-500">{freeshipProgress}%</span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-1.5 overflow-hidden">
+                <div
+                  className={`h-full transition-all duration-500 rounded-full ${
+                    freeshipProgress >= 100 ? 'bg-emerald-500' : 'bg-gradient-to-r from-red-500 to-[#d70018]'
+                  }`}
+                  style={{ width: `${freeshipProgress}%` }}
+                />
+              </div>
+            </div>
+          )}
+
           {/* Cart Items List */}
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
             {cart.length === 0 ? (
@@ -81,64 +189,115 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
                 <p className="text-xs text-slate-400 dark:text-slate-500">Hãy dạo một vòng và chọn chiếc laptop hoặc linh kiện ưng ý nhé!</p>
                 <button
                   onClick={closeCart}
-                  className="mt-4 px-4 py-2 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-semibold rounded-lg transition cursor-pointer"
+                  className="mt-4 px-4 py-2 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-semibold rounded-lg transition cursor-pointer shadow-xs active:scale-95"
                 >
                   Khám phá sản phẩm
                 </button>
               </div>
             ) : (
-              cart.map(item => (
-                <div
-                  key={item.variantId}
-                  className="flex space-x-3 p-3 rounded-lg border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-900/80 transition"
-                >
-                  <img
-                    src={item.imageUrl}
-                    alt={item.productName}
-                    className="w-16 h-16 object-contain rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-1 flex-shrink-0"
-                  />
-                  <div className="flex-1 min-w-0 flex flex-col justify-between">
-                    <div>
-                      <div className="flex justify-between items-start">
-                        <h3 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate pr-2">
-                          {item.productName}
-                        </h3>
-                        <button
-                          onClick={() => removeFromCart(item.variantId)}
-                          className="text-slate-400 hover:text-red-500 transition cursor-pointer p-0.5"
-                          title="Xóa khỏi giỏ"
-                        >
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </button>
+              <>
+                {cart.map(item => (
+                  <div
+                    key={item.variantId}
+                    className="flex space-x-3 p-3 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-900/80 transition"
+                  >
+                    <img
+                      src={item.imageUrl}
+                      alt={item.productName}
+                      className="w-16 h-16 object-contain rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-1 flex-shrink-0"
+                    />
+                    <div className="flex-1 min-w-0 flex flex-col justify-between">
+                      <div>
+                        <div className="flex justify-between items-start">
+                          <h3 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate pr-2" title={item.productName}>
+                            {item.productName}
+                          </h3>
+                          <button
+                            onClick={() => removeFromCart(item.variantId)}
+                            className="text-slate-400 hover:text-red-500 transition cursor-pointer p-0.5"
+                            title="Xóa khỏi giỏ"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                          {item.variantName}
+                        </p>
                       </div>
-                      <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-                        {item.variantName}
-                      </p>
-                    </div>
 
-                    <div className="flex justify-between items-center mt-2">
-                      <div className="flex items-center space-x-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 px-2 py-0.5">
-                        <button
-                          onClick={() => updateQty(item.variantId, item.qty - 1)}
-                          className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 font-bold px-1"
-                        >
-                          -
-                        </button>
-                        <span className="text-xs font-semibold w-4 text-center">{item.qty}</span>
-                        <button
-                          onClick={() => updateQty(item.variantId, item.qty + 1)}
-                          className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 font-bold px-1"
-                        >
-                          +
-                        </button>
+                      <div className="flex justify-between items-center mt-2">
+                        <div className="flex items-center space-x-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 px-2 py-0.5">
+                          <button
+                            onClick={() => updateQty(item.variantId, item.qty - 1)}
+                            className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 font-bold px-1"
+                          >
+                            -
+                          </button>
+                          <span className="text-xs font-semibold w-4 text-center">{item.qty}</span>
+                          <button
+                            onClick={() => updateQty(item.variantId, item.qty + 1)}
+                            className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 font-bold px-1"
+                          >
+                            +
+                          </button>
+                        </div>
+                        <span className="text-xs font-black text-[#d70018] dark:text-red-400 font-mono">
+                          {new Intl.NumberFormat('vi-VN').format(item.price * item.qty)}₫
+                        </span>
                       </div>
-                      <span className="text-xs font-black text-[#d70018] dark:text-red-400 font-mono">
-                        {new Intl.NumberFormat('vi-VN').format(item.price * item.qty)}₫
-                      </span>
                     </div>
                   </div>
+                ))}
+
+                {/* Quick Upsell Accessories section */}
+                <div className="pt-3 border-t border-slate-200 dark:border-slate-800 space-y-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-extrabold uppercase text-[11px] text-slate-500 dark:text-slate-400 flex items-center space-x-1">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>Gợi ý mua kèm ưu đãi</span>
+                    </span>
+                    <span className="text-[10px] text-red-500 font-semibold">Freeship ngay</span>
+                  </div>
+
+                  <div className="space-y-2">
+                    {UPSELL_ACCESSORIES.map(acc => (
+                      <div
+                        key={acc.id}
+                        className="p-2 rounded-xl bg-gray-50 dark:bg-slate-900/40 border border-gray-150 dark:border-slate-800 flex items-center justify-between gap-3 text-xs"
+                      >
+                        <div className="flex items-center space-x-2.5 min-w-0">
+                          <img
+                            src={acc.imageUrl}
+                            alt={acc.name}
+                            className="w-10 h-10 object-cover rounded-lg border border-gray-200 dark:border-slate-700 flex-shrink-0"
+                          />
+                          <div className="min-w-0">
+                            <p className="font-bold text-slate-800 dark:text-slate-200 truncate text-[11px]" title={acc.name}>
+                              {acc.name}
+                            </p>
+                            <div className="flex items-baseline space-x-1.5">
+                              <span className="font-mono font-black text-[#d70018] text-xs">
+                                {new Intl.NumberFormat('vi-VN').format(acc.price)}₫
+                              </span>
+                              <span className="font-mono text-[10px] text-slate-400 line-through">
+                                {new Intl.NumberFormat('vi-VN').format(acc.originalPrice)}₫
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          onClick={() => handleAddUpsell(acc)}
+                          className="px-2.5 py-1 bg-white dark:bg-slate-800 hover:bg-[#d70018] hover:text-white dark:hover:bg-[#d70018] text-[#d70018] border border-red-200 dark:border-slate-700 rounded-lg font-bold text-[11px] flex items-center space-x-1 transition cursor-pointer shadow-2xs flex-shrink-0 active:scale-95"
+                        >
+                          <Plus className="w-3 h-3" />
+                          <span>Thêm</span>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))
+              </>
             )}
           </div>
 
@@ -201,45 +360,57 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onProceedToCheckout }) =
                 )}
               </div>
 
-              <div className="flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
-                <span>Tạm tính hàng hóa:</span>
-                <span className="font-semibold text-slate-900 dark:text-slate-100">
-                  {new Intl.NumberFormat('vi-VN').format(totalAmount)}₫
-                </span>
-              </div>
-              <div className="flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
-                <span>Phí vận chuyển toàn quốc:</span>
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">Miễn phí 100%</span>
-              </div>
-              {appliedCoupon && appliedCoupon.discount > 0 && (
-                <div className="flex items-center justify-between text-xs text-red-600 dark:text-red-400 font-semibold">
-                  <span>Giảm giá từ ưu đãi:</span>
-                  <span className="font-mono">-{new Intl.NumberFormat('vi-VN').format(appliedCoupon.discount)}₫</span>
+              {/* Price Calculation */}
+              <div className="space-y-1.5 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs">
+                <div className="flex justify-between text-slate-500 dark:text-slate-400">
+                  <span>Tạm tính ({totalItems} món):</span>
+                  <span className="font-mono font-semibold text-slate-800 dark:text-slate-200">
+                    {new Intl.NumberFormat('vi-VN').format(totalAmount)}₫
+                  </span>
                 </div>
-              )}
-              <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex items-baseline justify-between">
-                <span className="text-sm font-bold text-slate-900 dark:text-slate-100">Tổng thanh toán:</span>
-                <span className="text-xl font-black text-[#d70018] dark:text-red-400 font-mono">
-                  {new Intl.NumberFormat('vi-VN').format(finalAmount)}₫
+                {appliedCoupon && (
+                  <div className="flex justify-between text-[#d70018] dark:text-red-400">
+                    <span>Ưu đãi voucher:</span>
+                    <span className="font-mono font-bold">
+                      -{new Intl.NumberFormat('vi-VN').format(appliedCoupon.discount)}₫
+                    </span>
+                  </div>
+                )}
+                <div className="flex justify-between text-slate-500 dark:text-slate-400">
+                  <span>Phí vận chuyển:</span>
+                  <span className="font-semibold text-emerald-600 dark:text-emerald-400 font-mono">
+                    {freeshipRemaining === 0 ? 'MIỄN PHÍ' : 'Tính khi thanh toán'}
+                  </span>
+                </div>
+                <div className="flex justify-between text-sm pt-1 border-t border-slate-200 dark:border-slate-800">
+                  <span className="font-bold text-slate-900 dark:text-slate-100">Tổng thanh toán:</span>
+                  <span className="font-black text-base font-mono text-[#d70018] dark:text-red-400">
+                    {new Intl.NumberFormat('vi-VN').format(finalAmount)}₫
+                  </span>
+                </div>
+              </div>
+
+              {/* Checkout CTA */}
+              <button
+                onClick={() => {
+                  closeCart();
+                  onProceedToCheckout();
+                }}
+                className="w-full py-3 bg-[#d70018] hover:bg-[#b91c1c] text-white font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center space-x-2 transition shadow-lg shadow-red-600/20 active:scale-95 cursor-pointer"
+              >
+                <span>Tiến hành đặt hàng ngay</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+
+              <div className="flex items-center justify-center space-x-4 text-[10px] text-slate-400 dark:text-slate-500 pt-1">
+                <span className="flex items-center space-x-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+                  <span>Bảo mật 100%</span>
                 </span>
-              </div>
-
-              <div className="pt-1">
-                <button
-                  onClick={() => {
-                    closeCart();
-                    onProceedToCheckout();
-                  }}
-                  className="w-full py-3 bg-[#d70018] hover:bg-[#b91c1c] text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition shadow-sm active:scale-95 cursor-pointer"
-                >
-                  <span>Tiến hành đặt hàng</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-
-              <div className="flex items-center justify-center space-x-1.5 text-[11px] text-slate-500 dark:text-slate-400 pt-1">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#d70018] dark:text-red-400" />
-                <span>Kiểm tra & giữ hàng tức thì trong thời gian thực</span>
+                <span>•</span>
+                <span>Đổi mới 30 ngày</span>
+                <span>•</span>
+                <span>Hỗ trợ trả góp 0%</span>
               </div>
             </div>
           )}

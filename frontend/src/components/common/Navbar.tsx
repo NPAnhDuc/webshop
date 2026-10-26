@@ -33,7 +33,8 @@ import {
   Zap,
   Box,
   Tag,
-  Home
+  Home,
+  Flame
 } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -413,6 +414,34 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
               </div>
             </form>
+
+            {/* Trending Hot Searches (CellphoneS / Tiki style) */}
+            <div className="hidden sm:flex items-center space-x-2 mt-1 text-[11px] overflow-x-auto scrollbar-none py-0.5">
+              <span className="text-red-200 dark:text-slate-400 text-[10px] font-semibold flex items-center space-x-1 shrink-0">
+                <Flame className="w-3 h-3 text-amber-300" />
+                <span>Hot:</span>
+              </span>
+              {[
+                'RTX 4060',
+                'MacBook Air M3',
+                'Màn hình OLED',
+                'Laptop sinh viên',
+                'SSD 1TB NVMe',
+                'Core i5 14400F'
+              ].map(tag => (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery(tag);
+                    onSearch(tag);
+                  }}
+                  className="text-white/90 hover:text-white hover:underline whitespace-nowrap transition cursor-pointer text-[10.5px] font-medium"
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
 
             {/* Listening Indicator Popup */}
             {isListening && (

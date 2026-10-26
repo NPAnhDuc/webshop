@@ -13,6 +13,7 @@ import { ComparisonBar } from './components/storefront/ComparisonBar';
 import { ComparisonModal } from './components/storefront/ComparisonModal';
 import { ToastContainer, ToastMessage } from './components/common/Toast';
 import { CartDrawer } from './components/storefront/CartDrawer';
+import { MobileBottomNav } from './components/common/MobileBottomNav';
 import type { AdminTabType } from './components/admin/AdminLayout';
 
 // Lazy-loaded heavy modules for lightning-fast initial page load
@@ -63,7 +64,8 @@ import {
   Wrench,
   CreditCard,
   Home,
-  Heart
+  Heart,
+  X
 } from 'lucide-react';
 
 export type AppView = 'storefront' | 'pc-builder' | 'admin' | 'product-detail' | 'track-order' | 'compare';
@@ -246,6 +248,20 @@ const AppContent: React.FC = () => {
 
   // Toast Notification System
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
+
+  // Mobile filter drawer state
+  const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+
+  const activeFilterCount = React.useMemo(() => {
+    let count = 0;
+    if (selectedBrand) count++;
+    if (selectedPriceRange) count++;
+    if (selectedDemand) count++;
+    if (selectedPanel) count++;
+    if (inStockOnly) count++;
+    if (hasInstallment0) count++;
+    return count;
+  }, [selectedBrand, selectedPriceRange, selectedDemand, selectedPanel, inStockOnly, hasInstallment0]);
 
   // Modals & Selected states
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -442,7 +458,7 @@ const AppContent: React.FC = () => {
 
   // Render Customer-Facing Layout
   return (
-    <div className="min-h-screen bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white relative transition-colors duration-200">
+    <div className="min-h-screen pb-16 md:pb-0 bg-[#f4f6f8] dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 flex flex-col justify-between selection:bg-red-600 selection:text-white relative transition-colors duration-200">
       {/* Interactive Side Wings for Wide Screens */}
       <SideWings
         onNavigatePCBuilder={() => navigateToView('pc-builder')}
@@ -770,9 +786,100 @@ const AppContent: React.FC = () => {
               </div>
             </div>
 
+            {/* Mobile Filter Trigger Button (< lg) */}
+            <div className="lg:hidden mb-3">
+              <button
+                onClick={() => setMobileFilterOpen(true)}
+                className="w-full flex items-center justify-between p-3 bg-white dark:bg-[#151c2c] border border-gray-200 dark:border-slate-800 rounded-2xl shadow-xs text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-red-500 transition cursor-pointer"
+              >
+                <div className="flex items-center space-x-2">
+                  <SlidersHorizontal className="w-4 h-4 text-[#d70018]" />
+                  <span>Bộ Lọc Sản Phẩm & Tùy Chọn Nâng Cao</span>
+                </div>
+                <div className="flex items-center space-x-1.5">
+                  {activeFilterCount > 0 ? (
+                    <span className="bg-[#d70018] text-white text-[10px] font-black px-2 py-0.5 rounded-full">
+                      {activeFilterCount} đang chọn
+                    </span>
+                  ) : (
+                    <span className="text-[11px] text-slate-400 font-normal">Mở bộ lọc →</span>
+                  )}
+                </div>
+              </button>
+            </div>
+
+            {/* Mobile Filter Slide-over Drawer (< lg) */}
+            {mobileFilterOpen && (
+              <div className="fixed inset-0 z-50 overflow-hidden lg:hidden animate-in fade-in duration-200">
+                <div
+                  className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
+                  onClick={() => setMobileFilterOpen(false)}
+                />
+                <div className="fixed inset-y-0 right-0 max-w-full flex pl-8">
+                  <div className="w-screen max-w-md bg-white dark:bg-[#0f172a] shadow-2xl flex flex-col h-full animate-in slide-in-from-right duration-300">
+                    {/* Header */}
+                    <div className="p-4 border-b border-gray-200 dark:border-slate-800 flex items-center justify-between bg-gray-50 dark:bg-slate-850">
+                      <div className="flex items-center space-x-2">
+                        <SlidersHorizontal className="w-4 h-4 text-[#d70018]" />
+                        <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                          Bộ Lọc Chi Tiết {activeFilterCount > 0 ? `(${activeFilterCount})` : ''}
+                        </h3>
+                      </div>
+                      <button
+                        onClick={() => setMobileFilterOpen(false)}
+                        className="p-1.5 rounded-lg text-slate-500 hover:bg-gray-200 dark:hover:bg-slate-800 transition cursor-pointer"
+                      >
+                        <X className="w-5 h-5" />
+                      </button>
+                    </div>
+
+                    {/* Filter Content */}
+                    <div className="flex-1 overflow-y-auto p-4">
+                      <ProductFilters
+                        facets={facets}
+                        selectedBrand={selectedBrand}
+                        selectedPriceRange={selectedPriceRange}
+                        selectedDemand={selectedDemand}
+                        selectedPanel={selectedPanel}
+                        inStockOnly={inStockOnly}
+                        hasInstallment0={hasInstallment0}
+                        onFilterChange={newFilters => {
+                          if (newFilters.brand !== undefined) setSelectedBrand(newFilters.brand);
+                          if (newFilters.priceRange !== undefined) setSelectedPriceRange(newFilters.priceRange);
+                          if (newFilters.demand !== undefined) setSelectedDemand(newFilters.demand);
+                          if (newFilters.panel !== undefined) setSelectedPanel(newFilters.panel);
+                          if (newFilters.inStockOnly !== undefined) setInStockOnly(newFilters.inStockOnly);
+                          if (newFilters.hasInstallment0 !== undefined) setHasInstallment0(newFilters.hasInstallment0);
+                        }}
+                        onReset={handleResetFilters}
+                      />
+                    </div>
+
+                    {/* Footer Actions */}
+                    <div className="p-3 border-t border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-850 flex items-center space-x-2.5">
+                      <button
+                        onClick={() => {
+                          handleResetFilters();
+                        }}
+                        className="flex-1 py-2.5 px-3 border border-gray-300 dark:border-slate-700 hover:bg-gray-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-bold rounded-xl transition cursor-pointer"
+                      >
+                        Thiết lập lại
+                      </button>
+                      <button
+                        onClick={() => setMobileFilterOpen(false)}
+                        className="flex-1 py-2.5 px-3 bg-[#d70018] hover:bg-[#b91c1c] text-white text-xs font-bold rounded-xl transition shadow-md cursor-pointer"
+                      >
+                        Xem kết quả ({totalProducts})
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-              {/* Left Sidebar Filter */}
-              <div className="lg:col-span-1">
+              {/* Left Sidebar Filter (Desktop only) */}
+              <div className="hidden lg:block lg:col-span-1">
                 <div className="sticky top-20">
                   <ProductFilters
                     facets={facets}
@@ -1008,6 +1115,22 @@ const AppContent: React.FC = () => {
 
       {/* Toast Notification Container */}
       <ToastContainer toasts={toasts} onDismiss={removeToast} />
+
+      {/* Mobile Bottom Navigation Bar (< md) */}
+      <MobileBottomNav
+        currentView={currentView}
+        onNavigateHome={handleNavigateHome}
+        onNavigatePCBuilder={() => navigateToView('pc-builder')}
+        onOpenCategories={() => {
+          navigateToView('storefront');
+          document.getElementById('product-catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        onToggleWishlist={() => {
+          setWishlistFilterOnly(prev => !prev);
+          navigateToView('storefront');
+        }}
+        isWishlistActive={wishlistFilterOnly}
+      />
 
       {/* Admin Login Modal */}
       {showAdminLogin && (
