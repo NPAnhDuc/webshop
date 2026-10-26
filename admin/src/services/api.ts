@@ -15,6 +15,23 @@ const getApiBaseUrl = () => {
 };
 const BASE_URL = getApiBaseUrl();
 
+export const DEFAULT_PRODUCT_FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop&q=80';
+
+export function formatProductImageUrl(url?: string): string {
+  if (!url || typeof url !== 'string' || !url.trim()) {
+    return DEFAULT_PRODUCT_FALLBACK_IMAGE;
+  }
+  const trimmed = url.trim();
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://') || trimmed.startsWith('data:')) {
+    return trimmed;
+  }
+  const cleanPath = trimmed.replace(/^\/+/, '');
+  if (BASE_URL) {
+    return `${BASE_URL}/${cleanPath}`;
+  }
+  return `/${cleanPath}`;
+}
+
 // 2FA OTP & AUTH APIS
 export async function fetchOtpSetup(): Promise<{
   secret: string;

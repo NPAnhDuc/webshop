@@ -9,7 +9,7 @@ import {
   PackagePlus,
   RefreshCw
 } from 'lucide-react';
-import { fetchAdminInventory, createStockReceipt } from '../../services/api';
+import { fetchAdminInventory, createStockReceipt, formatProductImageUrl, DEFAULT_PRODUCT_FALLBACK_IMAGE } from '../../services/api';
 
 export const InventoryManagement: React.FC = () => {
   const [inventoryList, setInventoryList] = useState<any[]>([]);
@@ -118,7 +118,16 @@ export const InventoryManagement: React.FC = () => {
                   prod.variants.map((v: any) => (
                     <tr key={v.id} className="hover:bg-slate-50/80 transition">
                       <td className="p-3.5 flex items-center space-x-3">
-                        <img src={prod.imageUrl} alt="" className="w-10 h-10 object-contain rounded bg-white p-0.5 border border-slate-100 flex-shrink-0" />
+                        <img
+                          src={formatProductImageUrl(prod.imageUrl)}
+                          alt={prod.productName || ''}
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = DEFAULT_PRODUCT_FALLBACK_IMAGE;
+                          }}
+                          className="w-10 h-10 object-contain rounded bg-white p-0.5 border border-slate-200 dark:border-slate-700 flex-shrink-0"
+                          loading="lazy"
+                        />
                         <div>
                           <span className="font-bold text-slate-900 block">{prod.productName}</span>
                           <span className="text-[11px] text-slate-500">{v.name}</span>

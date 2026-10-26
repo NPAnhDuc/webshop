@@ -18,7 +18,7 @@ import {
   Tag,
   RefreshCw
 } from 'lucide-react';
-import { fetchAdminProducts, createAdminProduct, updateAdminProduct, deleteAdminProduct } from '../../services/api';
+import { fetchAdminProducts, createAdminProduct, updateAdminProduct, deleteAdminProduct, formatProductImageUrl, DEFAULT_PRODUCT_FALLBACK_IMAGE } from '../../services/api';
 import { Product } from '../../types';
 
 export const ProductManagement: React.FC = () => {
@@ -238,9 +238,14 @@ export const ProductManagement: React.FC = () => {
                   <tr key={p.id} className="hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition">
                     <td className="py-3 px-4 flex items-center space-x-3">
                       <img
-                        src={p.imageUrl}
+                        src={formatProductImageUrl(p.imageUrl)}
                         alt={p.name}
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = DEFAULT_PRODUCT_FALLBACK_IMAGE;
+                        }}
                         className="w-11 h-11 object-contain rounded-lg border border-slate-200 dark:border-slate-700 bg-white p-1 flex-shrink-0"
+                        loading="lazy"
                       />
                       <div className="min-w-0 max-w-sm">
                         <p className="font-bold text-slate-900 dark:text-slate-100 truncate" title={p.name}>
@@ -407,6 +412,20 @@ export const ProductManagement: React.FC = () => {
                     onChange={e => setFormData({ ...formData, imageUrl: e.target.value })}
                     className="w-full px-3 py-2 bg-gray-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100"
                   />
+                  {formData.imageUrl && (
+                    <div className="mt-2 flex items-center space-x-3 p-2 bg-slate-900/50 rounded-xl border border-slate-700">
+                      <img
+                        src={formatProductImageUrl(formData.imageUrl)}
+                        alt="Preview"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = DEFAULT_PRODUCT_FALLBACK_IMAGE;
+                        }}
+                        className="w-12 h-12 object-contain rounded-lg bg-white p-1 border border-slate-700 shrink-0"
+                      />
+                      <span className="text-[11px] text-slate-400">Xem trước ảnh đại diện sản phẩm</span>
+                    </div>
+                  )}
                 </div>
 
                 <div>

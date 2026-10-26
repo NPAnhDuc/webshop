@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { formatProductImageUrl } from '../../services/api';
 
 interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -29,7 +30,8 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
     return src.replace(/\.(png|jpg|jpeg)$/i, '.webp');
   }, [src]);
 
-  const currentSrc = hasError ? fallbackSrc : src;
+  const formattedSrc = React.useMemo(() => formatProductImageUrl(src), [src]);
+  const currentSrc = hasError ? fallbackSrc : formattedSrc;
 
   return (
     <div
