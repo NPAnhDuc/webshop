@@ -13,7 +13,7 @@ import {
   CheckCircle2,
   Cpu
 } from 'lucide-react';
-import { adminLogin, fetchOtpSetup, fetchAdminSetupQr } from '../../services/api';
+import { adminLogin, fetchOtpSetup, fetchAdminSetupQr, fetchSetupQrStatus } from '../../services/api';
 import { useAuth } from '../../context/AuthContext';
 
 interface AdminLoginGateProps {
@@ -43,6 +43,12 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
     account: string;
   } | null>(null);
   const [copiedSecret, setCopiedSecret] = useState(false);
+  // The server shows the pairing QR only while ADMIN_TOTP_ENROLLMENT=true.
+  const [qrEnrollmentOpen, setQrEnrollmentOpen] = useState(false);
+
+  useEffect(() => {
+    fetchSetupQrStatus().then(setQrEnrollmentOpen);
+  }, []);
 
   const handleOpenQrModal = async () => {
     if (!username.trim() || !password.trim()) {
@@ -55,7 +61,7 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
     try {
       const res = await fetchAdminSetupQr({
         username: username.trim(),
-        password: password.trim()
+        password
       });
       if (res.success && res.data) {
         setQrData(res.data);
@@ -193,7 +199,7 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
               <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
               <div className="flex-1 leading-relaxed">{errorMessage}</div>
             </div>
-            {errorMessage.includes('OTP') && (
+            {qrEnrollmentOpen && errorMessage.includes('OTP') && (
               <button
                 type="button"
                 onClick={handleOpenQrModal}
@@ -259,14 +265,16 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
                   Mã xác thực 2FA (OTP 6 số)
                 </label>
               </div>
-              <button
-                type="button"
-                onClick={handleOpenQrModal}
-                className="text-[11px] text-blue-400 hover:text-blue-300 flex items-center space-x-1 cursor-pointer transition font-medium"
-              >
-                <QrCode className="w-3 h-3" />
-                <span>Quét mã QR liên kết</span>
-              </button>
+              {qrEnrollmentOpen && (
+                <button
+                  type="button"
+                  onClick={handleOpenQrModal}
+                  className="text-[11px] text-blue-400 hover:text-blue-300 flex items-center space-x-1 cursor-pointer transition font-medium"
+                >
+                  <QrCode className="w-3 h-3" />
+                  <span>Quét mã QR liên kết</span>
+                </button>
+              )}
             </div>
 
             {/* 6 Digit Input Boxes */}

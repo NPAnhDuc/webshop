@@ -29,6 +29,9 @@ services:
         sync: false
       - key: ADMIN_TOTP_SECRET # Base32
         sync: false
+      # "true" only while pairing Google Authenticator (serves the QR with the secret); set back to "false".
+      - key: ADMIN_TOTP_ENROLLMENT
+        sync: false
       - key: ADMIN_MASTER_OTP # optional emergency code; leave empty to disable
         sync: false
       - key: AI_SERVICE_URL
@@ -49,6 +52,10 @@ services:
           type: web
           name: techstore-admin
           property: host
+      # Extra exact origins, comma-separated (e.g. the real https://<name>.onrender.com URLs when the
+      # services were not created from this blueprint). *.onrender.com is not trusted as a whole.
+      - key: CORS_ORIGINS
+        sync: false
     healthCheckPath: /api/categories
     autoDeploy: true
 

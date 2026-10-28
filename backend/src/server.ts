@@ -41,7 +41,10 @@ if (AI_SERVICE_URL) {
   console.log(`[AI Bridge] Standalone: Using built-in TechStore Knowledge Engine (AI_SERVICE_URL not set).`);
 }
 
-// CORS: storefront, admin portal, onrender.com domains and local development.
+// CORS: only the storefront and admin portal origins (comma-separated lists allowed), plus localhost
+// outside production. Anyone can host a site on *.onrender.com, so that suffix is not trusted.
+// Render's `fromService ... property: host` yields a bare hostname, so default the scheme to https.
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 const toOrigin = (value: string) => {
   const v = value.trim().replace(/\/+$/, '');
   return /^https?:\/\//.test(v) ? v : `https://${v}`;
@@ -51,36 +54,25 @@ const configuredOrigins = [process.env.FRONTEND_ORIGIN, process.env.ADMIN_ORIGIN
   .filter(v => v.trim())
   .map(toOrigin);
 const ALLOWED_ORIGINS = new Set(configuredOrigins);
-console.log(`[CORS] Explicit allowed origins: ${[...ALLOWED_ORIGINS].join(', ') || '(none - dynamic matching enabled)'}`);
+console.log(`[CORS] Allowed origins: ${[...ALLOWED_ORIGINS].join(', ') || '(none)'}${IS_PRODUCTION ? '' : ' + localhost'}`);
+if (IS_PRODUCTION && ALLOWED_ORIGINS.size === 0) {
+  console.warn('[CORS] No FRONTEND_ORIGIN / ADMIN_ORIGIN / CORS_ORIGINS set: browsers cannot call this API.');
+}
+
+const isLocalOrigin = (origin: string) => {
+  try {
+    const host = new URL(origin).hostname;
+    return host === 'localhost' || host === '127.0.0.1';
+  } catch {
+    return false;
+  }
+};
 
 app.use(cors({
-  origin: (origin, callback) => {
-    // 1. Requests without Origin (curl, server-to-server, health check) -> always allow
-    if (!origin) return callback(null, true);
-
-    // 2. If no specific origins were configured in env, allow all origins
-    if (ALLOWED_ORIGINS.size === 0) return callback(null, true);
-
-    // 3. Match against explicitly allowed origins
-    if (ALLOWED_ORIGINS.has(origin)) return callback(null, true);
-
-    // 4. Always allow any onrender.com subdomains and local development
-    try {
-      const parsed = new URL(origin);
-      if (
-        parsed.hostname.endsWith('.onrender.com') ||
-        parsed.hostname === 'localhost' ||
-        parsed.hostname === '127.0.0.1'
-      ) {
-        return callback(null, true);
-      }
-    } catch {
-      // ignore malformed origin
-    }
-
-    return callback(null, false);
-  },
-  credentials: true
+  // Requests without an Origin header (curl, health checks, server-to-server) are not subject to CORS.
+  // Admin auth is a Bearer token, not a cookie, so credentials are not needed.
+  origin: (origin, callback) =>
+    callback(null, !origin || ALLOWED_ORIGINS.has(origin) || (!IS_PRODUCTION && isLocalOrigin(origin)))
 }));
 app.use(express.json());
 
@@ -377,9 +369,29 @@ app.get('/admin/auth/otp-setup', OTP_DEV_HELPER ? (req, res, next) => next() : r
 });
 
 
+// The QR holds the TOTP secret itself: whoever gets it no longer needs the phone. It is served only during
+// an enrollment window (ADMIN_TOTP_ENROLLMENT=true, turned off again after pairing), and a wrong password
+// counts toward the same lockout as /auth/login so this endpoint cannot be used to guess passwords.
+const totpEnrollmentOpen = () => process.env.ADMIN_TOTP_ENROLLMENT === 'true';
+
+app.get('/admin/auth/setup-qr', (req: Request, res: Response) => {
+  res.json({ success: true, data: { enrollmentOpen: totpEnrollmentOpen() && !authConfigError } });
+});
+
 app.post('/admin/auth/setup-qr', async (req: Request, res: Response) => {
   if (authConfigError) {
     return res.status(503).json({ success: false, message: 'Đăng nhập quản trị chưa được cấu hình trên máy chủ.' });
+  }
+  if (!totpEnrollmentOpen()) {
+    return res.status(403).json({
+      success: false,
+      message: 'Chức năng quét mã QR đang tắt. Bật ADMIN_TOTP_ENROLLMENT=true trên máy chủ khi cần ghép lại Google Authenticator.'
+    });
+  }
+
+  const ip = req.ip || req.socket.remoteAddress || 'unknown';
+  if (isLoginLocked(ip)) {
+    return res.status(429).json({ success: false, message: 'Bạn đã thử đăng nhập sai quá nhiều lần. Vui lòng thử lại sau 15 phút.' });
   }
 
   const { username, password } = req.body;
@@ -389,14 +401,17 @@ app.post('/admin/auth/setup-qr', async (req: Request, res: Response) => {
 
   const user = verifyAdminCredentials(String(username).trim(), String(password));
   if (!user) {
+    recordLoginFailure(ip);
     return res.status(401).json({ success: false, message: 'Tên đăng nhập hoặc mật khẩu không chính xác' });
   }
 
   try {
     const qrInfo = await getAdminOTPQRCode(user.email || `${user.id}@techstore.vn`, 'TechStore Admin');
+    console.warn(`[Admin Auth] TOTP setup QR issued to ${user.id} from ${ip}; set ADMIN_TOTP_ENROLLMENT=false after pairing.`);
     res.json({ success: true, data: qrInfo });
   } catch (err: any) {
-    res.status(500).json({ success: false, message: 'Không thể tạo mã QR: ' + err.message });
+    console.error(`[Admin Auth] QR generation failed: ${err?.message}`);
+    res.status(500).json({ success: false, message: 'Không thể tạo mã QR.' });
   }
 });
 

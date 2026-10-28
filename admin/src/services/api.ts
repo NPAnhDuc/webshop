@@ -71,6 +71,17 @@ export async function fetchOtpSetup(): Promise<{
 }
 
 
+// Whether the server currently serves the pairing QR (ADMIN_TOTP_ENROLLMENT=true).
+export async function fetchSetupQrStatus(): Promise<boolean> {
+  try {
+    const res = await fetch(`${BASE_URL}/admin/auth/setup-qr`);
+    const json = await res.json();
+    return Boolean(json?.data?.enrollmentOpen);
+  } catch {
+    return false;
+  }
+}
+
 export async function fetchAdminSetupQr(credentials: {
   username: string;
   password: string;

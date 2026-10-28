@@ -24,7 +24,7 @@ delete process.env.AI_SERVICE_URL;
 const { app } = require('../dist/server.js');
 const { generateTOTP } = require('../dist/utils/totp.js');
 
-function request(server, method, path, { body, token } = {}) {
+function request(server, method, path, { body, token, origin } = {}) {
   const port = server.address().port;
   return new Promise((resolve, reject) => {
     const payload = body ? JSON.stringify(body) : null;
@@ -34,14 +34,15 @@ function request(server, method, path, { body, token } = {}) {
       headers['Content-Length'] = Buffer.byteLength(payload);
     }
     if (token) headers['Authorization'] = `Bearer ${token}`;
+    if (origin) headers['Origin'] = origin;
     const req = http.request({ hostname: '127.0.0.1', port, path, method, headers }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
         try {
-          resolve({ status: res.statusCode, body: JSON.parse(data) });
+          resolve({ status: res.statusCode, headers: res.headers, body: JSON.parse(data) });
         } catch {
-          resolve({ status: res.statusCode, body: data });
+          resolve({ status: res.statusCode, headers: res.headers, body: data });
         }
       });
     });
@@ -138,6 +139,32 @@ async function run() {
       (await request(server, 'POST', '/admin/chat', { token: warehouseToken, body: { query: 'doanh thu' } })).status === 403);
     await check('POST /admin/chat with owner token -> 200', async () =>
       ok2xx(await request(server, 'POST', '/admin/chat', { token: ownerToken, body: { query: 'doanh thu tháng này' } })));
+    // TOTP pairing QR: closed unless ADMIN_TOTP_ENROLLMENT=true; wrong passwords count toward the login lockout.
+    await check('GET /admin/auth/setup-qr reports enrollment closed', async () =>
+      (await request(server, 'GET', '/admin/auth/setup-qr')).body?.data?.enrollmentOpen === false);
+    await check('POST /admin/auth/setup-qr while closed -> 403 (no secret)', async () => {
+      const res = await request(server, 'POST', '/admin/auth/setup-qr', { body: { username: 'admin', password: OWNER_PASSWORD } });
+      return res.status === 403 && !JSON.stringify(res.body).includes(process.env.ADMIN_TOTP_SECRET);
+    });
+    process.env.ADMIN_TOTP_ENROLLMENT = 'true';
+    await check('POST /admin/auth/setup-qr while open -> 200 QR', async () => {
+      const res = await request(server, 'POST', '/admin/auth/setup-qr', { body: { username: 'admin', password: OWNER_PASSWORD } });
+      return res.status === 200 && String(res.body.data?.qrCodeDataUrl || '').startsWith('data:image/png');
+    });
+    await check('setup-qr wrong passwords hit the shared lockout -> 429', async () => {
+      let last;
+      for (let i = 0; i < 12; i++) {
+        last = await request(server, 'POST', '/admin/auth/setup-qr', { body: { username: 'admin', password: 'wrong-' + i } });
+      }
+      const login = await request(server, 'POST', '/admin/auth/login', { body: { username: 'admin', password: OWNER_PASSWORD, otp: generateTOTP() } });
+      return last.status === 429 && login.status === 429;
+    });
+    delete process.env.ADMIN_TOTP_ENROLLMENT;
+
+    // CORS: an arbitrary *.onrender.com site is not trusted; requests without Origin are unaffected.
+    await check('CORS rejects https://evil.onrender.com', async () =>
+      !(await request(server, 'GET', '/api/categories', { origin: 'https://evil.onrender.com' })).headers['access-control-allow-origin']);
+
     await check('Tampered owner token -> 401', async () => {
       const [h, p, s] = ownerToken.split('.');
       const forged = Buffer.from(JSON.stringify({ ...JSON.parse(Buffer.from(p, 'base64url').toString()), role: 'owner', sub: 'x' })).toString('base64url');
