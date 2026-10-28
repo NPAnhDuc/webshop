@@ -13,7 +13,7 @@ import {
   CheckCircle2,
   Cpu
 } from 'lucide-react';
-import { adminLogin, fetchOtpSetup } from '../../services/api';
+import { adminLogin, fetchOtpSetup, fetchAdminSetupQr } from '../../services/api';
 import { useAuth } from '../../context/AuthContext';
 
 interface AdminLoginGateProps {
@@ -35,6 +35,50 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
   const [errorMessage, setErrorMessage] = useState('');
   const [showOtpModal, setShowOtpModal] = useState(false);
   const [otpSetupInfo, setOtpSetupInfo] = useState<any>(null);
+
+  const [qrLoading, setQrLoading] = useState(false);
+  const [qrData, setQrData] = useState<{
+    qrCodeDataUrl: string;
+    secret: string;
+    account: string;
+  } | null>(null);
+  const [copiedSecret, setCopiedSecret] = useState(false);
+
+  const handleOpenQrModal = async () => {
+    if (!username.trim() || !password.trim()) {
+      setErrorMessage('Vui lòng nhập Tên đăng nhập và Mật khẩu ở form trước để tạo mã QR liên kết an toàn.');
+      return;
+    }
+    setErrorMessage('');
+    setShowOtpModal(true);
+    setQrLoading(true);
+    try {
+      const res = await fetchAdminSetupQr({
+        username: username.trim(),
+        password: password.trim()
+      });
+      if (res.success && res.data) {
+        setQrData(res.data);
+      } else {
+        setErrorMessage(res.message || 'Không thể tạo mã QR.');
+        setShowOtpModal(false);
+      }
+    } catch (err: any) {
+      setErrorMessage('Lỗi khi tạo mã QR: ' + (err.message || 'Không thể kết nối'));
+      setShowOtpModal(false);
+    } finally {
+      setQrLoading(false);
+    }
+  };
+
+  const handleCopySecret = () => {
+    if (qrData?.secret) {
+      navigator.clipboard.writeText(qrData.secret);
+      setCopiedSecret(true);
+      setTimeout(() => setCopiedSecret(false), 2500);
+    }
+  };
+
 
   useEffect(() => {
     fetchOtpSetup()
@@ -144,9 +188,21 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
 
         {/* Error Alert */}
         {errorMessage && (
-          <div className="p-3 bg-red-950/60 border border-red-500/50 rounded-2xl flex items-start space-x-2.5 text-xs text-red-200 animate-in shake">
-            <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
-            <div className="flex-1 leading-relaxed">{errorMessage}</div>
+          <div className="p-3 bg-red-950/60 border border-red-500/50 rounded-2xl flex flex-col space-y-1.5 text-xs text-red-200 animate-in shake">
+            <div className="flex items-start space-x-2.5">
+              <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+              <div className="flex-1 leading-relaxed">{errorMessage}</div>
+            </div>
+            {errorMessage.includes('OTP') && (
+              <button
+                type="button"
+                onClick={handleOpenQrModal}
+                className="self-start text-[11px] text-amber-300 hover:text-amber-200 font-semibold underline underline-offset-2 flex items-center space-x-1 cursor-pointer pt-0.5"
+              >
+                <QrCode className="w-3.5 h-3.5" />
+                <span>👉 Chưa quét mã trên điện thoại? Bấm vào đây để quét mã QR ngay!</span>
+              </button>
+            )}
           </div>
         )}
 
@@ -205,11 +261,11 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
               </div>
               <button
                 type="button"
-                onClick={() => setShowOtpModal(true)}
+                onClick={handleOpenQrModal}
                 className="text-[11px] text-blue-400 hover:text-blue-300 flex items-center space-x-1 cursor-pointer transition font-medium"
               >
                 <QrCode className="w-3 h-3" />
-                <span>Cài Authenticator</span>
+                <span>Quét mã QR liên kết</span>
               </button>
             </div>
 
@@ -280,14 +336,14 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
         </div>
       </div>
 
-      {/* Google Authenticator Setup Modal */}
+      {/* Google Authenticator Setup Modal with QR Code */}
       {showOtpModal && (
-        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
           <div className="bg-[#151c2c] border border-slate-700 max-w-md w-full rounded-3xl p-6 shadow-2xl space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800">
               <div className="flex items-center space-x-2 text-white font-bold text-sm">
-                <QrCode className="w-4 h-4 text-blue-400" />
-                <span>Cài Đặt Google Authenticator (TOTP)</span>
+                <QrCode className="w-5 h-5 text-blue-400" />
+                <span>Liên Kết Google Authenticator</span>
               </div>
               <button
                 onClick={() => setShowOtpModal(false)}
@@ -297,28 +353,68 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
               </button>
             </div>
 
-            <div className="space-y-3 text-xs text-slate-300">
-              <p>
-                Trang Admin áp dụng chuẩn mã hóa <strong>RFC 6238</strong>. Bạn có thể dùng <strong>Google Authenticator</strong>, <strong>Microsoft Authenticator</strong>, hoặc <strong>Authy</strong> trên điện thoại.
-              </p>
-
-              <div className="p-3 bg-slate-900 rounded-2xl border border-slate-800 space-y-2">
-                <p className="text-slate-400 text-[11px] font-semibold">Khóa bí mật (Base32 Secret Key):</p>
-                <div className="p-2 bg-black/50 rounded-xl font-mono text-amber-400 text-sm font-bold text-center tracking-widest border border-slate-800">
-                  {otpSetupInfo?.secret || 'Liên hệ chủ shop để nhận khóa (ADMIN_TOTP_SECRET)'}
-                </div>
-                <p className="text-[10px] text-slate-500">
-                  Cách thêm: Trong app Google Authenticator bấm <strong>+</strong> → chọn <strong>Nhập khóa thiết lập</strong> → Nhập tên tài khoản & dán khóa trên.
-                </p>
+            {qrLoading ? (
+              <div className="py-12 flex flex-col items-center justify-center space-y-3">
+                <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+                <p className="text-xs text-slate-400">Đang tạo mã QR bảo mật...</p>
               </div>
-            </div>
+            ) : qrData ? (
+              <div className="space-y-4 text-xs text-slate-300">
+                <div className="flex flex-col items-center justify-center space-y-2">
+                  <div className="p-3 bg-white rounded-2xl shadow-2xl border border-slate-200">
+                    <img
+                      src={qrData.qrCodeDataUrl}
+                      alt="Google Authenticator QR Code"
+                      className="w-52 h-52 block"
+                    />
+                  </div>
+                  <span className="text-[11px] text-slate-400 font-mono">
+                    Tài khoản: <strong className="text-slate-200">{qrData.account}</strong>
+                  </span>
+                </div>
+
+                <div className="p-3 bg-slate-900/90 rounded-2xl border border-slate-800 space-y-2">
+                  <div className="font-semibold text-slate-200 flex items-center space-x-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                    <span>Hướng dẫn quét mã (chỉ làm 1 lần duy nhất):</span>
+                  </div>
+                  <ol className="list-decimal list-inside space-y-1 text-[11px] text-slate-300 pl-1 leading-relaxed">
+                    <li>Mở app <strong>Google Authenticator</strong> trên điện thoại.</li>
+                    <li>Bấm dấu <strong>+</strong> ở góc dưới ➔ Chọn <strong>Quét mã QR</strong>.</li>
+                    <li>Đưa camera điện thoại vào mã QR phía trên để quét tự động!</li>
+                  </ol>
+                </div>
+
+                {/* Secret key fallback */}
+                <div className="p-2.5 bg-slate-950/70 rounded-xl border border-slate-800/80 flex items-center justify-between">
+                  <div className="space-y-0.5">
+                    <div className="text-[10px] text-slate-400">Khóa văn bản (nếu không quét được camera):</div>
+                    <div className="font-mono text-amber-400 text-xs font-bold tracking-wider select-all">
+                      {qrData.secret}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={handleCopySecret}
+                    className="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-[11px] rounded-lg transition cursor-pointer font-medium"
+                  >
+                    {copiedSecret ? 'Đã chép ✓' : 'Sao chép'}
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="p-4 text-center text-xs text-red-400">
+                Không thể tải mã QR. Vui lòng kiểm tra lại mật khẩu đăng nhập.
+              </div>
+            )}
 
             <div className="pt-2">
               <button
+                type="button"
                 onClick={() => setShowOtpModal(false)}
                 className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs transition cursor-pointer"
               >
-                Đã hiểu, quay lại đăng nhập
+                Đã quét xong, đóng cửa sổ & nhập mã OTP
               </button>
             </div>
           </div>

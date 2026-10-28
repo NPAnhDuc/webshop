@@ -70,6 +70,29 @@ export async function fetchOtpSetup(): Promise<{
   return json.data;
 }
 
+
+export async function fetchAdminSetupQr(credentials: {
+  username: string;
+  password: string;
+}): Promise<{
+  success: boolean;
+  data?: {
+    secret: string;
+    otpauthUrl: string;
+    qrCodeDataUrl: string;
+    account: string;
+    issuer: string;
+  };
+  message?: string;
+}> {
+  const res = await fetch(`${BASE_URL}/admin/auth/setup-qr`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(credentials)
+  });
+  return await res.json();
+}
+
 export async function adminLogin(credentials: {
   username: string;
   password: string;

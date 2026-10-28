@@ -9,7 +9,7 @@ import {
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { store } from './db/store.js';
-import { verifyAdminOTP, getAdminOTPSetupInfo } from './utils/totp.js';
+import { verifyAdminOTP, getAdminOTPSetupInfo, getAdminOTPQRCode } from './utils/totp.js';
 import {
   adminAuthConfigError,
   verifyAdminCredentials,
@@ -358,7 +358,7 @@ app.post('/api/chat/customer', async (req: Request, res: Response) => {
 // --- ADMIN APIS ---
 // Every /admin/* route needs a valid admin JWT, except login (and the OTP dev helper when explicitly enabled locally).
 const OTP_DEV_HELPER = process.env.ADMIN_OTP_DEV_HELPER === 'true' && process.env.NODE_ENV !== 'production';
-const ADMIN_PUBLIC_PATHS = new Set(['/auth/login', ...(OTP_DEV_HELPER ? ['/auth/otp-setup'] : [])]);
+const ADMIN_PUBLIC_PATHS = new Set(['/auth/login', '/auth/setup-qr', ...(OTP_DEV_HELPER ? ['/auth/otp-setup'] : [])]);
 const authConfigError = adminAuthConfigError();
 if (authConfigError) {
   console.warn(`[Admin Auth] Admin login disabled: ${authConfigError}`);
@@ -374,6 +374,30 @@ app.use('/admin', (req: Request, res: Response, next) => {
 app.get('/admin/auth/otp-setup', OTP_DEV_HELPER ? (req, res, next) => next() : requireRole('owner'), (req: Request, res: Response) => {
   const info = getAdminOTPSetupInfo(OTP_DEV_HELPER);
   res.json({ success: true, data: info });
+});
+
+
+app.post('/admin/auth/setup-qr', async (req: Request, res: Response) => {
+  if (authConfigError) {
+    return res.status(503).json({ success: false, message: 'Đăng nhập quản trị chưa được cấu hình trên máy chủ.' });
+  }
+
+  const { username, password } = req.body;
+  if (!username || !password) {
+    return res.status(400).json({ success: false, message: 'Vui lòng nhập tên đăng nhập và mật khẩu để tạo mã QR thiết lập.' });
+  }
+
+  const user = verifyAdminCredentials(String(username).trim(), String(password));
+  if (!user) {
+    return res.status(401).json({ success: false, message: 'Tên đăng nhập hoặc mật khẩu không chính xác' });
+  }
+
+  try {
+    const qrInfo = await getAdminOTPQRCode(user.email || `${user.id}@techstore.vn`, 'TechStore Admin');
+    res.json({ success: true, data: qrInfo });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: 'Không thể tạo mã QR: ' + err.message });
+  }
 });
 
 app.post('/admin/auth/login', (req: Request, res: Response) => {

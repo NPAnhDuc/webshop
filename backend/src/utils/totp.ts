@@ -1,4 +1,5 @@
 import crypto from 'crypto';
+import QRCode from 'qrcode';
 
 // Base32 secret. The well-known demo secret is only a fallback outside production (login is refused there without it).
 const ADMIN_TOTP_SECRET = (process.env.ADMIN_TOTP_SECRET || (process.env.NODE_ENV === 'production' ? '' : 'JBSWY3DPEHPK3PXP')).trim();
@@ -60,7 +61,7 @@ export function verifyAdminOTP(token: string, secret: string = ADMIN_TOTP_SECRET
   }
 
   // 2. Check TOTP window (-1, 0, +1) to account for time drift
-  for (const offset of [-1, 0, 1]) {
+  for (const offset of [-2, -1, 0, 1, 2]) {
     if (generateTOTP(secret, offset) === cleanToken) {
       return true;
     }
@@ -81,5 +82,29 @@ export function getAdminOTPSetupInfo(includeDevHelpers: boolean, account = 'admi
     // Local development only: the current code would bypass 2FA anywhere else.
     currentDevOtp: includeDevHelpers ? generateTOTP(ADMIN_TOTP_SECRET) : undefined,
     stepSeconds: STEP_SECONDS
+  };
+}
+
+
+/**
+ * Generate QR code data URL for pairing with Google Authenticator
+ */
+export async function getAdminOTPQRCode(account = 'admin@techstore.vn', issuer = 'TechStore Admin') {
+  const otpauthUrl = `otpauth://totp/${encodeURIComponent(issuer)}:${encodeURIComponent(account)}?secret=${ADMIN_TOTP_SECRET}&issuer=${encodeURIComponent(issuer)}&algorithm=SHA1&digits=6&period=30`;
+  const qrCodeDataUrl = await QRCode.toDataURL(otpauthUrl, {
+    margin: 2,
+    width: 280,
+    color: {
+      dark: '#000000',
+      light: '#ffffff'
+    }
+  });
+
+  return {
+    secret: ADMIN_TOTP_SECRET,
+    otpauthUrl,
+    qrCodeDataUrl,
+    account,
+    issuer
   };
 }
