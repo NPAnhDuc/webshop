@@ -358,7 +358,7 @@ export const AdminChatbotView: React.FC = () => {
             value={input}
             onChange={e => setInput(e.target.value)}
             placeholder="Đặt câu hỏi phân tích dữ liệu, doanh thu, hàng tồn, hoặc chiến lược kinh doanh..."
-            className="flex-1 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 bg-slate-50/50"
+            className="flex-1 px-4 py-3 border border-slate-300 rounded-xl text-xs font-medium text-slate-900 placeholder:text-slate-400 bg-white focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 shadow-2xs transition"
           />
           <button
             type="submit"
