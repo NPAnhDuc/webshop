@@ -29,6 +29,8 @@ const app = express();
 if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY) || process.env.TRUST_PROXY);
 const PORT = process.env.PORT || 5000;
 const AI_SERVICE_URL = (process.env.AI_SERVICE_URL || '').trim();
+// A local LLM on CPU can take tens of seconds; past this the rule engine answers instead.
+const AI_TIMEOUT_MS = Number(process.env.AI_TIMEOUT_MS) || 90000;
 // Shared secret checked by the AI service (X-Internal-Key); its admin channel is locked without it.
 const AI_HEADERS: Record<string, string> = { 'Content-Type': 'application/json' };
 if (process.env.AI_INTERNAL_KEY) AI_HEADERS['X-Internal-Key'] = process.env.AI_INTERNAL_KEY;
@@ -289,7 +291,7 @@ app.post('/api/chat/customer', async (req: Request, res: Response) => {
   if (AI_SERVICE_URL) {
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 12000); // 12s timeout for AI inference
+      const timeout = setTimeout(() => controller.abort(), AI_TIMEOUT_MS);
 
       const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/customer`, {
         method: 'POST',
@@ -486,7 +488,7 @@ app.post('/admin/chat', requireRole('owner'), async (req: Request, res: Response
   if (AI_SERVICE_URL) {
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 15000);
+      const timeout = setTimeout(() => controller.abort(), AI_TIMEOUT_MS);
 
       const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/admin`, {
         method: 'POST',

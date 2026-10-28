@@ -35,6 +35,9 @@ services:
         sync: false
       - key: AI_INTERNAL_KEY
         sync: false
+      # The chatbot runs a local LLM elsewhere (tunnel/VPS); answers can take tens of seconds.
+      - key: AI_TIMEOUT_MS
+        value: 90000
       # CORS: only the storefront and admin portal (bare hosts get https://)
       - key: FRONTEND_ORIGIN
         fromService:

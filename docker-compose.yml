@@ -11,6 +11,8 @@ services:
       - NODE_ENV=production
       - AI_SERVICE_URL=http://ai-model:8000
       - AI_INTERNAL_KEY=${AI_INTERNAL_KEY:-}
+      # A local 4B model on CPU takes 5-60 s per answer; shorter waits fall back to the rule engine.
+      - AI_TIMEOUT_MS=${AI_TIMEOUT_MS:-90000}
       # Secrets come from the root .env (see backend/.env.example); admin login stays disabled while unset.
       - ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET:-}
       - ADMIN_JWT_EXPIRES_IN=${ADMIN_JWT_EXPIRES_IN:-2h}
@@ -41,6 +43,73 @@ services:
       - PORT=8000
       - AI_INTERNAL_KEY=${AI_INTERNAL_KEY:-}
       - PYTHONUNBUFFERED=1
+      # Same chatbot configuration as AI/.env, with service names instead of 127.0.0.1.
+      - LLM_PROVIDER=ollama
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://ollama:11434}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-qwen3:4b-instruct-2507-q4_K_M}
+      - OLLAMA_SELECTOR_MODEL=${OLLAMA_SELECTOR_MODEL:-shopbot-qwen-sft-20261026}
+      - PLANNER_MODEL=${OLLAMA_MODEL:-qwen3:4b-instruct-2507-q4_K_M}
+      - OLLAMA_NUM_GPU=${OLLAMA_NUM_GPU:-0}
+      - PLANNER_NUM_GPU=${OLLAMA_NUM_GPU:-0}
+      - SHOP_DATABASE=data/business_sql/scenario_v1/shop.sqlite
+      - CONVERSATION_MODE=semantic
+      - CHATBOT_MODE=basic_rag
+      - RAG_SYNTHESIS=1
+      - RAG_ANSWER_MODE=extractive
+      - RAG_RERANK=0
+      - RAG_EVIDENCE_RERANK=1
+      - VI_EMBEDDING_URL=http://embedding:8011
+      - VI_UNDERSTANDING_URL=http://embedding:8011
     volumes:
-      - ./AI/data:/app/data:ro
+      - ./AI/data:/app/data
+      # Knowledge index built by the monthly worker, and the embedding cache.
+      - ./AI/runtime/monthly:/app/runtime/monthly:ro
+      - ./AI/runtime/embedding-cache:/app/runtime/embedding-cache
+      # Chat audit logs stay inside Docker, apart from the local evaluation logs.
+      - ai-logs:/app/runtime/rag-basic
+    depends_on:
+      embedding:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+        # Skip with `--scale ollama=0` when OLLAMA_BASE_URL points at an Ollama outside Docker.
+        required: false
     restart: unless-stopped
+
+  embedding:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile.embedding
+    container_name: techstore-ai-embedding
+    expose:
+      - "8011"
+    volumes:
+      - ./AI/models/vietnamese-embedding:/app/models/vietnamese-embedding:ro
+      - ./AI/models/evidence_reranker_20261024:/app/models/evidence_reranker_20261024:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8011/health',timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    restart: unless-stopped
+
+  ollama:
+    # Same version as AI/runtime/ollama (its model store uses the manifests-v2 layout).
+    image: ollama/ollama:0.40.5
+    container_name: techstore-ollama
+    expose:
+      - "11434"
+    environment:
+      - OLLAMA_MODELS=/models
+      - OLLAMA_NOPRUNE=1
+      - OLLAMA_KEEP_ALIVE=30m
+      - OLLAMA_NO_CLOUD=1
+    volumes:
+      # Models imported locally (qwen3 base, shopbot-qwen-sft-*). Stop the Windows Ollama
+      # before `ollama create` so two servers never write this folder at once.
+      - ./AI/models/ollama:/models
+    restart: unless-stopped
+
+volumes:
+  ai-logs:
