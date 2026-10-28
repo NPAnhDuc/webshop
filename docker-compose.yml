@@ -10,6 +10,18 @@ services:
       - PORT=5000
       - NODE_ENV=production
       - AI_SERVICE_URL=http://ai-model:8000
+      - AI_INTERNAL_KEY=${AI_INTERNAL_KEY:-}
+      # Secrets come from the root .env (see backend/.env.example); admin login stays disabled while unset.
+      - ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET:-}
+      - ADMIN_JWT_EXPIRES_IN=${ADMIN_JWT_EXPIRES_IN:-2h}
+      - ADMIN_OWNER_USERNAME=${ADMIN_OWNER_USERNAME:-admin}
+      - ADMIN_OWNER_PASSWORD_HASH=${ADMIN_OWNER_PASSWORD_HASH:-}
+      - ADMIN_WAREHOUSE_USERNAME=${ADMIN_WAREHOUSE_USERNAME:-kho}
+      - ADMIN_WAREHOUSE_PASSWORD_HASH=${ADMIN_WAREHOUSE_PASSWORD_HASH:-}
+      - ADMIN_TOTP_SECRET=${ADMIN_TOTP_SECRET:-}
+      - ADMIN_MASTER_OTP=${ADMIN_MASTER_OTP:-}
+      - FRONTEND_ORIGIN=${FRONTEND_ORIGIN:-http://localhost:5173}
+      - ADMIN_ORIGIN=${ADMIN_ORIGIN:-http://localhost:5174}
     volumes:
       - ./backend/data:/app/data
       - ./AI/data/product_images/images:/app/public/images:ro
@@ -22,10 +34,12 @@ services:
       context: ./AI
       dockerfile: Dockerfile
     container_name: techstore-ai-model
-    ports:
-      - "8000:8000"
+    # Not published to the host: only the backend reaches it over the compose network.
+    expose:
+      - "8000"
     environment:
       - PORT=8000
+      - AI_INTERNAL_KEY=${AI_INTERNAL_KEY:-}
       - PYTHONUNBUFFERED=1
     volumes:
       - ./AI/data:/app/data:ro

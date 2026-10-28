@@ -12,6 +12,40 @@ services:
         value: 5000
       - key: NODE_ENV
         value: production
+      - key: TRUST_PROXY
+        value: 1
+      # Admin auth: set the secrets in the Render dashboard (never commit them).
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+      - key: ADMIN_JWT_EXPIRES_IN
+        value: 2h
+      - key: ADMIN_OWNER_USERNAME
+        sync: false
+      - key: ADMIN_OWNER_PASSWORD_HASH # node scripts/hash_password.js '<password>'
+        sync: false
+      - key: ADMIN_WAREHOUSE_USERNAME
+        sync: false
+      - key: ADMIN_WAREHOUSE_PASSWORD_HASH
+        sync: false
+      - key: ADMIN_TOTP_SECRET # Base32
+        sync: false
+      - key: ADMIN_MASTER_OTP # optional emergency code; leave empty to disable
+        sync: false
+      - key: AI_SERVICE_URL
+        sync: false
+      - key: AI_INTERNAL_KEY
+        sync: false
+      # CORS: only the storefront and admin portal (bare hosts get https://)
+      - key: FRONTEND_ORIGIN
+        fromService:
+          type: web
+          name: techstore-frontend
+          property: host
+      - key: ADMIN_ORIGIN
+        fromService:
+          type: web
+          name: techstore-admin
+          property: host
     healthCheckPath: /api/categories
     autoDeploy: true
 

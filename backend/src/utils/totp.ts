@@ -1,7 +1,9 @@
 import crypto from 'crypto';
 
-const ADMIN_TOTP_SECRET = process.env.ADMIN_TOTP_SECRET || 'JBSWY3DPEHPK3PXP'; // Base32 Secret
-const ADMIN_MASTER_OTP = process.env.ADMIN_MASTER_OTP || '888999'; // Emergency Recovery OTP
+// Base32 secret. The well-known demo secret is only a fallback outside production (login is refused there without it).
+const ADMIN_TOTP_SECRET = (process.env.ADMIN_TOTP_SECRET || (process.env.NODE_ENV === 'production' ? '' : 'JBSWY3DPEHPK3PXP')).trim();
+// Emergency recovery OTP: disabled unless explicitly configured.
+const ADMIN_MASTER_OTP = (process.env.ADMIN_MASTER_OTP || '').trim();
 const STEP_SECONDS = 30;
 
 function base32Decode(base32: string): Buffer {
@@ -48,8 +50,12 @@ export function generateTOTP(secret: string = ADMIN_TOTP_SECRET, stepOffset: num
 export function verifyAdminOTP(token: string, secret: string = ADMIN_TOTP_SECRET): boolean {
   const cleanToken = token.trim();
   
+  if (!secret || !/^\d{6}$/.test(cleanToken)) {
+    return false;
+  }
+
   // 1. Check Master Emergency OTP
-  if (cleanToken === ADMIN_MASTER_OTP) {
+  if (ADMIN_MASTER_OTP && cleanToken === ADMIN_MASTER_OTP) {
     return true;
   }
 
@@ -66,15 +72,14 @@ export function verifyAdminOTP(token: string, secret: string = ADMIN_TOTP_SECRET
 /**
  * Information needed to pair with Google Authenticator or Microsoft Authenticator
  */
-export function getAdminOTPSetupInfo(account = 'admin@techstore.vn', issuer = 'TechStore Studio Admin') {
-  const currentCode = generateTOTP(ADMIN_TOTP_SECRET);
+export function getAdminOTPSetupInfo(includeDevHelpers: boolean, account = 'admin@techstore.vn', issuer = 'TechStore Studio Admin') {
   const otpauthUrl = `otpauth://totp/${encodeURIComponent(issuer)}:${encodeURIComponent(account)}?secret=${ADMIN_TOTP_SECRET}&issuer=${encodeURIComponent(issuer)}&algorithm=SHA1&digits=6&period=30`;
   
   return {
     secret: ADMIN_TOTP_SECRET,
-    masterOtp: ADMIN_MASTER_OTP,
     otpauthUrl,
-    currentDevOtp: currentCode, // Helper for local development testing
+    // Local development only: the current code would bypass 2FA anywhere else.
+    currentDevOtp: includeDevHelpers ? generateTOTP(ADMIN_TOTP_SECRET) : undefined,
     stepSeconds: STEP_SECONDS
   };
 }

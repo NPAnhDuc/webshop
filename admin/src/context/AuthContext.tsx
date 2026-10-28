@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { ADMIN_TOKEN_KEY, ADMIN_UNAUTHORIZED_EVENT } from '../services/api';
 
 interface User {
   id: string;
@@ -28,22 +29,29 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   });
 
   const [token, setToken] = useState<string | null>(() => {
-    return localStorage.getItem('techstore_admin_token') || null;
+    return localStorage.getItem(ADMIN_TOKEN_KEY) || null;
   });
 
   const login = (newToken: string, newUser: User) => {
     setToken(newToken);
     setUser(newUser);
-    localStorage.setItem('techstore_admin_token', newToken);
+    localStorage.setItem(ADMIN_TOKEN_KEY, newToken);
     localStorage.setItem('techstore_admin_user', JSON.stringify(newUser));
   };
 
   const logout = () => {
     setToken(null);
     setUser(null);
-    localStorage.removeItem('techstore_admin_token');
+    localStorage.removeItem(ADMIN_TOKEN_KEY);
     localStorage.removeItem('techstore_admin_user');
   };
+
+  // Any API call answered with 401 (expired or invalid token) sends the user back to the login gate.
+  useEffect(() => {
+    const onUnauthorized = () => logout();
+    window.addEventListener(ADMIN_UNAUTHORIZED_EVENT, onUnauthorized);
+    return () => window.removeEventListener(ADMIN_UNAUTHORIZED_EVENT, onUnauthorized);
+  }, []);
 
   return (
     <AuthContext.Provider

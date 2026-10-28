@@ -1,56 +1,40 @@
 // Automated CI Smoke Test for Backend Endpoints
 const http = require('http');
+const crypto = require('crypto');
 
-process.env.NODE_ENV = 'test';
-const { app } = require('../dist/server.js');
-
-function checkEndpoint(server, path) {
-  const port = server.address().port;
-  return new Promise((resolve, reject) => {
-    http.get(`http://127.0.0.1:${port}${path}`, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        if (res.statusCode >= 200 && res.statusCode < 300) {
-          try {
-            const parsed = JSON.parse(data);
-            if (parsed.success !== false) {
-              console.log(`✅ [PASS] GET ${path} (HTTP ${res.statusCode})`);
-              resolve(true);
-            } else {
-              console.error(`❌ [FAIL] GET ${path}: success flag is false`);
-              reject(new Error(`${path} failed`));
-            }
-          } catch (e) {
-            console.log(`✅ [PASS] GET ${path} (HTTP ${res.statusCode} non-JSON)`);
-            resolve(true);
-          }
-        } else {
-          console.error(`❌ [FAIL] GET ${path} returned status ${res.statusCode}`);
-          reject(new Error(`Status ${res.statusCode}`));
-        }
-      });
-    }).on('error', (err) => {
-      console.error(`❌ [ERROR] GET ${path}: ${err.message}`);
-      reject(err);
-    });
-  });
+function scryptHash(password) {
+  const salt = crypto.randomBytes(16);
+  return `scrypt$${salt.toString('hex')}$${crypto.scryptSync(password, salt, 64).toString('hex')}`;
 }
 
-function postJson(server, path, body) {
+// Throwaway test credentials, generated per run (never real secrets).
+const OWNER_PASSWORD = crypto.randomBytes(12).toString('hex');
+const WAREHOUSE_PASSWORD = crypto.randomBytes(12).toString('hex');
+process.env.NODE_ENV = 'test';
+process.env.ADMIN_JWT_SECRET = crypto.randomBytes(48).toString('hex');
+process.env.ADMIN_TOTP_SECRET = 'JBSWY3DPEHPK3PXP';
+process.env.ADMIN_OWNER_USERNAME = 'admin';
+process.env.ADMIN_OWNER_PASSWORD_HASH = scryptHash(OWNER_PASSWORD);
+process.env.ADMIN_WAREHOUSE_USERNAME = 'kho';
+process.env.ADMIN_WAREHOUSE_PASSWORD_HASH = scryptHash(WAREHOUSE_PASSWORD);
+delete process.env.ADMIN_MASTER_OTP;
+delete process.env.ADMIN_OTP_DEV_HELPER;
+delete process.env.AI_SERVICE_URL;
+
+const { app } = require('../dist/server.js');
+const { generateTOTP } = require('../dist/utils/totp.js');
+
+function request(server, method, path, { body, token } = {}) {
   const port = server.address().port;
   return new Promise((resolve, reject) => {
-    const payload = JSON.stringify(body);
-    const req = http.request({
-      hostname: '127.0.0.1',
-      port,
-      path,
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload)
-      }
-    }, (res) => {
+    const payload = body ? JSON.stringify(body) : null;
+    const headers = {};
+    if (payload) {
+      headers['Content-Type'] = 'application/json';
+      headers['Content-Length'] = Buffer.byteLength(payload);
+    }
+    if (token) headers['Authorization'] = `Bearer ${token}`;
+    const req = http.request({ hostname: '127.0.0.1', port, path, method, headers }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
@@ -62,7 +46,7 @@ function postJson(server, path, body) {
       });
     });
     req.on('error', reject);
-    req.write(payload);
+    if (payload) req.write(payload);
     req.end();
   });
 }
@@ -70,70 +54,95 @@ function postJson(server, path, body) {
 async function run() {
   console.log('🧪 Starting TechStore Backend API Smoke Tests...');
   const server = app.listen(0, '127.0.0.1', async () => {
-    const port = server.address().port;
-    console.log(`[Test Server] Running on ephemeral port ${port}`);
-
-    const endpoints = [
-      '/api/products',
-      '/api/categories',
-      '/api/brands',
-      '/api/settings',
-      '/api/promotions',
-      '/admin/products',
-      '/admin/settings',
-      '/admin/auth/otp-setup'
-    ];
-
+    console.log(`[Test Server] Running on ephemeral port ${server.address().port}`);
     let allPassed = true;
-    for (const ep of endpoints) {
+
+    async function check(label, fn) {
       try {
-        await checkEndpoint(server, ep);
+        const ok = await fn();
+        if (ok) {
+          console.log(`✅ [PASS] ${label}`);
+        } else {
+          console.error(`❌ [FAIL] ${label}`);
+          allPassed = false;
+        }
       } catch (e) {
+        console.error(`❌ [ERROR] ${label}: ${e.message}`);
         allPassed = false;
       }
     }
 
-    // Test 1: Login missing OTP -> HTTP 400 with requireOtp: true
-    try {
-      const res = await postJson(server, '/admin/auth/login', { username: 'admin', password: 'admin123' });
-      if (res.status === 400 && res.body.requireOtp === true) {
-        console.log('✅ [PASS] POST /admin/auth/login (Requires OTP gate - HTTP 400)');
-      } else {
-        console.error('❌ [FAIL] Missing OTP check failed', res);
-        allPassed = false;
-      }
-    } catch (e) {
-      console.error('❌ [ERROR] Missing OTP test:', e.message);
-      allPassed = false;
+    const ok2xx = (res) => res.status >= 200 && res.status < 300 && res.body.success !== false;
+
+    // Public storefront endpoints
+    for (const ep of ['/api/products', '/api/categories', '/api/brands', '/api/settings', '/api/promotions']) {
+      await check(`GET ${ep} (public)`, async () => ok2xx(await request(server, 'GET', ep)));
     }
 
-    // Test 2: Login wrong OTP -> HTTP 401
-    try {
-      const res = await postJson(server, '/admin/auth/login', { username: 'admin', password: 'admin123', otp: '000000' });
-      if (res.status === 401) {
-        console.log('✅ [PASS] POST /admin/auth/login (Rejects invalid OTP - HTTP 401)');
-      } else {
-        console.error('❌ [FAIL] Wrong OTP check failed', res);
-        allPassed = false;
-      }
-    } catch (e) {
-      console.error('❌ [ERROR] Wrong OTP test:', e.message);
-      allPassed = false;
+    // Admin endpoints reject missing / forged tokens
+    const adminEndpoints = [
+      ['GET', '/admin/products'],
+      ['GET', '/admin/settings'],
+      ['GET', '/admin/dashboard/kpis'],
+      ['GET', '/admin/inventory'],
+      ['GET', '/admin/orders'],
+      ['GET', '/admin/documents'],
+      ['GET', '/admin/auth/otp-setup'],
+      ['POST', '/admin/chat']
+    ];
+    for (const [method, ep] of adminEndpoints) {
+      await check(`${method} ${ep} without token -> 401`, async () => (await request(server, method, ep, { body: {} })).status === 401);
     }
+    await check('GET /admin/products with forged token -> 401', async () =>
+      (await request(server, 'GET', '/admin/products', { token: 'jwt-token-sec-owner-123' })).status === 401);
 
-    // Test 3: Login valid user + valid Master OTP -> HTTP 200 with token
-    try {
-      const res = await postJson(server, '/admin/auth/login', { username: 'admin', password: 'admin123', otp: '888999' });
-      if (res.status === 200 && res.body.success === true && res.body.token) {
-        console.log('✅ [PASS] POST /admin/auth/login (Valid 2FA OTP login - HTTP 200)');
-      } else {
-        console.error('❌ [FAIL] Valid OTP login failed', res);
-        allPassed = false;
-      }
-    } catch (e) {
-      console.error('❌ [ERROR] Valid OTP login test:', e.message);
-      allPassed = false;
+    // Login flow
+    const login = (body) => request(server, 'POST', '/admin/auth/login', { body });
+    await check('Login missing OTP -> 400 requireOtp', async () => {
+      const res = await login({ username: 'admin', password: OWNER_PASSWORD });
+      return res.status === 400 && res.body.requireOtp === true;
+    });
+    await check('Login wrong password -> 401', async () =>
+      (await login({ username: 'admin', password: 'admin123', otp: generateTOTP() })).status === 401);
+    await check('Login wrong OTP -> 401', async () =>
+      (await login({ username: 'admin', password: OWNER_PASSWORD, otp: '000000' })).status === 401);
+    await check('Old master OTP 888999 no longer accepted -> 401', async () =>
+      (await login({ username: 'admin', password: OWNER_PASSWORD, otp: '888999' })).status === 401 || generateTOTP() === '888999');
+
+    let ownerToken = null;
+    let warehouseToken = null;
+    await check('Owner login with password + TOTP -> 200 JWT', async () => {
+      const res = await login({ username: 'admin', password: OWNER_PASSWORD, otp: generateTOTP() });
+      ownerToken = res.body.token;
+      return res.status === 200 && res.body.user?.role === 'owner' && typeof ownerToken === 'string' && ownerToken.split('.').length === 3;
+    });
+    await check('Warehouse login with password + TOTP -> 200 JWT', async () => {
+      const res = await login({ username: 'kho', password: WAREHOUSE_PASSWORD, otp: generateTOTP() });
+      warehouseToken = res.body.token;
+      return res.status === 200 && res.body.user?.role === 'warehouse' && !!warehouseToken;
+    });
+
+    // Authorized access
+    for (const ep of ['/admin/products', '/admin/settings', '/admin/inventory', '/admin/orders']) {
+      await check(`GET ${ep} with owner token -> 200`, async () => ok2xx(await request(server, 'GET', ep, { token: ownerToken })));
     }
+    await check('GET /admin/inventory with warehouse token -> 200', async () =>
+      ok2xx(await request(server, 'GET', '/admin/inventory', { token: warehouseToken })));
+    await check('GET /admin/auth/otp-setup with owner token -> 200 without current code', async () => {
+      const res = await request(server, 'GET', '/admin/auth/otp-setup', { token: ownerToken });
+      return ok2xx(res) && res.body.data.secret && res.body.data.currentDevOtp === undefined && res.body.data.masterOtp === undefined;
+    });
+    await check('GET /admin/auth/otp-setup with warehouse token -> 403', async () =>
+      (await request(server, 'GET', '/admin/auth/otp-setup', { token: warehouseToken })).status === 403);
+    await check('POST /admin/chat with warehouse token -> 403', async () =>
+      (await request(server, 'POST', '/admin/chat', { token: warehouseToken, body: { query: 'doanh thu' } })).status === 403);
+    await check('POST /admin/chat with owner token -> 200', async () =>
+      ok2xx(await request(server, 'POST', '/admin/chat', { token: ownerToken, body: { query: 'doanh thu tháng này' } })));
+    await check('Tampered owner token -> 401', async () => {
+      const [h, p, s] = ownerToken.split('.');
+      const forged = Buffer.from(JSON.stringify({ ...JSON.parse(Buffer.from(p, 'base64url').toString()), role: 'owner', sub: 'x' })).toString('base64url');
+      return (await request(server, 'GET', '/admin/products', { token: `${h}.${forged}.${s}` })).status === 401;
+    });
 
     server.close(() => {
       if (allPassed) {

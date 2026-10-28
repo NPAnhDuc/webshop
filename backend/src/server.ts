@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import {
   validateBody,
   CreateOrderSchema,
@@ -9,13 +10,28 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { store } from './db/store.js';
 import { verifyAdminOTP, getAdminOTPSetupInfo } from './utils/totp.js';
+import {
+  adminAuthConfigError,
+  verifyAdminCredentials,
+  issueAdminToken,
+  requireAdmin,
+  requireRole,
+  isLoginLocked,
+  recordLoginFailure,
+  clearLoginFailures
+} from './utils/adminAuth.js';
 
 import path from 'path';
 import fs from 'fs';
 
 const app = express();
+// Behind a reverse proxy (Render), set TRUST_PROXY=1 so req.ip is the client IP for the login rate limit.
+if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY) || process.env.TRUST_PROXY);
 const PORT = process.env.PORT || 5000;
 const AI_SERVICE_URL = (process.env.AI_SERVICE_URL || '').trim();
+// Shared secret checked by the AI service (X-Internal-Key); its admin channel is locked without it.
+const AI_HEADERS: Record<string, string> = { 'Content-Type': 'application/json' };
+if (process.env.AI_INTERNAL_KEY) AI_HEADERS['X-Internal-Key'] = process.env.AI_INTERNAL_KEY;
 
 if (AI_SERVICE_URL) {
   console.log(`[AI Bridge] Active: Forwarding chatbot requests to Docker AI Service at ${AI_SERVICE_URL}`);
@@ -23,7 +39,26 @@ if (AI_SERVICE_URL) {
   console.log(`[AI Bridge] Standalone: Using built-in TechStore Knowledge Engine (AI_SERVICE_URL not set).`);
 }
 
-app.use(cors());
+// CORS: only the storefront and admin portal origins (comma-separated lists allowed).
+// Render's `fromService ... property: host` yields a bare hostname, so default the scheme to https.
+const toOrigin = (value: string) => {
+  const v = value.trim().replace(/\/+$/, '');
+  return /^https?:\/\//.test(v) ? v : `https://${v}`;
+};
+const DEV_ORIGINS = ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:5174', 'http://127.0.0.1:5174'];
+const configuredOrigins = [process.env.FRONTEND_ORIGIN, process.env.ADMIN_ORIGIN, process.env.CORS_ORIGINS]
+  .flatMap(v => (v || '').split(','))
+  .filter(v => v.trim())
+  .map(toOrigin);
+const ALLOWED_ORIGINS = new Set(
+  configuredOrigins.length || process.env.NODE_ENV === 'production' ? configuredOrigins : DEV_ORIGINS
+);
+console.log(`[CORS] Allowed origins: ${[...ALLOWED_ORIGINS].join(', ') || '(none)'}`);
+
+app.use(cors({
+  // Requests without an Origin header (curl, health checks, server-to-server) are not subject to CORS.
+  origin: (origin, callback) => callback(null, !origin || ALLOWED_ORIGINS.has(origin))
+}));
 app.use(express.json());
 
 // Diagnostic endpoint to check AI Microservice status
@@ -245,7 +280,7 @@ app.post('/api/pc-builder/validate', (req: Request, res: Response) => {
 
 // Customer Shopping Chatbot (CU-01..CU-11) with Docker AI Model Bridge
 app.post('/api/chat/customer', async (req: Request, res: Response) => {
-  const { message, pageContext } = req.body;
+  const { message, pageContext, sessionId } = req.body;
   if (!message) {
     return res.status(400).json({ success: false, message: 'Tin nhắn không được để trống' });
   }
@@ -258,10 +293,10 @@ app.post('/api/chat/customer', async (req: Request, res: Response) => {
 
       const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/customer`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: AI_HEADERS,
         body: JSON.stringify({
           message,
-          role: 'customer',
+          sessionId,
           pageContext
         }),
         signal: controller.signal
@@ -298,24 +333,45 @@ app.post('/api/chat/customer', async (req: Request, res: Response) => {
 });
 
 // --- ADMIN APIS ---
-app.get('/admin/auth/otp-setup', (req: Request, res: Response) => {
-  const info = getAdminOTPSetupInfo();
+// Every /admin/* route needs a valid admin JWT, except login (and the OTP dev helper when explicitly enabled locally).
+const OTP_DEV_HELPER = process.env.ADMIN_OTP_DEV_HELPER === 'true' && process.env.NODE_ENV !== 'production';
+const ADMIN_PUBLIC_PATHS = new Set(['/auth/login', ...(OTP_DEV_HELPER ? ['/auth/otp-setup'] : [])]);
+const authConfigError = adminAuthConfigError();
+if (authConfigError) {
+  console.warn(`[Admin Auth] Admin login disabled: ${authConfigError}`);
+}
+
+app.use('/admin', (req: Request, res: Response, next) => {
+  if (ADMIN_PUBLIC_PATHS.has(req.path)) return next();
+  return requireAdmin(req, res, next);
+});
+
+// Reveals the TOTP secret, so it is owner-only; the public dev helper (with the current code) exists only when
+// ADMIN_OTP_DEV_HELPER=true outside production.
+app.get('/admin/auth/otp-setup', OTP_DEV_HELPER ? (req, res, next) => next() : requireRole('owner'), (req: Request, res: Response) => {
+  const info = getAdminOTPSetupInfo(OTP_DEV_HELPER);
   res.json({ success: true, data: info });
 });
 
 app.post('/admin/auth/login', (req: Request, res: Response) => {
+  if (authConfigError) {
+    return res.status(503).json({ success: false, message: 'Đăng nhập quản trị chưa được cấu hình trên máy chủ.' });
+  }
+
+  const ip = req.ip || req.socket.remoteAddress || 'unknown';
+  if (isLoginLocked(ip)) {
+    return res.status(429).json({ success: false, message: 'Bạn đã thử đăng nhập sai quá nhiều lần. Vui lòng thử lại sau 15 phút.' });
+  }
+
   const { username, password, otp } = req.body;
   if (!username || !password) {
     return res.status(400).json({ success: false, message: 'Vui lòng cung cấp đầy đủ tên đăng nhập và mật khẩu.' });
   }
 
   // 1. Verify user credentials
-  let user: any = null;
-  if (username === 'admin' && (password === 'admin123' || password === 'admin')) {
-    user = { id: 'usr-1', name: 'Chị Lan (Chủ Shop)', role: 'owner', email: 'lan.techstore@gmail.com' };
-  } else if (username === 'kho' && password === 'kho123') {
-    user = { id: 'usr-2', name: 'Anh Tuấn (Nhân Viên Kho)', role: 'warehouse', email: 'tuan.kho@techstore.vn' };
-  } else {
+  const user = verifyAdminCredentials(String(username).trim(), String(password));
+  if (!user) {
+    recordLoginFailure(ip);
     return res.status(401).json({ success: false, message: 'Tên đăng nhập hoặc mật khẩu không chính xác' });
   }
 
@@ -331,6 +387,7 @@ app.post('/admin/auth/login', (req: Request, res: Response) => {
   const cleanOtp = String(otp).trim();
   const isValidOtp = verifyAdminOTP(cleanOtp);
   if (!isValidOtp) {
+    recordLoginFailure(ip);
     return res.status(401).json({
       success: false,
       requireOtp: true,
@@ -339,9 +396,10 @@ app.post('/admin/auth/login', (req: Request, res: Response) => {
   }
 
   // 3. Issue Token
+  clearLoginFailures(ip);
   return res.json({
     success: true,
-    token: `jwt-token-sec-${user.role}-${Date.now()}`,
+    token: issueAdminToken(user),
     user
   });
 });
@@ -418,8 +476,9 @@ app.post('/admin/documents', (req: Request, res: Response) => {
 });
 
 // Admin Data Science & Analytics Chatbot with Docker AI Bridge
-app.post('/admin/chat', async (req: Request, res: Response) => {
-  const { query } = req.body;
+// Forwarded to the AI service's admin channel (business data), so owner only.
+app.post('/admin/chat', requireRole('owner'), async (req: Request, res: Response) => {
+  const { query, sessionId } = req.body;
   if (!query) {
     return res.status(400).json({ success: false, message: 'Câu hỏi không được để trống' });
   }
@@ -431,10 +490,10 @@ app.post('/admin/chat', async (req: Request, res: Response) => {
 
       const aiRes = await fetch(`${AI_SERVICE_URL}/api/chat/admin`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: AI_HEADERS,
         body: JSON.stringify({
           query,
-          role: 'admin'
+          sessionId
         }),
         signal: controller.signal
       });

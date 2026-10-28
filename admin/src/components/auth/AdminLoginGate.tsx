@@ -23,8 +23,8 @@ interface AdminLoginGateProps {
 export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => {
   const { login } = useAuth();
 
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   // 6-digit OTP code state
@@ -79,12 +79,6 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
     if (e.key === 'Backspace' && !otpDigits[index] && index > 0) {
       inputRefs.current[index - 1]?.focus();
     }
-  };
-
-  const handleQuickFillMasterOtp = () => {
-    const master = otpSetupInfo?.masterOtp || '888999';
-    setOtpDigits(master.split(''));
-    setErrorMessage('');
   };
 
   const handleQuickFillCurrentDevOtp = () => {
@@ -239,29 +233,17 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
             {/* Helper quick fills for testing */}
             <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1">
               <span>Đổi mới mỗi 30 giây</span>
-              <div className="flex items-center space-x-2">
+              {/* Only present when the backend runs with ADMIN_OTP_DEV_HELPER=true (local development) */}
+              {otpSetupInfo?.currentDevOtp && (
                 <button
                   type="button"
-                  onClick={handleQuickFillMasterOtp}
-                  className="text-amber-400 hover:underline cursor-pointer"
-                  title="Mã khẩn cấp mặc định"
+                  onClick={handleQuickFillCurrentDevOtp}
+                  className="text-emerald-400 hover:underline cursor-pointer"
+                  title="Lấy mã TOTP hiện tại (chỉ môi trường dev)"
                 >
-                  Điền Master OTP
+                  Điền mã Live (dev)
                 </button>
-                {otpSetupInfo?.currentDevOtp && (
-                  <>
-                    <span>•</span>
-                    <button
-                      type="button"
-                      onClick={handleQuickFillCurrentDevOtp}
-                      className="text-emerald-400 hover:underline cursor-pointer"
-                      title="Lấy mã TOTP hiện tại"
-                    >
-                      Điền mã Live
-                    </button>
-                  </>
-                )}
-              </div>
+              )}
             </div>
           </div>
 
@@ -287,24 +269,13 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
           </div>
         </form>
 
-        {/* Demo Credentials Footer */}
         <div className="p-3 bg-slate-900/80 border border-slate-800 rounded-2xl text-[11px] text-slate-400 space-y-1">
           <div className="font-bold text-slate-300 flex items-center space-x-1">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>Tài khoản kiểm thử nội bộ:</span>
+            <span>Lưu ý bảo mật:</span>
           </div>
-          <div className="grid grid-cols-2 gap-2 pt-0.5 text-[10.5px]">
-            <div>
-              <p className="text-slate-200 font-semibold">• Chủ Shop:</p>
-              <p className="font-mono text-slate-400">admin / admin123</p>
-            </div>
-            <div>
-              <p className="text-slate-200 font-semibold">• Thủ Kho:</p>
-              <p className="font-mono text-slate-400">kho / kho123</p>
-            </div>
-          </div>
-          <p className="text-[10px] text-slate-500 pt-1">
-            Mã OTP khẩn cấp: <strong className="font-mono text-amber-400">888999</strong> hoặc sinh từ Google Authenticator.
+          <p className="text-[10.5px]">
+            Tài khoản, mật khẩu và khóa OTP được cấu hình trên máy chủ. Phiên đăng nhập tự hết hạn; khi đó bạn sẽ được đưa về màn hình này.
           </p>
         </div>
       </div>
@@ -334,36 +305,20 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({ onSuccess }) => 
               <div className="p-3 bg-slate-900 rounded-2xl border border-slate-800 space-y-2">
                 <p className="text-slate-400 text-[11px] font-semibold">Khóa bí mật (Base32 Secret Key):</p>
                 <div className="p-2 bg-black/50 rounded-xl font-mono text-amber-400 text-sm font-bold text-center tracking-widest border border-slate-800">
-                  {otpSetupInfo?.secret || 'JBSWY3DPEHPK3PXP'}
+                  {otpSetupInfo?.secret || 'Liên hệ chủ shop để nhận khóa (ADMIN_TOTP_SECRET)'}
                 </div>
                 <p className="text-[10px] text-slate-500">
                   Cách thêm: Trong app Google Authenticator bấm <strong>+</strong> → chọn <strong>Nhập khóa thiết lập</strong> → Nhập tên tài khoản & dán khóa trên.
-                </p>
-              </div>
-
-              <div className="p-3 bg-blue-950/40 border border-blue-900/50 rounded-2xl space-y-1">
-                <div className="flex items-center space-x-1.5 text-blue-300 font-bold">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
-                  <span>Mã Khẩn Cấp (Master Emergency Key):</span>
-                </div>
-                <p className="font-mono text-sm font-bold text-white tracking-widest">
-                  {otpSetupInfo?.masterOtp || '888999'}
-                </p>
-                <p className="text-[10px] text-slate-400">
-                  Dùng trong trường hợp mất điện thoại hoặc không truy cập được app xác thực.
                 </p>
               </div>
             </div>
 
             <div className="pt-2">
               <button
-                onClick={() => {
-                  handleQuickFillMasterOtp();
-                  setShowOtpModal(false);
-                }}
+                onClick={() => setShowOtpModal(false)}
                 className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs transition cursor-pointer"
               >
-                Đã hiểu, điền mã và quay lại đăng nhập
+                Đã hiểu, quay lại đăng nhập
               </button>
             </div>
           </div>

@@ -32,15 +32,35 @@ export function formatProductImageUrl(url?: string): string {
   return `/${cleanPath}`;
 }
 
+export const ADMIN_TOKEN_KEY = 'techstore_admin_token';
+// Fired when the backend rejects the admin token (expired/invalid); AuthContext logs out on it.
+export const ADMIN_UNAUTHORIZED_EVENT = 'techstore-admin-unauthorized';
+
+function authHeaders(extra?: HeadersInit): Headers {
+  const headers = new Headers(extra);
+  const token = localStorage.getItem(ADMIN_TOKEN_KEY);
+  if (token) headers.set('Authorization', `Bearer ${token}`);
+  return headers;
+}
+
+async function adminFetch(url: string, init: RequestInit = {}): Promise<Response> {
+  const res = await fetch(url, { ...init, headers: authHeaders(init.headers) });
+  if (res.status === 401) {
+    window.dispatchEvent(new Event(ADMIN_UNAUTHORIZED_EVENT));
+  }
+  return res;
+}
+
 // 2FA OTP & AUTH APIS
+// Owner-only on the server (public only with the local dev helper); null when not available.
 export async function fetchOtpSetup(): Promise<{
   secret: string;
-  masterOtp: string;
   otpauthUrl: string;
-  currentDevOtp: string;
+  currentDevOtp?: string;
   stepSeconds: number;
-}> {
-  const res = await fetch(`${BASE_URL}/admin/auth/otp-setup`);
+} | null> {
+  const res = await fetch(`${BASE_URL}/admin/auth/otp-setup`, { headers: authHeaders() });
+  if (!res.ok) return null;
   const json = await res.json();
   return json.data;
 }
@@ -66,25 +86,25 @@ export async function adminLogin(credentials: {
 
 // DASHBOARD & ANALYTICS
 export async function fetchAdminKPIs(): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/dashboard/kpis`);
+  const res = await adminFetch(`${BASE_URL}/admin/dashboard/kpis`);
   const json = await res.json();
   return json.data;
 }
 
 export async function fetchAdminCharts(): Promise<ChartSpec[]> {
-  const res = await fetch(`${BASE_URL}/admin/dashboard/charts`);
+  const res = await adminFetch(`${BASE_URL}/admin/dashboard/charts`);
   const json = await res.json();
   return json.data;
 }
 
 export async function fetchPinnedWidgets(): Promise<ChartSpec[]> {
-  const res = await fetch(`${BASE_URL}/admin/dashboard/widgets`);
+  const res = await adminFetch(`${BASE_URL}/admin/dashboard/widgets`);
   const json = await res.json();
   return json.data;
 }
 
 export async function pinChartWidget(widget: ChartSpec): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/dashboard/widgets/pin`, {
+  const res = await adminFetch(`${BASE_URL}/admin/dashboard/widgets/pin`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ widget })
@@ -94,13 +114,13 @@ export async function pinChartWidget(widget: ChartSpec): Promise<any> {
 
 // INVENTORY
 export async function fetchAdminInventory(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/inventory`);
+  const res = await adminFetch(`${BASE_URL}/admin/inventory`);
   const json = await res.json();
   return json.data;
 }
 
 export async function createStockReceipt(receiptData: { variantId: string; qty: number; note: string }): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/inventory/receipt`, {
+  const res = await adminFetch(`${BASE_URL}/admin/inventory/receipt`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(receiptData)
@@ -111,13 +131,13 @@ export async function createStockReceipt(receiptData: { variantId: string; qty: 
 // ORDERS
 export async function fetchAdminOrders(status?: string): Promise<Order[]> {
   const url = status ? `${BASE_URL}/admin/orders?status=${status}` : `${BASE_URL}/admin/orders`;
-  const res = await fetch(url);
+  const res = await adminFetch(url);
   const json = await res.json();
   return json.data;
 }
 
 export async function updateOrderStatus(orderId: string, status: string, note?: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/orders/${orderId}/status`, {
+  const res = await adminFetch(`${BASE_URL}/admin/orders/${orderId}/status`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status, note })
@@ -127,13 +147,13 @@ export async function updateOrderStatus(orderId: string, status: string, note?: 
 
 // DOCUMENTS
 export async function fetchAdminDocuments(): Promise<StrategicDocument[]> {
-  const res = await fetch(`${BASE_URL}/admin/documents`);
+  const res = await adminFetch(`${BASE_URL}/admin/documents`);
   const json = await res.json();
   return json.data;
 }
 
 export async function uploadStrategicDoc(doc: any): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/documents`, {
+  const res = await adminFetch(`${BASE_URL}/admin/documents`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(doc)
@@ -150,17 +170,20 @@ export async function sendAdminChatMessage(query: string): Promise<{
   citations: string[];
   proposal?: StrategyProposal;
 }> {
-  const res = await fetch(`${BASE_URL}/admin/chat`, {
+  const res = await adminFetch(`${BASE_URL}/admin/chat`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query })
   });
   const json = await res.json();
+  if (!res.ok || json.success === false) {
+    throw new Error(json.message || `HTTP ${res.status}`);
+  }
   return json.data;
 }
 
 export async function decideProposal(proposalId: string, optionId: string, decision: 'approved' | 'rejected'): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/recommendations/${proposalId}/decision`, {
+  const res = await adminFetch(`${BASE_URL}/admin/recommendations/${proposalId}/decision`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ optionId, decision })
@@ -170,13 +193,13 @@ export async function decideProposal(proposalId: string, optionId: string, decis
 
 // PRODUCTS
 export async function fetchAdminProducts(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/products`);
+  const res = await adminFetch(`${BASE_URL}/admin/products`);
   const json = await res.json();
   return json.data || [];
 }
 
 export async function createAdminProduct(productData: any): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/products`, {
+  const res = await adminFetch(`${BASE_URL}/admin/products`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(productData)
@@ -185,7 +208,7 @@ export async function createAdminProduct(productData: any): Promise<any> {
 }
 
 export async function updateAdminProduct(id: string, productData: any): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/products/${id}`, {
+  const res = await adminFetch(`${BASE_URL}/admin/products/${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(productData)
@@ -194,7 +217,7 @@ export async function updateAdminProduct(id: string, productData: any): Promise<
 }
 
 export async function deleteAdminProduct(id: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/products/${id}`, {
+  const res = await adminFetch(`${BASE_URL}/admin/products/${id}`, {
     method: 'DELETE'
   });
   return await res.json();
@@ -202,13 +225,13 @@ export async function deleteAdminProduct(id: string): Promise<any> {
 
 // PROMOTIONS
 export async function fetchAdminPromotions(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/promotions`);
+  const res = await adminFetch(`${BASE_URL}/admin/promotions`);
   const json = await res.json();
   return json.data || [];
 }
 
 export async function createAdminPromotion(promoData: any): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/promotions`, {
+  const res = await adminFetch(`${BASE_URL}/admin/promotions`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(promoData)
@@ -217,14 +240,14 @@ export async function createAdminPromotion(promoData: any): Promise<any> {
 }
 
 export async function toggleAdminPromotion(id: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/promotions/${id}/toggle`, {
+  const res = await adminFetch(`${BASE_URL}/admin/promotions/${id}/toggle`, {
     method: 'PATCH'
   });
   return await res.json();
 }
 
 export async function deleteAdminPromotion(id: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/promotions/${id}`, {
+  const res = await adminFetch(`${BASE_URL}/admin/promotions/${id}`, {
     method: 'DELETE'
   });
   return await res.json();
@@ -232,20 +255,20 @@ export async function deleteAdminPromotion(id: string): Promise<any> {
 
 // CUSTOMERS
 export async function fetchAdminCustomers(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/customers`);
+  const res = await adminFetch(`${BASE_URL}/admin/customers`);
   const json = await res.json();
   return json.data || [];
 }
 
 // QUOTATIONS
 export async function fetchAdminQuotations(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/quotations`);
+  const res = await adminFetch(`${BASE_URL}/admin/quotations`);
   const json = await res.json();
   return json.data || [];
 }
 
 export async function updateAdminQuotationStatus(id: string, status: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/quotations/${id}/status`, {
+  const res = await adminFetch(`${BASE_URL}/admin/quotations/${id}/status`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status })
@@ -255,13 +278,13 @@ export async function updateAdminQuotationStatus(id: string, status: string): Pr
 
 // REVIEWS
 export async function fetchAdminReviews(): Promise<any[]> {
-  const res = await fetch(`${BASE_URL}/admin/reviews`);
+  const res = await adminFetch(`${BASE_URL}/admin/reviews`);
   const json = await res.json();
   return json.data || [];
 }
 
 export async function toggleAdminReviewStatus(id: string, status?: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/reviews/${id}/status`, {
+  const res = await adminFetch(`${BASE_URL}/admin/reviews/${id}/status`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status })
@@ -270,7 +293,7 @@ export async function toggleAdminReviewStatus(id: string, status?: string): Prom
 }
 
 export async function replyAdminReview(id: string, reply: string): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/reviews/${id}/reply`, {
+  const res = await adminFetch(`${BASE_URL}/admin/reviews/${id}/reply`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ reply })
@@ -280,13 +303,13 @@ export async function replyAdminReview(id: string, reply: string): Promise<any> 
 
 // SETTINGS
 export async function fetchAdminSettings(): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/settings`);
+  const res = await adminFetch(`${BASE_URL}/admin/settings`);
   const json = await res.json();
   return json.data;
 }
 
 export async function updateAdminSettings(settings: any): Promise<any> {
-  const res = await fetch(`${BASE_URL}/admin/settings`, {
+  const res = await adminFetch(`${BASE_URL}/admin/settings`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(settings)
