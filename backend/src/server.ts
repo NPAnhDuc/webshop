@@ -41,25 +41,46 @@ if (AI_SERVICE_URL) {
   console.log(`[AI Bridge] Standalone: Using built-in TechStore Knowledge Engine (AI_SERVICE_URL not set).`);
 }
 
-// CORS: only the storefront and admin portal origins (comma-separated lists allowed).
-// Render's `fromService ... property: host` yields a bare hostname, so default the scheme to https.
+// CORS: storefront, admin portal, onrender.com domains and local development.
 const toOrigin = (value: string) => {
   const v = value.trim().replace(/\/+$/, '');
   return /^https?:\/\//.test(v) ? v : `https://${v}`;
 };
-const DEV_ORIGINS = ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:5174', 'http://127.0.0.1:5174'];
 const configuredOrigins = [process.env.FRONTEND_ORIGIN, process.env.ADMIN_ORIGIN, process.env.CORS_ORIGINS]
   .flatMap(v => (v || '').split(','))
   .filter(v => v.trim())
   .map(toOrigin);
-const ALLOWED_ORIGINS = new Set(
-  configuredOrigins.length || process.env.NODE_ENV === 'production' ? configuredOrigins : DEV_ORIGINS
-);
-console.log(`[CORS] Allowed origins: ${[...ALLOWED_ORIGINS].join(', ') || '(none)'}`);
+const ALLOWED_ORIGINS = new Set(configuredOrigins);
+console.log(`[CORS] Explicit allowed origins: ${[...ALLOWED_ORIGINS].join(', ') || '(none - dynamic matching enabled)'}`);
 
 app.use(cors({
-  // Requests without an Origin header (curl, health checks, server-to-server) are not subject to CORS.
-  origin: (origin, callback) => callback(null, !origin || ALLOWED_ORIGINS.has(origin))
+  origin: (origin, callback) => {
+    // 1. Requests without Origin (curl, server-to-server, health check) -> always allow
+    if (!origin) return callback(null, true);
+
+    // 2. If no specific origins were configured in env, allow all origins
+    if (ALLOWED_ORIGINS.size === 0) return callback(null, true);
+
+    // 3. Match against explicitly allowed origins
+    if (ALLOWED_ORIGINS.has(origin)) return callback(null, true);
+
+    // 4. Always allow any onrender.com subdomains and local development
+    try {
+      const parsed = new URL(origin);
+      if (
+        parsed.hostname.endsWith('.onrender.com') ||
+        parsed.hostname === 'localhost' ||
+        parsed.hostname === '127.0.0.1'
+      ) {
+        return callback(null, true);
+      }
+    } catch {
+      // ignore malformed origin
+    }
+
+    return callback(null, false);
+  },
+  credentials: true
 }));
 app.use(express.json());
 
