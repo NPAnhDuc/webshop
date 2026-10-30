@@ -1,0 +1,1 @@
+Stopped during development review: verbose and duplicate claims, unrequested caveats, and a verifier accepting an ambiguous margin/discount statement. Partial results are preserved; this is not a completed evaluation.

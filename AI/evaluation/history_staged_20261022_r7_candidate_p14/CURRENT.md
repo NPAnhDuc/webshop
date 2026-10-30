@@ -1,0 +1,1 @@
+Rejected after broader old100 regression (87→85, C31/C34 regress). Focused221/224 gain remains diagnostic only and does not justify acceptance. Raw/gold/results preserved; patch9 restored and193tests pass. Do not run full479 on this code. Relevance judge feasibility probe r8 runs separately, no production verifier installed.

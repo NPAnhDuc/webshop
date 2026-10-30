@@ -1,0 +1,14 @@
+{
+  "planned": 28,
+  "attempted": 3,
+  "successful": 0,
+  "pending": 25,
+  "semantic_cases": 0,
+  "decision": "infrastructure_stop_restore_patch9",
+  "candidate_units_passed": 211,
+  "candidate_unit_seconds": 63.04,
+  "production_restored": true,
+  "production_files_verified": 26,
+  "reason": "All three router calls ConnectionError; no listeners or Ollama/Python service process found. Not a knowledge/semantic failure.",
+  "retry_this_heartbeat": false
+}

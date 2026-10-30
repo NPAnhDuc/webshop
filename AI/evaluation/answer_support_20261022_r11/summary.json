@@ -1,0 +1,182 @@
+{
+  "cases": 31,
+  "parts": 57,
+  "raw": {
+    "exact_case_agreement": 27,
+    "part_agreement": 51,
+    "confusion": {
+      "correct_accept": 44,
+      "correct_reject": 7,
+      "false_accept": 6
+    },
+    "errors": [
+      {
+        "id": "R9-025",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R9-026",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R9-028",
+        "part": "P2",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R9-031",
+        "part": "P1",
+        "category": "false_unknown",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R9-031",
+        "part": "P2",
+        "category": "false_unknown",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R9-031",
+        "part": "P3",
+        "category": "false_unknown",
+        "expected": false,
+        "predicted": true
+      }
+    ],
+    "categories": {
+      "supported": {
+        "correct_accept": 41
+      },
+      "valid_unknown": {
+        "correct_accept": 3
+      },
+      "omitted_part": {
+        "correct_reject": 2,
+        "false_accept": 2
+      },
+      "wrong_attribute": {
+        "correct_reject": 1,
+        "false_accept": 1
+      },
+      "wrong_scope": {
+        "correct_reject": 4
+      },
+      "false_unknown": {
+        "false_accept": 3
+      }
+    },
+    "cohorts": {
+      "anchor": {
+        "cases": 6,
+        "exact_case_agreement": 6,
+        "parts": 12,
+        "part_agreement": 12
+      },
+      "new": {
+        "cases": 20,
+        "exact_case_agreement": 18,
+        "parts": 34,
+        "part_agreement": 32
+      },
+      "constructed": {
+        "cases": 5,
+        "exact_case_agreement": 3,
+        "parts": 11,
+        "part_agreement": 7
+      }
+    }
+  },
+  "guarded": {
+    "exact_case_agreement": 30,
+    "part_agreement": 56,
+    "confusion": {
+      "correct_accept": 43,
+      "correct_reject": 13,
+      "false_reject": 1
+    },
+    "errors": [
+      {
+        "id": "R9-011",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      }
+    ],
+    "categories": {
+      "supported": {
+        "correct_accept": 40,
+        "false_reject": 1
+      },
+      "valid_unknown": {
+        "correct_accept": 3
+      },
+      "omitted_part": {
+        "correct_reject": 4
+      },
+      "wrong_attribute": {
+        "correct_reject": 2
+      },
+      "wrong_scope": {
+        "correct_reject": 4
+      },
+      "false_unknown": {
+        "correct_reject": 3
+      }
+    },
+    "cohorts": {
+      "anchor": {
+        "cases": 6,
+        "exact_case_agreement": 6,
+        "parts": 12,
+        "part_agreement": 12
+      },
+      "new": {
+        "cases": 20,
+        "exact_case_agreement": 19,
+        "parts": 34,
+        "part_agreement": 33
+      },
+      "constructed": {
+        "cases": 5,
+        "exact_case_agreement": 5,
+        "parts": 11,
+        "part_agreement": 11
+      }
+    }
+  },
+  "quote_issue_cases": [
+    "R9-011",
+    "R9-025",
+    "R9-026",
+    "R9-028",
+    "R9-031"
+  ],
+  "quote_issue_parts": 7,
+  "quote_count": 56,
+  "total_seconds": 126.732,
+  "median_seconds": 3.515,
+  "prompt_token_range": [
+    410,
+    1643
+  ],
+  "output_token_range": [
+    88,
+    355
+  ],
+  "done_reasons": {
+    "stop": 31
+  },
+  "production_verifier_installed": false,
+  "decision": "Diagnostic-only: candidate-answer membership catches six source-only false approvals, but introduces an ECC false rejection. Broader frozen development confirmation plus literal relevance/unknown controls required before any production gate. Accepted patch9 unchanged."
+}

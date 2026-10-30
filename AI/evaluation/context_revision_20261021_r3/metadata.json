@@ -1,0 +1,35 @@
+{
+  "created": "2026-10-21",
+  "today": "2026-10-21",
+  "database": "D:\\Chatbot\\chatbotshop\\AI\\data\\business_sql\\scenario_v1\\shop.sqlite",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "knowledge_manifest": "D:\\Chatbot\\chatbotshop\\AI\\data\\unstructured\\managed\\ecdd21ab64861674\\manifest.json",
+  "knowledge_sha256": "f3d05748981cc3534fc9b17ac70373094751a0860d162010ea960d9cd42de968",
+  "bank_sha256": "01268f719089d60d070092111e6543404a742dca5222b08cf98e4b14dc756ad2",
+  "gold_sha256": "cb9b88632e885c84e57eb53af4541e4e7ec89d9717493ae54756dee7d75ea977",
+  "counts": {
+    "admin": 32,
+    "customer": 16
+  },
+  "splits": {
+    "development": 24,
+    "validation": 24
+  },
+  "topics": {
+    "current_period": 8,
+    "relative_fact": 6,
+    "explicit_control": 2,
+    "unbound_reference": 6,
+    "mixed_reference": 2,
+    "tool_boundary": 8,
+    "principle": 4,
+    "scope_limit": 4,
+    "permission": 2,
+    "missing_terms": 2,
+    "unknown_product": 2,
+    "handoff": 2
+  },
+  "families": 48,
+  "unique_question_texts": 48,
+  "note": "Fixture-only revision3 of revision2: same48questions/splits/source. All8numeric required spans bounded directly from approved source, independently of bot output. Old artifacts preserved. No quality improvement is claimed from rescoring.24reserved remain unqueried."
+}

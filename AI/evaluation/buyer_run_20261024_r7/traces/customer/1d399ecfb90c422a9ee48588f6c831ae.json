@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "1d399ecfb90c422a9ee48588f6c831ae",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T10:44:32.707985+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Shop cho đổi máy do không thích màu trong bao lâu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Shop cho đổi máy do không thích màu trong bao lâu?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "clarify",
+        "executed": true,
+        "answer": "Bạn đang nhắc tới sản phẩm/model, kỳ hoặc tài liệu cụ thể nào? Tôi cần xác định rõ đối tượng trước khi trả lời.",
+        "reason": "Bạn đang nhắc tới sản phẩm/model, kỳ hoặc tài liệu cụ thể nào? Tôi cần xác định rõ đối tượng trước khi trả lời.",
+        "answerability": "clarify",
+        "rag_action": "clarify",
+        "sources": []
+      },
+      "seconds": 0.0001385000068694353
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "clarify",
+    "answer": "Bạn đang nhắc tới sản phẩm/model, kỳ hoặc tài liệu cụ thể nào? Tôi cần xác định rõ đối tượng trước khi trả lời.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.5156091999961063
+}

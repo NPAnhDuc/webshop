@@ -1,0 +1,23 @@
+{
+  "turns": 106,
+  "trace_records": 106,
+  "role_question_parent_links_passed": true,
+  "model_calls_on_bound_references": [
+    {
+      "id": "Q27",
+      "previous": 3,
+      "current": 1
+    },
+    {
+      "id": "Q36",
+      "previous": 3,
+      "current": 1
+    },
+    {
+      "id": "A03",
+      "previous": 2,
+      "current": 1
+    }
+  ],
+  "training_allowed": false
+}

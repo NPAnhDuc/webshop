@@ -1,0 +1,18 @@
+{
+  "before_sha256": "4756da4d272ae89dce18225f5ea098e655893bc0dbf9db3777d1d500542b57e5",
+  "after_sha256": "a222b702c50770800186f877419a50b6ccd3122f28494a92438ab46d5e68ee01",
+  "suppliers": [
+    [
+      "SUP-LAP",
+      "Nhà phân phối laptop giả lập",
+      4
+    ],
+    [
+      "SUP-PC",
+      "Nhà phân phối linh kiện giả lập",
+      3
+    ]
+  ],
+  "change": "Added procurement v2 with explicit supplier names, grounded in SQL. Original v1 retained. Financial DB unchanged.",
+  "effective_note": "Simulation initial facts reconstructed; not a real-world historical publication date."
+}

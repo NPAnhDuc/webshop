@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q47",
+    "conversation": "mixed-customer-laptop",
+    "role": "customer",
+    "question": "Tìm 3 laptop dưới 20000000 đồng và giải thích OLED là gì"
+  },
+  {
+    "id": "Q48",
+    "conversation": "mixed-customer-ram",
+    "role": "customer",
+    "question": "Tìm 3 ram dưới 3000000 đồng và giải thích DDR5 là gì"
+  },
+  {
+    "id": "Q49",
+    "conversation": "mixed-customer-ssd",
+    "role": "customer",
+    "question": "Tìm 2 ssd dưới 2000000 đồng và giải thích NVMe là gì"
+  },
+  {
+    "id": "Q50",
+    "conversation": "mixed-customer-monitor",
+    "role": "customer",
+    "question": "Tìm 2 monitor dưới 10000000 đồng và giải thích tần số quét là gì"
+  },
+  {
+    "id": "Q51",
+    "conversation": "mixed-admin-laptop",
+    "role": "admin",
+    "question": "Tìm 3 laptop dưới 20000000 đồng và giải thích OLED là gì"
+  },
+  {
+    "id": "Q52",
+    "conversation": "mixed-admin-ram",
+    "role": "admin",
+    "question": "Tìm 3 ram dưới 3000000 đồng và giải thích DDR5 là gì"
+  },
+  {
+    "id": "Q53",
+    "conversation": "mixed-admin-ssd",
+    "role": "admin",
+    "question": "Tìm 2 ssd dưới 2000000 đồng và giải thích NVMe là gì"
+  },
+  {
+    "id": "Q54",
+    "conversation": "mixed-admin-monitor",
+    "role": "admin",
+    "question": "Tìm 2 monitor dưới 10000000 đồng và giải thích tần số quét là gì"
+  },
+  {
+    "id": "Q55",
+    "conversation": "mixed-compare-customer",
+    "role": "customer",
+    "question": "Tìm 3 laptop dưới 40000000 đồng"
+  },
+  {
+    "id": "Q56",
+    "conversation": "mixed-compare-customer",
+    "role": "customer",
+    "question": "So máy thứ1 với thứ2 và giải thích RAM là gì"
+  },
+  {
+    "id": "Q57",
+    "conversation": "mixed-compare-admin",
+    "role": "admin",
+    "question": "Tìm 3 laptop dưới 40000000 đồng"
+  },
+  {
+    "id": "Q58",
+    "conversation": "mixed-compare-admin",
+    "role": "admin",
+    "question": "So máy thứ1 với thứ2 và giải thích RAM là gì"
+  }
+]

@@ -1,0 +1,399 @@
+{
+  "cases": 91,
+  "registry_fields": 62,
+  "exact_intent": 68,
+  "contract_invalid": 11,
+  "cohorts": {
+    "product_followup": {
+      "cases": 56,
+      "exact_intent": 40,
+      "invalid_contract": 10,
+      "exact": 40,
+      "field_mismatch": 4,
+      "over_fallback": 2
+    },
+    "fallback_control": {
+      "cases": 30,
+      "exact_intent": 25,
+      "invalid_contract": 1,
+      "unsafe_shortcut": 4,
+      "exact": 25
+    },
+    "compound_lookup": {
+      "cases": 5,
+      "exact_intent": 3,
+      "invalid_contract": 0,
+      "field_mismatch": 2,
+      "exact": 3
+    }
+  },
+  "issues": [
+    {
+      "id": "F15-Q0227_original_history",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "internal-hard-drive/type"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "internal-hard-drive/cache"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0247_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "memory/modules"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0292_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0300_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "case/side_panel"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0301_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "case/side_panel"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0322_original_history",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "internal-hard-drive/type"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "internal-hard-drive/cache"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0357_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0381_original_history",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "internal-hard-drive/type"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "internal-hard-drive/cache"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0382_original_history",
+      "kind": "over_fallback",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "rag"
+      }
+    },
+    {
+      "id": "F15-Q0383_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "motherboard/form_factor"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0392_original_history",
+      "kind": "over_fallback",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "rag"
+      }
+    },
+    {
+      "id": "F15-Q0406_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0446_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "case/side_panel"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0448_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0462_original_history",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "cpu/core_clock"
+        ]
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-Q0478_original_history",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "memory/modules"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "memory/cas_latency",
+          "memory/first_word_latency",
+          "memory/modules",
+          "memory/speed"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C09",
+      "kind": "unsafe_shortcut",
+      "expected": {
+        "mode": "rag",
+        "field_ids": []
+      },
+      "actual": {
+        "field_ids": [
+          "laptop/Display Resolution",
+          "laptop/Display Size (Inch)",
+          "laptop/Display Type"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C31",
+      "kind": "unsafe_shortcut",
+      "expected": {
+        "mode": "rag",
+        "field_ids": []
+      },
+      "actual": {
+        "field_ids": [
+          "cpu/core_count",
+          "cpu/boost_clock"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C33",
+      "kind": "unsafe_shortcut",
+      "expected": {
+        "mode": "rag",
+        "field_ids": []
+      },
+      "actual": {
+        "field_ids": [
+          "laptop/Display Type",
+          "laptop/HDMI Port"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C34",
+      "kind": "unsafe_shortcut",
+      "expected": {
+        "mode": "rag",
+        "field_ids": []
+      },
+      "actual": {
+        "field_ids": [
+          "laptop/RAM"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-A09",
+      "kind": "invalid_contract",
+      "expected": {
+        "mode": "rag",
+        "field_ids": []
+      },
+      "actual": {
+        "field_ids": [],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C01",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "laptop/Processor Model",
+          "laptop/RAM",
+          "laptop/RAM Type"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "laptop/Processor Brand",
+          "laptop/Processor Model",
+          "laptop/Processor Core",
+          "laptop/RAM",
+          "laptop/RAM Type"
+        ],
+        "mode": "fields"
+      }
+    },
+    {
+      "id": "F15-C02",
+      "kind": "field_mismatch",
+      "expected": {
+        "mode": "fields",
+        "field_ids": [
+          "laptop/Graphics Memory Accessibility",
+          "laptop/Graphics Memory"
+        ]
+      },
+      "actual": {
+        "field_ids": [
+          "laptop/Graphics Chipset",
+          "laptop/Graphics Memory",
+          "laptop/Graphics Memory Accessibility"
+        ],
+        "mode": "fields"
+      }
+    }
+  ],
+  "total_seconds": 113.551,
+  "median_seconds": 0.829,
+  "prompt_token_range": [
+    402,
+    1800
+  ],
+  "output_token_range": [
+    12,
+    57
+  ],
+  "done_reasons": {
+    "stop": 91
+  },
+  "production_installed": false,
+  "decision": "Not ready for typed-lookup shortcut: core-count intent improves in isolated schema task, but raw schema names yield empty/nearby fields, extras, and unsafe shortcutting of ambiguous/partially unsupported/source-specific questions. Keep patch9 unchanged.",
+  "cpu_core_intent": {
+    "cases": 17,
+    "exact": 17
+  }
+}

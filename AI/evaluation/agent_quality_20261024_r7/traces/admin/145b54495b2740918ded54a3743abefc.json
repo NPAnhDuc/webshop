@@ -1,0 +1,33 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "145b54495b2740918ded54a3743abefc",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T05:21:07.886621+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Dự báo doanh thu tháng tới giúp tôi.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "unsupported",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Luồng này hiện hỗ trợ báo cáo, so sánh kỳ và biểu đồ từ SQL; chưa hỗ trợ yêu cầu phân tích đó. Tôi chưa thực hiện dự báo, ghi dữ liệu hoặc suy nguyên nhân.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.5347070999996504
+}

@@ -1,0 +1,26 @@
+{
+  "cases": 6,
+  "semantic": {
+    "PASS": 4,
+    "FAIL": 2
+  },
+  "same_output_as_baseline": 6,
+  "captured_model_calls": 12,
+  "prompt_eval_range": [
+    1507,
+    3262
+  ],
+  "selector_prompt_eval_range": [
+    2713,
+    3262
+  ],
+  "done_reasons": {
+    "stop": 12
+  },
+  "all_selector_facts_present": true,
+  "all_schema_ids_valid": true,
+  "missing_flags_false_for_failed_cases": true,
+  "total_seconds": 75.721,
+  "production_changed": false,
+  "warning": "Six known correlated diagnostic controls only. Token counts and visible facts show no context/output budget exhaustion in these calls; do not generalize to other prompts or claim a cache bug."
+}

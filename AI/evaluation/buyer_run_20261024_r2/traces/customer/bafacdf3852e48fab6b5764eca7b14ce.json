@@ -1,0 +1,56 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "bafacdf3852e48fab6b5764eca7b14ce",
+  "parent_trace_id": "a2c9a7006fe3457694f33419d7f43e1e",
+  "recorded_at": "2026-10-24T07:43:28.258374+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, MSI RTX 5060 Ti 16G INSPIRE 2X OC cần nguồn công suất bao nhiêu W?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Theo bản thông tin đang có, MSI RTX 5060 Ti 16G INSPIRE 2X OC cần nguồn công suất bao nhiêu W?"
+      },
+      "principal_role": "customer",
+      "status": "disabled",
+      "output": {
+        "tool": "documents.answer",
+        "status": "disabled",
+        "executed": false,
+        "sources": [],
+        "reason": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm."
+      },
+      "seconds": 3.569999535102397e-05
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.2852765999996336
+}

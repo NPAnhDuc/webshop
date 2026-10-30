@@ -1,0 +1,10 @@
+{
+  "shopbot/retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b",
+  "shopbot/dense_retrieval.py": "d41dc4cf0f5cc65947002c85cd989a8d332d8574a83194f68c021b1bb420b26f",
+  "shopbot/chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+  "shopbot/rag_answer.py": "de56ed0de717ac713a93b4b63b036913014da1f8473b0a25c134a240c31fd1a6",
+  "shopbot/engine.py": "5a14e9b99d7a1c26b4b1d8953df6e884df268af75ed44a95e9395f9fcc2a244d",
+  "shopbot/conversation.py": "924344199abfb32b17153d1f3b14b409493f1cf806c2e98ae8a0c62de2cd2ed2",
+  "shopbot/business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098",
+  "data/business_sql/scenario_v1/documents/manifest.json": "a222b702c50770800186f877419a50b6ccd3122f28494a92438ab46d5e68ee01"
+}

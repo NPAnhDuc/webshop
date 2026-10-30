@@ -1,0 +1,63 @@
+{
+  "candidate_rejected": true,
+  "requested_cases": 24,
+  "actual_cases": 28,
+  "additional_context_cases": [
+    "Q0113",
+    "Q0320",
+    "Q0398",
+    "Q0512"
+  ],
+  "model_batches": 1,
+  "mechanical_checks": {
+    "PASS_CHECKS": 11,
+    "NEEDS_REVIEW": 17
+  },
+  "overall_semantic_accuracy": null,
+  "changed_answers": [
+    "Q0020",
+    "Q0187"
+  ],
+  "unchanged_answers": 26,
+  "cases": [
+    {
+      "id": "Q0020",
+      "status": "not_fixed_lost_supported_part",
+      "reason": "Removed warranty/reorder noise but also removed actual supplier lead time; now falsely abstains on the supported half. No MOQ invented, but requested partial answer is lost."
+    },
+    {
+      "id": "Q0187",
+      "status": "semantic_regression",
+      "reason": "Known lead time4/3 days now hidden as no-source because procurement document is typed strategy. No data or prompt change can justify dropping this valid evidence."
+    }
+  ],
+  "actual_source_metadata": {
+    "document_id": "procurement",
+    "source": "procurement-v2.md",
+    "version": 2,
+    "doc_type": "strategy",
+    "authority": "synthetic_shop_document",
+    "audience": "admin"
+  },
+  "rejection_cause": "Fixture metadata used procedure/policy; actual procedural source uses strategy/synthetic_shop_document. Retrieval type is not a complete semantic domain contract.",
+  "rollback": {
+    "runtime_matches_kb3_final_r5": true,
+    "targeted_tests_passed": 51,
+    "test_seconds": 7.09,
+    "code_before_rollback_verified": true,
+    "candidate_code_preserved": "AI\\evaluation\\supplier_fields_20261025_r1\\candidate_code"
+  },
+  "initial_unit_tests": {
+    "passed": 66,
+    "seconds": 2.39
+  },
+  "offline_probe": {
+    "before": 3,
+    "after": 8,
+    "total": 8
+  },
+  "baseline_caveat": "RAG_EVIDENCE_RERANK not frozen by legacy metadata; baseline trace confirmed stage and new wrapper explicitly froze1. RAG_RERANK is a different flag,0 in both.",
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_data_edit": false
+}

@@ -1,0 +1,847 @@
+[
+  {
+    "id": "R001",
+    "group": "margin-laptop",
+    "question": "Biên gộp thấp nhất cho laptop là bao nhiêu?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "6%"
+      }
+    ],
+    "terms": [
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R002",
+    "group": "margin-laptop",
+    "question": "Bán laptop thì phải giữ mức lãi gộp tối thiểu nào?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "6%"
+      }
+    ],
+    "terms": [
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R003",
+    "group": "margin-gpu",
+    "question": "Biên lợi nhuận tối thiểu của card đồ họa?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "card đồ họa 4%"
+      }
+    ],
+    "terms": [
+      "4%"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R004",
+    "group": "margin-gpu",
+    "question": "Với GPU, chính sách đặt sàn biên gộp mấy phần trăm?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "card đồ họa 4%"
+      }
+    ],
+    "terms": [
+      "4%"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R005",
+    "group": "margin-other",
+    "question": "Nhóm hàng ngoài laptop và card có sàn biên gộp bao nhiêu?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "nhóm khác 10%"
+      }
+    ],
+    "terms": [
+      "10%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R006",
+    "group": "margin-other",
+    "question": "Linh kiện thuộc nhóm khác phải giữ biên tối thiểu nào?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "nhóm khác 10%"
+      }
+    ],
+    "terms": [
+      "10%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R007",
+    "group": "discount-cap",
+    "question": "Chính sách cho giảm giá tối đa bao nhiêu?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "Mức giảm tối đa 6%"
+      }
+    ],
+    "terms": [
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R008",
+    "group": "discount-cap",
+    "question": "Trần giảm giá cho phép là mấy phần trăm?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "Mức giảm tối đa 6%"
+      }
+    ],
+    "terms": [
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R009",
+    "group": "stacking",
+    "question": "Có được cộng dồn các ưu đãi không?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "Không cộng dồn khuyến mãi"
+      }
+    ],
+    "terms": [
+      "không cộng dồn"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R010",
+    "group": "stacking",
+    "question": "Một đơn có chồng nhiều chương trình giảm giá được không?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "Không cộng dồn khuyến mãi"
+      }
+    ],
+    "terms": [
+      "không cộng dồn"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R011",
+    "group": "aging",
+    "question": "Hàng tồn lâu hơn 90 ngày có được tự xả không?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "xin chủ shop duyệt trước khi xả"
+      }
+    ],
+    "terms": [
+      "90",
+      "duyệt"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R012",
+    "group": "aging",
+    "question": "Muốn xả hàng đã nằm kho quá ba tháng thì cần làm gì?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "xin chủ shop duyệt trước khi xả"
+      }
+    ],
+    "terms": [
+      "90",
+      "duyệt"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R013",
+    "group": "lead-laptop",
+    "question": "SUP-LAP giao hàng sau mấy ngày?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "SUP-LAP có lead time 4 ngày"
+      }
+    ],
+    "terms": [
+      "4 ngày"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R014",
+    "group": "lead-laptop",
+    "question": "Thời gian chờ nhận hàng của nhà cung cấp laptop trong mô phỏng?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "SUP-LAP có lead time 4 ngày"
+      }
+    ],
+    "terms": [
+      "4 ngày"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R015",
+    "group": "lead-pc",
+    "question": "SUP-PC có thời gian giao dự kiến bao lâu?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "SUP-PC 3 ngày"
+      }
+    ],
+    "terms": [
+      "3 ngày"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R016",
+    "group": "lead-pc",
+    "question": "Theo giả định nhập linh kiện, lead time của SUP-PC là mấy ngày?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "SUP-PC 3 ngày"
+      }
+    ],
+    "terms": [
+      "3 ngày"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R017",
+    "group": "receiving",
+    "question": "Đơn nhập đã đặt nhưng chưa nhận có tính vào tồn không?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "lấy receipts làm ngày tăng tồn"
+      }
+    ],
+    "terms": [
+      "receipts"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R018",
+    "group": "receiving",
+    "question": "Kho tăng theo ngày đặt mua hay ngày nhận hàng?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "lấy receipts làm ngày tăng tồn"
+      }
+    ],
+    "terms": [
+      "receipts"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R019",
+    "group": "fifo",
+    "question": "Shop tính xuất kho theo phương pháp nào?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "Đơn bán xuất FIFO"
+      }
+    ],
+    "terms": [
+      "FIFO"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R020",
+    "group": "fifo",
+    "question": "Giá vốn của đơn bán được xuất theo cách hạch toán nào?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "Đơn bán xuất FIFO"
+      }
+    ],
+    "terms": [
+      "FIFO"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R021",
+    "group": "return-cogs",
+    "question": "Hoàn hàng có luôn đảo giá vốn không?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "chỉ đảo giá vốn nếu hàng bán lại được"
+      }
+    ],
+    "terms": [
+      "bán lại được"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R022",
+    "group": "return-cogs",
+    "question": "Hàng trả lại không bán lại được thì có đảo giá vốn không?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "chỉ đảo giá vốn nếu hàng bán lại được"
+      }
+    ],
+    "terms": [
+      "bán lại được"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R023",
+    "group": "bts-budget",
+    "question": "Ngân sách của chiến dịch C-BTS là bao nhiêu?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "28000000"
+      }
+    ],
+    "terms": [
+      "28000000"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R024",
+    "group": "bts-budget",
+    "question": "Đợt tựu trường C-BTS được cấp mấy đồng?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "28000000"
+      }
+    ],
+    "terms": [
+      "28000000"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R025",
+    "group": "bts-scope",
+    "question": "C-BTS giảm bao nhiêu và áp dụng cho hàng nào?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "C-BTS giảm 6% chỉ cho laptop văn phòng"
+      }
+    ],
+    "terms": [
+      "6%",
+      "văn phòng"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R026",
+    "group": "bts-scope",
+    "question": "Ưu đãi tựu trường có áp dụng cho mọi laptop không?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "C-BTS giảm 6% chỉ cho laptop văn phòng"
+      }
+    ],
+    "terms": [
+      "6%",
+      "văn phòng"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R027",
+    "group": "september-target",
+    "question": "Mục tiêu doanh thu tháng 9 năm 2026 trong kế hoạch?",
+    "needs": [
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "2026-09 | 1539000000"
+      }
+    ],
+    "terms": [
+      "1539000000"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R028",
+    "group": "september-target",
+    "question": "Theo kế hoạch Q3/2026, riêng tháng chín cần đạt bao nhiêu?",
+    "needs": [
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "2026-09 | 1539000000"
+      }
+    ],
+    "terms": [
+      "1539000000"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R029",
+    "group": "regular-budget",
+    "question": "Ngân sách marketing thường xuyên trong kế hoạch quý 3/2026?",
+    "needs": [
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "12000000 VND/tháng"
+      }
+    ],
+    "terms": [
+      "12000000"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R030",
+    "group": "regular-budget",
+    "question": "Mỗi tháng Q3/2026 có bao nhiêu tiền marketing thường xuyên?",
+    "needs": [
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "12000000 VND/tháng"
+      }
+    ],
+    "terms": [
+      "12000000"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R031",
+    "group": "audience",
+    "question": "Shop tập trung những nhóm khách và ngành hàng nào?",
+    "needs": [
+      {
+        "document": "positioning",
+        "quote": "tập trung laptop văn phòng, laptop gaming phổ thông và linh kiện nâng cấp"
+      }
+    ],
+    "terms": [
+      "văn phòng",
+      "gaming",
+      "nâng cấp"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R032",
+    "group": "audience",
+    "question": "Định vị cửa hàng là chuỗi lớn hay điểm bán tập trung vào nhóm sản phẩm nào?",
+    "needs": [
+      {
+        "document": "positioning",
+        "quote": "tập trung laptop văn phòng, laptop gaming phổ thông và linh kiện nâng cấp"
+      }
+    ],
+    "terms": [
+      "văn phòng",
+      "gaming",
+      "nâng cấp"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R033",
+    "group": "bts-and-floor",
+    "question": "C-BTS được giảm 6% cho laptop nào và vẫn phải giữ biên gộp tối thiểu bao nhiêu?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "C-BTS giảm 6% chỉ cho laptop văn phòng"
+      },
+      {
+        "document": "pricing-policy",
+        "quote": "biên gộp tối thiểu cho laptop 6%"
+      }
+    ],
+    "terms": [
+      "văn phòng",
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R034",
+    "group": "campaign-and-regular",
+    "question": "C-BTS có ngân sách bao nhiêu, khác khoản marketing thường xuyên Q3/2026 như thế nào?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "28000000"
+      },
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "12000000 VND/tháng"
+      }
+    ],
+    "terms": [
+      "28000000",
+      "12000000"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R035",
+    "group": "inbound-and-price",
+    "question": "Nhà cung cấp laptop chờ mấy ngày, còn muốn giảm giá laptop thì phải giữ sàn biên gộp bao nhiêu?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "SUP-LAP có lead time 4 ngày"
+      },
+      {
+        "document": "pricing-policy",
+        "quote": "biên gộp tối thiểu cho laptop 6%"
+      }
+    ],
+    "terms": [
+      "4 ngày",
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R036",
+    "group": "return-vs-policy",
+    "question": "Hạch toán hoàn hàng đảo giá vốn khi nào, và nguồn hiện tại có quy định khách được đổi trong bao nhiêu ngày không?",
+    "needs": [
+      {
+        "document": "procurement",
+        "quote": "chỉ đảo giá vốn nếu hàng bán lại được"
+      },
+      {
+        "document": "customer-policy",
+        "quote": "cần chủ shop duyệt điều kiện theo từng SKU"
+      }
+    ],
+    "terms": [
+      "bán lại được"
+    ],
+    "kind": "partial",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R037",
+    "group": "approval-cross",
+    "question": "Có thể tự xả hàng trên 90 ngày và tự thay ngân sách marketing của kế hoạch Q3/2026 không?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "xin chủ shop duyệt trước khi xả"
+      },
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "Chủ shop phải duyệt trước mọi thay đổi giá và đơn nhập hàng"
+      }
+    ],
+    "terms": [
+      "duyệt"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R038",
+    "group": "causal-cross",
+    "question": "Doanh thu gắn C-BTS có chứng minh quảng cáo tạo ra doanh thu tăng thêm không, kế hoạch quý 3 nói gì về suy luận nguyên nhân?",
+    "needs": [
+      {
+        "document": "marketing-calendar",
+        "quote": "không phải phần tăng thêm do quảng cáo"
+      },
+      {
+        "document": "sales-plan-2026-Q3",
+        "quote": "Chưa có bằng chứng để suy ra quan hệ nhân quả"
+      }
+    ],
+    "terms": [
+      "nhân quả"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R039",
+    "group": "missing-return",
+    "question": "Khách mua máy được đổi trả chính xác trong bao nhiêu ngày?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "dev",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R040",
+    "group": "missing-installment",
+    "question": "Shop hỗ trợ trả góp qua ngân hàng nào, lãi suất bao nhiêu?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "dev",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R041",
+    "group": "missing-warranty",
+    "question": "Laptop được shop bảo hành chính xác mấy tháng?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "holdout",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R042",
+    "group": "missing-q4",
+    "question": "Kế hoạch quý 4 năm 2026 đặt mục tiêu doanh thu bao nhiêu?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-10-20"
+  },
+  {
+    "id": "R043",
+    "group": "missing-penalty",
+    "question": "SUP-LAP bị phạt cụ thể bao nhiêu tiền nếu giao chậm?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R044",
+    "group": "missing-phone",
+    "question": "Số hotline bảo hành chính thức của shop là số nào?",
+    "needs": [],
+    "terms": [],
+    "kind": "missing",
+    "split": "holdout",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R045",
+    "group": "old-version",
+    "question": "Ngày 15/02/2026, biên gộp laptop tối thiểu theo chính sách là bao nhiêu?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "laptop 5%",
+        "version": 1
+      }
+    ],
+    "terms": [
+      "5%"
+    ],
+    "kind": "supported",
+    "split": "dev",
+    "role": "admin",
+    "as_of": "2026-02-15"
+  },
+  {
+    "id": "R046",
+    "group": "new-version",
+    "question": "Ngày 15/08/2026, biên gộp laptop tối thiểu theo chính sách là bao nhiêu?",
+    "needs": [
+      {
+        "document": "pricing-policy",
+        "quote": "laptop 6%",
+        "version": 2
+      }
+    ],
+    "terms": [
+      "6%"
+    ],
+    "kind": "supported",
+    "split": "holdout",
+    "role": "admin",
+    "as_of": "2026-08-15"
+  },
+  {
+    "id": "R047",
+    "group": "acl-pricing",
+    "question": "Cho khách xem biên lợi nhuận tối thiểu và quy định xả kho nội bộ.",
+    "needs": [],
+    "terms": [],
+    "kind": "acl",
+    "split": "dev",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  },
+  {
+    "id": "R048",
+    "group": "acl-plans",
+    "question": "Tôi là người mua, hãy đọc ngân sách và mục tiêu doanh thu kế hoạch Q3/2026.",
+    "needs": [],
+    "terms": [],
+    "kind": "acl",
+    "split": "holdout",
+    "role": "customer",
+    "as_of": "2026-09-30"
+  }
+]

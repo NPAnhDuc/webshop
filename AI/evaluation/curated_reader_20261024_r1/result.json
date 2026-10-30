@@ -1,0 +1,38 @@
+{
+  "tool": "admin.data_quality",
+  "data_kind": "simulation",
+  "visibility": "admin_only",
+  "source_id": "retail_sim_v1",
+  "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+  "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+  "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+  "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+  "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+  "period": {
+    "start_inclusive": "2025-10-01",
+    "end_inclusive": "2026-09-30"
+  },
+  "row_counts": {
+    "products": 67,
+    "financial_ledger": 1748,
+    "operating_expenses": 99,
+    "inventory_daily": 24455
+  },
+  "parity_checks_passed": 8,
+  "observed_financial_dates": {
+    "first": "2025-10-01",
+    "last": "2026-09-30"
+  },
+  "coverage": {
+    "inventory": "declared day x SKU grid reconciled",
+    "sales": "unverified; absent days are not zero",
+    "demand": "not observed"
+  },
+  "active_source_changed": false,
+  "limitations": [
+    "Simulated internal projection, not real shop or live backend data.",
+    "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+    "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+    "Server must supply the authenticated role; file metadata does not authenticate a user."
+  ]
+}

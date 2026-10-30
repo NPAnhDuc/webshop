@@ -1,0 +1,113 @@
+[
+  {
+    "question": 1,
+    "document": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+    "required_substrings": [
+      "RAM 16 GB"
+    ],
+    "found": true
+  },
+  {
+    "question": 2,
+    "document": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+    "required_substrings": [
+      "độ phân giải 1920x1080"
+    ],
+    "found": true
+  },
+  {
+    "question": 4,
+    "document": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+    "required_substrings": [
+      "cân nặng 2.4 kg"
+    ],
+    "found": true
+  },
+  {
+    "question": 5,
+    "document": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+    "required_substrings": [
+      "cổng HDMI 1"
+    ],
+    "found": true
+  },
+  {
+    "question": 26,
+    "document": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+    "required_substrings": [
+      "cân nặng 2.4 kg"
+    ],
+    "found": true
+  },
+  {
+    "question": 26,
+    "document": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1",
+    "required_substrings": [
+      "cân nặng 1.7 kg"
+    ],
+    "found": true
+  },
+  {
+    "question": 37,
+    "document": "pricing-policy",
+    "required_substrings": [
+      "Mức giảm tối đa 6%"
+    ],
+    "found": true
+  },
+  {
+    "question": 38,
+    "document": "pricing-policy",
+    "required_substrings": [
+      "card đồ họa 4%",
+      "nhóm khác 10%"
+    ],
+    "found": true
+  },
+  {
+    "question": 39,
+    "document": "pricing-policy",
+    "required_substrings": [
+      "không cộng dồn"
+    ],
+    "found": true
+  },
+  {
+    "question": 40,
+    "document": "pricing-policy",
+    "required_substrings": [
+      "Hàng tồn trên 90 ngày",
+      "xin chủ shop duyệt"
+    ],
+    "found": false
+  },
+  {
+    "question": 41,
+    "document": "procurement",
+    "required_substrings": [
+      "SUP-LAP có lead time 4 ngày"
+    ],
+    "found": false
+  },
+  {
+    "question": 43,
+    "document": "monthly-report-2026-09",
+    "required_substrings": [
+      "1189908000",
+      "1010759000",
+      "179149000",
+      "110888988",
+      "68260012"
+    ],
+    "found": true
+  },
+  {
+    "question": 44,
+    "document": "monthly-report-2026-09",
+    "required_substrings": [
+      "1189908000",
+      "Đơn hàng: 131"
+    ],
+    "found": true
+  }
+]

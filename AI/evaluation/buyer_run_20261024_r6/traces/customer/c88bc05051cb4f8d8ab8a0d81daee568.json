@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "c88bc05051cb4f8d8ab8a0d81daee568",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:45:37.774718+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Độ phủ màu sRGB và độ sáng màn hình nói lên điều gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Độ phủ màu sRGB và độ sáng màn hình nói lên điều gì?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: độ sáng màn hình nói lên điều gì.",
+        "reason": "sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: độ sáng màn hình nói lên điều gì.",
+        "answerability": "partial",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-monitor-photo",
+            "title": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+            "source": "tech-monitor-photo-v1.md",
+            "version": 1,
+            "doc_type": "buying_guide",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "d3c6619cc247e5fa00f1a7cf2d54f6dcd93f9da6e51f91db0596a90c6593f084",
+            "text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+            "section": 1,
+            "chunk_id": "8d7aa0b189527e9f3d6c0e7d7c1c1270fd8614d82b3c9cce6aeb8ff016fff35f",
+            "score": 0.04918,
+            "dense_score": 0.5691,
+            "lexical_score": 0.3075,
+            "bm25_score": 27.4631,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 5.300648000004003
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: độ sáng màn hình nói lên điều gì.",
+    "sources": [
+      {
+        "document_id": "tech-monitor-photo",
+        "title": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+        "source": "tech-monitor-photo-v1.md",
+        "version": 1,
+        "doc_type": "buying_guide",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "d3c6619cc247e5fa00f1a7cf2d54f6dcd93f9da6e51f91db0596a90c6593f084",
+        "text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+        "section": 1,
+        "chunk_id": "8d7aa0b189527e9f3d6c0e7d7c1c1270fd8614d82b3c9cce6aeb8ff016fff35f",
+        "score": 0.04918,
+        "dense_score": 0.5691,
+        "lexical_score": 0.3075,
+        "bm25_score": 27.4631,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.831944699995802
+}

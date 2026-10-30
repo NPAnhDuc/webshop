@@ -1,0 +1,7 @@
+{
+  "state": "old100_regression_passed_continue_development",
+  "production_accepted": false,
+  "keep_candidate_for_next_regression": true,
+  "reserved_opened": false,
+  "reason": "5same-case semantic fixes,0PASS-to-FAIL on24; 7failures remain. old100_patch7 completed87PASS/13FAIL, no PASS-to-FAIL versus patch5. Keep for development, not production acceptance; broader479 not rerun. Wrong-action answers onD15/D16 remain, no write executed."
+}

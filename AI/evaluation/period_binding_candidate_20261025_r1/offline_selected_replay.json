@@ -1,0 +1,4955 @@
+{
+  "cases": [
+    {
+      "id": "Q0007",
+      "before": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202512_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202512_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_1"
+          ],
+          "bound_ids": [
+            "revenue_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_2"
+          ],
+          "bound_ids": [
+            "revenue_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0025",
+      "before": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_1"
+          ],
+          "bound_ids": [
+            "returns_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0077",
+      "before": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202605_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202605_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_2"
+          ],
+          "bound_ids": [
+            "returns_202605_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0092",
+      "before": {
+        "P1": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1",
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": [
+            "returns_202605_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1",
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": [
+            "returns_202603_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0134",
+      "before": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202606_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202606_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_1"
+          ],
+          "bound_ids": [
+            "revenue_202606_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0148",
+      "before": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0162",
+      "before": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_2"
+          ],
+          "bound_ids": [
+            "revenue_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0172",
+      "before": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202602_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202602_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_1"
+          ],
+          "bound_ids": [
+            "returns_202602_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0181",
+      "before": {
+        "P1": [
+          "returns_202609_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [
+            "returns_202601_2"
+          ],
+          "rejected_ids": [
+            "returns_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [
+            "returns_202609_1"
+          ],
+          "rejected_ids": [
+            "returns_202601_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0190",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0199",
+      "before": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0208",
+      "before": {
+        "P1": [
+          "returns_202602_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202602_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_1"
+          ],
+          "bound_ids": [
+            "returns_202602_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0217",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0235",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202512_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202512_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0244",
+      "before": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202605_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202605_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202605_2"
+          ],
+          "added_ids": [
+            "revenue_202605_2"
+          ],
+          "rejected_ids": [
+            "revenue_202608_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_2"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [
+            "revenue_202608_1"
+          ],
+          "rejected_ids": [
+            "revenue_202605_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0253",
+      "before": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_1"
+          ],
+          "bound_ids": [
+            "returns_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0261",
+      "before": {
+        "P1": [
+          "revenue_202609_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202606_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [
+            "revenue_202606_2"
+          ],
+          "rejected_ids": [
+            "revenue_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [
+            "revenue_202609_1"
+          ],
+          "rejected_ids": [
+            "revenue_202606_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0269",
+      "before": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202606_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [
+            "revenue_202606_2"
+          ],
+          "rejected_ids": [
+            "revenue_202608_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [
+            "revenue_202608_1"
+          ],
+          "rejected_ids": [
+            "revenue_202606_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0277",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_2"
+          ],
+          "bound_ids": [
+            "returns_202607_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0284",
+      "before": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_2"
+          ],
+          "bound_ids": [
+            "returns_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0298",
+      "before": {
+        "P1": [
+          "returns_202609_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202608_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [
+            "returns_202608_2"
+          ],
+          "rejected_ids": [
+            "returns_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [
+            "returns_202609_1"
+          ],
+          "rejected_ids": [
+            "returns_202608_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0305",
+      "before": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_2"
+          ],
+          "bound_ids": [
+            "revenue_202511_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0312",
+      "before": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [
+            "revenue_202604_2"
+          ],
+          "rejected_ids": [
+            "revenue_202608_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [
+            "revenue_202608_1"
+          ],
+          "rejected_ids": [
+            "revenue_202604_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0319",
+      "before": {
+        "P1": [
+          "returns_202606_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202606_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_1"
+          ],
+          "bound_ids": [
+            "returns_202606_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0340",
+      "before": {
+        "P1": [
+          "returns_202512_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_2"
+          ],
+          "bound_ids": [
+            "returns_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0347",
+      "before": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_1"
+          ],
+          "bound_ids": [
+            "returns_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0360",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0365",
+      "before": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [
+            "revenue_202602_2"
+          ],
+          "rejected_ids": [
+            "revenue_202607_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [
+            "revenue_202607_1"
+          ],
+          "rejected_ids": [
+            "revenue_202602_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0370",
+      "before": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [
+            "revenue_202601_2"
+          ],
+          "rejected_ids": [
+            "revenue_202605_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [
+            "revenue_202605_1"
+          ],
+          "rejected_ids": [
+            "revenue_202601_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0375",
+      "before": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_2"
+          ],
+          "bound_ids": [
+            "revenue_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0380",
+      "before": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0385",
+      "before": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_2"
+          ],
+          "bound_ids": [
+            "returns_202607_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0390",
+      "before": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0395",
+      "before": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_1"
+          ],
+          "bound_ids": [
+            "revenue_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0400",
+      "before": {
+        "P1": [
+          "returns_202601_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_1"
+          ],
+          "bound_ids": [
+            "returns_202601_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_2"
+          ],
+          "bound_ids": [
+            "returns_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0405",
+      "before": {
+        "P1": [
+          "revenue_202603_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202603_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_1"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [
+            "revenue_202602_2"
+          ],
+          "rejected_ids": [
+            "revenue_202603_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202603_1"
+          ],
+          "added_ids": [
+            "revenue_202603_1"
+          ],
+          "rejected_ids": [
+            "revenue_202602_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0415",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0425",
+      "before": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0430",
+      "before": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0435",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202605_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202605_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_2"
+          ],
+          "bound_ids": [
+            "returns_202605_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0445",
+      "before": {
+        "P1": [
+          "revenue_202609_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [
+            "revenue_202601_2"
+          ],
+          "rejected_ids": [
+            "revenue_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [
+            "revenue_202609_1"
+          ],
+          "rejected_ids": [
+            "revenue_202601_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0450",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202602_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0455",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_2"
+          ],
+          "bound_ids": [
+            "returns_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0460",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_2"
+          ],
+          "bound_ids": [
+            "returns_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0470",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_2"
+          ],
+          "bound_ids": [
+            "returns_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0480",
+      "before": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0495",
+      "before": {
+        "P1": [
+          "revenue_202609_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [
+            "revenue_202602_2"
+          ],
+          "rejected_ids": [
+            "revenue_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [
+            "revenue_202609_1"
+          ],
+          "rejected_ids": [
+            "revenue_202602_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0500",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202512_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202512_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_2"
+          ],
+          "bound_ids": [
+            "revenue_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0505",
+      "before": {
+        "P1": [
+          "revenue_202603_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202603_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_1"
+          ],
+          "bound_ids": [
+            "revenue_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0510",
+      "before": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_2"
+          ],
+          "bound_ids": [
+            "revenue_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0515",
+      "before": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [
+            "revenue_202604_2"
+          ],
+          "rejected_ids": [
+            "revenue_202607_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [
+            "revenue_202607_1"
+          ],
+          "rejected_ids": [
+            "revenue_202604_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0526",
+      "before": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0528",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202604_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0530",
+      "before": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0532",
+      "before": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202603_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202603_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_2"
+          ],
+          "bound_ids": [
+            "revenue_202511_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_1"
+          ],
+          "bound_ids": [
+            "revenue_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0534",
+      "before": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_2"
+          ],
+          "bound_ids": [
+            "revenue_202511_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0536",
+      "before": {
+        "P1": [
+          "returns_202606_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202606_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_2"
+          ],
+          "bound_ids": [
+            "returns_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_1"
+          ],
+          "bound_ids": [
+            "returns_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0538",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0540",
+      "before": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202604_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202604_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_1"
+          ],
+          "bound_ids": [
+            "revenue_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0544",
+      "before": {
+        "P1": [
+          "revenue_202605_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202605_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_2"
+          ],
+          "bound_ids": [
+            "revenue_202605_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0546",
+      "before": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202511_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_1"
+          ],
+          "bound_ids": [
+            "revenue_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0550",
+      "before": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_2"
+          ],
+          "bound_ids": [
+            "revenue_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0552",
+      "before": {
+        "P1": [
+          "returns_202601_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_1"
+        ],
+        "P2": [
+          "returns_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_1"
+          ],
+          "bound_ids": [
+            "returns_202601_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_2"
+          ],
+          "bound_ids": [
+            "returns_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0553",
+      "before": {
+        "P1": [
+          "returns_202604_2"
+        ],
+        "P2": [
+          "returns_202606_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202604_2"
+        ],
+        "P2": [
+          "returns_202606_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_2"
+          ],
+          "bound_ids": [
+            "returns_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202606_1"
+          ],
+          "bound_ids": [
+            "returns_202606_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0554",
+      "before": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202512_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_2"
+          ],
+          "bound_ids": [
+            "revenue_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0555",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0556",
+      "before": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_1"
+          ],
+          "bound_ids": [
+            "returns_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0557",
+      "before": {
+        "P1": [
+          "returns_202609_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202603_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [
+            "returns_202603_2"
+          ],
+          "rejected_ids": [
+            "returns_202609_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [
+            "returns_202609_1"
+          ],
+          "rejected_ids": [
+            "returns_202603_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0558",
+      "before": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202607_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_2"
+          ],
+          "bound_ids": [
+            "returns_202607_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0560",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202512_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202512_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_2"
+          ],
+          "bound_ids": [
+            "returns_202512_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0561",
+      "before": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202603_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202601_2"
+        ],
+        "P2": [
+          "returns_202603_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_1"
+          ],
+          "bound_ids": [
+            "returns_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0563",
+      "before": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202605_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_2"
+          ],
+          "bound_ids": [
+            "returns_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0566",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0567",
+      "before": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202511_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_1"
+        ],
+        "P2": [
+          "revenue_202511_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_1"
+          ],
+          "bound_ids": [
+            "revenue_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-11",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202511_2"
+          ],
+          "bound_ids": [
+            "revenue_202511_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0568",
+      "before": {
+        "P1": [
+          "revenue_202603_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202603_1"
+        ],
+        "P2": [
+          "revenue_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_1"
+          ],
+          "bound_ids": [
+            "revenue_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_2"
+          ],
+          "bound_ids": [
+            "revenue_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0569",
+      "before": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0570",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0571",
+      "before": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_2"
+          ],
+          "bound_ids": [
+            "revenue_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0572",
+      "before": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202603_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202603_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_1"
+          ],
+          "bound_ids": [
+            "revenue_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0573",
+      "before": {
+        "P1": [
+          "returns_202607_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202607_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202607_1"
+          ],
+          "bound_ids": [
+            "returns_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_2"
+          ],
+          "bound_ids": [
+            "returns_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0575",
+      "before": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202601_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_1"
+          ],
+          "bound_ids": [
+            "returns_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202601_2"
+          ],
+          "bound_ids": [
+            "returns_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0576",
+      "before": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202511_1"
+        ],
+        "P2": [
+          "returns_202603_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_2"
+          ],
+          "bound_ids": [
+            "returns_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0577",
+      "before": {
+        "P1": [
+          "revenue_202512_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202512_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_1"
+          ],
+          "bound_ids": [
+            "revenue_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0578",
+      "before": {
+        "P1": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202602_2"
+        ],
+        "P2": [
+          "returns_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1",
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": [
+            "returns_202605_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1",
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": [
+            "returns_202602_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0579",
+      "before": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202606_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202606_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_1"
+          ],
+          "bound_ids": [
+            "revenue_202606_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0580",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202511_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202511_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-11",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202511_1"
+          ],
+          "bound_ids": [
+            "returns_202511_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0583",
+      "before": {
+        "P1": [
+          "returns_202603_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202603_1"
+        ],
+        "P2": [
+          "returns_202608_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_1"
+          ],
+          "bound_ids": [
+            "returns_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202608_2"
+          ],
+          "bound_ids": [
+            "returns_202608_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0584",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202605_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202605_1"
+          ],
+          "bound_ids": [
+            "returns_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0585",
+      "before": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202602_2"
+        ],
+        "P2": [
+          "revenue_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202602_2"
+          ],
+          "added_ids": [
+            "revenue_202602_2"
+          ],
+          "rejected_ids": [
+            "revenue_202605_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_2"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [
+            "revenue_202605_1"
+          ],
+          "rejected_ids": [
+            "revenue_202602_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0586",
+      "before": {
+        "P1": [
+          "revenue_202605_1"
+        ],
+        "P2": [
+          "revenue_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [
+            "revenue_202604_2"
+          ],
+          "rejected_ids": [
+            "revenue_202605_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [
+            "revenue_202605_1"
+          ],
+          "rejected_ids": [
+            "revenue_202604_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0587",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202603_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202603_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202603_1"
+          ],
+          "bound_ids": [
+            "returns_202603_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0588",
+      "before": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_2"
+        ],
+        "P2": [
+          "returns_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_2"
+          ],
+          "bound_ids": [
+            "returns_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_1"
+          ],
+          "bound_ids": [
+            "returns_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0589",
+      "before": {
+        "P1": [
+          "revenue_202607_1"
+        ],
+        "P2": [
+          "revenue_202606_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202606_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202606_2"
+          ],
+          "added_ids": [
+            "revenue_202606_2"
+          ],
+          "rejected_ids": [
+            "revenue_202607_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202606_2"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [
+            "revenue_202607_1"
+          ],
+          "rejected_ids": [
+            "revenue_202606_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0590",
+      "before": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202604_2"
+        ],
+        "P2": [
+          "revenue_202609_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202604_2"
+          ],
+          "bound_ids": [
+            "revenue_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202609_1"
+          ],
+          "bound_ids": [
+            "revenue_202609_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0591",
+      "before": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202605_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202510_2"
+        ],
+        "P2": [
+          "revenue_202605_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202510_2"
+          ],
+          "bound_ids": [
+            "revenue_202510_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202605_1"
+          ],
+          "bound_ids": [
+            "revenue_202605_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0592",
+      "before": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202602_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202601_2"
+        ],
+        "P2": [
+          "revenue_202602_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202602_1"
+          ],
+          "bound_ids": [
+            "revenue_202602_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0594",
+      "before": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202512_1"
+        ],
+        "P2": [
+          "returns_202604_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202512_1"
+          ],
+          "bound_ids": [
+            "returns_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_2"
+          ],
+          "bound_ids": [
+            "returns_202604_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0595",
+      "before": {
+        "P1": [
+          "revenue_202608_1"
+        ],
+        "P2": [
+          "revenue_202603_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202603_2"
+        ],
+        "P2": [
+          "revenue_202608_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202608_1"
+          ],
+          "bound_ids": [
+            "revenue_202603_2"
+          ],
+          "added_ids": [
+            "revenue_202603_2"
+          ],
+          "rejected_ids": [
+            "revenue_202608_1"
+          ]
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_2"
+          ],
+          "bound_ids": [
+            "revenue_202608_1"
+          ],
+          "added_ids": [
+            "revenue_202608_1"
+          ],
+          "rejected_ids": [
+            "revenue_202603_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q0597",
+      "before": {
+        "P1": [
+          "revenue_202603_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202603_2"
+        ],
+        "P2": [
+          "revenue_202607_1"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202603_2"
+          ],
+          "bound_ids": [
+            "revenue_202603_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202607_1"
+          ],
+          "bound_ids": [
+            "revenue_202607_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0598",
+      "before": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202602_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202510_1"
+        ],
+        "P2": [
+          "returns_202602_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202510_1"
+          ],
+          "bound_ids": [
+            "returns_202510_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202602_2"
+          ],
+          "bound_ids": [
+            "returns_202602_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0599",
+      "before": {
+        "P1": [
+          "revenue_202512_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "revenue_202512_1"
+        ],
+        "P2": [
+          "revenue_202601_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202512_1"
+          ],
+          "bound_ids": [
+            "revenue_202512_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "metric": "revenue",
+          "original_ids": [
+            "revenue_202601_2"
+          ],
+          "bound_ids": [
+            "revenue_202601_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    },
+    {
+      "id": "Q0600",
+      "before": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "after": {
+        "P1": [
+          "returns_202604_1"
+        ],
+        "P2": [
+          "returns_202609_2"
+        ]
+      },
+      "trace": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202604_1"
+          ],
+          "bound_ids": [
+            "returns_202604_1"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "metric": "returned_units",
+          "original_ids": [
+            "returns_202609_2"
+          ],
+          "bound_ids": [
+            "returns_202609_2"
+          ],
+          "added_ids": [],
+          "rejected_ids": []
+        }
+      ]
+    }
+  ],
+  "count": 102,
+  "parts": 204,
+  "exact_period_parts": 204,
+  "model_calls": 0,
+  "note": "Reconstructed only selected source-owned numeric claims; no model inference or training. This verifies rebinding logic, not new end-to-end answers."
+}

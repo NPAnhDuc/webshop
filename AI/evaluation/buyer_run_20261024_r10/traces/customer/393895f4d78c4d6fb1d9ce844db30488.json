@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "393895f4d78c4d6fb1d9ce844db30488",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T16:39:23.029445+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "TDP có phải chính là điện năng máy luôn tiêu thụ không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "TDP có phải chính là điện năng máy luôn tiêu thụ không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]",
+        "reason": "Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-ryzen9800x3d",
+            "title": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải",
+            "source": "tech-ryzen9800x3d-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "5f596e59a51d8888155e781e2ab8747c521fcca8e2097ea65eb7c1b1b02a00ef",
+            "text": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W. Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy. Không suy ra mức FPS của một PC chỉ từ các thông số này.\n\nNguồn: https://www.amd.com/en/partner/articles/ryzen-9000-series-processors.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W. Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy. Không suy ra mức FPS của một PC chỉ từ các thông số này.\n\nNguồn: https://www.amd.com/en/partner/articles/ryzen-9000-series-processors.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải",
+            "section": 1,
+            "chunk_id": "3e1f6eff0f957390b0f2f159952669bb6b7dd503ff24495e8101d24be788c450",
+            "score": 0.04767,
+            "dense_score": 0.3914,
+            "lexical_score": 0.1471,
+            "bm25_score": 8.5742,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.711065599985886
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-ryzen9800x3d",
+        "title": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải",
+        "source": "tech-ryzen9800x3d-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "5f596e59a51d8888155e781e2ab8747c521fcca8e2097ea65eb7c1b1b02a00ef",
+        "text": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W. Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy. Không suy ra mức FPS của một PC chỉ từ các thông số này.\n\nNguồn: https://www.amd.com/en/partner/articles/ryzen-9000-series-processors.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W. Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy. Không suy ra mức FPS của một PC chỉ từ các thông số này.\n\nNguồn: https://www.amd.com/en/partner/articles/ryzen-9000-series-processors.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Ryzen 7 9800X3D: thông số và giới hạn diễn giải",
+        "section": 1,
+        "chunk_id": "3e1f6eff0f957390b0f2f159952669bb6b7dd503ff24495e8101d24be788c450",
+        "score": 0.04767,
+        "dense_score": 0.3914,
+        "lexical_score": 0.1471,
+        "bm25_score": 8.5742,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.162893600005191
+}

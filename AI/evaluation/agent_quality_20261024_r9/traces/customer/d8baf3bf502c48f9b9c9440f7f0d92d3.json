@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "d8baf3bf502c48f9b9c9440f7f0d92d3",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T06:39:08.642498+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "So sánh máy thứ hai và thứ ba.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.31147970000165515
+}

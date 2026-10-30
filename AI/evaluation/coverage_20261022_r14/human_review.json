@@ -1,0 +1,1013 @@
+{
+  "Q0113_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0113_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0125_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0125_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite.",
+    "interpretation_limit": "Frozen kit-layout interpretation of boRAM; generic RAM information may be partial in ordinary language. Keep gold unchanged and report potential ambiguity; numerous CPUmodel/corecount and PSUwatts/efficiency errors are unambiguous."
+  },
+  "Q0163_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0163_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0175_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0175_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0191_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0191_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0202_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0202_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0209_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0209_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0210_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0210_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0218_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0218_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0227_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0227_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0246_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0246_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0247_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0247_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite.",
+    "interpretation_limit": "Frozen kit-layout interpretation of boRAM; generic RAM information may be partial in ordinary language. Keep gold unchanged and report potential ambiguity; numerous CPUmodel/corecount and PSUwatts/efficiency errors are unambiguous."
+  },
+  "Q0272_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0272_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0278_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0278_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0292_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0292_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0300_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0300_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0301_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0301_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0314_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0314_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0321_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0321_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0322_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0322_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0327_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0327_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0329_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0329_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0334_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0334_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0343_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0343_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0356_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0356_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0357_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0357_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0368_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0368_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0373_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0373_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite.",
+    "interpretation_limit": "Frozen kit-layout interpretation of boRAM; generic RAM information may be partial in ordinary language. Keep gold unchanged and report potential ambiguity; numerous CPUmodel/corecount and PSUwatts/efficiency errors are unambiguous."
+  },
+  "Q0381_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0381_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0382_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0382_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0383_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0383_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0391_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0391_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0392_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0392_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0397_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0397_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0398_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0398_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0401_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0401_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0402_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0402_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0403_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0403_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0406_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0406_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0411_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0411_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0417_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0417_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0422_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0422_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0427_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0427_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0428_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0428_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0432_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0432_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0438_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0438_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0442_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0442_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0446_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0446_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0448_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0448_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0462_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0462_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0471_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0471_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0472_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0472_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "False substantive coverage: actual candidate ID contains nearby attribute, not requested one. Read note and original question/history. No gold rewrite."
+  },
+  "Q0478_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0478_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "explicit_unknown",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0486_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0486_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0488_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0488_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0496_recorded": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "answered",
+    "predicted": "answered",
+    "id_issues": {},
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  },
+  "Q0496_contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "expected": "missing",
+    "predicted": "missing",
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Reviewed status, every returned ID/paragraph and note; candidate-ID ownership intact. Unknown/missing confusion retained in three-state metric; no factual correctness inference."
+  }
+}

@@ -1,0 +1,13 @@
+# Patch8 bị loại sau hồi quy100
+
+Cùng100câu/gold theo byte vàđồnghồ20/10/2026,đã hoàn tất100/integrityunchanged=true. Theo cùngrubric cũ: **87→88PASS nghĩa**,khách48/50,admin40/50. SửaC35(phạmviOLEDTV/laptop)vàA20(leadtimeđãcó/MOQchưacó),nhưng **A36từPASS→FAIL**: mất ngày15/1–10/2/2026vàngânsách18000000VNDcủaC-TETdù nguồn vẫn có. A35vốnFAILnaycònlạcchủđềchiếndịchsanggiávốntháng7. A34vẫncóbảngđúngnhưngthêmbáocáothángvàtựnóithiếunhữngýsẵncó.
+
+Quyết định: **loại promptpatch8,phụchồi grounded_rag.py đúngbytepatch7** từcontext_revision_20261021_r3/patch8_before_code/. Toàn bộhashbot/app/runnerkhớpmốcold100_patch7. Giữtestfixturecùngclocklocal_today/as_ofđãsửalượctrước;khôngđổilogicsảnphẩm. Snapshotbảnthửvàtesttrướckhiphụchồinằmtạisource_snapshot/. Khôngcoigaintổng1câulàđủbùchomấtthôngtinchiếndịchđãtrảđược,khôngcherrypickchỉ24targeted.
+
+89answer/action/sourceobjects giốngpatch7,kếthừareviewcóprovenance;11thayđổiđượcđọclại,13FAILcũđượcràlại. C35/A20sửađúng;C17/A17/A21chỉkhácsourceobjects;C33vẫncóthôngtinApplechính;cácguardC43/A48giữnguyênPASStheocùngrubricvìkhôngcamkếtmã/khôngtạoPII. A34trướccócontradictionvẫnđượcPASSvềnộidungchính,theotiêuchícũgiữnguyênvàghirõsecondaryissue;khôngsiếttiêuchísaulượtchạyđểchỉnhđiểm. A44vẫndeferredtoànbộ,khôngđọcràngbuộc.
+
+212tríchđoạnđúngnguồncấptheorunner,0integrityissues/0privateleaks;điềunàykhôngđánhgiáđúngý. Median5.160s,tổng531.440sso4.875/486.160củapatch7;cache/warmupkhôngkiểmsoát,khônggánchênhlệchchoảnhhưởngriêngprompt.
+
+Mãactivephụchồi làpatch7: **17/24developmentvà87/100hồiquyđãđo**;18/24và88/100làbảnpatch8đãloại,khôngbáothànhnănglựchiệntại.600/112validationvẫncủapatch5,367developmentcũchưachấmnghĩađủ.24reservedchưahỏi,121cũđãmở,chưaproduction-accepted/chưarerun479trênpatch7.
+
+Lượtnày1batch100,khôngthêmnguồn/finetune/paidAPI/subagents/deploy. Unitphụchồig tạiAI/runtime/tests-quality-p8-rollback.log. Bướcsaukhôngthửlạipromptdàiđãloại:chọnmộtnguyênnhânkhácnhưthamchiếusảnphẩmchưađượcràngbuộckhikhôngcólịchsử,tránhtrảbàithuậtngữthaythôngsốmáy. Cóđốichứnglịchsử/modelđãrõ,mộtsửa+unit+1batch24developmentcùnggold;khôngmởreservedđểvá.

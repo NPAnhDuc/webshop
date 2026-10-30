@@ -1,0 +1,8 @@
+{
+  "targeted_passed": 131,
+  "targeted_seconds": 13.36,
+  "log": "AI/runtime/tests-capability-scope-r2b.log",
+  "full_suite_rerun": false,
+  "earlier_r7_full_suite_passed": 409,
+  "initial_collection_attempt": "No tests ran: mistakenly named nonexistent test_turn_trace.py; corrected selection and reran successfully."
+}

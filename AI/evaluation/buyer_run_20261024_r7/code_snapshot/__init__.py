@@ -1,0 +1,1 @@
+"""Vietnamese electronics shop assistant."""

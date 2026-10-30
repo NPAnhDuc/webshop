@@ -1,0 +1,45 @@
+{
+  "cases": 100,
+  "semantic": {
+    "PASS": 85,
+    "FAIL": 15
+  },
+  "roles": {
+    "customer": {
+      "PASS": 45,
+      "FAIL": 5
+    },
+    "admin": {
+      "PASS": 40,
+      "FAIL": 10
+    }
+  },
+  "inherited": 92,
+  "fresh": 8,
+  "changed_ids": [
+    "C03",
+    "C05",
+    "C06",
+    "C29",
+    "C31",
+    "C34",
+    "A15",
+    "A16"
+  ],
+  "fixed_ids": [],
+  "regressed_ids": [
+    "C31",
+    "C34"
+  ],
+  "quote_checks": 206,
+  "quote_issues": [],
+  "private_leaks": [],
+  "evidence_reads": {
+    "product": 14,
+    "reference_fallback": 3,
+    "all_sources": 65
+  },
+  "total_seconds": 469.4,
+  "median_seconds": 4.14,
+  "accepted": false
+}

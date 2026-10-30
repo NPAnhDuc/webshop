@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "52b25e5733404c90ba868ec7164965a2",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:26:43.438370+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Cho 0 laptop dưới20triệu.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn số lượng từ 1 đến 20 sản phẩm giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.2925083000009181
+}

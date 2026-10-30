@@ -1,0 +1,43 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e90233dea13348cb8775026097bf3db7",
+  "parent_trace_id": "7a201b2576cd45d0aeea334e07c8e0b2",
+  "recorded_at": "2026-10-24T06:38:14.125517+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "SKU nào doanh thu cao nhất?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality"
+    }
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality"
+    }
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "unsupported",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Chưa nối công cụ xếp hạng bán hàng theo SKU. Đếm SKU trong danh mục không phải xếp hạng doanh số.",
+    "sources": [],
+    "state_resolution": {
+      "method": "explicit_unsupported_capability",
+      "capability": "sales.rank"
+    }
+  },
+  "error_type": null,
+  "seconds": 0.31154979999701027
+}

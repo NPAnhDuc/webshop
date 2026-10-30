@@ -1,0 +1,9 @@
+{
+  "baseline": "kb3_period_binding_full_r1",
+  "change": "Shared unsupported data.mutate contract and conservative explicit SQL execution intent preflight; never execute writes.",
+  "development_only": true,
+  "RAG_EVIDENCE_RERANK": "1",
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_change": false
+}

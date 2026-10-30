@@ -1,0 +1,17 @@
+{
+  "turns": 84,
+  "records": 84,
+  "role_question_parent_links_passed": true,
+  "q19_catalog_oracle_ids": [
+    "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+    "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+    "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+  ],
+  "q19_actual_ids": [
+    "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+    "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+    "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+  ],
+  "q19_passed": true,
+  "training_allowed": false
+}

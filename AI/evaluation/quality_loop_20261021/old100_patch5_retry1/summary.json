@@ -1,0 +1,43 @@
+{
+  "cases": 100,
+  "semantic_pass": 87,
+  "roles": {
+    "customer": {
+      "PASS": 47,
+      "FAIL": 3
+    },
+    "admin": {
+      "PASS": 40,
+      "FAIL": 10
+    }
+  },
+  "compared_to": "final_v7",
+  "before_pass": 85,
+  "fixed_ids": [
+    "C06",
+    "C44"
+  ],
+  "regressed_ids": [],
+  "failed_ids": [
+    "C29",
+    "C35",
+    "A15",
+    "A20",
+    "A23",
+    "A35",
+    "A39",
+    "A44",
+    "C03",
+    "A29",
+    "A30",
+    "A40",
+    "A50"
+  ],
+  "inherited_reviews": 87,
+  "new_manual_reviews": 13,
+  "quote_checks": 213,
+  "integrity_issues": 0,
+  "median_seconds": 4.93,
+  "total_seconds": 541.55,
+  "validation_opened": false
+}

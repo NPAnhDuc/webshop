@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "39eca4b71523467a8a2b5e6c68c35853",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:44:35.924545+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Tôi thích máy ít ồn hơn cấu hình cao, bot cần hỏi thêm điều gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "clarify",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn chọn hoặc so sánh những model nào? Nếu nhắc máy trước đó, tôi cần một danh sách đã xác định.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.2685111000027973
+}

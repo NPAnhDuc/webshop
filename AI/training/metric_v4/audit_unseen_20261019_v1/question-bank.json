@@ -1,0 +1,786 @@
+[
+  {
+    "group": "unseen-ranking-0",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Trong tháng 2/2026, mặt hàng nào mang về nhiều tiền bán nhất?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-02-01",
+            "end": "2026-03-01",
+            "unit": "month",
+            "label": "2026-02"
+          },
+          "metric": "revenue",
+          "limit": 1,
+          "category": "all"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-1",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Cho bảng 3 mẫu laptop dẫn đầu doanh số ở tháng 3/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-03-01",
+            "end": "2026-04-01",
+            "unit": "month",
+            "label": "2026-03"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "laptop"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-2",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Doanh số tháng 4/2026: chọn hai màn hình cao nhất.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-05-01",
+            "unit": "month",
+            "label": "2026-04"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "monitor"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-3",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tháng 5/2026, chuột nào có tiền bán hàng đứng số một?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "metric": "revenue",
+          "limit": 1,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-4",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tìm 2 ổ SSD tạo doanh thu nhiều nhất trong tháng 6/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "internal-hard-drive"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-5",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tháng 7/2026, RAM nào dẫn đầu về doanh số?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "metric": "revenue",
+          "limit": 1,
+          "category": "memory"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-6",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Liệt kê top 3 CPU đóng góp doanh thu tháng 8/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "cpu"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-7",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Lấy 2 bộ nguồn đứng đầu doanh số tháng 9/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-09-01",
+            "end": "2026-10-01",
+            "unit": "month",
+            "label": "2026-09"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "power-supply"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-8",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Xét lượng chiếc bán ròng, laptop nào đứng đầu tháng 2/2026?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-02-01",
+            "end": "2026-03-01",
+            "unit": "month",
+            "label": "2026-02"
+          },
+          "metric": "units",
+          "limit": 1,
+          "category": "laptop"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-9",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Trong tháng 3/2026, ba chuột nào được mua nhiều chiếc nhất?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-03-01",
+            "end": "2026-04-01",
+            "unit": "month",
+            "label": "2026-03"
+          },
+          "metric": "units",
+          "limit": 3,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-10",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Hai mẫu màn hình được bán nhiều cái nhất tháng 4/2026 là gì?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-05-01",
+            "unit": "month",
+            "label": "2026-04"
+          },
+          "metric": "units",
+          "limit": 2,
+          "category": "monitor"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-11",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tháng 5/2026 chọn SSD bán chạy nhất, xét số chiếc.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "metric": "units",
+          "limit": 1,
+          "category": "internal-hard-drive"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-12",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "GPU nào đứng đầu số lượng bán tháng 6/2026?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "units",
+          "limit": 1,
+          "category": "video-card"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-13",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Top 2 vỏ case tháng 7/2026 theo số lượng tiêu thụ.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "metric": "units",
+          "limit": 2,
+          "category": "case"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-14",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tháng 8/2026, bo mạch chủ nào bán nhiều chiếc nhất?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          "metric": "units",
+          "limit": 1,
+          "category": "motherboard"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-15",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Top 3 CPU tháng 9/2026, đếm lượng sản phẩm bán chứ không tính tiền.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-09-01",
+            "end": "2026-10-01",
+            "unit": "month",
+            "label": "2026-09"
+          },
+          "metric": "units",
+          "limit": 3,
+          "category": "cpu"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-16",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Laptop nào đóng góp lãi gộp nhiều nhất tháng 3/2026?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-03-01",
+            "end": "2026-04-01",
+            "unit": "month",
+            "label": "2026-03"
+          },
+          "metric": "gross_profit",
+          "limit": 1,
+          "category": "laptop"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-17",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Top 2 chuột tháng 4/2026 theo tiền lời gộp.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-05-01",
+            "unit": "month",
+            "label": "2026-04"
+          },
+          "metric": "gross_profit",
+          "limit": 2,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-18",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tháng 5/2026, ổ SSD nào có doanh thu trừ giá vốn cao nhất?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "metric": "gross_profit",
+          "limit": 1,
+          "category": "internal-hard-drive"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-ranking-19",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Ba màn hình có lãi gộp cao nhất tháng 6/2026 là mã nào?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "gross_profit",
+          "limit": 3,
+          "category": "monitor"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-correct-money",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Chọn 2 chuột bán nhiều chiếc nhất tháng 2/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-02-01",
+            "end": "2026-03-01",
+            "unit": "month",
+            "label": "2026-02"
+          },
+          "metric": "units",
+          "limit": 2,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Đổi bảng vừa rồi sang doanh số bằng tiền, không đếm chiếc nữa.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-02-01",
+            "end": "2026-03-01",
+            "unit": "month",
+            "label": "2026-02"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Sang tháng 3, các lựa chọn khác giữ nguyên nhé.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-03-01",
+            "end": "2026-04-01",
+            "unit": "month",
+            "label": "2026-03"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Giờ dùng tiền lời gộp để xếp lại chính bảng đó.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-03-01",
+            "end": "2026-04-01",
+            "unit": "month",
+            "label": "2026-03"
+          },
+          "metric": "gross_profit",
+          "limit": 2,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-correct-units",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Xem hai laptop nhiều doanh thu nhất tháng 4/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-05-01",
+            "unit": "month",
+            "label": "2026-04"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "laptop"
+        }
+      },
+      {
+        "question": "Không dùng tiền nữa, chuyển bảng ấy sang số chiếc bán được.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-05-01",
+            "unit": "month",
+            "label": "2026-04"
+          },
+          "metric": "units",
+          "limit": 2,
+          "category": "laptop"
+        }
+      },
+      {
+        "question": "Cũng thế nhưng xem tháng 5 nhé.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "metric": "units",
+          "limit": 2,
+          "category": "laptop"
+        }
+      },
+      {
+        "question": "Tôi muốn tổng doanh thu toàn shop của kỳ vừa xem.",
+        "check": "total",
+        "expected": {
+          "intent": "revenue",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "field": "revenue"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-product-switch",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tổng doanh thu tháng 6/2026.",
+        "check": "total",
+        "expected": {
+          "intent": "revenue",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "field": "revenue"
+        }
+      },
+      {
+        "question": "Trong cùng kỳ, cho ba ổ SSD tạo nhiều doanh thu nhất.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "internal-hard-drive"
+        }
+      },
+      {
+        "question": "Chỉ đổi tháng thành tháng 7, còn bảng và tiêu chí giữ nguyên.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "internal-hard-drive"
+        }
+      },
+      {
+        "question": "Chuyển sang tổng doanh thu cả cửa hàng trong kỳ đó.",
+        "check": "total",
+        "expected": {
+          "intent": "revenue",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "field": "revenue"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-missing-period",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Ba con chuột nào tạo doanh số cao nhất?",
+        "check": "clarify",
+        "expected": {}
+      },
+      {
+        "question": "Lấy tháng 8 năm 2026 đi.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Thế còn kỳ ngay trước tháng ấy?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "metric": "revenue",
+          "limit": 3,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "unseen-acl-ranking",
+    "role": "customer",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tôi là khách mua hàng, muốn xem lợi nhuận gộp cao nhất của từng máy.",
+        "check": "deny",
+        "expected": {}
+      }
+    ]
+  },
+  {
+    "group": "unseen-acl-cost",
+    "role": "customer",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Hãy cho khách biết giá mua vào của chiếc Lenovo LOQ Gaming 15IRH8.",
+        "check": "deny",
+        "expected": {}
+      }
+    ]
+  },
+  {
+    "group": "unseen-no-context",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Của lần ấy thì con nào hơn?",
+        "check": "clarify",
+        "expected": {}
+      }
+    ]
+  },
+  {
+    "group": "unseen-clock",
+    "role": "admin",
+    "today": "2026-01-02",
+    "turns": [
+      {
+        "question": "Tiền bán hàng của tháng trước là bao nhiêu?",
+        "check": "total",
+        "expected": {
+          "intent": "revenue",
+          "period": {
+            "start": "2025-12-01",
+            "end": "2026-01-01",
+            "unit": "month",
+            "label": "2025-12"
+          },
+          "field": "revenue"
+        }
+      },
+      {
+        "question": "Cùng tháng đó, mã nào có doanh thu lớn nhất?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2025-12-01",
+            "end": "2026-01-01",
+            "unit": "month",
+            "label": "2025-12"
+          },
+          "metric": "revenue",
+          "limit": 1,
+          "category": "all"
+        }
+      }
+    ]
+  }
+]

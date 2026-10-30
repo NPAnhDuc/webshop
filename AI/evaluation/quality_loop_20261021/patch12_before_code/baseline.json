@@ -1,0 +1,14 @@
+{
+  "AI/shopbot/grounded_rag.py": "78b0cf822b4f3e574a664ef5373ee3c5ef61c94c574d90432ddfb5ba99f4b323",
+  "AI/tests/test_grounded_rag.py": "cc8f88556e8570de951e3913a4f99fabc8b9821bb5aa7aa530201e8ac3405f0a",
+  "AI/evaluation/history_binding_20261022_r2/bank.json": "9ce368da628680ebb5690aaeda6ec78bd23464d0084bbc44eb12580098477447",
+  "AI/evaluation/history_binding_20261022_r2/gold_sources.json": "cb9b88632e885c84e57eb53af4541e4e7ec89d9717493ae54756dee7d75ea977",
+  "AI/evaluation/history_binding_20261022_r2/results.json": "5f5248a6490877e95b3e8a90319e5199757ef32463100d4b27efb37287c94931",
+  "AI/evaluation/history_binding_20261022_r2/human_review.json": "4cad35407b58aa814f1a20b5c9facc597292e6e00dc9fb1af4d4c2efe50807ee",
+  "AI/evaluation/history_binding_20261022_r2/metadata.json": "ba56c52aed4dfa4b6abe5aa8eda02d80e2b669d83591953be09cf0a0af6187ea",
+  "AI/evaluation/history_binding_20261022_r3_original_explicit/bank.json": "7eefef7a9eb8d7f4b611ec2a7d1127d9478176f38aeb4b316e2071a048f05a16",
+  "AI/evaluation/history_binding_20261022_r3_original_explicit/gold_sources.json": "cb9b88632e885c84e57eb53af4541e4e7ec89d9717493ae54756dee7d75ea977",
+  "AI/evaluation/history_binding_20261022_r3_original_explicit/results.json": "8ced663d2b8c07aea292404f07b1ff7ddc24160b035ab93b6b58712a84d67957",
+  "AI/evaluation/history_binding_20261022_r3_original_explicit/human_review.json": "fd3d9f4877a0af1d802bbf93beb6355d9f84b5455ba54c3aabc1d2689f2559c4",
+  "AI/evaluation/history_binding_20261022_r3_original_explicit/metadata.json": "e1d51a2476d6207f2158ebe4d9bb93b56195f1c839fcb8fee6462a4a0d347a29"
+}

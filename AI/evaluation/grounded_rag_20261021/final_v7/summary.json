@@ -1,0 +1,107 @@
+{
+  "overall": {
+    "total": 100,
+    "passed": 85,
+    "failed": 15
+  },
+  "roles": {
+    "customer": {
+      "total": 50,
+      "passed": 45,
+      "failed": 5
+    },
+    "admin": {
+      "total": 50,
+      "passed": 40,
+      "failed": 10
+    }
+  },
+  "content": {
+    "total": 67,
+    "passed": 55,
+    "failed": 12
+  },
+  "boundaries": {
+    "total": 33,
+    "passed": 30,
+    "failed": 3
+  },
+  "by_behavior": {
+    "answer": {
+      "total": 62,
+      "passed": 53,
+      "failed": 9
+    },
+    "clarify": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "guard": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "history_guard": {
+      "total": 2,
+      "passed": 0,
+      "failed": 2
+    },
+    "missing": {
+      "total": 11,
+      "passed": 10,
+      "failed": 1
+    },
+    "partial": {
+      "total": 5,
+      "passed": 2,
+      "failed": 3
+    }
+  },
+  "failure_causes": {
+    "INCOMPLETE": 6,
+    "SCOPE_LIMITATION": 1,
+    "ROUTING": 3,
+    "WRONG_PRODUCT": 1,
+    "HISTORICAL_SCOPE": 1,
+    "WRONG_FOCUS": 3
+  },
+  "failed_ids": [
+    "C03",
+    "C06",
+    "C29",
+    "C35",
+    "C44",
+    "A15",
+    "A20",
+    "A23",
+    "A29",
+    "A30",
+    "A35",
+    "A39",
+    "A40",
+    "A44",
+    "A50"
+  ],
+  "fail_but_self_full": [
+    "C03",
+    "C06",
+    "C29",
+    "A15",
+    "A29",
+    "A30",
+    "A35",
+    "A39",
+    "A40",
+    "A50"
+  ],
+  "exact_quotes_checked": 195,
+  "quote_errors": [],
+  "customer_private_source_leaks": [],
+  "exceptions": [],
+  "seconds_total": 555.95,
+  "seconds_median": 5.38,
+  "seconds_max": 12.28,
+  "integrity_unchanged": true,
+  "scope": "Authored weakness-focused stress set, manually scored by Codex against frozen rubrics and source snapshots; not real-traffic accuracy or independent human evaluation."
+}

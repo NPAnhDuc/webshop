@@ -1,0 +1,156 @@
+{
+  "Q25": {
+    "operation": "finance",
+    "metric": "revenue",
+    "calls": [
+      {
+        "tool": "admin.finance",
+        "arguments": {
+          "start": "2026-09-01",
+          "end": "2026-10-01"
+        }
+      }
+    ]
+  },
+  "Q26": {
+    "operation": "compare",
+    "metric": "revenue",
+    "calls": [
+      {
+        "tool": "admin.finance",
+        "arguments": {
+          "start": "2026-08-01",
+          "end": "2026-09-01"
+        }
+      },
+      {
+        "tool": "admin.finance",
+        "arguments": {
+          "start": "2026-09-01",
+          "end": "2026-10-01"
+        }
+      }
+    ]
+  },
+  "Q27": {
+    "operation": "compare",
+    "metric": "cost",
+    "reuse_comparison_periods": true
+  },
+  "Q28": {
+    "action": "deferred",
+    "calls": [],
+    "must_not_substitute_whole_shop": true
+  },
+  "Q29": {
+    "capability": "catalog.search",
+    "arguments": {
+      "limit": 3,
+      "category": "ram",
+      "max_price_exclusive": 3000000
+    }
+  },
+  "Q30": {
+    "capability": "catalog.search",
+    "arguments": {
+      "limit": 2,
+      "category": "ssd",
+      "max_price_exclusive": 2000000
+    },
+    "replace_previous_selection": true
+  },
+  "Q31": {
+    "capability": "catalog.compare",
+    "references": "two exact IDs from immediately previous result; if fewer than2 ask clarification"
+  },
+  "Q32": {
+    "capability": "admin.data_quality",
+    "arguments": {},
+    "sales_completeness": "unverified"
+  },
+  "Q33": {
+    "action": "clarify",
+    "calls": [],
+    "must_not_use_dataset_declared_period_as_active_finance_period": true
+  },
+  "Q34": {
+    "capability": "admin.finance",
+    "arguments": {
+      "start": "2026-09-01",
+      "end": "2026-10-01"
+    },
+    "metric": "revenue"
+  },
+  "Q35": {
+    "capability": "admin.data_quality",
+    "arguments": {},
+    "preserve_active_finance_period": true
+  },
+  "Q36": {
+    "capability": "admin.finance",
+    "arguments": {
+      "start": "2026-09-01",
+      "end": "2026-10-01"
+    },
+    "metric": "cost"
+  },
+  "Q37": {
+    "action": "deferred",
+    "calls": [],
+    "capability": "file.transform",
+    "supported": false
+  },
+  "Q38": {
+    "capability": "admin.data_quality",
+    "arguments": {}
+  },
+  "Q39": {
+    "action": "deferred",
+    "calls": [],
+    "capability": "sales.rank",
+    "supported": false
+  },
+  "Q40": {
+    "route": "documents",
+    "capability": "documents.answer",
+    "connection_status": "disabled_until_wired",
+    "must_not_ask_budget": true
+  },
+  "Q41": {
+    "required_capabilities": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "must_disclose_disabled_document_branch": true
+  },
+  "Q42": {
+    "route": "documents",
+    "must_not_reuse_search_budget_as_a_requirement": true
+  },
+  "Q43": {
+    "capability": "admin.finance",
+    "arguments": {
+      "start": "2026-08-01",
+      "end": "2026-09-01"
+    },
+    "metric": "gross_profit"
+  },
+  "Q44": {
+    "action": "denied",
+    "calls": [],
+    "clear_admin_memory_on_role_change": true
+  },
+  "Q45": {
+    "action": "clarify",
+    "calls": [],
+    "must_not_recover_period_from_other_role": true
+  },
+  "Q46": {
+    "capability": "admin.finance",
+    "arguments": {
+      "start": "2026-09-01",
+      "end": "2026-10-01"
+    },
+    "metric": "cost"
+  }
+}

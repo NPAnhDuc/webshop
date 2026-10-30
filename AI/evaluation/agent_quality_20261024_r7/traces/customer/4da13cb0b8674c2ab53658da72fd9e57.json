@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "4da13cb0b8674c2ab53658da72fd9e57",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T05:21:46.403395+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Cho 2 laptop OLED dưới25triệu.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 25000000,
+      "budget_inclusive": false,
+      "limit": 2,
+      "category": "laptop",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.1969992999947863
+}

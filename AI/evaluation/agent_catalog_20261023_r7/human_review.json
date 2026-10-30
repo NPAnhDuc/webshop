@@ -1,0 +1,373 @@
+{
+  "S01": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S02": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S03": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "comparison_order": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S04": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S05": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "comparison_order": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S06": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S07": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S08": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S09": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S10": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S11": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "S12": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "comparison_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N01": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "brand": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N02": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "brand": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N03": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "brand": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N04": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "comparison_order": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N05": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N06": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N07": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N08": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "returned_count": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N09": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N10": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N11": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N12": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N13": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N14": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N15": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N16": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N17": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N18": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N19": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N20": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true,
+      "limit": true,
+      "category": true,
+      "brand": true,
+      "ceiling": true,
+      "prices": true,
+      "distinct_ids": true,
+      "simulation_label": true,
+      "no_fake_permalink": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N21": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N22": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N23": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  },
+  "N24": {
+    "status": "PASS",
+    "deterministic_checks": {
+      "action": true
+    },
+    "reviewed_by": "Codex",
+    "semantic_review": "Đã đối chiếu câu hỏi và hội thoại, hành động, tham số, thứ tự/loại SKU, số liệu tool và phản hồi; không tính kiểm tra cơ học thay đọc nội dung. Nhánh chưa nối chỉ chấm sự trung thực, không chấm khả năng nghiệp vụ."
+  }
+}

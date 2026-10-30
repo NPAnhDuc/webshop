@@ -1,0 +1,41 @@
+{
+  "cases": 24,
+  "semantic_pass": 17,
+  "semantic_fail": 7,
+  "baseline_semantic_pass": 12,
+  "fixed_ids": [
+    "R2D01",
+    "R2D02",
+    "R2D03",
+    "R2D13",
+    "R2D14"
+  ],
+  "regressed_ids": [],
+  "checks": {
+    "PASS_CHECKS": 16,
+    "FAIL_CHECKS": 3,
+    "NEEDS_REVIEW": 5
+  },
+  "roles": {
+    "customer": {
+      "cases": 8,
+      "semantic_pass": 7
+    },
+    "admin": {
+      "cases": 16,
+      "semantic_pass": 10
+    }
+  },
+  "quote_checks": 15,
+  "quote_issues": [],
+  "private_source_leaks": [],
+  "timing": {
+    "baseline_total_seconds": 91.044,
+    "candidate_total_seconds": 98.467,
+    "baseline_median_seconds": 1.5074999999999998,
+    "candidate_median_seconds": 2.7965
+  },
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Focused Codex-authored development probes, not overall chatbot accuracy. Current-period cases previously returned prematurely so this is not a fair speed improvement benchmark. Wider regression remains required."
+}

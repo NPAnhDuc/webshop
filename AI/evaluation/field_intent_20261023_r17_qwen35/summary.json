@@ -1,0 +1,18 @@
+{
+  "planned_cases": 91,
+  "attempted": 3,
+  "infrastructure_errors": 3,
+  "semantic_scored": 0,
+  "pending": 88,
+  "state": "stopped_runtime_grammar_error",
+  "actual_alias": "shop-qwen:latest",
+  "runtime_error": "Unexpected empty grammar stack after accepting piece: 8 (23)",
+  "runtime_evidence_sha256": "108f1d34bc30a2ff5544fc998ed9c8e41b78dfc61210b4fa14c53fc304ac3549",
+  "total_attempt_seconds": 21.735,
+  "model_loaded": true,
+  "actual_contexts": [
+    6144
+  ],
+  "production_installed": false,
+  "decision": "No model-quality comparison possible. Do not resume r17 unchanged; inspect structured-grammar/runtime compatibility in a separate minimal revision. No production model/config changes or semantic failure labels."
+}

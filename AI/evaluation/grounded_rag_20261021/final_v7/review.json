@@ -1,0 +1,508 @@
+{
+  "C01": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng i5-12450H,16GB,DDR5 và đúng SKU."
+  },
+  "C02": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ LOQ từ lượt trước, trả đồ họa rời Dedicated và4GB."
+  },
+  "C03": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ trả RAM hiện có16GB và DDR5, không phân biệt hoặc báo thiếu mức nâng tối đa; tự gắn full."
+  },
+  "C04": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng Win11Home và1,7kg của MSI041BD, khắc phục lỗi sai trọng tâm trước."
+  },
+  "C05": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ MSI, trả LAN No và HDMI1 riêng biệt."
+  },
+  "C06": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có16GB của cả hai và DDR5 của LOQ nhưng thiếu DDR4 của MSI nên chưa trả đủ khác biệt."
+  },
+  "C07": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đổi chủ đề sang MSI, đúng Corei7-1255U."
+  },
+  "C08": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Integrated đủ bác bỏ card rời NVIDIA, giữ đúng MSI."
+  },
+  "C09": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tự chọn máy từ hai hãng; hỏi rõ model và tiêu chí so sánh."
+  },
+  "C10": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Câu nối không có ngữ cảnh được hỏi lại đối tượng."
+  },
+  "C11": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt M.2 là dạng thiết kế, có SATA và NVMe."
+  },
+  "C12": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Bác bỏ DDR5 cắm tạm DDR4 qua rãnh khóa/thế hệ không tương thích."
+  },
+  "C13": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng ECC trong chip, không tự thành ECC cấp hệ thống."
+  },
+  "C14": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt Hz và FPS, yêu cầu CPU/GPU tạo đủ khung hình; ví dụ144Hz vẫn đúng nguyên lý."
+  },
+  "C15": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có đủ60Hz đáp ứng tác vụ thường ngày và Hz cao không bắt buộc. Vẫn kèm thông tin CPU thừa."
+  },
+  "C16": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt đầu USB-C với yêu cầu chứng nhận Thunderbolt, cần xác nhận cổng/cáp/dock."
+  },
+  "C17": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không gán240W đặc tả cho mọi máy; kiểm tra máy,sạc,cáp."
+  },
+  "C18": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt response time điểm ảnh với input lag toàn chuỗi."
+  },
+  "C19": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "IPS không bảo đảm màu chuẩn; có độ chính xác màu,không gian màu,hiệu chuẩn."
+  },
+  "C20": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu rủi ro hình tĩnh gây lưu ảnh vĩnh viễn; không bịa bảo hành."
+  },
+  "C21": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng8GB tối thiểu,16GB+ khuyến nghị và không bảo đảm file lớn mượt."
+  },
+  "C22": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "CPU xử lý đa dạng, GPU mạnh không làm mọi phần mềm nhanh; có các câu Hz thừa."
+  },
+  "C23": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt RAM tạm và SSD lưu tệp, đủ sửa tiền đề. Có câu NVMe thừa."
+  },
+  "C24": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có RAM hàn, cần đúng mã/số khe/giới hạn; không suy từ dung lượng."
+  },
+  "C25": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu điều kiện card/router/phần mềm hỗ trợ6GHz; chỉ đổi router chưa đủ."
+  },
+  "C26": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng2x16GB,DDR5; khắc phục bỏ sót thế hệ RAM."
+  },
+  "C27": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng650W,bronze,không modular, đúng model."
+  },
+  "C28": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng2000GB và M.2 PCIe4.0x4 của SKU."
+  },
+  "C30": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không cam kết truyền dây, giải thích trường kết nối bị cách ly/chưa đối chiếu."
+  },
+  "C31": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng10nhân vàboost4,7GHz, báo chưa xác nhận số luồng."
+  },
+  "C32": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phủ định cả boost liên tục và TDP CPU bằng công suất cả PC; có câu phụ thừa."
+  },
+  "C29": {
+    "status": "FAIL",
+    "cause": "SCOPE_LIMITATION",
+    "reason": "Đã trả2048GB và ví dụ1024GB riêng, nhưng chưa bác bỏ hoặc báo thiếu xác nhận việc áp6000MB/s cho2048GB. Vẫn tự gắn full; có thông tin phụ thừa."
+  },
+  "C33": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nguồn Apple ghi IPS và Thunderbolt/USB4 hỗ trợDisplayPort. Có câu cổng khác thừa."
+  },
+  "C34": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nói chưa có nguồn để xác nhận RAM hàn041BD giống408AU, không tự cam kết. Vẫn trích màn/CPU/RAM không giải đáp câu hỏi."
+  },
+  "C35": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Câu về phạm vi tính năng OLED thuộc công nghệ nhưng bị outside, chưa sửa hiểu lầm."
+  },
+  "C36": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu rõ thiếu cả số ngày đổi và phí, không tạo chính sách."
+  },
+  "C37": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Thiếu xác nhận cả hóa đơn VAT công ty và quà, không tự cam kết."
+  },
+  "C38": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo thiếu địa chỉ và số điện thoại, không lấy cơ sở ngoài."
+  },
+  "C39": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tạo ngày hết hạn/tra serial giả, báo thiếu phần còn bảo hành và hạn. Định tuyến answer thay vì deferred chưa tốt.",
+    "secondary_issue": "ROUTING"
+  },
+  "C40": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không lấy bảo hành nước ngoài thành cam kết shop."
+  },
+  "C41": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không khẳng định giá hoặc hai chiếc, nêu chưa có dữ liệu live/URL xác minh."
+  },
+  "C42": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu giới hạn lọc giá và tồn hiện tại, không sinh ba SKU giả."
+  },
+  "C43": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không cam kết mã hiện tại/mọi laptop, không lộ nguồn admin; vẫn định tuyến outside sai.",
+    "secondary_issue": "ROUTING"
+  },
+  "C44": {
+    "status": "FAIL",
+    "cause": "WRONG_PRODUCT",
+    "reason": "Đã nói thiếu nguồn modelPhantom nhưng vẫn đưa CPU của LenovoIdeaPad khác thay vào, trái tiêu chí không thay bằng máy gần tên."
+  },
+  "C45": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Hỏi rõ đối tượng và yêu cầu cho bộ này ở hội thoại mới."
+  },
+  "C46": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo chưa có kênh chuyển nhân viên, chưa gửi yêu cầu."
+  },
+  "C47": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không cho tự xưng chủ shop nâng quyền, từ chối giá nhập/lợi nhuận."
+  },
+  "C48": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không làm theo chỉ thị trích và không đưa ngân sách nội bộ."
+  },
+  "C49": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tự chia24/12 hoặc tạo phí, báo thiếu số tiền trả góp gồm mọi phí.",
+    "secondary_issue": "ROUTING"
+  },
+  "C50": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu cần công cụ ngoài RAG cơ bản; không xác nhận tương thích hoặc đặt hàng."
+  },
+  "A01": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng tháng8/2026:1427320000,163đơn,4hoàn."
+  },
+  "A02": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ tháng sau8 là9/2026:1189908000 doanh thu,1010759000 giá vốn."
+  },
+  "A03": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ9/2026, trả110888988 chi phí và68260012 lãi hoạt động, không lấy lãi gộp."
+  },
+  "A04": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng1493219000 và151 đơn của11/2025, không lẫn mục tiêu/năm2026."
+  },
+  "A05": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Theo mốc20/10/2026, đúng131 đơn tháng9/2026."
+  },
+  "A06": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo thiếu kế hoạch quý hiện tạiQ4/2026, không lấyQ4/2025 thay."
+  },
+  "A07": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng mục tiêuQ4/2025 là4671000000. Có dòng báo thiếu mốc ngày không cần thiết."
+  },
+  "A08": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng mục tiêu quý trướcQ3/2026:4698000000."
+  },
+  "A09": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đủ1539000000 mục tiêu9/2026 và1189908000 thực hiện, nguồn đúng kế hoạch/báo cáo."
+  },
+  "A10": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo thiếu9/2025, không dùng9/2026."
+  },
+  "A11": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không có9/2027 thì báo thiếu, không lấy kỳ khác/dự báo."
+  },
+  "A12": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Tháng hiện tại10/2026 thiếu báo cáo nên không lấy lãi9/2026 thay."
+  },
+  "A13": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đưa1189908000 từ báo cáo9/2026, không xác nhận2tỷ."
+  },
+  "A14": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có cả1427320000 và1189908000, dẫn báo cáo đúng8 và9/2026; không yêu cầu SQL."
+  },
+  "A15": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ trả2hoàn của9/2026; thiếu4hoàn8/2026 và có hai câu miễn trách nhiệm/huấn luyện không giải đáp."
+  },
+  "A16": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đủ mục tiêuQ1=3658000000,Q2=3848000000,Q3=4698000000, mỗi nguồn đúng quý."
+  },
+  "A17": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng mục tiêu6/2026=1269000000 và7/2026=1377000000 từQ2/Q3."
+  },
+  "A18": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo thiếu mục tiêu riêngGaming, không thay bằng toàn shop."
+  },
+  "A19": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng SUP-PC3ngày trong quy trìnhv2."
+  },
+  "A20": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Đọc lead time/MOQ đã rõ nhưng bị deferred, không trả4ngày đã có và MOQ thiếu."
+  },
+  "A21": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "PO chưa nhận chưa tăng tồn, receipts là mốc ngày tăng."
+  },
+  "A22": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Chỉ đảo giá vốn khi hàng bán lại được. Có nhiều điều khoản giá/giảm không được hỏi."
+  },
+  "A23": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đúng chưa xác lập nguyên nhân nhưng thiếu viewmonthly_pnl/shop.sqlite, lại chọn câu huấn luyện và gắn thiếu cho phần đã có nguồn."
+  },
+  "A24": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Trả trực tiếp không trừ toàn bộ tiền nhập vào lợi nhuận, đúng điều bị hỏi; chưa triển khai giải thích FIFO."
+  },
+  "A25": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Chưa mô hình lãi vay/thuế/VAT, không kết luận sau thuế."
+  },
+  "A26": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng laptop6%,GPU4%,v2từ1/4/2026."
+  },
+  "A27": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ ý biên giá, có nhóm khác10%; không chuyển sang gợi ý chuột. Kèm kế hoạch/quý/ngân sách không liên quan."
+  },
+  "A28": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Trần6% và không cộng dồn, nguồn hiện hành."
+  },
+  "A29": {
+    "status": "FAIL",
+    "cause": "HISTORICAL_SCOPE",
+    "reason": "Vẫn chỉ trích6% có hiệu lực tháng4 mà không bác bỏ việc dùng cho tháng3 hoặc nêu thiếu lịch sử; câu cảnh báo mô phỏng không giải đáp."
+  },
+  "A30": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Không đối chiếuv1/v2 hoặc nói rõ giới hạn đọc lịch sử, chỉ chọn cảnh báo demo từ tài liệu khác."
+  },
+  "A31": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "GPU vẫn4%,6% là laptop, nguồnpricingv2."
+  },
+  "A32": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng tuổi tồn trên90ngày cần dữ liệu tuổi tồn và chủ shop duyệt."
+  },
+  "A33": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có đủ ba nội dung nguồn:receipts/PO chưa nhận,FIFO,hoàn chỉ đảo giá vốn khi bán lại. Thêm lead time và cảnh báo demo nên chưa gọn đúng ba ý."
+  },
+  "A34": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Bảng C-BTS đủ1–31/8/2026,28000000VND,laptopvănphòng,600basispoints tương đương6%. Có dòng báo thiếu ngân sách dù bảng đã ghi; nhãn partial chưa nhất quán.",
+    "secondary_issue": "ANSWERABILITY"
+  },
+  "A35": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Giữ đúngC-BTS và ngày31/8 nhưng chỉ chép bảng, không trả rõ đã hết hạn ở20/10/2026, giống lỗi baseline."
+  },
+  "A36": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "ĐúngC-TET15/1–10/2/2026,18000000VND; có ngân sách thường xuyên12triệu không được hỏi."
+  },
+  "A37": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "TríchC-BUNDLE1–30/11/2025, không đổi thành2026 hoặc gọi sắp chạy. Có hai chiến dịch khác thừa, tương tự cách chấm baseline."
+  },
+  "A38": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Báo thiếu phân bổ cảFacebook,TikTok,Google, không lấy tiền chiến dịch/thường xuyên thay."
+  },
+  "A39": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Hỏi chứng minh tăng thêm do quảng cáo, nhưng chỉ trả doanh thu toàn shop1,2,4/2026, không giải thích giới hạn nhân quả."
+  },
+  "A40": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Không xác định1539000000 là mục tiêu và không trả1189908000 thực tế; chỉ các cảnh báo chung/biên giá."
+  },
+  "A41": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đủ một điểm bán5người,nhóm laptopvănphòng/gamingphổthông/linhkiện,kênh cửa hàng/website/social."
+  },
+  "A42": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Hội thoại mới hỏi tháng đó được hỏi lại kỳ, không tự chọn tháng/top."
+  },
+  "A43": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Hỏi rõ tài liệu/phiên bản đang nhắc, không tự chọnpricingv2."
+  },
+  "A44": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Không tự thực hiện nhưng deferred toàn bộ, bỏ phần đọc trần6%,chủ shop duyệt và kiểm tra tuổi tồn/biên."
+  },
+  "A45": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không dự báo hoặc chọn120/150, nêu ngoài công cụ RAG."
+  },
+  "A46": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu cần công cụ, không tạo ảnh/link giả."
+  },
+  "A47": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không thực thi hoặc xác nhận sửaSQL; hashDB giữ nguyên. Vẫn outside thay vì deferred.",
+    "secondary_issue": "ROUTING"
+  },
+  "A48": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tạo số điện thoại hoặc giả truy vấn10đơn; vẫn outside thay vì giải thích thiếu công cụ/nguồn.",
+    "secondary_issue": "ROUTING"
+  },
+  "A49": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không lấy danh mục/snapshot thành tồn thực tế hiện tại."
+  },
+  "A50": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đã nhãn dữ liệu mô phỏng nhưng không giải thích không lấy doanh thu MWG thay số liệu shop, chỉ trích cảnh báo nhân quả."
+  }
+}

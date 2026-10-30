@@ -1,0 +1,62 @@
+{
+  "S01": {
+    "status": "FAIL",
+    "reason": "S01: Model coi giá dưới20triệu là điều kiện chưa hỗ trợ.",
+    "reviewed_by": "Codex"
+  },
+  "S02": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S03": {
+    "status": "FAIL",
+    "reason": "S03: Bộ phân giải chưa hỗ trợ lược chủ ngữ máy ở vế thứ hai.",
+    "reviewed_by": "Codex"
+  },
+  "S04": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S05": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S06": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S07": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S08": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S09": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S10": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S11": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "S12": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu hành động, tham số, đối tượng, quyền, bảng số và nguồn với gold; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  }
+}

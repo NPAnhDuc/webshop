@@ -1,0 +1,10 @@
+{
+  "baseline": "kb3_report_source_full_r1",
+  "requested_ids": 183,
+  "change": "Bind selected monthly metric evidence to explicit per-part month and metric; reassign only existing selected evidence, never create facts.",
+  "development_only": true,
+  "RAG_EVIDENCE_RERANK": "1",
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_change": false
+}

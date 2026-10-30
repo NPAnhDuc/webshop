@@ -1,0 +1,3034 @@
+{
+ "BUY-001": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-002": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-003": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-004": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-005": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-006": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-007": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-008": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-009": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-010": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-011": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-012": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-013": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-014": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-015": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-016": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-017": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-018": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-019": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-020": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-021": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-022": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-023": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-024": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-025": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-026": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-027": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-028": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-029": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-030": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-031": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-032": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-033": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-034": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-035": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-036": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-037": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-038": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-039": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-040": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-041": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-042": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-043": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-044": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-045": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-046": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-047": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-048": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-049": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-050": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-051": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-052": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-053": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-054": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-055": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-056": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-057": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-058": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-059": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-060": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-061": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-062": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-063": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-064": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-065": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-066": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-067": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-068": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-069": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-070": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-071": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-072": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-073": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-074": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-075": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-076": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-077": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-078": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-079": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-080": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-081": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-082": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-083": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-084": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-085": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-086": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-087": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-088": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-089": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-090": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-091": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-092": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-093": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-094": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-095": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-096": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-097": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-098": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-099": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-100": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-101": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-102": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-103": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-104": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-105": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-106": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-107": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-108": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-109": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-110": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-111": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-112": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-113": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-114": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-115": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-116": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-117": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-118": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-119": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-120": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-121": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-122": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-123": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-124": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-125": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-126": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-127": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-128": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-129": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-130": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-131": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-132": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-133": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "value_not_answered"
+  ]
+ },
+ "BUY-134": {
+  "family": "product_fact",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "fact_tool_missing"
+  ]
+ },
+ "BUY-135": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-136": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-137": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-138": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-139": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-140": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-141": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-142": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-143": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-144": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-145": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-146": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-147": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-148": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-149": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-150": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-151": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-152": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-153": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-154": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-155": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-156": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-157": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-158": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-159": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-160": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-161": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-162": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-163": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-164": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-165": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-166": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-167": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-168": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-169": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-170": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-171": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-172": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-173": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-174": {
+  "family": "catalog_search",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-175": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-176": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-177": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-178": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-179": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-180": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-181": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-182": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-183": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-184": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-185": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-186": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-187": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-188": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-189": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-190": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-191": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-192": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-193": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-194": {
+  "family": "product_comparison",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-195": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-196": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-197": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-198": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-199": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-200": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-201": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-202": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-203": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-204": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-205": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-206": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-207": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-208": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-209": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-210": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-211": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-212": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-213": {
+  "family": "knowledge_policy",
+  "action": "denied",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "not_routed_documents",
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-214": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-215": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-216": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-217": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-218": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-219": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-220": {
+  "family": "knowledge_policy",
+  "action": "handoff",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "not_routed_documents",
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-221": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-222": {
+  "family": "knowledge_policy",
+  "action": "handoff",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "not_routed_documents",
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-223": {
+  "family": "knowledge_policy",
+  "action": "handoff",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "not_routed_documents",
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-224": {
+  "family": "knowledge_policy",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "knowledge_not_answered"
+  ]
+ },
+ "BUY-225": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-226": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-227": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-228": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-229": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-230": {
+  "family": "consultation",
+  "action": "outside",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-231": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-232": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-233": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-234": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-235": {
+  "family": "consultation",
+  "action": "deferred",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-236": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-237": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-238": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-239": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-240": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-241": {
+  "family": "consultation",
+  "action": "documents",
+  "tools": [
+   "documents.answer"
+  ],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-242": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-243": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-244": {
+  "family": "consultation",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "needs_semantic_review"
+  ]
+ },
+ "BUY-245": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-246": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-247": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-248": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-249": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-250": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-251": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-252": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-253": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-254": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-255": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-256": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-257": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-258": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-259": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-260": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-261": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-262": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-263": {
+  "family": "multi_turn",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-264": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-265": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-266": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-267": {
+  "family": "multi_turn",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-268": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-269": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-270": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-271": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-272": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-273": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-274": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-275": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-276": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-277": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-278": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-279": {
+  "family": "multi_turn",
+  "action": "clarify",
+  "tools": [],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-280": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-281": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-282": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-283": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-284": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-285": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-286": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-287": {
+  "family": "multi_turn",
+  "action": "deferred",
+  "tools": [],
+  "checks_pass": false,
+  "errors": [
+   "no_compare"
+  ]
+ },
+ "BUY-288": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-289": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-290": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-291": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-292": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-293": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-294": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-295": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-296": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-297": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-298": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-299": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.compare"
+  ],
+  "checks_pass": true,
+  "errors": []
+ },
+ "BUY-300": {
+  "family": "multi_turn",
+  "action": "answer",
+  "tools": [
+   "catalog.search"
+  ],
+  "checks_pass": true,
+  "errors": []
+ }
+}

@@ -1,0 +1,7 @@
+# Three-mode decoder compatibility probe, no semantic scoring
+
+Freeze exact firstfailedr17payload/messages/localshop-qwenalias/explicitoptions(temp0,ctx6144,GPU99,thinkfalse,output300,keepalive5m). Three sequential variants differ ONLYformat: originalfullschema, genericJSONobjectmode, absentformat. Identity/blobstat/provenance frozen from priorverifiedGGUF; no rehashlargeallocation/no runtimeupgrade/servicechange/prod.envchange. Allthreebodies identical withoutformat verifiedoffline, no QA gold inprompt,26activeapp/shopbot hashesunchanged.
+
+This isolates formatmode, not exact grammarfeature/rootcause/modelaccuracy. Unconstrained/jsonobject may return syntax-valid but wrongschema; preserve exactcontent, attemptstrictJSONparse and existingderiveplan withoutfixingoutput. HTTPsuccess alone notsemanticPASS. No new prompt/schema nudge or runtimebinarypatch. No extra91batchthisheartbeat even ifcompatpasses. Serverload is existingnominal4Bclass, no larger model/download/train/paidAPI/deploy/subagents/messages/reserved/validation.
+
+Capture allHTTPstatus,bounded4096errorbody,fullsuccessresponse,done/tokencounts,parse/contracterrors. Runtimeerrors filtered only from newlogbytes sincepercalloffset (100KBcap), notstalepriorerrors or fullsharedprompt logs. Read-onlyps aftereachcall checksactualalias/context. Stop3consecutiveinfra or explicitOOM/load/CUDAfailure. Reviewall3beforedeciding minimalnextstep. Nextqualitycomparison requires freshrevision; r17staysstopped, prior91gold unchanged.

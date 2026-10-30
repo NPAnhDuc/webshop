@@ -1,0 +1,43 @@
+{
+  "cases": 50,
+  "passed": 11,
+  "failed": 39,
+  "buyer_passed": 4,
+  "admin_passed": 7,
+  "fail_primary_causes": {
+    "MODEL": 19,
+    "DATA": 19,
+    "FEATURE": 1
+  },
+  "guard_behavior_passed": 6,
+  "guard_case_ids": [
+    28,
+    29,
+    30,
+    48,
+    49,
+    50
+  ],
+  "false_full": 16,
+  "checked_quotes": 69,
+  "quotes_not_in_returned_source": 0,
+  "private_source_leaks": 0,
+  "known_evidence_units": 13,
+  "known_evidence_found": 11,
+  "pipeline_evidence_recall_at_8": 0.8461538461538461,
+  "latency_seconds": {
+    "sum": 423.16,
+    "median": 3.79,
+    "max": 90.3,
+    "first": 90.3
+  },
+  "unchanged": true,
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "caveats": [
+    "Manual assistant source review, not independent human grading.",
+    "FAIL counts missing requested information even when refusal was safe. A primary cause does not exclude secondary causes.",
+    "Evidence recall is post-run annotation of 13 known answer facets across 12 questions; it includes routing failures, and is not standalone retrieval recall or coverage of all 50.",
+    "Case 26 does not require literal CPU strings; case 50 accepts non-disclosure despite the outside action label.",
+    "No chatbot prompt, model weight or source-document changes during test. Runner console Unicode error after case 40 was resumed for 41–50, without rerunning 1–40."
+  ]
+}

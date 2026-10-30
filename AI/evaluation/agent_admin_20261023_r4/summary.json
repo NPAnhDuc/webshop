@@ -1,0 +1,20 @@
+{
+  "semantic_pass": 60,
+  "total": 60,
+  "checks_pass": 60,
+  "admin_pass": 24,
+  "admin_total": 24,
+  "buyer_pass": 36,
+  "buyer_total": 36,
+  "development_only": true,
+  "independent_validation": false,
+  "accepted_for_application": false,
+  "training_performed": false,
+  "default_mode_changed": false,
+  "median_seconds": 0.9135,
+  "warm_median_excluding_first": 0.906,
+  "p95_seconds": 1.281,
+  "first_seconds": 23.297,
+  "total_seconds": 70.533,
+  "notes": "Exposed developer regression, includes unsupported-feature controls. Not general accuracy. Raw LLM time modes still sometimes wrong; grounded calendar blocks unasked periods and explicit dates override them."
+}

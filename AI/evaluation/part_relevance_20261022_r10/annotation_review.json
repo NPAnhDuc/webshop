@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "scenarios": 31,
+    "distinct_question_texts": 24,
+    "parts": 57,
+    "acceptable_parts": 44,
+    "unacceptable_parts": 13,
+    "acceptable_scenarios": 21,
+    "unacceptable_scenarios": 10,
+    "recorded": 26,
+    "constructed": 5,
+    "known_anchors": 6,
+    "new_scenarios": 25
+  },
+  "reviewed_by": "Codex",
+  "method": "Manually read all31 semantic part definitions and labels before inference against recorded questions/answers and source-owned facts; no whole-QA/check score automatically copied.",
+  "notes": [
+    "A12 valid_unknown assesses empty PROVIDED source context, not retrieval recall.",
+    "C13 combined DRAM-boundary/system-ECC explanation treated as sufficient denial; disagreement requires source/context reading, not automatic gold rewrites.",
+    "Five constructed contrasts are intentionally incorrect candidate answers, clearly labeled in provenance; no new business fact or policy is published.",
+    "Prepared r9 never queried; r10 removes an extra unknown-answer cue in A12 and clarifies A02 wording. Original r9 bank/gold/script preserved."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "buyer-expansion-v1",
+  "turns": 300,
+  "unique_questions": 296,
+  "multi_turn_sessions": 14,
+  "multi_turn_turns": 56,
+  "families": {
+    "catalog_search": 40,
+    "consultation": 20,
+    "knowledge_policy": 30,
+    "multi_turn": 56,
+    "product_comparison": 20,
+    "product_fact": 134
+  },
+  "source_catalog_sha256": "b3f66fafadc77b5c4824ae9b0400af7a912fa217d3b6b872a074e44f4f2da743",
+  "bank_sha256": "f63da245db1d1ee2ff314d7b4f05b24d589430bd1270cb307341be4e9b21b7dc",
+  "data_kind": "simulation",
+  "development_only": true,
+  "independent_validation": false,
+  "model_calls": 0,
+  "training_performed": false,
+  "typo_understanding_feature_implemented": false,
+  "gold_policy": "Catalog oracles separate from source-dependent questions needing review. Do not treat routing/deferred as answered knowledge.",
+  "ingestion_allowed": false
+}

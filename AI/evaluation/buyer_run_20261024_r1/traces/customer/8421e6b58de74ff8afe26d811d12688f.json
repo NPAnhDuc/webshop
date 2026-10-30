@@ -1,0 +1,56 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "8421e6b58de74ff8afe26d811d12688f",
+  "parent_trace_id": "593f01f2737d4b38a07c57c52430bbaf",
+  "recorded_at": "2026-10-24T07:32:17.524045+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, Deepcool CH160 lắp card đồ họa dài tối đa bao nhiêu mm?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Theo bản thông tin đang có, Deepcool CH160 lắp card đồ họa dài tối đa bao nhiêu mm?"
+      },
+      "principal_role": "customer",
+      "status": "disabled",
+      "output": {
+        "tool": "documents.answer",
+        "status": "disabled",
+        "executed": false,
+        "sources": [],
+        "reason": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm."
+      },
+      "seconds": 3.369999467395246e-05
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.2955838999914704
+}

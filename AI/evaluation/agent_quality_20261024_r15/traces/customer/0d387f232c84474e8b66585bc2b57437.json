@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "0d387f232c84474e8b66585bc2b57437",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:26:29.597507+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Tìm laptop Dell giúp tôi.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "laptop",
+      "brand": "Dell",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn ngân sách tối đa bao nhiêu cho mỗi máy?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.8773807000106899
+}

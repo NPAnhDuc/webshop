@@ -1,0 +1,35 @@
+{
+  "kind": "deterministic_tool_evaluation",
+  "checks": [
+    {
+      "case": "admin_quality_exact_source_counts_dates_coverage",
+      "passed": true
+    },
+    {
+      "case": "customer:[]:blocked",
+      "passed": true
+    },
+    {
+      "case": "owner:[]:blocked",
+      "passed": true
+    },
+    {
+      "case": "admin:['sql']:blocked",
+      "passed": true
+    },
+    {
+      "case": "admin:['path']:blocked",
+      "passed": true
+    },
+    {
+      "case": "unconfigured_source_no_fallback",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "admin_read_seconds": 0.03405129999737255,
+  "server_pin": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+  "model_calls": 0,
+  "active_source_changed": false,
+  "conversational_evaluation": false
+}

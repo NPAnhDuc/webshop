@@ -1,0 +1,122 @@
+{
+  "N01": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N02": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N03": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N04": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N05": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N06": {
+    "status": "FAIL",
+    "reason": "Điều kiện trích đúng nghĩa nhưng khoảng trắng khác câu gốc gây validator unavailable.",
+    "reviewed_by": "Codex"
+  },
+  "N07": {
+    "status": "FAIL",
+    "reason": "Ngân sách khoảng chưa rõ cận: cần hỏi lại, hiện chỉ báo bộ lọc chưa hỗ trợ.",
+    "reviewed_by": "Codex"
+  },
+  "N08": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N09": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N10": {
+    "status": "FAIL",
+    "reason": "Category RAM bị mất, công cụ lại tìm laptop và trả0; action giống gold nhưng sai args.",
+    "reviewed_by": "Codex"
+  },
+  "N11": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N12": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N13": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N14": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N15": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N16": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N17": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N18": {
+    "status": "FAIL",
+    "reason": "Yêu cầu điện thoại bị đổi thành laptop, trả sai danh mục.",
+    "reviewed_by": "Codex"
+  },
+  "N19": {
+    "status": "FAIL",
+    "reason": "Số lượng0 cần hỏi lại, hiện gộp vào unavailable.",
+    "reviewed_by": "Codex"
+  },
+  "N20": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N21": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  },
+  "N22": {
+    "status": "FAIL",
+    "reason": "Khoảng giá chưa xử lý cần hỏi lại, hiện unavailable do khác khoảng trắng.",
+    "reviewed_by": "Codex"
+  },
+  "N23": {
+    "status": "FAIL",
+    "reason": "Khoảng trắng trích điều kiện giá gây unavailable dù OLED đáng lẽ được deferred an toàn.",
+    "reviewed_by": "Codex"
+  },
+  "N24": {
+    "status": "PASS",
+    "reason": "Đã đọc plan, công cụ, tham số, số lượng/giá, hội thoại, nguồn và nội dung; các nhánh chưa nối chỉ là control.",
+    "reviewed_by": "Codex"
+  }
+}

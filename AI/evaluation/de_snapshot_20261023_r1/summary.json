@@ -1,0 +1,13 @@
+{
+  "raw_revision": "AI\\data\\de_pipeline\\retail_sim_v1\\revision_20261023_1607",
+  "source_id": "retail_sim_v1",
+  "data_kind": "simulation",
+  "status": "audit_passed_pending_reconciliation",
+  "curated_published": false,
+  "checks_passed": 32,
+  "tests_passed": 269,
+  "test_seconds": 72.15,
+  "source_modified": false,
+  "model_batch_run": false,
+  "model_or_config_changed": false
+}

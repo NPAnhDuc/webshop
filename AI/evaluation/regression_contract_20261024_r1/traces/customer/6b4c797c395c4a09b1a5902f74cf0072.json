@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "6b4c797c395c4a09b1a5902f74cf0072",
+  "parent_trace_id": "74eddfb975ab458788072912c388d89a",
+  "recorded_at": "2026-10-24T02:03:20.815551+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "So sánh hai món đầu tiên.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 3000000,
+        "limit": 3,
+        "category": "memory",
+        "brand": null
+      },
+      "last_selection": []
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 3000000,
+        "limit": 3,
+        "category": "memory",
+        "brand": null
+      },
+      "last_selection": []
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "memory",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.00016450000111944973
+}

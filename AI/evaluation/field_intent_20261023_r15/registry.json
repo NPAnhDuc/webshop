@@ -1,0 +1,312 @@
+[
+  {
+    "id": "case/external_volume",
+    "category": "case",
+    "name": "external_volume"
+  },
+  {
+    "id": "case/internal_35_bays",
+    "category": "case",
+    "name": "internal_35_bays"
+  },
+  {
+    "id": "case/side_panel",
+    "category": "case",
+    "name": "side_panel"
+  },
+  {
+    "id": "case/type",
+    "category": "case",
+    "name": "type"
+  },
+  {
+    "id": "cpu/boost_clock",
+    "category": "cpu",
+    "name": "boost_clock"
+  },
+  {
+    "id": "cpu/core_clock",
+    "category": "cpu",
+    "name": "core_clock"
+  },
+  {
+    "id": "cpu/core_count",
+    "category": "cpu",
+    "name": "core_count"
+  },
+  {
+    "id": "cpu/graphics",
+    "category": "cpu",
+    "name": "graphics"
+  },
+  {
+    "id": "cpu/microarchitecture",
+    "category": "cpu",
+    "name": "microarchitecture"
+  },
+  {
+    "id": "cpu/tdp",
+    "category": "cpu",
+    "name": "tdp"
+  },
+  {
+    "id": "internal-hard-drive/cache",
+    "category": "internal-hard-drive",
+    "name": "cache"
+  },
+  {
+    "id": "internal-hard-drive/capacity",
+    "category": "internal-hard-drive",
+    "name": "capacity"
+  },
+  {
+    "id": "internal-hard-drive/form_factor",
+    "category": "internal-hard-drive",
+    "name": "form_factor"
+  },
+  {
+    "id": "internal-hard-drive/interface",
+    "category": "internal-hard-drive",
+    "name": "interface"
+  },
+  {
+    "id": "internal-hard-drive/type",
+    "category": "internal-hard-drive",
+    "name": "type"
+  },
+  {
+    "id": "laptop/Display Resolution",
+    "category": "laptop",
+    "name": "Display Resolution"
+  },
+  {
+    "id": "laptop/Display Size (Inch)",
+    "category": "laptop",
+    "name": "Display Size (Inch)"
+  },
+  {
+    "id": "laptop/Display Type",
+    "category": "laptop",
+    "name": "Display Type"
+  },
+  {
+    "id": "laptop/Finger Print Sensor",
+    "category": "laptop",
+    "name": "Finger Print Sensor"
+  },
+  {
+    "id": "laptop/Graphics Chipset",
+    "category": "laptop",
+    "name": "Graphics Chipset"
+  },
+  {
+    "id": "laptop/Graphics Memory",
+    "category": "laptop",
+    "name": "Graphics Memory"
+  },
+  {
+    "id": "laptop/Graphics Memory Accessibility",
+    "category": "laptop",
+    "name": "Graphics Memory Accessibility"
+  },
+  {
+    "id": "laptop/HDMI Port",
+    "category": "laptop",
+    "name": "HDMI Port"
+  },
+  {
+    "id": "laptop/Installed SSD Type",
+    "category": "laptop",
+    "name": "Installed SSD Type"
+  },
+  {
+    "id": "laptop/LAN",
+    "category": "laptop",
+    "name": "LAN"
+  },
+  {
+    "id": "laptop/Operating System",
+    "category": "laptop",
+    "name": "Operating System"
+  },
+  {
+    "id": "laptop/Optical Drive",
+    "category": "laptop",
+    "name": "Optical Drive"
+  },
+  {
+    "id": "laptop/Power Adapter",
+    "category": "laptop",
+    "name": "Power Adapter"
+  },
+  {
+    "id": "laptop/Processor Brand",
+    "category": "laptop",
+    "name": "Processor Brand"
+  },
+  {
+    "id": "laptop/Processor Core",
+    "category": "laptop",
+    "name": "Processor Core"
+  },
+  {
+    "id": "laptop/Processor Model",
+    "category": "laptop",
+    "name": "Processor Model"
+  },
+  {
+    "id": "laptop/RAM",
+    "category": "laptop",
+    "name": "RAM"
+  },
+  {
+    "id": "laptop/RAM Type",
+    "category": "laptop",
+    "name": "RAM Type"
+  },
+  {
+    "id": "laptop/Touch Screen",
+    "category": "laptop",
+    "name": "Touch Screen"
+  },
+  {
+    "id": "laptop/Weight (Kg)",
+    "category": "laptop",
+    "name": "Weight (Kg)"
+  },
+  {
+    "id": "memory/cas_latency",
+    "category": "memory",
+    "name": "cas_latency"
+  },
+  {
+    "id": "memory/first_word_latency",
+    "category": "memory",
+    "name": "first_word_latency"
+  },
+  {
+    "id": "memory/modules",
+    "category": "memory",
+    "name": "modules"
+  },
+  {
+    "id": "memory/speed",
+    "category": "memory",
+    "name": "speed"
+  },
+  {
+    "id": "monitor/aspect_ratio",
+    "category": "monitor",
+    "name": "aspect_ratio"
+  },
+  {
+    "id": "monitor/panel_type",
+    "category": "monitor",
+    "name": "panel_type"
+  },
+  {
+    "id": "monitor/refresh_rate",
+    "category": "monitor",
+    "name": "refresh_rate"
+  },
+  {
+    "id": "monitor/resolution",
+    "category": "monitor",
+    "name": "resolution"
+  },
+  {
+    "id": "monitor/response_time",
+    "category": "monitor",
+    "name": "response_time"
+  },
+  {
+    "id": "monitor/screen_size",
+    "category": "monitor",
+    "name": "screen_size"
+  },
+  {
+    "id": "motherboard/form_factor",
+    "category": "motherboard",
+    "name": "form_factor"
+  },
+  {
+    "id": "motherboard/max_memory",
+    "category": "motherboard",
+    "name": "max_memory"
+  },
+  {
+    "id": "motherboard/memory_slots",
+    "category": "motherboard",
+    "name": "memory_slots"
+  },
+  {
+    "id": "motherboard/socket",
+    "category": "motherboard",
+    "name": "socket"
+  },
+  {
+    "id": "mouse/connection_type",
+    "category": "mouse",
+    "name": "connection_type"
+  },
+  {
+    "id": "mouse/hand_orientation",
+    "category": "mouse",
+    "name": "hand_orientation"
+  },
+  {
+    "id": "mouse/max_dpi",
+    "category": "mouse",
+    "name": "max_dpi"
+  },
+  {
+    "id": "mouse/tracking_method",
+    "category": "mouse",
+    "name": "tracking_method"
+  },
+  {
+    "id": "power-supply/efficiency",
+    "category": "power-supply",
+    "name": "efficiency"
+  },
+  {
+    "id": "power-supply/modular",
+    "category": "power-supply",
+    "name": "modular"
+  },
+  {
+    "id": "power-supply/type",
+    "category": "power-supply",
+    "name": "type"
+  },
+  {
+    "id": "power-supply/wattage",
+    "category": "power-supply",
+    "name": "wattage"
+  },
+  {
+    "id": "video-card/boost_clock",
+    "category": "video-card",
+    "name": "boost_clock"
+  },
+  {
+    "id": "video-card/chipset",
+    "category": "video-card",
+    "name": "chipset"
+  },
+  {
+    "id": "video-card/core_clock",
+    "category": "video-card",
+    "name": "core_clock"
+  },
+  {
+    "id": "video-card/length",
+    "category": "video-card",
+    "name": "length"
+  },
+  {
+    "id": "video-card/memory",
+    "category": "video-card",
+    "name": "memory"
+  }
+]

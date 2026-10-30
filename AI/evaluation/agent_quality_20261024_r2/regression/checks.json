@@ -1,0 +1,308 @@
+{
+  "A01": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A02": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A03": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A04": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A05": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A06": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A07": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A08": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A09": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A10": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A11": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A12": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A13": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A14": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A15": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A16": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A17": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A18": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A19": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A20": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "periods_or_unexpected_execution"
+    ],
+    "semantic_review_required": true
+  },
+  "A21": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A22": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "periods_or_unexpected_execution"
+    ],
+    "semantic_review_required": true
+  },
+  "A23": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "A24": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S01": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S02": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S03": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S04": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S05": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S06": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S07": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S08": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S09": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S10": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S11": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-S12": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N01": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N02": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N03": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N04": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N05": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N06": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N07": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N08": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N09": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N10": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N11": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N12": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N13": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N14": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N15": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N16": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N17": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N18": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N19": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N20": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N21": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N22": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N23": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "B-N24": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  }
+}

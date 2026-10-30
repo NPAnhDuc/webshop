@@ -1,0 +1,140 @@
+{
+  "Q0018": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'WRONG_SCOPE', 'detail': 'Unsupported requested model/period replaced with other facts'}, {'cause': 'MISSING_NOT_ACKNOWLEDGED', 'detail': 'No unambiguous missing-evidence decision'}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0031": {
+    "status": "FAIL",
+    "cause": "APPLICATION_VALIDATION",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'INFRASTRUCTURE', 'detail': 'No reliable model result'}, {'cause': 'ROUTING', 'detail': {'expected': 'denied', 'actual': 'unavailable'}}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0036": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'WRONG_SCOPE', 'detail': 'Unsupported requested model/period replaced with other facts'}, {'cause': 'MISSING_NOT_ACKNOWLEDGED', 'detail': 'No unambiguous missing-evidence decision'}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0054": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'WRONG_SCOPE', 'detail': 'Unsupported requested model/period replaced with other facts'}, {'cause': 'MISSING_NOT_ACKNOWLEDGED', 'detail': 'No unambiguous missing-evidence decision'}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0055": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'ROUTING', 'detail': {'expected': 'deferred', 'actual': 'outside'}}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0072": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'WRONG_SCOPE', 'detail': 'Unsupported requested model/period replaced with other facts'}, {'cause': 'MISSING_NOT_ACKNOWLEDGED', 'detail': 'No unambiguous missing-evidence decision'}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0077": {
+    "status": "FAIL",
+    "cause": "SELECTION_OR_CHUNKING",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'SELECTION_OR_CHUNKING', 'detail': {'document_id': 'monthly-report-2026-05', 'version': 1, 'quote': 'Sản phẩm hoàn trả: 2.'}}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0082": {
+    "status": "FAIL",
+    "cause": "APPLICATION_VALIDATION",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'INFRASTRUCTURE', 'detail': 'No reliable model result'}, {'cause': 'ROUTING', 'detail': {'expected': 'denied', 'actual': 'unavailable'}}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0096": {
+    "status": "FAIL",
+    "cause": "APPLICATION_VALIDATION",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'INFRASTRUCTURE', 'detail': 'No reliable model result'}, {'cause': 'ROUTING', 'detail': {'expected': 'denied', 'actual': 'unavailable'}}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0101": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Đối chiếu câu hỏi/nguồn: [{'cause': 'WRONG_SCOPE', 'detail': 'Unsupported requested model/period replaced with other facts'}, {'cause': 'MISSING_NOT_ACKNOWLEDGED', 'detail': 'No unambiguous missing-evidence decision'}]",
+    "reviewed_by": "Codex"
+  },
+  "Q0002": {
+    "status": "FAIL",
+    "cause": "TIME_PARSING",
+    "reason": "tháng9 viết liền bị mất kỳ, trả số10/2025 thay9/2026.",
+    "reviewed_by": "Codex"
+  },
+  "Q0012": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo chưa có thời hạn bảo hành pin của shop, không tự đặt.",
+    "reviewed_by": "Codex"
+  },
+  "Q0017": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có giao tiếp/DRAM nhưng bỏ giới hạn tốc độ theo phiên bản dung lượng, thêm nhiều giải thích chung không trả đủ phạm vi hỏi.",
+    "reviewed_by": "Codex"
+  },
+  "Q0020": {
+    "status": "FAIL",
+    "cause": "WRONG_FIELD",
+    "reason": "Lấy ngưỡng/mức đặt lại simulator cho câu hỏi MOQ; thiếu ghi rõ MOQ chưa có.",
+    "reviewed_by": "Codex"
+  },
+  "Q0030": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nhắc chủ shop duyệt từngSKU, chưa trả điều kiện mở seal/đổi màu hoặc nói rõ chưa có điều khoản này.",
+    "reviewed_by": "Codex"
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "EQUIVALENT_SOURCE",
+    "reason": "Nguồn tương đương nêu ngoài nhãn IPS phải xem màu,góc nhìn,tương phản,chuyển động; không suy chất lượng từ tên tấm nền.",
+    "reviewed_by": "Codex"
+  },
+  "Q0038": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DòngC-BTS ghi laptopvănphòng đủ xác định nhóm được hỏi; thông tin định vịGaming đi kèm là thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0048": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không bịa địa chỉ nhận bảo hành.",
+    "reviewed_by": "Codex"
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DDR5 khácDDR4 và hệ thống phải hỗ trợ, không cam kết cắm thay trực tiếp.",
+    "reviewed_by": "Codex"
+  },
+  "Q0073": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Hỏi quy định tuổi tồn và người duyệt, bịdeferred toàn bộ dù có nguồn.",
+    "reviewed_by": "Codex"
+  },
+  "Q0095": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo thiếu giờ lễ của chính shop.",
+    "reviewed_by": "Codex"
+  },
+  "Q0102": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có trần6% và duyệtSKU nhưng chưa kết luận đối chiếu7%, đồng thời nói thiếu ngay phần trần vừa trích.",
+    "reviewed_by": "Codex"
+  },
+  "Q0109": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không tự đặt số ngày trả hàng vì đổi ý.",
+    "reviewed_by": "Codex"
+  }
+}

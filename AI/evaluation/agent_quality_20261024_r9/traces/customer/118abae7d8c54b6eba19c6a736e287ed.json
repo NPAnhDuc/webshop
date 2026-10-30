@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "118abae7d8c54b6eba19c6a736e287ed",
+  "parent_trace_id": "359ce5d55d9949fca4da102886b1c96b",
+  "recorded_at": "2026-10-24T06:38:15.636398+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Tìm3thanhRAMdưới3triệu và giải thích DDR5",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "unavailable",
+    "answer": "Chưa xác định chắc yêu cầu. Bạn nêu ngân sách hoặc hai mã máy cụ thể giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.0193194000021322
+}

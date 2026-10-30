@@ -1,0 +1,98 @@
+{
+  "Q0017": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_VARIANT_LIMIT",
+    "reason": "Nêu giao tiếp/DRAM nhưng thiếu giới hạn phiên bản dung lượng KC3000, thay bằng cảnh báo dung lượng flash chung.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DDR5 khácDDR4 và hệ thống phải hỗ trợ, không cam kết cắm thay trực tiếp.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0128": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Phân biệt6/6E/7 và điều kiện card/router/phần mềm để dùng6GHz.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0156": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nói nhiều nhân/GHz, không giải thích luồng hoặc giới hạn GHz so hiệu năng; lẫn6GHzWiFi và tốc độSSD vàoCPU.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0194": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Có LCD/OLED và cảnh báo màu IPS nhưng không giải thích khác biệt TN/VA theo tiêu đề được hỏi; lặp OLED.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0221": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Nêu hai khe, pin 60Wh, nhiều cấu hình và không gán cấu hình cao nhất; Wh không là cam kết giờ pin.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0239": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Hỏi IdeaPad theo dòng/SKU nhưng trả OLED và Wi-Fi; không trả nội dung đúng yêu cầu.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0257": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Giải thích điểm ảnh tự sáng và đen sâu, kèm giới hạn nội dung tĩnh; có lặp câu.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0281": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Có mốc 16GB cho game và 32GB đa nhiệm có điều kiện, không suy nâng cấp từ dung lượng; thừa thông số SSD không liên quan.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0302": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_ROUTING",
+    "reason": "Câu Photoshop/RAM bị trả OLED và tốc độ SSD; không trả điều kiện RAM cho Photoshop.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0344": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Tốc độ riêng bản 1TB/2TB và giới hạn thử nghiệm/cấu hình rõ.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  },
+  "Q0351": {
+    "status": "FAIL",
+    "cause": "WRONG_VARIANT_SOURCE",
+    "reason": "Hỏi081SG nhưng trả Wi-Fi/OLED/408AU và041BD; không đúng phiên bản được hỏi.",
+    "reviewed_by": "Codex",
+    "method": "Read all12 exact answers and selector/search/source payloads; exact baseline answer confirmed; labels inherited with provenance.",
+    "inherited_from": "candidate_v9_development/human_review.json"
+  }
+}

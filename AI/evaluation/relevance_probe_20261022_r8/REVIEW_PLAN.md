@@ -1,0 +1,7 @@
+# Feasibility probe for evidence-relevance checking
+
+Six already-opened customer development outputs: baseline C31/C34, rejected patch14 C31/C34, and correct patch14 C05/C06. Four manually acceptable, two unacceptable according to saved Codex reviews. Manual labels/reasons are in separate frozen gold.json and NEVER supplied to model. Input contains original question, parts, known product subject, answer/declared unknowns and source contexts copied from frozen results. Prior answers are untrusted objects being judged, not sources of truth or training data.
+
+Same local model/config; no production chatbot change or added judge in live pipeline. Direct local structured calls, one per control, shared runner.lock, frozen source/result/review/gold/code provenance. Request/response retained; token counts/done_reason visible. Script compilation and fixture separation audited;193 production tests passed after patch14 rollback before launch.
+
+Read all six judge decisions/reasons against the saved manual verdicts. Agreement is diagnostic model agreement, NOT semantic accuracy of chatbot or independent validation. Check false acceptance of wrong attribute/region, false rejection of correct explicit unknown and incorrect demands for extra details. If this small probe fails, do not add a verifier to production from it; if it passes, still requires broader judge controls and latency assessment before production repair. No labels/answers learned, no reserved24 or old121validation opened. At most this one six-call batch this heartbeat; no second production repair.

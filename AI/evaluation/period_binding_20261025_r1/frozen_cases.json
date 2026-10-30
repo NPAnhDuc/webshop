@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "Q0092",
+    "question": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026 và tháng 5/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-03",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-03"
+        ],
+        "status": "overbroad_periods"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-03",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-03"
+        ],
+        "status": "overbroad_periods"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-03",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-03"
+        ],
+        "status": "overbroad_periods"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-03",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-03"
+        ],
+        "status": "overbroad_periods"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0181",
+    "question": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 1/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "returns_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "returns_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0244",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 5/2026 và tháng 8/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "exact"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "exact"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0261",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0269",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026 và tháng 8/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0298",
+    "question": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 8/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "returns_202608_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "returns_202608_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0312",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026 và tháng 8/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0365",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026 và tháng 7/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0370",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026 và tháng 5/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "revenue_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "revenue_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0405",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026 và tháng 3/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "revenue_202603_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "revenue_202603_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0445",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "revenue_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 1/2026",
+        "expected_periods": [
+          "2026-01"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-01"
+        ],
+        "evidence_ids": [
+          "revenue_202601_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-01"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0495",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "revenue_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0515",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026 và tháng 7/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0557",
+    "question": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026 và tháng 9/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-09"
+        ],
+        "evidence_ids": [
+          "returns_202609_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-09"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 9/2026",
+        "expected_periods": [
+          "2026-09"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "returns_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0578",
+    "question": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 2/2026 và tháng 5/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-02",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-02"
+        ],
+        "status": "overbroad_periods"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-02",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-02"
+        ],
+        "status": "overbroad_periods"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau sản phẩm hoàn trả trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-02",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-02"
+        ],
+        "status": "overbroad_periods"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-02",
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "returns_202605_1",
+          "returns_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05",
+          "monthly-report-2026-02"
+        ],
+        "status": "overbroad_periods"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0585",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026 và tháng 5/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 2/2026",
+        "expected_periods": [
+          "2026-02"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-02"
+        ],
+        "evidence_ids": [
+          "revenue_202602_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-02"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0586",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026 và tháng 5/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 4/2026",
+        "expected_periods": [
+          "2026-04"
+        ],
+        "actual_periods": [
+          "2026-05"
+        ],
+        "evidence_ids": [
+          "revenue_202605_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-05"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 5/2026",
+        "expected_periods": [
+          "2026-05"
+        ],
+        "actual_periods": [
+          "2026-04"
+        ],
+        "evidence_ids": [
+          "revenue_202604_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-04"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0589",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026 và tháng 7/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 6/2026",
+        "expected_periods": [
+          "2026-06"
+        ],
+        "actual_periods": [
+          "2026-07"
+        ],
+        "evidence_ids": [
+          "revenue_202607_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-07"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 7/2026",
+        "expected_periods": [
+          "2026-07"
+        ],
+        "actual_periods": [
+          "2026-06"
+        ],
+        "evidence_ids": [
+          "revenue_202606_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-06"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  },
+  {
+    "id": "Q0595",
+    "question": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 3/2026 và tháng 8/2026, không tính chênh lệch.",
+    "parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "revenue_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "baseline_parts": [
+      {
+        "part_id": "P1",
+        "part": "Đặt cạnh nhau doanh thu thuần trong báo cáo tháng 3/2026",
+        "expected_periods": [
+          "2026-03"
+        ],
+        "actual_periods": [
+          "2026-08"
+        ],
+        "evidence_ids": [
+          "revenue_202608_1"
+        ],
+        "document_ids": [
+          "monthly-report-2026-08"
+        ],
+        "status": "wrong_period"
+      },
+      {
+        "part_id": "P2",
+        "part": "tháng 8/2026",
+        "expected_periods": [
+          "2026-08"
+        ],
+        "actual_periods": [
+          "2026-03"
+        ],
+        "evidence_ids": [
+          "revenue_202603_2"
+        ],
+        "document_ids": [
+          "monthly-report-2026-03"
+        ],
+        "status": "wrong_period"
+      }
+    ],
+    "note": "Structured per-part binding audit; source-labeled overall answer may still contain both correct requested values."
+  }
+]

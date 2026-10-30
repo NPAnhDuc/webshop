@@ -1,0 +1,1 @@
+Baseline complete: semantic163PASS/5FAIL; variants54/56,53/56,56/56. 192quote checks, zero ownership issues/private leaks. See REPORT/summary/human_review. Original bank/gold/raw preserved. Patch11 candidate runs separately in history_binding_20261022_r2_candidate_p11; no production improvement accepted.

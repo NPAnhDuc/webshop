@@ -1,0 +1,45 @@
+{
+  "bank_sha256": "d400d477838304f8a88f71f481fbd1470f6da2d47bf685878d3c6e0b8bcc3b2a",
+  "errata_sha256": "fc1f0c09bc6bbdac7cdc43d547a585b79fee42a74488847ae3f0fdfb5680b616",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "split": "holdout",
+  "cases": 16,
+  "retrieval_only": false,
+  "reranker": "0",
+  "answer_mode": "extractive",
+  "sources": {
+    "shopbot\\retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b",
+    "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+    "shopbot\\engine.py": "8d6cc6bc40e9476171cea0eee3e16467f6a70eae67891d550cb8b5d960f982fd",
+    "shopbot\\rag_answer.py": "c57709240a95c81a75350d1fceebbb4e5781ccb4fe3ddfcc2f2be5b6f43cb82a"
+  },
+  "limitations": "Authored synthetic-shop benchmark; wording-family variants are not independent customer conversations. No SQL or routing score included.",
+  "completed": 16,
+  "errors": 0,
+  "passage_recall": 0.9230769230769231,
+  "document_recall": 0.9230769230769231,
+  "all_evidence_pass": 10,
+  "answer_pass": 15,
+  "permissions_pass": 16,
+  "average_answer_words": 40.6875,
+  "retrieval_truncations": 0,
+  "elapsed_seconds": 55.96899999999732,
+  "by_kind": {
+    "supported": {
+      "cases": 10,
+      "passed": 9
+    },
+    "partial": {
+      "cases": 1,
+      "passed": 1
+    },
+    "missing": {
+      "cases": 4,
+      "passed": 4
+    },
+    "acl": {
+      "cases": 1,
+      "passed": 1
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "b689cc9d657c4fff9c0093144f8df824",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T12:37:03.025407+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Hai CPU cùng tên i5 có chắc hiệu năng ngang nhau không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Hai CPU cùng tên i5 có chắc hiệu năng ngang nhau không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Vì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nKhông kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 1, phiên bản 1]",
+        "reason": "Vì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nKhông kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-cpu-name-generation",
+            "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "source": "tech-cpu-name-generation-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+            "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+            "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+            "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "section": 2,
+            "chunk_id": "c3905c96ffcf5e6862a0aa863976a12a9df57bfe2b7d5a0abdfb814a9608ec3e",
+            "score": 0.0484,
+            "dense_score": 0.5978,
+            "lexical_score": 0.3055,
+            "bm25_score": 20.9909,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-cpu-name-generation",
+            "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "source": "tech-cpu-name-generation-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+            "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể. Theo Intel, với Intel Core đời cũ, thế hệ là con số (hoặc hai con số) ngay sau i9, i7, i5, i3. Ví dụ i5-11400F là thế hệ 11 vì số 11 đứng sau i5. Cách đọc này không áp dụng cho Pentium, Celeron hay Xeon.",
+            "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể. Theo Intel, với Intel Core đời cũ, thế hệ là con số (hoặc hai con số) ngay sau i9, i7, i5, i3. Ví dụ i5-11400F là thế hệ 11 vì số 11 đứng sau i5. Cách đọc này không áp dụng cho Pentium, Celeron hay Xeon.",
+            "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "section": 1,
+            "chunk_id": "4e6b1a7c4933dbfd0d5b25a2f15c1d4e5c3ec922f9eacf21f831aef80411423c",
+            "score": 0.04788,
+            "dense_score": 0.6239,
+            "lexical_score": 0.2432,
+            "bm25_score": 14.9384,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.6878876999981
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Vì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nKhông kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-cpu-name-generation",
+        "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "source": "tech-cpu-name-generation-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+        "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+        "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+        "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "section": 2,
+        "chunk_id": "c3905c96ffcf5e6862a0aa863976a12a9df57bfe2b7d5a0abdfb814a9608ec3e",
+        "score": 0.0484,
+        "dense_score": 0.5978,
+        "lexical_score": 0.3055,
+        "bm25_score": 20.9909,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-cpu-name-generation",
+        "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "source": "tech-cpu-name-generation-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+        "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể. Theo Intel, với Intel Core đời cũ, thế hệ là con số (hoặc hai con số) ngay sau i9, i7, i5, i3. Ví dụ i5-11400F là thế hệ 11 vì số 11 đứng sau i5. Cách đọc này không áp dụng cho Pentium, Celeron hay Xeon.",
+        "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể. Theo Intel, với Intel Core đời cũ, thế hệ là con số (hoặc hai con số) ngay sau i9, i7, i5, i3. Ví dụ i5-11400F là thế hệ 11 vì số 11 đứng sau i5. Cách đọc này không áp dụng cho Pentium, Celeron hay Xeon.",
+        "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "section": 1,
+        "chunk_id": "4e6b1a7c4933dbfd0d5b25a2f15c1d4e5c3ec922f9eacf21f831aef80411423c",
+        "score": 0.04788,
+        "dense_score": 0.6239,
+        "lexical_score": 0.2432,
+        "bm25_score": 14.9384,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.075200999999652
+}

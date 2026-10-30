@@ -1,0 +1,1 @@
+91complete/allpartdecisionsreviewed; notaccepted due7unsafe shortcuts. Activepatch9unchanged, no runner. Read-only existing same-size-class modelinventory saved, no new inference/modelcreation/configchange.

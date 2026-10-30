@@ -1,0 +1,4 @@
+# Optional research-pack collector, separate from chatbot runtime dependencies.
+requests>=2.32,<3
+pypdf>=5,<7
+beautifulsoup4==4.15.0

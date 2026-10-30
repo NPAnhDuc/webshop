@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "7a27da5c5f3b49b4a2f5ee19b370aecf",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T12:37:58.883665+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Mã giảm giá có dùng cùng chương trình trả góp không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Mã giảm giá có dùng cùng chương trình trả góp không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "no_source",
+        "executed": true,
+        "answer": "Chưa có nguồn đủ để xác nhận: Mã giảm giá có dùng cùng chương trình trả góp không.",
+        "reason": "Chưa có nguồn đủ để xác nhận: Mã giảm giá có dùng cùng chương trình trả góp không.",
+        "answerability": "none",
+        "rag_action": "answer",
+        "sources": []
+      },
+      "seconds": 2.196513100003358
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Chưa có nguồn đủ để xác nhận: Mã giảm giá có dùng cùng chương trình trả góp không.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 2.5594898000126705
+}

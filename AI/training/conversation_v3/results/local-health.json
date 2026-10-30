@@ -1,0 +1,27 @@
+{
+  "web": {
+    "status": 200
+  },
+  "ollama": {
+    "status": 200,
+    "models": [
+      "qwen3:4b-instruct-2507-q4_K_M",
+      "qwen2.5:1.5b",
+      "shop-qwen:latest"
+    ]
+  },
+  "vietnamese_worker": {
+    "status": 200,
+    "ready": true,
+    "model": "dangvantuan/vietnamese-embedding",
+    "revision": "4ab46e46ba5902328ba0742e489e75f787932f2b",
+    "max_tokens": 256,
+    "device": "cpu",
+    "local_only": true,
+    "understanding_adapter": true
+  },
+  "tests": {
+    "passed": 69,
+    "scope": "Local automated tests; not model production accuracy"
+  }
+}

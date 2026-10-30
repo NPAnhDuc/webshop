@@ -1,0 +1,38 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "8ebccf0f8f20433a9b4cc957b85db8fa",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:26:47.199210+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Lãi gộp bao nhiêu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "metric": "gross_profit",
+      "pending": true,
+      "operation": "finance"
+    }
+  },
+  "plans": {
+    "admin_plan": {
+      "metric": "gross_profit",
+      "operation": "finance",
+      "period_unit": "month",
+      "time_mode": "same_period"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "clarify",
+    "answer": "Bạn xác nhận một tháng, quý hoặc năm cần báo cáo nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.4188030999939656
+}

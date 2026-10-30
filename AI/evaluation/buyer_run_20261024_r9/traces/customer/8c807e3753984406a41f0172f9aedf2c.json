@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "8c807e3753984406a41f0172f9aedf2c",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:45:08.906331+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Nếu thông tin hai tài liệu bảo hành khác nhau thì ưu tiên bản nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Nếu thông tin hai tài liệu bảo hành khác nhau thì ưu tiên bản nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]",
+        "reason": "Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-cpu-name-generation",
+            "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "source": "tech-cpu-name-generation-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+            "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+            "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+            "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+            "section": 2,
+            "chunk_id": "c3905c96ffcf5e6862a0aa863976a12a9df57bfe2b7d5a0abdfb814a9608ec3e",
+            "score": 0.04352,
+            "dense_score": 0.2917,
+            "lexical_score": 0.1034,
+            "bm25_score": 12.7319,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 3.527280199996312
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-cpu-name-generation",
+        "title": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "source": "tech-cpu-name-generation-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "06c9bcdcf60334c3a4bad271e5f4e4cc6d24f45ef09a9b54e4fe743fa89f303a",
+        "text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+        "retrieval_text": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp như Core 7 xuất hiện ở nhiều thế hệ khác nhau.\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu. Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\nNguồn: https://www.intel.com/content/www/us/en/support/articles/000032203/processors/intel-core-processors.html (ngày rà soát trên trang 08/01/2025) ; https://www.intel.com/content/www/us/en/support/articles/000100149/processors/intel-core-processors.html (ngày rà soát trên trang 17/04/2026)",
+        "heading_path": "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+        "section": 2,
+        "chunk_id": "c3905c96ffcf5e6862a0aa863976a12a9df57bfe2b7d5a0abdfb814a9608ec3e",
+        "score": 0.04352,
+        "dense_score": 0.2917,
+        "lexical_score": 0.1034,
+        "bm25_score": 12.7319,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 3.913187199999811
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "aa4386dc179547c497eb21455addea7d",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:46:03.290549+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Mình muốn máy vừa nhẹ vừa chạy game nặng vừa rẻ, bot nên trình bày đánh đổi ra sao?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.28198620000330266
+}

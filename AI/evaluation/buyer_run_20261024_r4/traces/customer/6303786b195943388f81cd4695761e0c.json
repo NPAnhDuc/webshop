@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "6303786b195943388f81cd4695761e0c",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:13:17.865733+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Mình mang máy đi học cả ngày, có thể chỉ nhìn Wh để chốt máy pin tốt không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "clarify",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm sản phẩm theo ngân sách, xem thông số một model hay so sánh hai model cụ thể? Nêu thêm loại máy, ngân sách hoặc tên model giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.28714069999114145
+}

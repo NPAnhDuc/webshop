@@ -1,0 +1,535 @@
+{
+  "protocol": "Separate semantic review after one frozen development batch. Inspected all11 changed answers,10 prior failures fixed;95 unchanged answers/tool-args compared with r6. No validation/training.",
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q02": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q10": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q11": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q12": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q14": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q15": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q16": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q17": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q18": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q19": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q20": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q21": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q22": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q23": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q24": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q25": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q26": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q27": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q28": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q29": {
+      "semantic_pass": false,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q30": {
+      "semantic_pass": false,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q31": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q32": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q33": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q34": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q35": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q36": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q37": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q38": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q39": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "Q40": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q41": {
+      "semantic_pass": false,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q42": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q43": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q44": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q45": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "Q46": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A01": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A02": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A03": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A04": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A05": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A06": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A07": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A08": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A09": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A10": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A11": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A12": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A13": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A14": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A15": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A16": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A17": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A18": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A19": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A20": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "A21": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A22": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": false,
+      "reason": "Reviewed explicit unsupported file transform or SKU sales request: truthful deferred, correct registered capability, no substitute inspection, no facts/write claims."
+    },
+    "A23": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "A24": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "same_answer_as_r6_after_path_normalization": true,
+      "reason": "Same answer (artifact revision path normalized) and same tool/args; carry forward r6 semantic review. No independent validation claim."
+    }
+  }
+}

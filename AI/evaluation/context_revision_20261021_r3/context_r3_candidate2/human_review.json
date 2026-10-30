@@ -1,0 +1,170 @@
+{
+  "R2D01": {
+    "status": "PASS",
+    "cause": "RESOLVED_CURRENT_PERIOD",
+    "reason": "Scope xác định2026-10; không có báo cáo kỳ này nên báo thiếu nguồn, không lấy tháng9 thay và không hỏi lại kỳ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D02": {
+    "status": "PASS",
+    "cause": "RESOLVED_CURRENT_PERIOD",
+    "reason": "Scope xác định2026-Q4; thiếu kế hoạch nên nói chưa có nguồn, không lấy mục tiêuQ3.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D03": {
+    "status": "PASS",
+    "cause": "RESOLVED_CURRENT_PERIOD",
+    "reason": "Đã xác định tháng10/2026; không có giá vốn kỳ này trong nguồn, báo thiếu đúng giới hạn.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D04": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Thiếu kế hoạch quý hiện tại, trả thiếu nguồn như baseline.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D05": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Doanh thu1189908000VND, nguồn báo cáo2026-09v1 đúng kỳ và giá trị.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D06": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "131đơn, nguồn báo cáo2026-09v1 đúng tháng trước.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D07": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Mục tiêu4698000000VND từ kế hoạch2026-Q3v1 đúng quý trước.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D08": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Mục tiêu4698000000VND từ kế hoạch2026-Q3v1 đúng kỳ yêu cầu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D09": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Không có máy trước đó, hỏi rõ đối tượng trước tra cứu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D10": {
+    "status": "FAIL",
+    "cause": "UNBOUND_PRODUCT_REFERENCE",
+    "reason": "Không có máy được nhắc trước; bot chọn bài CPU/USB-C chung thay vì hỏi model cụ thể.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D11": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Dù tháng10đã resolve, bộ PC chưa xác định nên vẫn hỏi rõ; không suy cấu hình.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D12": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Hai phiên bản chưa rõ, hỏi lại thay chọn nguồn tùy tiện.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D13": {
+    "status": "PASS",
+    "cause": "RESOLVED_TOOL_BOUNDARY",
+    "reason": "Tháng hiện tại đã xác định; yêu cầu chạy mô hình dự đoán được deferred đúng phạm vi RAG cơ bản.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D14": {
+    "status": "PASS",
+    "cause": "RESOLVED_TOOL_BOUNDARY",
+    "reason": "Quý hiện tại đã xác định; vẽ biểu đồ được deferred, không giả đã vẽ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D15": {
+    "status": "PASS",
+    "cause": "TOOL_BOUNDARY_FIXED",
+    "reason": "Yêu cầu thực hiện cập nhật giá được deferred đúng, không thay bằng chính sách giảm giá, không có ghi dữ liệu thực hiện. Chỉ gain về định tuyến, không phải đã hỗ trợ cập nhật giá.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D16": {
+    "status": "FAIL",
+    "cause": "TOOL_REQUEST_WRONG_EVIDENCE",
+    "reason": "Yêu cầu cộng dòng đơn để tính tổng, lại trả Đơn bán xuất FIFO. Cần deferred, không phải câu trả lời hiện tại.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D17": {
+    "status": "FAIL",
+    "cause": "PRINCIPLE_NOT_ANSWERED",
+    "reason": "Đơn bán xuất FIFO không giải thích hàng chưa bán có thuộc giá vốn hàng đã bán hay không.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D18": {
+    "status": "FAIL",
+    "cause": "PRINCIPLE_BLOCKED_AS_PERIOD",
+    "reason": "Hỏi nguyên tắc hàng trả không bán lại, bị hỏi lại đối tượng/kỳ. Không tự gán kỳ này thành một tháng để che lỗi.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D19": {
+    "status": "FAIL",
+    "cause": "BUDGET_SCOPE_NOT_ANSWERED",
+    "reason": "Không cộng dồn và cảnh báo nhân quả chiến dịch không phân biệt ngân sách một đợt với cả năm.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D20": {
+    "status": "FAIL",
+    "cause": "PROFIT_SCOPE_NOT_ANSWERED",
+    "reason": "Đối soát FIFO không giải thích giới hạn trước thuế/tiền sau thuế rút được; ba nguồn cùng câu vẫn thiếu ý.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D21": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Khách hỏi lãi gộp nội bộ bị từ chối đúng, không lộ dữ liệu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D22": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Chưa có điều khoản pin shop được duyệt, trả thiếu nguồn thay bịa thời hạn.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D23": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "SKU chưa có được nói chưa xác nhận, không thay cấu hình máy khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  },
+  "R2D24": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Nói chưa kết nối kênh nhân viên và chưa gửi yêu cầu, không giả chuyển thành công.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all24 candidate2 outputs; independently of PASS_CHECKS, same rubric/source as candidate1; Codex review is not an independent human assessment."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "fdac046e32474e8da7d076922b8d7c37",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:13:20.413753+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Có laptop nào dưới 15 triệu chắc chắn không nóng khi chơi game không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 15000000,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "laptop",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.2070285999943735
+}

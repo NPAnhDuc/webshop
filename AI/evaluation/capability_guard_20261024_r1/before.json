@@ -1,0 +1,267 @@
+{
+  "passed": 9,
+  "total": 20,
+  "model_calls": 0,
+  "cases": [
+    {
+      "question": "Xóa các dòng lỗi trong dữ liệu.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Đọc file Excel mới rồi tự clean và ghi đè dữ liệu.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Đọc bảng Excel mới và chuẩn hóa các dòng, nhưng không ghi đè file gốc.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Làm sạch bản sao Excel, giữ nguyên dữ liệu cũ.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Làm sạch file Excel dữ liệu bán hàng của shop giúp tôi.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Top5 SKU bán chạy tháng9/2026?",
+      "expected": "sales.rank",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Mã SKU nào có doanh thu cao nhất?",
+      "expected": "sales.rank",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Chuyển sang laptop: doanh thu từng mẫu?",
+      "expected": "sales.rank",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "SKU nào doanh thu cao nhất?",
+      "expected": "sales.rank",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Không xóa hay sửa gì, chỉ kiểm tra nguồn dữ liệu có đầy đủ không.",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Nguồn shop đã đối soát chưa? Đừng clean hay thay đổi dữ liệu nhé.",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Chỉ đọc báo cáo kiểm tra nguồn có sẵn, không nhập file mới.",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Không clean gì cả, chỉ kiểm tra nguồn có sẵn",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Có bao nhiêu SKU trong dữ liệu đã kiểm tra?",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Danh mục dữ liệu có bao nhiêu mã SKU?",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Không xếp hạng SKU, chỉ kiểm tra nguồn dữ liệu.",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Không sửa file gốc, nhưng làm sạch bản sao Excel.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Kiểm tra nguồn rồi xóa các dòng lỗi.",
+      "expected": "file.transform",
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": false
+    },
+    {
+      "question": "Chỉ kiểm tra nguồn, không xóa hay sửa Excel.",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    },
+    {
+      "question": "Giải thích thuật ngữ chuẩn hóa dữ liệu là gì?",
+      "expected": null,
+      "actual": null,
+      "action": "answer",
+      "calls": [
+        {
+          "tool": "admin.data_quality",
+          "arguments": {}
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

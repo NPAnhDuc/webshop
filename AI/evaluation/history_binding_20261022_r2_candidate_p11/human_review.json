@@ -1,0 +1,1361 @@
+{
+  "Q0113_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for HP Victus Gaming 15-fa1251TX: Processor Core: 14.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0113_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: HP Victus Gaming 15-fa1251TX: Processor Core: 14.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0113_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: HP Victus Gaming 15-fa1251TX: Processor Core: 14.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0125_original_history": {
+    "status": "FAIL",
+    "reason": "Required Corsair kit 2 x 16 GB absent; substitutes generic RAM capacity and laptop upgrade advice despite ram_modules_8 in available evidence.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0125_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0125_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0163_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Vostro 15 3510: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0163_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Vostro 15 3510: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0163_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Vostro 15 3510: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0175_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Lenovo IdeaPad Slim 3i 15ITL6: Processor Core: 4.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0175_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo IdeaPad Slim 3i 15ITL6: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0175_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo IdeaPad Slim 3i 15ITL6: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0191_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Dell Latitude 3430: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0191_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Latitude 3430: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0191_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Latitude 3430: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0202_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo Legion Slim 5i 16IRH8: Processor Core: 12.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0202_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo Legion Slim 5i 16IRH8: Processor Core: 12.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0202_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo Legion Slim 5i 16IRH8: Processor Core: 12.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0209_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P510: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0209_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P510: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0209_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P510: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0210_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: VRAM: 8 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0210_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: VRAM: 8 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0210_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: VRAM: 8 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0218_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B650-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0218_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B650-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0218_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B650-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0227_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 970 Evo Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0227_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 970 Evo Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0227_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 970 Evo Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0246_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI Modern 15 B12M: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0246_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI Modern 15 B12M: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0246_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI Modern 15 B12M: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0247_original_history": {
+    "status": "FAIL",
+    "reason": "Required Corsair kit 2 x 8 GB absent; substitutes Photoshop/soldered-RAM/DIMM cautions despite ram_modules_8 in available evidence.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0247_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0247_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0272_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Gigabyte X870E AORUS ELITE WIFI7: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0272_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Gigabyte X870E AORUS ELITE WIFI7: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0272_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Gigabyte X870E AORUS ELITE WIFI7: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0278_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF Gaming VG27AQ: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0278_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF Gaming VG27AQ: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0278_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF Gaming VG27AQ: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0292_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14600KF: xung cơ bản: 3.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0292_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14600KF: xung cơ bản: 3.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0292_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14600KF: xung cơ bản: 3.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0300_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Deepcool CH160: vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0300_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Deepcool CH160: vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0300_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Deepcool CH160: vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0301_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Corsair 4000D Airflow: vật liệu hông: Tinted Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0301_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Corsair 4000D Airflow: vật liệu hông: Tinted Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0301_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair 4000D Airflow: vật liệu hông: Tinted Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0314_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Apple MacBook Air (Late 2020): Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0314_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Apple MacBook Air (Late 2020): Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0314_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Apple MacBook Air (Late 2020): Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0321_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Acer Nitro 5 AN515-58-59JP: Processor Core: 8.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0321_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Nitro 5 AN515-58-59JP: Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0321_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Nitro 5 AN515-58-59JP: Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0322_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P3 Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0322_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P3 Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0322_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Crucial P3 Plus: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0327_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A750GL PCIE5: mức hiệu suất theo danh mục: gold.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0327_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A750GL PCIE5: mức hiệu suất theo danh mục: gold.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0327_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A750GL PCIE5: mức hiệu suất theo danh mục: gold.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0329_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI GeForce RTX 3060 Ventus 2X 12G: VRAM: 12 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0329_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI GeForce RTX 3060 Ventus 2X 12G: VRAM: 12 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0329_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI GeForce RTX 3060 Ventus 2X 12G: VRAM: 12 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0334_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 980 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0334_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 980 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0334_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 980 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0343_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 990 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0343_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 990 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0343_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Samsung 990 Pro: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0356_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Dell Inspiron 15 3520: Processor Core: 6.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0356_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Inspiron 15 3520: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0356_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Dell Inspiron 15 3520: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0357_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0357_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0357_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-14400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0368_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G305 LIGHTSPEED: DPI tối đa: 12000 dpi.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0368_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G305 LIGHTSPEED: DPI tối đa: 12000 dpi.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0368_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G305 LIGHTSPEED: DPI tối đa: 12000 dpi.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0373_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Kingston FURY Beast 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0373_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Kingston FURY Beast 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0373_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Kingston FURY Beast 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0381_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Western Digital WD_Black SN850X: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0381_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Western Digital WD_Black SN850X: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0381_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Western Digital WD_Black SN850X: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0382_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 9800X3D: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0382_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 9800X3D: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0382_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 9800X3D: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0383_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B550M-A WIFI II: kích thước/chuẩn thiết kế: Micro ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0383_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B550M-A WIFI II: kích thước/chuẩn thiết kế: Micro ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0383_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus PRIME B550M-A WIFI II: kích thước/chuẩn thiết kế: Micro ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0391_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Asus TUF Gaming A15 FA506NF: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0391_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF Gaming A15 FA506NF: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0391_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF Gaming A15 FA506NF: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0392_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 5700X3D: xung cơ bản: 3 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0392_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 5700X3D: xung cơ bản: 3 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0392_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 5700X3D: xung cơ bản: 3 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0397_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Asus ZenBook 14 UM425UA: Processor Core: 6.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0397_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus ZenBook 14 UM425UA: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0397_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus ZenBook 14 UM425UA: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0398_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Aspire 3 A315-59-56VC: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0398_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Aspire 3 A315-59-56VC: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0398_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Aspire 3 A315-59-56VC: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0401_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF GAMING B850-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0401_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF GAMING B850-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0401_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Asus TUF GAMING B850-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0402_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Acer Aspire 5 5P-A515-58P: Processor Core: 5.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0402_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Aspire 5 5P-A515-58P: Processor Core: 5.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0402_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Aspire 5 5P-A515-58P: Processor Core: 5.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0403_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AOC 24G4XE: độ phân giải: 1920 × 1080 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0403_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AOC 24G4XE: độ phân giải: 1920 × 1080 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0403_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AOC 24G4XE: độ phân giải: 1920 × 1080 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0406_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-12400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0406_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-12400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0406_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Intel Core i5-12400F: xung cơ bản: 2.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0411_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 5060 Ti 16G INSPIRE 2X OC: VRAM: 16 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0411_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 5060 Ti 16G INSPIRE 2X OC: VRAM: 16 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0411_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI RTX 5060 Ti 16G INSPIRE 2X OC: VRAM: 16 GB.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0417_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer Basilisk V3: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0417_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer Basilisk V3: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0417_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer Basilisk V3: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0422_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo LOQ Gaming 15IRH8: Processor Core: 8.",
+    "secondary_issues": [
+      "ADDITIONAL_SAME_PRODUCT_ATTRIBUTE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0422_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo LOQ Gaming 15IRH8: Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0422_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo LOQ Gaming 15IRH8: Processor Core: 8.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0427_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A650BN: mức hiệu suất theo danh mục: bronze.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0427_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A650BN: mức hiệu suất theo danh mục: bronze.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0427_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI MAG A650BN: mức hiệu suất theo danh mục: bronze.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0428_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer DeathAdder Essential: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0428_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer DeathAdder Essential: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0428_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Razer DeathAdder Essential: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0432_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Swift Go 14 SFG14-41-R5RB: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0432_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Swift Go 14 SFG14-41-R5RB: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0432_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Acer Swift Go 14 SFG14-41-R5RB: Processor Core: 6.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0438_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Kingston KC3000: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0438_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for Kingston KC3000: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0438_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Kingston KC3000: loại: SSD.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0442_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI B760 GAMING PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0442_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI B760 GAMING PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0442_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: MSI B760 GAMING PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0446_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: NZXT H5 Flow (2024): vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0446_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: NZXT H5 Flow (2024): vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0446_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: NZXT H5 Flow (2024): vật liệu hông: Tempered Glass.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0448_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 7700X: xung cơ bản: 4.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0448_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 7700X: xung cơ bản: 4.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0448_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 7 7700X: xung cơ bản: 4.5 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0462_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 5 7600X: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0462_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 5 7600X: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0462_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: AMD Ryzen 5 7600X: xung cơ bản: 4.7 GHz.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0471_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo ThinkBook 15 G2 ITL: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0471_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo ThinkBook 15 G2 ITL: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0471_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Lenovo ThinkBook 15 G2 ITL: Processor Core: 4.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0472_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: HP 15-fd0202TU: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0472_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: HP 15-fd0202TU: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0472_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: HP 15-fd0202TU: Processor Core: 10.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0478_original_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0478_brief_history": {
+    "status": "PASS",
+    "reason": "Freshly read changed answer with original history and source fact: correct requested attribute for G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Fresh manual reading of every changed answer, separate from PASS_CHECKS."
+  },
+  "Q0478_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0486_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair RM850e (2025): công suất định mức theo danh mục: 850 W.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0486_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair RM850e (2025): công suất định mức theo danh mục: 850 W.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0486_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair RM850e (2025): công suất định mức theo danh mục: 850 W.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0488_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: LG UltraGear 27GR75Q-B: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0488_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: LG UltraGear 27GR75Q-B: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0488_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: LG UltraGear 27GR75Q-B: độ phân giải: 2560 × 1440 pixel.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0496_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G502 Hero: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0496_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G502 Hero: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  },
+  "Q0496_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Logitech G502 Hero: kết nối: Wired.",
+    "secondary_issues": [],
+    "reviewed_by": "Codex",
+    "review_method": "Exact answer/action/source-object identity under identical frozen question/profile. Prior semantic decision inherited.",
+    "inherited_from": "history_binding_20261022_r2/human_review.json"
+  }
+}

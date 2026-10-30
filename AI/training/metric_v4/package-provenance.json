@@ -1,0 +1,12 @@
+{
+  "zip_file": "metric_v4_pack_20261019_01.zip",
+  "bytes": 105958,
+  "sha256": "25797aab6848ab8edc6e0aab48fe7d4fe31e588dca824e28d8a535fb07ca672e",
+  "files": {
+    "train_colab.py": "e5cfcf7a3be766d7d04f05be53781939e51aa77c77c9bda53097b6d8b8333175",
+    "data/manifest.json": "e0e05d23405afd9b2245ec203db48e6955058f3554aed2c5bc22baaff5682381",
+    "data/test.jsonl": "c0f5d87c05da7709ec3a3dc28de8c468a749d0df42808ef3597246e2e32e4546",
+    "data/train.jsonl": "58c38126deae25e8f4a76c6083e9458ba3fc2dfccb5d60e7bfe2644ebac2c879",
+    "data/validation.jsonl": "1a99475c30ee6baa8fcea2e6e4d886e3ea849b632f6100aad54b858be419643d"
+  }
+}

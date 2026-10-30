@@ -1,0 +1,37 @@
+{
+  "bank_sha256": "285c6444bb82016925559975d4d8a2a81083324bd3ef8c8cf0fb3b1693c71411",
+  "checks": [
+    {
+      "id": "A03",
+      "passed": false,
+      "action": "clarify",
+      "cost_oracle": [
+        1240171000,
+        1010759000
+      ],
+      "actual_calls": []
+    },
+    {
+      "id": "Q27",
+      "passed": false,
+      "action": "clarify",
+      "cost_oracle": [
+        1240171000,
+        1010759000
+      ],
+      "actual_calls": []
+    },
+    {
+      "id": "Q36",
+      "passed": false,
+      "action": "clarify",
+      "cost_oracle": [
+        1010759000
+      ],
+      "actual_calls": []
+    }
+  ],
+  "passed": 0,
+  "total": 3,
+  "oracle": "independent raw SQL; no bot calculation function used for expected values"
+}

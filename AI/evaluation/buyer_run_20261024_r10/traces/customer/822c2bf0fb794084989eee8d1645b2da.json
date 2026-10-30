@@ -1,0 +1,100 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "822c2bf0fb794084989eee8d1645b2da",
+  "parent_trace_id": "b17c5bbd01e74504ae52fd35844e2e93",
+  "recorded_at": "2026-10-24T16:37:30.206513+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, MSI RTX 4070 Ti SUPER 16G VENTUS 3X BLACK OC cần nguồn công suất bao nhiêu W?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "facts",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": [
+        "P66"
+      ],
+      "fact_fields": [
+        "recommended_psu_w"
+      ]
+    }
+  },
+  "calls": [
+    {
+      "tool": "catalog.product_facts",
+      "arguments": {
+        "product_id": "fc17a74f18090fc0987486a04ce4529961a6ff56408b2576b9674d5ed8599864",
+        "fields": [
+          "recommended_psu_w"
+        ]
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "data": {
+          "product": {
+            "id": "fc17a74f18090fc0987486a04ce4529961a6ff56408b2576b9674d5ed8599864",
+            "name": "MSI RTX 4070 Ti SUPER 16G VENTUS 3X BLACK OC",
+            "category": "vga",
+            "api_path": "/api/products/msi-rtx-4070-ti-super-16g-ventus-3x-black-oc",
+            "product_page_url": null
+          },
+          "facts": [
+            {
+              "field": "recommended_psu_w",
+              "value": null,
+              "missing": true
+            }
+          ],
+          "limitations": [
+            "Missing means absent from the captured record, not that the product lacks the feature."
+          ]
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      },
+      "seconds": 8.92000098247081e-05
+    }
+  ],
+  "result": {
+    "intent": "facts",
+    "basic_action": "answer",
+    "answer": "Theo bản ghi sản phẩm MSI RTX 4070 Ti SUPER 16G VENTUS 3X BLACK OC:\n- Nguồn khuyến nghị: chưa có thông tin trong bản ghi; tôi không suy đoán giá trị này.\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.",
+    "sources": [
+      {
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 0.27762690000236034
+}

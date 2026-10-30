@@ -1,0 +1,56 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "12c7d9ef8f3e42fc9c296589760bc503",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:32:09.004577+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, HP 15-fd0202TU RAM bao nhiêu GB?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Theo bản thông tin đang có, HP 15-fd0202TU RAM bao nhiêu GB?"
+      },
+      "principal_role": "customer",
+      "status": "disabled",
+      "output": {
+        "tool": "documents.answer",
+        "status": "disabled",
+        "executed": false,
+        "sources": [],
+        "reason": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm."
+      },
+      "seconds": 3.6299999919719994e-05
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.25910929999372456
+}

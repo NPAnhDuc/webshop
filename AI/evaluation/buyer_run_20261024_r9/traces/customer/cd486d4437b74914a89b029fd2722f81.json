@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "cd486d4437b74914a89b029fd2722f81",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:30.098449+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Hóa đơn VAT của shop được xuất khi nào và cần thông tin gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Hóa đơn VAT của shop được xuất khi nào và cần thông tin gì?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "no_source",
+        "executed": true,
+        "answer": "Chưa có nguồn đủ để xác nhận: Hóa đơn VAT của shop được xuất khi nào; cần thông tin gì.",
+        "reason": "Chưa có nguồn đủ để xác nhận: Hóa đơn VAT của shop được xuất khi nào; cần thông tin gì.",
+        "answerability": "none",
+        "rag_action": "answer",
+        "sources": []
+      },
+      "seconds": 3.9011366000049748
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Chưa có nguồn đủ để xác nhận: Hóa đơn VAT của shop được xuất khi nào; cần thông tin gì.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 4.271769900005893
+}

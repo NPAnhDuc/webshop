@@ -1,0 +1,5 @@
+# Notebook agent prototype only; not used by the chatbot runtime.
+ipykernel==7.4.0
+jupyter_client==8.10.0
+nbformat>=5.10
+psutil>=7

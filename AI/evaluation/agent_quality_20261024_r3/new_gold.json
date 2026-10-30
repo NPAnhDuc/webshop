@@ -1,0 +1,98 @@
+{
+  "Q01": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q02": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q03": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q04": {
+    "action": "answer",
+    "tool": "admin.finance"
+  },
+  "Q05": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q06": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q07": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q08": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q09": {
+    "action": "denied",
+    "tool": null
+  },
+  "Q10": {
+    "action": "deferred",
+    "tool": null
+  },
+  "Q11": {
+    "action": "deferred",
+    "tool": null
+  },
+  "Q12": {
+    "action": "documents",
+    "tool": null
+  },
+  "Q13": {
+    "action": "answer",
+    "tool": "admin.finance"
+  },
+  "Q14": {
+    "action": "deferred",
+    "tool": null
+  },
+  "Q15": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q16": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q17": {
+    "action": "answer",
+    "tool": "admin.finance_chart"
+  },
+  "Q18": {
+    "action": "documents",
+    "tool": null
+  },
+  "Q19": {
+    "action": "answer",
+    "tool": null
+  },
+  "Q20": {
+    "action": "deferred",
+    "tool": null
+  },
+  "Q21": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q22": {
+    "action": "deferred",
+    "tool": null
+  },
+  "Q23": {
+    "action": "answer",
+    "tool": "admin.data_quality"
+  },
+  "Q24": {
+    "action": "deferred",
+    "tool": null
+  }
+}

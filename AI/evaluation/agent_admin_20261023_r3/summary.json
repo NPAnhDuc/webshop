@@ -1,0 +1,14 @@
+{
+  "semantic_pass": 59,
+  "total": 60,
+  "checks_pass": 60,
+  "admin_pass": 23,
+  "admin_total": 24,
+  "buyer_pass": 36,
+  "buyer_total": 36,
+  "development_only": true,
+  "accepted_for_application": false,
+  "training_performed": false,
+  "median_seconds": 0.937,
+  "coverage_audit": "A24 fails presentation of partial observed year even though SQL oracle matches."
+}

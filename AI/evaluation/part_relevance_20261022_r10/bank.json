@@ -1,0 +1,987 @@
+[
+  {
+    "id": "R9-001",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C31",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Intel Core i5-14400F có mấy nhân và boost tối đa bao nhiêu, còn số luồng đã được ghi trong tài liệu chưa?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "Intel Core i5-14400F",
+      "answer": "Intel Core i5-14400F: số nhân: 10.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nChưa có nguồn đủ để xác nhận: còn số luồng đã được ghi trong tài liệu chưa.",
+      "sources": [
+        {
+          "source": "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md",
+          "title": "Intel Core i5-14400F",
+          "version": 3,
+          "text": "Intel Core i5-14400F\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nIntel Core i5-14400F: số nhân: 10.\n\nIntel Core i5-14400F: xung cơ bản: 2.5 GHz.\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\nIntel Core i5-14400F: vi kiến trúc: Raptor Lake Refresh.\n\nIntel Core i5-14400F: TDP: 65 W."
+        }
+      ],
+      "parts": {
+        "P1": "Số nhân CPU?",
+        "P2": "Xung boost tối đa?",
+        "P3": "Số luồng đã được ghi trong tài liệu chưa?"
+      }
+    }
+  },
+  {
+    "id": "R9-002",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C34",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "answer": "Mã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]\n\nTài liệu này chỉ xác nhận bản 408AU; chưa đủ để kết luận bản 041BD nâng cấp được hay không.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-msi-variant-v1.md",
+          "title": "MSI Modern 15 B12M: phải phân biệt mã vùng",
+          "version": 1,
+          "text": "MSI Modern 15 B12M: phải phân biệt mã vùng\n\nBản thông số MSI Modern 15 B12M-408AU ghi RAM 16 GB DDR4-3200 onboard. Mã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU. Tài liệu này chỉ xác nhận bản 408AU; chưa đủ để kết luận bản 041BD nâng cấp được hay không. Cũng không được nhầm Modern 15 với Modern 15 H.\n\nNguồn: https://storage-asset.msi.com/specSheet/au/bnp/Modern%2015%20B12M-408AU.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Có chắc RAM hàn bản 041BD giống hệt bản408AU không?"
+      }
+    }
+  },
+  {
+    "id": "R9-003",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch14",
+      "id": "C31",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Intel Core i5-14400F có mấy nhân và boost tối đa bao nhiêu, còn số luồng đã được ghi trong tài liệu chưa?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "Intel Core i5-14400F",
+      "answer": "Intel Core i5-14400F: số nhân: 10.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nĐây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md",
+          "title": "Intel Core i5-14400F",
+          "version": 3,
+          "text": "Intel Core i5-14400F\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nIntel Core i5-14400F: số nhân: 10.\n\nIntel Core i5-14400F: xung cơ bản: 2.5 GHz.\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\nIntel Core i5-14400F: vi kiến trúc: Raptor Lake Refresh.\n\nIntel Core i5-14400F: TDP: 65 W."
+        },
+        {
+          "source": "tech-wifi7-theory-v1.md",
+          "title": "Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?",
+          "version": 1,
+          "text": "Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?\n\nInfographic Intel nêu kênh 320 MHz và 4K QAM là các tính năng Wi-Fi 7. Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường. Không lấy thông lượng đỉnh để hứa tốc độ Internet hay tự gán Wi-Fi 7 cho máy chưa có thông số card mạng.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-07/wifi7-features-bandwidth-qam-infographic-nologo-1920-1080.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Số nhân CPU?",
+        "P2": "Xung boost tối đa?",
+        "P3": "Số luồng đã được ghi trong tài liệu chưa?"
+      }
+    }
+  },
+  {
+    "id": "R9-004",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch14",
+      "id": "C34",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "answer": "MSI Modern 15 B12M: RAM: 16GB.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "Có chắc RAM hàn bản 041BD giống hệt bản408AU không?"
+      }
+    }
+  },
+  {
+    "id": "R9-005",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch14",
+      "id": "C05",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Nó có cổng LAN và HDMI không, trả lời riêng từng cổng giúp tôi.",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "MSI Modern 15 B12M mã 041BD trong danh mục có hệ điều hành gì và nặng khoảng bao nhiêu?"
+      ],
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "answer": "MSI Modern 15 B12M: LAN: No.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 2, phiên bản 3]\n\nMSI Modern 15 B12M: HDMI Port: 1.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 2, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nMSI Modern 15 B12M: Graphics Memory Accessibility: Integrated.\n\nMSI Modern 15 B12M: Graphics Memory: Shared.\n\nMSI Modern 15 B12M: Display Size (Inch): 15.6.\n\nMSI Modern 15 B12M: Display Type: FHD LED Display.\n\nMSI Modern 15 B12M: Display Resolution: 1920x1080.\n\nMSI Modern 15 B12M: Touch Screen: No.\n\nMSI Modern 15 B12M: Optical Drive: No.\n\nMSI Modern 15 B12M: HDMI Port: 1.\n\nMSI Modern 15 B12M: LAN: No.\n\nMSI Modern 15 B12M: Finger Print Sensor: No.\n\nMSI Modern 15 B12M: Operating System: Win-11 Home.\n\nMSI Modern 15 B12M: Power Adapter: 65W.\n\nMSI Modern 15 B12M: Weight (Kg): 1.7 kg."
+        }
+      ],
+      "parts": {
+        "P1": "Máy vừa nói có LAN không?",
+        "P2": "Máy vừa nói có HDMI không?"
+      }
+    }
+  },
+  {
+    "id": "R9-006",
+    "cohort": "anchor",
+    "origin": {
+      "round": "old100_patch14",
+      "id": "C06",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "So RAM của MSI Modern 15 B12M và Lenovo LOQ Gaming 15IRH8: dung lượng giống nhau không, loại RAM khác nhau gì?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI Modern 15 B12M; Lenovo LOQ Gaming 15IRH8",
+      "answer": "MSI Modern 15 B12M: RAM: 16GB.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        },
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33. Mã linh kiện: 82XV00SGLK.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nLenovo LOQ Gaming 15IRH8: Processor Brand: Intel.\n\nLenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\nLenovo LOQ Gaming 15IRH8: Processor Core: 8.\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\nLenovo LOQ Gaming 15IRH8: Installed SSD Type: NVMe PCIe.\n\nLenovo LOQ Gaming 15IRH8: Graphics Chipset: Nvidia RTX 2050 Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "Dung lượng RAM của hai máy giống nhau không?",
+        "P2": "Loại RAM của hai máy khác nhau thế nào?"
+      }
+    }
+  },
+  {
+    "id": "R9-007",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C01",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Lenovo LOQ Gaming 15IRH8 trong danh mục dùng CPU gì, RAM mấy GB và RAM thế hệ nào?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "Lenovo LOQ Gaming 15IRH8",
+      "answer": "Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33. Mã linh kiện: 82XV00SGLK.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nLenovo LOQ Gaming 15IRH8: Processor Brand: Intel.\n\nLenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\nLenovo LOQ Gaming 15IRH8: Processor Core: 8.\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\nLenovo LOQ Gaming 15IRH8: Installed SSD Type: NVMe PCIe.\n\nLenovo LOQ Gaming 15IRH8: Graphics Chipset: Nvidia RTX 2050 Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "CPU của Lenovo LOQ Gaming15IRH8 là gì?",
+        "P2": "Dung lượng RAM?",
+        "P3": "Thế hệ RAM?"
+      }
+    }
+  },
+  {
+    "id": "R9-008",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C02",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Còn GPU của máy vừa nói là loại rời hay dùng chung RAM, dung lượng bộ nhớ đồ họa bao nhiêu?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Lenovo LOQ Gaming 15IRH8 trong danh mục dùng CPU gì, RAM mấy GB và RAM thế hệ nào?"
+      ],
+      "confirmed_subject": "Lenovo LOQ Gaming 15IRH8",
+      "answer": "Lenovo LOQ Gaming 15IRH8: Graphics Memory Accessibility: Dedicated.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 2, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: Graphics Memory: 4GB.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 2, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nLenovo LOQ Gaming 15IRH8: Graphics Memory Accessibility: Dedicated.\n\nLenovo LOQ Gaming 15IRH8: Graphics Memory: 4GB.\n\nLenovo LOQ Gaming 15IRH8: Display Size (Inch): 15.6.\n\nLenovo LOQ Gaming 15IRH8: Display Type: FHD LED Display.\n\nLenovo LOQ Gaming 15IRH8: Display Resolution: 1920x1080.\n\nLenovo LOQ Gaming 15IRH8: Touch Screen: No.\n\nLenovo LOQ Gaming 15IRH8: Optical Drive: No.\n\nLenovo LOQ Gaming 15IRH8: HDMI Port: 1.\n\nLenovo LOQ Gaming 15IRH8: LAN: Yes.\n\nLenovo LOQ Gaming 15IRH8: Finger Print Sensor: No.\n\nLenovo LOQ Gaming 15IRH8: Operating System: Win-11 Home.\n\nLenovo LOQ Gaming 15IRH8: Power Adapter: 135W.\n\nLenovo LOQ Gaming 15IRH8: Weight (Kg): 2.4 kg."
+        }
+      ],
+      "parts": {
+        "P1": "GPU của máy vừa nói rời hay dùng chung RAM?",
+        "P2": "Dung lượng bộ nhớ đồ họa?"
+      }
+    }
+  },
+  {
+    "id": "R9-009",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C07",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Đổi sang nói về MSI Modern 15 B12M nhé: chip của máy này là i5 hay i7?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Lenovo LOQ Gaming 15IRH8 trong danh mục dùng CPU gì, RAM mấy GB và RAM thế hệ nào?",
+        "Còn GPU của máy vừa nói là loại rời hay dùng chung RAM, dung lượng bộ nhớ đồ họa bao nhiêu?",
+        "Vậy RAM hiện có của nó và mức RAM tối đa nâng được có phải đều là 16 GB không?"
+      ],
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "answer": "MSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "CPU của MSI Modern15B12M là i5 hay i7?"
+      }
+    }
+  },
+  {
+    "id": "R9-010",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C11",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "SSD M.2 nào cũng là NVMe đúng không, hay có loại SATA nữa?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Ổ M.2 có thể dùng SATA hoặc NVMe qua PCIe.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nM.2 là dạng thiết kế ổ cắm/ổ lưu trữ, không đồng nghĩa với NVMe.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nNVMe và SATA khác giao tiếp và đặc tính hiệu năng.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-ssd-m2-nvme-v1.md",
+          "title": "SSD SATA, NVMe và M.2 khác nhau thế nào?",
+          "version": 1,
+          "text": "SSD SATA, NVMe và M.2 khác nhau thế nào?\n\nM.2 là dạng thiết kế ổ cắm/ổ lưu trữ, không đồng nghĩa với NVMe. Ổ M.2 có thể dùng SATA hoặc NVMe qua PCIe. NVMe và SATA khác giao tiếp và đặc tính hiệu năng. Trước khi nâng cấp phải kiểm tra giao tiếp mà khe của máy hỗ trợ; thấy cùng hình dáng M.2 chưa đủ kết luận lắp được. Không dùng tốc độ quảng cáo tối đa làm cam kết tốc độ cho mọi tác vụ.\n\nNguồn: https://www.kingston.com/en/blog/pc-performance/two-types-m2-vs-ssd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "M.2 có đồng nghĩa mọi ổ là NVMe không?",
+        "P2": "M.2 có loại SATA không?"
+      }
+    }
+  },
+  {
+    "id": "R9-011",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C13",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "DDR5 có on-die ECC tức là bảo vệ lỗi trên đường truyền tới CPU luôn à?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "On-die ECC của DDR5 sửa lỗi trong chip DRAM.\n\n[Nguồn: tech-ddr5-ecc-v1.md, mục DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?, đoạn 1, phiên bản 1]\n\nVì vậy on-die ECC không tự biến RAM DDR5 phổ thông thành bộ nhớ ECC cấp hệ thống của máy chủ; cần kiểm tra hỗ trợ của cả nền tảng.\n\n[Nguồn: tech-ddr5-ecc-v1.md, mục DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-ddr5-ecc-v1.md",
+          "title": "DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?",
+          "version": 1,
+          "text": "DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?\n\nOn-die ECC của DDR5 sửa lỗi trong chip DRAM. Nó không sửa được lỗi xảy ra ngoài chip hoặc trên đường truyền tới bộ điều khiển CPU. Vì vậy on-die ECC không tự biến RAM DDR5 phổ thông thành bộ nhớ ECC cấp hệ thống của máy chủ; cần kiểm tra hỗ trợ của cả nền tảng.\n\nNguồn: https://media.kingston.com/kingston/articles/MKF_954-DDR5-Collateral_us.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "On-die ECC của DDR5 có bảo vệ lỗi trên đường truyền tới CPU không?"
+      }
+    }
+  },
+  {
+    "id": "R9-012",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C18",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Màn quảng cáo 1 ms có nghĩa từ lúc tôi bấm chuột tới lúc nhìn thấy phản ứng đều chỉ 1 ms à?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Hai chỉ số khác nhau; số 1 ms được quảng cáo cho response time không đồng nghĩa cả hệ thống có input lag 1 ms.\n\n[Nguồn: tech-monitor-response-v1.md, mục Response time khác input lag như thế nào?, đoạn 1, phiên bản 1]\n\nResponse time nói về phản hồi của điểm ảnh trên màn hình.\n\n[Nguồn: tech-monitor-response-v1.md, mục Response time khác input lag như thế nào?, đoạn 1, phiên bản 1]\n\nInput lag liên quan độ trễ từ thao tác đầu vào đến khi hành động tương ứng xuất hiện.\n\n[Nguồn: tech-monitor-response-v1.md, mục Response time khác input lag như thế nào?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-monitor-response-v1.md",
+          "title": "Response time khác input lag như thế nào?",
+          "version": 1,
+          "text": "Response time khác input lag như thế nào?\n\nResponse time nói về phản hồi của điểm ảnh trên màn hình. Input lag liên quan độ trễ từ thao tác đầu vào đến khi hành động tương ứng xuất hiện. Hai chỉ số khác nhau; số 1 ms được quảng cáo cho response time không đồng nghĩa cả hệ thống có input lag 1 ms. Cần xem phương pháp đo và thiết bị được đo.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/gaming-monitor-input-lag-versus-response-time-whats-the-difference-and-why-should-i-care.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Response time1ms có đồng nghĩa toàn bộ độ trễ thao tác đến hình ảnh là1ms không?"
+      }
+    }
+  },
+  {
+    "id": "R9-013",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C21",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Theo bảng Adobe Photoshop 27.x mới được lưu, RAM tối thiểu và RAM khuyến nghị là bao nhiêu, đạt tối thiểu có nghĩa làm mọi file đều mượt không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Bảng yêu cầu Adobe Photoshop 27.x trở lên, cập nhật ngày 09/09/2026, ghi RAM tối thiểu 8 GB và khuyến nghị 16 GB trở lên cho Windows Intel/AMD.\n\n[Nguồn: tech-photoshop-requirements-v1.md, mục Máy học Photoshop cần bao nhiêu RAM?, đoạn 1, phiên bản 1]\n\nĐạt RAM tối thiểu không bảo đảm làm tệp lớn mượt.\n\n[Nguồn: tech-photoshop-requirements-v1.md, mục Máy học Photoshop cần bao nhiêu RAM?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-photoshop-requirements-v1.md",
+          "title": "Máy học Photoshop cần bao nhiêu RAM?",
+          "version": 1,
+          "text": "Máy học Photoshop cần bao nhiêu RAM?\n\nBảng yêu cầu Adobe Photoshop 27.x trở lên, cập nhật ngày 09/09/2026, ghi RAM tối thiểu 8 GB và khuyến nghị 16 GB trở lên cho Windows Intel/AMD. Đây chỉ là một phần yêu cầu: cần đối chiếu cả CPU, hệ điều hành và GPU với phiên bản đang dùng. Đạt RAM tối thiểu không bảo đảm làm tệp lớn mượt. Chưa có căn cứ để khẳng định một laptop cụ thể phù hợp nếu thiếu các thông số còn lại.\n\nNguồn: https://helpx.adobe.com/photoshop/desktop/get-started/technical-requirements-installation/adobe-photoshop-on-desktop-technical-requirements.html"
+        }
+      ],
+      "parts": {
+        "P1": "Photoshop27.x yêu cầu RAM tối thiểu bao nhiêu?",
+        "P2": "RAM khuyến nghị bao nhiêu?",
+        "P3": "Đạt tối thiểu có đảm bảo mọi tệp đều mượt không?"
+      }
+    }
+  },
+  {
+    "id": "R9-014",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C24",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Tại sao laptop 16 GB RAM chưa đủ để kết luận sau này tôi tháo RAM ra nâng được?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nKhông lấy giới hạn cấu hình khác trong dòng làm cam kết nâng cấp cho máy cụ thể.\n\n[Nguồn: tech-thinkbook-family-v1.md, mục ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-ram-upgrade-v1.md",
+          "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+          "version": 1,
+          "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-thinkbook-family-v1.md",
+          "title": "ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM",
+          "version": 1,
+          "text": "ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM\n\nTài liệu nền tảng ThinkBook 15 G2 ITL mô tả một phần RAM hàn trên bo mạch và một khe DDR4 SO-DIMM. Cần tra mã 20VE015VIN để xác nhận lượng RAM hàn, thanh đang lắp và cấu hình chính xác. Không lấy giới hạn cấu hình khác trong dòng làm cam kết nâng cấp cho máy cụ thể.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_15_G2_ITL/ThinkBook_15_G2_ITL_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Vì sao RAM16GB hiện tại không đủ để kết luận có thể tháo RAM ra nâng cấp?"
+      }
+    }
+  },
+  {
+    "id": "R9-015",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "C33",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "MacBook Air M1 2020: tài liệu hãng nói màn IPS hay OLED, cổng USB-C có hỗ trợ xuất hình không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Apple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort.\n\n[Nguồn: tech-macbook-air-m1-v1.md, mục MacBook Air M1 2020: màn hình và cổng của dòng máy, đoạn 1, phiên bản 1]\n\nApple MacBook Air (Late 2020): Display Type: Retina.\n\n[Nguồn: catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa-v3.md, mục Apple MacBook Air (Late 2020), đoạn 2, phiên bản 3]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nKhi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa-v3.md",
+          "title": "Apple MacBook Air (Late 2020)",
+          "version": 3,
+          "text": "Apple MacBook Air (Late 2020)\n\nApple MacBook Air (Late 2020): Graphics Memory Accessibility: Integrated.\n\nApple MacBook Air (Late 2020): Graphics Memory: Shared.\n\nApple MacBook Air (Late 2020): Display Size (Inch): 13.3.\n\nApple MacBook Air (Late 2020): Display Type: Retina.\n\nApple MacBook Air (Late 2020): Display Resolution: 2560x1600.\n\nApple MacBook Air (Late 2020): Touch Screen: No.\n\nApple MacBook Air (Late 2020): Optical Drive: No.\n\nApple MacBook Air (Late 2020): HDMI Port: No.\n\nApple MacBook Air (Late 2020): LAN: No.\n\nApple MacBook Air (Late 2020): Finger Print Sensor: Yes.\n\nApple MacBook Air (Late 2020): Operating System: macOS.\n\nApple MacBook Air (Late 2020): Power Adapter: 30W."
+        },
+        {
+          "source": "tech-macbook-air-m1-v1.md",
+          "title": "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+          "version": 1,
+          "text": "MacBook Air M1 2020: màn hình và cổng của dòng máy\n\nApple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort. RAM và SSD có lựa chọn theo cấu hình đặt hàng. Cần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\nNguồn: https://support.apple.com/en-us/111883\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-thunderbolt-usbc-v1.md",
+          "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+          "version": 1,
+          "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "MacBook Air M1 2020 dùng màn IPS hay OLED?",
+        "P2": "Cổng USB-C của máy hỗ trợ xuất hình không?"
+      }
+    }
+  },
+  {
+    "id": "R9-016",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A01",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1427320000 VND.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nĐơn hàng: 163.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nSản phẩm hoàn trả: 4.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-08-v1.md",
+          "title": "Báo cáo tháng 2026-08",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08\n\nDoanh thu thuần: 1427320000 VND. Giá vốn: 1240171000 VND. Lợi nhuận gộp: 187149000 VND. Chi phí vận hành: 141500520 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 45648480 VND. Đơn hàng: 163. Sản phẩm hoàn trả: 4."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu thuần tháng8/2026?",
+        "P2": "Số đơn tháng8/2026?",
+        "P3": "Số sản phẩm hoàn trả tháng8/2026?"
+      }
+    }
+  },
+  {
+    "id": "R9-017",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A02",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Còn tháng ngay sau tháng vừa nói, doanh thu thuần và giá vốn được ghi thế nào?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?"
+      ],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1189908000 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nGiá vốn: 1010759000 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu thuần tháng ngay sau tháng vừa nói?",
+        "P2": "Giá vốn của tháng đó?"
+      }
+    }
+  },
+  {
+    "id": "R9-018",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A04",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Đổi kỳ: lấy doanh thu và số đơn tháng 11/2025, không dùng tháng 11/2026.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+        "Còn tháng ngay sau tháng vừa nói, doanh thu thuần và giá vốn được ghi thế nào?",
+        "Cũng tháng đó, chi phí vận hành và lợi nhuận hoạt động trước lãi vay, thuế là bao nhiêu?"
+      ],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1493219000 VND.\n\n[Nguồn: monthly-report-2025-11-v1.md, mục Báo cáo tháng 2025-11 > Kết quả kỳ 2025-11, đoạn 2, phiên bản 1]\n\nĐơn hàng: 151.\n\n[Nguồn: monthly-report-2025-11-v1.md, mục Báo cáo tháng 2025-11 > Kết quả kỳ 2025-11, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2025-11-v1.md",
+          "title": "Báo cáo tháng 2025-11",
+          "version": 1,
+          "text": "Báo cáo tháng 2025-11 > Kết quả kỳ 2025-11\n\nDoanh thu thuần: 1493219000 VND. Giá vốn: 1294467000 VND. Lợi nhuận gộp: 198752000 VND. Chi phí vận hành: 138225409 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 60526591 VND. Đơn hàng: 151. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu tháng11/2025, không phải2026?",
+        "P2": "Số đơn tháng11/2025?"
+      }
+    }
+  },
+  {
+    "id": "R9-019",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A05",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Hôm nay là 20/10/2026. Theo báo cáo đã lập sẵn, tháng trước có bao nhiêu đơn?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Đơn hàng: 131.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Ngày20/10/2026, báo cáo tháng trước có bao nhiêu đơn?"
+      }
+    }
+  },
+  {
+    "id": "R9-020",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A08",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Ngày 20/10/2026, mục tiêu doanh thu của quý trước trong kế hoạch là bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND.\n\n[Nguồn: sales-plan-2026-Q3-v1.md, mục Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        }
+      ],
+      "parts": {
+        "P1": "Ngày20/10/2026, mục tiêu doanh thu quý trước trong kế hoạch là bao nhiêu?"
+      }
+    }
+  },
+  {
+    "id": "R9-021",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A12",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Theo báo cáo tháng này, tính ở 20/10/2026, shop lãi hoạt động bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận: Theo báo cáo tháng này; tính ở 20/10/2026; shop lãi hoạt động bao nhiêu.",
+      "sources": [],
+      "parts": {
+        "P1": "Báo cáo tháng10/2026 ghi lãi hoạt động bao nhiêu?"
+      }
+    }
+  },
+  {
+    "id": "R9-022",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A16",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Trích mục tiêu doanh thu quý 1, quý 2 và quý 3/2026, ghi từng quý một dòng.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3658000000 VND.\n\n[Nguồn: sales-plan-2026-Q1-v1.md, mục Kế hoạch bán hàng 2026-Q1 > Mục tiêu doanh thu, đoạn 2, phiên bản 1]\n\nMục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3848000000 VND.\n\n[Nguồn: sales-plan-2026-Q2-v1.md, mục Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu, đoạn 2, phiên bản 1]\n\nMục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND.\n\n[Nguồn: sales-plan-2026-Q3-v1.md, mục Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q1-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q1",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q1 > Mục tiêu doanh thu\n\nKỳ: 2026-Q1. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3658000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q2-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q2",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu\n\nKỳ: 2026-Q2. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3848000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        }
+      ],
+      "parts": {
+        "P1": "Mục tiêu doanh thu quý1/2026?",
+        "P2": "Mục tiêu doanh thu quý2/2026?",
+        "P3": "Mục tiêu doanh thu quý3/2026?"
+      }
+    }
+  },
+  {
+    "id": "R9-023",
+    "cohort": "new",
+    "origin": {
+      "round": "old100_patch9",
+      "id": "A21",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Đã tạo purchase order nhưng chưa nhận hàng thì đã cộng vào tồn chưa, mốc tăng tồn dựa vào đâu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Đơn nhập chưa nhận không tính là tồn kho; lấy receipts làm ngày tăng tồn.\n\n[Nguồn: procurement-v2.md, mục Quy trình nhập hàng > Nhà cung cấp giả lập, đoạn 2, phiên bản 2]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "procurement-v2.md",
+          "title": "Quy trình nhập hàng",
+          "version": 2,
+          "text": "Quy trình nhập hàng > Nhà cung cấp giả lập\n\nTheo bảng suppliers: Nhà phân phối laptop giả lập SUP-LAP có lead time 4 ngày, SUP-PC 3 ngày (Nhà phân phối linh kiện giả lập). Đơn nhập chưa nhận không tính là tồn kho; lấy receipts làm ngày tăng tồn. Mức đặt lại trong simulator: laptop 1 sản phẩm, nhóm khác 3; đặt lên 4 laptop hoặc 8 linh kiện. Các ngưỡng này là giả định mô phỏng, chưa tối ưu thực tế."
+        }
+      ],
+      "parts": {
+        "P1": "PO chưa nhận hàng đã tính vào tồn chưa?",
+        "P2": "Sự kiện nào làm tăng tồn?"
+      }
+    }
+  },
+  {
+    "id": "R9-024",
+    "cohort": "new",
+    "origin": {
+      "round": "history_attribute_20261022_r4_candidate_p12",
+      "id": "Q0442_explicit_subject_brief_history",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Còn kích thước/chuẩn thiết kế của MSI B760 GAMING PLUS WIFI?",
+      "role": "customer",
+      "today": "2026-10-21",
+      "previous_user_questions": [
+        "Theo danh mục tham khảo, MSI B760 GAMING PLUS WIFI có socket như thế nào?"
+      ],
+      "confirmed_subject": "MSI B760 GAMING PLUS WIFI",
+      "answer": "PSREF của Legion Slim 5 16IRH8 ghi hai khe SO-DIMM DDR5 và nhiều cấu hình trong dòng.\n\n[Nguồn: tech-legion-family-v1.md, mục Legion Slim 5 16IRH8: khả năng RAM theo dòng máy, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-legion-family-v1.md",
+          "title": "Legion Slim 5 16IRH8: khả năng RAM theo dòng máy",
+          "version": 1,
+          "text": "Legion Slim 5 16IRH8: khả năng RAM theo dòng máy\n\nPSREF của Legion Slim 5 16IRH8 ghi hai khe SO-DIMM DDR5 và nhiều cấu hình trong dòng. Mã 82YA00F0LK của danh mục cần đối chiếu riêng trước khi gán tần số RAM, màn hình hay GPU. Tùy chọn tối đa trong tài liệu nền tảng không đồng nghĩa tất cả máy bán ra đều trang bị mức đó.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_Slim_5_16IRH8/Legion_Slim_5_16IRH8_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Kích thước/chuẩn thiết kế của MSI B760 GAMING PLUS WIFI?"
+      }
+    }
+  },
+  {
+    "id": "R9-025",
+    "cohort": "new",
+    "origin": {
+      "round": "history_binding_20261022_r2",
+      "id": "Q0191_original_history",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Còn số nhân CPU của sản phẩm vừa nói?",
+      "role": "customer",
+      "today": "2026-10-21",
+      "previous_user_questions": [
+        "Theo danh mục tham khảo, Dell Latitude 3430 có CPU như thế nào?"
+      ],
+      "confirmed_subject": "Dell Latitude 3430",
+      "answer": "Dell Latitude 3430: Processor Model: Core i3 1215U.\n\n[Nguồn: catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6-v3.md, mục Dell Latitude 3430, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6-v3.md",
+          "title": "Dell Latitude 3430",
+          "version": 3,
+          "text": "Dell Latitude 3430\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nDell Latitude 3430: Processor Brand: Intel.\n\nDell Latitude 3430: Processor Model: Core i3 1215U.\n\nDell Latitude 3430: Processor Core: 6.\n\nDell Latitude 3430: RAM: 8GB.\n\nDell Latitude 3430: RAM Type: DDR4.\n\nDell Latitude 3430: Installed SSD Type: NVMe PCIe.\n\nDell Latitude 3430: Graphics Chipset: Intel UHD Graphics.\n\nDell Latitude 3430: Graphics Memory Accessibility: Integrated.\n\nDell Latitude 3430: Graphics Memory: Shared."
+        }
+      ],
+      "parts": {
+        "P1": "Số nhân CPU của Dell Latitude3430?"
+      }
+    }
+  },
+  {
+    "id": "R9-026",
+    "cohort": "new",
+    "origin": {
+      "round": "history_binding_20261022_r2",
+      "id": "Q0478_brief_history",
+      "kind": "recorded_output"
+    },
+    "payload": {
+      "question": "Còn bộ RAM của sản phẩm vừa nói?",
+      "role": "customer",
+      "today": "2026-10-21",
+      "previous_user_questions": [
+        "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?"
+      ],
+      "confirmed_subject": "G.Skill Trident Z5 RGB 64 GB",
+      "answer": "Bảng yêu cầu Adobe Photoshop 27.x trở lên, cập nhật ngày 09/09/2026, ghi RAM tối thiểu 8 GB và khuyến nghị 16 GB trở lên cho Windows Intel/AMD.\n\n[Nguồn: tech-photoshop-requirements-v1.md, mục Máy học Photoshop cần bao nhiêu RAM?, đoạn 1, phiên bản 1]\n\nMáy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nG.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md, mục G.Skill Trident Z5 RGB 64 GB, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md",
+          "title": "G.Skill Trident Z5 RGB 64 GB",
+          "version": 3,
+          "text": "G.Skill Trident Z5 RGB 64 GB\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nG.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\nG.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh.\n\nG.Skill Trident Z5 RGB 64 GB: độ trễ từ đầu tiên: 10 ns."
+        },
+        {
+          "source": "tech-photoshop-requirements-v1.md",
+          "title": "Máy học Photoshop cần bao nhiêu RAM?",
+          "version": 1,
+          "text": "Máy học Photoshop cần bao nhiêu RAM?\n\nBảng yêu cầu Adobe Photoshop 27.x trở lên, cập nhật ngày 09/09/2026, ghi RAM tối thiểu 8 GB và khuyến nghị 16 GB trở lên cho Windows Intel/AMD. Đây chỉ là một phần yêu cầu: cần đối chiếu cả CPU, hệ điều hành và GPU với phiên bản đang dùng. Đạt RAM tối thiểu không bảo đảm làm tệp lớn mượt. Chưa có căn cứ để khẳng định một laptop cụ thể phù hợp nếu thiếu các thông số còn lại.\n\nNguồn: https://helpx.adobe.com/photoshop/desktop/get-started/technical-requirements-installation/adobe-photoshop-on-desktop-technical-requirements.html"
+        },
+        {
+          "source": "glossary-ddr5-v1.md",
+          "title": "DDR5 là gì?",
+          "version": 1,
+          "text": "DDR5 là gì?\n\nDDR5 là một thế hệ bộ nhớ RAM, kế tiếp DDR4. Máy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua.\n\nNguồn kỹ thuật: https://stage.crucial.com/articles/about-memory/everything-about-ddr5-ram\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Bộ RAM G.Skill Trident Z5 RGB64GB gồm bao nhiêu thanh và dung lượng mỗi thanh?"
+      }
+    }
+  },
+  {
+    "id": "R9-027",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_wrong_month",
+      "question": "old100_patch9/A04",
+      "answer_and_sources": "old100_patch9/A01"
+    },
+    "payload": {
+      "question": "Đổi kỳ: lấy doanh thu và số đơn tháng 11/2025, không dùng tháng 11/2026.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+        "Còn tháng ngay sau tháng vừa nói, doanh thu thuần và giá vốn được ghi thế nào?",
+        "Cũng tháng đó, chi phí vận hành và lợi nhuận hoạt động trước lãi vay, thuế là bao nhiêu?"
+      ],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1427320000 VND.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nĐơn hàng: 163.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nSản phẩm hoàn trả: 4.\n\n[Nguồn: monthly-report-2026-08-v1.md, mục Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-08-v1.md",
+          "title": "Báo cáo tháng 2026-08",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08\n\nDoanh thu thuần: 1427320000 VND. Giá vốn: 1240171000 VND. Lợi nhuận gộp: 187149000 VND. Chi phí vận hành: 141500520 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 45648480 VND. Đơn hàng: 163. Sản phẩm hoàn trả: 4."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu tháng11/2025?",
+        "P2": "Số đơn tháng11/2025?"
+      }
+    }
+  },
+  {
+    "id": "R9-028",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_omit_types",
+      "source": "old100_patch14/C06",
+      "removed": "RAM type claims only"
+    },
+    "payload": {
+      "question": "So RAM của MSI Modern 15 B12M và Lenovo LOQ Gaming 15IRH8: dung lượng giống nhau không, loại RAM khác nhau gì?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI Modern 15 B12M; Lenovo LOQ Gaming 15IRH8",
+      "answer": "MSI Modern 15 B12M: RAM: 16GB.\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.",
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        },
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33. Mã linh kiện: 82XV00SGLK.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nLenovo LOQ Gaming 15IRH8: Processor Brand: Intel.\n\nLenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\nLenovo LOQ Gaming 15IRH8: Processor Core: 8.\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\nLenovo LOQ Gaming 15IRH8: Installed SSD Type: NVMe PCIe.\n\nLenovo LOQ Gaming 15IRH8: Graphics Chipset: Nvidia RTX 2050 Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "Dung lượng RAM của hai máy giống nhau không?",
+        "P2": "Loại RAM của hai máy khác nhau thế nào?"
+      }
+    }
+  },
+  {
+    "id": "R9-029",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_omit_middle",
+      "source": "old100_patch9/A16"
+    },
+    "payload": {
+      "question": "Trích mục tiêu doanh thu quý 1, quý 2 và quý 3/2026, ghi từng quý một dòng.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Q1/2026: Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3658000000 VND.\nQ3/2026: Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q1-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q1",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q1 > Mục tiêu doanh thu\n\nKỳ: 2026-Q1. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3658000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q2-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q2",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu\n\nKỳ: 2026-Q2. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 3848000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        }
+      ],
+      "parts": {
+        "P1": "Mục tiêu quý1/2026?",
+        "P2": "Mục tiêu quý2/2026?",
+        "P3": "Mục tiêu quý3/2026?"
+      }
+    }
+  },
+  {
+    "id": "R9-030",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_wrong_product",
+      "question": "old100_patch9/C07",
+      "answer_and_sources": "old100_patch9/C01"
+    },
+    "payload": {
+      "question": "Đổi sang nói về MSI Modern 15 B12M nhé: chip của máy này là i5 hay i7?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Lenovo LOQ Gaming 15IRH8 trong danh mục dùng CPU gì, RAM mấy GB và RAM thế hệ nào?",
+        "Còn GPU của máy vừa nói là loại rời hay dùng chung RAM, dung lượng bộ nhớ đồ họa bao nhiêu?",
+        "Vậy RAM hiện có của nó và mức RAM tối đa nâng được có phải đều là 16 GB không?"
+      ],
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "answer": "Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.",
+      "sources": [
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33. Mã linh kiện: 82XV00SGLK.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nLenovo LOQ Gaming 15IRH8: Processor Brand: Intel.\n\nLenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\nLenovo LOQ Gaming 15IRH8: Processor Core: 8.\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\nLenovo LOQ Gaming 15IRH8: Installed SSD Type: NVMe PCIe.\n\nLenovo LOQ Gaming 15IRH8: Graphics Chipset: Nvidia RTX 2050 Graphics."
+        }
+      ],
+      "parts": {
+        "P1": "CPU của MSI Modern15B12M là i5 hay i7?"
+      }
+    }
+  },
+  {
+    "id": "R9-031",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_false_unknown",
+      "provided_source": "old100_patch9/A01"
+    },
+    "payload": {
+      "question": "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận doanh thu, số đơn và sản phẩm hoàn trả tháng8/2026.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-08-v1.md",
+          "title": "Báo cáo tháng 2026-08",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-08 > Kết quả kỳ 2026-08\n\nDoanh thu thuần: 1427320000 VND. Giá vốn: 1240171000 VND. Lợi nhuận gộp: 187149000 VND. Chi phí vận hành: 141500520 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 45648480 VND. Đơn hàng: 163. Sản phẩm hoàn trả: 4."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu tháng8/2026?",
+        "P2": "Số đơn tháng8/2026?",
+        "P3": "Số sản phẩm hoàn trả tháng8/2026?"
+      }
+    }
+  }
+]

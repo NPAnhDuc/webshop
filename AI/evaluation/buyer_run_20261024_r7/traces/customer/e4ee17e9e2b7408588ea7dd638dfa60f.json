@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e4ee17e9e2b7408588ea7dd638dfa60f",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T10:44:32.075058+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Ổ SSD gần đầy có thể ảnh hưởng hiệu năng như thế nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Ổ SSD gần đầy có thể ảnh hưởng hiệu năng như thế nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nĐể giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 2, phiên bản 1]",
+        "reason": "Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nĐể giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 2, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-ssd-free-space",
+            "title": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+            "source": "tech-ssd-free-space-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "327de90f0e8be50215bad9c178b71846e9cc0d91a406290b74b500ebff317dd7",
+            "text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn. Tăng OP giúp hiệu năng duy trì và tuổi thọ tốt hơn, đổi lại dung lượng người dùng ít hơn.\n\nTài liệu Samsung nói về SSD trung tâm dữ liệu; mức chậm thực tế khi ổ gần đầy phụ thuộc model, firmware và kiểu ghi. Không cam kết con số tốc độ cho một ổ cụ thể.\n\nNguồn: https://download.semiconductor.samsung.com/resources/white-paper/S190311-SAMSUNG-Memory-Over-Provisioning-White-paper.pdf ; https://download.semiconductor.samsung.com/resources/others/Samsung_SSD_845DC_04_Over-provisioning.pdf",
+            "retrieval_text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn. Tăng OP giúp hiệu năng duy trì và tuổi thọ tốt hơn, đổi lại dung lượng người dùng ít hơn.\n\nTài liệu Samsung nói về SSD trung tâm dữ liệu; mức chậm thực tế khi ổ gần đầy phụ thuộc model, firmware và kiểu ghi. Không cam kết con số tốc độ cho một ổ cụ thể.\n\nNguồn: https://download.semiconductor.samsung.com/resources/white-paper/S190311-SAMSUNG-Memory-Over-Provisioning-White-paper.pdf ; https://download.semiconductor.samsung.com/resources/others/Samsung_SSD_845DC_04_Over-provisioning.pdf",
+            "heading_path": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+            "section": 2,
+            "chunk_id": "94967510677ed781ee9760d7d1b65609abaa11b68a9e2ee27983ee8581edd337",
+            "score": 0.04865,
+            "dense_score": 0.6961,
+            "lexical_score": 0.1754,
+            "bm25_score": 11.9899,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-ssd-free-space",
+            "title": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+            "source": "tech-ssd-free-space-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "327de90f0e8be50215bad9c178b71846e9cc0d91a406290b74b500ebff317dd7",
+            "text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi. Để giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống. Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.",
+            "retrieval_text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi. Để giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống. Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.",
+            "heading_path": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+            "section": 1,
+            "chunk_id": "ce7856709b28d56c681005df62fb816f543d966a653921f6a7fe9a7a8017dae8",
+            "score": 0.04762,
+            "dense_score": 0.651,
+            "lexical_score": 0.1628,
+            "bm25_score": 10.2241,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.863071400002809
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nĐể giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 2, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-ssd-free-space",
+        "title": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+        "source": "tech-ssd-free-space-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "327de90f0e8be50215bad9c178b71846e9cc0d91a406290b74b500ebff317dd7",
+        "text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn. Tăng OP giúp hiệu năng duy trì và tuổi thọ tốt hơn, đổi lại dung lượng người dùng ít hơn.\n\nTài liệu Samsung nói về SSD trung tâm dữ liệu; mức chậm thực tế khi ổ gần đầy phụ thuộc model, firmware và kiểu ghi. Không cam kết con số tốc độ cho một ổ cụ thể.\n\nNguồn: https://download.semiconductor.samsung.com/resources/white-paper/S190311-SAMSUNG-Memory-Over-Provisioning-White-paper.pdf ; https://download.semiconductor.samsung.com/resources/others/Samsung_SSD_845DC_04_Over-provisioning.pdf",
+        "retrieval_text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nOver-provisioning (OP) là phần dung lượng chỉ bộ điều khiển SSD dùng, máy tính không ghi vào được, giúp có sẵn khối trống khi thu gom rác và cân bằng hao mòn. Tăng OP giúp hiệu năng duy trì và tuổi thọ tốt hơn, đổi lại dung lượng người dùng ít hơn.\n\nTài liệu Samsung nói về SSD trung tâm dữ liệu; mức chậm thực tế khi ổ gần đầy phụ thuộc model, firmware và kiểu ghi. Không cam kết con số tốc độ cho một ổ cụ thể.\n\nNguồn: https://download.semiconductor.samsung.com/resources/white-paper/S190311-SAMSUNG-Memory-Over-Provisioning-White-paper.pdf ; https://download.semiconductor.samsung.com/resources/others/Samsung_SSD_845DC_04_Over-provisioning.pdf",
+        "heading_path": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+        "section": 2,
+        "chunk_id": "94967510677ed781ee9760d7d1b65609abaa11b68a9e2ee27983ee8581edd337",
+        "score": 0.04865,
+        "dense_score": 0.6961,
+        "lexical_score": 0.1754,
+        "bm25_score": 11.9899,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-ssd-free-space",
+        "title": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+        "source": "tech-ssd-free-space-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "327de90f0e8be50215bad9c178b71846e9cc0d91a406290b74b500ebff317dd7",
+        "text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi. Để giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống. Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.",
+        "retrieval_text": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi. Để giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang không còn dùng để tạo khối trống. Theo Samsung, việc này đôi khi làm chậm hiệu năng nếu thu gom rác xen vào lúc máy đang ghi; vì vậy SSD cần không gian trống để firmware hoạt động trơn tru.",
+        "heading_path": "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+        "section": 1,
+        "chunk_id": "ce7856709b28d56c681005df62fb816f543d966a653921f6a7fe9a7a8017dae8",
+        "score": 0.04762,
+        "dense_score": 0.651,
+        "lexical_score": 0.1628,
+        "bm25_score": 10.2241,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.288228000004892
+}

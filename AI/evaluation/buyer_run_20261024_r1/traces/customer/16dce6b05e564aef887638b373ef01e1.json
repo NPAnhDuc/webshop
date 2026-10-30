@@ -1,0 +1,69 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "16dce6b05e564aef887638b373ef01e1",
+  "parent_trace_id": "a09d6c2fb3774588a4c27fd3b35a3d24",
+  "recorded_at": "2026-10-24T07:34:32.382945+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Bỏ lựa chọn cũ, chuyển sang bộ nguồn, lấy 3 món dưới 15000000 đồng.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 15000000,
+        "limit": 5,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32",
+        "P17",
+        "P66",
+        "P60"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 15000000,
+        "limit": 5,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32",
+        "P17",
+        "P66",
+        "P60"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 15000000,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "psu",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": true,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.4428707000042778
+}

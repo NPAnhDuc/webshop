@@ -1,0 +1,25 @@
+{
+  "evaluated_round": "kb3_unsupported_write_r1",
+  "actual_cases": 188,
+  "integrity_during_evaluation": true,
+  "changed_answers": [
+    "Q0055"
+  ],
+  "other_answer_texts_unchanged": 187,
+  "judgment": "Accurate unsupported mutation limitation before routing; executed=false; no false completion.",
+  "new_model_calls": 0,
+  "current_runtime_differs_from_evaluated_snapshot": true,
+  "drift": {
+    "shopbot\\grounded_rag.py": {
+      "evaluated": "22e3bbfbb68d279129834766fc7e91efe0a6e7508bb962fbabb5a36ecd7619d2",
+      "current": "2b6cdbb30a0a3818a3adc6708ff266ba19950777ef9fb5b1ae38396f25b5147b"
+    }
+  },
+  "new_modules": [
+    "shopbot\\identifier_binding.py"
+  ],
+  "current_runtime_promoted": false,
+  "validation_note": "New kb3_validation_r1 directory observed from other workspace activity; no validation contents inspected, no repair based on validation.",
+  "training_allowed": false,
+  "ingestion_allowed": false
+}

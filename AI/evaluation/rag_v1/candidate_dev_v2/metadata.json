@@ -1,0 +1,13 @@
+{
+  "bank_sha256": "d400d477838304f8a88f71f481fbd1470f6da2d47bf685878d3c6e0b8bcc3b2a",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "split": "dev",
+  "cases": 32,
+  "sources": {
+    "shopbot\\retrieval.py": "39003c65b9b1fac8e5ca45a2b67873f5fef73d3d15b3bfe7e58dc93f5ea75d35",
+    "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+    "shopbot\\engine.py": "e535b31da18a7fc5749f225b464e8d07541a4c270e074a7c79c9fa3390aee1bd",
+    "shopbot\\rag_answer.py": "73e83b51e17d7c2eaabff19768aca43d50fb406446ec72bf45a1eab0a2295508"
+  },
+  "limitations": "Authored synthetic-shop benchmark; wording-family variants are not independent customer conversations. No SQL or routing score included."
+}

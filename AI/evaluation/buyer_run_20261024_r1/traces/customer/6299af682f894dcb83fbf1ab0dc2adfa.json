@@ -1,0 +1,69 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "6299af682f894dcb83fbf1ab0dc2adfa",
+  "parent_trace_id": "b84e63ebc109471f97eb80aabbc6152d",
+  "recorded_at": "2026-10-24T07:34:20.857013+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Vẫn loại vừa rồi, hạ trần xuống 2500000 đồng và lấy 2 món nhé.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 5000000,
+        "limit": 4,
+        "category": "ssd",
+        "brand": null
+      },
+      "last_selection": [
+        "P26",
+        "P59",
+        "P61",
+        "P11"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 5000000,
+        "limit": 4,
+        "category": "ssd",
+        "brand": null
+      },
+      "last_selection": [
+        "P26",
+        "P59",
+        "P61",
+        "P11"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "ssd",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.526769099989906
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "de-reconciliation-manifest-v1",
+  "source_id": "retail_sim_v1",
+  "data_kind": "simulation",
+  "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+  "staging_manifest_sha256": "f0a4b4b6f9f26a163a30ba36e317e9ff52fe5e3e4704b2433bbded73d5cbb7f5",
+  "reconciliation_sha256": "7f88a393560f2e99b46696bef4fad39f846f95b71984b6eebf27fac300022908",
+  "status": "reconciled_pending_curated_design",
+  "curated_published": false
+}

@@ -1,0 +1,12 @@
+{
+  "development_only": true,
+  "model_calls": 0,
+  "training_allowed": false,
+  "files": {
+    "AI\\evaluation\\capability_guard_20261024_r1\\check_guard.py": "f4819562a4b612751292fe9c15b18e54d5e4ca7cfbcd5e8b6f6f7cff8d7ecdc6",
+    "AI\\evaluation\\capability_guard_20261024_r1\\baseline_code\\admin_conversation.py": "381daea8bc344d7e777535d9928e8a0c3d17652f814ede37124ea1597c360b42",
+    "AI\\evaluation\\capability_guard_20261024_r1\\baseline_code\\capabilities.py": "983ff75a9367442be80afd94c75aabb0bb614ba1035bc8db28a783aea65472da",
+    "AI\\evaluation\\capability_guard_20261024_r1\\before.json": "e216dd1f7aed05829a3963bc98d55cb16ad947da1cb693008bb2fb3ea60cd056",
+    "AI\\evaluation\\capability_guard_20261024_r1\\after.json": "f1f29be1223ce5f9746975cd58159ed211576712b271b1025e9c97fe15c2d069"
+  }
+}

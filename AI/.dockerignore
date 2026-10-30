@@ -1,0 +1,20 @@
+# Image holds code only. Data and models are mounted by docker-compose.yml.
+.env
+.env.*
+!.env.example
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/
+runtime/
+data/
+evaluation/
+training/
+reports/
+design/
+references/
+tests/
+*.log
+*.gguf
+*.zip

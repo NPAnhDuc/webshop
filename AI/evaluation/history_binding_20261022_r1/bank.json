@@ -1,0 +1,248 @@
+[
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0300_original_history",
+    "required": [
+      {
+        "document_id": "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171",
+        "version": 3,
+        "quote": "Deepcool CH160: vật liệu hông: Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0300_original_history",
+    "variant": "original_history",
+    "parent_id": "Q0182",
+    "target_id": "Q0300",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+          "answer": "Deepcool CH160: vật liệu hông: Tempered Glass.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]\n\nDeepcool CH160: loại: Mini ITX Desktop.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]\n\nD"
+        }
+      ],
+      "rag_product_subject": "Deepcool CH160",
+      "document_query": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+      "rag_subject": "Deepcool CH160"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0182",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0300_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171",
+        "version": 3,
+        "quote": "Deepcool CH160: vật liệu hông: Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0300_brief_history",
+    "variant": "brief_history",
+    "parent_id": "Q0182",
+    "target_id": "Q0300",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+          "answer": "Deepcool CH160: loại: Mini ITX Desktop.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Deepcool CH160",
+      "document_query": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+      "rag_subject": "Deepcool CH160"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0182",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của Deepcool CH160?",
+    "topic": "product_context",
+    "conversation": "Q0300_explicit_subject_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171",
+        "version": 3,
+        "quote": "Deepcool CH160: vật liệu hông: Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0300_explicit_subject_brief_history",
+    "variant": "explicit_subject_brief_history",
+    "parent_id": "Q0182",
+    "target_id": "Q0300",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+          "answer": "Deepcool CH160: loại: Mini ITX Desktop.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Deepcool CH160",
+      "document_query": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+      "rag_subject": "Deepcool CH160"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0182",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0478_original_history",
+    "required": [
+      {
+        "document_id": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+        "version": 3,
+        "quote": "G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0478_original_history",
+    "variant": "original_history",
+    "parent_id": "Q0015",
+    "target_id": "Q0478",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "G.Skill Trident Z5 RGB 64 GB: CAS latency: 32.\n\n[Nguồn: catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md, mục G.Skill Trident Z5 RGB 64 GB, đoạn 2, phiên bản 3]\n\nG.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-92d13967"
+        }
+      ],
+      "rag_product_subject": "G.Skill Trident Z5 RGB 64 GB",
+      "document_query": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "G.Skill Trident Z5 RGB 64 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0015",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0478_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+        "version": 3,
+        "quote": "G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0478_brief_history",
+    "variant": "brief_history",
+    "parent_id": "Q0015",
+    "target_id": "Q0478",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "G.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md, mục G.Skill Trident Z5 RGB 64 GB, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "G.Skill Trident Z5 RGB 64 GB",
+      "document_query": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "G.Skill Trident Z5 RGB 64 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0015",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của G.Skill Trident Z5 RGB 64 GB?",
+    "topic": "product_context",
+    "conversation": "Q0478_explicit_subject_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+        "version": 3,
+        "quote": "G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0478_explicit_subject_brief_history",
+    "variant": "explicit_subject_brief_history",
+    "parent_id": "Q0015",
+    "target_id": "Q0478",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "G.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md, mục G.Skill Trident Z5 RGB 64 GB, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "G.Skill Trident Z5 RGB 64 GB",
+      "document_query": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "G.Skill Trident Z5 RGB 64 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0015",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  }
+]

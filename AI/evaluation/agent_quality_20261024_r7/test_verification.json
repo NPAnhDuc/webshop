@@ -1,0 +1,9 @@
+{
+  "passed": 409,
+  "log": "AI/runtime/tests-capability-guard-r1.log",
+  "seconds": 153.87,
+  "offline_guard_before": 9,
+  "offline_guard_after": 20,
+  "offline_guard_total": 20,
+  "initial_targeted_attempt": "56 passed,3 setup errors: old system pytest temp directory ACL; rerun full suite with new workspace basetemp and cache disabled passed. No application permission changed."
+}

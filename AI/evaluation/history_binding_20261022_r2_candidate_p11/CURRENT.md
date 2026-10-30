@@ -1,0 +1,1 @@
+Rejected. Semantic166PASS/2FAIL vs163/5: five fixes but two Corsair original-history regressions.147 exact-output decisions inherited,21changed freshly read. See REPORT/summary/decision. Restored patch9 and193tests passed; no broader479/old100 on rejected code. Diagnostic r3 runs separately to complete explicit-subject/original-history control.

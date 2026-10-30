@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "819ad0f947b443dc8b7eb085d6e963f3",
+  "parent_trace_id": "16dd1e66c2394c3eac85c98c0261af1f",
+  "recorded_at": "2026-10-24T07:34:49.922808+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Món đầu so với món kế tiếp có chênh lệch gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "clarify",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn chọn hoặc so sánh những model nào? Nếu nhắc máy trước đó, tôi cần một danh sách đã xác định.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.3519030999887036
+}

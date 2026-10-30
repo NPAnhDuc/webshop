@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "d50f7bdd2c494b9c8a236ea70ecd3a9e",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T16:41:42.812159+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Chọn máy cho người lớn tuổi chỉ gọi video và đọc báo nên chú ý gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.7934070999908727
+}

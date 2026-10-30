@@ -1,0 +1,53 @@
+{
+  "cases": 479,
+  "semantic_pass": 452,
+  "semantic_fail": 27,
+  "before_round": "candidate_v9_development",
+  "before_pass": 450,
+  "before_fail": 29,
+  "fixed_ids": [
+    "Q0154",
+    "Q0191",
+    "Q0193",
+    "Q0228"
+  ],
+  "regressed_ids": [
+    "Q0300",
+    "Q0478"
+  ],
+  "changed_cases": 75,
+  "inherited_reviews": 404,
+  "new_reviews": 75,
+  "roles": {
+    "customer": {
+      "PASS": 233,
+      "FAIL": 15
+    },
+    "admin": {
+      "PASS": 219,
+      "FAIL": 12
+    }
+  },
+  "before_checks": {
+    "PASS_CHECKS": 422,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 4
+  },
+  "after_checks": {
+    "PASS_CHECKS": 421,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 5
+  },
+  "quote_checks": 818,
+  "quote_issues": [],
+  "private_source_leaks": [],
+  "secondary_issue_cases": 30,
+  "before_secondary_issue_cases": 53,
+  "median_seconds": 4.36,
+  "total_seconds": 2180.794,
+  "before_median_seconds": 4.422,
+  "before_total_seconds": 2264.654,
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Full development rubric(mainfactswithsecondarynoise),not independent validation or real-user accuracy. Netgain doesnoterase2followupregressions. Cache/warmup uncontrolled."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "584c4bc1c5794ef794b1f6788caba99a",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T02:10:16.827326+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Thông số RAM laptop là gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.3227243000001181
+}

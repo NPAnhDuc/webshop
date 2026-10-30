@@ -1,0 +1,11 @@
+{
+  "semantic_pass": 12,
+  "total": 12,
+  "development_only": true,
+  "accepted_for_application": false,
+  "median_seconds": 0.5155000000000001,
+  "total_seconds": 9.031,
+  "training_performed": false,
+  "default_mode_changed": false,
+  "notes": "Matched regression bank used repeatedly for fixes; NOT independent validation. Includes two unconnected-branch controls and one guarded unsupported-filter control."
+}

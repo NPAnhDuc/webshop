@@ -1,0 +1,111 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "b4b58f236a88449a811cb919a287d376",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:48.299205+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Giao đến tỉnh khác mất bao lâu theo chính sách hiện hành?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Giao đến tỉnh khác mất bao lâu theo chính sách hiện hành?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Chính sách này chỉ dùng demo.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+        "reason": "Chính sách này chỉ dùng demo.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "customer-policy",
+            "title": "Chính sách dùng cho shop giả lập",
+            "source": "customer-policy-v1.md",
+            "version": 1,
+            "effective_from": "2025-10-01",
+            "effective_to": null,
+            "status": "approved",
+            "audience": "customer",
+            "authority": "synthetic_shop_document",
+            "data_kind": "demo",
+            "doc_type": "policy",
+            "text": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành\n\nChính sách này chỉ dùng demo. Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU. Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam. Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.",
+            "retrieval_text": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành\n\nChính sách này chỉ dùng demo. Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU. Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam. Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.",
+            "heading_path": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành",
+            "section": 2,
+            "chunk_id": "97a45fde342e135665eb2beb738e4919c293ea5737ad45b7ca567d0cc4070bad",
+            "score": 0.04918,
+            "dense_score": 0.3066,
+            "lexical_score": 0.3911,
+            "bm25_score": 2.7947,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 3.131386499997461
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Chính sách này chỉ dùng demo.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+    "sources": [
+      {
+        "document_id": "customer-policy",
+        "title": "Chính sách dùng cho shop giả lập",
+        "source": "customer-policy-v1.md",
+        "version": 1,
+        "effective_from": "2025-10-01",
+        "effective_to": null,
+        "status": "approved",
+        "audience": "customer",
+        "authority": "synthetic_shop_document",
+        "data_kind": "demo",
+        "doc_type": "policy",
+        "text": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành\n\nChính sách này chỉ dùng demo. Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU. Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam. Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.",
+        "retrieval_text": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành\n\nChính sách này chỉ dùng demo. Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU. Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam. Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.",
+        "heading_path": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành",
+        "section": 2,
+        "chunk_id": "97a45fde342e135665eb2beb738e4919c293ea5737ad45b7ca567d0cc4070bad",
+        "score": 0.04918,
+        "dense_score": 0.3066,
+        "lexical_score": 0.3911,
+        "bm25_score": 2.7947,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 3.451704899998731
+}

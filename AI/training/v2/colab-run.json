@@ -1,0 +1,15 @@
+{
+  "notebook_url": "https://colab.research.google.com/drive/1dXjnSURNVIJN9zpXlFrSlGy5ttibCU9N",
+  "runtime": "Tesla T4",
+  "retriever_training_verified": true,
+  "forecast_training_verified": true,
+  "artifact_download_verified": true,
+  "artifact_root": "../colab_artifacts/20261019",
+  "retriever_selected": "baseline, no validation gain",
+  "forecast_selected": "hist_gradient_boosting",
+  "deployment_approved": false,
+  "retriever_weights_download_verified": true,
+  "retriever_weights_sha256": "3237b75095efe4c19c3679bcdf8e7cdbc274ae3072fed8bae1cc5a84e99964dc",
+  "last_trained_selected_for_deployment": false,
+  "final_scenario_training_inputs_verified_unchanged": true
+}

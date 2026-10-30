@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "9fadfd12ddb44485ba932775efa313ac",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T12:36:24.918719+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Màn hình 120 Hz có làm mọi trò chơi chạy 120 FPS không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Màn hình 120 Hz có làm mọi trò chơi chạy 120 FPS không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]",
+        "reason": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-refresh-fps",
+            "title": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+            "source": "tech-refresh-fps-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "919a5e69c29123c6bf7bcca82991bf4b20da665c3db9d34a7eef06b22daed9c7",
+            "text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+            "section": 1,
+            "chunk_id": "aadd4685ea6fdeeb80c282991e0b09d26038a96ef9d05838478386520cc469d8",
+            "score": 0.04918,
+            "dense_score": 0.5828,
+            "lexical_score": 0.2795,
+            "bm25_score": 18.1762,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "glossary-refresh-rate",
+            "title": "Tần số quét là gì?",
+            "source": "glossary-refresh-rate-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "technical_reference",
+            "sha256": "c90034fc595acaed8103c45d8e5218017958138cb3fd0e1737ce672fb4d775e7",
+            "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "retrieval_text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "heading_path": "Tần số quét là gì?",
+            "section": 1,
+            "chunk_id": "d8c8a46ef4755d619ab782ef405565dd18fad89e484742a60514cd4c6df41dda",
+            "score": 0.04788,
+            "dense_score": 0.5059,
+            "lexical_score": 0.1619,
+            "bm25_score": 10.9807,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.452944699994987
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-refresh-fps",
+        "title": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+        "source": "tech-refresh-fps-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "919a5e69c29123c6bf7bcca82991bf4b20da665c3db9d34a7eef06b22daed9c7",
+        "text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+        "section": 1,
+        "chunk_id": "aadd4685ea6fdeeb80c282991e0b09d26038a96ef9d05838478386520cc469d8",
+        "score": 0.04918,
+        "dense_score": 0.5828,
+        "lexical_score": 0.2795,
+        "bm25_score": 18.1762,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "glossary-refresh-rate",
+        "title": "Tần số quét là gì?",
+        "source": "glossary-refresh-rate-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "technical_reference",
+        "sha256": "c90034fc595acaed8103c45d8e5218017958138cb3fd0e1737ce672fb4d775e7",
+        "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "retrieval_text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "heading_path": "Tần số quét là gì?",
+        "section": 1,
+        "chunk_id": "d8c8a46ef4755d619ab782ef405565dd18fad89e484742a60514cd4c6df41dda",
+        "score": 0.04788,
+        "dense_score": 0.5059,
+        "lexical_score": 0.1619,
+        "bm25_score": 10.9807,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 4.9008733999944525
+}

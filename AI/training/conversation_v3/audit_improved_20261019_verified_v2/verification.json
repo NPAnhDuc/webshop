@@ -1,0 +1,52 @@
+{
+  "completed": 106,
+  "new_wording_completed": 12,
+  "old_passed": 69,
+  "passed": 93,
+  "failed": 13,
+  "new_wording_passed": 10,
+  "repaired": [
+    "Q014",
+    "Q016",
+    "Q018",
+    "Q020",
+    "Q025",
+    "Q026",
+    "Q027",
+    "Q028",
+    "Q035",
+    "Q036",
+    "Q038",
+    "Q040",
+    "Q042",
+    "Q044",
+    "Q048",
+    "Q049",
+    "Q050",
+    "Q053",
+    "Q060",
+    "Q066",
+    "Q070",
+    "Q076",
+    "Q077",
+    "Q079"
+  ],
+  "regressed": [],
+  "execution_errors": [],
+  "source_checks": {
+    "shopbot/engine.py": true,
+    "shopbot/conversation.py": true,
+    "shopbot/store.py": true,
+    "shopbot/retrieval.py": true
+  },
+  "dataset_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "unchanged_question_bank": true,
+  "rejected_candidate": {
+    "passed": 92,
+    "new_wording_passed": 12,
+    "regressions": [
+      "Q054"
+    ]
+  },
+  "selection_reason": "Restored exact source of stable 93/106 run; few-shot candidate regressed a previously correct topic-switch case."
+}

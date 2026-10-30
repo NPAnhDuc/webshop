@@ -1,0 +1,11 @@
+{
+  "parent": "kb3_period_binding_r1",
+  "baseline": "kb3_report_source_full_r1",
+  "purpose": "Broad development regression of monthly per-part numeric evidence rebinding",
+  "expected_cases": 479,
+  "split": "development",
+  "RAG_EVIDENCE_RERANK": "1",
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_change": false
+}

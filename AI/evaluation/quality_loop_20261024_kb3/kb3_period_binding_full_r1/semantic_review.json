@@ -1,0 +1,2905 @@
+{
+  "status": "period_binding_verified_on_full_development_other_acceptance_gates_open",
+  "actual_cases": 479,
+  "multi_period_cases": 102,
+  "parts_reviewed": 204,
+  "period_metric_source_bindings_exact": 204,
+  "baseline_exact": 166,
+  "baseline_wrong": 34,
+  "baseline_overbroad": 4,
+  "changed_answer_ids": [
+    "Q0092",
+    "Q0181",
+    "Q0244",
+    "Q0261",
+    "Q0269",
+    "Q0298",
+    "Q0312",
+    "Q0365",
+    "Q0370",
+    "Q0405",
+    "Q0445",
+    "Q0495",
+    "Q0515",
+    "Q0557",
+    "Q0578",
+    "Q0585",
+    "Q0586",
+    "Q0589",
+    "Q0595"
+  ],
+  "other_control_answers_unchanged": 377,
+  "claim_sets_changed": 0,
+  "action_changes": [],
+  "integrity_unchanged": true,
+  "overall_semantic_accuracy": null,
+  "mechanical_checks": {
+    "PASS_CHECKS": 425,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 1
+  },
+  "cases": [
+    {
+      "id": "Q0007",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0025",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0077",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0092",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0134",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0148",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0162",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0172",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0181",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0190",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0199",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0208",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0217",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0235",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0244",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0253",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0261",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0269",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0277",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0284",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0298",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0305",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0312",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0319",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0340",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0347",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0360",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0365",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0370",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0375",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0380",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0385",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0390",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0395",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0400",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0405",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0415",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0425",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0430",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0435",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0445",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0450",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0455",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0460",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0470",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0480",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0495",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0500",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0505",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0510",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0515",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0526",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0528",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0530",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0532",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0534",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0536",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0538",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0540",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0544",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0546",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0550",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0552",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0553",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202606_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0554",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0555",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0556",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0557",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0558",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0560",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0561",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0563",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0566",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0567",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1493219000 VND.",
+          "evidence_ids": [
+            "revenue_202511_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0568",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0569",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0570",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0571",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0572",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0573",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0575",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0576",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0577",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0578",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0579",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0580",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2025-11",
+          "document_id": "monthly-report-2025-11",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202511_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0583",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 4.",
+          "evidence_ids": [
+            "returns_202608_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0584",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0585",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0586",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0587",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 5.",
+          "evidence_ids": [
+            "returns_202603_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0588",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0589",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-06",
+          "document_id": "monthly-report-2026-06",
+          "version": 1,
+          "quote": "Doanh thu thuần: 838580000 VND.",
+          "evidence_ids": [
+            "revenue_202606_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0590",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Doanh thu thuần: 997980000 VND.",
+          "evidence_ids": [
+            "revenue_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1189908000 VND.",
+          "evidence_ids": [
+            "revenue_202609_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0591",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Doanh thu thuần: 984310000 VND.",
+          "evidence_ids": [
+            "revenue_202510_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-05",
+          "document_id": "monthly-report-2026-05",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1175440000 VND.",
+          "evidence_ids": [
+            "revenue_202605_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0592",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Doanh thu thuần: 609442000 VND.",
+          "evidence_ids": [
+            "revenue_202602_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0594",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0595",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-08",
+          "document_id": "monthly-report-2026-08",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1427320000 VND.",
+          "evidence_ids": [
+            "revenue_202608_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0597",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-03",
+          "document_id": "monthly-report-2026-03",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1203150000 VND.",
+          "evidence_ids": [
+            "revenue_202603_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-07",
+          "document_id": "monthly-report-2026-07",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1024280000 VND.",
+          "evidence_ids": [
+            "revenue_202607_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0598",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-10",
+          "document_id": "monthly-report-2025-10",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202510_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-02",
+          "document_id": "monthly-report-2026-02",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 1.",
+          "evidence_ids": [
+            "returns_202602_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0599",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2025-12",
+          "document_id": "monthly-report-2025-12",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1474785000 VND.",
+          "evidence_ids": [
+            "revenue_202512_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-01",
+          "document_id": "monthly-report-2026-01",
+          "version": 1,
+          "quote": "Doanh thu thuần: 1077004000 VND.",
+          "evidence_ids": [
+            "revenue_202601_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    },
+    {
+      "id": "Q0600",
+      "parts": [
+        {
+          "part_id": "P1",
+          "period": "2026-04",
+          "document_id": "monthly-report-2026-04",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202604_1"
+          ],
+          "status": "exact_period_metric_source_quote"
+        },
+        {
+          "part_id": "P2",
+          "period": "2026-09",
+          "document_id": "monthly-report-2026-09",
+          "version": 1,
+          "quote": "Sản phẩm hoàn trả: 2.",
+          "evidence_ids": [
+            "returns_202609_2"
+          ],
+          "status": "exact_period_metric_source_quote"
+        }
+      ],
+      "unrequested_claims": 0
+    }
+  ],
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "validation_opened": false,
+  "remaining_routing_case": "Q0055 unsupported UPDATE routes outside instead of deferred",
+  "remaining_semantic_reviews": 53,
+  "new_model_batches_this_heartbeat": 0
+}

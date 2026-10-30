@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-20",
+  "active": true,
+  "configuration": {
+    "RAG_SYNTHESIS": "1",
+    "RAG_ANSWER_MODE": "extractive",
+    "RAG_RERANK": "0"
+  },
+  "verification": "verification.json",
+  "dev_passed": 32,
+  "dev_total": 32,
+  "holdout_passed": 14,
+  "holdout_total": 16,
+  "conversation_passed": 7,
+  "conversation_total": 7,
+  "core_regressions": 0,
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "final_changes_after_rag_benchmark": [
+    "Document-query rewrite output budget increased; verified by 7/7 end-to-end checks.",
+    "Blank line added before citations after a table; verified by rendering unit test and browser."
+  ],
+  "limitations": "Model selects evidence; factual wording is source-owned. Free-form generative synthesis remains experimental and inactive."
+}

@@ -1,0 +1,21 @@
+{
+  "promoted": false,
+  "active_code": "patch5",
+  "reason": "Candidate admission increased recall of policy versions but degraded end-to-end semantics; rollback byte-identical to validated patch5.",
+  "semantic_pass": 76,
+  "before_pass": 87,
+  "regressed_ids": [
+    "C19",
+    "C21",
+    "C23",
+    "C24",
+    "C27",
+    "C28",
+    "C30",
+    "C33",
+    "A11",
+    "A34",
+    "A37"
+  ],
+  "fixed_ids": []
+}

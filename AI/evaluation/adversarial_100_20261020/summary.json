@@ -1,0 +1,139 @@
+{
+  "overall": {
+    "total": 100,
+    "passed": 67,
+    "failed": 33
+  },
+  "roles": {
+    "customer": {
+      "total": 50,
+      "passed": 42,
+      "failed": 8
+    },
+    "admin": {
+      "total": 50,
+      "passed": 25,
+      "failed": 25
+    }
+  },
+  "content": {
+    "total": 67,
+    "passed": 43,
+    "failed": 24
+  },
+  "boundaries": {
+    "total": 33,
+    "passed": 24,
+    "failed": 9
+  },
+  "by_behavior": {
+    "answer": {
+      "total": 62,
+      "passed": 42,
+      "failed": 20
+    },
+    "clarify": {
+      "total": 5,
+      "passed": 1,
+      "failed": 4
+    },
+    "guard": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "history_guard": {
+      "total": 2,
+      "passed": 0,
+      "failed": 2
+    },
+    "missing": {
+      "total": 11,
+      "passed": 8,
+      "failed": 3
+    },
+    "partial": {
+      "total": 5,
+      "passed": 1,
+      "failed": 4
+    }
+  },
+  "failure_causes": {
+    "WRONG_FOCUS": 2,
+    "CLARIFICATION": 4,
+    "INCOMPLETE": 9,
+    "SCOPE_LIMITATION": 1,
+    "ROUTING": 5,
+    "TIME_CONTEXT": 3,
+    "TIME_SCOPE": 3,
+    "MULTI_PERIOD": 3,
+    "SCOPE_SUBGROUP": 1,
+    "HISTORICAL_SCOPE": 2
+  },
+  "failed_ids": [
+    "C04",
+    "C09",
+    "C26",
+    "C29",
+    "C31",
+    "C34",
+    "C35",
+    "C45",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A08",
+    "A12",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A20",
+    "A21",
+    "A23",
+    "A29",
+    "A30",
+    "A33",
+    "A34",
+    "A35",
+    "A40",
+    "A41",
+    "A42",
+    "A43",
+    "A44",
+    "A50"
+  ],
+  "fail_but_self_full": [
+    "C26",
+    "C29",
+    "C31",
+    "C34",
+    "A03",
+    "A04",
+    "A06",
+    "A08",
+    "A12",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A20",
+    "A29",
+    "A30",
+    "A33",
+    "A40",
+    "A41",
+    "A50"
+  ],
+  "exact_quotes_checked": 191,
+  "quote_errors": [],
+  "customer_private_source_leaks": [],
+  "exceptions": [],
+  "seconds_total": 705.25,
+  "seconds_median": 7.88,
+  "seconds_max": 36.99,
+  "integrity_unchanged": true,
+  "scope": "Authored weakness-focused stress set, manually scored by Codex against frozen rubrics and source snapshots; not real-traffic accuracy or independent human evaluation."
+}

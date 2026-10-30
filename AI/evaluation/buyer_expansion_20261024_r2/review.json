@@ -1,0 +1,24 @@
+{
+  "turns": 300,
+  "unique_questions": 296,
+  "all67_products_covered": true,
+  "categories": [
+    "accessories",
+    "case",
+    "cpu",
+    "laptop",
+    "mainboard",
+    "monitor",
+    "psu",
+    "ram",
+    "ssd",
+    "vga"
+  ],
+  "fact_probes": 134,
+  "missing_field_probes": 31,
+  "source_dependent_questions_needing_review": 50,
+  "model_calls": 0,
+  "training_performed": false,
+  "independent_validation": false,
+  "typo_feature_deferred": true
+}

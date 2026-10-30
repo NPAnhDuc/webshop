@@ -1,0 +1,13 @@
+# Discount comparison and approval contract frozen before implementation
+
+Baseline kb3_campaign_scope_r1 runtime hashes verified. No quality/history/model/test process active. No runtime/data/model/config mutation or inference this heartbeat.
+
+Q0102 still quotes the source discount cap6% but reports comparison itself missing. Requested7% exceeds6% by1 percentage point. The current policy also contains margin minima6%/4%/10%; these are different metrics and must not be substituted for discount cap. Approval is a separate obligation: the current policy names owner approval for liquidation of stock older than90days, not every arbitrary discount.
+
+Important source-scope issue: sales-plan-2026-Q3-v1.md says owner approves all price changes and purchase orders, but it is a quarterly plan. Its metadata effective_from=2025-10-01, effective_to=null and status=approved do NOT mark it expired. The content periodQ3/2026 limits interpretation; an open-ended metadata timestamp alone cannot establish that its approval rule is global on24/10/2026. Preserve this inconsistency, do not silently rewrite source dates or treat it as present universal authority.
+
+Frozen20development contracts:8exact numeric comparisons with independent Fraction arithmetic,12boundary/scope/permission contracts. Includes equality, decimal-comma, zero, invalid/ambiguous percentages, discount versus margin, stacked discounts, lack of price/FIFO costs, customer role and current/conditional/historical approvals. Both source snapshots and metadata plus hashes are stored. This is evaluation-only, not new shop policy, RAG data or training labels.
+
+verify_contract.py validates20fixture records,8numeric oracles and raw source hashes. It runs0chatbot tests/0model calls; no claim that20cases pass the chatbot. Existing bank/gold/results remain unchanged and independent validation stays unopened.
+
+Next implementation should register a typed source-backed comparison operation: requested rate, metric, cap quote/ID, source version, reference period, relation and difference in percentage points; exact arithmetic, no hard-coded6% in runtime, no approval action. Only establish coverage for the comparison obligation when operands and scope are supported. Preserve unknown approver, reject conflicts/conditional or historical sources and do not let numerical compliance imply permission, adequate margin or an executed discount. Then adapt these frozen cases to actual runtime assertions, replay the exposed28turn regression and review semantically. Avoid adding another keyword-only answer template or treating source-owned claim selection alone as arithmetic reasoning.

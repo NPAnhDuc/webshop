@@ -1,0 +1,9 @@
+# Resumption audit26October — historical correction verified, concurrent work preserved
+
+Read ARCHITECTURE/CURRENT and latest candidate report. Unsupported-write replay has188/188completed with integrity unchanged during evaluation, following a reported reboot/resume. ExactlyQ0055reply changes from outside-topic to accurate deferred/nochange explanation with data.mutate unsupported/executed=false;187other replies unchanged. This confirms that evaluated revision, not all later runtime changes.
+
+Current grounded_rag.py differs from evaluated metadata. Later workspace changes add buyer privacy terms, rule-question reference handling, historical version matching, identifier row binding/date validity via new identifier_binding.py. Preserve these changes; do not restore the old candidate or mark current runtime as exact evaluated code. Runtime diff/hash audit saved. Existing report says the old replay services were restarted; this audit starts/restarts no service and does not retry worker8011/r19.
+
+Observed full pytest suite running during this heartbeat (two PIDs are launcher/child; an earlier process finished and another appeared while reading). No runtime/data/model/config/test edits or new tests/model batches launched here. Existing tests-report-20261026.log says779passed; this is an observed prior log, not a suite rerun by this heartbeat or semantic model acceptance.
+
+New kb3_validation_r1directory observed in concurrent workspace activity. Contents not inspected here; do not treat it as an untouched holdout automatically, and do not repair using validation. Next heartbeat FIRSTchecks active quality/history/model/test processes and reads latest protocol/report/checkpoint; reconcile new development/validation run provenance and current source fingerprints before further tests or fixes. Pending53semantic reviews are not completed by this audit. No training, ingestion, deployment, frontend, paid API or model changes.

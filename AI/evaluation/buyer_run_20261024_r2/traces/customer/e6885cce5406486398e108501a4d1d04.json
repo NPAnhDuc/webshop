@@ -1,0 +1,56 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e6885cce5406486398e108501a4d1d04",
+  "parent_trace_id": "e8e0b1ee5d88480f91bf3b25605a7b81",
+  "recorded_at": "2026-10-24T07:43:27.560965+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, MSI RTX 4070 Ti SUPER 16G VENTUS 3X BLACK OC cần nguồn công suất bao nhiêu W?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Theo bản thông tin đang có, MSI RTX 4070 Ti SUPER 16G VENTUS 3X BLACK OC cần nguồn công suất bao nhiêu W?"
+      },
+      "principal_role": "customer",
+      "status": "disabled",
+      "output": {
+        "tool": "documents.answer",
+        "status": "disabled",
+        "executed": false,
+        "sources": [],
+        "reason": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm."
+      },
+      "seconds": 3.2800002372823656e-05
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.28448889999708626
+}

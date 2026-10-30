@@ -1,0 +1,490 @@
+{
+  "R12-01-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-01-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-02-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-02-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-03-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-03-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-04-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-04-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-05-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-05-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-06-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-06-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-07-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-07-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-08-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-08-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": true
+    },
+    "categories": {
+      "P1": "omitted_part",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-09-base": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-09-contrast": {
+    "checks": {
+      "P1": true,
+      "P2": false,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-10-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-10-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-11-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "valid_unknown",
+      "P2": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-11-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": false
+    },
+    "categories": {
+      "P1": "omitted_part",
+      "P2": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-12-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-12-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": false
+    },
+    "categories": {
+      "P1": "wrong_attribute",
+      "P2": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-13-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-13-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": false
+    },
+    "categories": {
+      "P1": "wrong_attribute",
+      "P2": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-14-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-14-contrast": {
+    "checks": {
+      "P1": true,
+      "P2": false
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-15-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-15-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "false_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-16-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-16-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-17-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-17-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-18-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-18-contrast": {
+    "checks": {
+      "P1": true,
+      "P2": false
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-19-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-19-contrast": {
+    "checks": {
+      "P1": true,
+      "P2": false
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-20-base": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-20-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": false
+    },
+    "categories": {
+      "P1": "wrong_attribute",
+      "P2": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-21-base": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "valid_unknown",
+      "P2": "valid_unknown",
+      "P3": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-21-contrast": {
+    "checks": {
+      "P1": false,
+      "P2": false,
+      "P3": false
+    },
+    "categories": {
+      "P1": "wrong_attribute",
+      "P2": "wrong_attribute",
+      "P3": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-22-base": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  },
+  "R12-22-contrast": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_scope"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual semantic reading of candidate and PROVIDED sources before inference. Not inherited from aggregate QA labels; source recall outside provided evidence is not assessed."
+  }
+}

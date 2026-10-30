@@ -1,0 +1,62 @@
+{
+  "S01": {
+    "status": "FAIL",
+    "reason": "Bước trích điều kiện chép lại toàn câu sau khi xóa số, không xác định đúng loại hàng.",
+    "reviewed_by": "Codex"
+  },
+  "S02": {
+    "status": "FAIL",
+    "reason": "Bước trích điều kiện sinh trích đoạn không khớp và chưa giữ ngữ cảnh; lượt tìm trước cũng thất bại.",
+    "reviewed_by": "Codex"
+  },
+  "S03": {
+    "status": "FAIL",
+    "reason": "Không có danh sách vì S01/S02 lỗi; hỏi lại an toàn nhưng không hoàn thành hội thoại kỳ vọng.",
+    "reviewed_by": "Codex"
+  },
+  "S04": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S05": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S06": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S07": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S08": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S09": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S10": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S11": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  },
+  "S12": {
+    "status": "PASS",
+    "reason": "Đã đối chiếu action, đối tượng/kỳ, số tiền, tool evidence và nguồn với gold; kiểm soát chưa nối không được tính là năng lực đã hoàn thiện.",
+    "reviewed_by": "Codex"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "planned_questions": 94,
+  "conversation_groups": 79,
+  "question_bank_sha256": "62510916a9e38016f42a3804f832dcdad5864dd14be5b7021cf15d56a2d66a9d",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "llm_provider": "ollama",
+  "dataset_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "grading_scope": "Functional task fulfillment including answer contents and SQL oracle; unsupported tasks count FAIL; correct ambiguity clarification and access denial count PASS",
+  "frozen_sources": {
+    "shopbot/engine.py": "5a14e9b99d7a1c26b4b1d8953df6e884df268af75ed44a95e9395f9fcc2a244d",
+    "shopbot/conversation.py": "924344199abfb32b17153d1f3b14b409493f1cf806c2e98ae8a0c62de2cd2ed2",
+    "shopbot/store.py": "6c503c7a45c7a8d76d944375adf6665cdff9839ecbb67c99e3877c41303c745d",
+    "shopbot/retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b"
+  },
+  "elapsed_seconds": 216.31199999999808,
+  "completed": 94,
+  "passed": 84,
+  "failed": 10,
+  "failure_categories": {
+    "product_constraint": 1,
+    "no_matching_data": 1,
+    "unfulfilled_capability": 8
+  }
+}

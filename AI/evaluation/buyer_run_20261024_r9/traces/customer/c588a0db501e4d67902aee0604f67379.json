@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "c588a0db501e4d67902aee0604f67379",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:43:57.690069+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Dung lượng VRAM khác RAM máy tính ở đâu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Dung lượng VRAM khác RAM máy tính ở đâu?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nRAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]",
+        "reason": "Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nRAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-vram-system-ram",
+            "title": "VRAM khác RAM máy tính ở đâu?",
+            "source": "tech-vram-system-ram-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "6a44873328fb53d5949de6ee161775bff7fd433ad5f8dfd04c21a2c9bba3d73e",
+            "text": "VRAM khác RAM máy tính ở đâu?\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\nNVIDIA lưu ý chỉ số \"VRAM đang dùng\" trên công cụ hiển thị không hoàn toàn chính xác: game thường giữ trước VRAM, không có nghĩa thực sự cần hết. Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\nNguồn: https://www.nvidia.com/en-in/geforce/news/rtx-40-series-vram-video-memory-explained/ ; https://www.intel.com/content/www/us/en/support/articles/000041253/graphics.html (Intel Support 000041253, ngày rà soát trên trang 23/05/2025)",
+            "retrieval_text": "VRAM khác RAM máy tính ở đâu?\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\nNVIDIA lưu ý chỉ số \"VRAM đang dùng\" trên công cụ hiển thị không hoàn toàn chính xác: game thường giữ trước VRAM, không có nghĩa thực sự cần hết. Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\nNguồn: https://www.nvidia.com/en-in/geforce/news/rtx-40-series-vram-video-memory-explained/ ; https://www.intel.com/content/www/us/en/support/articles/000041253/graphics.html (Intel Support 000041253, ngày rà soát trên trang 23/05/2025)",
+            "heading_path": "VRAM khác RAM máy tính ở đâu?",
+            "section": 2,
+            "chunk_id": "709c6af6beae836a24391d9346f80a58b5e30132e72e243d4fac90a26860b097",
+            "score": 0.04815,
+            "dense_score": 0.5971,
+            "lexical_score": 0.3223,
+            "bm25_score": 13.6518,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-vram-system-ram",
+            "title": "VRAM khác RAM máy tính ở đâu?",
+            "source": "tech-vram-system-ram-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "6a44873328fb53d5949de6ee161775bff7fd433ad5f8dfd04c21a2c9bba3d73e",
+            "text": "VRAM khác RAM máy tính ở đâu?\n\nVRAM (bộ nhớ đồ họa, frame buffer) là bộ nhớ tốc độ cao nằm trên card đồ họa, phục vụ GPU xử lý và hiển thị hình ảnh. RAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy. Theo NVIDIA, khi dữ liệu không có trong bộ nhớ đệm của GPU, GPU lấy từ VRAM; nếu VRAM không có, GPU phải lấy từ bộ nhớ hệ thống ở xa hơn, và mỗi lần đọc ghi xa hơn làm chậm và tốn điện hơn.",
+            "retrieval_text": "VRAM khác RAM máy tính ở đâu?\n\nVRAM (bộ nhớ đồ họa, frame buffer) là bộ nhớ tốc độ cao nằm trên card đồ họa, phục vụ GPU xử lý và hiển thị hình ảnh. RAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy. Theo NVIDIA, khi dữ liệu không có trong bộ nhớ đệm của GPU, GPU lấy từ VRAM; nếu VRAM không có, GPU phải lấy từ bộ nhớ hệ thống ở xa hơn, và mỗi lần đọc ghi xa hơn làm chậm và tốn điện hơn.",
+            "heading_path": "VRAM khác RAM máy tính ở đâu?",
+            "section": 1,
+            "chunk_id": "4ec2fa510855a470a571310e700ef2ecaaed498bb948f0a7745d0ffc5ef3c3c6",
+            "score": 0.04814,
+            "dense_score": 0.7419,
+            "lexical_score": 0.2859,
+            "bm25_score": 12.8596,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 10.726107400012552
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nRAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-vram-system-ram",
+        "title": "VRAM khác RAM máy tính ở đâu?",
+        "source": "tech-vram-system-ram-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "6a44873328fb53d5949de6ee161775bff7fd433ad5f8dfd04c21a2c9bba3d73e",
+        "text": "VRAM khác RAM máy tính ở đâu?\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\nNVIDIA lưu ý chỉ số \"VRAM đang dùng\" trên công cụ hiển thị không hoàn toàn chính xác: game thường giữ trước VRAM, không có nghĩa thực sự cần hết. Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\nNguồn: https://www.nvidia.com/en-in/geforce/news/rtx-40-series-vram-video-memory-explained/ ; https://www.intel.com/content/www/us/en/support/articles/000041253/graphics.html (Intel Support 000041253, ngày rà soát trên trang 23/05/2025)",
+        "retrieval_text": "VRAM khác RAM máy tính ở đâu?\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\nNVIDIA lưu ý chỉ số \"VRAM đang dùng\" trên công cụ hiển thị không hoàn toàn chính xác: game thường giữ trước VRAM, không có nghĩa thực sự cần hết. Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\nNguồn: https://www.nvidia.com/en-in/geforce/news/rtx-40-series-vram-video-memory-explained/ ; https://www.intel.com/content/www/us/en/support/articles/000041253/graphics.html (Intel Support 000041253, ngày rà soát trên trang 23/05/2025)",
+        "heading_path": "VRAM khác RAM máy tính ở đâu?",
+        "section": 2,
+        "chunk_id": "709c6af6beae836a24391d9346f80a58b5e30132e72e243d4fac90a26860b097",
+        "score": 0.04815,
+        "dense_score": 0.5971,
+        "lexical_score": 0.3223,
+        "bm25_score": 13.6518,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-vram-system-ram",
+        "title": "VRAM khác RAM máy tính ở đâu?",
+        "source": "tech-vram-system-ram-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "6a44873328fb53d5949de6ee161775bff7fd433ad5f8dfd04c21a2c9bba3d73e",
+        "text": "VRAM khác RAM máy tính ở đâu?\n\nVRAM (bộ nhớ đồ họa, frame buffer) là bộ nhớ tốc độ cao nằm trên card đồ họa, phục vụ GPU xử lý và hiển thị hình ảnh. RAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy. Theo NVIDIA, khi dữ liệu không có trong bộ nhớ đệm của GPU, GPU lấy từ VRAM; nếu VRAM không có, GPU phải lấy từ bộ nhớ hệ thống ở xa hơn, và mỗi lần đọc ghi xa hơn làm chậm và tốn điện hơn.",
+        "retrieval_text": "VRAM khác RAM máy tính ở đâu?\n\nVRAM (bộ nhớ đồ họa, frame buffer) là bộ nhớ tốc độ cao nằm trên card đồ họa, phục vụ GPU xử lý và hiển thị hình ảnh. RAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy. Theo NVIDIA, khi dữ liệu không có trong bộ nhớ đệm của GPU, GPU lấy từ VRAM; nếu VRAM không có, GPU phải lấy từ bộ nhớ hệ thống ở xa hơn, và mỗi lần đọc ghi xa hơn làm chậm và tốn điện hơn.",
+        "heading_path": "VRAM khác RAM máy tính ở đâu?",
+        "section": 1,
+        "chunk_id": "4ec2fa510855a470a571310e700ef2ecaaed498bb948f0a7745d0ffc5ef3c3c6",
+        "score": 0.04814,
+        "dense_score": 0.7419,
+        "lexical_score": 0.2859,
+        "bm25_score": 12.8596,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 11.13216329998977
+}

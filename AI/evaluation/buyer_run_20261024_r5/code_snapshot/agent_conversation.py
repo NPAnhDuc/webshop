@@ -1,0 +1,213 @@
+"""Opt-in structured catalog conversations; tools render all numerical facts.
+
+Planner selects slots, never SQL/code, prices or answer prose. Caller role and
+server-owned catalog are authoritative. This is not a replacement for backend auth.
+"""
+import copy
+import hashlib
+import json
+import re
+import requests
+from .catalog_planner import StagedCatalogPlanner,SearchClarification,UnsupportedCategory,plain
+from .admin_conversation import AdminConversation
+from .agent_tools import FACT_FIELDS
+
+FACT_LABELS={'ram_gb':'RAM','ram_type':'Loại RAM','battery_wh':'Pin','socket':'Socket','cores':'Số nhân CPU',
+    'storage_gb':'Dung lượng lưu trữ','storage_type':'Chuẩn ổ lưu trữ','connection':'Kết nối',
+    'warranty_months':'Bảo hành','supported_form_factors':'Chuẩn mainboard hỗ trợ',
+    'max_gpu_length_mm':'Chiều dài card đồ họa tối đa','refresh_hz':'Tần số quét','panel':'Tấm nền',
+    'psu_watt':'Công suất','certification':'Chuẩn hiệu suất','vram_gb':'VRAM',
+    'recommended_psu_w':'Nguồn khuyến nghị','weight_kg':'Khối lượng','cpu_model':'CPU','gpu_model':'GPU',
+    'resolution':'Độ phân giải'}
+def clarify_message(question):
+    """Ask again in the question's own terms instead of always assuming a comparison."""
+    text=plain(question)
+    if re.search(r'\b(?:so sanh|so may|doi chieu|khac nhau|khac gi)\b',text):
+        return 'Bạn muốn chọn hoặc so sánh những model nào? Nếu nhắc máy trước đó, tôi cần một danh sách đã xác định.'
+    if re.search(r'\b(?:ngan sach|trieu|nen|can nhac|chu y|nhu cau|tu van|phu hop|co can|hoi them)\b',text):
+        return ('Hiện chưa có chức năng tư vấn chọn máy theo nhu cầu; tôi không đưa lời khuyên chưa có nguồn. '
+                'Tôi có thể lọc sản phẩm theo loại và ngân sách (ví dụ: “tìm 3 laptop dưới 20 triệu”), '
+                'xem thông số một model hoặc so sánh hai model cụ thể.')
+    return ('Bạn muốn tìm sản phẩm theo ngân sách, xem thông số một model hay so sánh hai model cụ thể? '
+            'Nêu thêm loại máy, ngân sách hoặc tên model giúp tôi nhé.')
+
+
+FACT_UNITS={'ram_gb':' GB','battery_wh':' Wh','storage_gb':' GB','warranty_months':' tháng','max_gpu_length_mm':' mm',
+    'refresh_hz':' Hz','psu_watt':' W','vram_gb':' GB','recommended_psu_w':' W','weight_kg':' kg'}
+
+SCHEMA={'type':'object','properties':{
+    'action':{'type':'string','enum':['search','compare','facts','documents','admin','clarify','outside','handoff']},
+    'budget_max_vnd':{'type':'integer','minimum':0,'maximum':1_000_000_000},
+    'budget_inclusive':{'type':'boolean'},'limit':{'type':'integer','minimum':0,'maximum':20},
+    'category':{'type':'string'},'brand':{'type':'string'},'continuation':{'type':'boolean'},
+    'clear_brand':{'type':'boolean'},'unsupported_filters':{'type':'boolean'},
+    'product_refs':{'type':'array','maxItems':2,'items':{'type':'string'}}},
+    'required':['action','budget_max_vnd','budget_inclusive','limit','category','brand','continuation','clear_brand','unsupported_filters','product_refs'],
+    'additionalProperties':False}
+
+
+
+class CatalogConversation:
+    def __init__(self,tools,planner=None,admin_agent=None):
+        self.tools=tools
+        self.planner=planner or StagedCatalogPlanner()
+        self.admin_agent=admin_agent or AdminConversation(tools)
+        self.revision=hashlib.sha256(json.dumps(tools.catalog.snapshot,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        self.lookup={f'P{i+1}':p for i,p in enumerate(sorted(tools.catalog.products.values(),key=lambda p:p['id'])) if p['status']=='active'}
+
+    def run(self,question,principal_role,memory,today):
+        if principal_role not in ('customer','admin'):raise PermissionError('Unknown server role')
+        profile=copy.deepcopy(memory or {})
+        if profile.get('owner_role',principal_role)!=principal_role:profile={}
+        profile['owner_role']=principal_role
+        state=profile.get('catalog_context',{})
+        if not isinstance(state,dict) or state.get('revision')!=self.revision:state={}
+        last=[r for r in state.get('last_selection',[]) if r in self.lookup]
+        prior=state.get('filters',{})
+        payload=dict(question=question,role=principal_role,today=today.isoformat(),
+                     history=profile.get('history',[])[-4:],previous_filters=prior,
+                     admin_context=profile.get('admin_context',{}) if principal_role=='admin' else {},
+                     last_selection=[dict(position=i+1,ref=r,name=self.lookup[r]['name']) for i,r in enumerate(last)],
+                     catalog=[dict(ref=r,name=p['name'],variants=[v['name'] for v in p['variants'] if v['status']=='active']) for r,p in self.lookup.items()])
+        base=dict(question=question,role=principal_role,profile=profile,rows=[],sources=[],intent='clarify',
+                  mode='agent_tools · structured catalog prototype',trace=['agent: planner slots then server tools; no generated arithmetic'])
+        knowledge_question=None
+        def finish(text,action,intent='clarify',evidence=None):
+            base.update(answer=text,basic_action=action,intent=intent)
+            if evidence is not None:
+                base['tool_evidence']=evidence
+                base['sources']=[dict(source=evidence['source'],data_kind=evidence['data_kind'],snapshot_captured_at=evidence['snapshot_captured_at'])]
+            if knowledge_question:
+                # Mixed request: report the knowledge part's real status rather
+                # than silently answering only the catalog part.
+                doc_args=dict(question=knowledge_question)
+                output=self.tools.execute(principal_role,'documents.answer',doc_args)
+                calls=[] if evidence is None else [dict(tool='catalog.search' if plan['action']=='search' else 'catalog.compare',arguments=catalog_args,output=evidence)]
+                calls.append(dict(tool='documents.answer',arguments=doc_args,output=output))
+                base['tool_evidence']=dict(evidence or {},calls=calls)
+                base['partial']=output.get('status')!='answered'
+                base['components']=dict(catalog=dict(status=action),
+                    documents=dict(status=output['status'],executed=output.get('executed'),question=knowledge_question))
+                part=output.get('answer') if output.get('executed') else output['reason']
+                if output.get('executed'):base['sources']=base.get('sources',[])+copy.deepcopy(output.get('sources',[]))
+                base['answer']=text+f'\n\nPhần “{knowledge_question}”: '+part
+            return base
+        catalog_args=None
+        try:
+            plan=self.planner(payload)
+            if not isinstance(plan,dict) or set(plan)-{'knowledge_question','fact_fields'}!=set(SCHEMA['required']):raise ValueError('Invalid planner keys')
+            if ('fact_fields' in plan)!=(plan.get('action')=='facts'):raise ValueError('Fact fields belong only to a fact lookup')
+            if 'fact_fields' in plan:
+                fields=plan['fact_fields']
+                if (not isinstance(fields,list) or not 1<=len(fields)<=5 or any(f not in FACT_FIELDS for f in fields)
+                        or len(plan['product_refs'])!=1):raise ValueError('Fact lookup needs one product and known fields')
+            if 'knowledge_question' in plan:
+                kq=plan['knowledge_question']
+                if plan['action'] not in ('search','compare') or not isinstance(kq,str) or not kq.strip() or len(kq)>2000 or kq not in question:
+                    raise ValueError('Knowledge part must be an exact span of a catalog request')
+            if plan['action'] not in SCHEMA['properties']['action']['enum']:raise ValueError('Invalid action')
+            for key in ['budget_inclusive','continuation','clear_brand','unsupported_filters']:
+                if type(plan[key]) is not bool:raise ValueError('Invalid bool')
+            for key,maximum in [('budget_max_vnd',1_000_000_000),('limit',20)]:
+                if type(plan[key]) is not int or not 0<=plan[key]<=maximum:raise ValueError('Invalid integer')
+            if any(not isinstance(plan[k],str) or len(plan[k])>100 for k in ['brand','category']):raise ValueError('Invalid filter')
+            refs=plan['product_refs']
+            if not isinstance(refs,list) or len(refs)>2 or any(not isinstance(r,str) or r not in self.lookup for r in refs):raise ValueError('Invalid product reference')
+        except SearchClarification as exc:
+            return finish(str(exc),'clarify')
+        except UnsupportedCategory as exc:
+            return finish(str(exc),'deferred')
+        except (ValueError,TypeError,KeyError,requests.RequestException):
+            return finish('Chưa xác định chắc yêu cầu. Bạn nêu ngân sách hoặc hai mã máy cụ thể giúp tôi nhé.','unavailable')
+        base['plan']=plan
+        action=plan['action']
+        knowledge_question=plan.get('knowledge_question')
+        if action=='facts':
+            product=self.lookup[refs[0]]
+            arguments=dict(product_id=product['id'],fields=list(plan['fact_fields']))
+            try:evidence=self.tools.execute(principal_role,'catalog.product_facts',arguments)
+            except (ValueError,TypeError,KeyError):
+                return finish('Chưa xác định được đúng sản phẩm hoặc thông số. Bạn nêu tên model và thông số cần xem giúp tôi nhé.','clarify')
+            data=evidence['data'];lines=[f"Theo bản ghi sản phẩm {data['product']['name']}:"]
+            for fact in data['facts']:
+                label=FACT_LABELS.get(fact['field'],fact['field'])
+                if fact['missing']:lines.append(f'- {label}: chưa có thông tin trong bản ghi; tôi không suy đoán giá trị này.')
+                else:
+                    value=fact['value'];value=', '.join(map(str,value)) if isinstance(value,list) else value
+                    value='có' if value is True else 'không' if value is False else value
+                    lines.append(f'- {label}: {value}{FACT_UNITS.get(fact["field"],"")}')
+            label='Dữ liệu mô phỏng' if evidence['data_kind']=='simulation' else 'Dữ liệu snapshot'
+            lines.extend(['',label+' tại '+evidence['snapshot_captured_at']+'. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.'])
+            base['tool_evidence']=dict(evidence,calls=[dict(tool='catalog.product_facts',arguments=arguments,output=evidence)])
+            base['sources']=[dict(source=evidence['source'],data_kind=evidence['data_kind'],snapshot_captured_at=evidence['snapshot_captured_at'])]
+            base.update(answer='\n'.join(lines),basic_action='answer',intent='facts')
+            return base
+        if action=='admin':
+            if principal_role=='customer':return finish('Thông tin giá vốn và quản trị chỉ dành cho tài khoản quản lý.','denied','denied')
+            return self.admin_agent.run(question,principal_role,profile,today)
+        if action=='documents':
+            arguments=dict(question=question)
+            output=self.tools.execute(principal_role,'documents.answer',arguments)
+            base['tool_evidence']=dict(calls=[dict(tool='documents.answer',arguments=arguments,output=output)])
+            base['capability_status']=dict(name='documents.answer',status=output['status'],executed=bool(output.get('executed')))
+            if not output.get('executed'):return finish(output['reason'],'documents')
+            base['sources']=copy.deepcopy(output.get('sources',[]))
+            base.update(answer=output['answer'],basic_action=output.get('rag_action') or 'answer',intent='documents')
+            return base
+        if action in ('documents','outside','handoff','clarify'):
+            messages={'documents':'Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.',
+                      'outside':'Tôi hỗ trợ sản phẩm máy tính và nghiệp vụ cửa hàng. Bạn muốn tìm hoặc so sánh máy nào?',
+                      'handoff':'Chưa có kênh chuyển nhân viên được kết nối; chưa có yêu cầu nào được gửi.',
+                      'clarify':clarify_message(question)}
+            return finish(messages[action],action)
+        try:
+            if action=='search':
+                old=prior if plan['continuation'] else {}
+                ceiling=plan['budget_max_vnd']+int(plan['budget_inclusive']) if plan['budget_max_vnd'] else old.get('max_price_exclusive')
+                if not ceiling:return finish('Bạn muốn ngân sách tối đa bao nhiêu cho mỗi máy?','clarify')
+                if plan['unsupported_filters']:
+                    return finish('Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.','deferred')
+                arguments=dict(max_price_exclusive=ceiling,limit=plan['limit'] or old.get('limit',5),
+                               category=plan['category'] or old.get('category','laptop'),
+                               brand=None if plan['clear_brand'] else (plan['brand'] or old.get('brand')))
+                catalog_args=arguments
+                evidence=self.tools.execute(principal_role,'catalog.search',arguments)
+                products=evidence['data']['products'];base['rows']=products
+                data=evidence['data']
+                if (type(data.get('total_matching')) is not int or data['total_matching']<0
+                        or data.get('requested_count')!=arguments['limit']
+                        or data.get('returned_count')!=len(products)
+                        or len(products)!=min(arguments['limit'],data['total_matching'])
+                        or len({p['id'] for p in products})!=len(products)):
+                    base['rows']=[]
+                    raise ValueError('Catalog result violates requested count/identity contract')
+                base['result_contract']=dict(requested_count=arguments['limit'],returned_count=len(products),
+                    total_matching=data['total_matching'],shortage=len(products)<arguments['limit'],passed=True)
+                inverse={p['id']:ref for ref,p in self.lookup.items()}
+                profile['catalog_context']=dict(revision=self.revision,filters=arguments,last_selection=[inverse[p['id']] for p in products])
+                lines=[f"Tìm thấy {len(products)}/{arguments['limit']} sản phẩm được yêu cầu, theo giá tăng dần:",'']
+                for i,p in enumerate(products):
+                    v=p['variant'];price=f"{v['price']:,}".replace(',','.')
+                    lines.append(f"{i+1}. {p['name']} — {v['name']} — {price} đ; số lượng khả dụng {v['available_qty']}.")
+                lines.extend(['','Chưa có permalink sản phẩm được cấu hình; tôi không tự tạo link trang mua hàng.'])
+            else:
+                if plan['unsupported_filters']:
+                    return finish('Yêu cầu so sánh chứa điều kiện chưa được hỗ trợ đầy đủ.','deferred')
+                if len(refs)!=2 or refs[0]==refs[1]:return finish('Bạn chọn hai model khác nhau để tôi so sánh nhé.','clarify')
+                catalog_args=dict(product_ids=[self.lookup[r]['id'] for r in refs])
+                evidence=self.tools.execute(principal_role,'catalog.compare',catalog_args)
+                profile['catalog_context']=dict(revision=self.revision,filters=prior,last_selection=list(refs))
+                labels={'variant_price_vnd':'Giá biến thể (VND)','cpu_model':'CPU','gpu_model':'GPU','ram_gb':'RAM (GB)',
+                        'ram_type':'Loại RAM','storage_gb':'Ổ lưu trữ (GB)','storage_type':'Loại ổ','panel':'Tấm nền',
+                        'resolution':'Độ phân giải','refresh_hz':'Tần số quét (Hz)','weight_kg':'Khối lượng (kg)',
+                        'battery_wh':'Pin (Wh)','warranty_months':'Bảo hành (tháng)'}
+                names=[p['name'] for p in evidence['data']['products']]
+                safe=lambda v:str(v).replace('|','/').replace('\n',' ') if v is not None else 'Chưa có thông tin'
+                lines=['| Thuộc tính | '+safe(names[0])+' | '+safe(names[1])+' |','|---|---|---|']
+                for row in evidence['data']['comparison']:lines.append('| '+labels[row['field']]+' | '+' | '.join(safe(v) for v in row['values'])+' |')
+                lines.extend(['','Chưa xếp hạng thắng thua: cần nhu cầu và benchmark phù hợp; Wh không phải số giờ pin.'])
+            label='Dữ liệu mô phỏng' if evidence['data_kind']=='simulation' else 'Dữ liệu snapshot'
+            lines.extend(['',label+' tại '+evidence['snapshot_captured_at']+'. Thông số là bản ghi sản phẩm, chưa xác minh mọi biến thể; giá/tồn chưa phải dữ liệu trực tiếp của shop.'])
+            return finish('\n'.join(lines),'answer','products' if action=='search' else 'compare',evidence)
+        except (ValueError,TypeError,KeyError):
+            return finish('Chưa xác định được đúng dữ liệu hoặc biến thể. Bạn nêu model và phiên bản cụ thể giúp tôi nhé.','clarify')

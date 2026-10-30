@@ -1,0 +1,4 @@
+{
+  "state": "rejected_after_old100_restore_patch9",
+  "reason": "Focused4fixes/0regressions did not survive broader legacy regression; C31/C34 regress, so no acceptance/full479."
+}

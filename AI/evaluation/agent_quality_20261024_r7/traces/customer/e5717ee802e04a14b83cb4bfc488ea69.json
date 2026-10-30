@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e5717ee802e04a14b83cb4bfc488ea69",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T05:21:41.996192+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Cho 5 điện thoại dưới20triệu.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Công cụ hiện chưa hỗ trợ danh mục được yêu cầu; tôi không thay bằng laptop.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.9756841999915196
+}

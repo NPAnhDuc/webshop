@@ -1,0 +1,411 @@
+{
+  "R13-01-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-01-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Generic DDRgeneration statement falsely treated as explicitunknown with real but irrelevant A1. No explicit withholding in candidate."
+  },
+  "R13-02-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-02-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Definition of Hz falsely treated as explicitunknown despite no explicit withholding. Generic answer is missing requested FPS relationship."
+  },
+  "R13-03-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Correct study60Hz explanation misclassifiedexplicitunknown instead of answered; selected actual relevant blocks. Binarycovered alone hides state error."
+  },
+  "R13-03-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-04-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-04-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "PDmax/cable specification falsely called explicitunknown, without requested per-device limitation. Actual A1 exists, ownership does not prove status."
+  },
+  "R13-05-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-05-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-06-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-06-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Conditionsvary clause falsely called explicitunknown rather than missing requested staticrisk/non-immunity; boundary declared before inference."
+  },
+  "R13-07-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-07-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-08-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-08-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-09-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-09-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-10-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-10-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-11-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ],
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Both genuine unknowns correctly classified raw but no supporting A1 IDs selected; guard downgrades to missing. Explicit unknown sentence exists."
+  },
+  "R13-11-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ],
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-12-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-12-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-13-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Actual reported netrevenue selected but misclassified explicitunknown for actualrevenue. Nearby cost/grossprofit IDs selected redundantly. Table target accepted."
+  },
+  "R13-13-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Both swapped numeric labels classifiedanswered as required for coverage ONLY. Still factually wrong under original r12supportgold, do not report as acceptable answer."
+  },
+  "R13-14-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-14-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-15-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-15-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "False sourceabsence has explicitunknown coverage; source leadtime cannot be assessed without reference context. Original r12factual rejection remains."
+  },
+  "R13-16-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-16-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-17-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-17-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-18-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-18-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-19-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-19-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-20-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-20-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "id_issues": {
+      "P1": [
+        "missing_answer_id"
+      ],
+      "P2": [
+        "missing_answer_id"
+      ]
+    },
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-21-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-21-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "All3 channel parts falsely treated explicitunknown using totalmarketingbudget clause; no explicit channel-unknown statement. Literal ID guard cannot reject."
+  },
+  "R13-22-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "id_issues": {},
+    "finding": "Read all statuses, IDs, selected candidate paragraphs and notes. Candidate IDs exist; any missing_answer_id separately recorded. Notes often conflate absentanswer with explicitunknown and are untrusted, not knowledge/training. No post-inference label change."
+  },
+  "R13-22-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "id_issues": {},
+    "finding": "Bare numeric assertion classifiedexplicitunknown for lack ofyear rather than manualansweredcoverage. Does not validate year/scope; context-only interpretation boundary preserved."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unchanged": true,
+  "cases": 20,
+  "bank_sha256": "00b212790dd5c20b842f6c175f41bb2e34affaadf39ca5dec64d66189f8b8dc6",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "knowledge_sha256": "f3d05748981cc3534fc9b17ac70373094751a0860d162010ea960d9cd42de968",
+  "code_unchanged": true,
+  "config": {
+    "CHATBOT_MODE": "basic_rag",
+    "LLM_PROVIDER": "ollama",
+    "OLLAMA_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+    "PLANNER_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+    "OLLAMA_BASE_URL": "http://127.0.0.1:11435",
+    "OLLAMA_NUM_GPU": "99",
+    "CONVERSATION_MODE": "semantic",
+    "VI_EMBEDDING_URL": "http://127.0.0.1:8011",
+    "RAG_SYNTHESIS": "1",
+    "RAG_ANSWER_MODE": "extractive",
+    "RAG_RERANK": "0"
+  }
+}

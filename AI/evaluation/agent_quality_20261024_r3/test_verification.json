@@ -1,0 +1,11 @@
+{
+  "targeted_tests": 30,
+  "targeted_seconds": 10.27,
+  "full_tests": 335,
+  "full_seconds": 111.94,
+  "new_controls": 4,
+  "prior_questions": 80,
+  "model_batches": 1,
+  "active_source_changed": false,
+  "accepted_for_application": false
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "2d334359e2484a2d93ed2488c8e3723c",
+  "parent_trace_id": "18945d682a4a4861b9b45ba57c88b6b2",
+  "recorded_at": "2026-10-24T08:43:53.137517+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, Corsair Vengeance RGB 32 GB là loại RAM nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "facts",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": [
+        "P18"
+      ],
+      "fact_fields": [
+        "ram_type"
+      ]
+    }
+  },
+  "calls": [
+    {
+      "tool": "catalog.product_facts",
+      "arguments": {
+        "product_id": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+        "fields": [
+          "ram_type"
+        ]
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "data": {
+          "product": {
+            "id": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+            "name": "Corsair Vengeance RGB 32 GB",
+            "category": "ram",
+            "api_path": "/api/products/corsair-vengeance-rgb-32-gb",
+            "product_page_url": null
+          },
+          "facts": [
+            {
+              "field": "ram_type",
+              "value": "DDR5",
+              "missing": false
+            }
+          ],
+          "limitations": [
+            "Missing means absent from the captured record, not that the product lacks the feature."
+          ]
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      },
+      "seconds": 0.00010059999476652592
+    }
+  ],
+  "result": {
+    "intent": "facts",
+    "basic_action": "answer",
+    "answer": "Theo bản ghi sản phẩm Corsair Vengeance RGB 32 GB:\n- Loại RAM: DDR5\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.",
+    "sources": [
+      {
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 0.26923179998993874
+}

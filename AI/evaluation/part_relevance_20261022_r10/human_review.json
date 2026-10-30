@@ -1,0 +1,256 @@
+{
+  "R9-001": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [
+      {
+        "id": "R9-001",
+        "part": "P3",
+        "expected": true,
+        "predicted": false,
+        "category": "valid_unknown"
+      }
+    ],
+    "rationale_issues": [
+      "False rejection of valid explicit unknown; note also suggests threads might be inferred from core count, unsupported by provided facts."
+    ]
+  },
+  "R9-002": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-003": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-004": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-005": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-006": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-007": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-008": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-009": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-010": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-011": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-012": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-013": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-014": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-015": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": [
+      "USB-C display answer is supported by Apple DisplayPort source, but note emphasizes generic Thunderbolt4 rather than the specific MacBook evidence."
+    ]
+  },
+  "R9-016": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-017": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-018": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-019": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-020": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-021": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-022": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-023": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-024": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-025": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [
+      {
+        "id": "R9-025",
+        "part": "P1",
+        "expected": false,
+        "predicted": true,
+        "category": "wrong_attribute"
+      }
+    ],
+    "rationale_issues": [
+      "Judge treats a fact present in source as if candidate answer actually contained it; candidate omission/false unknown is overlooked."
+    ]
+  },
+  "R9-026": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [
+      {
+        "id": "R9-026",
+        "part": "P1",
+        "expected": false,
+        "predicted": true,
+        "category": "omitted_part"
+      }
+    ],
+    "rationale_issues": [
+      "Judge treats a fact present in source as if candidate answer actually contained it; candidate omission/false unknown is overlooked."
+    ]
+  },
+  "R9-027": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-028": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [
+      {
+        "id": "R9-028",
+        "part": "P2",
+        "expected": false,
+        "predicted": true,
+        "category": "omitted_part"
+      }
+    ],
+    "rationale_issues": [
+      "Judge treats a fact present in source as if candidate answer actually contained it; candidate omission/false unknown is overlooked."
+    ]
+  },
+  "R9-029": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": [
+      "Boolean correctly rejects missing Q2 answer, but note wrongly says sources lack Q2 target. Q2 source is present; reason is unreliable."
+    ]
+  },
+  "R9-030": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [],
+    "rationale_issues": []
+  },
+  "R9-031": {
+    "reviewed_by": "Codex",
+    "method": "Fresh manual reading of all31 judge decisions and57 notes against actual candidate answer/source context and frozen per-part labels. No gold edits.",
+    "disagreements": [
+      {
+        "id": "R9-031",
+        "part": "P1",
+        "expected": false,
+        "predicted": true,
+        "category": "false_unknown"
+      },
+      {
+        "id": "R9-031",
+        "part": "P2",
+        "expected": false,
+        "predicted": true,
+        "category": "false_unknown"
+      },
+      {
+        "id": "R9-031",
+        "part": "P3",
+        "expected": false,
+        "predicted": true,
+        "category": "false_unknown"
+      }
+    ],
+    "rationale_issues": [
+      "Judge treats a fact present in source as if candidate answer actually contained it; candidate omission/false unknown is overlooked."
+    ]
+  }
+}

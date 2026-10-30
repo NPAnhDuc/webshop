@@ -1,0 +1,7 @@
+{
+  "state": "no_old100_regression_continue_development",
+  "candidate_retained": true,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "Same87/100, no PASS-to-FAIL. Patch7 fixed5/24 targeted development cases but7remain. Broader479 development has not been rerun onpatch7."
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "38943125cad047978bcde593fc35c5a3",
+  "parent_trace_id": "214469334e2a41bdac6e362a91836935",
+  "recorded_at": "2026-10-24T07:32:38.363442+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, TEAMGROUP T-Force Delta RGB 32 GB là loại RAM nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Theo bản thông tin đang có, TEAMGROUP T-Force Delta RGB 32 GB là loại RAM nào?"
+      },
+      "principal_role": "customer",
+      "status": "disabled",
+      "output": {
+        "tool": "documents.answer",
+        "status": "disabled",
+        "executed": false,
+        "sources": [],
+        "reason": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm."
+      },
+      "seconds": 3.609999839682132e-05
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Câu này cần nguồn kiến thức/chính sách; nhánh tài liệu chưa được kết nối với chế độ công cụ thử nghiệm.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.2819721000123536
+}

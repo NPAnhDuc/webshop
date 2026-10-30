@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "222dc0bb538a4469b9bb836f66e77832",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T06:37:51.347090+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Không xóa hay sửa gì, chỉ kiểm tra nguồn dữ liệu có đầy đủ không.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "unavailable",
+    "answer": "Chưa xác định chắc yêu cầu. Bạn nêu ngân sách hoặc hai mã máy cụ thể giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.8669885999988765
+}

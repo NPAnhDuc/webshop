@@ -1,0 +1,11 @@
+{
+  "parent_gold_sha256": "ac5120007b4c9c714c5664fbd56bfa47b1d697f1aec3b476a8dea80bb1613cc5",
+  "corrections": [
+    {
+      "id": "Q12",
+      "previous": "deferred",
+      "corrected": "documents",
+      "reason": "Technical explanation routes to documents per existing public tool contract. Actual r1 clarify/budget still fails."
+    }
+  ]
+}

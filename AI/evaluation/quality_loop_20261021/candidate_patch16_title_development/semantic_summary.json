@@ -1,0 +1,25 @@
+{
+  "cases": 28,
+  "baseline_pass": 19,
+  "candidate_pass": 17,
+  "regressions": [
+    "Q0142",
+    "Q0230",
+    "Q0257",
+    "Q0309",
+    "Q0323",
+    "Q0337"
+  ],
+  "fixes": [
+    "Q0017",
+    "Q0239",
+    "Q0302",
+    "Q0351"
+  ],
+  "accepted": false,
+  "decision": "reject_and_restore_patch9",
+  "seconds_total": 118.268,
+  "median_seconds": 3.0155000000000003,
+  "unit_candidate": 208,
+  "integrity": true
+}

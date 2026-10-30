@@ -1,0 +1,7 @@
+# Separate worker environment: .venv-kev already contains torch and transformers.
+torch>=2.8,<3
+transformers>=4.57,<6
+safetensors>=0.6
+huggingface-hub>=0.34
+pyvi==0.1.1
+requests>=2.32,<3

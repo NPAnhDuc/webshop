@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e302477a99494b6bb0ccedeb411305a9",
+  "parent_trace_id": "5fb62eb0d1754f54aef4c4c3401d9b8e",
+  "recorded_at": "2026-10-24T05:20:36.523516+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Đổi sang2ổSSDdưới2triệu",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.3018682999972953
+}

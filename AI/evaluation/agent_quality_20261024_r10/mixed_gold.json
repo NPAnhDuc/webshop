@@ -1,0 +1,218 @@
+{
+  "Q47": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "laptop",
+      "limit": 3,
+      "max_price_exclusive": 20000000,
+      "brand": null
+    },
+    "product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+      "4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092"
+    ],
+    "knowledge_question": "giải thích OLED là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q48": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "ram",
+      "limit": 3,
+      "max_price_exclusive": 3000000,
+      "brand": null
+    },
+    "product_ids": [
+      "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+      "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+      "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "knowledge_question": "giải thích DDR5 là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q49": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "ssd",
+      "limit": 2,
+      "max_price_exclusive": 2000000,
+      "brand": null
+    },
+    "product_ids": [
+      "64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c",
+      "cdc875d18109ca5c457ea2feee66cd5cb9f055700d6d0c0cffeacb398a8ea0bd"
+    ],
+    "knowledge_question": "giải thích NVMe là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q50": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "monitor",
+      "limit": 2,
+      "max_price_exclusive": 10000000,
+      "brand": null
+    },
+    "product_ids": [
+      "04f6563432c9e6d59a08bfa9512cfdcab626ad27a373036db796960f048fa395",
+      "a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12"
+    ],
+    "knowledge_question": "giải thích tần số quét là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q51": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "laptop",
+      "limit": 3,
+      "max_price_exclusive": 20000000,
+      "brand": null
+    },
+    "product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+      "4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092"
+    ],
+    "knowledge_question": "giải thích OLED là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q52": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "ram",
+      "limit": 3,
+      "max_price_exclusive": 3000000,
+      "brand": null
+    },
+    "product_ids": [
+      "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+      "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+      "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "knowledge_question": "giải thích DDR5 là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q53": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "ssd",
+      "limit": 2,
+      "max_price_exclusive": 2000000,
+      "brand": null
+    },
+    "product_ids": [
+      "64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c",
+      "cdc875d18109ca5c457ea2feee66cd5cb9f055700d6d0c0cffeacb398a8ea0bd"
+    ],
+    "knowledge_question": "giải thích NVMe là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q54": {
+    "action": "answer",
+    "tools": [
+      "catalog.search",
+      "documents.answer"
+    ],
+    "arguments": {
+      "category": "monitor",
+      "limit": 2,
+      "max_price_exclusive": 10000000,
+      "brand": null
+    },
+    "product_ids": [
+      "04f6563432c9e6d59a08bfa9512cfdcab626ad27a373036db796960f048fa395",
+      "a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12"
+    ],
+    "knowledge_question": "giải thích tần số quét là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q55": {
+    "action": "answer",
+    "tools": [
+      "catalog.search"
+    ],
+    "product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+      "4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092"
+    ],
+    "partial": false
+  },
+  "Q56": {
+    "action": "answer",
+    "tools": [
+      "catalog.compare",
+      "documents.answer"
+    ],
+    "compared_product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c"
+    ],
+    "knowledge_question": "giải thích RAM là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  },
+  "Q57": {
+    "action": "answer",
+    "tools": [
+      "catalog.search"
+    ],
+    "product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+      "4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092"
+    ],
+    "partial": false
+  },
+  "Q58": {
+    "action": "answer",
+    "tools": [
+      "catalog.compare",
+      "documents.answer"
+    ],
+    "compared_product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c"
+    ],
+    "knowledge_question": "giải thích RAM là gì",
+    "partial": true,
+    "documents_status": "disabled"
+  }
+}

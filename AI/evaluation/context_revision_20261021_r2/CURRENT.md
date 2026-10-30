@@ -1,0 +1,1 @@
+Baseline24đã hoàn tất và chấm12PASS/12FAIL;4autoFAIL là lỗi gold span đã ghi rõ, giữ nguyên artifact. Chuyển tiếp context_revision_20261021_r3/CURRENT.md. Bot vẫnpatch5, reserved chưa được hỏi. Không chạy lại hoặc ghi đè r2.

@@ -1,0 +1,12 @@
+{
+  "new_unit_tests": 11,
+  "full_suite_passed": 204,
+  "full_suite_seconds": 53.84,
+  "baseline_existing_files_unchanged": 26,
+  "chat_engine_integrated": false,
+  "model_training_performed": false,
+  "real_data_used": false,
+  "frontend_changed": false,
+  "automatic_followup_scope_updated": true,
+  "tool_smoke_file": "SMOKE.json"
+}

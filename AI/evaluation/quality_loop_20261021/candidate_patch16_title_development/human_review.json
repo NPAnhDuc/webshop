@@ -1,0 +1,226 @@
+{
+  "Q0017": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủgiao tiếp/DRAM,tốcđộtheodunglượngvàgiớihạnmứctốiđa.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủtiêuchímànảnhvàphủmàukhôngthayđộchínhxácmàu.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐủDDR5khácDDR4,rãnhkhóa/khôngthaytrựctiếpvàCPU/bo/RAMphùhợp.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0114": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủýkhôngbắtbuộc144Hzchohọctậpvàchọntheotácvụ/khảnăngtạokhunghình.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0128": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐủWiFi6/6E/7vàđiềukiệncard/router/phầnmềm.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0142": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nói điều kiện cấu hình/môi trường, bỏ kết luận thông lượng lý thuyết không phải tốc độ Internet bảo đảm.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0156": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đã nêu giới hạn soGHzvà bỏ nhiễu nhưng bài chưa giải thích riêng luồng; vẫn thiếu một ý so với câu hỏi.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0166": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủ8nhân16luồng5.2GHz120Wvàgiớihạnboost/TDP/FPS.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0185": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủgiớihạnhost/hệthốngvàphânbiệtgiaotiếpvớitốcđộtệpthực.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0194": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ phân nhómLCD/OLEDvà cảnh báoIPS; không có khác biệtTN/VAđược hỏi, nguồn tóm tắt cũng thiếu chi tiết này.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0203": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có vai trò và quan hệ bổ sungCPU/GPU, nhưng không có điều kiện phần mềm phải dùng tăng tốc; chưa đủ giải thích bài và điều kiện.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0212": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủrủironộidungtĩnh,đúngmodelvàkhôngsuybảohànhshop.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0221": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủhai kheDDR5/pin60Wh,theodòngvàkhôngcamkếtgiờpin.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0230": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Nêu game/độ phân giải và yếu tố mua máy nhưng bỏ giới hạn không cam kếtFPS/điều kiện theo tải của bài.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0239": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐúngRAMhàn+kheDDR4vàgiớihạnđốichiếutênthươngmại/mãSKU.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0248": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ giới hạn408AUkhôngsuy041BD, thiếu nội dungRAM16GBDDR4-3200onboardcủabản được tham chiếu.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0257": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Tự sáng/đen sâu đúng, nhưng không có giới hạnTVSamsungkhônggántínhnăngcholaptophoặc điều kiệnOLEDtươngđương.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0281": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đủ16GB/32GBtheotácvụ,khôngbảođảmmọigamevàhỏiphầnmềm/máy.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0288": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐủM2làdạngthiếtkế,SATA/NVMevàkiểmtragiaotiếpkhe.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0295": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Khôngđồngnhất144Hz/FPS,CPU/GPUphảitạođủkhunghình.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0302": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐủPhotoshop27.x8GBtốithiểu16GBkhuyếnnghịWindowsvàđiềukiệnCPU/OS/GPU/tệplớn.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0309": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "CóRAMhàn+mộtkheDDR4SO-DIMMnhưng bỏ điều kiện xác nhận mãSKU/lượngRAMhàn/thanhđanglắp/không lấy maxcấu hìnhkhác.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0316": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "ĐủDIMM/SO-DIMMvàđiềukiệnlaptophànRAMkhôngthaynhưRAMrời; bỏchecklistmã/khe/maxnhưngýchínhvàgiớihạncầnthiếtcòn,khônggánSKU.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0323": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Nêu dữ liệu nhậpWiredWirelessvà trường cần đối chiếu nhưng thiếu thông tin hãngLIGHTSPEEDWirelessđể giải thích xung đột.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0330": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nêu maxtrongdòngkhôngápchomọimáy; thiếu nội dunghai kheDDR5và đối chiếuSKU.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0337": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ kết luận on-dieECCkhôngtựthànhECCmáychủ; thiếu giải thích sửa lỗi trongchipvà giới hạn lỗi ngoài chip/đườngtruyền.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0344": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "TốcđộNV2riêng1TB/2TBdạngtớivàphảixácnhậnmãdunglượng; khôngápchungmọiNV2.",
+    "baseline_status": "PASS",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  },
+  "Q0351": {
+    "status": "PASS",
+    "cause": "SOURCE_GROUNDED",
+    "reason": "Đúng081SGmànhình/pin39.3Whvàgiớihạnkhônggánsang041BD/shop.",
+    "baseline_status": "FAIL",
+    "reviewed_by": "Codex",
+    "method": "Read all28 exact answers and relevant source notes; compare completeness/scope to prior review separately from automated checks; Q0316 retained PASS for expressed soldered-RAM limit despite shorter checklist."
+  }
+}

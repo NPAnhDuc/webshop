@@ -1,0 +1,313 @@
+{
+  "selection": "All product_single development questions containing CPU như thế nào in completed kb3_final_r5; no validation opened.",
+  "reviewed": 17,
+  "reference_supported_CPU_lookup": 17,
+  "before_claims_total": 81,
+  "after_claims_total": 18,
+  "comparison": "Observed answer-relevance change between different knowledge/runtime revisions. Not an isolated preamble-only A/B and no overall479 accuracy claim.",
+  "model_calls": 0,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "input_sha256": {
+    "AI\\evaluation\\quality_loop_20261024_kb3\\kb3_final_r5\\results.json": "9d2c57c62a690ccd3694fff064c25b67614265635d8233c97334bca38a60fd74",
+    "AI\\evaluation\\quality_loop_20261024_kb3\\kb3_final_r5\\metadata.json": "136a1c9eadd61757ce9c622a71a9fae31b27b992618c118a5773f3190878ae7d",
+    "AI\\evaluation\\quality_loop_20261024_kb3\\kb3_final_r5\\integrity.json": "480987668b48bfcd28220e411f06ff55e1a8df8472b436207afd7ebf2791af88",
+    "AI\\evaluation\\quality_loop_20261024_kb2\\kb2_rag5_rerank_r1\\results.json": "a9fd205fbd3b670bceb7c2a3904266c6f4031b1e5d3f045d6de541a7931a0575"
+  },
+  "cases": [
+    {
+      "id": "Q0014",
+      "question": "Theo danh mục tham khảo, Acer Aspire 3 A315-59-56VC có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+          "version": 3,
+          "section": 1,
+          "title": "Acer Aspire 3 A315-59-56VC",
+          "chunk_id": "e0dfa566bd066afbf5503350a2abd10657823d5f56008dd6c110679a792c9b4f"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0033",
+      "question": "Theo danh mục tham khảo, HP Victus Gaming 15-fa1251TX có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 4,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c",
+          "version": 3,
+          "section": 1,
+          "title": "HP Victus Gaming 15-fa1251TX",
+          "chunk_id": "29743499559625de541d02cda6972a6a95f45f8f14c2e20a5d07327fa4cb514d"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0050",
+      "question": "Theo danh mục tham khảo, Dell Inspiron 15 3520 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 3,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090",
+          "version": 3,
+          "section": 1,
+          "title": "Dell Inspiron 15 3520",
+          "chunk_id": "6097548e83c029a9bf0b9d4dfddc8fa2756d40e5f7ac69131fa21cc96e2eb066"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0051",
+      "question": "Theo danh mục tham khảo, Asus TUF Gaming A15 FA506NF có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2",
+          "version": 3,
+          "section": 1,
+          "title": "Asus TUF Gaming A15 FA506NF",
+          "chunk_id": "a7493bfc4cabf6838f7e89820b731413700cdba3dc3f58e79a06869fe9399f23"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0085",
+      "question": "Theo danh mục tham khảo, Dell Latitude 3430 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6",
+          "version": 3,
+          "section": 1,
+          "title": "Dell Latitude 3430",
+          "chunk_id": "92b29ac45ec638021e14a59d4d3597ed32e0381c44661d7c8012e455f2f91b38"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0097",
+      "question": "Theo danh mục tham khảo, Apple MacBook Air (Late 2020) có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 5,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa",
+          "version": 3,
+          "section": 1,
+          "title": "Apple MacBook Air (Late 2020)",
+          "chunk_id": "d7bdb5e8fcf18d5230912906879345f06723f0c6e62f8a3034128e58f93c29e2"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0127",
+      "question": "Theo danh mục tham khảo, Dell Vostro 15 3510 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092",
+          "version": 3,
+          "section": 1,
+          "title": "Dell Vostro 15 3510",
+          "chunk_id": "e452de3b9bfbe5bf67ade23f61835e90a8b69c0d29ee4d63d211f5924b4383a7"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0139",
+      "question": "Theo danh mục tham khảo, Lenovo IdeaPad Slim 3i 15ITL6 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+          "version": 3,
+          "section": 1,
+          "title": "Lenovo IdeaPad Slim 3i 15ITL6",
+          "chunk_id": "8526a13c8bff847e9abda8655639f4fa1d38593b559808a97a96981c033ee3eb"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0140",
+      "question": "Theo danh mục tham khảo, Lenovo Legion Slim 5i 16IRH8 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 3,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf",
+          "version": 3,
+          "section": 1,
+          "title": "Lenovo Legion Slim 5i 16IRH8",
+          "chunk_id": "36070022cb686146b8ac5ef171b56bf61b74e85d65598042a835187f1c57a315"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0155",
+      "question": "Theo danh mục tham khảo, MSI Modern 15 B12M có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 5,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1",
+          "version": 3,
+          "section": 1,
+          "title": "MSI Modern 15 B12M",
+          "chunk_id": "6f9270dae4f806e221f9d1ff69c5336c7df4491d1587e04b2cee8d18ed24e7cd"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0264",
+      "question": "Theo danh mục tham khảo, HP 15-fd0202TU có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-918991685e362df8f799e996de2c3ec56fd9b8026a6fc4da5f39bb7757f239d5",
+          "version": 3,
+          "section": 1,
+          "title": "HP 15-fd0202TU",
+          "chunk_id": "09923bfc0db398f62c0e60e39d31ad09e22a49da2ac174a5f9060873b0d1a19d"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0280",
+      "question": "Theo danh mục tham khảo, Acer Nitro 5 AN515-58-59JP có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8",
+          "version": 3,
+          "section": 1,
+          "title": "Acer Nitro 5 AN515-58-59JP",
+          "chunk_id": "22563f2d0dee078418152a5e4dea9679df528be392f7988f6623ae9eedd6898a"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0285",
+      "question": "Theo danh mục tham khảo, Acer Aspire 5 5P-A515-58P có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 3,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0",
+          "version": 3,
+          "section": 1,
+          "title": "Acer Aspire 5 5P-A515-58P",
+          "chunk_id": "1ada595f135491474bdfd6542e92719dbe02e81283a20c711d61b02bdc393d01"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0294",
+      "question": "Theo danh mục tham khảo, Asus ZenBook 14 UM425UA có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 3,
+      "after_claims": 2,
+      "sources": [
+        {
+          "document_id": "catalog-675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc",
+          "version": 3,
+          "section": 1,
+          "title": "Asus ZenBook 14 UM425UA",
+          "chunk_id": "3c7269b235d94e5e8a0e58732d49b59b7e99b2795757c2b04aae2939b01becfb"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0315",
+      "question": "Theo danh mục tham khảo, Lenovo ThinkBook 15 G2 ITL có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 5,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-9d2cf777d54302b4c0a7f3d0f4f0866b441a3af2de79dd4bb91bf1de5ae99f35",
+          "version": 3,
+          "section": 1,
+          "title": "Lenovo ThinkBook 15 G2 ITL",
+          "chunk_id": "46a20ec3936cf75d0c4f0d6243c98927cafda6cfff3d9bf057b35e04c534e076"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0378",
+      "question": "Theo danh mục tham khảo, Acer Swift Go 14 SFG14-41-R5RB có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 2,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-0d1e921a974d5be9280c001db157bf593526b46d5599d752df06dfd7f4d8e3be",
+          "version": 3,
+          "section": 1,
+          "title": "Acer Swift Go 14 SFG14-41-R5RB",
+          "chunk_id": "0de607d06ab48d133e0edfb44a7b0bc3d4b0961bf1bee88488ff7049f09ba77d"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    },
+    {
+      "id": "Q0386",
+      "question": "Theo danh mục tham khảo, Lenovo LOQ Gaming 15IRH8 có CPU như thế nào?",
+      "semantic_status": "meets_reference_catalog_CPU_lookup",
+      "before_claims": 6,
+      "after_claims": 1,
+      "sources": [
+        {
+          "document_id": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+          "version": 3,
+          "section": 1,
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "chunk_id": "75b052461e13161afe99963dbd4806f68ad73ca68a75d11818871d7caa9686d9"
+        }
+      ],
+      "limitation": "Reference catalog only, not manufacturer verification or proof of the shop SKU."
+    }
+  ],
+  "unresolved_admin_cases": {
+    "Q0020": "Lead time plus irrelevant warranty/simulator fragments; no explicit response to missing MOQ evidence.",
+    "Q0038": "Campaign title/table alone does not establish detailed eligible-product scope.",
+    "Q0102": "States6percent cap yet also says cap comparison is unknown; approver scope still unresolved."
+  }
+}

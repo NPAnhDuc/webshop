@@ -1,0 +1,1 @@
+Stopped after3HTTP500;0semantic results,88pending. Runtimegrammarstackerror observed. Do NOT resume unchanged. Plan minimal compatibility probe in newrevision, no secondbatch now. Productionconfig/codeunchanged.

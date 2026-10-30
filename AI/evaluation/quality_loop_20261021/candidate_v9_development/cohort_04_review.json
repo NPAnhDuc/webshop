@@ -1,0 +1,752 @@
+{
+  "Q0472": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. HP 15-fd0202TU: Processor Core: 10.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0474": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận gộp: 209177000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0476": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Razer Basilisk V3: cảm biến: Optical.; Razer Basilisk V3: DPI tối đa: 26000 dpi.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0479": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận gộp: 179149000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0482": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Western Digital WD_Black SN850X: dung lượng: 2000 GB.; Western Digital WD_Black SN850X: kích thước/chuẩn thiết kế: M.2-2280.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0483": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Asus TUF Gaming A15 FA506NF: Processor Model: Ryzen 5 7535HS.; Asus TUF Gaming A15 FA506NF: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0484": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Giá vốn: 1024304000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0486": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Corsair RM850e (2025): công suất định mức theo danh mục: 850 W.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0487": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lenovo ThinkBook 15 G2 ITL: Processor Model: Core i5 1135G7.; Lenovo ThinkBook 15 G2 ITL: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0488": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. LG UltraGear 27GR75Q-B: độ phân giải: 2560 × 1440 pixel.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0489": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận hoạt động trước lãi vay và thuế: 38254220 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0491": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Kingston KC3000: dung lượng: 2048 GB.; Kingston KC3000: kích thước/chuẩn thiết kế: M.2-2280.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0492": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Razer DeathAdder Essential: cảm biến: Optical.; Razer DeathAdder Essential: DPI tối đa: 6400 dpi.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0494": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Chi phí vận hành: 104503862 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0495": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0496": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Logitech G502 Hero: kết nối: Wired.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0497": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lenovo IdeaPad Slim 3i 15ITL6: Processor Model: Core i7 1165G7.; Lenovo IdeaPad Slim 3i 15ITL6: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0498": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Corsair RM850e (2025): loại: ATX.; Corsair RM850e (2025): cáp modular: Full.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0499": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Đơn hàng: 65.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0500": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1474785000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0502": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Logitech G502 Hero: cảm biến: Optical.; Logitech G502 Hero: DPI tối đa: 25600 dpi.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0503": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. MSI MAG A650BN: loại: ATX.; MSI MAG A650BN: công suất định mức theo danh mục: 650 W.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0504": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 997980000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0505": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1203150000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0506": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. HP 15-fd0202TU: Processor Model: Core i5 1335U.; HP 15-fd0202TU: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0507": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Dell Latitude 3430: Processor Model: Core i3 1215U.; Dell Latitude 3430: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04",
+    "secondary_issue": "UNNECESSARY_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Đủ nội dung chính, nhưng thêm thông số cùng model hoặc giải thích dung lượngflash chung,không gán đặc tính riêng model khác."
+  },
+  "Q0508": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. MSI B760 GAMING PLUS WIFI: socket: LGA1700.; MSI B760 GAMING PLUS WIFI: RAM tối đa theo danh mục: 192 GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0509": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1175440000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0510": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0511": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Acer Swift Go 14 SFG14-41-R5RB: Processor Model: Ryzen 5 7530U.; Acer Swift Go 14 SFG14-41-R5RB: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0514": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận gộp: 144706000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0515": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 997980000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0516": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. AMD Ryzen 7 7700X: số nhân: 8.; AMD Ryzen 7 7700X: xung boost: 5.4 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0517": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. LG UltraGear 27GR75Q-B: đường chéo: 27 inch.; LG UltraGear 27GR75Q-B: tần số quét: 165 Hz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0519": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0521": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Giá vốn: 1002931000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0523": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0525": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Đơn hàng: 163.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0527": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Chi phí vận hành: 108777780 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0528": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0529": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0530": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0531": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1493219000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0532": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1493219000 VND.; Doanh thu thuần: 1203150000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0533": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Đơn hàng: 135.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0534": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1493219000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0535": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0536": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0537": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Đơn hàng: 151.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0538": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 997980000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0539": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Đơn hàng: 131.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0540": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 997980000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0543": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận gộp: 198752000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0544": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1175440000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0545": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận hoạt động trước lãi vay và thuế: 61779160 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0546": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1493219000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0547": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận hoạt động trước lãi vay và thuế: 45648480 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0549": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1203150000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0551": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Lợi nhuận gộp: 126257000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0552": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0553": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0555": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0556": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0557": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0558": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0561": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0563": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0566": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1077004000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0567": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1493219000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0569": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1175440000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0570": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0571": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0572": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 1203150000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0573": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0575": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0578": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0579": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 997980000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0580": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0583": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0584": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0585": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 1175440000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0586": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 997980000 VND.; Doanh thu thuần: 1175440000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0587": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0588": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0589": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 838580000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0590": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 997980000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0591": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 1175440000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0592": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 609442000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0594": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0597": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Doanh thu thuần: 1203150000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0598": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  },
+  "Q0600": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc: đủ các giá trị/thuộc tính được hỏi, đúng sản phẩm hoặc từng kỳ theo citation; không tính chênh lệch/giả nguồn. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of92outputs in two46case panels with prior same-session questions and source ownership against frozen facts; no status inferred from checks, not independent.",
+    "cohort": "cohort_04"
+  }
+}

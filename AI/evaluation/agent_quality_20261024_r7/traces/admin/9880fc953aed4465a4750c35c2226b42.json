@@ -1,0 +1,37 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "9880fc953aed4465a4750c35c2226b42",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T05:20:18.556751+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Đọc file Excel mới rồi tự clean và ghi đè dữ liệu.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "unsupported",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Chưa hỗ trợ nhập/làm sạch/chuẩn hóa/ghi dữ liệu file. Kiểm nguồn cũ không thay được yêu cầu xử lý file mới.",
+    "sources": [],
+    "state_resolution": {
+      "method": "explicit_unsupported_capability",
+      "capability": "file.transform"
+    }
+  },
+  "error_type": null,
+  "seconds": 0.20926190000318456
+}

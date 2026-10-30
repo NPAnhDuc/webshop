@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "7af48e3a94f14502abec850b6dfabe3e",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:46:04.084790+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Thunderbolt và USB-C có phải cùng một thứ không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Thunderbolt và USB-C có phải cùng một thứ không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nUSB-C mô tả kiểu đầu nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+        "reason": "Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nUSB-C mô tả kiểu đầu nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-thunderbolt-usbc",
+            "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "source": "tech-thunderbolt-usbc-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+            "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "section": 1,
+            "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+            "score": 0.04892,
+            "dense_score": 0.561,
+            "lexical_score": 0.2323,
+            "bm25_score": 9.2839,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-thunderbolt5",
+            "title": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+            "source": "tech-thunderbolt5-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "6e680583cdbecccb03062a8f5d1c2d2e486c99033bfb5f8926af3ba230bd58f2",
+            "text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+            "section": 1,
+            "chunk_id": "14d5aabf8f10abc23205573316971962beca448f4dee3d0bdee910448c630646",
+            "score": 0.04865,
+            "dense_score": 0.5665,
+            "lexical_score": 0.1969,
+            "bm25_score": 8.7327,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.1638234999991255
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nUSB-C mô tả kiểu đầu nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-thunderbolt-usbc",
+        "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "source": "tech-thunderbolt-usbc-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+        "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "section": 1,
+        "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+        "score": 0.04892,
+        "dense_score": 0.561,
+        "lexical_score": 0.2323,
+        "bm25_score": 9.2839,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-thunderbolt5",
+        "title": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+        "source": "tech-thunderbolt5-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "6e680583cdbecccb03062a8f5d1c2d2e486c99033bfb5f8926af3ba230bd58f2",
+        "text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+        "section": 1,
+        "chunk_id": "14d5aabf8f10abc23205573316971962beca448f4dee3d0bdee910448c630646",
+        "score": 0.04865,
+        "dense_score": 0.5665,
+        "lexical_score": 0.1969,
+        "bm25_score": 8.7327,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 4.671079299994744
+}

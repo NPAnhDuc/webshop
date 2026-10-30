@@ -1,0 +1,100 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "772c7c575c3e4d47a574484c7c141b15",
+  "parent_trace_id": "c9c3215cdc8f4f568c6e9777b52e65f4",
+  "recorded_at": "2026-10-24T12:34:44.369910+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, Gigabyte X870E AORUS ELITE WIFI7 hỗ trợ loại RAM nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "facts",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": [
+        "P13"
+      ],
+      "fact_fields": [
+        "ram_type"
+      ]
+    }
+  },
+  "calls": [
+    {
+      "tool": "catalog.product_facts",
+      "arguments": {
+        "product_id": "3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2",
+        "fields": [
+          "ram_type"
+        ]
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "data": {
+          "product": {
+            "id": "3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2",
+            "name": "Gigabyte X870E AORUS ELITE WIFI7",
+            "category": "mainboard",
+            "api_path": "/api/products/gigabyte-x870e-aorus-elite-wifi7",
+            "product_page_url": null
+          },
+          "facts": [
+            {
+              "field": "ram_type",
+              "value": "DDR4",
+              "missing": false
+            }
+          ],
+          "limitations": [
+            "Missing means absent from the captured record, not that the product lacks the feature."
+          ]
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      },
+      "seconds": 5.780000356025994e-05
+    }
+  ],
+  "result": {
+    "intent": "facts",
+    "basic_action": "answer",
+    "answer": "Theo bản ghi sản phẩm Gigabyte X870E AORUS ELITE WIFI7:\n- Loại RAM: DDR4\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.",
+    "sources": [
+      {
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 0.2781479999976
+}

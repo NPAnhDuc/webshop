@@ -1,0 +1,20 @@
+{
+  "cases": 12,
+  "model_calls": 24,
+  "unchanged_answers": 12,
+  "semantic_pass": 6,
+  "semantic_fail": 6,
+  "exact_title_in_search": 11,
+  "exact_title_in_selector": 11,
+  "selector_prompt_tokens_min": 1690,
+  "selector_prompt_tokens_max": 3007,
+  "selector_contexts": [
+    6144
+  ],
+  "all_chat_finish_stop": true,
+  "seconds_total": 120.154,
+  "seconds_median": 5.867,
+  "production_changed": false,
+  "integrity": true,
+  "quality_gain": false
+}

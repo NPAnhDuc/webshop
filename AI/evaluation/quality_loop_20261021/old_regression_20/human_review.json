@@ -1,0 +1,102 @@
+{
+  "C01": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng i5-12450H,16GB,DDR5 và đúng SKU."
+  },
+  "C02": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ LOQ từ lượt trước, trả đồ họa rời Dedicated và4GB."
+  },
+  "C03": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ trả RAM hiện có16GB và DDR5, không phân biệt hoặc báo thiếu mức nâng tối đa; tự gắn full."
+  },
+  "C04": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng Win11Home và1,7kg của MSI041BD, khắc phục lỗi sai trọng tâm trước."
+  },
+  "C05": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ MSI, trả LAN No và HDMI1 riêng biệt."
+  },
+  "C06": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có16GB của cả hai và DDR5 của LOQ nhưng thiếu DDR4 của MSI nên chưa trả đủ khác biệt."
+  },
+  "C09": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tự chọn máy từ hai hãng; hỏi rõ model và tiêu chí so sánh."
+  },
+  "C26": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng2x16GB,DDR5; khắc phục bỏ sót thế hệ RAM."
+  },
+  "C29": {
+    "status": "FAIL",
+    "cause": "SCOPE_LIMITATION",
+    "reason": "Đã trả2048GB và ví dụ1024GB riêng, nhưng chưa bác bỏ hoặc báo thiếu xác nhận việc áp6000MB/s cho2048GB. Vẫn tự gắn full; có thông tin phụ thừa."
+  },
+  "C31": {
+    "status": "FAIL",
+    "cause": "QUERY_REWRITE",
+    "reason": "Model viết ngắn sai mãi5-14400F thànhi5-1440, guard từ chối thiếu nguồn và bỏ cả thông tin đã có. Đã sửa sau lượt này, giữ kết quả cũ."
+  },
+  "C32": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phủ định cả boost liên tục và TDP CPU bằng công suất cả PC; có câu phụ thừa."
+  },
+  "C33": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nguồn Apple ghi IPS và Thunderbolt/USB4 hỗ trợDisplayPort. Có câu cổng khác thừa."
+  },
+  "C34": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nói chưa có nguồn để xác nhận RAM hàn041BD giống408AU, không tự cam kết. Vẫn trích màn/CPU/RAM không giải đáp câu hỏi."
+  },
+  "C44": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Mã PhantomZ99 không có nguồn, báo thiếu rõ; không thay CPU/RAM máy khác."
+  },
+  "A01": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng tháng8/2026:1427320000,163đơn,4hoàn."
+  },
+  "A02": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ tháng sau8 là9/2026:1189908000 doanh thu,1010759000 giá vốn."
+  },
+  "A03": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ9/2026, trả110888988 chi phí và68260012 lãi hoạt động, không lấy lãi gộp."
+  },
+  "A14": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có cả1427320000 và1189908000, dẫn báo cáo đúng8 và9/2026; không yêu cầu SQL."
+  },
+  "A15": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ trả2hoàn của9/2026; thiếu4hoàn8/2026 và có hai câu miễn trách nhiệm/huấn luyện không giải đáp."
+  },
+  "A39": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Hỏi chứng minh tăng thêm do quảng cáo, nhưng chỉ trả doanh thu toàn shop1,2,4/2026, không giải thích giới hạn nhân quả."
+  }
+}

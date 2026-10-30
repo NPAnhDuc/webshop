@@ -1,0 +1,7 @@
+{
+  "accepted": false,
+  "reason": "Nine semantic/behavior failures including time/version/scope handling; business reasoning2/7. No independent human review.",
+  "validation_opened": true,
+  "code_changed_during_or_after_review": false,
+  "new_holdout_required_after_any_future_repairs": true
+}

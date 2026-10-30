@@ -1,0 +1,774 @@
+{
+  "Q0002": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đã đúng kỳ9/2026 và doanh thu1189908000, nhưng chưa xác định1539000000 là mục tiêu kế hoạch; câu đối chiếu chưa trả đủ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0003": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0006": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0007": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0012": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo chưa có thời hạn bảo hành pin của shop, không tự đặt.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0018": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0019": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0020": {
+    "status": "FAIL",
+    "cause": "WRONG_FIELD",
+    "reason": "Lấy ngưỡng/mức đặt lại simulator cho câu hỏi MOQ; thiếu ghi rõ MOQ chưa có.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0026": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0030": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nhắc chủ shop duyệt từngSKU, chưa trả điều kiện mở seal/đổi màu hoặc nói rõ chưa có điều khoản này.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0031": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "EQUIVALENT_SOURCE",
+    "reason": "Nguồn tương đương nêu ngoài nhãn IPS phải xem màu,góc nhìn,tương phản,chuyển động; không suy chất lượng từ tên tấm nền.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0036": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0038": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DòngC-BTS ghi laptopvănphòng đủ xác định nhóm được hỏi; thông tin định vịGaming đi kèm là thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0039": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0048": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không bịa địa chỉ nhận bảo hành.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0054": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0055": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Yêu cầu sửaSQL được gánoutside; không thực hiện là đúng giới hạn nhưng cần giải thíchdeferred theo tiêu chí đã chốt.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0064": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DDR5 khácDDR4 và hệ thống phải hỗ trợ, không cam kết cắm thay trực tiếp.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0072": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0073": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Hỏi quy định tuổi tồn và người duyệt, bịdeferred toàn bộ dù có nguồn.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0077": {
+    "status": "PASS",
+    "cause": "PERIOD_BINDING_CORRECT",
+    "reason": "Hai tháng4 và5/2026 đều2 hoàn, giữ đủ hai trích dẫn thuộc đúng hai báo cáo thay vì gộp mất tháng5.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0080": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0082": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0095": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo thiếu giờ lễ của chính shop.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0096": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0101": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0102": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có trần6% và duyệtSKU nhưng chưa kết luận đối chiếu7%, đồng thời nói thiếu ngay phần trần vừa trích.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0107": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0109": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không tự đặt số ngày trả hàng vì đổi ý.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0110": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0112": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0114": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Hzcao không bắt buộc học tập, chọn theo công việc/khả năng tạo khung hình; có câu phụ thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0116": {
+    "status": "FAIL",
+    "cause": "SUBGROUP_SCOPE",
+    "reason": "Dùng lãi gộp toàn shop179149000 cho câu riêngGaming, không ghi rõ thiếu phân nhóm.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0117": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0123": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo thiếu cả xuất hóa đơn công ty và thời hạn gửi.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0125": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0126": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0128": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Phân biệt6/6E/7 và điều kiện card/router/phần mềm để dùng6GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0137": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Hỏi quà muaonline nhận tại shop nhưng trả bảo hành nước ngoài/thanh toán, không báo thiếu điều khoản quà.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0142": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Thông lượng chuẩn không là tốc độ Internet bảo đảm, không tự gánWiFi7 cho máy chưa có thông số.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0144": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "PO chưa nhận chưa vào tồn,receipts mốc tăng, đúngprocurementv2.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0151": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không cam kết giao2giờ khi shop chưa có điều khoản.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0156": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nói nhiều nhân/GHz, không giải thích luồng hoặc giới hạn GHz so hiệu năng; lẫn6GHzWiFi và tốc độSSD vàoCPU.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0163": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0164": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0168": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Không trả giới hạn dùng sốFPT thay shop, chỉ liệt kê doanh thu ba tháng khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0173": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0178": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đúng chưa xác lập nguyên nhân nhưng bỏviewmonthly_pnl/shop.sqlite; lặp cùng cảnh báo ba lần.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0183": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0185": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Tốc độ phụ thuộc host/thiết bị,không lấy số quảng cáo cam kết mọi tác vụ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0187": {
+    "status": "PASS",
+    "cause": "COMPARISON_CORRECT",
+    "reason": "Đọc riêng SUP-LAP 4 ngày và SUP-PC 3 ngày, giữ đúng nhãn dữ liệu mô phỏng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0194": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Có LCD/OLED và cảnh báo màu IPS nhưng không giải thích khác biệt TN/VA theo tiêu đề được hỏi; lặp OLED.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0195": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0196": {
+    "status": "FAIL",
+    "cause": "SCOPE_CONTRADICTION",
+    "reason": "Đã trích nhóm khác 10% nhưng lại báo thiếu mức cho phụ kiện, chưa áp đúng phạm vi nhóm.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0203": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Nêu vai trò CPU/GPU và điều kiện tăng tốc nhưng không trả lời rõ GPU có thay CPU được không.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0205": {
+    "status": "PASS",
+    "cause": "POLICY_EVIDENCE_CORRECT",
+    "reason": "Trả đúng không cộng dồn và trần 6%; đủ căn cứ loại phương án ghép 3%+4%, dù chưa diễn giải thành câu kết luận.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0210": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0212": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Nêu đúng rủi ro nội dung tĩnh và điều kiện thời gian; thừa OLED lặp và tần số quét, cần rút gọn.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0214": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_ROUTING",
+    "reason": "Câu về biên lợi nhuận GPU bị hiểu thành giải thích phần cứng, không trả chính sách 4% so với laptop 6%.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0221": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Nêu hai khe, pin 60Wh, nhiều cấu hình và không gán cấu hình cao nhất; Wh không là cam kết giờ pin.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0230": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Có tiêu chí game/độ phân giải và giới hạn không cam kết FPS; từ Không đầu câu không phù hợp nhưng nội dung chính đúng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0241": {
+    "status": "FAIL",
+    "cause": "CAUSAL_SCOPE",
+    "reason": "Không trả giới hạn suy luận nhân quả của campaign_id, chỉ đọc doanh thu ba tháng tùy ý.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0247": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0250": {
+    "status": "PASS",
+    "cause": "DIRECT_EVIDENCE_WITH_NOISE",
+    "reason": "Đơn bán xuất FIFO trả đúng xuất hàng; cảnh báo thiếu Trong quy trình là nhiễu, không đổi kết luận.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0257": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Giải thích điểm ảnh tự sáng và đen sâu, kèm giới hạn nội dung tĩnh; có lặp câu.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0258": {
+    "status": "FAIL",
+    "cause": "SCOPE_INCOMPLETE",
+    "reason": "Lặp ngân sách chung ba quý và chỉ báo thiếu TikTok/Google; không xác nhận rõ chưa có phân bổ riêng cả ba kênh.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0263": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0281": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Có mốc 16GB cho game và 32GB đa nhiệm có điều kiện, không suy nâng cấp từ dung lượng; thừa thông số SSD không liên quan.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0288": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Phân biệt hình dạng M.2 với SATA/NVMe và yêu cầu kiểm tra khe hỗ trợ trước nâng cấp.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0295": {
+    "status": "PASS",
+    "cause": "CONDITION_CORRECT",
+    "reason": "Không đồng nhất 144Hz với 144FPS, nói rõ CPU/GPU phải tạo đủ khung hình.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0299": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0300": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0301": {
+    "status": "FAIL",
+    "cause": "CONTEXT",
+    "reason": "Có lịch sửCorsair4000D nhưng vẫn hỏi lại, không tra vật liệu hông có sẵn.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0302": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_ROUTING",
+    "reason": "Câu Photoshop/RAM bị trả OLED và tốc độ SSD; không trả điều kiện RAM cho Photoshop.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0307": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0308": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0309": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Nêu RAM hàn và một khe DDR4 SO-DIMM theo dòng, yêu cầu kiểm tra mã SKU trước cam kết.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0316": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Nêu SO-DIMM/RAM hàn và kiểm tra mã, khe, giới hạn hãng; thừa thông số SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0320": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0323": {
+    "status": "PASS",
+    "cause": "CONFLICT_CORRECT",
+    "reason": "Chỉ ra nguồn nhập Wired/Wireless mâu thuẫn với hãng LIGHTSPEED và trường chưa đủ xác nhận.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0329": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0335": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0337": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Phân biệt on-die ECC với ECC hệ thống, chỉ rõ lỗi ngoài chip và hỗ trợ nền tảng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0344": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Tốc độ riêng bản 1TB/2TB và giới hạn thử nghiệm/cấu hình rõ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0373": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0383": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0396": {
+    "status": "FAIL",
+    "cause": "REGRESSION_SELECTION",
+    "reason": "V1 đã trả đủ loại và thể tích; patch2 trả thể tích nhưng thay loại bằng vật liệu hông.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0411": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0424": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0446": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0458": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0467": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0468": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0473": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0478": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0501": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0512": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v2_targeted; prior review carried forward, not independent."
+  },
+  "Q0526": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex",
+    "review_method": "Answer including citations identical to candidate_v1; prior review carried forward, not independent."
+  },
+  "Q0017": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_VARIANT_LIMIT",
+    "reason": "Nêu giao tiếp/DRAM nhưng thiếu giới hạn phiên bản dung lượng KC3000, thay bằng cảnh báo dung lượng flash chung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0130": {
+    "status": "PASS",
+    "cause": "LIMIT_CORRECT",
+    "reason": "Nguồn nói rõ chưa mô hình hóa lãi vay/thuế/VAT, không thể kết luận lợi nhuận sau thuế; đủ bác cách hiểu tiền có thể rút.",
+    "reviewed_by": "Codex"
+  },
+  "Q0166": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Đủ 8nhân/16luồng/boost5.2/TDP120 và giới hạn boost/TDP; thêm mã linh kiện/đồ họa và Wi-Fi không cần thiết.",
+    "reviewed_by": "Codex"
+  },
+  "Q0191": {
+    "status": "FAIL",
+    "cause": "ATTRIBUTE_OMISSION",
+    "reason": "Hỏi số nhân Dell Latitude 3430 nhưng chỉ trả model Core i3-1215U. V1 trả đúng, đây là hồi quy ngoài nhóm89.",
+    "reviewed_by": "Codex"
+  },
+  "Q0239": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Hỏi IdeaPad theo dòng/SKU nhưng trả OLED và Wi-Fi; không trả nội dung đúng yêu cầu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0248": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_VARIANT_LIMIT",
+    "reason": "Chỉ trả RAM bản408AU, chưa nêu giới hạn không suy sang041BD hoặc bản vùng khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0251": {
+    "status": "PASS",
+    "cause": "MULTI_FIELD_CORRECT",
+    "reason": "Đã đọc đủ doanh thu1203150000, giá vốn1024304000 và lãi gộp178846000, cùng tháng3/2026.",
+    "reviewed_by": "Codex"
+  },
+  "Q0267": {
+    "status": "PASS",
+    "cause": "MISSING_FIELD_FIXED",
+    "reason": "Đủ đơn hàng126 và hoàn trả4, đúng báo cáo1/2026; không còn giá vốn không được hỏi hoặc câu thiếu phần dẫn giả.",
+    "reviewed_by": "Codex"
+  },
+  "Q0330": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Có giới hạn không gán cấu hình tối đa cho mọi SKU nhưng thiếu thông tin nền tảng hai khe DDR5 khi giải thích bài Legion; còn câu Wi-Fi không liên quan.",
+    "reviewed_by": "Codex"
+  },
+  "Q0351": {
+    "status": "FAIL",
+    "cause": "WRONG_VARIANT_SOURCE",
+    "reason": "Hỏi081SG nhưng trả Wi-Fi/OLED/408AU và041BD; không đúng phiên bản được hỏi.",
+    "reviewed_by": "Codex"
+  },
+  "Q0352": {
+    "status": "PASS",
+    "cause": "MISSING_FIELD_FIXED",
+    "reason": "Đủ chi phí108627410 và lãi hoạt động36078590, đúng tháng10/2025.",
+    "reviewed_by": "Codex"
+  },
+  "Q0451": {
+    "status": "PASS",
+    "cause": "PRODUCT_MULTI_CORRECT",
+    "reason": "Đủ CPU Ryzen5-5500U và RAM8GB của đúng ZenBook UM425UA; các trường cùng SKU bổ sung đúng nguồn.",
+    "reviewed_by": "Codex"
+  }
+}

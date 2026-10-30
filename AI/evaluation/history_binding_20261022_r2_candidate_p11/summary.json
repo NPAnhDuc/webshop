@@ -1,0 +1,66 @@
+{
+  "cases": 168,
+  "semantic": {
+    "PASS": 166,
+    "FAIL": 2
+  },
+  "variants": {
+    "original_history": {
+      "PASS": 54,
+      "FAIL": 2
+    },
+    "brief_history": {
+      "PASS": 56
+    },
+    "explicit_subject_brief_history": {
+      "PASS": 56
+    }
+  },
+  "inherited": 147,
+  "fresh": 21,
+  "changed_ids": [
+    "Q0113_original_history",
+    "Q0125_original_history",
+    "Q0125_brief_history",
+    "Q0175_original_history",
+    "Q0191_original_history",
+    "Q0247_original_history",
+    "Q0247_brief_history",
+    "Q0300_brief_history",
+    "Q0301_original_history",
+    "Q0301_brief_history",
+    "Q0321_original_history",
+    "Q0356_original_history",
+    "Q0373_original_history",
+    "Q0373_brief_history",
+    "Q0391_original_history",
+    "Q0397_original_history",
+    "Q0402_original_history",
+    "Q0438_original_history",
+    "Q0438_brief_history",
+    "Q0478_original_history",
+    "Q0478_brief_history"
+  ],
+  "fixed_ids": [
+    "Q0191_original_history",
+    "Q0300_brief_history",
+    "Q0301_original_history",
+    "Q0301_brief_history",
+    "Q0478_brief_history"
+  ],
+  "regressed_ids": [
+    "Q0125_original_history",
+    "Q0247_original_history"
+  ],
+  "checks": {
+    "PASS_CHECKS": 166,
+    "FAIL_CHECKS": 2
+  },
+  "secondary_cases": 18,
+  "quote_checks": 196,
+  "quote_issues": [],
+  "private_leaks": [],
+  "total_seconds": 630.593,
+  "median_seconds": 3.383,
+  "accepted": false
+}

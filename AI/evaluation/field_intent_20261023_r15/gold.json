@@ -1,0 +1,677 @@
+{
+  "F15-Q0113_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0125_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "memory/modules"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0163_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0175_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0191_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0202_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0209_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0210_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "video-card/memory"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0218_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "motherboard/form_factor"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0227_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0246_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0247_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "memory/modules"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0272_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "motherboard/form_factor"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0278_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "monitor/resolution"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0292_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0300_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "case/side_panel"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0301_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "case/side_panel"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0314_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0321_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0322_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0327_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "power-supply/efficiency"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0329_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "video-card/memory"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0334_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0343_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0356_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0357_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0368_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "mouse/max_dpi"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0373_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "memory/modules"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0381_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0382_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0383_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "motherboard/form_factor"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0391_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0392_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0397_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0398_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0401_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "motherboard/form_factor"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0402_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0403_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "monitor/resolution"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0406_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0411_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "video-card/memory"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0417_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "mouse/connection_type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0422_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0427_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "power-supply/efficiency"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0428_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "mouse/connection_type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0432_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0438_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "internal-hard-drive/type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0442_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "motherboard/form_factor"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0446_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "case/side_panel"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0448_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0462_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "cpu/core_clock"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0471_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0472_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Core"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0478_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "memory/modules"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0486_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "power-supply/wattage"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0488_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "monitor/resolution"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-Q0496_original_history": {
+    "mode": "fields",
+    "field_ids": [
+      "mouse/connection_type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C09": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C10": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C11": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C12": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C13": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C14": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C15": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C16": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C17": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C19": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C20": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C21": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C24": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C30": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C31": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C33": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C34": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C36": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C40": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C46": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A03": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A09": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A17": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A19": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A22": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A25": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A26": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A28": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A32": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-A38": {
+    "mode": "rag",
+    "field_ids": [],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C01": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Processor Model",
+      "laptop/RAM",
+      "laptop/RAM Type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C02": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/Graphics Memory Accessibility",
+      "laptop/Graphics Memory"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C05": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/LAN",
+      "laptop/HDMI Port"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C06": {
+    "mode": "fields",
+    "field_ids": [
+      "laptop/RAM",
+      "laptop/RAM Type"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  },
+  "F15-C27": {
+    "mode": "fields",
+    "field_ids": [
+      "power-supply/wattage",
+      "power-supply/efficiency",
+      "power-supply/modular"
+    ],
+    "reviewed_by": "Codex",
+    "basis": "Manual question-to-source-schema intent annotation before inference; not answertruth, retrievalrecall, or QAaggregate labels."
+  }
+}

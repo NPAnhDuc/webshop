@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "bd791175c90c49fc8896132007fb2639",
+  "parent_trace_id": "eef9e2b324b7436d8fb82bc4dfcee1cd",
+  "recorded_at": "2026-10-24T08:25:23.543658+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "So món thứ nhất với món thứ hai",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.3621922000020277
+}

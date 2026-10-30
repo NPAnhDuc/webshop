@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "241add721ef94675a06c3a3c3d1d089e",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:33:12.327987+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Trong danh mục hiện có, lấy 3 phụ kiện giá dưới 510000 đồng giúp mình.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.1337154999928316
+}

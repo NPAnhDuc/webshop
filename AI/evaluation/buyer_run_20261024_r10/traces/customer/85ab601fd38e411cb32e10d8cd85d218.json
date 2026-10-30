@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "85ab601fd38e411cb32e10d8cd85d218",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T16:38:57.826577+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "OLED và IPS có ưu nhược điểm gì khi học online lâu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "OLED và IPS có ưu nhược điểm gì khi học online lâu?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: IPS có ưu nhược điểm gì khi học online lâu.",
+        "reason": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: IPS có ưu nhược điểm gì khi học online lâu.",
+        "answerability": "partial",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "glossary-oled",
+            "title": "OLED là gì?",
+            "source": "glossary-oled-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "technical_reference",
+            "sha256": "542b24543b6ea7c791a7f98ecb47e9b2b565346567e542c65381791e40143a2a",
+            "text": "OLED là gì?\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống. Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\nNguồn kỹ thuật: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "retrieval_text": "OLED là gì?\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống. Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\nNguồn kỹ thuật: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "heading_path": "OLED là gì?",
+            "section": 1,
+            "chunk_id": "4a92642cd97bdfb2385804ed0c24a0fcefa83ffbec2f22282124ae0506665f95",
+            "score": 0.04813,
+            "dense_score": 0.3188,
+            "lexical_score": 0.165,
+            "bm25_score": 9.8974,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-oled-basics",
+            "title": "OLED là gì và vì sao hiển thị màu đen sâu?",
+            "source": "tech-oled-basics-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "5226a0bb0b132320879174bd2a2b9549650f580487098108c835c9c8ca92d7d7",
+            "text": "OLED là gì và vì sao hiển thị màu đen sâu?\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống. Khả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu. Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "OLED là gì và vì sao hiển thị màu đen sâu?\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống. Khả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu. Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "OLED là gì và vì sao hiển thị màu đen sâu?",
+            "section": 1,
+            "chunk_id": "f13f8327bb70a559c910dcde40dd69378de34db43873ba6c824c09aa4b40c962",
+            "score": 0.04788,
+            "dense_score": 0.3703,
+            "lexical_score": 0.1598,
+            "bm25_score": 9.4482,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 5.864888700016309
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: IPS có ưu nhược điểm gì khi học online lâu.",
+    "sources": [
+      {
+        "document_id": "glossary-oled",
+        "title": "OLED là gì?",
+        "source": "glossary-oled-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "technical_reference",
+        "sha256": "542b24543b6ea7c791a7f98ecb47e9b2b565346567e542c65381791e40143a2a",
+        "text": "OLED là gì?\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống. Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\nNguồn kỹ thuật: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "retrieval_text": "OLED là gì?\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống. Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\nNguồn kỹ thuật: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "heading_path": "OLED là gì?",
+        "section": 1,
+        "chunk_id": "4a92642cd97bdfb2385804ed0c24a0fcefa83ffbec2f22282124ae0506665f95",
+        "score": 0.04813,
+        "dense_score": 0.3188,
+        "lexical_score": 0.165,
+        "bm25_score": 9.8974,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-oled-basics",
+        "title": "OLED là gì và vì sao hiển thị màu đen sâu?",
+        "source": "tech-oled-basics-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "5226a0bb0b132320879174bd2a2b9549650f580487098108c835c9c8ca92d7d7",
+        "text": "OLED là gì và vì sao hiển thị màu đen sâu?\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống. Khả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu. Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "OLED là gì và vì sao hiển thị màu đen sâu?\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống. Khả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu. Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "OLED là gì và vì sao hiển thị màu đen sâu?",
+        "section": 1,
+        "chunk_id": "f13f8327bb70a559c910dcde40dd69378de34db43873ba6c824c09aa4b40c962",
+        "score": 0.04788,
+        "dense_score": 0.3703,
+        "lexical_score": 0.1598,
+        "bm25_score": 9.4482,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 6.360245699994266
+}

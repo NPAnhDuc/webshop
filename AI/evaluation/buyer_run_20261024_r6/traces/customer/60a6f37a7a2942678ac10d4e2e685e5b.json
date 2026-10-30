@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "60a6f37a7a2942678ac10d4e2e685e5b",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:46:37.578976+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Ổ SSD gần đầy có thể ảnh hưởng hiệu năng như thế nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Ổ SSD gần đầy có thể ảnh hưởng hiệu năng như thế nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]",
+        "reason": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-flash-capacity",
+            "title": "Dung lượng công bố và dung lượng dùng được có giống nhau không?",
+            "source": "tech-flash-capacity-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "37aa18670ec7d3d7d35ceee35b39a156300d5f3553ca072f86641fc793ba96c5",
+            "text": "Dung lượng công bố và dung lượng dùng được có giống nhau không?\n\nMột phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng. Không kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\nNguồn: https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_VN.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Dung lượng công bố và dung lượng dùng được có giống nhau không?\n\nMột phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng. Không kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\nNguồn: https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_VN.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Dung lượng công bố và dung lượng dùng được có giống nhau không?",
+            "section": 1,
+            "chunk_id": "8719846424621e9b0204cd64d5d1b9382a3bdb91511559270095fc8a91878c60",
+            "score": 0.03828,
+            "dense_score": 0.4748,
+            "lexical_score": 0.0086,
+            "bm25_score": 2.2434,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.945575899997493
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-flash-capacity",
+        "title": "Dung lượng công bố và dung lượng dùng được có giống nhau không?",
+        "source": "tech-flash-capacity-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "37aa18670ec7d3d7d35ceee35b39a156300d5f3553ca072f86641fc793ba96c5",
+        "text": "Dung lượng công bố và dung lượng dùng được có giống nhau không?\n\nMột phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng. Không kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\nNguồn: https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_VN.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Dung lượng công bố và dung lượng dùng được có giống nhau không?\n\nMột phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng. Không kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\nNguồn: https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_VN.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Dung lượng công bố và dung lượng dùng được có giống nhau không?",
+        "section": 1,
+        "chunk_id": "8719846424621e9b0204cd64d5d1b9382a3bdb91511559270095fc8a91878c60",
+        "score": 0.03828,
+        "dense_score": 0.4748,
+        "lexical_score": 0.0086,
+        "bm25_score": 2.2434,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.396504000003915
+}

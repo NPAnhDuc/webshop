@@ -1,0 +1,11 @@
+{
+  "targeted_tests": 50,
+  "targeted_seconds": 17.9,
+  "full_tests": 362,
+  "full_seconds": 121.95,
+  "capability_contract_before_pass": 3,
+  "capability_contract_after_pass": 8,
+  "capability_contract_total": 8,
+  "model_batches": 1,
+  "accepted_for_application": false
+}

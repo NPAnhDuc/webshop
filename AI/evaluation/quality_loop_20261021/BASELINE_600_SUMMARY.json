@@ -1,0 +1,144 @@
+{
+  "candidate": "frozen_patch5",
+  "turns": 600,
+  "unique_question_texts": 545,
+  "conversation_families": 454,
+  "development": {
+    "cases": 479,
+    "checks": {
+      "PASS_CHECKS": 422,
+      "NEEDS_REVIEW": 53,
+      "FAIL_CHECKS": 4
+    },
+    "semantic_reviewed": 112,
+    "selected_semantic_pass": 86,
+    "selected_semantic_fail": 26,
+    "representative_semantic_score": null
+  },
+  "validation": {
+    "cases": 121,
+    "semantic_pass": 112,
+    "semantic_fail": 9,
+    "roles": {
+      "customer": {
+        "PASS": 49,
+        "FAIL": 3
+      },
+      "admin": {
+        "PASS": 63,
+        "FAIL": 6
+      }
+    },
+    "checks": {
+      "PASS_CHECKS": 102,
+      "FAIL_CHECKS": 4,
+      "NEEDS_REVIEW": 15
+    },
+    "failed_ids": [
+      "Q0037",
+      "Q0078",
+      "Q0124",
+      "Q0158",
+      "Q0223",
+      "Q0232",
+      "Q0266",
+      "Q0274",
+      "Q0328"
+    ],
+    "failure_causes": {
+      "ROUTING_CLARIFY_INSTEAD_OF_DEFER": 1,
+      "UNRESOLVED_REFERENCE": 1,
+      "AUTHORIZATION_RESPONSE": 1,
+      "CONTRADICTORY_MISSING": 1,
+      "DATE_CONCLUSION_MISSING": 1,
+      "BUDGET_SCOPE_INCOMPLETE": 1,
+      "HISTORICAL_VERSION_INCOMPLETE": 1,
+      "ACCOUNTING_QUESTION_MISROUTED": 1,
+      "ATTRIBUTE_OMISSION": 1
+    },
+    "families": {
+      "total": 96,
+      "all_turns_pass": 87
+    },
+    "topics": {
+      "quarter_target": {
+        "PASS": 1
+      },
+      "monthly_multi": {
+        "PASS": 9
+      },
+      "month_target": {
+        "PASS": 3
+      },
+      "admin_boundary": {
+        "FAIL": 1
+      },
+      "monthly_single": {
+        "PASS": 18
+      },
+      "multi_period": {
+        "PASS": 30
+      },
+      "clarification": {
+        "PASS": 3,
+        "FAIL": 1
+      },
+      "handoff": {
+        "PASS": 1
+      },
+      "technology_reasoning": {
+        "PASS": 6
+      },
+      "business_reasoning": {
+        "PASS": 2,
+        "FAIL": 5
+      },
+      "missing_shop_terms": {
+        "PASS": 2
+      },
+      "product_single": {
+        "PASS": 11
+      },
+      "unknown_product": {
+        "PASS": 3
+      },
+      "live_boundary": {
+        "PASS": 2
+      },
+      "permission": {
+        "FAIL": 1
+      },
+      "product_context": {
+        "PASS": 11
+      },
+      "product_multi": {
+        "PASS": 10,
+        "FAIL": 1
+      }
+    },
+    "quote_checks": 227,
+    "absent_quotes": [],
+    "private_source_leaks": [],
+    "median_seconds": 4.547,
+    "total_seconds": 604.565,
+    "candidate": "frozen_patch5",
+    "reviewer": "Codex, no independent human review",
+    "validation_opened": true,
+    "accepted": false,
+    "limitations": [
+      "Same underlying knowledge as development; not independent review.",
+      "Numeric report queries dominate; do not extrapolate to real shopping dialogue accuracy.",
+      "Policy and shop financial data remain simulated; missing real terms require confirmation.",
+      "PASS content may still contain unrelated or repeated sentences."
+    ]
+  },
+  "overall_checks": {
+    "PASS_CHECKS": 524,
+    "NEEDS_REVIEW": 68,
+    "FAIL_CHECKS": 8
+  },
+  "overall_semantic_score": null,
+  "old100_semantic_pass": 87,
+  "accepted": false,
+  "validation_is_now_opened": true
+}

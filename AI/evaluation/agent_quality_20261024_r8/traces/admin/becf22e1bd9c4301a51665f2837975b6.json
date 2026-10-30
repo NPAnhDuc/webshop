@@ -1,0 +1,37 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "becf22e1bd9c4301a51665f2837975b6",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T05:28:55.234688+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Mã SKU nào có doanh thu cao nhất?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "unsupported",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Chưa nối công cụ xếp hạng bán hàng theo SKU. Đếm SKU trong danh mục không phải xếp hạng doanh số.",
+    "sources": [],
+    "state_resolution": {
+      "method": "explicit_unsupported_capability",
+      "capability": "sales.rank"
+    }
+  },
+  "error_type": null,
+  "seconds": 0.25070219999179244
+}

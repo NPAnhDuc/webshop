@@ -1,0 +1,33 @@
+{
+  "status": "colab_artifact_seen_unverified",
+  "package": "metric_v4_pack_20261019_01.zip",
+  "package_sha256": "25797aab6848ab8edc6e0aab48fe7d4fe31e588dca824e28d8a535fb07ca672e",
+  "samples": {
+    "train": 3520,
+    "validation": 380,
+    "test": 380
+  },
+  "baseline_old106": {
+    "pass_count": 93,
+    "fail_count": 13
+  },
+  "baseline_new12": {
+    "pass_count": 10,
+    "fail_count": 2
+  },
+  "baseline_new40": {
+    "pass_count": 32,
+    "fail_count": 8,
+    "grading_review": "category=all oracle fix; original raw 30/10 preserved"
+  },
+  "new_unit_integration_tests": 100,
+  "controller_active": false,
+  "scope": "learned metric head over frozen Vietnamese embeddings, admin top_products only; no Qwen finetuning or financial facts in weights",
+  "pending": [
+    "Verify Colab artifacts and calibration",
+    "Compare candidate on all 158 live regression questions",
+    "Keep baseline if any previously correct task regresses"
+  ],
+  "last_status_review": "2026-10-20",
+  "verification_blocker": "Colab JavaScript/reCAPTCHA/session and GPU quota errors; cloud ZIP was seen in the file pane after execution, but no report or downloaded artifact has been verified."
+}

@@ -1,0 +1,96 @@
+{
+  "Q25": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q26": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q27": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q28": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q29": {
+    "checks_pass": false,
+    "errors": [
+      "capability"
+    ]
+  },
+  "Q30": {
+    "checks_pass": false,
+    "errors": [
+      "capability"
+    ]
+  },
+  "Q31": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q32": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q33": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q34": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q35": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q36": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q37": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q38": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q39": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q40": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q41": {
+    "checks_pass": false,
+    "errors": [
+      "mixed_capabilities_not_addressed"
+    ]
+  },
+  "Q42": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q43": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q44": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q45": {
+    "checks_pass": true,
+    "errors": []
+  },
+  "Q46": {
+    "checks_pass": true,
+    "errors": []
+  }
+}

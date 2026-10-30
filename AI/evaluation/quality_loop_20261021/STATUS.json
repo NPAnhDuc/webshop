@@ -1,0 +1,3706 @@
+{
+  "bank_turns": 600,
+  "unique_question_texts": 545,
+  "conversation_families": 454,
+  "development": 479,
+  "validation": {
+    "cases": 121,
+    "semantic_pass": 112,
+    "semantic_fail": 9,
+    "roles": {
+      "customer": {
+        "PASS": 49,
+        "FAIL": 3
+      },
+      "admin": {
+        "PASS": 63,
+        "FAIL": 6
+      }
+    },
+    "checks": {
+      "PASS_CHECKS": 102,
+      "FAIL_CHECKS": 4,
+      "NEEDS_REVIEW": 15
+    },
+    "failed_ids": [
+      "Q0037",
+      "Q0078",
+      "Q0124",
+      "Q0158",
+      "Q0223",
+      "Q0232",
+      "Q0266",
+      "Q0274",
+      "Q0328"
+    ],
+    "failure_causes": {
+      "ROUTING_CLARIFY_INSTEAD_OF_DEFER": 1,
+      "UNRESOLVED_REFERENCE": 1,
+      "AUTHORIZATION_RESPONSE": 1,
+      "CONTRADICTORY_MISSING": 1,
+      "DATE_CONCLUSION_MISSING": 1,
+      "BUDGET_SCOPE_INCOMPLETE": 1,
+      "HISTORICAL_VERSION_INCOMPLETE": 1,
+      "ACCOUNTING_QUESTION_MISROUTED": 1,
+      "ATTRIBUTE_OMISSION": 1
+    },
+    "families": {
+      "total": 96,
+      "all_turns_pass": 87
+    },
+    "topics": {
+      "quarter_target": {
+        "PASS": 1
+      },
+      "monthly_multi": {
+        "PASS": 9
+      },
+      "month_target": {
+        "PASS": 3
+      },
+      "admin_boundary": {
+        "FAIL": 1
+      },
+      "monthly_single": {
+        "PASS": 18
+      },
+      "multi_period": {
+        "PASS": 30
+      },
+      "clarification": {
+        "PASS": 3,
+        "FAIL": 1
+      },
+      "handoff": {
+        "PASS": 1
+      },
+      "technology_reasoning": {
+        "PASS": 6
+      },
+      "business_reasoning": {
+        "PASS": 2,
+        "FAIL": 5
+      },
+      "missing_shop_terms": {
+        "PASS": 2
+      },
+      "product_single": {
+        "PASS": 11
+      },
+      "unknown_product": {
+        "PASS": 3
+      },
+      "live_boundary": {
+        "PASS": 2
+      },
+      "permission": {
+        "FAIL": 1
+      },
+      "product_context": {
+        "PASS": 11
+      },
+      "product_multi": {
+        "PASS": 10,
+        "FAIL": 1
+      }
+    },
+    "quote_checks": 227,
+    "absent_quotes": [],
+    "private_source_leaks": [],
+    "median_seconds": 4.547,
+    "total_seconds": 604.565,
+    "candidate": "frozen_patch5",
+    "reviewer": "Codex, no independent human review",
+    "validation_opened": true,
+    "accepted": false,
+    "limitations": [
+      "Same underlying knowledge as development; not independent review.",
+      "Numeric report queries dominate; do not extrapolate to real shopping dialogue accuracy.",
+      "Policy and shop financial data remain simulated; missing real terms require confirmation.",
+      "PASS content may still contain unrelated or repeated sentences."
+    ]
+  },
+  "baseline_completed": 80,
+  "candidate_completed": 479,
+  "matched_comparison_cases": 80,
+  "baseline_matched_checks": {
+    "PASS_CHECKS": 57,
+    "NEEDS_REVIEW": 13,
+    "FAIL_CHECKS": 10
+  },
+  "candidate_matched_checks": {
+    "PASS_CHECKS": 66,
+    "NEEDS_REVIEW": 13,
+    "FAIL_CHECKS": 1
+  },
+  "fixed_check_ids": [
+    "Q0018",
+    "Q0031",
+    "Q0036",
+    "Q0054",
+    "Q0072",
+    "Q0077",
+    "Q0082",
+    "Q0096",
+    "Q0101"
+  ],
+  "regressed_check_ids": [],
+  "manual_review_cases": 23,
+  "warning": "Source/action checks only. No semantic score for600 or unseen validation. Compare only matched IDs and frozen source snapshots.",
+  "latest_qa_diagnostic": {
+    "name": "runtime_canary_r19_prepared",
+    "summary": {
+      "state": "prepared_execution_rejected_by_policy",
+      "planned": 3,
+      "attempted": 0,
+      "semantic_scored": 0,
+      "offline_plan_checks": "passed",
+      "production_hashes_unchanged": 26,
+      "production_installed": false,
+      "policy_result": "blocked by policy",
+      "specific_rejection_reason_supplied": false,
+      "decision": "No launch or inference. Preserve prepared artifacts; do not retry or split denied launch to bypass review. Production patch9 unchanged."
+    },
+    "production_installed": false
+  },
+  "active_code": "patch9_restored_after_rejected_patch14",
+  "patch2_targeted": {
+    "completed": 89,
+    "planned": 89,
+    "before": {
+      "PASS_CHECKS": 69,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 13
+    },
+    "after": {
+      "PASS_CHECKS": 77,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 5
+    },
+    "fixed_check_ids": [
+      "Q0125",
+      "Q0164",
+      "Q0210",
+      "Q0247",
+      "Q0300",
+      "Q0373",
+      "Q0411",
+      "Q0446",
+      "Q0467"
+    ],
+    "regressed_check_ids": [
+      "Q0396"
+    ],
+    "integrity": {
+      "unchanged": true,
+      "cases": 89,
+      "bank_sha256": "f7de5d26bc55b94b97f4f882e1ab2189d6e98b42ca2800c9ac082878ea98832b",
+      "code": {
+        "app.py": "20d8f2228d56906a9d3dd0b5635b86e2b8465046b6ef5ede27d0b46489985f1b",
+        "scripts\\run_quality_loop.py": "df6a60637dd3fc80485111147c8c642bd499e6d1b885aeff9ae783976f353cb2",
+        "shopbot\\__init__.py": "3d3522e3a3d7e828a278da85449f12b48558b67133240f3a0800150e81f3e5b4",
+        "shopbot\\analytics.py": "4222a12407603b8a6adf40cdf166aa853f1e987d01da000fd0a0d08dc67f562a",
+        "shopbot\\basic_rag.py": "d80b6a19982c866db5aa5ed916162033536bff9a253f8aa2c67cd3ec66c22bf9",
+        "shopbot\\business_analysis.py": "88b472889d9671c957b74e314a6b8fa315b3e9e30c9cac05bf50817de576074d",
+        "shopbot\\business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098",
+        "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+        "shopbot\\conversation.py": "b703252837273e2212d72bd59e0375a699d0460325f9a2d17e4cd9d38146ed81",
+        "shopbot\\dense_retrieval.py": "7941050449f41809a678f02e6afd72071511444dc339aa0a0cbdd494e24fd95f",
+        "shopbot\\engine.py": "748659add7f7aee854fb62b1944019073037b86642398b47b4472f7f1843c3d8",
+        "shopbot\\grounded_rag.py": "0c4cde35aed4027a5fa2d043676810745838ebaf356f5b622409a87c201b1e44",
+        "shopbot\\knowledge.py": "24e7219ea5380da3c79372966544df97050bcd32a25b69263b2ea6a54bcbb1fe",
+        "shopbot\\knowledge_ui.py": "e25726ad79ddc55ff06b7de66c1dd6ce7458f74e32357d944208cd4feb15edf6",
+        "shopbot\\layout.py": "fd1421f7a30af63220097d0858ad5a10d2bc374b62c916c392c760d4e5273ad3",
+        "shopbot\\metric_contract.py": "29a26a03951eb6a7f25a58425c36b0d7634204a5fe8cec42a10aafe617c06a41",
+        "shopbot\\metric_controller.py": "06fc782e5b981ad52a404a4fb18774c67f7aa2d703c4fb2523bee21577d84fef",
+        "shopbot\\monthly.py": "3f21779a2a7f26e8232e88dfd84a64800b1956e5381610484716d1c7d6a8d93a",
+        "shopbot\\monthly_ui.py": "ec4de1c4c621c08c7ee36dfcecae3aee47592016cf2d153fa867e7e49990adc7",
+        "shopbot\\quality_eval.py": "aa6e65141aeb9e64b06e573c03cce301e1156e93dd4bbcbc7deb2ed84e3a8633",
+        "shopbot\\rag_answer.py": "e9d80d574d6327d6309029852f894d3aab0759f5b09298f967b08db49880623e",
+        "shopbot\\rag_scope.py": "80daaaea7e4ef7a78e5bb1a44314e75ca9a212b00ac9d24977ed70a236ffee81",
+        "shopbot\\reporting.py": "5a40a22db036f6621bcd1c4c8c9efd8b6957e47bc676ddf11954461d5ef92584",
+        "shopbot\\retrieval.py": "4eed4e1b4d85fc3c36d4a3b03375a26381f6cb0920f2f2a50ec190b18c490bf4",
+        "shopbot\\sales.py": "674b18a56448f71bcb7fc6830cd21d0f260c7e019f9dfee65204410cb36a688a",
+        "shopbot\\store.py": "57447d75722203c5b6cb0da0c8e0e0dba7bb5cada88d460ecc93d801cb53c9bf",
+        "shopbot\\validation.py": "5affcef867af12a96b849e8f22a4685d96982081d6b7cc7247adc57a84ee62e5"
+      }
+    }
+  },
+  "candidate_manual_review": {
+    "cases": 91,
+    "statuses": {
+      "PASS": 56,
+      "FAIL": 35
+    },
+    "warning": "Purposefully selected flagged cases and topic samples, not a representative accuracy estimate."
+  },
+  "patch3_experiment": {
+    "decision": {
+      "promoted": false,
+      "active_code": "candidate_v2_targeted",
+      "reason": "No net improvement on matched89; fixes Q0396 but regresses Q0473. Reverted experiment after batch.",
+      "fixed_ids": [
+        "Q0396"
+      ],
+      "regressed_ids": [
+        "Q0473"
+      ],
+      "source_data_changed": false,
+      "validation_opened": false,
+      "tests_for_rejected_candidate": 179
+    },
+    "completed": 89,
+    "checks": {
+      "PASS_CHECKS": 77,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 5
+    }
+  },
+  "patch4_memory": {
+    "completed": 89,
+    "planned": 89,
+    "before": {
+      "PASS_CHECKS": 77,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 5
+    },
+    "after": {
+      "PASS_CHECKS": 74,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 8
+    },
+    "fixed_check_ids": [
+      "Q0301"
+    ],
+    "regressed_check_ids": [
+      "Q0300",
+      "Q0373",
+      "Q0446",
+      "Q0478"
+    ],
+    "decision": {
+      "promoted": false,
+      "active_code": "candidate_v2_targeted",
+      "reason": "Removing generated answers from both product router and selector history loses useful dialogue context on four previously passing cases. Reverted byte-identically after batch.",
+      "fixed_ids": [
+        "Q0301"
+      ],
+      "regressed_ids": [
+        "Q0300",
+        "Q0373",
+        "Q0446",
+        "Q0478"
+      ],
+      "tests_for_rejected_candidate": 179,
+      "validation_opened": false
+    },
+    "review_cases": 45,
+    "review_statuses": {
+      "PASS": 37,
+      "FAIL": 8
+    },
+    "roles": {
+      "customer": {
+        "turns": 66,
+        "checks": {
+          "PASS_CHECKS": 55,
+          "NEEDS_REVIEW": 6,
+          "FAIL_CHECKS": 5
+        }
+      },
+      "admin": {
+        "turns": 23,
+        "checks": {
+          "PASS_CHECKS": 19,
+          "NEEDS_REVIEW": 1,
+          "FAIL_CHECKS": 3
+        }
+      }
+    }
+  },
+  "patch5_development": {
+    "completed": 479,
+    "planned": 479,
+    "integrity": true,
+    "before": {
+      "PASS_CHECKS": 413,
+      "NEEDS_REVIEW": 53,
+      "FAIL_CHECKS": 13
+    },
+    "after": {
+      "PASS_CHECKS": 422,
+      "NEEDS_REVIEW": 53,
+      "FAIL_CHECKS": 4
+    },
+    "fixed_check_ids": [
+      "Q0125",
+      "Q0164",
+      "Q0210",
+      "Q0247",
+      "Q0267",
+      "Q0300",
+      "Q0352",
+      "Q0373",
+      "Q0411",
+      "Q0446",
+      "Q0467"
+    ],
+    "regressed_check_ids": [
+      "Q0191",
+      "Q0396"
+    ],
+    "matched89_before": {
+      "PASS_CHECKS": 77,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 5
+    },
+    "matched89_after": {
+      "PASS_CHECKS": 79,
+      "NEEDS_REVIEW": 7,
+      "FAIL_CHECKS": 3
+    },
+    "manual_review": {
+      "cases": 112,
+      "statuses": {
+        "FAIL": 26,
+        "PASS": 86
+      },
+      "note": "Purposeful sample; inherited identical answers explicitly identified; not representative accuracy."
+    },
+    "validation_opened": false,
+    "markdown_summary": "Toàn479 cùng ID: trước {'PASS_CHECKS': 413, 'NEEDS_REVIEW': 53, 'FAIL_CHECKS': 13}, sau {'PASS_CHECKS': 422, 'NEEDS_REVIEW': 53, 'FAIL_CHECKS': 4}.11 lỗi kiểm tra được sửa,2 suy giảm Q0191/Q0396 so v1 (tác động kết hợp patch2+5). Riêng89 đã có patch2: {'PASS_CHECKS': 77, 'NEEDS_REVIEW': 7, 'FAIL_CHECKS': 5} → {'PASS_CHECKS': 79, 'NEEDS_REVIEW': 7, 'FAIL_CHECKS': 3}; Q0267/Q0352 sửa được, không có chuyển PASS_CHECKS→FAIL_CHECKS trong89. Còn4 lỗi Q0055/Q0191/Q0301/Q0396. Không gọi các số này là độ đúng ngữ nghĩa.181 test mã qua; chưa nghiệm thu, chưa mở121 validation. [Chi tiết](PATCH5_REPORT.md)."
+  },
+  "old100_patch5": {
+    "cases": 100,
+    "semantic_pass": 87,
+    "roles": {
+      "customer": {
+        "PASS": 47,
+        "FAIL": 3
+      },
+      "admin": {
+        "PASS": 40,
+        "FAIL": 10
+      }
+    },
+    "compared_to": "final_v7",
+    "before_pass": 85,
+    "fixed_ids": [
+      "C06",
+      "C44"
+    ],
+    "regressed_ids": [],
+    "failed_ids": [
+      "C29",
+      "C35",
+      "A15",
+      "A20",
+      "A23",
+      "A35",
+      "A39",
+      "A44",
+      "C03",
+      "A29",
+      "A30",
+      "A40",
+      "A50"
+    ],
+    "inherited_reviews": 87,
+    "new_manual_reviews": 13,
+    "quote_checks": 213,
+    "integrity_issues": 0,
+    "median_seconds": 4.93,
+    "total_seconds": 541.55,
+    "validation_opened": false
+  },
+  "patch6": {
+    "decision": {
+      "promoted": false,
+      "active_code": "patch5",
+      "reason": "Candidate admission increased recall of policy versions but degraded end-to-end semantics; rollback byte-identical to validated patch5.",
+      "semantic_pass": 76,
+      "before_pass": 87,
+      "regressed_ids": [
+        "C19",
+        "C21",
+        "C23",
+        "C24",
+        "C27",
+        "C28",
+        "C30",
+        "C33",
+        "A11",
+        "A34",
+        "A37"
+      ],
+      "fixed_ids": []
+    },
+    "summary": {
+      "cases": 100,
+      "semantic_pass": 76,
+      "before_pass": 87,
+      "compared_to": "old100_patch5_retry1",
+      "roles": {
+        "customer": {
+          "PASS": 39,
+          "FAIL": 11
+        },
+        "admin": {
+          "PASS": 37,
+          "FAIL": 13
+        }
+      },
+      "fixed_ids": [],
+      "regressed_ids": [
+        "C19",
+        "C21",
+        "C23",
+        "C24",
+        "C27",
+        "C28",
+        "C30",
+        "C33",
+        "A11",
+        "A34",
+        "A37"
+      ],
+      "inherited_reviews": 72,
+      "new_manual_reviews": 28,
+      "integrity_issues": 0,
+      "median_seconds": 5.585,
+      "total_seconds": 538.94,
+      "validation_opened": false
+    }
+  },
+  "assessment_600": {
+    "candidate": "frozen_patch5",
+    "turns": 600,
+    "unique_question_texts": 545,
+    "conversation_families": 454,
+    "development": {
+      "cases": 479,
+      "checks": {
+        "PASS_CHECKS": 422,
+        "NEEDS_REVIEW": 53,
+        "FAIL_CHECKS": 4
+      },
+      "semantic_reviewed": 112,
+      "selected_semantic_pass": 86,
+      "selected_semantic_fail": 26,
+      "representative_semantic_score": null
+    },
+    "validation": {
+      "cases": 121,
+      "semantic_pass": 112,
+      "semantic_fail": 9,
+      "roles": {
+        "customer": {
+          "PASS": 49,
+          "FAIL": 3
+        },
+        "admin": {
+          "PASS": 63,
+          "FAIL": 6
+        }
+      },
+      "checks": {
+        "PASS_CHECKS": 102,
+        "FAIL_CHECKS": 4,
+        "NEEDS_REVIEW": 15
+      },
+      "failed_ids": [
+        "Q0037",
+        "Q0078",
+        "Q0124",
+        "Q0158",
+        "Q0223",
+        "Q0232",
+        "Q0266",
+        "Q0274",
+        "Q0328"
+      ],
+      "failure_causes": {
+        "ROUTING_CLARIFY_INSTEAD_OF_DEFER": 1,
+        "UNRESOLVED_REFERENCE": 1,
+        "AUTHORIZATION_RESPONSE": 1,
+        "CONTRADICTORY_MISSING": 1,
+        "DATE_CONCLUSION_MISSING": 1,
+        "BUDGET_SCOPE_INCOMPLETE": 1,
+        "HISTORICAL_VERSION_INCOMPLETE": 1,
+        "ACCOUNTING_QUESTION_MISROUTED": 1,
+        "ATTRIBUTE_OMISSION": 1
+      },
+      "families": {
+        "total": 96,
+        "all_turns_pass": 87
+      },
+      "topics": {
+        "quarter_target": {
+          "PASS": 1
+        },
+        "monthly_multi": {
+          "PASS": 9
+        },
+        "month_target": {
+          "PASS": 3
+        },
+        "admin_boundary": {
+          "FAIL": 1
+        },
+        "monthly_single": {
+          "PASS": 18
+        },
+        "multi_period": {
+          "PASS": 30
+        },
+        "clarification": {
+          "PASS": 3,
+          "FAIL": 1
+        },
+        "handoff": {
+          "PASS": 1
+        },
+        "technology_reasoning": {
+          "PASS": 6
+        },
+        "business_reasoning": {
+          "PASS": 2,
+          "FAIL": 5
+        },
+        "missing_shop_terms": {
+          "PASS": 2
+        },
+        "product_single": {
+          "PASS": 11
+        },
+        "unknown_product": {
+          "PASS": 3
+        },
+        "live_boundary": {
+          "PASS": 2
+        },
+        "permission": {
+          "FAIL": 1
+        },
+        "product_context": {
+          "PASS": 11
+        },
+        "product_multi": {
+          "PASS": 10,
+          "FAIL": 1
+        }
+      },
+      "quote_checks": 227,
+      "absent_quotes": [],
+      "private_source_leaks": [],
+      "median_seconds": 4.547,
+      "total_seconds": 604.565,
+      "candidate": "frozen_patch5",
+      "reviewer": "Codex, no independent human review",
+      "validation_opened": true,
+      "accepted": false,
+      "limitations": [
+        "Same underlying knowledge as development; not independent review.",
+        "Numeric report queries dominate; do not extrapolate to real shopping dialogue accuracy.",
+        "Policy and shop financial data remain simulated; missing real terms require confirmation.",
+        "PASS content may still contain unrelated or repeated sentences."
+      ]
+    },
+    "overall_checks": {
+      "PASS_CHECKS": 524,
+      "NEEDS_REVIEW": 68,
+      "FAIL_CHECKS": 8
+    },
+    "overall_semantic_score": null,
+    "old100_semantic_pass": 87,
+    "accepted": false,
+    "validation_is_now_opened": true
+  },
+  "context_revision": {
+    "revision": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\context_revision_20261021_r3",
+    "state": "patch9_full479_semantic_review_complete",
+    "baseline": {
+      "cases": 24,
+      "semantic_pass": 12,
+      "semantic_fail": 12,
+      "checks": {
+        "FAIL_CHECKS": 8,
+        "PASS_CHECKS": 11,
+        "NEEDS_REVIEW": 5
+      },
+      "bot_changed": false,
+      "reserved_opened": false,
+      "new_inference": false,
+      "reference_results": "context_revision_20261021_r2/context_r2_baseline/results.json",
+      "warning": "Same24outputs regraded with corrected numeric spans; no quality/speed gain claimed; focused probes not representative."
+    },
+    "summary": {
+      "cases": 24,
+      "compared_to": "context_r3_candidate1_patch7",
+      "before_semantic_pass": 17,
+      "semantic_pass": 18,
+      "semantic_fail": 6,
+      "fixed_ids": [
+        "R2D10"
+      ],
+      "regressed_ids": [],
+      "changed_answer_action_source_ids": [
+        "R2D10"
+      ],
+      "checks": {
+        "PASS_CHECKS": 17,
+        "FAIL_CHECKS": 2,
+        "NEEDS_REVIEW": 5
+      },
+      "roles": {
+        "customer": {
+          "cases": 8,
+          "semantic_pass": 8
+        },
+        "admin": {
+          "cases": 16,
+          "semantic_pass": 10
+        }
+      },
+      "quote_checks": 12,
+      "quote_issues": [],
+      "private_source_leaks": [],
+      "median_seconds": 2.2495000000000003,
+      "total_seconds": 93.217,
+      "before_median_seconds": 2.7965,
+      "before_total_seconds": 98.467,
+      "reserved_opened": false,
+      "production_accepted": false,
+      "warning": "Focused development probes,not overall chatbot accuracy. Patch8 rejected andnotapplied; currentpatch9gainisD10,notD15. Old100score87belongs patch7; regression required forpatch9. Cache/warmup uncontrolled,no speed claim."
+    },
+    "decision": {
+      "state": "old100_passed_broader_development_needed",
+      "candidate_retained": true,
+      "production_accepted": false,
+      "reserved_opened": false,
+      "reason": "Same24development17to18semanticPASSbyclarifyingunboundreferenceD10. old100_patch9completed87PASS/13FAIL,noPASS-to-FAILversuspatch7. Keepcandidatefrozenforbroader479development;6targetedfailuresremain(D15-D20).Reservednotopened,notproductionaccepted."
+    },
+    "reserved_opened": false
+  },
+  "old100_patch7": {
+    "cases": 100,
+    "semantic_pass": 87,
+    "semantic_fail": 13,
+    "roles": {
+      "customer": {
+        "PASS": 47,
+        "FAIL": 3
+      },
+      "admin": {
+        "PASS": 40,
+        "FAIL": 10
+      }
+    },
+    "compared_to": "old100_patch5_retry1",
+    "before_pass": 87,
+    "fixed_ids": [],
+    "regressed_ids": [],
+    "failed_ids": [
+      "C03",
+      "C29",
+      "C35",
+      "A15",
+      "A20",
+      "A23",
+      "A29",
+      "A30",
+      "A35",
+      "A39",
+      "A40",
+      "A44",
+      "A50"
+    ],
+    "unchanged_answer_action_source_cases": 99,
+    "changed_source_order_ids": [
+      "A17"
+    ],
+    "new_changed_case_reviews": 1,
+    "remaining_failures_reread": 13,
+    "quote_checks": 213,
+    "integrity_issues": 0,
+    "median_seconds": 4.875,
+    "total_seconds": 486.16,
+    "previous_median_seconds": 4.93,
+    "previous_total_seconds": 541.55,
+    "reserved_opened": false,
+    "production_accepted": false,
+    "warning": "Old development benchmark, not a new validation or overall accuracy estimate. Timing/cache not controlled; no speed gain attributed to patch7."
+  },
+  "patch8_experiment": {
+    "decision": {
+      "state": "rejected_restore_patch7",
+      "promoted": false,
+      "restore": "context_revision_20261021_r3/patch8_before_code/grounded_rag.py",
+      "reason": "2fixes(C35/A20),1newcampaignfailureA36;A35alreadyFAILlosescontextworse,A34morecontradictory. Reject broad routing prompt despite87to88total. Keep raw/snapshot, no secondmodelbatch. Retain date-frozen test fixture, no productiondatachanges.",
+      "reserved_opened": false
+    },
+    "summary": {
+      "cases": 100,
+      "semantic_pass": 88,
+      "semantic_fail": 12,
+      "roles": {
+        "customer": {
+          "PASS": 48,
+          "FAIL": 2
+        },
+        "admin": {
+          "PASS": 40,
+          "FAIL": 10
+        }
+      },
+      "compared_to": "old100_patch7",
+      "before_pass": 87,
+      "fixed_ids": [
+        "C35",
+        "A20"
+      ],
+      "regressed_ids": [
+        "A36"
+      ],
+      "failed_ids": [
+        "C03",
+        "C29",
+        "A15",
+        "A23",
+        "A29",
+        "A30",
+        "A35",
+        "A36",
+        "A39",
+        "A40",
+        "A44",
+        "A50"
+      ],
+      "unchanged_answer_action_source_cases": 89,
+      "changed_case_reviews": 11,
+      "changed_ids": [
+        "C17",
+        "C33",
+        "C35",
+        "C43",
+        "A17",
+        "A20",
+        "A21",
+        "A34",
+        "A35",
+        "A36",
+        "A48"
+      ],
+      "quote_checks": 212,
+      "integrity_issues": [],
+      "median_seconds": 5.16,
+      "total_seconds": 531.44,
+      "previous_median_seconds": 4.875,
+      "previous_total_seconds": 486.16,
+      "reserved_opened": false,
+      "production_accepted": false,
+      "warning": "Old development benchmark; same rubric includes known secondary issues in PASS,A34contradiction remains. Net score gain does not erase campaign regression. No speed attribution, warmup/cache uncontrolled."
+    }
+  },
+  "old100_patch9": {
+    "cases": 100,
+    "semantic_pass": 87,
+    "semantic_fail": 13,
+    "roles": {
+      "customer": {
+        "PASS": 47,
+        "FAIL": 3
+      },
+      "admin": {
+        "PASS": 40,
+        "FAIL": 10
+      }
+    },
+    "compared_to": "old100_patch7",
+    "before_pass": 87,
+    "fixed_ids": [],
+    "regressed_ids": [],
+    "failed_ids": [
+      "C03",
+      "C29",
+      "C35",
+      "A15",
+      "A20",
+      "A23",
+      "A29",
+      "A30",
+      "A35",
+      "A39",
+      "A40",
+      "A44",
+      "A50"
+    ],
+    "unchanged_answer_action_source_cases": 98,
+    "changed_case_reviews": 2,
+    "changed_ids": [
+      "A16",
+      "A17"
+    ],
+    "focused_product_cases_reread": [
+      "C02",
+      "C03",
+      "C06",
+      "C44"
+    ],
+    "quote_checks": 210,
+    "integrity_issues": [],
+    "median_seconds": 4.605,
+    "total_seconds": 481.01,
+    "previous_median_seconds": 4.875,
+    "previous_total_seconds": 486.16,
+    "reserved_opened": false,
+    "production_accepted": false,
+    "warning": "Old development benchmark, not an independent validation/overallaccuracy score; timing/cache uncontrolled, no speed attribution."
+  },
+  "patch9_development": {
+    "cases": 479,
+    "before_round": "candidate_v5_development",
+    "after_round": "candidate_v9_development",
+    "before_checks": {
+      "PASS_CHECKS": 422,
+      "NEEDS_REVIEW": 53,
+      "FAIL_CHECKS": 4
+    },
+    "after_checks": {
+      "PASS_CHECKS": 422,
+      "NEEDS_REVIEW": 53,
+      "FAIL_CHECKS": 4
+    },
+    "changed_check_ids": [],
+    "changed_answer_action_source_ids": [
+      "Q0162",
+      "Q0217",
+      "Q0261",
+      "Q0269",
+      "Q0435",
+      "Q0455",
+      "Q0480",
+      "Q0550",
+      "Q0554",
+      "Q0560",
+      "Q0568",
+      "Q0576",
+      "Q0577",
+      "Q0595",
+      "Q0599"
+    ],
+    "changed_cases_reviewed": true,
+    "prior112review_cases_unchanged": true,
+    "semantic_coverage": {
+      "total": 479,
+      "reviewed": 479,
+      "unreviewed": 0,
+      "reviewed_subset": {
+        "FAIL": 29,
+        "PASS": 450
+      },
+      "inherited": 112,
+      "fresh": 367,
+      "pending_ids": [],
+      "roles": {
+        "customer": {
+          "total": 248,
+          "reviewed": 248,
+          "statuses": {
+            "PASS": 231,
+            "FAIL": 17
+          }
+        },
+        "admin": {
+          "total": 231,
+          "reviewed": 231,
+          "statuses": {
+            "PASS": 219,
+            "FAIL": 12
+          }
+        }
+      },
+      "warning": "All479development judgments recorded; Codex-authored, repeated numeric probes, not independent or overall600/real-useraccuracy. Statuses come only from saved Codex review; source/check agreement is not semantic PASS."
+    },
+    "quote_checks": 914,
+    "quote_issues": [],
+    "private_source_leaks": [],
+    "timings": {
+      "before_total_seconds": 2336.088,
+      "after_total_seconds": 2264.654,
+      "before_median_seconds": 4.469,
+      "after_median_seconds": 4.422
+    },
+    "reserved_opened": false,
+    "production_accepted": false,
+    "warning": "No semantic gain claimed from unchanged checks or newly reviewed coverage. Warmup/cache uncontrolled; no speed attribution."
+  },
+  "patch9_semantic_development": {
+    "cases": 479,
+    "semantic_pass": 450,
+    "semantic_fail": 29,
+    "reviewed": 479,
+    "inherited": 112,
+    "fresh": 367,
+    "roles": {
+      "customer": {
+        "PASS": 231,
+        "FAIL": 17
+      },
+      "admin": {
+        "PASS": 219,
+        "FAIL": 12
+      }
+    },
+    "topics": {
+      "admin_boundary": {
+        "PASS": 2,
+        "FAIL": 1
+      },
+      "business_reasoning": {
+        "FAIL": 11,
+        "PASS": 6
+      },
+      "clarification": {
+        "PASS": 6
+      },
+      "handoff": {
+        "PASS": 4
+      },
+      "live_boundary": {
+        "PASS": 8
+      },
+      "missing_period": {
+        "PASS": 4
+      },
+      "missing_shop_terms": {
+        "PASS": 6,
+        "FAIL": 2
+      },
+      "month_target": {
+        "PASS": 9
+      },
+      "monthly_multi": {
+        "PASS": 27
+      },
+      "monthly_single": {
+        "PASS": 66
+      },
+      "multi_period": {
+        "PASS": 102
+      },
+      "permission": {
+        "PASS": 9
+      },
+      "product_context": {
+        "PASS": 54,
+        "FAIL": 2
+      },
+      "product_multi": {
+        "PASS": 55,
+        "FAIL": 1
+      },
+      "product_single": {
+        "PASS": 53,
+        "FAIL": 3
+      },
+      "quarter_target": {
+        "PASS": 3
+      },
+      "technology_reasoning": {
+        "FAIL": 9,
+        "PASS": 19
+      },
+      "unknown_product": {
+        "PASS": 17
+      }
+    },
+    "conversation_groups": 358,
+    "groups_all_pass": 330,
+    "secondary_issue_cases": 53,
+    "failed_ids": [
+      "Q0002",
+      "Q0017",
+      "Q0020",
+      "Q0030",
+      "Q0055",
+      "Q0073",
+      "Q0102",
+      "Q0116",
+      "Q0137",
+      "Q0154",
+      "Q0156",
+      "Q0168",
+      "Q0178",
+      "Q0191",
+      "Q0193",
+      "Q0194",
+      "Q0196",
+      "Q0203",
+      "Q0214",
+      "Q0228",
+      "Q0239",
+      "Q0241",
+      "Q0248",
+      "Q0258",
+      "Q0301",
+      "Q0302",
+      "Q0330",
+      "Q0351",
+      "Q0396"
+    ],
+    "reserved_opened": false,
+    "production_accepted": false,
+    "warning": "Fulldevelopment rubric(mainfacts;secondarynoise recorded),not independent validation or real-user accuracy; manyfinancialtemplates.112reviews inherited exact outputs,367fresh; no overall600semantic score forpatch9."
+  },
+  "patch10_development": {
+    "progress": {
+      "total": 479,
+      "completed": 479,
+      "checks": {
+        "PASS_CHECKS": 421,
+        "NEEDS_REVIEW": 53,
+        "FAIL_CHECKS": 5
+      },
+      "issue_signals": {
+        "ROUTING": 1,
+        "RETRIEVAL_OR_ROUTING": 2,
+        "SELECTION_OR_CHUNKING": 2
+      },
+      "pending_semantic_review": 53,
+      "warning": "PASS_CHECKS is NOT semantic acceptance. Failing checks also need review for equivalent valid evidence. No wrong answer is inserted into knowledge."
+    },
+    "integrity": {
+      "unchanged": true,
+      "cases": 479,
+      "bank_sha256": "f7de5d26bc55b94b97f4f882e1ab2189d6e98b42ca2800c9ac082878ea98832b",
+      "code": {
+        "app.py": "20d8f2228d56906a9d3dd0b5635b86e2b8465046b6ef5ede27d0b46489985f1b",
+        "scripts\\run_quality_loop.py": "df6a60637dd3fc80485111147c8c642bd499e6d1b885aeff9ae783976f353cb2",
+        "shopbot\\__init__.py": "3d3522e3a3d7e828a278da85449f12b48558b67133240f3a0800150e81f3e5b4",
+        "shopbot\\analytics.py": "4222a12407603b8a6adf40cdf166aa853f1e987d01da000fd0a0d08dc67f562a",
+        "shopbot\\basic_rag.py": "d80b6a19982c866db5aa5ed916162033536bff9a253f8aa2c67cd3ec66c22bf9",
+        "shopbot\\business_analysis.py": "88b472889d9671c957b74e314a6b8fa315b3e9e30c9cac05bf50817de576074d",
+        "shopbot\\business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098",
+        "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+        "shopbot\\conversation.py": "b703252837273e2212d72bd59e0375a699d0460325f9a2d17e4cd9d38146ed81",
+        "shopbot\\dense_retrieval.py": "7941050449f41809a678f02e6afd72071511444dc339aa0a0cbdd494e24fd95f",
+        "shopbot\\engine.py": "748659add7f7aee854fb62b1944019073037b86642398b47b4472f7f1843c3d8",
+        "shopbot\\grounded_rag.py": "e4ecdd041c2da7a0c99cc782ef745d5498904d9a90a2b27d6d74442af8c2003d",
+        "shopbot\\knowledge.py": "24e7219ea5380da3c79372966544df97050bcd32a25b69263b2ea6a54bcbb1fe",
+        "shopbot\\knowledge_ui.py": "e25726ad79ddc55ff06b7de66c1dd6ce7458f74e32357d944208cd4feb15edf6",
+        "shopbot\\layout.py": "fd1421f7a30af63220097d0858ad5a10d2bc374b62c916c392c760d4e5273ad3",
+        "shopbot\\metric_contract.py": "29a26a03951eb6a7f25a58425c36b0d7634204a5fe8cec42a10aafe617c06a41",
+        "shopbot\\metric_controller.py": "06fc782e5b981ad52a404a4fb18774c67f7aa2d703c4fb2523bee21577d84fef",
+        "shopbot\\monthly.py": "3f21779a2a7f26e8232e88dfd84a64800b1956e5381610484716d1c7d6a8d93a",
+        "shopbot\\monthly_ui.py": "ec4de1c4c621c08c7ee36dfcecae3aee47592016cf2d153fa867e7e49990adc7",
+        "shopbot\\quality_eval.py": "aa6e65141aeb9e64b06e573c03cce301e1156e93dd4bbcbc7deb2ed84e3a8633",
+        "shopbot\\rag_answer.py": "e9d80d574d6327d6309029852f894d3aab0759f5b09298f967b08db49880623e",
+        "shopbot\\rag_scope.py": "80daaaea7e4ef7a78e5bb1a44314e75ca9a212b00ac9d24977ed70a236ffee81",
+        "shopbot\\reporting.py": "5a40a22db036f6621bcd1c4c8c9efd8b6957e47bc676ddf11954461d5ef92584",
+        "shopbot\\retrieval.py": "4eed4e1b4d85fc3c36d4a3b03375a26381f6cb0920f2f2a50ec190b18c490bf4",
+        "shopbot\\sales.py": "674b18a56448f71bcb7fc6830cd21d0f260c7e019f9dfee65204410cb36a688a",
+        "shopbot\\store.py": "57447d75722203c5b6cb0da0c8e0e0dba7bb5cada88d460ecc93d801cb53c9bf",
+        "shopbot\\validation.py": "5affcef867af12a96b849e8f22a4685d96982081d6b7cc7247adc57a84ee62e5"
+      }
+    },
+    "state": "rejected_restore_patch9",
+    "production_accepted": false,
+    "reserved_opened": false,
+    "decision": {
+      "state": "rejected_restore_patch9",
+      "promoted": false,
+      "production_accepted": false,
+      "reserved_opened": false,
+      "reason": "Fixes4includingphantompreamblecontamination,noise53to30,but breaks2knownproductfollowupsQ0300/Q0478. Reject standalonepatch10;contextdependenceonpreviousgeneratedanswer needsseparaterepairbeforetryingpreamblecleanupagain.",
+      "restore": "patch10_before_code/grounded_rag.py and test_grounded_rag.py"
+    },
+    "summary": {
+      "cases": 479,
+      "semantic_pass": 452,
+      "semantic_fail": 27,
+      "before_round": "candidate_v9_development",
+      "before_pass": 450,
+      "before_fail": 29,
+      "fixed_ids": [
+        "Q0154",
+        "Q0191",
+        "Q0193",
+        "Q0228"
+      ],
+      "regressed_ids": [
+        "Q0300",
+        "Q0478"
+      ],
+      "changed_cases": 75,
+      "inherited_reviews": 404,
+      "new_reviews": 75,
+      "roles": {
+        "customer": {
+          "PASS": 233,
+          "FAIL": 15
+        },
+        "admin": {
+          "PASS": 219,
+          "FAIL": 12
+        }
+      },
+      "before_checks": {
+        "PASS_CHECKS": 422,
+        "NEEDS_REVIEW": 53,
+        "FAIL_CHECKS": 4
+      },
+      "after_checks": {
+        "PASS_CHECKS": 421,
+        "NEEDS_REVIEW": 53,
+        "FAIL_CHECKS": 5
+      },
+      "quote_checks": 818,
+      "quote_issues": [],
+      "private_source_leaks": [],
+      "secondary_issue_cases": 30,
+      "before_secondary_issue_cases": 53,
+      "median_seconds": 4.36,
+      "total_seconds": 2180.794,
+      "before_median_seconds": 4.422,
+      "before_total_seconds": 2264.654,
+      "reserved_opened": false,
+      "production_accepted": false,
+      "warning": "Full development rubric(mainfactswithsecondarynoise),not independent validation or real-user accuracy. Netgain doesnoterase2followupregressions. Cache/warmup uncontrolled."
+    }
+  },
+  "history_binding_probe_r1": {
+    "scenarios": 6,
+    "targets": 2,
+    "unique_question_texts": 4,
+    "semantic_pass": 4,
+    "semantic_fail": 2,
+    "variants": {
+      "original_history": {
+        "cases": 2,
+        "semantic_pass": 2
+      },
+      "brief_history": {
+        "cases": 2,
+        "semantic_pass": 0
+      },
+      "explicit_subject_brief_history": {
+        "cases": 2,
+        "semantic_pass": 2
+      }
+    },
+    "production_code_changed": false,
+    "training_or_knowledge_publication": false,
+    "source_and_code_integrity": true,
+    "reserved_opened": false,
+    "warning": "Two exposed development targets,controlled inputs,not6independentquestions,generalization or deployed accuracy. Explicit-question variant is diagnostic,not an automatic resolver yet."
+  },
+  "history_diagnostics": {
+    "r2_baseline": {
+      "summary": {
+        "cases": 168,
+        "targets": 56,
+        "distinct_question_texts": 68,
+        "semantic": {
+          "PASS": 163,
+          "FAIL": 5
+        },
+        "variants": {
+          "original_history": {
+            "PASS": 54,
+            "FAIL": 2
+          },
+          "brief_history": {
+            "PASS": 53,
+            "FAIL": 3
+          },
+          "explicit_subject_brief_history": {
+            "PASS": 56
+          }
+        },
+        "checks": {
+          "PASS_CHECKS": 163,
+          "FAIL_CHECKS": 5
+        },
+        "fail_ids": [
+          "Q0191_original_history",
+          "Q0300_brief_history",
+          "Q0301_original_history",
+          "Q0301_brief_history",
+          "Q0478_brief_history"
+        ],
+        "secondary_cases": 16,
+        "quote_checks": 192,
+        "quote_issues": [],
+        "private_leaks": [],
+        "total_seconds": 830.866,
+        "median_seconds": 4.515499999999999,
+        "production_changed": false
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_binding_20261022_r2\\REPORT.md"
+    },
+    "patch11_rejected": {
+      "summary": {
+        "cases": 168,
+        "semantic": {
+          "PASS": 166,
+          "FAIL": 2
+        },
+        "variants": {
+          "original_history": {
+            "PASS": 54,
+            "FAIL": 2
+          },
+          "brief_history": {
+            "PASS": 56
+          },
+          "explicit_subject_brief_history": {
+            "PASS": 56
+          }
+        },
+        "inherited": 147,
+        "fresh": 21,
+        "changed_ids": [
+          "Q0113_original_history",
+          "Q0125_original_history",
+          "Q0125_brief_history",
+          "Q0175_original_history",
+          "Q0191_original_history",
+          "Q0247_original_history",
+          "Q0247_brief_history",
+          "Q0300_brief_history",
+          "Q0301_original_history",
+          "Q0301_brief_history",
+          "Q0321_original_history",
+          "Q0356_original_history",
+          "Q0373_original_history",
+          "Q0373_brief_history",
+          "Q0391_original_history",
+          "Q0397_original_history",
+          "Q0402_original_history",
+          "Q0438_original_history",
+          "Q0438_brief_history",
+          "Q0478_original_history",
+          "Q0478_brief_history"
+        ],
+        "fixed_ids": [
+          "Q0191_original_history",
+          "Q0300_brief_history",
+          "Q0301_original_history",
+          "Q0301_brief_history",
+          "Q0478_brief_history"
+        ],
+        "regressed_ids": [
+          "Q0125_original_history",
+          "Q0247_original_history"
+        ],
+        "checks": {
+          "PASS_CHECKS": 166,
+          "FAIL_CHECKS": 2
+        },
+        "secondary_cases": 18,
+        "quote_checks": 196,
+        "quote_issues": [],
+        "private_leaks": [],
+        "total_seconds": 630.593,
+        "median_seconds": 3.383,
+        "accepted": false
+      },
+      "decision": {
+        "state": "rejected_restore_patch9",
+        "reason": "Net gain three controlled scenarios but two previously passing Corsair kit questions regress; no broad479/old100 accepted on this trial."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_binding_20261022_r2_candidate_p11\\REPORT.md"
+    },
+    "r3_explicit_original": {
+      "summary": {
+        "cases": 56,
+        "semantic": {
+          "PASS": 54,
+          "FAIL": 2
+        },
+        "checks": {
+          "PASS_CHECKS": 54,
+          "FAIL_CHECKS": 2
+        },
+        "identical_to_patch11_original": 56,
+        "fail_ids": [
+          "Q0125_explicit_subject_original_history",
+          "Q0247_explicit_subject_original_history"
+        ],
+        "quote_checks": 72,
+        "quote_issues": [],
+        "total_seconds": 264.293,
+        "median_seconds": 3.8434999999999997,
+        "production_changed": false
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_binding_20261022_r3_original_explicit\\REPORT.md"
+    },
+    "patch12_rejected": {
+      "summary": {
+        "cases": 224,
+        "semantic": {
+          "PASS": 211,
+          "FAIL": 13
+        },
+        "baseline": {
+          "PASS": 217,
+          "FAIL": 7
+        },
+        "variants": {
+          "brief_history": {
+            "PASS": 53,
+            "FAIL": 3
+          },
+          "explicit_subject_brief_history": {
+            "PASS": 52,
+            "FAIL": 4
+          },
+          "explicit_subject_original_history": {
+            "PASS": 52,
+            "FAIL": 4
+          },
+          "original_history": {
+            "PASS": 54,
+            "FAIL": 2
+          }
+        },
+        "checks": {
+          "PASS_CHECKS": 213,
+          "FAIL_CHECKS": 11
+        },
+        "inherited": 188,
+        "fresh": 36,
+        "changed_ids": [
+          "Q0125_original_history",
+          "Q0125_explicit_subject_brief_history",
+          "Q0163_original_history",
+          "Q0191_original_history",
+          "Q0202_original_history",
+          "Q0227_original_history",
+          "Q0227_brief_history",
+          "Q0247_original_history",
+          "Q0247_brief_history",
+          "Q0247_explicit_subject_brief_history",
+          "Q0373_original_history",
+          "Q0373_brief_history",
+          "Q0373_explicit_subject_brief_history",
+          "Q0391_original_history",
+          "Q0422_original_history",
+          "Q0422_explicit_subject_brief_history",
+          "Q0438_original_history",
+          "Q0438_brief_history",
+          "Q0442_explicit_subject_brief_history",
+          "Q0471_original_history",
+          "Q0478_original_history",
+          "Q0478_brief_history",
+          "Q0478_explicit_subject_brief_history",
+          "Q0113_explicit_subject_original_history",
+          "Q0125_explicit_subject_original_history",
+          "Q0175_explicit_subject_original_history",
+          "Q0202_explicit_subject_original_history",
+          "Q0247_explicit_subject_original_history",
+          "Q0321_explicit_subject_original_history",
+          "Q0356_explicit_subject_original_history",
+          "Q0373_explicit_subject_original_history",
+          "Q0397_explicit_subject_original_history",
+          "Q0402_explicit_subject_original_history",
+          "Q0422_explicit_subject_original_history",
+          "Q0442_explicit_subject_original_history",
+          "Q0478_explicit_subject_original_history"
+        ],
+        "fixed_ids": [
+          "Q0191_original_history",
+          "Q0478_brief_history",
+          "Q0247_explicit_subject_original_history"
+        ],
+        "regressed_ids": [
+          "Q0125_explicit_subject_brief_history",
+          "Q0227_original_history",
+          "Q0227_brief_history",
+          "Q0373_explicit_subject_brief_history",
+          "Q0442_explicit_subject_brief_history",
+          "Q0478_explicit_subject_brief_history",
+          "Q0373_explicit_subject_original_history",
+          "Q0442_explicit_subject_original_history",
+          "Q0478_explicit_subject_original_history"
+        ],
+        "secondary_cases": 20,
+        "quote_checks": 258,
+        "quote_issues": [],
+        "private_leaks": [],
+        "total_seconds": 949.679,
+        "median_seconds": 3.9219999999999997,
+        "accepted": false
+      },
+      "decision": {
+        "state": "rejected_restore_patch9",
+        "reason": "Three fixes but nine regressions; attribute-only ordering insufficient and harms explicit questions."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_attribute_20261022_r4_candidate_p12\\REPORT.md"
+    },
+    "patch13_rejected": {
+      "summary": {
+        "cases": 224,
+        "semantic": {
+          "PASS": 206,
+          "FAIL": 18
+        },
+        "variants": {
+          "brief_history": {
+            "PASS": 50,
+            "FAIL": 6
+          },
+          "explicit_subject_brief_history": {
+            "PASS": 54,
+            "FAIL": 2
+          },
+          "explicit_subject_original_history": {
+            "PASS": 53,
+            "FAIL": 3
+          },
+          "original_history": {
+            "PASS": 49,
+            "FAIL": 7
+          }
+        },
+        "checks": {
+          "PASS_CHECKS": 206,
+          "FAIL_CHECKS": 18
+        },
+        "inherited": 200,
+        "fresh": 24,
+        "changed_ids": [
+          "Q0125_original_history",
+          "Q0163_original_history",
+          "Q0209_brief_history",
+          "Q0247_explicit_subject_brief_history",
+          "Q0334_brief_history",
+          "Q0343_brief_history",
+          "Q0356_original_history",
+          "Q0373_original_history",
+          "Q0373_brief_history",
+          "Q0373_explicit_subject_brief_history",
+          "Q0391_original_history",
+          "Q0422_original_history",
+          "Q0438_original_history",
+          "Q0438_brief_history",
+          "Q0478_original_history",
+          "Q0478_brief_history",
+          "Q0478_explicit_subject_brief_history",
+          "Q0113_explicit_subject_original_history",
+          "Q0125_explicit_subject_original_history",
+          "Q0175_explicit_subject_original_history",
+          "Q0247_explicit_subject_original_history",
+          "Q0356_explicit_subject_original_history",
+          "Q0373_explicit_subject_original_history",
+          "Q0478_explicit_subject_original_history"
+        ],
+        "fixed_ids": [
+          "Q0125_explicit_subject_original_history"
+        ],
+        "regressed_ids": [
+          "Q0125_original_history",
+          "Q0163_original_history",
+          "Q0209_brief_history",
+          "Q0247_explicit_subject_brief_history",
+          "Q0334_brief_history",
+          "Q0343_brief_history",
+          "Q0356_original_history",
+          "Q0373_original_history",
+          "Q0478_original_history",
+          "Q0478_explicit_subject_brief_history",
+          "Q0373_explicit_subject_original_history",
+          "Q0478_explicit_subject_original_history"
+        ],
+        "quote_checks": 259,
+        "quote_issues": [],
+        "private_leaks": [],
+        "total_seconds": 1178.551,
+        "median_seconds": 4.7115,
+        "accepted": false
+      },
+      "decision": {
+        "state": "rejected_restore_patch9",
+        "reason": "One fix but12 regressions on same224 inputs; typed source metadata alone fails to enforce applicability."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_source_20261022_r5_candidate_p13\\REPORT.md"
+    },
+    "r6_payload_observation": {
+      "summary": {
+        "cases": 6,
+        "semantic": {
+          "PASS": 4,
+          "FAIL": 2
+        },
+        "same_output_as_baseline": 6,
+        "captured_model_calls": 12,
+        "prompt_eval_range": [
+          1507,
+          3262
+        ],
+        "selector_prompt_eval_range": [
+          2713,
+          3262
+        ],
+        "done_reasons": {
+          "stop": 12
+        },
+        "all_selector_facts_present": true,
+        "all_schema_ids_valid": true,
+        "missing_flags_false_for_failed_cases": true,
+        "total_seconds": 75.721,
+        "production_changed": false,
+        "warning": "Six known correlated diagnostic controls only. Token counts and visible facts show no context/output budget exhaustion in these calls; do not generalize to other prompts or claim a cache bug."
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_payload_20261022_r6\\REPORT.md"
+    },
+    "patch14_focused_pending_regression": {
+      "summary": {
+        "cases": 224,
+        "semantic": {
+          "PASS": 221,
+          "FAIL": 3
+        },
+        "baseline_semantic": {
+          "PASS": 217,
+          "FAIL": 7
+        },
+        "variants": {
+          "brief_history": {
+            "PASS": 54,
+            "FAIL": 2
+          },
+          "explicit_subject_brief_history": {
+            "PASS": 56
+          },
+          "explicit_subject_original_history": {
+            "PASS": 56
+          },
+          "original_history": {
+            "PASS": 55,
+            "FAIL": 1
+          }
+        },
+        "checks": {
+          "PASS_CHECKS": 221,
+          "FAIL_CHECKS": 3
+        },
+        "inherited": 194,
+        "fresh": 30,
+        "changed_ids": [
+          "Q0125_original_history",
+          "Q0125_brief_history",
+          "Q0125_explicit_subject_brief_history",
+          "Q0191_original_history",
+          "Q0202_original_history",
+          "Q0247_original_history",
+          "Q0247_brief_history",
+          "Q0247_explicit_subject_brief_history",
+          "Q0373_original_history",
+          "Q0373_brief_history",
+          "Q0391_original_history",
+          "Q0422_original_history",
+          "Q0438_original_history",
+          "Q0438_brief_history",
+          "Q0478_original_history",
+          "Q0478_brief_history",
+          "Q0478_explicit_subject_brief_history",
+          "Q0113_explicit_subject_original_history",
+          "Q0125_explicit_subject_original_history",
+          "Q0175_explicit_subject_original_history",
+          "Q0202_explicit_subject_original_history",
+          "Q0246_explicit_subject_original_history",
+          "Q0247_explicit_subject_original_history",
+          "Q0321_explicit_subject_original_history",
+          "Q0356_explicit_subject_original_history",
+          "Q0373_explicit_subject_original_history",
+          "Q0397_explicit_subject_original_history",
+          "Q0402_explicit_subject_original_history",
+          "Q0422_explicit_subject_original_history",
+          "Q0478_explicit_subject_original_history"
+        ],
+        "fixed_ids": [
+          "Q0191_original_history",
+          "Q0478_brief_history",
+          "Q0125_explicit_subject_original_history",
+          "Q0247_explicit_subject_original_history"
+        ],
+        "regressed_ids": [],
+        "secondary_cases": 8,
+        "baseline_secondary_cases": 28,
+        "quote_checks": 235,
+        "quote_issues": [],
+        "private_leaks": [],
+        "evidence_reads": {
+          "product": 149,
+          "all_sources": 72
+        },
+        "no_selector_cases": [
+          "Q0300_brief_history",
+          "Q0301_original_history",
+          "Q0301_brief_history"
+        ],
+        "total_seconds": 860.748,
+        "median_seconds": 3.4684999999999997,
+        "production_accepted": false
+      },
+      "decision": {
+        "state": "rejected_after_old100_restore_patch9",
+        "reason": "Focused4fixes/0regressions did not survive broader legacy regression; C31/C34 regress, so no acceptance/full479."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_staged_20261022_r7_candidate_p14\\REPORT.md"
+    },
+    "r8_relevance_feasibility": {
+      "summary": {
+        "cases": 6,
+        "agreement": 5,
+        "false_accept_ids": [
+          "trial_C31"
+        ],
+        "false_reject_ids": [],
+        "correct_accepts": 4,
+        "correct_rejects": 1,
+        "prompt_token_range": [
+          696,
+          1537
+        ],
+        "done_reasons": {
+          "stop": 6
+        },
+        "total_seconds": 40.844,
+        "median_seconds": 3.1014999999999997,
+        "production_verifier_installed": false,
+        "decision": "Do not install this whole-answer judge as a production gate; it accepts one of two known incorrect answers. Selected feasibility controls only, not independent accuracy."
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\relevance_probe_20261022_r8\\REPORT.md"
+    },
+    "r10_part_relevance_feasibility": {
+      "summary": {
+        "cases": 31,
+        "distinct_question_texts": 24,
+        "parts": 57,
+        "exact_case_agreement": 26,
+        "part_agreement": 50,
+        "confusion": {
+          "correct_accept": 43,
+          "false_reject": 1,
+          "correct_reject": 7,
+          "false_accept": 6
+        },
+        "false_accepts": [
+          {
+            "id": "R9-025",
+            "part": "P1",
+            "expected": false,
+            "predicted": true,
+            "category": "wrong_attribute"
+          },
+          {
+            "id": "R9-026",
+            "part": "P1",
+            "expected": false,
+            "predicted": true,
+            "category": "omitted_part"
+          },
+          {
+            "id": "R9-028",
+            "part": "P2",
+            "expected": false,
+            "predicted": true,
+            "category": "omitted_part"
+          },
+          {
+            "id": "R9-031",
+            "part": "P1",
+            "expected": false,
+            "predicted": true,
+            "category": "false_unknown"
+          },
+          {
+            "id": "R9-031",
+            "part": "P2",
+            "expected": false,
+            "predicted": true,
+            "category": "false_unknown"
+          },
+          {
+            "id": "R9-031",
+            "part": "P3",
+            "expected": false,
+            "predicted": true,
+            "category": "false_unknown"
+          }
+        ],
+        "false_rejects": [
+          {
+            "id": "R9-001",
+            "part": "P3",
+            "expected": true,
+            "predicted": false,
+            "category": "valid_unknown"
+          }
+        ],
+        "categories": {
+          "supported": {
+            "correct_accept": 41
+          },
+          "valid_unknown": {
+            "false_reject": 1,
+            "correct_accept": 2
+          },
+          "omitted_part": {
+            "correct_reject": 2,
+            "false_accept": 2
+          },
+          "wrong_attribute": {
+            "correct_reject": 1,
+            "false_accept": 1
+          },
+          "wrong_scope": {
+            "correct_reject": 4
+          },
+          "false_unknown": {
+            "false_accept": 3
+          }
+        },
+        "cohorts": {
+          "anchor": {
+            "cases": 6,
+            "exact_case_agreement": 5,
+            "parts": 12,
+            "part_agreement": 11
+          },
+          "new": {
+            "cases": 20,
+            "exact_case_agreement": 18,
+            "parts": 34,
+            "part_agreement": 32
+          },
+          "constructed": {
+            "cases": 5,
+            "exact_case_agreement": 3,
+            "parts": 11,
+            "part_agreement": 7
+          }
+        },
+        "case_false_accepts": [
+          "R9-025",
+          "R9-026",
+          "R9-028",
+          "R9-031"
+        ],
+        "case_false_rejects": [
+          "R9-001"
+        ],
+        "prompt_token_range": [
+          321,
+          1554
+        ],
+        "done_reasons": {
+          "stop": 31
+        },
+        "total_seconds": 96.822,
+        "median_seconds": 2.546,
+        "production_verifier_installed": false,
+        "decision": "Do not install as a production completeness gate. Required part booleans still confuse source availability with content in the candidate answer; validate literal candidate-answer support in a new controlled diagnostic first."
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\part_relevance_20261022_r10\\REPORT.md"
+    },
+    "r11_candidate_answer_support": {
+      "summary": {
+        "cases": 31,
+        "parts": 57,
+        "raw": {
+          "exact_case_agreement": 27,
+          "part_agreement": 51,
+          "confusion": {
+            "correct_accept": 44,
+            "correct_reject": 7,
+            "false_accept": 6
+          },
+          "errors": [
+            {
+              "id": "R9-025",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R9-026",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R9-028",
+              "part": "P2",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R9-031",
+              "part": "P1",
+              "category": "false_unknown",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R9-031",
+              "part": "P2",
+              "category": "false_unknown",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R9-031",
+              "part": "P3",
+              "category": "false_unknown",
+              "expected": false,
+              "predicted": true
+            }
+          ],
+          "categories": {
+            "supported": {
+              "correct_accept": 41
+            },
+            "valid_unknown": {
+              "correct_accept": 3
+            },
+            "omitted_part": {
+              "correct_reject": 2,
+              "false_accept": 2
+            },
+            "wrong_attribute": {
+              "correct_reject": 1,
+              "false_accept": 1
+            },
+            "wrong_scope": {
+              "correct_reject": 4
+            },
+            "false_unknown": {
+              "false_accept": 3
+            }
+          },
+          "cohorts": {
+            "anchor": {
+              "cases": 6,
+              "exact_case_agreement": 6,
+              "parts": 12,
+              "part_agreement": 12
+            },
+            "new": {
+              "cases": 20,
+              "exact_case_agreement": 18,
+              "parts": 34,
+              "part_agreement": 32
+            },
+            "constructed": {
+              "cases": 5,
+              "exact_case_agreement": 3,
+              "parts": 11,
+              "part_agreement": 7
+            }
+          }
+        },
+        "guarded": {
+          "exact_case_agreement": 30,
+          "part_agreement": 56,
+          "confusion": {
+            "correct_accept": 43,
+            "correct_reject": 13,
+            "false_reject": 1
+          },
+          "errors": [
+            {
+              "id": "R9-011",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            }
+          ],
+          "categories": {
+            "supported": {
+              "correct_accept": 40,
+              "false_reject": 1
+            },
+            "valid_unknown": {
+              "correct_accept": 3
+            },
+            "omitted_part": {
+              "correct_reject": 4
+            },
+            "wrong_attribute": {
+              "correct_reject": 2
+            },
+            "wrong_scope": {
+              "correct_reject": 4
+            },
+            "false_unknown": {
+              "correct_reject": 3
+            }
+          },
+          "cohorts": {
+            "anchor": {
+              "cases": 6,
+              "exact_case_agreement": 6,
+              "parts": 12,
+              "part_agreement": 12
+            },
+            "new": {
+              "cases": 20,
+              "exact_case_agreement": 19,
+              "parts": 34,
+              "part_agreement": 33
+            },
+            "constructed": {
+              "cases": 5,
+              "exact_case_agreement": 5,
+              "parts": 11,
+              "part_agreement": 11
+            }
+          }
+        },
+        "quote_issue_cases": [
+          "R9-011",
+          "R9-025",
+          "R9-026",
+          "R9-028",
+          "R9-031"
+        ],
+        "quote_issue_parts": 7,
+        "quote_count": 56,
+        "total_seconds": 126.732,
+        "median_seconds": 3.515,
+        "prompt_token_range": [
+          410,
+          1643
+        ],
+        "output_token_range": [
+          88,
+          355
+        ],
+        "done_reasons": {
+          "stop": 31
+        },
+        "production_verifier_installed": false,
+        "decision": "Diagnostic-only: candidate-answer membership catches six source-only false approvals, but introduces an ECC false rejection. Broader frozen development confirmation plus literal relevance/unknown controls required before any production gate. Accepted patch9 unchanged."
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\answer_support_20261022_r11\\REPORT.md"
+    },
+    "r12_broader_answer_support": {
+      "summary": {
+        "cases": 44,
+        "distinct_question_texts": 22,
+        "parts": 68,
+        "raw": {
+          "exact_case_agreement": 25,
+          "part_agreement": 45,
+          "confusion": {
+            "correct_accept": 37,
+            "correct_reject": 8,
+            "false_accept": 20,
+            "false_reject": 3
+          },
+          "errors": [
+            {
+              "id": "R12-01-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-02-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-02-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-03-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-04-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-05-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-06-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-07-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-08-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-09-contrast",
+              "part": "P2",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-10-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-11-base",
+              "part": "P1",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-11-base",
+              "part": "P2",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-12-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-12-contrast",
+              "part": "P2",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-13-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-13-contrast",
+              "part": "P2",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-15-contrast",
+              "part": "P1",
+              "category": "false_unknown",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-16-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-17-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-19-contrast",
+              "part": "P2",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-20-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-20-contrast",
+              "part": "P2",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            }
+          ],
+          "categories": {
+            "supported": {
+              "correct_accept": 31,
+              "false_reject": 1
+            },
+            "omitted_part": {
+              "false_accept": 9,
+              "correct_reject": 4
+            },
+            "wrong_attribute": {
+              "false_accept": 10,
+              "correct_reject": 3
+            },
+            "valid_unknown": {
+              "correct_accept": 6,
+              "false_reject": 2
+            },
+            "false_unknown": {
+              "false_accept": 1
+            },
+            "wrong_scope": {
+              "correct_reject": 1
+            }
+          },
+          "cohorts": {
+            "recorded": {
+              "cases": 22,
+              "exact_case_agreement": 20,
+              "parts": 34,
+              "part_agreement": 31
+            },
+            "constructed": {
+              "cases": 22,
+              "exact_case_agreement": 5,
+              "parts": 34,
+              "part_agreement": 14
+            }
+          },
+          "roles": {
+            "customer": {
+              "cases": 22,
+              "exact_case_agreement": 10,
+              "parts": 30,
+              "part_agreement": 17
+            },
+            "admin": {
+              "cases": 22,
+              "exact_case_agreement": 15,
+              "parts": 38,
+              "part_agreement": 28
+            }
+          }
+        },
+        "guarded": {
+          "exact_case_agreement": 33,
+          "part_agreement": 53,
+          "confusion": {
+            "correct_accept": 28,
+            "correct_reject": 25,
+            "false_accept": 3,
+            "false_reject": 12
+          },
+          "errors": [
+            {
+              "id": "R12-01-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-02-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-03-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-04-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-06-contrast",
+              "part": "P1",
+              "category": "omitted_part",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-11-base",
+              "part": "P1",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-11-base",
+              "part": "P2",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-13-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-13-contrast",
+              "part": "P1",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-13-contrast",
+              "part": "P2",
+              "category": "wrong_attribute",
+              "expected": false,
+              "predicted": true
+            },
+            {
+              "id": "R12-19-contrast",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-20-base",
+              "part": "P1",
+              "category": "supported",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-21-base",
+              "part": "P1",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-21-base",
+              "part": "P2",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            },
+            {
+              "id": "R12-21-base",
+              "part": "P3",
+              "category": "valid_unknown",
+              "expected": true,
+              "predicted": false
+            }
+          ],
+          "categories": {
+            "supported": {
+              "false_reject": 7,
+              "correct_accept": 25
+            },
+            "omitted_part": {
+              "correct_reject": 12,
+              "false_accept": 1
+            },
+            "wrong_attribute": {
+              "correct_reject": 11,
+              "false_accept": 2
+            },
+            "valid_unknown": {
+              "correct_accept": 3,
+              "false_reject": 5
+            },
+            "false_unknown": {
+              "correct_reject": 1
+            },
+            "wrong_scope": {
+              "correct_reject": 1
+            }
+          },
+          "cohorts": {
+            "recorded": {
+              "cases": 22,
+              "exact_case_agreement": 14,
+              "parts": 34,
+              "part_agreement": 23
+            },
+            "constructed": {
+              "cases": 22,
+              "exact_case_agreement": 19,
+              "parts": 34,
+              "part_agreement": 30
+            }
+          },
+          "roles": {
+            "customer": {
+              "cases": 22,
+              "exact_case_agreement": 16,
+              "parts": 30,
+              "part_agreement": 23
+            },
+            "admin": {
+              "cases": 22,
+              "exact_case_agreement": 17,
+              "parts": 38,
+              "part_agreement": 30
+            }
+          }
+        },
+        "quote_issue_cases": [
+          "R12-01-base",
+          "R12-01-contrast",
+          "R12-02-contrast",
+          "R12-03-base",
+          "R12-03-contrast",
+          "R12-04-base",
+          "R12-04-contrast",
+          "R12-05-contrast",
+          "R12-07-contrast",
+          "R12-08-contrast",
+          "R12-09-contrast",
+          "R12-10-contrast",
+          "R12-12-contrast",
+          "R12-13-base",
+          "R12-15-contrast",
+          "R12-16-contrast",
+          "R12-17-contrast",
+          "R12-19-contrast",
+          "R12-20-base",
+          "R12-20-contrast",
+          "R12-21-base"
+        ],
+        "quote_issue_parts": 26,
+        "quote_count": 55,
+        "total_seconds": 144.814,
+        "median_seconds": 2.5625,
+        "prompt_token_range": [
+          410,
+          1509
+        ],
+        "output_token_range": [
+          100,
+          283
+        ],
+        "done_reasons": {
+          "stop": 44
+        },
+        "production_verifier_installed": false,
+        "decision": "Reject r11-style combined judge as production gate: false accepts survive literal membership; valid unknowns, tables, implicit answers and harmless typography are falsely rejected. Keep diagnostic evidence and accepted patch9 unchanged."
+      },
+      "decision": {
+        "state": "rejected_as_production_gate",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "Reject r11-style combined judge as production gate: false accepts survive literal membership; valid unknowns, tables, implicit answers and harmless typography are falsely rejected. Keep diagnostic evidence and accepted patch9 unchanged."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\answer_support_20261022_r12\\REPORT.md"
+    },
+    "r13_candidate_coverage": {
+      "summary": {
+        "cases": 44,
+        "parts": 68,
+        "distinct_question_texts": 22,
+        "raw": {
+          "exact_case_agreement": 25,
+          "part_agreement": 45,
+          "confusion": {
+            "answered -> answered": 32,
+            "missing -> explicit_unknown": 20,
+            "answered -> explicit_unknown": 3,
+            "missing -> missing": 4,
+            "explicit_unknown -> explicit_unknown": 9
+          },
+          "errors": [
+            {
+              "id": "R13-01-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-02-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-03-base",
+              "part": "P1",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-03-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-04-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-05-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-06-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-07-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-09-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-10-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-11-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-11-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-13-base",
+              "part": "P2",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-14-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-16-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-17-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-19-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-20-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-20-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P3",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-22-contrast",
+              "part": "P1",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            }
+          ],
+          "binary_coverage_case_agreement": 28,
+          "binary_coverage": {
+            "correct_covered": 44,
+            "false_covered": 20,
+            "correct_missing": 4
+          },
+          "exploratory_answered_only": {
+            "correct_answered": 32,
+            "correct_not_answered": 33,
+            "missed_answered": 3
+          },
+          "cohorts": {
+            "recorded": {
+              "cases": 22,
+              "exact_case_agreement": 20,
+              "parts": 34,
+              "part_agreement": 32
+            },
+            "constructed": {
+              "cases": 22,
+              "exact_case_agreement": 5,
+              "parts": 34,
+              "part_agreement": 13
+            }
+          },
+          "roles": {
+            "customer": {
+              "cases": 22,
+              "exact_case_agreement": 11,
+              "parts": 30,
+              "part_agreement": 18
+            },
+            "admin": {
+              "cases": 22,
+              "exact_case_agreement": 14,
+              "parts": 38,
+              "part_agreement": 27
+            }
+          }
+        },
+        "guarded": {
+          "exact_case_agreement": 35,
+          "part_agreement": 56,
+          "confusion": {
+            "answered -> answered": 32,
+            "missing -> explicit_unknown": 7,
+            "answered -> explicit_unknown": 3,
+            "missing -> missing": 17,
+            "explicit_unknown -> explicit_unknown": 7,
+            "explicit_unknown -> missing": 2
+          },
+          "errors": [
+            {
+              "id": "R13-01-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-02-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-03-base",
+              "part": "P1",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-04-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-06-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-11-base",
+              "part": "P1",
+              "expected": "explicit_unknown",
+              "predicted": "missing"
+            },
+            {
+              "id": "R13-11-base",
+              "part": "P2",
+              "expected": "explicit_unknown",
+              "predicted": "missing"
+            },
+            {
+              "id": "R13-13-base",
+              "part": "P2",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P1",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P2",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-21-contrast",
+              "part": "P3",
+              "expected": "missing",
+              "predicted": "explicit_unknown"
+            },
+            {
+              "id": "R13-22-contrast",
+              "part": "P1",
+              "expected": "answered",
+              "predicted": "explicit_unknown"
+            }
+          ],
+          "binary_coverage_case_agreement": 38,
+          "binary_coverage": {
+            "correct_covered": 42,
+            "false_covered": 7,
+            "correct_missing": 17,
+            "missed_covered": 2
+          },
+          "exploratory_answered_only": {
+            "correct_answered": 32,
+            "correct_not_answered": 33,
+            "missed_answered": 3
+          },
+          "cohorts": {
+            "recorded": {
+              "cases": 22,
+              "exact_case_agreement": 19,
+              "parts": 34,
+              "part_agreement": 30
+            },
+            "constructed": {
+              "cases": 22,
+              "exact_case_agreement": 16,
+              "parts": 34,
+              "part_agreement": 26
+            }
+          },
+          "roles": {
+            "customer": {
+              "cases": 22,
+              "exact_case_agreement": 16,
+              "parts": 30,
+              "part_agreement": 23
+            },
+            "admin": {
+              "cases": 22,
+              "exact_case_agreement": 19,
+              "parts": 38,
+              "part_agreement": 33
+            }
+          }
+        },
+        "id_issue_cases": [
+          "R13-03-contrast",
+          "R13-05-contrast",
+          "R13-07-contrast",
+          "R13-09-contrast",
+          "R13-10-contrast",
+          "R13-11-base",
+          "R13-11-contrast",
+          "R13-14-contrast",
+          "R13-16-contrast",
+          "R13-17-contrast",
+          "R13-19-contrast",
+          "R13-20-contrast"
+        ],
+        "id_issue_parts": 15,
+        "total_seconds": 98.453,
+        "median_seconds": 1.5625,
+        "prompt_token_range": [
+          354,
+          918
+        ],
+        "output_token_range": [
+          60,
+          243
+        ],
+        "done_reasons": {
+          "stop": 44
+        },
+        "production_installed": false,
+        "decision": "Not suitable as standalone coverage/completeness gate: explicit_unknown is confused with missing and substantive answered. Factual support remains untested, so no production acceptance or comparison to r12 correctness score."
+      },
+      "decision": {
+        "state": "not_accepted_as_standalone_gate",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "Not suitable as standalone coverage/completeness gate: explicit_unknown is confused with missing and substantive answered. Factual support remains untested, so no production acceptance or comparison to r12 correctness score."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\coverage_20261022_r13\\REPORT.md"
+    },
+    "r14_product_coverage_confirmation": {
+      "summary": {
+        "cases": 112,
+        "parts": 112,
+        "question_texts": 12,
+        "profiles": 56,
+        "distinct_payloads": 112,
+        "raw": {
+          "three_state_agreement": 55,
+          "confusion": {
+            "answered -> answered": 54,
+            "missing -> answered": 22,
+            "missing -> explicit_unknown": 35,
+            "missing -> missing": 1
+          },
+          "answered_only": {
+            "correct_answered": 54,
+            "false_answered": 22,
+            "correct_not_answered": 36
+          },
+          "cohorts": {
+            "recorded": {
+              "correct_answered": 54,
+              "false_answered": 1,
+              "correct_not_answered": 1
+            },
+            "contrast": {
+              "false_answered": 21,
+              "correct_not_answered": 35
+            }
+          },
+          "false_answered": [
+            "Q0113_contrast",
+            "Q0125_contrast",
+            "Q0163_contrast",
+            "Q0175_contrast",
+            "Q0191_recorded",
+            "Q0191_contrast",
+            "Q0202_contrast",
+            "Q0246_contrast",
+            "Q0247_contrast",
+            "Q0321_contrast",
+            "Q0327_contrast",
+            "Q0356_contrast",
+            "Q0373_contrast",
+            "Q0391_contrast",
+            "Q0397_contrast",
+            "Q0398_contrast",
+            "Q0402_contrast",
+            "Q0422_contrast",
+            "Q0427_contrast",
+            "Q0432_contrast",
+            "Q0471_contrast",
+            "Q0472_contrast"
+          ]
+        },
+        "guarded": {
+          "three_state_agreement": 83,
+          "confusion": {
+            "answered -> answered": 54,
+            "missing -> answered": 22,
+            "missing -> missing": 29,
+            "missing -> explicit_unknown": 7
+          },
+          "answered_only": {
+            "correct_answered": 54,
+            "false_answered": 22,
+            "correct_not_answered": 36
+          },
+          "cohorts": {
+            "recorded": {
+              "correct_answered": 54,
+              "false_answered": 1,
+              "correct_not_answered": 1
+            },
+            "contrast": {
+              "false_answered": 21,
+              "correct_not_answered": 35
+            }
+          },
+          "false_answered": [
+            "Q0113_contrast",
+            "Q0125_contrast",
+            "Q0163_contrast",
+            "Q0175_contrast",
+            "Q0191_recorded",
+            "Q0191_contrast",
+            "Q0202_contrast",
+            "Q0246_contrast",
+            "Q0247_contrast",
+            "Q0321_contrast",
+            "Q0327_contrast",
+            "Q0356_contrast",
+            "Q0373_contrast",
+            "Q0391_contrast",
+            "Q0397_contrast",
+            "Q0398_contrast",
+            "Q0402_contrast",
+            "Q0422_contrast",
+            "Q0427_contrast",
+            "Q0432_contrast",
+            "Q0471_contrast",
+            "Q0472_contrast"
+          ]
+        },
+        "id_issue_parts": 28,
+        "total_seconds": 160.316,
+        "median_seconds": 1.2734999999999999,
+        "prompt_token_range": [
+          379,
+          723
+        ],
+        "output_token_range": [
+          59,
+          89
+        ],
+        "done_reasons": {
+          "stop": 112
+        },
+        "production_installed": false,
+        "decision": "Reject answered-only coverage gate: systematic near-attribute false approvals survive candidate-only context and valid answer IDs. Stop extending this judge family; inspect typed requested-field binding before another production repair."
+      },
+      "decision": {
+        "state": "rejected_answered_only_gate",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "Reject answered-only coverage gate: systematic near-attribute false approvals survive candidate-only context and valid answer IDs. Stop extending this judge family; inspect typed requested-field binding before another production repair."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\coverage_20261022_r14\\REPORT.md"
+    },
+    "r15_requested_field_intent": {
+      "summary": {
+        "cases": 91,
+        "registry_fields": 62,
+        "exact_intent": 68,
+        "contract_invalid": 11,
+        "cohorts": {
+          "product_followup": {
+            "cases": 56,
+            "exact_intent": 40,
+            "invalid_contract": 10,
+            "exact": 40,
+            "field_mismatch": 4,
+            "over_fallback": 2
+          },
+          "fallback_control": {
+            "cases": 30,
+            "exact_intent": 25,
+            "invalid_contract": 1,
+            "unsafe_shortcut": 4,
+            "exact": 25
+          },
+          "compound_lookup": {
+            "cases": 5,
+            "exact_intent": 3,
+            "invalid_contract": 0,
+            "field_mismatch": 2,
+            "exact": 3
+          }
+        },
+        "issues": [
+          {
+            "id": "F15-Q0227_original_history",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "internal-hard-drive/type"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "internal-hard-drive/cache"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0247_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "memory/modules"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0292_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0300_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "case/side_panel"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0301_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "case/side_panel"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0322_original_history",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "internal-hard-drive/type"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "internal-hard-drive/cache"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0357_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0381_original_history",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "internal-hard-drive/type"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "internal-hard-drive/cache"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0382_original_history",
+            "kind": "over_fallback",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "rag"
+            }
+          },
+          {
+            "id": "F15-Q0383_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "motherboard/form_factor"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0392_original_history",
+            "kind": "over_fallback",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "rag"
+            }
+          },
+          {
+            "id": "F15-Q0406_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0446_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "case/side_panel"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0448_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0462_original_history",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "cpu/core_clock"
+              ]
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-Q0478_original_history",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "memory/modules"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "memory/cas_latency",
+                "memory/first_word_latency",
+                "memory/modules",
+                "memory/speed"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C09",
+            "kind": "unsafe_shortcut",
+            "expected": {
+              "mode": "rag",
+              "field_ids": []
+            },
+            "actual": {
+              "field_ids": [
+                "laptop/Display Resolution",
+                "laptop/Display Size (Inch)",
+                "laptop/Display Type"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C31",
+            "kind": "unsafe_shortcut",
+            "expected": {
+              "mode": "rag",
+              "field_ids": []
+            },
+            "actual": {
+              "field_ids": [
+                "cpu/core_count",
+                "cpu/boost_clock"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C33",
+            "kind": "unsafe_shortcut",
+            "expected": {
+              "mode": "rag",
+              "field_ids": []
+            },
+            "actual": {
+              "field_ids": [
+                "laptop/Display Type",
+                "laptop/HDMI Port"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C34",
+            "kind": "unsafe_shortcut",
+            "expected": {
+              "mode": "rag",
+              "field_ids": []
+            },
+            "actual": {
+              "field_ids": [
+                "laptop/RAM"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-A09",
+            "kind": "invalid_contract",
+            "expected": {
+              "mode": "rag",
+              "field_ids": []
+            },
+            "actual": {
+              "field_ids": [],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C01",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "laptop/Processor Model",
+                "laptop/RAM",
+                "laptop/RAM Type"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "laptop/Processor Brand",
+                "laptop/Processor Model",
+                "laptop/Processor Core",
+                "laptop/RAM",
+                "laptop/RAM Type"
+              ],
+              "mode": "fields"
+            }
+          },
+          {
+            "id": "F15-C02",
+            "kind": "field_mismatch",
+            "expected": {
+              "mode": "fields",
+              "field_ids": [
+                "laptop/Graphics Memory Accessibility",
+                "laptop/Graphics Memory"
+              ]
+            },
+            "actual": {
+              "field_ids": [
+                "laptop/Graphics Chipset",
+                "laptop/Graphics Memory",
+                "laptop/Graphics Memory Accessibility"
+              ],
+              "mode": "fields"
+            }
+          }
+        ],
+        "total_seconds": 113.551,
+        "median_seconds": 0.829,
+        "prompt_token_range": [
+          402,
+          1800
+        ],
+        "output_token_range": [
+          12,
+          57
+        ],
+        "done_reasons": {
+          "stop": 91
+        },
+        "production_installed": false,
+        "decision": "Not ready for typed-lookup shortcut: core-count intent improves in isolated schema task, but raw schema names yield empty/nearby fields, extras, and unsafe shortcutting of ambiguous/partially unsupported/source-specific questions. Keep patch9 unchanged.",
+        "cpu_core_intent": {
+          "cases": 17,
+          "exact": 17
+        }
+      },
+      "decision": {
+        "state": "not_ready_for_production",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "Not ready for typed-lookup shortcut: core-count intent improves in isolated schema task, but raw schema names yield empty/nearby fields, extras, and unsafe shortcutting of ambiguous/partially unsupported/source-specific questions. Keep patch9 unchanged."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\REPORT.md"
+    },
+    "r16_per_part_field_intent": {
+      "summary": {
+        "cases": 91,
+        "production_parts": 123,
+        "exact_intent": 79,
+        "contract_invalid": 0,
+        "cohorts": {
+          "product_followup": {
+            "cases": 56,
+            "exact_intent": 52,
+            "invalid_contract": 0,
+            "issue_exact": 52,
+            "issue_field_mismatch": 4
+          },
+          "fallback_control": {
+            "cases": 30,
+            "exact_intent": 23,
+            "invalid_contract": 0,
+            "issue_unsafe_shortcut": 7,
+            "issue_exact": 23
+          },
+          "compound_lookup": {
+            "cases": 5,
+            "exact_intent": 4,
+            "invalid_contract": 0,
+            "issue_field_mismatch": 1,
+            "issue_exact": 4
+          }
+        },
+        "same_input": {
+          "baseline_exact": 68,
+          "candidate_exact": 79,
+          "fixes": [
+            "F15-Q0227_original_history",
+            "F15-Q0292_original_history",
+            "F15-Q0300_original_history",
+            "F15-Q0301_original_history",
+            "F15-Q0322_original_history",
+            "F15-Q0357_original_history",
+            "F15-Q0381_original_history",
+            "F15-Q0382_original_history",
+            "F15-Q0383_original_history",
+            "F15-Q0392_original_history",
+            "F15-Q0406_original_history",
+            "F15-Q0446_original_history",
+            "F15-Q0448_original_history",
+            "F15-Q0462_original_history",
+            "F15-A09",
+            "F15-C02"
+          ],
+          "regressions": [
+            "F15-Q0125_original_history",
+            "F15-Q0373_original_history",
+            "F15-C13",
+            "F15-C14",
+            "F15-C19"
+          ]
+        },
+        "issues": [
+          {
+            "id": "F15-Q0125_original_history",
+            "kind": "field_mismatch",
+            "missing_fields": [],
+            "extra_fields": [
+              "memory/cas_latency",
+              "memory/first_word_latency",
+              "memory/speed"
+            ]
+          },
+          {
+            "id": "F15-Q0247_original_history",
+            "kind": "field_mismatch",
+            "missing_fields": [],
+            "extra_fields": [
+              "memory/cas_latency",
+              "memory/first_word_latency",
+              "memory/speed"
+            ]
+          },
+          {
+            "id": "F15-Q0373_original_history",
+            "kind": "field_mismatch",
+            "missing_fields": [],
+            "extra_fields": [
+              "memory/cas_latency",
+              "memory/first_word_latency",
+              "memory/speed"
+            ]
+          },
+          {
+            "id": "F15-Q0478_original_history",
+            "kind": "field_mismatch",
+            "missing_fields": [],
+            "extra_fields": [
+              "memory/cas_latency",
+              "memory/first_word_latency",
+              "memory/speed"
+            ]
+          },
+          {
+            "id": "F15-C09",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "laptop/Display Resolution",
+              "laptop/Display Size (Inch)",
+              "laptop/Display Type",
+              "laptop/Graphics Chipset",
+              "laptop/Graphics Memory",
+              "laptop/Graphics Memory Accessibility"
+            ]
+          },
+          {
+            "id": "F15-C13",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "memory/cas_latency",
+              "memory/speed"
+            ]
+          },
+          {
+            "id": "F15-C14",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "monitor/refresh_rate"
+            ]
+          },
+          {
+            "id": "F15-C19",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "monitor/panel_type"
+            ]
+          },
+          {
+            "id": "F15-C31",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "cpu/boost_clock",
+              "cpu/core_count"
+            ]
+          },
+          {
+            "id": "F15-C33",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "laptop/Display Type",
+              "laptop/HDMI Port"
+            ]
+          },
+          {
+            "id": "F15-C34",
+            "kind": "unsafe_shortcut",
+            "missing_fields": [],
+            "extra_fields": [
+              "laptop/RAM",
+              "laptop/RAM Type"
+            ]
+          },
+          {
+            "id": "F15-C01",
+            "kind": "field_mismatch",
+            "missing_fields": [],
+            "extra_fields": [
+              "laptop/Processor Brand",
+              "laptop/Processor Core"
+            ]
+          }
+        ],
+        "total_seconds": 138.421,
+        "median_seconds": 0.844,
+        "prompt_token_range": [
+          477,
+          2619
+        ],
+        "output_token_range": [
+          10,
+          66
+        ],
+        "done_reasons": {
+          "stop": 91
+        },
+        "production_installed": false,
+        "decision": "Not accepted: same-input aggregate improves but unsafe fallback shortcuts increase4to7, including three new principle questions. Typed per-part contract prevents empty arrays, not semantic misbinding. Keep patch9 unchanged."
+      },
+      "decision": {
+        "state": "not_accepted_scope_regressions",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "Not accepted: same-input aggregate improves but unsafe fallback shortcuts increase4to7, including three new principle questions. Typed per-part contract prevents empty arrays, not semantic misbinding. Keep patch9 unchanged."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r16\\REPORT.md"
+    },
+    "r17_qwen35_compatibility_failure": {
+      "summary": {
+        "planned_cases": 91,
+        "attempted": 3,
+        "infrastructure_errors": 3,
+        "semantic_scored": 0,
+        "pending": 88,
+        "state": "stopped_runtime_grammar_error",
+        "actual_alias": "shop-qwen:latest",
+        "runtime_error": "Unexpected empty grammar stack after accepting piece: 8 (23)",
+        "runtime_evidence_sha256": "108f1d34bc30a2ff5544fc998ed9c8e41b78dfc61210b4fa14c53fc304ac3549",
+        "total_attempt_seconds": 21.735,
+        "model_loaded": true,
+        "actual_contexts": [
+          6144
+        ],
+        "production_installed": false,
+        "decision": "No model-quality comparison possible. Do not resume r17 unchanged; inspect structured-grammar/runtime compatibility in a separate minimal revision. No production model/config changes or semantic failure labels."
+      },
+      "decision": {
+        "state": "stopped_infrastructure_do_not_resume",
+        "production_accepted": false,
+        "active_code": "patch9",
+        "reason": "No model-quality comparison possible. Do not resume r17 unchanged; inspect structured-grammar/runtime compatibility in a separate minimal revision. No production model/config changes or semantic failure labels."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r17_qwen35\\REPORT.md"
+    },
+    "r18_decoder_compatibility": {
+      "summary": {
+        "planned": 3,
+        "attempted": 3,
+        "http_successes": 1,
+        "valid_contracts": 0,
+        "qa_semantics_scored": false,
+        "variants": [
+          {
+            "id": "full_schema",
+            "http_status": 500,
+            "contract_valid": false,
+            "error_body": "{\"error\":\"llama-server chat error: map[code:500 message:got exception: Unexpected empty grammar stack after accepting piece: 8 (23) type:server_error]\"}",
+            "parse_error": null,
+            "done_reason": null,
+            "prompt_tokens": null,
+            "output_tokens": null,
+            "content_chars": 0,
+            "unique_content_chars": [],
+            "seconds": 25.25
+          },
+          {
+            "id": "json_object",
+            "http_status": 500,
+            "contract_valid": false,
+            "error_body": "{\"error\":\"llama-server chat error: map[code:500 message:got exception: Unexpected empty grammar stack after accepting piece: 8 (23) type:server_error]\"}",
+            "parse_error": null,
+            "done_reason": null,
+            "prompt_tokens": null,
+            "output_tokens": null,
+            "content_chars": 0,
+            "unique_content_chars": [],
+            "seconds": 0.157
+          },
+          {
+            "id": "unconstrained",
+            "http_status": 200,
+            "contract_valid": false,
+            "error_body": null,
+            "parse_error": "TypeError: 'int' object is not iterable",
+            "done_reason": "length",
+            "prompt_tokens": 1050,
+            "output_tokens": 300,
+            "content_chars": 300,
+            "unique_content_chars": [
+              "8"
+            ],
+            "seconds": 5.141
+          }
+        ],
+        "total_seconds": 30.548,
+        "runtime_version": "0.7.0-dev build1 commit620d2225c Clang18.1.8 WindowsAMD64",
+        "production_installed": false,
+        "decision": "No usable compatibility workaround: schema/jsonobject500; unconstrained200degenerates to repeated8 until300tokenlimit. Format bypass alone is not safe. Cause not established; cachedstate across variants may confound. Next isolate freshmodelrunner/sampling/backend with bounded canaries, not full91 or productionchange."
+      },
+      "decision": {
+        "state": "no_usable_decoder_mode",
+        "production_accepted": false,
+        "reason": "No usable compatibility workaround: schema/jsonobject500; unconstrained200degenerates to repeated8 until300tokenlimit. Format bypass alone is not safe. Cause not established; cachedstate across variants may confound. Next isolate freshmodelrunner/sampling/backend with bounded canaries, not full91 or productionchange."
+      },
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\decoding_compat_20261023_r18\\REPORT.md"
+    },
+    "r19_prepared_execution_rejected": {
+      "summary": {
+        "state": "prepared_execution_rejected_by_policy",
+        "planned": 3,
+        "attempted": 0,
+        "semantic_scored": 0,
+        "offline_plan_checks": "passed",
+        "production_hashes_unchanged": 26,
+        "production_installed": false,
+        "policy_result": "blocked by policy",
+        "specific_rejection_reason_supplied": false,
+        "decision": "No launch or inference. Preserve prepared artifacts; do not retry or split denied launch to bypass review. Production patch9 unchanged."
+      },
+      "decision": null,
+      "report": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\runtime_canary_20261023_r19\\REPORT.md"
+    }
+  },
+  "active_unit_tests": 193,
+  "current_candidate": {
+    "name": "patch14",
+    "state": "rejected_restore_patch9",
+    "production_accepted": false,
+    "decision": {
+      "state": "rejected_restore_patch9",
+      "reason": "Legacy10087→85; C31 andC34 regress despite focused224 gain. Missing detection/fallback relevance not reliable."
+    }
+  },
+  "patch14_regression": {
+    "cases": 100,
+    "semantic": {
+      "PASS": 85,
+      "FAIL": 15
+    },
+    "roles": {
+      "customer": {
+        "PASS": 45,
+        "FAIL": 5
+      },
+      "admin": {
+        "PASS": 40,
+        "FAIL": 10
+      }
+    },
+    "inherited": 92,
+    "fresh": 8,
+    "changed_ids": [
+      "C03",
+      "C05",
+      "C06",
+      "C29",
+      "C31",
+      "C34",
+      "A15",
+      "A16"
+    ],
+    "fixed_ids": [],
+    "regressed_ids": [
+      "C31",
+      "C34"
+    ],
+    "quote_checks": 206,
+    "quote_issues": [],
+    "private_leaks": [],
+    "evidence_reads": {
+      "product": 14,
+      "reference_fallback": 3,
+      "all_sources": 65
+    },
+    "total_seconds": 469.4,
+    "median_seconds": 4.14,
+    "accepted": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "semantic_pass": 5,
+  "total": 12,
+  "accepted_for_application": false,
+  "median_seconds": 1.992,
+  "cold_first_seconds": 28.859,
+  "training_performed": false,
+  "notes": "5/12 includes honest unconnected branch controls. S02 fails exact boundary despite plausible rows. No context truncation observed: done_reason stop in all calls; staged search prompt about350 tokens."
+}

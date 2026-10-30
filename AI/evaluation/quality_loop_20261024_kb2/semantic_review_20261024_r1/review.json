@@ -1,0 +1,171 @@
+{
+  "selection": "First8 changed development IDs in stored diff, no validation opened.",
+  "scope": "Cited evidence and response relevance/completeness only; no independent manufacturer/market verification.",
+  "reviewed": 8,
+  "meets_request_including_relevance_issues": 6,
+  "partial": 2,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "model_calls": 0,
+  "overall479_semantic_score": null,
+  "candidate_acceptance": "not_decided_by_subset",
+  "input_sha256": {
+    "AI\\evaluation\\quality_loop_20261024_kb2\\kb2_rag5_r1\\results.json": "ffd6069809e72f38255c1200a7788bcffae056b7844a4bd363c11a0869f56235",
+    "AI\\evaluation\\quality_loop_20261024_kb2\\kb2_rag5_rerank_r1\\results.json": "a9fd205fbd3b670bceb7c2a3904266c6f4031b1e5d3f045d6de541a7931a0575",
+    "AI\\evaluation\\quality_loop_20261024_kb2\\kb2_rag5_rerank_r1\\changed_vs_rag5.json": "578be025a00edb412f8d9566c478dbfe264b24ef1556be7f3a8f26a6815fda56",
+    "AI\\evaluation\\quality_loop_20261024_kb2\\kb2_rag5_rerank_r1\\integrity.json": "7f294d5a18c9d1e6fdbe71e3ae1b70fd14e46faecc9bf9d5144585f824f28a95"
+  },
+  "cases": [
+    {
+      "id": "Q0008",
+      "question": "Kế hoạch 2026-Q3 ghi mục tiêu doanh thu thuần bao nhiêu?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request",
+      "reason": "Simulated2026Q3 target4698000000 quoted with matching plan/version/section. Removed duplicate period preamble; no new factual capability.",
+      "source_refs": [
+        {
+          "document_id": "sales-plan-2026-Q3",
+          "source": "sales-plan-2026-Q3-v1.md",
+          "version": 1,
+          "section": 2,
+          "chunk_id": "1b6993f0504143be485d21b97638cc5cb2270212b768fe4a4fe1d9c33e4ac667"
+        }
+      ]
+    },
+    {
+      "id": "Q0014",
+      "question": "Theo danh mục tham khảo, Acer Aspire 3 A315-59-56VC có CPU như thế nào?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request_with_relevance_issues",
+      "reason": "CPU model Core i5 1235U,Intel,10cores present in cited catalog; display/OS/LAN fragments remain irrelevant to CPU question. Catalog reference is not manufacturer verification.",
+      "source_refs": [
+        {
+          "document_id": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+          "source": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705-v3.md",
+          "version": 3,
+          "section": 1,
+          "chunk_id": "e0dfa566bd066afbf5503350a2abd10657823d5f56008dd6c110679a792c9b4f"
+        },
+        {
+          "document_id": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+          "source": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705-v3.md",
+          "version": 3,
+          "section": 2,
+          "chunk_id": "ff10e69c55dd167877e275f172c269549808fbf9f91f8255abd9dd86c186a83a"
+        }
+      ]
+    },
+    {
+      "id": "Q0015",
+      "question": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request",
+      "reason": "DDR5 and6400 source label retained with distinction from physical clock; removed unasked CAS latency. No independent specification verification claimed.",
+      "source_refs": [
+        {
+          "document_id": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+          "source": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md",
+          "version": 3,
+          "section": 1,
+          "chunk_id": "b9338bc699c67769688457eb64548ede1afe774c47df07533601cea999567d39"
+        }
+      ]
+    },
+    {
+      "id": "Q0020",
+      "question": "Tài liệu có ghi MOQ nhà cung cấp không, hay chỉ có lead time?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "NEEDS_REVIEW",
+      "semantic_status": "partial",
+      "reason": "Answer lists supplier lead times4/3days but does not address whether retrieved evidence gives MOQ. Cited chunk does not give MOQ; cannot infer absence across the entire corpus. Before answer was also incomplete/awkward. Need explicit missing-evidence disclosure, not another handbook with guessed MOQ.",
+      "source_refs": [
+        {
+          "document_id": "procurement",
+          "source": "procurement-v2.md",
+          "version": 2,
+          "section": 2,
+          "chunk_id": "444c05bf0ae16893797e21493b098590a8c6aee8919d20dd26230be139063148"
+        }
+      ]
+    },
+    {
+      "id": "Q0026",
+      "question": "Kế hoạch 2025-Q4 ghi mục tiêu doanh thu thuần bao nhiêu?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request",
+      "reason": "Simulated2025Q4 target4671000000 with matching cited plan; no actual-revenue or new computation claim.",
+      "source_refs": [
+        {
+          "document_id": "sales-plan-2025-Q4",
+          "source": "sales-plan-2025-Q4-v1.md",
+          "version": 1,
+          "section": 2,
+          "chunk_id": "1ea51c6da7f105cf12cb0ee8e50488113106be9d55429846f5fc5cfabe8bb6df"
+        }
+      ]
+    },
+    {
+      "id": "Q0033",
+      "question": "Theo danh mục tham khảo, HP Victus Gaming 15-fa1251TX có CPU như thế nào?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request_with_relevance_issues",
+      "reason": "CPU model Core i7 13700H,Intel,14cores match cited catalog. Most unasked display/drive facts removed, dataset-provenance fragment still unasked.",
+      "source_refs": [
+        {
+          "document_id": "catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c",
+          "source": "catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c-v3.md",
+          "version": 3,
+          "section": 1,
+          "chunk_id": "29743499559625de541d02cda6972a6a95f45f8f14c2e20a5d07327fa4cb514d"
+        }
+      ]
+    },
+    {
+      "id": "Q0034",
+      "question": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "PASS_CHECKS",
+      "semantic_status": "meets_request",
+      "reason": "DDR5 and6000 source label retained without treating it as physical clock; removed unasked CAS latency.",
+      "source_refs": [
+        {
+          "document_id": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+          "source": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md",
+          "version": 3,
+          "section": 1,
+          "chunk_id": "082cd975d41457230f0349dec76f874f9e7a7f677b0e0646b3db688bcb29121f"
+        }
+      ]
+    },
+    {
+      "id": "Q0038",
+      "question": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+      "before_action": "answer",
+      "after_action": "answer",
+      "automatic_check": "NEEDS_REVIEW",
+      "semantic_status": "partial",
+      "reason": "Campaign table names office-laptop back-to-school event, but does not establish detailed eligibility or whether all gaming laptops are excluded. Answer omits that limit and does not directly answer scope. Avoid inferring eligibility/exclusion from a campaign name alone.",
+      "source_refs": [
+        {
+          "document_id": "marketing-calendar",
+          "source": "marketing-calendar-v1.md",
+          "version": 1,
+          "section": 2,
+          "chunk_id": "73ed7f0d0f6157beeb3bf9f7afd85589e3020819edbf1febd15e6bf978dcd7a7"
+        }
+      ]
+    }
+  ]
+}

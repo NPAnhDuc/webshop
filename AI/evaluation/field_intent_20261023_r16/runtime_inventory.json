@@ -1,0 +1,51 @@
+{
+  "read_only": true,
+  "inference_called": false,
+  "version": {
+    "version": "0.40.5"
+  },
+  "models": {
+    "qwen3:4b-instruct-2507-q4_K_M": {
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M"
+      },
+      "capabilities": [
+        "tools",
+        "thinking",
+        "completion"
+      ],
+      "parameters": "stop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.7\ntop_k                          20\ntop_p                          0.8\nrepeat_penalty                 1"
+    },
+    "shop-qwen:latest": {
+      "details": {
+        "parent_model": "Qwen3.5-4B-Q4_K_M.gguf",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "4.2B",
+        "quantization_level": "Q4_K_M",
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "tools",
+        "thinking",
+        "completion"
+      ],
+      "parameters": "num_ctx                        4096\ntemperature                    0.1"
+    }
+  },
+  "user_gguf": {
+    "path": "D:/tool/models/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+    "bytes": 2740937888
+  },
+  "note": "Existing shop-qwen alias points to user-provided Qwen3.5,nominal4B(metadata4.2B)vs currentQwen3nominal4B(metadata4.0B). No newdownload/modelcreation/configchange or second inferencebatch. Candidate same-size-class comparison only, not bigger-model deployment."
+}

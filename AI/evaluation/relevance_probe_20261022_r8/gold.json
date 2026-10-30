@@ -1,0 +1,32 @@
+{
+  "baseline_C31": {
+    "expected_acceptable": true,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch9\\review.json",
+    "reason": "Đúng10nhân vàboost4,7GHz, báo chưa xác nhận số luồng."
+  },
+  "baseline_C34": {
+    "expected_acceptable": true,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch9\\review.json",
+    "reason": "Nói rõ tài liệu408AU không đủ xác nhận041BD, không cam kết nâng cấp sai vùng."
+  },
+  "trial_C31": {
+    "expected_acceptable": false,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch14\\review.json",
+    "reason": "Core10 and boost4.7GHz correct, but missing thread count is replaced by generic caveat and no explicit unknown; regression."
+  },
+  "trial_C34": {
+    "expected_acceptable": false,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch14\\review.json",
+    "reason": "Asked whether regional SKU has identical soldered RAM; returns16GB/DDR4 without the required region/applicability limit; regression."
+  },
+  "control_C05": {
+    "expected_acceptable": true,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch14\\review.json",
+    "reason": "Correct MSI LAN No and HDMI1, now without unrelated display fields."
+  },
+  "control_C06": {
+    "expected_acceptable": true,
+    "manual_review": "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch14\\review.json",
+    "reason": "Both16GB, MSI DDR4 versus LOQ DDR5; no unrelated regional-SKU claim."
+  }
+}

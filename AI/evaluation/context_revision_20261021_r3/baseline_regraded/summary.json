@@ -1,0 +1,15 @@
+{
+  "cases": 24,
+  "semantic_pass": 12,
+  "semantic_fail": 12,
+  "checks": {
+    "FAIL_CHECKS": 8,
+    "PASS_CHECKS": 11,
+    "NEEDS_REVIEW": 5
+  },
+  "bot_changed": false,
+  "reserved_opened": false,
+  "new_inference": false,
+  "reference_results": "context_revision_20261021_r2/context_r2_baseline/results.json",
+  "warning": "Same24outputs regraded with corrected numeric spans; no quality/speed gain claimed; focused probes not representative."
+}

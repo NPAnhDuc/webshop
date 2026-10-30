@@ -1,0 +1,140 @@
+[
+  {
+    "case_id": "Q0125_original_history",
+    "stage": "router",
+    "prompt_eval_count": 1537,
+    "eval_count": 64,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0125_original_history",
+    "stage": "selector",
+    "prompt_eval_count": 3232,
+    "eval_count": 45,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_1",
+    "selected": true,
+    "missing": [],
+    "schema_ids_valid": true
+  },
+  {
+    "case_id": "Q0125_explicit_subject_brief_history",
+    "stage": "router",
+    "prompt_eval_count": 1507,
+    "eval_count": 59,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0125_explicit_subject_brief_history",
+    "stage": "selector",
+    "prompt_eval_count": 2713,
+    "eval_count": 45,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_8",
+    "selected": true,
+    "missing": [],
+    "schema_ids_valid": true
+  },
+  {
+    "case_id": "Q0247_original_history",
+    "stage": "router",
+    "prompt_eval_count": 1543,
+    "eval_count": 65,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0247_original_history",
+    "stage": "selector",
+    "prompt_eval_count": 3262,
+    "eval_count": 45,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_1",
+    "selected": true,
+    "missing": [],
+    "schema_ids_valid": true
+  },
+  {
+    "case_id": "Q0247_explicit_subject_brief_history",
+    "stage": "router",
+    "prompt_eval_count": 1513,
+    "eval_count": 60,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0247_explicit_subject_brief_history",
+    "stage": "selector",
+    "prompt_eval_count": 2726,
+    "eval_count": 59,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_8",
+    "selected": true,
+    "missing": [],
+    "schema_ids_valid": true
+  },
+  {
+    "case_id": "Q0125_explicit_subject_original_history",
+    "stage": "router",
+    "prompt_eval_count": 1544,
+    "eval_count": 62,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0125_explicit_subject_original_history",
+    "stage": "selector",
+    "prompt_eval_count": 2750,
+    "eval_count": 62,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_8",
+    "selected": false,
+    "missing": [],
+    "schema_ids_valid": true
+  },
+  {
+    "case_id": "Q0247_explicit_subject_original_history",
+    "stage": "router",
+    "prompt_eval_count": 1552,
+    "eval_count": 64,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 900
+  },
+  {
+    "case_id": "Q0247_explicit_subject_original_history",
+    "stage": "selector",
+    "prompt_eval_count": 2765,
+    "eval_count": 63,
+    "done_reason": "stop",
+    "num_ctx": 6144,
+    "num_predict": 450,
+    "requested_fact_present": true,
+    "fact_id": "ram_modules_8",
+    "selected": false,
+    "missing": [],
+    "schema_ids_valid": true
+  }
+]

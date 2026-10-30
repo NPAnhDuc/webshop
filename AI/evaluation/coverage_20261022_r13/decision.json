@@ -1,0 +1,6 @@
+{
+  "state": "not_accepted_as_standalone_gate",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "Not suitable as standalone coverage/completeness gate: explicit_unknown is confused with missing and substantive answered. Factual support remains untested, so no production acceptance or comparison to r12 correctness score."
+}

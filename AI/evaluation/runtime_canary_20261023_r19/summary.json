@@ -1,0 +1,12 @@
+{
+  "state": "prepared_execution_rejected_by_policy",
+  "planned": 3,
+  "attempted": 0,
+  "semantic_scored": 0,
+  "offline_plan_checks": "passed",
+  "production_hashes_unchanged": 26,
+  "production_installed": false,
+  "policy_result": "blocked by policy",
+  "specific_rejection_reason_supplied": false,
+  "decision": "No launch or inference. Preserve prepared artifacts; do not retry or split denied launch to bypass review. Production patch9 unchanged."
+}

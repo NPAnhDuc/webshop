@@ -1,0 +1,100 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "c5b9e97df93c404fa4bf90cc34273a8f",
+  "parent_trace_id": "e506c1b6b7bb4427b32758de4595d247",
+  "recorded_at": "2026-10-24T12:34:51.124701+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, MSI MAG A750GL PCIE5 đạt chuẩn hiệu suất nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "facts",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": [
+        "P7"
+      ],
+      "fact_fields": [
+        "certification"
+      ]
+    }
+  },
+  "calls": [
+    {
+      "tool": "catalog.product_facts",
+      "arguments": {
+        "product_id": "1e1acb4461bc7bf000a8d2210b3ad79b4861a7c641259e46d479103fe7216efa",
+        "fields": [
+          "certification"
+        ]
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "data": {
+          "product": {
+            "id": "1e1acb4461bc7bf000a8d2210b3ad79b4861a7c641259e46d479103fe7216efa",
+            "name": "MSI MAG A750GL PCIE5",
+            "category": "psu",
+            "api_path": "/api/products/msi-mag-a750gl-pcie5",
+            "product_page_url": null
+          },
+          "facts": [
+            {
+              "field": "certification",
+              "value": "80 Plus Bronze",
+              "missing": false
+            }
+          ],
+          "limitations": [
+            "Missing means absent from the captured record, not that the product lacks the feature."
+          ]
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      },
+      "seconds": 5.94000011915341e-05
+    }
+  ],
+  "result": {
+    "intent": "facts",
+    "basic_action": "answer",
+    "answer": "Theo bản ghi sản phẩm MSI MAG A750GL PCIE5:\n- Chuẩn hiệu suất: 80 Plus Bronze\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.",
+    "sources": [
+      {
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 0.28352199999790173
+}

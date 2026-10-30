@@ -1,0 +1,38 @@
+{
+  "Q0300_original_history": {
+    "status": "PASS",
+    "reason": "Đãđọclại:đúngDeepcoolCH160TemperedGlass,từcatalogv3.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  },
+  "Q0300_brief_history": {
+    "status": "FAIL",
+    "reason": "Đãđọclại:profilecósảnphẩmđúngnhưngtrảclarify,khôngđápvậtliệuhông.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  },
+  "Q0300_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Đãđọclại:đúngDeepcoolCH160TemperedGlass,từcatalogv3.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  },
+  "Q0478_original_history": {
+    "status": "PASS",
+    "reason": "Đãđọclại:đủG.Skill2thanh×32GBmỗithanh,từcatalogv3,cònđoạnRAM/Photoshopthừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  },
+  "Q0478_brief_history": {
+    "status": "FAIL",
+    "reason": "Đãđọclại:bỏbốtrí2×32GB,trảPhotoshop/DDR5thaykit.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  },
+  "Q0478_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Đãđọclại:đủG.Skill2thanh×32GBmỗithanh,từcatalogv3,cònđoạnRAM/Photoshopthừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of all6controlled outputs and exact source owners, separate from grade. Not independent or production improvement."
+  }
+}

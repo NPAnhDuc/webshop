@@ -1,0 +1,21 @@
+{
+  "baseline": "kb3_campaign_scope_r1",
+  "runtime_hashes_verified": true,
+  "evaluation_only": true,
+  "development_exposed": true,
+  "independent_validation": false,
+  "model_calls": 0,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_files": [
+    {
+      "path": "AI\\data\\business_sql\\scenario_v1\\documents\\pricing-policy-v2.md",
+      "sha256": "10dfb944cc46850917cb2b237579c78c10ba42e4004e2acbd8e63473a9bca852"
+    },
+    {
+      "path": "AI\\data\\business_sql\\scenario_v1\\documents\\sales-plan-2026-Q3-v1.md",
+      "sha256": "b88b384653b356ccaa8cf048684b6ce0d3a9504931286612002a0d8b1be6e7f0"
+    }
+  ],
+  "plan": "Typed source-backed numeric comparison with exact arithmetic and provenance. Separate user operand, source cap, margin minima, no-stacking and conditional approval; no hard-coded cap or benchmark IDs in runtime. No implementation or evaluation success claimed."
+}

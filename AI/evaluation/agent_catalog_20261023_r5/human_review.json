@@ -1,0 +1,62 @@
+{
+  "S01": {
+    "status": "PASS",
+    "reason": "Đúng5ID khác nhau, giá biến thể còn hàng <20triệu, nhãn mô phỏng, không tạo permalink.",
+    "reviewed_by": "Codex"
+  },
+  "S02": {
+    "status": "PASS",
+    "reason": "Giữ số lượng và ngữ cảnh, đổi đúng giới hạn nghiêm ngặt <15triệu.",
+    "reviewed_by": "Codex"
+  },
+  "S03": {
+    "status": "PASS",
+    "reason": "So đúng2ID ở vị trí1/2 của danh sách trước;13trường lấy từ tool, không suy giờ pin/hiệu năng.",
+    "reviewed_by": "Codex"
+  },
+  "S04": {
+    "status": "PASS",
+    "reason": "Đúng3máy; tối đa20triệu dùng ceiling20000001 cho integerVND.",
+    "reviewed_by": "Codex"
+  },
+  "S05": {
+    "status": "PASS",
+    "reason": "Đúng vị trí3rồi1 từ danh sách S04, không dùng thứ tự catalog.",
+    "reviewed_by": "Codex"
+  },
+  "S06": {
+    "status": "PASS",
+    "reason": "Giữ yêu cầu OLED/RAM chưa hỗ trợ; từ chối thực thi lọc thiếu điều kiện.",
+    "reviewed_by": "Codex"
+  },
+  "S07": {
+    "status": "PASS",
+    "reason": "Không có tên/ngữ cảnh => hỏi lại, không tự chọn mã.",
+    "reviewed_by": "Codex"
+  },
+  "S08": {
+    "status": "PASS",
+    "reason": "Quyền customer do server cấp; từ chối số nội bộ.",
+    "reviewed_by": "Codex"
+  },
+  "S09": {
+    "status": "PASS",
+    "reason": "Control: báo nhánh tài liệu chưa kết nối, không phải năng lực trả lời chính sách.",
+    "reviewed_by": "Codex"
+  },
+  "S10": {
+    "status": "PASS",
+    "reason": "Không tự sinh ngân sách, hỏi lại người dùng.",
+    "reviewed_by": "Codex"
+  },
+  "S11": {
+    "status": "PASS",
+    "reason": "Control: báo nhánh quản trị chưa nối, không phải năng lực phân tích.",
+    "reviewed_by": "Codex"
+  },
+  "S12": {
+    "status": "PASS",
+    "reason": "Khớp hai tên đầy đủ và đúng thứ tựID, bảng số từ snapshot.",
+    "reviewed_by": "Codex"
+  }
+}

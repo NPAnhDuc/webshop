@@ -1,0 +1,52 @@
+{
+  "bank_sha256": "66896febeb1c8bb040e58158ea7379c8446d20d645857d15bf8ab632b35fa222",
+  "gold_sha256": "43856704b69c1c21d38c110c26f71663cb793ec62da612a47fdae044e5b68db6",
+  "registry_sha256": "336a8da8c484eaffbd28f544d9aa54254b10a2be05db7a919ec1c71095c25ce0",
+  "provenance": {
+    "D:\\Chatbot\\chatbotshop\\AI\\data\\unstructured\\technology_20261020\\catalog_facts.json": "575daa032593cf41469d4fab067a53383f78b5463b4e8ea5ffaa345c1e7b6fc7",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_binding_20261022_r2\\results.json": "5f5248a6490877e95b3e8a90319e5199757ef32463100d4b27efb37287c94931",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\history_binding_20261022_r2\\metadata.json": "ba56c52aed4dfa4b6abe5aa8eda02d80e2b669d83591953be09cf0a0af6187ea",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\quality_loop_20261021\\old100_patch9\\results.json": "3cffac8cda963112f626e88cf15eaec6d77722ee5a872d4048019f3321aaf423",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\bank.json": "991bd307af323b670b3fe74f982218bee6ba2820ccea7517199e113137c7936d",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\gold.json": "43856704b69c1c21d38c110c26f71663cb793ec62da612a47fdae044e5b68db6",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\registry.json": "64282e605b9b96fed51e3963c62db02dd18cd3076886d8fdaeb3eac5382f46bb",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\metadata.json": "a242345c6aa36ea4a2263e877f4948e3f6bd19cfcd01d7372c50ffccc87570d6",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\field_intent_20261023_r15\\results.json": "c851b0e3ef494ef725c688489f9f43295997af4d6cbfc10d7f5d66a9a669e5a6"
+  },
+  "code": {
+    "app.py": "20d8f2228d56906a9d3dd0b5635b86e2b8465046b6ef5ede27d0b46489985f1b",
+    "shopbot\\__init__.py": "3d3522e3a3d7e828a278da85449f12b48558b67133240f3a0800150e81f3e5b4",
+    "shopbot\\analytics.py": "4222a12407603b8a6adf40cdf166aa853f1e987d01da000fd0a0d08dc67f562a",
+    "shopbot\\basic_rag.py": "d80b6a19982c866db5aa5ed916162033536bff9a253f8aa2c67cd3ec66c22bf9",
+    "shopbot\\business_analysis.py": "88b472889d9671c957b74e314a6b8fa315b3e9e30c9cac05bf50817de576074d",
+    "shopbot\\business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098",
+    "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+    "shopbot\\conversation.py": "b703252837273e2212d72bd59e0375a699d0460325f9a2d17e4cd9d38146ed81",
+    "shopbot\\dense_retrieval.py": "7941050449f41809a678f02e6afd72071511444dc339aa0a0cbdd494e24fd95f",
+    "shopbot\\engine.py": "748659add7f7aee854fb62b1944019073037b86642398b47b4472f7f1843c3d8",
+    "shopbot\\grounded_rag.py": "78b0cf822b4f3e574a664ef5373ee3c5ef61c94c574d90432ddfb5ba99f4b323",
+    "shopbot\\knowledge.py": "24e7219ea5380da3c79372966544df97050bcd32a25b69263b2ea6a54bcbb1fe",
+    "shopbot\\knowledge_ui.py": "e25726ad79ddc55ff06b7de66c1dd6ce7458f74e32357d944208cd4feb15edf6",
+    "shopbot\\layout.py": "fd1421f7a30af63220097d0858ad5a10d2bc374b62c916c392c760d4e5273ad3",
+    "shopbot\\metric_contract.py": "29a26a03951eb6a7f25a58425c36b0d7634204a5fe8cec42a10aafe617c06a41",
+    "shopbot\\metric_controller.py": "06fc782e5b981ad52a404a4fb18774c67f7aa2d703c4fb2523bee21577d84fef",
+    "shopbot\\monthly.py": "3f21779a2a7f26e8232e88dfd84a64800b1956e5381610484716d1c7d6a8d93a",
+    "shopbot\\monthly_ui.py": "ec4de1c4c621c08c7ee36dfcecae3aee47592016cf2d153fa867e7e49990adc7",
+    "shopbot\\quality_eval.py": "aa6e65141aeb9e64b06e573c03cce301e1156e93dd4bbcbc7deb2ed84e3a8633",
+    "shopbot\\rag_answer.py": "e9d80d574d6327d6309029852f894d3aab0759f5b09298f967b08db49880623e",
+    "shopbot\\rag_scope.py": "80daaaea7e4ef7a78e5bb1a44314e75ca9a212b00ac9d24977ed70a236ffee81",
+    "shopbot\\reporting.py": "5a40a22db036f6621bcd1c4c8c9efd8b6957e47bc676ddf11954461d5ef92584",
+    "shopbot\\retrieval.py": "4eed4e1b4d85fc3c36d4a3b03375a26381f6cb0920f2f2a50ec190b18c490bf4",
+    "shopbot\\sales.py": "674b18a56448f71bcb7fc6830cd21d0f260c7e019f9dfee65204410cb36a688a",
+    "shopbot\\store.py": "57447d75722203c5b6cb0da0c8e0e0dba7bb5cada88d460ecc93d801cb53c9bf",
+    "shopbot\\validation.py": "5affcef867af12a96b849e8f22a4685d96982081d6b7cc7247adc57a84ee62e5",
+    "scripts\\run_quality_field_intent_probe_r16.py": "edd8e376eaf94b3940f9a95cc2986b3c0cc816307104d302d62dfd0176d6d6dd"
+  },
+  "config": {
+    "OLLAMA_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+    "OLLAMA_BASE_URL": "http://127.0.0.1:11435",
+    "OLLAMA_NUM_GPU": "99"
+  },
+  "system_sha256": "78db64423c5641916e1eecdb9bec924418ff46410d9ae33f6750c881fdfd5da8",
+  "design": "Same91r15questions/context, goldbyteidentical. Candidate protocol: source-schema VNdescriptions and required per-production-question_parts decisions, RAGsentinel triggers wholefallback. Aggregateintent measured against originalgold; no formal per-part semanticgold or productionlookup/training. Two protocol changes bundled; no isolated attribution."
+}

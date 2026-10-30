@@ -1,0 +1,7 @@
+{
+  "state": "old100_passed_broader_development_needed",
+  "candidate_retained": true,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "Same24development17to18semanticPASSbyclarifyingunboundreferenceD10. old100_patch9completed87PASS/13FAIL,noPASS-to-FAILversuspatch7. Keepcandidatefrozenforbroader479development;6targetedfailuresremain(D15-D20).Reservednotopened,notproductionaccepted."
+}

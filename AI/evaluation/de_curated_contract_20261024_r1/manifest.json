@@ -1,0 +1,16 @@
+{
+  "schema": "de-curated-eligibility-v1",
+  "source_id": "retail_sim_v1",
+  "data_kind": "simulation",
+  "status": "eligible_for_simulation_curated_build",
+  "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+  "assumptions_sha256": "91ce2236467e0ed1be3adbb85acf8b47cdfb7c9004c36daa0583dd9f353e39b5",
+  "implementation_sha256": "d2c053db614a717a6774023e2e071e23c81ba75151988470e293ec551a600357",
+  "curated_published": false,
+  "active_source_changed": false,
+  "limitations": [
+    "Eligibility only; no curated tables or active pointer published.",
+    "Declared simulation currency/accounting, not certification of real data or licensing.",
+    "Hash/no-overwrite protocol is not a signature or WORM storage."
+  ]
+}

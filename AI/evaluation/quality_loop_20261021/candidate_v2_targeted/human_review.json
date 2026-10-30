@@ -1,0 +1,272 @@
+{
+  "Q0003": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0006": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0007": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0012": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0026": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0031": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0038": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0048": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0077": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0082": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0095": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0109": {
+    "status": "PASS",
+    "cause": "SEMANTIC_CONTROL",
+    "reason": "Đã đọc câu trả lời patch2: đúng giới hạn tài liệu hoặc giải thích điều kiện chính; còn nhiễu/lặp ở vài câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0112": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0126": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0163": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0173": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0263": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0299": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0307": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0308": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0320": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0329": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0335": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc đối chứng: trả đủ các trường hoặc đúng từ chối/giới hạn nguồn. Q0263 có thêm dữ kiện KC3000 không liên quan, cần giảm nhiễu; không gán dữ kiện đó cho Samsung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0125": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0164": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0210": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0247": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0300": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0373": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc câu trả lời và nguồn: giữ đúng sản phẩm, trả đủ thuộc tính bị thiếu ở v1 (bộ RAM/độ trễ/VRAM/vật liệu hông). Một số câu còn nội dung tham khảo thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0055": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Vẫn đưa yêu cầu UPDATE về ngoài phạm vi thay vì giải thích chế độ chỉ đọc; không thực hiện ghi SQL.",
+    "reviewed_by": "Codex"
+  },
+  "Q0267": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_ANSWER",
+    "reason": "Có hoàn trả 4 nhưng thiếu đơn hàng 126, thêm giá vốn không được hỏi.",
+    "reviewed_by": "Codex"
+  },
+  "Q0301": {
+    "status": "FAIL",
+    "cause": "CONTEXT_LOSS",
+    "reason": "Vẫn hỏi lại vật liệu hông Corsair dù có lịch sử sản phẩm.",
+    "reviewed_by": "Codex"
+  },
+  "Q0352": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_ANSWER",
+    "reason": "Có lãi hoạt động nhưng thiếu chi phí vận hành.",
+    "reviewed_by": "Codex"
+  },
+  "Q0396": {
+    "status": "FAIL",
+    "cause": "REGRESSION_SELECTION",
+    "reason": "V1 đã trả đủ loại và thể tích; patch2 trả thể tích nhưng thay loại bằng vật liệu hông.",
+    "reviewed_by": "Codex"
+  },
+  "Q0411": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0446": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0467": {
+    "status": "PASS",
+    "cause": "PRODUCT_ATTRIBUTE_FIXED",
+    "reason": "Đã đọc nguyên văn và nguồn: đúng VRAM 16GB, vật liệu hông Tempered Glass hoặc đúng GPU cùng xung 1320MHz; khắc phục lỗi v1 tương ứng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0458": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  },
+  "Q0468": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  },
+  "Q0473": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  },
+  "Q0478": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  },
+  "Q0501": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  },
+  "Q0512": {
+    "status": "PASS",
+    "cause": "CONTROL_SAMPLE",
+    "reason": "Đã đọc câu trả lời và kiểm tra nguồn qua grader: đầy đủ thuộc tính yêu cầu của đúng sản phẩm. Vẫn có nội dung tham khảo thừa ở câu bộ RAM.",
+    "reviewed_by": "Codex"
+  }
+}

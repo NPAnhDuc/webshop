@@ -1,0 +1,230 @@
+{
+  "schema": "de-ledger-audit-v1",
+  "implementation_sha256": "23ca86242b4e1aff73dfafbeb9279f633c198503b8ea79dd6f12a6c70ad8e958",
+  "audited_at": "2026-10-23T15:19:54.729325+00:00",
+  "source": {
+    "path": "D:\\Chatbot\\chatbotshop\\AI\\data\\business_sql\\scenario_v1\\shop.sqlite",
+    "sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "metadata": {
+      "scenario_id": "retail_sim_v1",
+      "source": "demo"
+    },
+    "data_kind": "simulation",
+    "catalog": {
+      "path": "D:\\Chatbot\\chatbotshop\\AI\\data\\agent_platform_20261023\\catalog_v1\\catalog_public.json",
+      "sha256": "b3f66fafadc77b5c4824ae9b0400af7a912fa217d3b6b872a074e44f4f2da743"
+    }
+  },
+  "passed": true,
+  "checks": [
+    {
+      "check": "sqlite_integrity",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "foreign_keys",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:operating_expenses",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:operating_expenses",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:operating_expenses",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "line_arithmetic",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "ledger_signs",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "nonnegative_expenses",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "sale_matches_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "return_matches_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "return_totals_within_sale",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "no_unexplained_ledger_rows",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "catalog_unique_ids",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "exact_catalog_sku_identity",
+      "passed": true,
+      "violations": 0
+    }
+  ],
+  "profiles": {
+    "products": {
+      "rows": 67,
+      "first_observed_day": null,
+      "last_observed_day": null
+    },
+    "orders": {
+      "rows": 1427,
+      "first_observed_day": "2025-10-01",
+      "last_observed_day": "2026-09-30"
+    },
+    "order_items": {
+      "rows": 1717,
+      "first_observed_day": null,
+      "last_observed_day": null
+    },
+    "returns": {
+      "rows": 31,
+      "first_observed_day": "2025-10-25",
+      "last_observed_day": "2026-09-04"
+    },
+    "financial_ledger": {
+      "rows": 1748,
+      "first_observed_day": "2025-10-01",
+      "last_observed_day": "2026-09-30"
+    },
+    "operating_expenses": {
+      "rows": 99,
+      "first_observed_day": "2025-10-31",
+      "last_observed_day": "2026-09-30"
+    }
+  },
+  "observed_totals": {
+    "rows": 1748,
+    "net_units": 1686,
+    "net_revenue": 13495418000,
+    "net_cogs": 11615510000,
+    "gross_profit": 1879908000
+  },
+  "quarantine_samples": [],
+  "quarantine_sample_limit": 25,
+  "source_modified": false,
+  "curated_published": false,
+  "limitations": [
+    "Staging audit only; not a full ingestion or accounting certification.",
+    "Does not replay FIFO, reconcile receipts/inventory or verify tax, currency and business policy.",
+    "Observed date span and row counts do not establish complete coverage; absent dates are not filled with zero.",
+    "Rows are never deleted, deduplicated, imputed or merged automatically."
+  ]
+}

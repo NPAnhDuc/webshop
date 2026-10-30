@@ -1,0 +1,6 @@
+{
+  "keep_for_regression": true,
+  "accepted": false,
+  "reason": "Confirmed missing-field fixes on matched89; remaining semantic failures and two combined regressions require old100 regression and further development review.",
+  "validation_opened": false
+}

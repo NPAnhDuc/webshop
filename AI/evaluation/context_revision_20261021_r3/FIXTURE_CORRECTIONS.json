@@ -1,0 +1,42 @@
+[
+  {
+    "id": "R2D05",
+    "before": "Doanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2.",
+    "after": "Doanh thu thuần: 1189908000 VND."
+  },
+  {
+    "id": "R2D06",
+    "before": "Đơn hàng: 131. Sản phẩm hoàn trả: 2.",
+    "after": "Đơn hàng: 131."
+  },
+  {
+    "id": "R2D07",
+    "before": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả.",
+    "after": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+  },
+  {
+    "id": "R2D08",
+    "before": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả.",
+    "after": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+  },
+  {
+    "id": "R2V05",
+    "before": "Doanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2.",
+    "after": "Doanh thu thuần: 1189908000 VND."
+  },
+  {
+    "id": "R2V06",
+    "before": "Đơn hàng: 131. Sản phẩm hoàn trả: 2.",
+    "after": "Đơn hàng: 131."
+  },
+  {
+    "id": "R2V07",
+    "before": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả.",
+    "after": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+  },
+  {
+    "id": "R2V08",
+    "before": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả.",
+    "after": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+  }
+]

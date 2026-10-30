@@ -1,0 +1,13 @@
+{
+  "technical_documents": 34,
+  "quoted_development_documents": 28,
+  "chunks": 37,
+  "source_paragraphs": 34,
+  "candidate_units": 34,
+  "split_paragraph_documents": [],
+  "max_unit_words": 85,
+  "exact_span_and_content_checks": true,
+  "model_calls": 0,
+  "production_changed": false,
+  "semantic_gain_measured": false
+}

@@ -1,0 +1,439 @@
+{
+  "cases": 44,
+  "distinct_question_texts": 22,
+  "parts": 68,
+  "raw": {
+    "exact_case_agreement": 25,
+    "part_agreement": 45,
+    "confusion": {
+      "correct_accept": 37,
+      "correct_reject": 8,
+      "false_accept": 20,
+      "false_reject": 3
+    },
+    "errors": [
+      {
+        "id": "R12-01-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-02-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-02-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-03-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-04-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-05-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-06-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-07-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-08-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-09-contrast",
+        "part": "P2",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-10-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-11-base",
+        "part": "P1",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-11-base",
+        "part": "P2",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-12-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-12-contrast",
+        "part": "P2",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-13-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-13-contrast",
+        "part": "P2",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-15-contrast",
+        "part": "P1",
+        "category": "false_unknown",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-16-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-17-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-19-contrast",
+        "part": "P2",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-20-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-20-contrast",
+        "part": "P2",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      }
+    ],
+    "categories": {
+      "supported": {
+        "correct_accept": 31,
+        "false_reject": 1
+      },
+      "omitted_part": {
+        "false_accept": 9,
+        "correct_reject": 4
+      },
+      "wrong_attribute": {
+        "false_accept": 10,
+        "correct_reject": 3
+      },
+      "valid_unknown": {
+        "correct_accept": 6,
+        "false_reject": 2
+      },
+      "false_unknown": {
+        "false_accept": 1
+      },
+      "wrong_scope": {
+        "correct_reject": 1
+      }
+    },
+    "cohorts": {
+      "recorded": {
+        "cases": 22,
+        "exact_case_agreement": 20,
+        "parts": 34,
+        "part_agreement": 31
+      },
+      "constructed": {
+        "cases": 22,
+        "exact_case_agreement": 5,
+        "parts": 34,
+        "part_agreement": 14
+      }
+    },
+    "roles": {
+      "customer": {
+        "cases": 22,
+        "exact_case_agreement": 10,
+        "parts": 30,
+        "part_agreement": 17
+      },
+      "admin": {
+        "cases": 22,
+        "exact_case_agreement": 15,
+        "parts": 38,
+        "part_agreement": 28
+      }
+    }
+  },
+  "guarded": {
+    "exact_case_agreement": 33,
+    "part_agreement": 53,
+    "confusion": {
+      "correct_accept": 28,
+      "correct_reject": 25,
+      "false_accept": 3,
+      "false_reject": 12
+    },
+    "errors": [
+      {
+        "id": "R12-01-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-02-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-03-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-04-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-06-contrast",
+        "part": "P1",
+        "category": "omitted_part",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-11-base",
+        "part": "P1",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-11-base",
+        "part": "P2",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-13-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-13-contrast",
+        "part": "P1",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-13-contrast",
+        "part": "P2",
+        "category": "wrong_attribute",
+        "expected": false,
+        "predicted": true
+      },
+      {
+        "id": "R12-19-contrast",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-20-base",
+        "part": "P1",
+        "category": "supported",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-21-base",
+        "part": "P1",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-21-base",
+        "part": "P2",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      },
+      {
+        "id": "R12-21-base",
+        "part": "P3",
+        "category": "valid_unknown",
+        "expected": true,
+        "predicted": false
+      }
+    ],
+    "categories": {
+      "supported": {
+        "false_reject": 7,
+        "correct_accept": 25
+      },
+      "omitted_part": {
+        "correct_reject": 12,
+        "false_accept": 1
+      },
+      "wrong_attribute": {
+        "correct_reject": 11,
+        "false_accept": 2
+      },
+      "valid_unknown": {
+        "correct_accept": 3,
+        "false_reject": 5
+      },
+      "false_unknown": {
+        "correct_reject": 1
+      },
+      "wrong_scope": {
+        "correct_reject": 1
+      }
+    },
+    "cohorts": {
+      "recorded": {
+        "cases": 22,
+        "exact_case_agreement": 14,
+        "parts": 34,
+        "part_agreement": 23
+      },
+      "constructed": {
+        "cases": 22,
+        "exact_case_agreement": 19,
+        "parts": 34,
+        "part_agreement": 30
+      }
+    },
+    "roles": {
+      "customer": {
+        "cases": 22,
+        "exact_case_agreement": 16,
+        "parts": 30,
+        "part_agreement": 23
+      },
+      "admin": {
+        "cases": 22,
+        "exact_case_agreement": 17,
+        "parts": 38,
+        "part_agreement": 30
+      }
+    }
+  },
+  "quote_issue_cases": [
+    "R12-01-base",
+    "R12-01-contrast",
+    "R12-02-contrast",
+    "R12-03-base",
+    "R12-03-contrast",
+    "R12-04-base",
+    "R12-04-contrast",
+    "R12-05-contrast",
+    "R12-07-contrast",
+    "R12-08-contrast",
+    "R12-09-contrast",
+    "R12-10-contrast",
+    "R12-12-contrast",
+    "R12-13-base",
+    "R12-15-contrast",
+    "R12-16-contrast",
+    "R12-17-contrast",
+    "R12-19-contrast",
+    "R12-20-base",
+    "R12-20-contrast",
+    "R12-21-base"
+  ],
+  "quote_issue_parts": 26,
+  "quote_count": 55,
+  "total_seconds": 144.814,
+  "median_seconds": 2.5625,
+  "prompt_token_range": [
+    410,
+    1509
+  ],
+  "output_token_range": [
+    100,
+    283
+  ],
+  "done_reasons": {
+    "stop": 44
+  },
+  "production_verifier_installed": false,
+  "decision": "Reject r11-style combined judge as production gate: false accepts survive literal membership; valid unknowns, tables, implicit answers and harmless typography are falsely rejected. Keep diagnostic evidence and accepted patch9 unchanged."
+}

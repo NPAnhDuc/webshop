@@ -1,0 +1,312 @@
+{
+  "R9-001": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Valid thread-count unknown now correctly accepted; source contains no thread count. Literal answer quote is present."
+  },
+  "R9-002": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-003": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-004": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-005": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-006": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-007": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-008": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-009": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-010": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-011": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Nó không sửa được lỗi xảy ra ngoài chip hoặc trên đường truyền tới bộ điều khiển CPU."
+        ]
+      }
+    },
+    "finding": "Guard false rejection: raw semantic flag correctly accepts scoped DRAM/system-ECC explanation under frozen interpretation, but selected quote is only in source, not answer. Keep original true gold. No protocol revision after seeing result."
+  },
+  "R9-012": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-013": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-014": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-015": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "P2 literal quotes exist but are generic Thunderbolt4/accessory advice, not sufficient model-specific display support. Full candidate answer does contain Apple-specific DisplayPort support, so case gold remains true; quote sufficiency and rationale are weak. Do not equate membership with semantic proof."
+  },
+  "R9-016": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-017": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-018": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "First quote cuts last digit from1493219000; it is a literal prefix and passes membership, second quote contains full correct amount. Numeric boundary/quote sufficiency limitation; do not use extracted quote as standalone report number."
+  },
+  "R9-019": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-020": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-021": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-022": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-023": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-024": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-025": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Dell Latitude 3430: Processor Core: 6."
+        ]
+      }
+    },
+    "finding": "Model again cites six cores from source as candidate content. Nonmember guard correctly rejects; candidate only names CPU model."
+  },
+  "R9-026": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh."
+        ]
+      }
+    },
+    "finding": "Model again cites2x32GB kit from source, absent in answer. Guard correctly rejects."
+  },
+  "R9-027": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-028": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "MSI Modern 15 B12M: RAM Type: DDR4.",
+          "Lenovo LOQ Gaming 15IRH8: RAM Type: DDR5."
+        ]
+      }
+    },
+    "finding": "P2 DDR4/DDR5 quotes copied from sources, absent in capacity-only candidate answer. Guard correctly rejects. P1 valid."
+  },
+  "R9-029": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Missing-Q2 correctly rejected; rationale now correctly distinguishes source Q2 availability from candidate omission."
+  },
+  "R9-030": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read all part flags, quotes and notes against frozen candidate answer and supplied evidence; no additional decision/membership discrepancy. Notes may be cut at160characters and contain mixed language; untrusted, never training/KB."
+  },
+  "R9-031": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Doanh thu thuần: 1427320000 VND."
+        ]
+      },
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Đơn hàng: 163."
+        ]
+      },
+      "P3": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Sản phẩm hoàn trả: 4."
+        ]
+      }
+    },
+    "finding": "All3 raw flags wrongly approve provided source numbers despite false-unknown candidate. All3 nonmember quotes rejected. This does not prove guard detects false unknown if model quotes actual unknown sentence."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "cases": 100,
+  "semantic_pass": 88,
+  "semantic_fail": 12,
+  "roles": {
+    "customer": {
+      "PASS": 48,
+      "FAIL": 2
+    },
+    "admin": {
+      "PASS": 40,
+      "FAIL": 10
+    }
+  },
+  "compared_to": "old100_patch7",
+  "before_pass": 87,
+  "fixed_ids": [
+    "C35",
+    "A20"
+  ],
+  "regressed_ids": [
+    "A36"
+  ],
+  "failed_ids": [
+    "C03",
+    "C29",
+    "A15",
+    "A23",
+    "A29",
+    "A30",
+    "A35",
+    "A36",
+    "A39",
+    "A40",
+    "A44",
+    "A50"
+  ],
+  "unchanged_answer_action_source_cases": 89,
+  "changed_case_reviews": 11,
+  "changed_ids": [
+    "C17",
+    "C33",
+    "C35",
+    "C43",
+    "A17",
+    "A20",
+    "A21",
+    "A34",
+    "A35",
+    "A36",
+    "A48"
+  ],
+  "quote_checks": 212,
+  "integrity_issues": [],
+  "median_seconds": 5.16,
+  "total_seconds": 531.44,
+  "previous_median_seconds": 4.875,
+  "previous_total_seconds": 486.16,
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Old development benchmark; same rubric includes known secondary issues in PASS,A34contradiction remains. Net score gain does not erase campaign regression. No speed attribution, warmup/cache uncontrolled."
+}

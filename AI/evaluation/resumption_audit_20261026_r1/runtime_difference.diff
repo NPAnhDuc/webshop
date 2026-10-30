@@ -1,0 +1,73 @@
+--- evaluated_unsupported_write_candidate
+
++++ current_workspace_runtime
+
+@@ -101,7 +101,7 @@
+
+         base['timings']={'total_ms':round((time.monotonic()-start)*1000,1)}
+         return base
+     q=normalize(question)
+-    if role!='admin' and re.search(r'\b(?:gia von|gia nhap|loi nhuan|ngan sach marketing|chien luoc noi bo)\b',q):
++    if role!='admin' and re.search(r'\b(?:gia von|gia nhap|loi nhuan|lai gop|ngan sach marketing|chien luoc noi bo)\b|\b(?:doanh thu|doanh so|chi phi van hanh)(?: cua)? (?:shop|cua hang|ben ban)\b',q):
+         base['intent']='denied';return finish('Tài liệu nội bộ không được cung cấp trong cuộc trò chuyện người mua.','denied','denied')
+     from .capability_guard import unsupported_write
+     if unsupported_write(question):
+@@ -132,7 +132,10 @@
+
+     # Calendar references can be bound without dialogue. A known period does
+     # not identify an unnamed product/document in the same question, however.
+     object_reference=re.search(r'\b(?:bo|may|san pham|tai lieu|phien ban|ban) (?:nay|do)\b',q)
+-    period_reference=re.search(r'\b(?:thang|quy|ky) (?:nay|do)\b',q)
++    # "kỳ này" in a rule question ("… có đúng không") names no specific
++    # period; a figure for "kỳ này" or an anaphoric "kỳ đó" still needs one.
++    rule_question=re.search(r'\b(?:co dung|dung khong|duoc khong|co nen|nen khong|co phai|hop le|sai khong)\b',q)
++    period_reference=re.search(r'\b(?:thang|quy|ky) do\b',q) or (re.search(r'\b(?:thang|quy|ky) nay\b',q) and not rule_question)
+     unresolved_reference=object_reference or (period_reference and not (scope['months'] or scope['quarters']))
+     if not p.get('history') and len(question)<160 and unresolved_reference and not re.search(r'\b20\d{2}\b',q):
+         return finish('Bạn đang nhắc tới sản phẩm/model, kỳ hoặc tài liệu cụ thể nào? Tôi cần xác định rõ đối tượng trước khi trả lời.','clarify','clarify')
+@@ -189,7 +192,10 @@
+
+     if subject:query+='\nĐối tượng/chủ đề trước: '+subject
+     scope_text='; '.join([*scope['months'],*scope['quarters']])
+     if scope_text:query+='\nKỳ được xác nhận: '+scope_text
+-    historical=role=='admin' and bool(re.search(r'\bv[12]\b|\bban cu\b|\bhieu luc\b',q))
++    # Two dated versions named in one question ("bản tháng 3 và bản từ tháng 4")
++    # is a version comparison: superseded documents must be retrievable.
++    historical=role=='admin' and bool(re.search(r'\bv[12]\b|\bban cu\b|\bhieu luc\b|\bphien ban\b',q)
++                                      or len(re.findall(r'\bban (?:quy dinh|chinh sach|tu|truoc|sau|moi|ap dung)\b',q))>=2)
+     retrieval_start=time.monotonic()
+     from .basic_rag import safe_public_source
+     requested_types=[]
+@@ -415,9 +421,20 @@
+
+     from .policy_comparison import current_discount_comparison,covered_comparison_parts,render_comparison
+     calculation=current_discount_comparison(question,role,scope,fragments,today)
+     computed_parts=covered_comparison_parts(part_ids,calculation)
++    from .identifier_binding import bind_identifier_rows,validity_check,render_validity
++    coded,code_bindings,keyed=bind_identifier_rows(question,part_ids,selection['answers'],fragments)
++    if code_bindings:selection=dict(selection,answers=coded,missing=[k for k in selection['missing'] if not (k in dict.fromkeys(b['part'] for b in code_bindings) and coded[k])])
++    validity,validity_parts=validity_check(question,part_ids,keyed,fragments,scope.get('reference_date') or today.isoformat())
++    computed_parts=computed_parts|validity_parts
+     claims=[];lines=[];missing=[];seen=set();used=set()
++    for result in validity or []:
++        source=result['source'];text=render_validity(result);used.add(source['chunk_id'])
++        lines.append(text+f"\n\n[Nguồn phép so ngày: {source['source']}, mục {source.get('heading_path','')}, đoạn {source['section']}, phiên bản {source.get('version','chưa rõ')}]")
++        claims.append(dict(text=text,calculation={k:v for k,v in result.items() if k not in ('source','quote')},
++                           evidence=[dict(chunk_id=source['chunk_id'],quotes=[result['quote']],source=source['source'])]))
+     for key,part in part_ids.items():
+         selected=selection['answers'][key]
++        if key in validity_parts:selected=[i for i in selected if i not in keyed]
+         if key not in computed_parts and (not selected or key in selection['missing']):missing.append(part)
+         if selected and key in selection['negative'] and key not in selection['missing']:lines.append('Không.')
+         for identifier in selected:
+@@ -465,7 +482,8 @@
+
+     base.update(answer='\n\n'.join(lines),sources=[d for d in docs if d['chunk_id'] in used],basic_action='answer',
+                 rag=dict(answerability=status,claims=claims,verified=True,unanswered=missing,part_evidence=selection['answers'],
+                          field_bindings=field_bindings,scope_checks=scope_checks,period_bindings=period_bindings,
+-                         calculations=[{k:v for k,v in calculation.items() if k!='source'}] if calculation else [],
++                         calculations=([{k:v for k,v in calculation.items() if k!='source'}] if calculation else [])+[{k:v for k,v in r.items() if k!='source'} for r in validity or []],
++                         code_bindings=code_bindings,
+                          available_fields=[dict(id=k,document_id=v['source'].get('document_id')) for k,v in fragments.items()],
+                          method='scoped retrieval and per-part source selection'),
+                 timings=dict(router_ms=router_ms,retrieval_ms=round((model_start-retrieval_start)*1000,1),model_ms=round((time.monotonic()-model_start)*1000,1),total_ms=round((time.monotonic()-start)*1000,1)))

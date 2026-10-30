@@ -1,0 +1,121 @@
+{
+  "cases": 112,
+  "parts": 112,
+  "question_texts": 12,
+  "profiles": 56,
+  "distinct_payloads": 112,
+  "raw": {
+    "three_state_agreement": 55,
+    "confusion": {
+      "answered -> answered": 54,
+      "missing -> answered": 22,
+      "missing -> explicit_unknown": 35,
+      "missing -> missing": 1
+    },
+    "answered_only": {
+      "correct_answered": 54,
+      "false_answered": 22,
+      "correct_not_answered": 36
+    },
+    "cohorts": {
+      "recorded": {
+        "correct_answered": 54,
+        "false_answered": 1,
+        "correct_not_answered": 1
+      },
+      "contrast": {
+        "false_answered": 21,
+        "correct_not_answered": 35
+      }
+    },
+    "false_answered": [
+      "Q0113_contrast",
+      "Q0125_contrast",
+      "Q0163_contrast",
+      "Q0175_contrast",
+      "Q0191_recorded",
+      "Q0191_contrast",
+      "Q0202_contrast",
+      "Q0246_contrast",
+      "Q0247_contrast",
+      "Q0321_contrast",
+      "Q0327_contrast",
+      "Q0356_contrast",
+      "Q0373_contrast",
+      "Q0391_contrast",
+      "Q0397_contrast",
+      "Q0398_contrast",
+      "Q0402_contrast",
+      "Q0422_contrast",
+      "Q0427_contrast",
+      "Q0432_contrast",
+      "Q0471_contrast",
+      "Q0472_contrast"
+    ]
+  },
+  "guarded": {
+    "three_state_agreement": 83,
+    "confusion": {
+      "answered -> answered": 54,
+      "missing -> answered": 22,
+      "missing -> missing": 29,
+      "missing -> explicit_unknown": 7
+    },
+    "answered_only": {
+      "correct_answered": 54,
+      "false_answered": 22,
+      "correct_not_answered": 36
+    },
+    "cohorts": {
+      "recorded": {
+        "correct_answered": 54,
+        "false_answered": 1,
+        "correct_not_answered": 1
+      },
+      "contrast": {
+        "false_answered": 21,
+        "correct_not_answered": 35
+      }
+    },
+    "false_answered": [
+      "Q0113_contrast",
+      "Q0125_contrast",
+      "Q0163_contrast",
+      "Q0175_contrast",
+      "Q0191_recorded",
+      "Q0191_contrast",
+      "Q0202_contrast",
+      "Q0246_contrast",
+      "Q0247_contrast",
+      "Q0321_contrast",
+      "Q0327_contrast",
+      "Q0356_contrast",
+      "Q0373_contrast",
+      "Q0391_contrast",
+      "Q0397_contrast",
+      "Q0398_contrast",
+      "Q0402_contrast",
+      "Q0422_contrast",
+      "Q0427_contrast",
+      "Q0432_contrast",
+      "Q0471_contrast",
+      "Q0472_contrast"
+    ]
+  },
+  "id_issue_parts": 28,
+  "total_seconds": 160.316,
+  "median_seconds": 1.2734999999999999,
+  "prompt_token_range": [
+    379,
+    723
+  ],
+  "output_token_range": [
+    59,
+    89
+  ],
+  "done_reasons": {
+    "stop": 112
+  },
+  "production_installed": false,
+  "decision": "Reject answered-only coverage gate: systematic near-attribute false approvals survive candidate-only context and valid answer IDs. Stop extending this judge family; inspect typed requested-field binding before another production repair."
+}

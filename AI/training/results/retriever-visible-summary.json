@@ -1,0 +1,32 @@
+{
+  "encoder": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 0.9184436003367106,
+      "recall_at_1": 1.0
+    },
+    {
+      "epoch": 2,
+      "loss": 0.5028128226598104,
+      "recall_at_1": 1.0
+    },
+    {
+      "epoch": 3,
+      "loss": 0.24462743600209555,
+      "recall_at_1": 1.0
+    }
+  ],
+  "selected_epoch": 0,
+  "validation_improved": false,
+  "test_recall_at_1": 1.0,
+  "training_examples": 734,
+  "training_source_groups": 25,
+  "weights_training_performed": true,
+  "deployment_approved": false,
+  "evidence": "Transcribed from visible Colab cell output; full artifact download still pending",
+  "metric_scope": "Small template-derived retrieval pilot, not end-to-end chatbot accuracy"
+}

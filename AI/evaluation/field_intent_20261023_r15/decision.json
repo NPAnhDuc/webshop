@@ -1,0 +1,6 @@
+{
+  "state": "not_ready_for_production",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "Not ready for typed-lookup shortcut: core-count intent improves in isolated schema task, but raw schema names yield empty/nearby fields, extras, and unsafe shortcutting of ambiguous/partially unsupported/source-specific questions. Keep patch9 unchanged."
+}

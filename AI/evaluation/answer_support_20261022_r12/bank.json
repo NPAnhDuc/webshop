@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "R12-01-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C12"
+    },
+    "payload": {
+      "question": "Nếu thanh DDR5 vừa kích thước thì cắm vào main DDR4 để chạy tạm được chứ?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Không.\n\nRãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]\n\nDDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-ddr5-basics-v1.md",
+          "title": "DDR5 khác DDR4 ở đâu, có cắm chung được không?",
+          "version": 1,
+          "text": "DDR5 khác DDR4 ở đâu, có cắm chung được không?\n\nDDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện. Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích. Phải chọn CPU, bo mạch và loại RAM phù hợp; không coi DDR5 là thanh thay thế trực tiếp cho khe DDR4.\n\nNguồn: https://media.kingston.com/kingston/articles/MKF_954-DDR5-Collateral_us.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-ram-upgrade-v1.md",
+          "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+          "version": 1,
+          "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "DDR5 có dùng thay trực tiếp trong main DDR4 được không?"
+      }
+    }
+  },
+  {
+    "id": "R12-01-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C12",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Nếu thanh DDR5 vừa kích thước thì cắm vào main DDR4 để chạy tạm được chứ?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "DDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện.",
+      "sources": [
+        {
+          "source": "tech-ddr5-basics-v1.md",
+          "title": "DDR5 khác DDR4 ở đâu, có cắm chung được không?",
+          "version": 1,
+          "text": "DDR5 khác DDR4 ở đâu, có cắm chung được không?\n\nDDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện. Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích. Phải chọn CPU, bo mạch và loại RAM phù hợp; không coi DDR5 là thanh thay thế trực tiếp cho khe DDR4.\n\nNguồn: https://media.kingston.com/kingston/articles/MKF_954-DDR5-Collateral_us.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-ram-upgrade-v1.md",
+          "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+          "version": 1,
+          "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "DDR5 có dùng thay trực tiếp trong main DDR4 được không?"
+      }
+    }
+  },
+  {
+    "id": "R12-02-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C14"
+    },
+    "payload": {
+      "question": "Mua màn 180 Hz thì dù máy chỉ dựng được 60 FPS tôi vẫn thấy game có 180 khung hình khác nhau mỗi giây đúng không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-refresh-fps-v1.md",
+          "title": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+          "version": 1,
+          "text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "glossary-refresh-rate-v1.md",
+          "title": "Tần số quét là gì?",
+          "version": 1,
+          "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Màn180Hz có tự bảo đảm180khung hình khác nhau khi máy chỉ dựng60FPS không?"
+      }
+    }
+  },
+  {
+    "id": "R12-02-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C14",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Mua màn 180 Hz thì dù máy chỉ dựng được 60 FPS tôi vẫn thấy game có 180 khung hình khác nhau mỗi giây đúng không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Tần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz.",
+      "sources": [
+        {
+          "source": "tech-refresh-fps-v1.md",
+          "title": "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+          "version": 1,
+          "text": "Màn hình nhiều Hz có tự làm game tăng FPS không?\n\nTần số quét là khả năng làm mới hình ảnh của màn hình. Để tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung. Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "glossary-refresh-rate-v1.md",
+          "title": "Tần số quét là gì?",
+          "version": 1,
+          "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Màn180Hz có tự bảo đảm180khung hình khác nhau khi máy chỉ dựng60FPS không?"
+      }
+    }
+  },
+  {
+    "id": "R12-03-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C15"
+    },
+    "payload": {
+      "question": "Tôi chủ yếu đọc PDF, làm Word và học trực tuyến. Có lý do gì bắt buộc chọn 144 Hz thay vì 60 Hz?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Tần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nVí dụ 144 Hz là 144 lần làm mới mỗi giây.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nVới một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nTần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập.\n\n[Nguồn: tech-refresh-study-v1.md, mục Học tập, văn phòng có bắt buộc màn hình 144 Hz không?, đoạn 1, phiên bản 1]\n\nSamsung xem 60 Hz đáp ứng nhiều tác vụ thường ngày như đọc tài liệu, email và duyệt web.\n\n[Nguồn: tech-refresh-study-v1.md, mục Học tập, văn phòng có bắt buộc màn hình 144 Hz không?, đoạn 1, phiên bản 1]\n\nChọn theo công việc và khả năng tạo khung hình của máy, không chỉ chọn con số Hz cao nhất.\n\n[Nguồn: tech-refresh-study-v1.md, mục Học tập, văn phòng có bắt buộc màn hình 144 Hz không?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-refresh-study-v1.md",
+          "title": "Học tập, văn phòng có bắt buộc màn hình 144 Hz không?",
+          "version": 1,
+          "text": "Học tập, văn phòng có bắt buộc màn hình 144 Hz không?\n\nHz là số lần màn hình làm mới mỗi giây. Samsung xem 60 Hz đáp ứng nhiều tác vụ thường ngày như đọc tài liệu, email và duyệt web. Tần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập. Chọn theo công việc và khả năng tạo khung hình của máy, không chỉ chọn con số Hz cao nhất.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "glossary-refresh-rate-v1.md",
+          "title": "Tần số quét là gì?",
+          "version": 1,
+          "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        },
+        {
+          "source": "tech-cpu-cores-clock-v1.md",
+          "title": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+          "version": 1,
+          "text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Đọc PDF,Word,học trực tuyến có bắt buộc144Hz không?"
+      }
+    }
+  },
+  {
+    "id": "R12-03-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C15",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Tôi chủ yếu đọc PDF, làm Word và học trực tuyến. Có lý do gì bắt buộc chọn 144 Hz thay vì 60 Hz?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "CPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi.",
+      "sources": [
+        {
+          "source": "tech-refresh-study-v1.md",
+          "title": "Học tập, văn phòng có bắt buộc màn hình 144 Hz không?",
+          "version": 1,
+          "text": "Học tập, văn phòng có bắt buộc màn hình 144 Hz không?\n\nHz là số lần màn hình làm mới mỗi giây. Samsung xem 60 Hz đáp ứng nhiều tác vụ thường ngày như đọc tài liệu, email và duyệt web. Tần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập. Chọn theo công việc và khả năng tạo khung hình của máy, không chỉ chọn con số Hz cao nhất.\n\nNguồn: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "glossary-refresh-rate-v1.md",
+          "title": "Tần số quét là gì?",
+          "version": 1,
+          "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        },
+        {
+          "source": "tech-cpu-cores-clock-v1.md",
+          "title": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+          "version": 1,
+          "text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Đọc PDF,Word,học trực tuyến có bắt buộc144Hz không?"
+      }
+    }
+  },
+  {
+    "id": "R12-04-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C17"
+    },
+    "payload": {
+      "question": "USB PD có chuẩn 240 W nên tôi cắm sạc 240 W vào máy nào cũng được công suất đó phải không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nMuốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nKhi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-usb-pd-v1.md",
+          "title": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+          "version": 1,
+          "text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-thunderbolt5-v1.md",
+          "title": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+          "version": 1,
+          "text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "PD240W có đảm bảo mọi máy nhận240W không?"
+      }
+    }
+  },
+  {
+    "id": "R12-04-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C17",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "USB PD có chuẩn 240 W nên tôi cắm sạc 240 W vào máy nào cũng được công suất đó phải không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "USB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp.",
+      "sources": [
+        {
+          "source": "tech-usb-pd-v1.md",
+          "title": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+          "version": 1,
+          "text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-thunderbolt5-v1.md",
+          "title": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C",
+          "version": 1,
+          "text": "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm. Khi tư vấn cần xác nhận cả cổng máy, cáp và dock đạt chuẩn phù hợp. Không dùng tên hoặc tốc độ của Thunderbolt 5 để mô tả một máy chỉ được ghi USB-C hoặc Thunderbolt thế hệ khác.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2023-09/thunderbolt-5-technology-brief.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "PD240W có đảm bảo mọi máy nhận240W không?"
+      }
+    }
+  },
+  {
+    "id": "R12-05-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C19"
+    },
+    "payload": {
+      "question": "Chỉ cần màn IPS là đủ để bảo đảm chỉnh ảnh in ra màu chuẩn chưa?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]\n\nKhông suy ra chất lượng màu chỉ từ tên IPS.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn.\n\n[Nguồn: tech-monitor-photo-v1.md, mục Chọn màn hình làm ảnh: ngoài IPS còn xem gì?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-panels-ips-oled-v1.md",
+          "title": "IPS, TN, VA và OLED: phân biệt tấm nền",
+          "version": 1,
+          "text": "IPS, TN, VA và OLED: phân biệt tấm nền\n\nIPS, TN và VA là các kiểu tấm nền LCD; OLED dùng cơ chế khác. Khi so sánh cần xem cả góc nhìn, màu, tương phản và chuyển động của đúng màn hình. Không suy ra chất lượng màu chỉ từ tên IPS. Từ FHD chỉ biết độ phân giải; mô tả LED chung chung chưa xác nhận máy là IPS hay OLED. Chỉ gán tấm nền cho sản phẩm khi có nguồn xác nhận đúng phiên bản.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/how-to-choose-between-tn-va-and-ips-panels-for-the-games-you-play/.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-monitor-photo-v1.md",
+          "title": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+          "version": 1,
+          "text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Chỉ IPS có đủ bảo đảm chỉnh ảnh in màu chuẩn không?"
+      }
+    }
+  },
+  {
+    "id": "R12-05-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C19",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Chỉ cần màn IPS là đủ để bảo đảm chỉnh ảnh in ra màu chuẩn chưa?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "IPS, TN và VA là các kiểu tấm nền LCD; OLED dùng cơ chế khác.",
+      "sources": [
+        {
+          "source": "tech-panels-ips-oled-v1.md",
+          "title": "IPS, TN, VA và OLED: phân biệt tấm nền",
+          "version": 1,
+          "text": "IPS, TN, VA và OLED: phân biệt tấm nền\n\nIPS, TN và VA là các kiểu tấm nền LCD; OLED dùng cơ chế khác. Khi so sánh cần xem cả góc nhìn, màu, tương phản và chuyển động của đúng màn hình. Không suy ra chất lượng màu chỉ từ tên IPS. Từ FHD chỉ biết độ phân giải; mô tả LED chung chung chưa xác nhận máy là IPS hay OLED. Chỉ gán tấm nền cho sản phẩm khi có nguồn xác nhận đúng phiên bản.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/how-to-choose-between-tn-va-and-ips-panels-for-the-games-you-play/.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        },
+        {
+          "source": "tech-monitor-photo-v1.md",
+          "title": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?",
+          "version": 1,
+          "text": "Chọn màn hình làm ảnh: ngoài IPS còn xem gì?\n\nCần xem độ phân giải theo kích thước màn hình, góc nhìn, độ chính xác màu, không gian màu và hiệu chuẩn. sRGB, Adobe RGB là các không gian màu; con số phủ màu không thay thế việc kiểm tra độ chính xác màu. IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp.\n\nNguồn: https://www.benq.com/en-us/knowledge-center/knowledge/choosing-the-right-monitor-photo-editing.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Chỉ IPS có đủ bảo đảm chỉnh ảnh in màu chuẩn không?"
+      }
+    }
+  },
+  {
+    "id": "R12-06-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C20"
+    },
+    "payload": {
+      "question": "Tôi để bảng Excel và thanh công cụ cố định cả ngày. OLED có chắc chắn miễn nhiễm burn-in không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Nguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-oled-static-v1.md",
+          "title": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+          "version": 1,
+          "text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "OLED có chắc miễn nhiễm burn-in khi hiện nội dung tĩnh cả ngày không?"
+      }
+    }
+  },
+  {
+    "id": "R12-06-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C20",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Tôi để bảng Excel và thanh công cụ cố định cả ngày. OLED có chắc chắn miễn nhiễm burn-in không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Điều kiện sử dụng và thiết kế từng model khác nhau.",
+      "sources": [
+        {
+          "source": "tech-oled-static-v1.md",
+          "title": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+          "version": 1,
+          "text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "OLED có chắc miễn nhiễm burn-in khi hiện nội dung tĩnh cả ngày không?"
+      }
+    }
+  },
+  {
+    "id": "R12-07-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C23"
+    },
+    "payload": {
+      "question": "RAM 16 GB có phải tôi được chỗ lưu ảnh gấp đôi SSD 8 GB không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Nói đơn giản, đó là cách máy tính trao đổi lệnh với ổ lưu trữ; tên NVMe không phải dung lượng ổ.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nRAM là bộ nhớ tạm khi chương trình chạy, khác dung lượng SSD lưu tệp.\n\n[Nguồn: tech-ram-capacity-v1.md, mục RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "glossary-nvme-v1.md",
+          "title": "NVMe là gì?",
+          "version": 1,
+          "text": "NVMe là gì?\n\nNVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe. Nói đơn giản, đó là cách máy tính trao đổi lệnh với ổ lưu trữ; tên NVMe không phải dung lượng ổ.\n\nNguồn kỹ thuật: https://nvmexpress.org/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        },
+        {
+          "source": "tech-ram-capacity-v1.md",
+          "title": "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ",
+          "version": 1,
+          "text": "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ\n\nRAM là bộ nhớ tạm khi chương trình chạy, khác dung lượng SSD lưu tệp. Nhiều ứng dụng cùng lúc cần thêm RAM. Intel khuyến nghị 16 GB cho game mới và cân nhắc 32 GB nếu vừa chơi vừa stream, trò chuyện hoặc mở nhiều ứng dụng. Đây là hướng dẫn theo tác vụ, không bảo đảm mọi game chạy được. Với học tập cần hỏi phần mềm, số ứng dụng chạy đồng thời và khả năng nâng cấp của đúng máy.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html"
+        }
+      ],
+      "parts": {
+        "P1": "RAM có phải dung lượng lưu tệp như SSD không?"
+      }
+    }
+  },
+  {
+    "id": "R12-07-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C23",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "RAM 16 GB có phải tôi được chỗ lưu ảnh gấp đôi SSD 8 GB không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "NVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.",
+      "sources": [
+        {
+          "source": "glossary-nvme-v1.md",
+          "title": "NVMe là gì?",
+          "version": 1,
+          "text": "NVMe là gì?\n\nNVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe. Nói đơn giản, đó là cách máy tính trao đổi lệnh với ổ lưu trữ; tên NVMe không phải dung lượng ổ.\n\nNguồn kỹ thuật: https://nvmexpress.org/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+        },
+        {
+          "source": "tech-ram-capacity-v1.md",
+          "title": "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ",
+          "version": 1,
+          "text": "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ\n\nRAM là bộ nhớ tạm khi chương trình chạy, khác dung lượng SSD lưu tệp. Nhiều ứng dụng cùng lúc cần thêm RAM. Intel khuyến nghị 16 GB cho game mới và cân nhắc 32 GB nếu vừa chơi vừa stream, trò chuyện hoặc mở nhiều ứng dụng. Đây là hướng dẫn theo tác vụ, không bảo đảm mọi game chạy được. Với học tập cần hỏi phần mềm, số ứng dụng chạy đồng thời và khả năng nâng cấp của đúng máy.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html"
+        }
+      ],
+      "parts": {
+        "P1": "RAM có phải dung lượng lưu tệp như SSD không?"
+      }
+    }
+  },
+  {
+    "id": "R12-08-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C26"
+    },
+    "payload": {
+      "question": "Bộ Corsair Vengeance RGB 32 GB trong danh mục là một thanh 32 hay hai thanh 16, DDR mấy?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "Corsair Vengeance RGB 32 GB",
+      "answer": "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 1, phiên bản 3]\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md",
+          "title": "Corsair Vengeance RGB 32 GB",
+          "version": 3,
+          "text": "Corsair Vengeance RGB 32 GB\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\nCorsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.\n\nCorsair Vengeance RGB 32 GB: độ trễ từ đầu tiên: 12 ns."
+        }
+      ],
+      "parts": {
+        "P1": "KitCorsair32GB có mấy thanh,dung lượng mỗi thanh?",
+        "P2": "DDR mấy?"
+      }
+    }
+  },
+  {
+    "id": "R12-08-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C26",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Bộ Corsair Vengeance RGB 32 GB trong danh mục là một thanh 32 hay hai thanh 16, DDR mấy?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "Corsair Vengeance RGB 32 GB",
+      "answer": "Corsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+      "sources": [
+        {
+          "source": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md",
+          "title": "Corsair Vengeance RGB 32 GB",
+          "version": 3,
+          "text": "Corsair Vengeance RGB 32 GB\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\nCorsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.\n\nCorsair Vengeance RGB 32 GB: độ trễ từ đầu tiên: 12 ns."
+        }
+      ],
+      "parts": {
+        "P1": "KitCorsair32GB có mấy thanh,dung lượng mỗi thanh?",
+        "P2": "DDR mấy?"
+      }
+    }
+  },
+  {
+    "id": "R12-09-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C27"
+    },
+    "payload": {
+      "question": "MSI MAG A650BN có công suất bao nhiêu, mức hiệu suất nào và cáp full modular không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI MAG A650BN",
+      "answer": "MSI MAG A650BN: công suất định mức theo danh mục: 650 W.\n\n[Nguồn: catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md, mục MSI MAG A650BN, đoạn 1, phiên bản 3]\n\nMSI MAG A650BN: mức hiệu suất theo danh mục: bronze.\n\n[Nguồn: catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md, mục MSI MAG A650BN, đoạn 1, phiên bản 3]\n\nMSI MAG A650BN: cáp modular: không (theo trường dữ liệu nguồn).\n\n[Nguồn: catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md, mục MSI MAG A650BN, đoạn 1, phiên bản 3]",
+      "sources": [
+        {
+          "source": "catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md",
+          "title": "MSI MAG A650BN",
+          "version": 3,
+          "text": "MSI MAG A650BN\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nMSI MAG A650BN: loại: ATX.\n\nMSI MAG A650BN: mức hiệu suất theo danh mục: bronze.\n\nMSI MAG A650BN: công suất định mức theo danh mục: 650 W.\n\nMSI MAG A650BN: cáp modular: không (theo trường dữ liệu nguồn)."
+        }
+      ],
+      "parts": {
+        "P1": "NguồnA650BN công suất bao nhiêu?",
+        "P2": "Mức hiệu suất?",
+        "P3": "Fullmodular không?"
+      }
+    }
+  },
+  {
+    "id": "R12-09-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C27",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "MSI MAG A650BN có công suất bao nhiêu, mức hiệu suất nào và cáp full modular không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "MSI MAG A650BN",
+      "answer": "MSI MAG A650BN: công suất định mức theo danh mục: 650 W.\nMSI MAG A650BN: cáp modular: không (theo trường dữ liệu nguồn).",
+      "sources": [
+        {
+          "source": "catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md",
+          "title": "MSI MAG A650BN",
+          "version": 3,
+          "text": "MSI MAG A650BN\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nMSI MAG A650BN: loại: ATX.\n\nMSI MAG A650BN: mức hiệu suất theo danh mục: bronze.\n\nMSI MAG A650BN: công suất định mức theo danh mục: 650 W.\n\nMSI MAG A650BN: cáp modular: không (theo trường dữ liệu nguồn)."
+        }
+      ],
+      "parts": {
+        "P1": "NguồnA650BN công suất bao nhiêu?",
+        "P2": "Mức hiệu suất?",
+        "P3": "Fullmodular không?"
+      }
+    }
+  },
+  {
+    "id": "R12-10-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C30"
+    },
+    "payload": {
+      "question": "Dữ liệu cũ nói Logitech G305 vừa wired vừa wireless. Shop có bằng chứng dùng dây truyền dữ liệu trên G305 không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Không kết luận G305 có chế độ truyền dữ liệu qua dây chỉ từ dữ liệu tổng hợp.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]\n\nTrường kết nối này được đánh dấu cần đối chiếu và không đưa vào bản thông số sẵn sàng nhập.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]",
+      "sources": [
+        {
+          "source": "tech-g305-source-conflict-v1.md",
+          "title": "Logitech G305: phát hiện xung đột dữ liệu kết nối",
+          "version": 1,
+          "text": "Logitech G305: phát hiện xung đột dữ liệu kết nối\n\nTrang hãng gọi G305 là LIGHTSPEED Wireless Gaming Mouse. Dữ liệu PCPartPicker đã nhập lại ghi Wired, Wireless. Trường kết nối này được đánh dấu cần đối chiếu và không đưa vào bản thông số sẵn sàng nhập. Không kết luận G305 có chế độ truyền dữ liệu qua dây chỉ từ dữ liệu tổng hợp.\n\nNguồn: https://www.logitechg.com/en-us/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005280.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Có đủ bằng chứng cam kết G305 truyền dữ liệu qua dây không?"
+      }
+    }
+  },
+  {
+    "id": "R12-10-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C30",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Dữ liệu cũ nói Logitech G305 vừa wired vừa wireless. Shop có bằng chứng dùng dây truyền dữ liệu trên G305 không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+      "sources": [
+        {
+          "source": "tech-g305-source-conflict-v1.md",
+          "title": "Logitech G305: phát hiện xung đột dữ liệu kết nối",
+          "version": 1,
+          "text": "Logitech G305: phát hiện xung đột dữ liệu kết nối\n\nTrang hãng gọi G305 là LIGHTSPEED Wireless Gaming Mouse. Dữ liệu PCPartPicker đã nhập lại ghi Wired, Wireless. Trường kết nối này được đánh dấu cần đối chiếu và không đưa vào bản thông số sẵn sàng nhập. Không kết luận G305 có chế độ truyền dữ liệu qua dây chỉ từ dữ liệu tổng hợp.\n\nNguồn: https://www.logitechg.com/en-us/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005280.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ],
+      "parts": {
+        "P1": "Có đủ bằng chứng cam kết G305 truyền dữ liệu qua dây không?"
+      }
+    }
+  },
+  {
+    "id": "R12-11-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "C36"
+    },
+    "payload": {
+      "question": "Tôi bóc hộp chuột rồi nhưng không thích màu, shop cho đổi trong bao nhiêu ngày và có thu phí không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận: Tôi bóc hộp chuột rồi nhưng không thích màu; shop cho đổi trong bao nhiêu ngày; có thu phí không.",
+      "sources": [],
+      "parts": {
+        "P1": "Bóc hộp không thích màu được đổi trong bao nhiêu ngày?",
+        "P2": "Có thu phí không?"
+      }
+    }
+  },
+  {
+    "id": "R12-11-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "C36",
+      "supplemental_source_rows": [
+        "C39"
+      ]
+    },
+    "payload": {
+      "question": "Tôi bóc hộp chuột rồi nhưng không thích màu, shop cho đổi trong bao nhiêu ngày và có thu phí không?",
+      "role": "customer",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chính sách này chỉ dùng demo.",
+      "sources": [
+        {
+          "source": "customer-policy-v1.md",
+          "title": "Chính sách dùng cho shop giả lập",
+          "version": 1,
+          "text": "Chính sách dùng cho shop giả lập > Đổi trả và bảo hành\n\nChính sách này chỉ dùng demo. Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU. Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam. Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên."
+        }
+      ],
+      "parts": {
+        "P1": "Bóc hộp không thích màu được đổi trong bao nhiêu ngày?",
+        "P2": "Có thu phí không?"
+      }
+    }
+  },
+  {
+    "id": "R12-12-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A03"
+    },
+    "payload": {
+      "question": "Cũng tháng đó, chi phí vận hành và lợi nhuận hoạt động trước lãi vay, thuế là bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+        "Còn tháng ngay sau tháng vừa nói, doanh thu thuần và giá vốn được ghi thế nào?"
+      ],
+      "confirmed_subject": "",
+      "answer": "Chi phí vận hành: 110888988 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nLợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Chi phí vận hành tháng vừa nói?",
+        "P2": "Lợi nhuận hoạt động trước lãi vay,thuế tháng đó?"
+      }
+    }
+  },
+  {
+    "id": "R12-12-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A03",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Cũng tháng đó, chi phí vận hành và lợi nhuận hoạt động trước lãi vay, thuế là bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [
+        "Đọc báo cáo tháng 8/2026: doanh thu thuần, số đơn và số sản phẩm hoàn trả là bao nhiêu?",
+        "Còn tháng ngay sau tháng vừa nói, doanh thu thuần và giá vốn được ghi thế nào?"
+      ],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Chi phí vận hành tháng vừa nói?",
+        "P2": "Lợi nhuận hoạt động trước lãi vay,thuế tháng đó?"
+      }
+    }
+  },
+  {
+    "id": "R12-13-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A09"
+    },
+    "payload": {
+      "question": "Với tháng 9/2026, tách riêng doanh thu mục tiêu trong kế hoạch và doanh thu thực hiện trong báo cáo, không cần tính chênh lệch.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Kỳ: 2026-Q3.\n\n[Nguồn: sales-plan-2026-Q3-v1.md, mục Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu, đoạn 2, phiên bản 1]\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-09 | 1539000000 |\n\n[Nguồn: sales-plan-2026-Q3-v1.md, mục Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu, đoạn 3, phiên bản 1]\n\nDoanh thu thuần: 1189908000 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nGiá vốn: 1010759000 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nLợi nhuận gộp: 179149000 VND.\n\n[Nguồn: monthly-report-2026-09-v1.md, mục Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n| 2026-08 | 1782000000 |\n| 2026-09 | 1539000000 |"
+        },
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu mục tiêu tháng9/2026?",
+        "P2": "Doanh thu thực hiện tháng9/2026?"
+      }
+    }
+  },
+  {
+    "id": "R12-13-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A09",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Với tháng 9/2026, tách riêng doanh thu mục tiêu trong kế hoạch và doanh thu thực hiện trong báo cáo, không cần tính chênh lệch.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Doanh thu mục tiêu tháng9/2026: 1189908000 VND. Doanh thu thực hiện tháng9/2026: 1539000000 VND.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n| 2026-08 | 1782000000 |\n| 2026-09 | 1539000000 |"
+        },
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Doanh thu mục tiêu tháng9/2026?",
+        "P2": "Doanh thu thực hiện tháng9/2026?"
+      }
+    }
+  },
+  {
+    "id": "R12-14-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A17"
+    },
+    "payload": {
+      "question": "Kế hoạch tháng 6/2026 và tháng 7/2026 đặt doanh thu mục tiêu lần lượt bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-06 | 1269000000 |\n\n[Nguồn: sales-plan-2026-Q2-v1.md, mục Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu, đoạn 3, phiên bản 1]\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n\n[Nguồn: sales-plan-2026-Q3-v1.md, mục Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu, đoạn 3, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n| 2026-08 | 1782000000 |\n| 2026-09 | 1539000000 |"
+        },
+        {
+          "source": "sales-plan-2026-Q2-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q2",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-04 | 1269000000 |\n| 2026-05 | 1310000000 |\n| 2026-06 | 1269000000 |"
+        }
+      ],
+      "parts": {
+        "P1": "Mục tiêu tháng6/2026?",
+        "P2": "Mục tiêu tháng7/2026?"
+      }
+    }
+  },
+  {
+    "id": "R12-14-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A17",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Kế hoạch tháng 6/2026 và tháng 7/2026 đặt doanh thu mục tiêu lần lượt bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-06 | 1269000000 |",
+      "sources": [
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n| 2026-08 | 1782000000 |\n| 2026-09 | 1539000000 |"
+        },
+        {
+          "source": "sales-plan-2026-Q2-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q2",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q2 > Mục tiêu doanh thu\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-04 | 1269000000 |\n| 2026-05 | 1310000000 |\n| 2026-06 | 1269000000 |"
+        }
+      ],
+      "parts": {
+        "P1": "Mục tiêu tháng6/2026?",
+        "P2": "Mục tiêu tháng7/2026?"
+      }
+    }
+  },
+  {
+    "id": "R12-15-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A19"
+    },
+    "payload": {
+      "question": "Theo quy trình hiện hành, SUP-PC mất bao lâu giao hàng?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Theo bảng suppliers: Nhà phân phối laptop giả lập SUP-LAP có lead time 4 ngày, SUP-PC 3 ngày (Nhà phân phối linh kiện giả lập).\n\n[Nguồn: procurement-v2.md, mục Quy trình nhập hàng > Nhà cung cấp giả lập, đoạn 2, phiên bản 2]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "procurement-v2.md",
+          "title": "Quy trình nhập hàng",
+          "version": 2,
+          "text": "Quy trình nhập hàng > Nhà cung cấp giả lập\n\nTheo bảng suppliers: Nhà phân phối laptop giả lập SUP-LAP có lead time 4 ngày, SUP-PC 3 ngày (Nhà phân phối linh kiện giả lập). Đơn nhập chưa nhận không tính là tồn kho; lấy receipts làm ngày tăng tồn. Mức đặt lại trong simulator: laptop 1 sản phẩm, nhóm khác 3; đặt lên 4 laptop hoặc 8 linh kiện. Các ngưỡng này là giả định mô phỏng, chưa tối ưu thực tế."
+        }
+      ],
+      "parts": {
+        "P1": "Theo quy trình hiện hành SUP-PC giao hàng bao lâu?"
+      }
+    }
+  },
+  {
+    "id": "R12-15-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A19",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Theo quy trình hiện hành, SUP-PC mất bao lâu giao hàng?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận thời gian SUP-PC giao hàng.",
+      "sources": [
+        {
+          "source": "procurement-v2.md",
+          "title": "Quy trình nhập hàng",
+          "version": 2,
+          "text": "Quy trình nhập hàng > Nhà cung cấp giả lập\n\nTheo bảng suppliers: Nhà phân phối laptop giả lập SUP-LAP có lead time 4 ngày, SUP-PC 3 ngày (Nhà phân phối linh kiện giả lập). Đơn nhập chưa nhận không tính là tồn kho; lấy receipts làm ngày tăng tồn. Mức đặt lại trong simulator: laptop 1 sản phẩm, nhóm khác 3; đặt lên 4 laptop hoặc 8 linh kiện. Các ngưỡng này là giả định mô phỏng, chưa tối ưu thực tế."
+        }
+      ],
+      "parts": {
+        "P1": "Theo quy trình hiện hành SUP-PC giao hàng bao lâu?"
+      }
+    }
+  },
+  {
+    "id": "R12-16-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A22"
+    },
+    "payload": {
+      "question": "Hàng bị hoàn có luôn đảo lại giá vốn không, hay còn điều kiện nào?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Hoàn có thể nhập lại kho hoặc không; chỉ đảo giá vốn nếu hàng bán lại được.\n\n[Nguồn: procurement-v2.md, mục Quy trình nhập hàng > Hạch toán, đoạn 3, phiên bản 2]\n\nKiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nMức giảm tối đa 6%; không cộng dồn.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        },
+        {
+          "source": "procurement-v2.md",
+          "title": "Quy trình nhập hàng",
+          "version": 2,
+          "text": "Quy trình nhập hàng > Hạch toán\n\nĐơn bán xuất FIFO. Hoàn có thể nhập lại kho hoặc không; chỉ đảo giá vốn nếu hàng bán lại được. Không xác nhận tương thích Build PC khi nguồn thiếu socket/kích thước/điện năng."
+        }
+      ],
+      "parts": {
+        "P1": "Hàng hoàn có luôn đảo giá vốn hay phải có điều kiện?"
+      }
+    }
+  },
+  {
+    "id": "R12-16-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A22",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Hàng bị hoàn có luôn đảo lại giá vốn không, hay còn điều kiện nào?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Đơn bán xuất FIFO.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        },
+        {
+          "source": "procurement-v2.md",
+          "title": "Quy trình nhập hàng",
+          "version": 2,
+          "text": "Quy trình nhập hàng > Hạch toán\n\nĐơn bán xuất FIFO. Hoàn có thể nhập lại kho hoặc không; chỉ đảo giá vốn nếu hàng bán lại được. Không xác nhận tương thích Build PC khi nguồn thiếu socket/kích thước/điện năng."
+        }
+      ],
+      "parts": {
+        "P1": "Hàng hoàn có luôn đảo giá vốn hay phải có điều kiện?"
+      }
+    }
+  },
+  {
+    "id": "R12-17-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A25"
+    },
+    "payload": {
+      "question": "Lợi nhuận hoạt động trước lãi vay, thuế có được gọi luôn là lợi nhuận sau thuế của shop không?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa mô hình hóa lãi vay, thuế thu nhập hay nghĩa vụ VAT; không kết luận lợi nhuận sau thuế.\n\n[Nguồn: positioning-v1.md, mục Định vị shop và giới hạn suy luận > Số liệu chưa đủ, đoạn 3, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "positioning-v1.md",
+          "title": "Định vị shop và giới hạn suy luận",
+          "version": 1,
+          "text": "Định vị shop và giới hạn suy luận > Số liệu chưa đủ\n\nChưa mô hình hóa lãi vay, thuế thu nhập hay nghĩa vụ VAT; không kết luận lợi nhuận sau thuế. Cần dữ liệu thật để đánh giá dự báo và quyết định kinh doanh."
+        }
+      ],
+      "parts": {
+        "P1": "Có thể gọi lợi nhuận hoạt động trước lãi vay,thuế là lợi nhuận sau thuế không?"
+      }
+    }
+  },
+  {
+    "id": "R12-17-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A25",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Lợi nhuận hoạt động trước lãi vay, thuế có được gọi luôn là lợi nhuận sau thuế của shop không?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Cần dữ liệu thật để đánh giá dự báo và quyết định kinh doanh.",
+      "sources": [
+        {
+          "source": "positioning-v1.md",
+          "title": "Định vị shop và giới hạn suy luận",
+          "version": 1,
+          "text": "Định vị shop và giới hạn suy luận > Số liệu chưa đủ\n\nChưa mô hình hóa lãi vay, thuế thu nhập hay nghĩa vụ VAT; không kết luận lợi nhuận sau thuế. Cần dữ liệu thật để đánh giá dự báo và quyết định kinh doanh."
+        }
+      ],
+      "parts": {
+        "P1": "Có thể gọi lợi nhuận hoạt động trước lãi vay,thuế là lợi nhuận sau thuế không?"
+      }
+    }
+  },
+  {
+    "id": "R12-18-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A26"
+    },
+    "payload": {
+      "question": "Chính sách giá hiện hành yêu cầu biên gộp tối thiểu của laptop và card đồ họa bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Từ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        }
+      ],
+      "parts": {
+        "P1": "Biên tối thiểu laptop theo bản hiện hành?",
+        "P2": "Biên tối thiểu GPU theo bản hiện hành?"
+      }
+    }
+  },
+  {
+    "id": "R12-18-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A26",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Chính sách giá hiện hành yêu cầu biên gộp tối thiểu của laptop và card đồ họa bao nhiêu?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Biên gộp tối thiểu cho laptop 6%.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        }
+      ],
+      "parts": {
+        "P1": "Biên tối thiểu laptop theo bản hiện hành?",
+        "P2": "Biên tối thiểu GPU theo bản hiện hành?"
+      }
+    }
+  },
+  {
+    "id": "R12-19-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A28"
+    },
+    "payload": {
+      "question": "Mức giảm giá tối đa theo chính sách hiện hành là bao nhiêu, có được cộng dồn hai khuyến mãi không?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Mức giảm tối đa 6%; không cộng dồn.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nKhông cộng dồn khuyến mãi.\n\n[Nguồn: marketing-calendar-v1.md, mục Lịch marketing và cách đo > Phạm vi, đoạn 3, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        },
+        {
+          "source": "marketing-calendar-v1.md",
+          "title": "Lịch marketing và cách đo",
+          "version": 1,
+          "text": "Lịch marketing và cách đo > Phạm vi\n\nC-BTS giảm 6% chỉ cho laptop văn phòng; C-BUNDLE giảm 2%; C-TET giảm 3%. Không cộng dồn khuyến mãi. Doanh thu gắn campaign_id là doanh thu liên quan chiến dịch, không phải phần tăng thêm do quảng cáo. Không dùng ROAS để khẳng định lợi nhuận hoặc quan hệ nhân quả."
+        }
+      ],
+      "parts": {
+        "P1": "Mức giảm giá tối đa?",
+        "P2": "Cộng dồn khuyến mãi được không?"
+      }
+    }
+  },
+  {
+    "id": "R12-19-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A28",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Mức giảm giá tối đa theo chính sách hiện hành là bao nhiêu, có được cộng dồn hai khuyến mãi không?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Mức giảm tối đa 6%.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        },
+        {
+          "source": "marketing-calendar-v1.md",
+          "title": "Lịch marketing và cách đo",
+          "version": 1,
+          "text": "Lịch marketing và cách đo > Phạm vi\n\nC-BTS giảm 6% chỉ cho laptop văn phòng; C-BUNDLE giảm 2%; C-TET giảm 3%. Không cộng dồn khuyến mãi. Doanh thu gắn campaign_id là doanh thu liên quan chiến dịch, không phải phần tăng thêm do quảng cáo. Không dùng ROAS để khẳng định lợi nhuận hoặc quan hệ nhân quả."
+        }
+      ],
+      "parts": {
+        "P1": "Mức giảm giá tối đa?",
+        "P2": "Cộng dồn khuyến mãi được không?"
+      }
+    }
+  },
+  {
+    "id": "R12-20-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A32"
+    },
+    "payload": {
+      "question": "Hàng tồn hơn 90 ngày cần kiểm tra gì và ai duyệt trước khi xả? Tôi chỉ hỏi quy định.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        }
+      ],
+      "parts": {
+        "P1": "Hàng tồn hơn90ngày cần kiểm tra gì?",
+        "P2": "Ai duyệt trước khi xả?"
+      }
+    }
+  },
+  {
+    "id": "R12-20-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A32",
+      "supplemental_source_rows": []
+    },
+    "payload": {
+      "question": "Hàng tồn hơn 90 ngày cần kiểm tra gì và ai duyệt trước khi xả? Tôi chỉ hỏi quy định.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Mức giảm tối đa 6%; không cộng dồn.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        }
+      ],
+      "parts": {
+        "P1": "Hàng tồn hơn90ngày cần kiểm tra gì?",
+        "P2": "Ai duyệt trước khi xả?"
+      }
+    }
+  },
+  {
+    "id": "R12-21-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A38"
+    },
+    "payload": {
+      "question": "Kế hoạch Q3/2026 phân ngân sách bao nhiêu cho Facebook, TikTok và Google riêng từng kênh?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận: Kế hoạch Q3/2026 phân ngân sách bao nhiêu cho Facebook; TikTok; Google riêng từng kênh.",
+      "sources": [],
+      "parts": {
+        "P1": "Có số phân ngân sách Facebook Q3/2026 không?",
+        "P2": "Có số cho TikTok không?",
+        "P3": "Có số cho Google không?"
+      }
+    }
+  },
+  {
+    "id": "R12-21-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A38",
+      "supplemental_source_rows": [
+        "A27"
+      ]
+    },
+    "payload": {
+      "question": "Kế hoạch Q3/2026 phân ngân sách bao nhiêu cho Facebook, TikTok và Google riêng từng kênh?",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Marketing thường xuyên 12000000 VND/tháng; chiến dịch có ngân sách riêng.",
+      "sources": [
+        {
+          "source": "pricing-policy-v2.md",
+          "title": "Quy định giá và biên gộp",
+          "version": 2,
+          "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+        },
+        {
+          "source": "sales-plan-2025-Q4-v1.md",
+          "title": "Kế hoạch bán hàng 2025-Q4",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2025-Q4 > Mục tiêu doanh thu\n\nKỳ: 2025-Q4. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4671000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả."
+        },
+        {
+          "source": "sales-plan-2026-Q1-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q1",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q1 > Ngân sách\n\nMarketing thường xuyên 12000000 VND/tháng; chiến dịch có ngân sách riêng. Chủ shop phải duyệt trước mọi thay đổi giá và đơn nhập hàng."
+        },
+        {
+          "source": "sales-plan-2026-Q3-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q3",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q3 > Ngân sách\n\nMarketing thường xuyên 12000000 VND/tháng; chiến dịch có ngân sách riêng. Chủ shop phải duyệt trước mọi thay đổi giá và đơn nhập hàng."
+        },
+        {
+          "source": "sales-plan-2026-Q2-v1.md",
+          "title": "Kế hoạch bán hàng 2026-Q2",
+          "version": 1,
+          "text": "Kế hoạch bán hàng 2026-Q2 > Ngân sách\n\nMarketing thường xuyên 12000000 VND/tháng; chiến dịch có ngân sách riêng. Chủ shop phải duyệt trước mọi thay đổi giá và đơn nhập hàng."
+        }
+      ],
+      "parts": {
+        "P1": "Có số phân ngân sách Facebook Q3/2026 không?",
+        "P2": "Có số cho TikTok không?",
+        "P3": "Có số cho Google không?"
+      }
+    }
+  },
+  {
+    "id": "R12-22-base",
+    "cohort": "recorded",
+    "origin": {
+      "kind": "recorded_output",
+      "round": "old100_patch9",
+      "id": "A10"
+    },
+    "payload": {
+      "question": "Có báo cáo doanh thu tháng 9/2025 không? Nếu không có thì không lấy tháng 9/2026 thay thế.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Chưa có nguồn đủ để xác nhận: Có báo cáo doanh thu tháng 9/2025 không? Nếu không có thì không lấy tháng 9/2026 thay thế..",
+      "sources": [],
+      "parts": {
+        "P1": "Có báo cáo doanh thu9/2025 không;không lấy9/2026 thay thế?"
+      }
+    }
+  },
+  {
+    "id": "R12-22-contrast",
+    "cohort": "constructed",
+    "origin": {
+      "kind": "constructed_contrast",
+      "base": "A10",
+      "supplemental_source_rows": [
+        "A13"
+      ]
+    },
+    "payload": {
+      "question": "Có báo cáo doanh thu tháng 9/2025 không? Nếu không có thì không lấy tháng 9/2026 thay thế.",
+      "role": "admin",
+      "today": "2026-10-20",
+      "previous_user_questions": [],
+      "confirmed_subject": "",
+      "answer": "Doanh thu thuần: 1189908000 VND.",
+      "sources": [
+        {
+          "source": "monthly-report-2026-09-v1.md",
+          "title": "Báo cáo tháng 2026-09",
+          "version": 1,
+          "text": "Báo cáo tháng 2026-09 > Kết quả kỳ 2026-09\n\nDoanh thu thuần: 1189908000 VND. Giá vốn: 1010759000 VND. Lợi nhuận gộp: 179149000 VND. Chi phí vận hành: 110888988 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND. Đơn hàng: 131. Sản phẩm hoàn trả: 2."
+        }
+      ],
+      "parts": {
+        "P1": "Có báo cáo doanh thu9/2025 không;không lấy9/2026 thay thế?"
+      }
+    }
+  }
+]

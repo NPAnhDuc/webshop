@@ -1,0 +1,8 @@
+{
+  "cases": 37,
+  "passed": 25,
+  "source_recall_at_8": 0.5238095238095238,
+  "bank_sha256": "fa47974380d97f516a295209362fd8c9a6372ab1aeaf1219f9cc3fc9b8c1261c",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "limitations": "Development bank; source-level recall, not independent passage-level human relevance or production answer accuracy. Exact spans do not prove relevance/completeness."
+}

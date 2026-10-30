@@ -1,0 +1,13 @@
+{
+  "development_cases": 479,
+  "matches": [
+    {
+      "id": "Q0055",
+      "capability": "data.mutate"
+    }
+  ],
+  "model_calls": 0,
+  "validation_opened": false,
+  "training_allowed": false,
+  "ingestion_allowed": false
+}

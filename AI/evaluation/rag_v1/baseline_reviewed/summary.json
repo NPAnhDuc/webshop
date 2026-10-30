@@ -1,0 +1,7 @@
+{
+  "cases": 32,
+  "answer_pass": 29,
+  "passage_recall": 0.8787878787878788,
+  "average_answer_words": 139.46875,
+  "note": "Same question bank. Errata credits equivalent anti-stacking evidence; original raw run preserved. No answer relabeling to favor the candidate."
+}

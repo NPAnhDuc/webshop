@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "30cb51f1617f415c93c5514639cd303c",
+  "parent_trace_id": "de83f835d8b6405a816dc48b756c5b51",
+  "recorded_at": "2026-10-24T08:25:35.718670+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Tìm3thanhRAMdưới3triệu và giải thích DDR5",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.4665449999884004
+}

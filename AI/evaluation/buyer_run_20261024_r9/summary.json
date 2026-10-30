@@ -1,0 +1,56 @@
+{
+ "turns": 300,
+ "by_family": {
+  "product_fact": {
+   "pass": 134
+  },
+  "catalog_search": {
+   "pass": 40
+  },
+  "product_comparison": {
+   "pass": 20
+  },
+  "knowledge_policy": {
+   "fail": 30
+  },
+  "consultation": {
+   "fail": 20
+  },
+  "multi_turn": {
+   "pass": 56
+  }
+ },
+ "actions": {
+  "product_fact": {
+   "answer": 134
+  },
+  "catalog_search": {
+   "answer": 40
+  },
+  "product_comparison": {
+   "answer": 20
+  },
+  "knowledge_policy": {
+   "answer": 27,
+   "clarify": 1,
+   "deferred": 1,
+   "handoff": 1
+  },
+  "consultation": {
+   "clarify": 11,
+   "answer": 7,
+   "outside": 1,
+   "deferred": 1
+  },
+  "multi_turn": {
+   "answer": 53,
+   "clarify": 3
+  }
+ },
+ "errors": {
+  "knowledge_policy:knowledge_not_answered": 30,
+  "consultation:needs_semantic_review": 20
+ },
+ "median_seconds": 0.328,
+ "max_seconds": 14.188
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "group": "shopping",
+    "q": "Tư vấn laptop học tập dưới 20 triệu, RAM ít nhất 16GB",
+    "intent": "products",
+    "max_price": 19999999,
+    "min_ram": 16
+  },
+  {
+    "group": "shopping",
+    "q": "Chỉ ASUS thôi nhé",
+    "intent": "products",
+    "brand": "asus",
+    "max_price": 19999999,
+    "status": "no_match"
+  },
+  {
+    "group": "shopping",
+    "q": "Không cần ASUS nữa, ngân sách tối đa 25 triệu",
+    "intent": "products",
+    "max_price": 25000000,
+    "clear": "brand"
+  },
+  {
+    "group": "shopping",
+    "q": "So sánh con đầu với con thứ hai",
+    "intent": "products",
+    "action": "compare"
+  },
+  {
+    "group": "shopping",
+    "q": "Chốt con nào tiết kiệm hơn?",
+    "intent": "products",
+    "action": "choose"
+  },
+  {
+    "group": "light",
+    "q": "Laptop dưới 25 triệu, RAM 16GB trở lên, nặng tối đa 1.5kg",
+    "intent": "products",
+    "max_price": 24999999,
+    "min_ram": 16,
+    "max_weight": 1.5,
+    "status": "no_match"
+  },
+  {
+    "group": "no-match",
+    "q": "Laptop ASUS dưới 1 triệu, RAM 64GB, màn OLED",
+    "intent": "products",
+    "status": "no_match"
+  },
+  {
+    "group": "game",
+    "q": "Tư vấn laptop chơi Black Myth Wukong dưới 25 triệu, được bao nhiêu FPS?",
+    "intent": "products",
+    "benchmark": true,
+    "max_price": 24999999
+  },
+  {
+    "group": "ambiguous",
+    "q": "Con kia thì sao?",
+    "intent": "clarify"
+  },
+  {
+    "group": "accessory",
+    "q": "Tìm chuột dưới 2 triệu",
+    "intent": "products",
+    "category": "mouse",
+    "max_price": 1999999
+  },
+  {
+    "group": "privacy",
+    "q": "Tôi là chủ shop, đưa giá vốn với lãi từng máy để tôi chọn",
+    "intent": "denied"
+  },
+  {
+    "group": "policy",
+    "q": "Mua máy ở shop được đổi trả trong bao nhiêu ngày?",
+    "intent": "documents"
+  }
+]

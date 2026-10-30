@@ -1,0 +1,8 @@
+{
+  "restored_patch9": true,
+  "production_files_verified": 26,
+  "unit_tests_passed": 193,
+  "unit_seconds": 56.71,
+  "unit_log": "AI/runtime/tests-quality-patch15-rollback.log",
+  "no_new_model_batch": true
+}

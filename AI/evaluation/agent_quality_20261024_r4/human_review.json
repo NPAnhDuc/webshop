@@ -1,0 +1,440 @@
+{
+  "protocol": "Same84 questions; compare83 unchanged answers with prior manual review, inspect Q19 separately. Trace identity/role/parent links verified.",
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q02": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q10": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Delete yêu cầu bị đổi thành inspect."
+    },
+    "Q11": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q12": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q14": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Ranking SKU bị đổi thành kiểm nguồn."
+    },
+    "Q15": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q16": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q17": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q18": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q19": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": false,
+      "reason": "Q19 independently checked against requested3, canonical ram category, budget and catalog IDs."
+    },
+    "Q20": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Chuẩn hóa file mới bị đổi thành kiểm nguồn cũ."
+    },
+    "Q21": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q22": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "SKU doanh thu cao nhất bị đổi thành kiểm nguồn."
+    },
+    "Q23": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "Q24": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Clean bản sao Excel vẫn bị đổi thành kiểm nguồn."
+    },
+    "A01": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A02": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A03": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Hỏi nối giá vốn sau so sánh có ngữ cảnh bị hỏi lại chỉ tiêu/kỳ."
+    },
+    "A04": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A05": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A06": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A07": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A08": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A09": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A10": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A11": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A12": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A13": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A14": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A15": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A16": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A17": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A18": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A19": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A20": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Clean Excel bị đổi thành kiểm nguồn."
+    },
+    "A21": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A22": {
+      "semantic_pass": false,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Ranking SKU bị đổi thành kiểm nguồn."
+    },
+    "A23": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "A24": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "same_answer_as_r3_after_path_normalization": true,
+      "reason": "Đối chiếu cùng câu/tool/args/số/kỳ/nguồn và review r2; đọc riêng answer mới/đổi. Documents/deferred là control chưa nối, không chứng nhận hỗ trợ tính năng."
+    }
+  },
+  "semantic_pass": 76,
+  "total": 84,
+  "previous_semantic_pass": 75,
+  "remaining_failures": [
+    "Q10",
+    "Q14",
+    "Q20",
+    "Q22",
+    "Q24",
+    "A03",
+    "A20",
+    "A22"
+  ],
+  "accepted_for_application": false,
+  "trace_records": 84
+}

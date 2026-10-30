@@ -1,0 +1,18 @@
+{
+  "notebook_url": "https://colab.research.google.com/drive/1dXjnSURNVIJN9zpXlFrSlGy5ttibCU9N",
+  "runtime_requested": "T4",
+  "status": "v1_retriever_and_kev_training_verified_artifacts_downloaded",
+  "files": {
+    "ShopBot_Tutor_Colab.ipynb": "0303bae4ab50b90af8bbed430769568a63f428e2570e2e6e1fd11ee789316167",
+    "colab_run_all.py": "f4ab1ad2bc186c21dfc4f63e496d7b387bd5d7d158feec052ee1451de4f88391",
+    "retriever_train.py": "f294cd801ced02e5ad41d4664049686989975dbf81cd55b3336e1ed2c51f07bd"
+  },
+  "retriever_training_verified": true,
+  "artifact_download_verified": true,
+  "kev_training_verified": true,
+  "ui_blocker": null,
+  "retriever_report": "results/retriever-visible-summary.json",
+  "screenshot": "results/colab-ui-error.png",
+  "artifact_archive": "AI\\training\\colab_artifacts\\20261019\\shopbot_review_bundle.zip",
+  "artifact_sha256": "2d5b26a75cb4f351989515552464515ec1208e3d88c240c8a78ec3d520968ef0"
+}

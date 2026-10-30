@@ -1,0 +1,47 @@
+{
+  "status": "retain_narrow_coverage_guard",
+  "baseline": "kb3_supplier_fields_r2",
+  "requested_cases": 24,
+  "actual_cases": 28,
+  "integrity_unchanged": true,
+  "changed_answers": [
+    "Q0038"
+  ],
+  "unchanged_answers": 27,
+  "action_changes": [],
+  "overall_semantic_accuracy": null,
+  "mechanical_checks": {
+    "PASS_CHECKS": 11,
+    "NEEDS_REVIEW": 17
+  },
+  "semantic_review": [
+    {
+      "id": "Q0038",
+      "before": "Full coverage flagged although selected table only contains campaign name, dates, budget and discount.",
+      "after": "Same cited table retained; product eligibility explicitly unconfirmed and answerability partial.",
+      "judgment": "Improved uncertainty calibration; does not supply missing eligibility policy.",
+      "source": {
+        "file": "marketing-calendar-v1.md",
+        "section": 2,
+        "version": 1,
+        "chunk_id": "73ed7f0d0f6157beeb3bf9f7afd85589e3020819edbf1febd15e6bf978dcd7a7"
+      },
+      "unsupported_claims_added": false
+    }
+  ],
+  "control_scope": "27 unchanged answer texts, all28 basic_action values unchanged; existing MOQ fix retained. Not independent semantic acceptance of all controls.",
+  "limitations": [
+    "Only selected marketing tables are checked; prose and other schemas still rely on existing evidence selection.",
+    "Scope-column presence does not prove requested entity alignment or all complex conditions.",
+    "No independent validation or full479 semantic score.",
+    "Q0102 cap comparison and approval scope remain open."
+  ],
+  "latency": {
+    "candidate_median_seconds": 6.3675,
+    "baseline_subset_median_seconds": 6.343500000000001,
+    "speed_improvement_demonstrated": false
+  },
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "new_model_batches_this_heartbeat": 0
+}

@@ -1,0 +1,9 @@
+# History baseline r2: complete, production unchanged
+
+Read all 168 outputs (56 targets, 68 distinct question texts). Semantic main-fact score 163 PASS / 5 FAIL: original history 54/56, alternate history 53/56, alternate history plus explicit subject 56/56. Automatic checks also give 163/5 but were not used as semantic judgments. All failures manually inspected. See human_review.json for per-scenario decisions and secondary issues.
+
+Failures: Q0191 original answers CPU model instead of count; Q0300 alternate and both Q0301 anaphoric inputs clarify despite a confirmed entity; Q0478 alternate substitutes RAM generation/Photoshop for kit layout. Explicit naming preserves all paired successes and supplies missing facts in these fixtures. This supports testing entity binding before routing/selection. It is a diagnostic intervention, not an automatic resolver already implemented or an independent performance score. Similar answer lengths do not imply equivalent contexts.
+
+16 outputs have secondary additions: 11 generic RAM advice/Photoshop, 5 additional attributes of the same product. Required-fact PASS does not mean concise, perfectly relevant output. Recorded parent answers include known failures or noise and are intentionally untrusted inputs, never knowledge or gold; no assumption that every parent answer was correct. Some historical text is truncated to 400 characters by the existing conversation store.
+
+Source/quote audit and runtime totals are in summary.json. Models, SQL, KB and code were unchanged throughout all 168 outputs; integrity is true and stderr empty. Production remains patch9 (450/479 development, old100 87/100). No reserved or validation cases opened. Next: one conservative single-product reference resolver trial with unknown/multiple/new-model/topic counterexamples, followed by the same frozen inputs and later broader regression before accepting.

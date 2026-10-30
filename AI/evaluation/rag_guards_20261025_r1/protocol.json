@@ -1,0 +1,13 @@
+{
+  "baseline": "kb3_final_r5",
+  "parent": "kb3_discount_comparison_r1",
+  "purpose": "Combined supplier binding, campaign table scope and typed discount comparison broad development regression; no repair or validation during batch.",
+  "split": "development",
+  "expected_cases": 479,
+  "RAG_EVIDENCE_RERANK": "1",
+  "source_change": false,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "validation_opened": false,
+  "baseline_flag_caveat": "Legacy finalr5 did not freeze evidence flag separately; baseline trace confirms reranker used. New wrapper freezes1, distinct from RAG_RERANK0."
+}

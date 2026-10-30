@@ -1,0 +1,248 @@
+[
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0125_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+        "version": 3,
+        "quote": "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0125_original_history",
+    "variant": "original_history",
+    "parent_id": "Q0034",
+    "target_id": "Q0125",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance RGB 32 GB: CAS latency: 36.\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-3d8f348c2fc"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance RGB 32 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance RGB 32 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0034",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance RGB 32 GB?",
+    "topic": "product_context",
+    "conversation": "Q0125_explicit_subject_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+        "version": 3,
+        "quote": "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0125_explicit_subject_brief_history",
+    "variant": "explicit_subject_brief_history",
+    "parent_id": "Q0034",
+    "target_id": "Q0125",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance RGB 32 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance RGB 32 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0034",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của sản phẩm vừa nói?",
+    "topic": "product_context",
+    "conversation": "Q0247_original_history",
+    "required": [
+      {
+        "document_id": "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+        "version": 3,
+        "quote": "Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0247_original_history",
+    "variant": "original_history",
+    "parent_id": "Q0200",
+    "target_id": "Q0247",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance LPX 16 GB: CAS latency: 16.\n\n[Nguồn: catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a-v3.md, mục Corsair Vengeance LPX 16 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-517c4a98422"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance LPX 16 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance LPX 16 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0200",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance LPX 16 GB?",
+    "topic": "product_context",
+    "conversation": "Q0247_explicit_subject_brief_history",
+    "required": [
+      {
+        "document_id": "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+        "version": 3,
+        "quote": "Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0247_explicit_subject_brief_history",
+    "variant": "explicit_subject_brief_history",
+    "parent_id": "Q0200",
+    "target_id": "Q0247",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a-v3.md, mục Corsair Vengeance LPX 16 GB, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance LPX 16 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance LPX 16 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v10_development",
+      "parent_id": "Q0200",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance RGB 32 GB?",
+    "topic": "product_context",
+    "conversation": "Q0125_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+        "version": 3,
+        "quote": "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0125_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0034",
+    "target_id": "Q0125",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance RGB 32 GB: CAS latency: 36.\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-3d8f348c2fc"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance RGB 32 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance RGB 32 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0034",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance LPX 16 GB?",
+    "topic": "product_context",
+    "conversation": "Q0247_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+        "version": 3,
+        "quote": "Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0247_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0200",
+    "target_id": "Q0247",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance LPX 16 GB: CAS latency: 16.\n\n[Nguồn: catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a-v3.md, mục Corsair Vengeance LPX 16 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-517c4a98422"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance LPX 16 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance LPX 16 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0200",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "state": "rejected_restore_patch9",
+  "reason": "Legacy10087→85; C31 andC34 regress despite focused224 gain. Missing detection/fallback relevance not reliable."
+}

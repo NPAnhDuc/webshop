@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "98982a10b8fb4494b747d9c250431b24",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:52.778007+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Shop có thu phí giao máy và lắp đặt không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Shop có thu phí giao máy và lắp đặt không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "no_source",
+        "executed": true,
+        "answer": "Chưa có nguồn đủ để xác nhận: Shop có thu phí giao máy; lắp đặt không.",
+        "reason": "Chưa có nguồn đủ để xác nhận: Shop có thu phí giao máy; lắp đặt không.",
+        "answerability": "none",
+        "rag_action": "answer",
+        "sources": []
+      },
+      "seconds": 3.997925199990277
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Chưa có nguồn đủ để xác nhận: Shop có thu phí giao máy; lắp đặt không.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 4.364326599999913
+}

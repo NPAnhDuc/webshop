@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "2d187e43ef444f9b8252f9eeec9799cd",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:31:55.695017+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Làm sao liên hệ nhân viên thật của shop để xác nhận thông số?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Làm sao liên hệ nhân viên thật của shop để xác nhận thông số?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "handoff",
+        "executed": true,
+        "answer": "Hiện chưa có kênh chuyển nhân viên được kết nối, nên chưa có yêu cầu nào được gửi.",
+        "reason": "Hiện chưa có kênh chuyển nhân viên được kết nối, nên chưa có yêu cầu nào được gửi.",
+        "answerability": "handoff",
+        "rag_action": "handoff",
+        "sources": []
+      },
+      "seconds": 1.3309160999924643
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "handoff",
+    "answer": "Hiện chưa có kênh chuyển nhân viên được kết nối, nên chưa có yêu cầu nào được gửi.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.703907800008892
+}

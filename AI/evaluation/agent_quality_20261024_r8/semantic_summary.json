@@ -1,0 +1,18 @@
+{
+  "passed": 103,
+  "total": 106,
+  "previous_passed": 103,
+  "unchanged_answer_count": 106,
+  "remaining_failures": [
+    "Q29",
+    "Q30",
+    "Q41"
+  ],
+  "complete_contract_sessions_passed": 4,
+  "complete_contract_sessions_total": 6,
+  "accepted_for_application": false,
+  "new_scope_probe_before": 9,
+  "new_scope_probe_after": 20,
+  "new_scope_probe_total": 20,
+  "new_scope_probes_model_evaluated": false
+}

@@ -1,0 +1,611 @@
+[
+  {
+    "id": "Q0017",
+    "requested_title": "Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng",
+    "document_id": "tech-kc3000-capacity",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "glossary_4",
+        "source": "D4",
+        "text": "Datasheet KC3000 ghi M.2 2280, PCIe 4.0 x4 NVMe, NAND 3D TLC và có DRAM cache."
+      },
+      {
+        "id": "glossary_26",
+        "source": "D4",
+        "text": "Bảng tốc độ phân biệt theo dung lượng; ví dụ 1.024 GB tới 7.000/6.000 MB/s."
+      },
+      {
+        "id": "glossary_29",
+        "source": "D4",
+        "text": "Xác nhận mã dung lượng và khe máy hỗ trợ trước khi khuyến nghị nâng cấp."
+      },
+      {
+        "id": "glossary_35",
+        "source": "D4",
+        "text": "Mức tối đa này không phải cam kết cho mọi máy và mọi tệp."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp",
+      "P2": "DRAM",
+      "P3": "phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "product_1",
+          "glossary_6",
+          "glossary_7"
+        ],
+        "P2": [
+          "glossary_4"
+        ],
+        "P3": [
+          "glossary_8",
+          "glossary_22"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 3007,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0071",
+    "requested_title": "DDR5 khác DDR4 ở đâu, có cắm chung được không?",
+    "document_id": "tech-ddr5-basics",
+    "title_present_in_search": true,
+    "title_fragment_count": 3,
+    "title_fragments": [
+      {
+        "id": "glossary_9",
+        "source": "D9",
+        "text": "Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích."
+      },
+      {
+        "id": "glossary_18",
+        "source": "D9",
+        "text": "DDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện."
+      },
+      {
+        "id": "ram_type_19",
+        "source": "D9",
+        "text": "Phải chọn CPU, bo mạch và loại RAM phù hợp; không coi DDR5 là thanh thay thế trực tiếp cho khe DDR4."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu",
+      "P2": "có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_15",
+          "glossary_18"
+        ],
+        "P2": [
+          "glossary_5",
+          "glossary_18",
+          "glossary_18"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2410,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0128",
+    "requested_title": "Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?",
+    "document_id": "tech-wifi-bands",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "glossary_3",
+        "source": "D3",
+        "text": "Theo hướng dẫn Intel, sản phẩm Wi-Fi 6 của hãng hoạt động ở 2,4 và 5 GHz; 6E/7 có thể hỗ trợ 6 GHz."
+      },
+      {
+        "id": "glossary_9",
+        "source": "D3",
+        "text": "Không biến thông lượng lý thuyết của chuẩn Wi-Fi thành tốc độ Internet được bảo đảm."
+      },
+      {
+        "id": "glossary_14",
+        "source": "D3",
+        "text": "Để dùng 6 GHz cần cả card mạng, router tương thích và môi trường phần mềm hỗ trợ."
+      },
+      {
+        "id": "glossary_19",
+        "source": "D3",
+        "text": "Chỉ nâng router không đủ nếu máy không hỗ trợ."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Wi-Fi 6",
+      "P2": "6E",
+      "P3": "7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_3"
+        ],
+        "P2": [
+          "glossary_14"
+        ],
+        "P3": [
+          "glossary_14"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2040,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0156",
+    "requested_title": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+    "document_id": "tech-cpu-cores-clock",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "glossary_3",
+        "source": "D3",
+        "text": "Xung GHz mô tả số chu kỳ mỗi giây."
+      },
+      {
+        "id": "cpu_cores_13",
+        "source": "D3",
+        "text": "Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz."
+      },
+      {
+        "id": "glossary_18",
+        "source": "D3",
+        "text": "CPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi."
+      },
+      {
+        "id": "glossary_20",
+        "source": "D3",
+        "text": "Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Nhân CPU",
+      "P2": "luồng",
+      "P3": "xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_12",
+          "glossary_18",
+          "glossary_17"
+        ],
+        "P2": [
+          "glossary_18",
+          "glossary_23"
+        ],
+        "P3": [
+          "glossary_3",
+          "glossary_21"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2286,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0194",
+    "requested_title": "IPS, TN, VA và OLED: phân biệt tấm nền",
+    "document_id": "tech-panels-ips-oled",
+    "title_present_in_search": true,
+    "title_fragment_count": 5,
+    "title_fragments": [
+      {
+        "id": "glossary_2",
+        "source": "D2",
+        "text": "IPS, TN và VA là các kiểu tấm nền LCD; OLED dùng cơ chế khác."
+      },
+      {
+        "id": "glossary_9",
+        "source": "D2",
+        "text": "Chỉ gán tấm nền cho sản phẩm khi có nguồn xác nhận đúng phiên bản."
+      },
+      {
+        "id": "glossary_10",
+        "source": "D2",
+        "text": "Từ FHD chỉ biết độ phân giải; mô tả LED chung chung chưa xác nhận máy là IPS hay OLED."
+      },
+      {
+        "id": "glossary_15",
+        "source": "D2",
+        "text": "Khi so sánh cần xem cả góc nhìn, màu, tương phản và chuyển động của đúng màn hình."
+      },
+      {
+        "id": "glossary_24",
+        "source": "D2",
+        "text": "Không suy ra chất lượng màu chỉ từ tên IPS."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “IPS",
+      "P2": "TN",
+      "P3": "VA",
+      "P4": "OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_2",
+          "glossary_24",
+          "glossary_26"
+        ],
+        "P2": [
+          "glossary_2",
+          "glossary_24",
+          "glossary_26"
+        ],
+        "P3": [
+          "glossary_2",
+          "glossary_24",
+          "glossary_26"
+        ],
+        "P4": [
+          "glossary_2",
+          "glossary_8",
+          "glossary_20"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2290,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0221",
+    "requested_title": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+    "document_id": "tech-loq-family",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "glossary_2",
+        "source": "D2",
+        "text": "Đây là tài liệu dòng máy, chưa xác nhận đầy đủ mã 82XV00SGLK của danh mục."
+      },
+      {
+        "id": "glossary_36",
+        "source": "D2",
+        "text": "PSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình."
+      },
+      {
+        "id": "glossary_37",
+        "source": "D2",
+        "text": "Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ."
+      },
+      {
+        "id": "glossary_38",
+        "source": "D2",
+        "text": "Không chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_36",
+          "glossary_37",
+          "glossary_38"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2493,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0239",
+    "requested_title": "IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU",
+    "document_id": "tech-ideapad-family",
+    "title_present_in_search": true,
+    "title_fragment_count": 3,
+    "title_fragments": [
+      {
+        "id": "glossary_5",
+        "source": "D5",
+        "text": "PSREF IdeaPad 3 15ITL6 mô tả RAM hàn cùng một khe DDR4 SO-DIMM."
+      },
+      {
+        "id": "glossary_38",
+        "source": "D5",
+        "text": "Danh mục shop đang gọi sản phẩm là IdeaPad Slim 3i 15ITL6; cần đối chiếu tên thương mại và mã 82H803UCIN trước khi nhập thêm thông số."
+      },
+      {
+        "id": "glossary_40",
+        "source": "D5",
+        "text": "Chưa tự xác nhận hai tên sản phẩm chỉ dựa vào phần 15ITL6."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_33",
+          "glossary_34",
+          "glossary_37"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2589,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0257",
+    "requested_title": "OLED là gì và vì sao hiển thị màu đen sâu?",
+    "document_id": "tech-oled-basics",
+    "title_present_in_search": true,
+    "title_fragment_count": 3,
+    "title_fragments": [
+      {
+        "id": "glossary_1",
+        "source": "D1",
+        "text": "Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ."
+      },
+      {
+        "id": "glossary_7",
+        "source": "D1",
+        "text": "Khả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu."
+      },
+      {
+        "id": "glossary_12",
+        "source": "D1",
+        "text": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “OLED là gì",
+      "P2": "vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_12",
+          "glossary_14",
+          "glossary_6"
+        ],
+        "P2": [
+          "glossary_7",
+          "glossary_19"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 1690,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0281",
+    "requested_title": "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ",
+    "document_id": "tech-ram-capacity",
+    "title_present_in_search": true,
+    "title_fragment_count": 5,
+    "title_fragments": [
+      {
+        "id": "buying_guide_2",
+        "source": "D2",
+        "text": "Đây là hướng dẫn theo tác vụ, không bảo đảm mọi game chạy được."
+      },
+      {
+        "id": "buying_guide_14",
+        "source": "D2",
+        "text": "Intel khuyến nghị 16 GB cho game mới và cân nhắc 32 GB nếu vừa chơi vừa stream, trò chuyện hoặc mở nhiều ứng dụng."
+      },
+      {
+        "id": "buying_guide_29",
+        "source": "D2",
+        "text": "Nhiều ứng dụng cùng lúc cần thêm RAM."
+      },
+      {
+        "id": "buying_guide_31",
+        "source": "D2",
+        "text": "RAM là bộ nhớ tạm khi chương trình chạy, khác dung lượng SSD lưu tệp."
+      },
+      {
+        "id": "buying_guide_35",
+        "source": "D2",
+        "text": "Với học tập cần hỏi phần mềm, số ứng dụng chạy đồng thời và khả năng nâng cấp của đúng máy."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “RAM 8 GB",
+      "P2": "16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_3",
+          "glossary_32",
+          "glossary_33"
+        ],
+        "P2": [
+          "buying_guide_14",
+          "glossary_26",
+          "glossary_30"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2841,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0302",
+    "requested_title": "Máy học Photoshop cần bao nhiêu RAM?",
+    "document_id": "tech-photoshop-requirements",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "os_6",
+        "source": "D6",
+        "text": "Đây chỉ là một phần yêu cầu: cần đối chiếu cả CPU, hệ điều hành và GPU với phiên bản đang dùng."
+      },
+      {
+        "id": "buying_guide_11",
+        "source": "D6",
+        "text": "Đạt RAM tối thiểu không bảo đảm làm tệp lớn mượt."
+      },
+      {
+        "id": "buying_guide_14",
+        "source": "D6",
+        "text": "Bảng yêu cầu Adobe Photoshop 27.x trở lên, cập nhật ngày 09/09/2026, ghi RAM tối thiểu 8 GB và khuyến nghị 16 GB trở lên cho Windows Intel/AMD."
+      },
+      {
+        "id": "buying_guide_22",
+        "source": "D6",
+        "text": "Chưa có căn cứ để khẳng định một laptop cụ thể phù hợp nếu thiếu các thông số còn lại."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Máy học Photoshop cần bao nhiêu RAM?”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_1",
+          "glossary_2",
+          "glossary_3"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2117,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0344",
+    "requested_title": "Kingston NV2: thông số tốc độ thay đổi theo dung lượng",
+    "document_id": "tech-nv2-capacity",
+    "title_present_in_search": true,
+    "title_fragment_count": 4,
+    "title_fragments": [
+      {
+        "id": "glossary_6",
+        "source": "D6",
+        "text": "Phải xác nhận dung lượng và mã ổ trước khi trích tốc độ; không áp một con số chung cho mọi NV2."
+      },
+      {
+        "id": "glossary_19",
+        "source": "D6",
+        "text": "Tốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s."
+      },
+      {
+        "id": "glossary_20",
+        "source": "D6",
+        "text": "Đây là mức tối đa theo điều kiện thử của hãng."
+      },
+      {
+        "id": "glossary_31",
+        "source": "D6",
+        "text": "Datasheet NV2 ghi dạng M.2 2280, giao tiếp PCIe 4.0 x4 NVMe."
+      }
+    ],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Kingston NV2: thông số tốc độ thay đổi theo dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_19",
+          "glossary_20",
+          "glossary_21"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2551,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  },
+  {
+    "id": "Q0351",
+    "requested_title": "Modern 15 B12M-081SG: thông số chỉ cho bản SG",
+    "document_id": "tech-msi-081sg",
+    "title_present_in_search": false,
+    "title_fragment_count": 0,
+    "title_fragments": [],
+    "parts": {
+      "P1": "Giải thích giúp tôi nội dung “Modern 15 B12M-081SG: thông số chỉ cho bản SG”. Điều nào trong đó chỉ đúng có điều kiện"
+    },
+    "selector": {
+      "action": "answer",
+      "answers": {
+        "P1": [
+          "glossary_34",
+          "glossary_36",
+          "glossary_38"
+        ]
+      },
+      "missing": [],
+      "negative": []
+    },
+    "prompt_eval_count": 2515,
+    "context": 6144,
+    "done_reason": "stop",
+    "same_baseline_answer": true
+  }
+]

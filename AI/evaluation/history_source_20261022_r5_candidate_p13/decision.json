@@ -1,0 +1,4 @@
+{
+  "state": "rejected_restore_patch9",
+  "reason": "One fix but12 regressions on same224 inputs; typed source metadata alone fails to enforce applicability."
+}

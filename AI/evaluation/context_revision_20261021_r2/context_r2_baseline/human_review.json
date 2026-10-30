@@ -1,0 +1,170 @@
+{
+  "R2D01": {
+    "status": "FAIL",
+    "cause": "RESOLVABLE_TIME_BLOCKED",
+    "reason": "Tháng này xác định được theo21/10/2026; cần nói thiếu báo cáo10/2026, không hỏi model/kỳ mơ hồ.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D02": {
+    "status": "FAIL",
+    "cause": "RESOLVABLE_TIME_BLOCKED",
+    "reason": "Quý này là2026Q4; chưa có kế hoạch, cần báo thiếu đúng kỳ thay hỏi rõ kỳ.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D03": {
+    "status": "FAIL",
+    "cause": "RESOLVABLE_TIME_BLOCKED",
+    "reason": "Bị guard tham chiếu chặn tháng này trước resolver, không xác nhận thiếu báo cáo hiện tại.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D04": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D05": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc đủ giá trị đúng kỳ/nguồn; kiểm tra tự động FAIL do required span kéo cả đoạn chứa chỉ tiêu không được hỏi, không phải bot thiếu đáp án.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D06": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc đủ giá trị đúng kỳ/nguồn; kiểm tra tự động FAIL do required span kéo cả đoạn chứa chỉ tiêu không được hỏi, không phải bot thiếu đáp án.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D07": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc đủ giá trị đúng kỳ/nguồn; kiểm tra tự động FAIL do required span kéo cả đoạn chứa chỉ tiêu không được hỏi, không phải bot thiếu đáp án.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D08": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc đủ giá trị đúng kỳ/nguồn; kiểm tra tự động FAIL do required span kéo cả đoạn chứa chỉ tiêu không được hỏi, không phải bot thiếu đáp án.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D09": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D10": {
+    "status": "FAIL",
+    "cause": "UNBOUND_PRODUCT",
+    "reason": "Chưa có máy trong hội thoại, trả USB/CPU chung thay hỏi máy nào.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D11": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D12": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D13": {
+    "status": "FAIL",
+    "cause": "PREMATURE_CLARIFICATION",
+    "reason": "Yêu cầu dự báo cần nói rõ giới hạn công cụ; bị guard tháng này chặn trước router.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D14": {
+    "status": "FAIL",
+    "cause": "PREMATURE_CLARIFICATION",
+    "reason": "Yêu cầu vẽ biểu đồ ngoài RAG cơ bản bị hỏi kỳ/model trước khi phân loại công cụ.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D15": {
+    "status": "FAIL",
+    "cause": "PREMATURE_CLARIFICATION",
+    "reason": "Yêu cầu ghi giá phải từ chối thực hiện/giải thích chỉ đọc; không có ghi nào xảy ra nhưng bot hỏi rõ sai trọng tâm.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D16": {
+    "status": "FAIL",
+    "cause": "PREMATURE_CLARIFICATION",
+    "reason": "Yêu cầu cộng bảng gốc ngoài RAG bị hỏi kỳ/model thay nói giới hạn.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D17": {
+    "status": "FAIL",
+    "cause": "PRINCIPLE_INCOMPLETE",
+    "reason": "Chỉ nói xuấtFIFO, chưa trả hàng chưa bán có thành giá vốn hàng bán không.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D18": {
+    "status": "FAIL",
+    "cause": "PRINCIPLE_MISROUTED",
+    "reason": "Nguyên tắc hoàn hàng không cần kỳ/model, nhưng bị guard kỳ này chặn.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D19": {
+    "status": "FAIL",
+    "cause": "BUDGET_SCOPE_MISSING",
+    "reason": "Hỏi phạm vi ngân sách nhưng trả cộng dồn giảm giá/nhân quả doanh thu; chưa phân biệt chiến dịch/cả năm.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D20": {
+    "status": "FAIL",
+    "cause": "TAX_SCOPE_MISSING",
+    "reason": "Hỏi giới hạn lãi sau thuế nhưng trả đối soátFIFO, chưa nêu không đủ dữ liệu thuế.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D21": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D22": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D23": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  },
+  "R2D24": {
+    "status": "PASS",
+    "cause": "REVIEWED_CORRECT",
+    "reason": "Đã đọc: hỏi lại đúng khi đối tượng chưa rõ, hoặc báo thiếu/từ chối/chuyển người đúng giới hạn; không bịa số hay thực hiện hành động.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic review of all24development answers; no reserved results opened."
+  }
+}

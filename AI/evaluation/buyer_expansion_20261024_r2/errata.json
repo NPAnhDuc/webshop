@@ -1,0 +1,8 @@
+{
+  "parent_bank_sha256": "f63da245db1d1ee2ff314d7b4f05b24d589430bd1270cb307341be4e9b21b7dc",
+  "changes": [
+    "Map CPU cores, PSU watt/certification and case supported forms to actual snapshot field names.",
+    "Use normal spacing in main development questions; postpone typo/spacing corruption benchmark and implementation."
+  ],
+  "old_revision_preserved": true
+}

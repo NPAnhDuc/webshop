@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "61f637cbd1174db89060112f14410088",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T03:34:48.477399+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Lợi nhuận ròng sau thuế tháng9/2026 bao nhiêu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Nguồn SQL chưa mô hình hóa đầy đủ lãi vay và thuế để tính lợi nhuận ròng. Tôi không thay bằng lãi gộp hoặc lãi hoạt động.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.34461800000281073
+}

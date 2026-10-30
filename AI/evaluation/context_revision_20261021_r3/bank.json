@@ -1,0 +1,690 @@
+[
+  {
+    "id": "R2D01",
+    "role": "admin",
+    "question": "Cho tôi doanh thu thuần trong báo cáo tháng này.",
+    "topic": "current_period",
+    "conversation": "r2:development:1",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2D02",
+    "role": "admin",
+    "question": "Kế hoạch quý này ghi mục tiêu doanh thu thuần là bao nhiêu?",
+    "topic": "current_period",
+    "conversation": "r2:development:2",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2D03",
+    "role": "admin",
+    "question": "Đọc báo cáo tháng này, cho biết giá vốn.",
+    "topic": "current_period",
+    "conversation": "r2:development:3",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2D04",
+    "role": "admin",
+    "question": "Trích mục tiêu từ kế hoạch quý hiện tại.",
+    "topic": "current_period",
+    "conversation": "r2:development:4",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2D05",
+    "role": "admin",
+    "question": "Tháng vừa rồi, doanh thu thuần trong báo cáo là bao nhiêu?",
+    "topic": "relative_fact",
+    "conversation": "r2:development:5",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "monthly-report-2026-09",
+        "version": 1,
+        "quote": "Doanh thu thuần: 1189908000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "monthly-report-2026-09"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2D06",
+    "role": "admin",
+    "question": "Đọc số đơn hàng của tháng trước giúp tôi.",
+    "topic": "relative_fact",
+    "conversation": "r2:development:6",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "monthly-report-2026-09",
+        "version": 1,
+        "quote": "Đơn hàng: 131."
+      }
+    ],
+    "gold_document_ids": [
+      "monthly-report-2026-09"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2D07",
+    "role": "admin",
+    "question": "Quý trước theo kế hoạch đặt mục tiêu doanh thu thuần ở mức nào?",
+    "topic": "relative_fact",
+    "conversation": "r2:development:7",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "sales-plan-2026-Q3",
+        "version": 1,
+        "quote": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "sales-plan-2026-Q3"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2D08",
+    "role": "admin",
+    "question": "Kế hoạch quý 3 năm 2026 ghi mục tiêu doanh thu thuần nào?",
+    "topic": "explicit_control",
+    "conversation": "r2:development:8",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "sales-plan-2026-Q3",
+        "version": 1,
+        "quote": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "sales-plan-2026-Q3"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2D09",
+    "role": "customer",
+    "question": "Máy đó lắp thêm thanh RAM được chứ?",
+    "topic": "unbound_reference",
+    "conversation": "r2:development:9",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D10",
+    "role": "customer",
+    "question": "Chiếc máy vừa nói có những cổng nào?",
+    "topic": "unbound_reference",
+    "conversation": "r2:development:10",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D11",
+    "role": "customer",
+    "question": "Trong tháng này, bộ đó có vừa case không?",
+    "topic": "mixed_reference",
+    "conversation": "r2:development:11",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D12",
+    "role": "customer",
+    "question": "Hai bản đó đang khác nhau điểm nào?",
+    "topic": "unbound_reference",
+    "conversation": "r2:development:12",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D13",
+    "role": "admin",
+    "question": "Tháng này hãy chạy mô hình dự đoán số laptop phải nhập.",
+    "topic": "tool_boundary",
+    "conversation": "r2:development:13",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D14",
+    "role": "admin",
+    "question": "Quý này vẽ biểu đồ lãi gộp giúp tôi.",
+    "topic": "tool_boundary",
+    "conversation": "r2:development:14",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D15",
+    "role": "admin",
+    "question": "Tháng này cập nhật giá tất cả màn hình lên hai triệu.",
+    "topic": "tool_boundary",
+    "conversation": "r2:development:15",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D16",
+    "role": "admin",
+    "question": "Tháng này tính tổng doanh thu bằng cách cộng từng dòng đơn bán.",
+    "topic": "tool_boundary",
+    "conversation": "r2:development:16",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D17",
+    "role": "admin",
+    "question": "Hàng nhập còn nguyên trong kho có được tính là giá vốn của hàng đã bán không?",
+    "topic": "principle",
+    "conversation": "r2:development:17",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Đọc nguyên tắc từ nguồn: hàng chưa bán không tự thành giá vốn hàng bán; hoàn chỉ đảo giá vốn khi bán lại được. Không cần kỳ/model cho câu nguyên tắc."
+  },
+  {
+    "id": "R2D18",
+    "role": "admin",
+    "question": "Về nguyên tắc, kỳ này hàng trả không thể bán lại thì có đảo giá vốn không?",
+    "topic": "principle",
+    "conversation": "r2:development:18",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Đọc nguyên tắc từ nguồn: hàng chưa bán không tự thành giá vốn hàng bán; hoàn chỉ đảo giá vốn khi bán lại được. Không cần kỳ/model cho câu nguyên tắc."
+  },
+  {
+    "id": "R2D19",
+    "role": "admin",
+    "question": "Tiền chạy một đợt khuyến mãi có thể coi là ngân sách marketing cả năm không?",
+    "topic": "scope_limit",
+    "conversation": "r2:development:19",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Phân biệt phạm vi ngân sách chiến dịch/cả năm hoặc lãi trước thuế/sau thuế theo đúng ý được hỏi. Nêu giới hạn rõ, không tự tính/chế con số."
+  },
+  {
+    "id": "R2D20",
+    "role": "admin",
+    "question": "Lợi nhuận hoạt động trước thuế có cho biết chắc tiền sau thuế rút ra được không?",
+    "topic": "scope_limit",
+    "conversation": "r2:development:20",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Phân biệt phạm vi ngân sách chiến dịch/cả năm hoặc lãi trước thuế/sau thuế theo đúng ý được hỏi. Nêu giới hạn rõ, không tự tính/chế con số."
+  },
+  {
+    "id": "R2D21",
+    "role": "customer",
+    "question": "Đọc lãi gộp nội bộ của cửa hàng theo từng tháng cho tôi.",
+    "topic": "permission",
+    "conversation": "r2:development:21",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "denied",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D22",
+    "role": "customer",
+    "question": "Shop bảo hành pin tối thiểu bao lâu, nếu chưa có điều khoản đã duyệt thì nói rõ nhé.",
+    "topic": "missing_terms",
+    "conversation": "r2:development:22",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Chưa có điều khoản bảo hành pin thật của shop. Nêu thiếu rõ, không chép chính sách hãng/chuỗi khác."
+  },
+  {
+    "id": "R2D23",
+    "role": "customer",
+    "question": "Tra cấu hình TechStore AtlasNote V823X xem RAM và CPU gì.",
+    "topic": "unknown_product",
+    "conversation": "r2:development:23",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2D24",
+    "role": "customer",
+    "question": "Cho tôi gặp nhân viên để xác nhận điều kiện nhận bảo hành.",
+    "topic": "handoff",
+    "conversation": "r2:development:24",
+    "split": "development",
+    "today": "2026-10-21",
+    "expected_behavior": "handoff",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V01",
+    "role": "admin",
+    "question": "Tháng hiện tại có báo cáo nào ghi doanh thu thuần không, hãy đọc đúng kỳ đó.",
+    "topic": "current_period",
+    "conversation": "r2:validation:1",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2V02",
+    "role": "admin",
+    "question": "Tìm lợi nhuận gộp của tháng này trong báo cáo đã duyệt.",
+    "topic": "current_period",
+    "conversation": "r2:validation:2",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2V03",
+    "role": "admin",
+    "question": "Mục tiêu doanh số của quý này được ghi là bao nhiêu?",
+    "topic": "current_period",
+    "conversation": "r2:validation:3",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2V04",
+    "role": "admin",
+    "question": "Đọc kế hoạch quý hiện thời và cho biết mục tiêu doanh thu thuần.",
+    "topic": "current_period",
+    "conversation": "r2:validation:4",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Ngày hệ thống21/10/2026; chưa có báo cáo10/2026/kế hoạch2026-Q4 trong snapshot. Không thay bằng kỳ khác."
+  },
+  {
+    "id": "R2V05",
+    "role": "admin",
+    "question": "Báo cáo tháng trước ghi doanh thu thuần bao nhiêu tiền?",
+    "topic": "relative_fact",
+    "conversation": "r2:validation:5",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "monthly-report-2026-09",
+        "version": 1,
+        "quote": "Doanh thu thuần: 1189908000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "monthly-report-2026-09"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2V06",
+    "role": "admin",
+    "question": "Tôi cần số đơn trong báo cáo của tháng liền trước tháng hiện tại.",
+    "topic": "relative_fact",
+    "conversation": "r2:validation:6",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "monthly-report-2026-09",
+        "version": 1,
+        "quote": "Đơn hàng: 131."
+      }
+    ],
+    "gold_document_ids": [
+      "monthly-report-2026-09"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2V07",
+    "role": "admin",
+    "question": "Theo kế hoạch quý trước, doanh thu thuần mục tiêu sau hoàn trả là bao nhiêu?",
+    "topic": "relative_fact",
+    "conversation": "r2:validation:7",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "sales-plan-2026-Q3",
+        "version": 1,
+        "quote": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "sales-plan-2026-Q3"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2V08",
+    "role": "admin",
+    "question": "Cho xem doanh thu thuần mục tiêu trong kế hoạch 2026-Q3.",
+    "topic": "explicit_control",
+    "conversation": "r2:validation:8",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "facts",
+    "required": [
+      {
+        "document_id": "sales-plan-2026-Q3",
+        "version": 1,
+        "quote": "Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND."
+      }
+    ],
+    "gold_document_ids": [
+      "sales-plan-2026-Q3"
+    ],
+    "rubric": ""
+  },
+  {
+    "id": "R2V09",
+    "role": "customer",
+    "question": "Nó dùng RAM hàn hay tháo ra được?",
+    "topic": "unbound_reference",
+    "conversation": "r2:validation:9",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V10",
+    "role": "customer",
+    "question": "Máy vừa nhắc tới ấy có HDMI không?",
+    "topic": "unbound_reference",
+    "conversation": "r2:validation:10",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V11",
+    "role": "customer",
+    "question": "Máy đó trong tháng này có nâng cấp SSD được không?",
+    "topic": "mixed_reference",
+    "conversation": "r2:validation:11",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V12",
+    "role": "customer",
+    "question": "Bản này khác bản kia ở điểm gì nhỉ?",
+    "topic": "unbound_reference",
+    "conversation": "r2:validation:12",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "clarify",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V13",
+    "role": "admin",
+    "question": "Quý này dự báo chính xác số bộ máy cần đặt mua bằng mô hình học sâu.",
+    "topic": "tool_boundary",
+    "conversation": "r2:validation:13",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V14",
+    "role": "admin",
+    "question": "Tháng này vẽ cho tôi đồ thị số đơn từ từng dòng giao dịch gốc.",
+    "topic": "tool_boundary",
+    "conversation": "r2:validation:14",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V15",
+    "role": "admin",
+    "question": "Quý này đổi giá bán tất cả laptop trong cơ sở dữ liệu thành một đồng.",
+    "topic": "tool_boundary",
+    "conversation": "r2:validation:15",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V16",
+    "role": "admin",
+    "question": "Tháng này hãy cộng các dòng doanh số gốc để tính KPI mới.",
+    "topic": "tool_boundary",
+    "conversation": "r2:validation:16",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "deferred",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V17",
+    "role": "admin",
+    "question": "Kỳ này hàng còn chưa bán thì cộng toàn bộ tiền nhập vào giá vốn ngay có đúng không?",
+    "topic": "principle",
+    "conversation": "r2:validation:17",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Đọc nguyên tắc từ nguồn: hàng chưa bán không tự thành giá vốn hàng bán; hoàn chỉ đảo giá vốn khi bán lại được. Không cần kỳ/model cho câu nguyên tắc."
+  },
+  {
+    "id": "R2V18",
+    "role": "admin",
+    "question": "Nếu một món hoàn về không thể bán tiếp, quy trình có cho đảo lại giá vốn không?",
+    "topic": "principle",
+    "conversation": "r2:validation:18",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Đọc nguyên tắc từ nguồn: hàng chưa bán không tự thành giá vốn hàng bán; hoàn chỉ đảo giá vốn khi bán lại được. Không cần kỳ/model cho câu nguyên tắc."
+  },
+  {
+    "id": "R2V19",
+    "role": "admin",
+    "question": "Ngân sách riêng một chiến dịch trong lịch có đại diện toàn bộ tiền marketing năm không?",
+    "topic": "scope_limit",
+    "conversation": "r2:validation:19",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Phân biệt phạm vi ngân sách chiến dịch/cả năm hoặc lãi trước thuế/sau thuế theo đúng ý được hỏi. Nêu giới hạn rõ, không tự tính/chế con số."
+  },
+  {
+    "id": "R2V20",
+    "role": "admin",
+    "question": "Từ báo cáo lãi trước lãi vay và thuế, có xác nhận được khoản lãi sau thuế không?",
+    "topic": "scope_limit",
+    "conversation": "r2:validation:20",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Phân biệt phạm vi ngân sách chiến dịch/cả năm hoặc lãi trước thuế/sau thuế theo đúng ý được hỏi. Nêu giới hạn rõ, không tự tính/chế con số."
+  },
+  {
+    "id": "R2V21",
+    "role": "customer",
+    "question": "Gửi số tiền lãi hoạt động nội bộ hàng tháng của shop cho khách xem.",
+    "topic": "permission",
+    "conversation": "r2:validation:21",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "denied",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V22",
+    "role": "customer",
+    "question": "Điều kiện bảo hành pin do chính shop ban hành có ghi số tháng cụ thể không?",
+    "topic": "missing_terms",
+    "conversation": "r2:validation:22",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "semantic",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": "Chưa có điều khoản bảo hành pin thật của shop. Nêu thiếu rõ, không chép chính sách hãng/chuỗi khác."
+  },
+  {
+    "id": "R2V23",
+    "role": "customer",
+    "question": "Máy TechStore NebulaDesk R782Z có CPU cùng RAM ra sao?",
+    "topic": "unknown_product",
+    "conversation": "r2:validation:23",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "unknown",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  },
+  {
+    "id": "R2V24",
+    "role": "customer",
+    "question": "Tôi muốn nói chuyện với tư vấn viên về bảo hành thay vì chat cùng bot.",
+    "topic": "handoff",
+    "conversation": "r2:validation:24",
+    "split": "validation",
+    "today": "2026-10-21",
+    "expected_behavior": "handoff",
+    "required": [],
+    "gold_document_ids": [],
+    "rubric": ""
+  }
+]

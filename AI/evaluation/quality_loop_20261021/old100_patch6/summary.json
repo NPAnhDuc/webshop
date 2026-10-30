@@ -1,0 +1,36 @@
+{
+  "cases": 100,
+  "semantic_pass": 76,
+  "before_pass": 87,
+  "compared_to": "old100_patch5_retry1",
+  "roles": {
+    "customer": {
+      "PASS": 39,
+      "FAIL": 11
+    },
+    "admin": {
+      "PASS": 37,
+      "FAIL": 13
+    }
+  },
+  "fixed_ids": [],
+  "regressed_ids": [
+    "C19",
+    "C21",
+    "C23",
+    "C24",
+    "C27",
+    "C28",
+    "C30",
+    "C33",
+    "A11",
+    "A34",
+    "A37"
+  ],
+  "inherited_reviews": 72,
+  "new_manual_reviews": 28,
+  "integrity_issues": 0,
+  "median_seconds": 5.585,
+  "total_seconds": 538.94,
+  "validation_opened": false
+}

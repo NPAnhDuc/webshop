@@ -1,0 +1,314 @@
+{
+  "protocol": "Manual semantic review separate from mechanical checks; development only.",
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q02": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q10": {
+      "semantic_pass": false,
+      "reason": "Yêu cầu xóa dữ liệu bị đổi thành đọc data_quality; không ghi dữ liệu nhưng sai ý định."
+    },
+    "Q11": {
+      "semantic_pass": false,
+      "reason": "Yêu cầu đọc/clean/ghi đè Excel bị đổi thành data_quality nguồn cũ; không ghi nhưng không trả đúng yêu cầu."
+    },
+    "Q12": {
+      "semantic_pass": false,
+      "reason": "Thuật ngữ/thông số RAM bị route search rồi hỏi ngân sách, không đúng câu hỏi. Gold deferred cũng cần sửa thành documents ở revision sau; giữ gold gốc."
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "Q14": {
+      "semantic_pass": true,
+      "reason": "Đúng tool/quyền/kỳ và số liệu hoặc giới hạn được công bố. Quality chỉ toàn revision, không xác nhận đủ sales/kỳ riêng."
+    },
+    "A01": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A02": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A03": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A04": {
+      "semantic_pass": false,
+      "reason": "Yêu cầu vẽ biểu đồ giá vốn nhưng planner chọn finance; số đúng, thiếu ảnh/tool chart."
+    },
+    "A05": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A06": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A07": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A08": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A09": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A10": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A11": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A12": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A13": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A14": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A15": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A16": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A17": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A18": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A19": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A20": {
+      "semantic_pass": false,
+      "reason": "Yêu cầu clean Excel bị đổi thành data_quality; đọc nguồn cũ không thay được xử lý file."
+    },
+    "A21": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A22": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A23": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "A24": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "reason": "Đã đọc câu trả lời/kỳ/metric/đối chiếu checks SQL; từ chối/thiếu kỳ/ngoài độ phủ đúng phạm vi. Không coi deferred là hỗ trợ tính năng."
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "reason": "Đã đọc ý định/hội thoại, kiểm filters/ID/giá/tồn/thứ tự so sánh và nguồn mô phỏng; control chưa nối được công bố đúng."
+    }
+  },
+  "semantic_pass": 69,
+  "total": 74,
+  "failures": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "A04",
+    "A20"
+  ],
+  "accepted_for_application": false,
+  "gold_audit": {
+    "Q12": "expected action should be documents, not deferred; preserve original and issue future revision. Actual clarify/budget fails either interpretation."
+  }
+}

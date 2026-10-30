@@ -1,0 +1,206 @@
+{
+  "id": "Q0102",
+  "role": "admin",
+  "question": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+  "conversation": "business:7",
+  "split": "development",
+  "topic": "business_reasoning",
+  "seconds": 7.0,
+  "checks": {
+    "status": "NEEDS_REVIEW",
+    "issues": [],
+    "note": "Automated source/action checks only. Not a final semantic PASS; review relevance, contradictions, omissions and equivalent evidence."
+  },
+  "result": {
+    "question": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+    "role": "admin",
+    "profile": {
+      "owner_role": "admin",
+      "history": [
+        {
+          "question": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+          "answer": "Mức giảm tối đa 6%; không cộng dồn.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nChưa có nguồn đủ để xác nhận: đối chiếu trần giảm giá; người duyệt giúp tôi..\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng."
+        }
+      ],
+      "document_query": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+      "rag_subject": "Quy định giá và biên gộp"
+    },
+    "rows": [],
+    "sources": [
+      {
+        "document_id": "pricing-policy",
+        "title": "Quy định giá và biên gộp",
+        "source": "pricing-policy-v2.md",
+        "version": 2,
+        "effective_from": "2026-04-01",
+        "effective_to": null,
+        "status": "approved",
+        "audience": "admin",
+        "authority": "synthetic_shop_document",
+        "data_kind": "demo",
+        "doc_type": "policy",
+        "text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt.",
+        "retrieval_text": "Quy định giá và biên gộp > Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt.",
+        "heading_path": "Quy định giá và biên gộp > Ràng buộc",
+        "section": 2,
+        "chunk_id": "448a93dc0aa725ce21fbbfed8212425d70a6efc86743e8b8236345e74c5fad47",
+        "score": 0.04918,
+        "dense_score": 0.4412,
+        "lexical_score": 0.2773,
+        "bm25_score": 16.7871,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ],
+    "intent": "documents",
+    "mode": "RAG cơ bản · chỉ đọc tài liệu",
+    "trace": [
+      "grounded_rag: intent then source-owned evidence; no tools",
+      "evidence: ordered by trained reranker"
+    ],
+    "plan": {
+      "action": "answer",
+      "query": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+      "task": "comparison",
+      "doc_types": [
+        "policy",
+        "procedure"
+      ],
+      "category": "all",
+      "private_request": false,
+      "parts": {
+        "P1": "Tôi muốn giảm7%",
+        "P2": "đối chiếu trần giảm giá",
+        "P3": "người duyệt giúp tôi."
+      },
+      "scope": {
+        "months": [],
+        "quarters": [],
+        "reference_date": "2026-10-24"
+      }
+    },
+    "answer": "Mức giảm tối đa 6%; không cộng dồn.\n\n[Nguồn: pricing-policy-v2.md, mục Quy định giá và biên gộp > Ràng buộc, đoạn 2, phiên bản 2]\n\nChưa có nguồn đủ để xác nhận: đối chiếu trần giảm giá; người duyệt giúp tôi..\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+    "basic_action": "answer",
+    "rag": {
+      "answerability": "partial",
+      "claims": [
+        {
+          "text": "Mức giảm tối đa 6%; không cộng dồn.",
+          "evidence": [
+            {
+              "chunk_id": "448a93dc0aa725ce21fbbfed8212425d70a6efc86743e8b8236345e74c5fad47",
+              "quotes": [
+                "Mức giảm tối đa 6%; không cộng dồn."
+              ],
+              "source": "pricing-policy-v2.md"
+            }
+          ]
+        }
+      ],
+      "verified": true,
+      "unanswered": [
+        "đối chiếu trần giảm giá",
+        "người duyệt giúp tôi."
+      ],
+      "part_evidence": {
+        "P1": [
+          "policy_7"
+        ],
+        "P2": [],
+        "P3": []
+      },
+      "field_bindings": [],
+      "scope_checks": [],
+      "available_fields": [
+        {
+          "id": "policy_1",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "policy_2",
+          "document_id": "pricing-policy"
+        },
+        {
+          "id": "sales_plan_2026Q1_3",
+          "document_id": "sales-plan-2026-Q1"
+        },
+        {
+          "id": "sales_plan_2025Q4_4",
+          "document_id": "sales-plan-2025-Q4"
+        },
+        {
+          "id": "sales_plan_2026Q2_5",
+          "document_id": "sales-plan-2026-Q2"
+        },
+        {
+          "id": "sales_plan_2026Q3_6",
+          "document_id": "sales-plan-2026-Q3"
+        },
+        {
+          "id": "policy_7",
+          "document_id": "pricing-policy"
+        },
+        {
+          "id": "policy_8",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "procedure_9",
+          "document_id": "handbook-shop-sql-queries"
+        },
+        {
+          "id": "sales_plan_2026Q1_10",
+          "document_id": "sales-plan-2026-Q1"
+        },
+        {
+          "id": "sales_plan_2025Q4_11",
+          "document_id": "sales-plan-2025-Q4"
+        },
+        {
+          "id": "sales_plan_2026Q2_12",
+          "document_id": "sales-plan-2026-Q2"
+        },
+        {
+          "id": "sales_plan_2026Q3_13",
+          "document_id": "sales-plan-2026-Q3"
+        },
+        {
+          "id": "policy_14",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "policy_15",
+          "document_id": "pricing-policy"
+        },
+        {
+          "id": "procedure_16",
+          "document_id": "handbook-shop-sql-queries"
+        },
+        {
+          "id": "policy_17",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "procedure_18",
+          "document_id": "handbook-shop-sql-queries"
+        },
+        {
+          "id": "policy_19",
+          "document_id": "pricing-policy"
+        },
+        {
+          "id": "policy_20",
+          "document_id": "pricing-policy"
+        }
+      ],
+      "method": "scoped retrieval and per-part source selection"
+    },
+    "timings": {
+      "router_ms": 1328.0,
+      "retrieval_ms": 3078.0,
+      "model_ms": 2594.0,
+      "total_ms": 7000.0
+    }
+  }
+}

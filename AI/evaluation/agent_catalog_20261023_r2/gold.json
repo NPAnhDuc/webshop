@@ -1,0 +1,62 @@
+{
+  "S01": {
+    "action": "answer",
+    "tool": "search",
+    "limit": 5,
+    "ceiling": 20000000
+  },
+  "S02": {
+    "action": "answer",
+    "tool": "search",
+    "limit": 5,
+    "ceiling": 15000000
+  },
+  "S03": {
+    "action": "answer",
+    "tool": "compare",
+    "prior_positions": [
+      0,
+      1
+    ]
+  },
+  "S04": {
+    "action": "answer",
+    "tool": "search",
+    "limit": 3,
+    "ceiling": 20000001
+  },
+  "S05": {
+    "action": "answer",
+    "tool": "compare",
+    "prior_positions": [
+      2,
+      0
+    ]
+  },
+  "S06": {
+    "action": "deferred"
+  },
+  "S07": {
+    "action": "clarify"
+  },
+  "S08": {
+    "action": "denied"
+  },
+  "S09": {
+    "action": "documents"
+  },
+  "S10": {
+    "action": "clarify"
+  },
+  "S11": {
+    "action": "deferred"
+  },
+  "S12": {
+    "action": "answer",
+    "tool": "compare",
+    "product_ids": [
+      "2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+      "01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c"
+    ]
+  }
+}

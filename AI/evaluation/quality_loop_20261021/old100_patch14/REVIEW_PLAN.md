@@ -1,0 +1,7 @@
+# Old100 regression before full479: patch14
+
+Same bot/app hashes as focused r7,198 tests already green; no new production edit. Frozen legacy100 bank/gold bytes copied by safe wrapper, clock2026-10-20 exactly matches old100patch9 baseline. r7 uses21October by design; do not combine scores across clocks/banks. Shared runner.lock; code/source hashes frozen and verified.
+
+Compare to old100_patch9/results.json and review.json (87PASS/13FAIL). Inherit only exact answer/action/source equality; manually read EVERY changed answer with full same-group dialogue and gold/source contract. Inspect C03/C06/C44, all selected references, source limits and missing-attribute questions even if checks sayPASS. Track PASS-to-FAIL separately from gains and secondary caveat loss. Main risk: product-first model might wrongly mark an unresolved SKU attribute complete and skip the fixed reference fallback. Record evidence_reads and fallback counts, exact quotes/role leaks and timing; zero fallback in the focused224 did not validate this path.
+
+If no semantic regression, keep patch14 as pending candidate and run full479 next heartbeat on same code before accepting. If regression, preserve trial and restore patch9 snapshot before any further fix. Never run old overwritten legacy output path, change model/KB/SQL/config during batch or use old121validation/reserved24 to tune. This heartbeat only this one regression batch; no new production repair.

@@ -1,0 +1,78 @@
+{
+  "cases": 479,
+  "before_round": "candidate_v5_development",
+  "after_round": "candidate_v9_development",
+  "before_checks": {
+    "PASS_CHECKS": 422,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 4
+  },
+  "after_checks": {
+    "PASS_CHECKS": 422,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 4
+  },
+  "changed_check_ids": [],
+  "changed_answer_action_source_ids": [
+    "Q0162",
+    "Q0217",
+    "Q0261",
+    "Q0269",
+    "Q0435",
+    "Q0455",
+    "Q0480",
+    "Q0550",
+    "Q0554",
+    "Q0560",
+    "Q0568",
+    "Q0576",
+    "Q0577",
+    "Q0595",
+    "Q0599"
+  ],
+  "changed_cases_reviewed": true,
+  "prior112review_cases_unchanged": true,
+  "semantic_coverage": {
+    "total": 479,
+    "reviewed": 479,
+    "unreviewed": 0,
+    "reviewed_subset": {
+      "FAIL": 29,
+      "PASS": 450
+    },
+    "inherited": 112,
+    "fresh": 367,
+    "pending_ids": [],
+    "roles": {
+      "customer": {
+        "total": 248,
+        "reviewed": 248,
+        "statuses": {
+          "PASS": 231,
+          "FAIL": 17
+        }
+      },
+      "admin": {
+        "total": 231,
+        "reviewed": 231,
+        "statuses": {
+          "PASS": 219,
+          "FAIL": 12
+        }
+      }
+    },
+    "warning": "All479development judgments recorded; Codex-authored, repeated numeric probes, not independent or overall600/real-useraccuracy. Statuses come only from saved Codex review; source/check agreement is not semantic PASS."
+  },
+  "quote_checks": 914,
+  "quote_issues": [],
+  "private_source_leaks": [],
+  "timings": {
+    "before_total_seconds": 2336.088,
+    "after_total_seconds": 2264.654,
+    "before_median_seconds": 4.469,
+    "after_median_seconds": 4.422
+  },
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "No semantic gain claimed from unchanged checks or newly reviewed coverage. Warmup/cache uncontrolled; no speed attribution."
+}

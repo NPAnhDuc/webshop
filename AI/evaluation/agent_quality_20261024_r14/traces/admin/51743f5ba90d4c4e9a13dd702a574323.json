@@ -1,0 +1,38 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "51743f5ba90d4c4e9a13dd702a574323",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:10:27.769854+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Cho biết doanh thu tháng7 và tháng8 năm2026.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "metric": "revenue",
+      "pending": true,
+      "operation": "finance"
+    }
+  },
+  "plans": {
+    "admin_plan": {
+      "metric": "revenue",
+      "operation": "finance",
+      "period_unit": "month",
+      "time_mode": "explicit"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "clarify",
+    "answer": "Bạn xác nhận một tháng, quý hoặc năm cần báo cáo nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.424230600008741
+}

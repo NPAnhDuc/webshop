@@ -1,0 +1,918 @@
+{
+  "Q0313": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. MSI MAG A650BN: loại: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0314": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Apple MacBook Air (Late 2020): Processor Core: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0315": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo ThinkBook 15 G2 ITL: Processor Model: Core i5 1135G7.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0317": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 111034650 VND.; Lợi nhuận hoạt động trước lãi vay và thuế: 67811350 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0318": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận gộp: 79845000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0319": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0321": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Nitro 5 AN515-58-59JP: Processor Core: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0322": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Crucial P3 Plus: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0324": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Đơn hàng: 163.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0325": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 1010759000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0327": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. MSI MAG A750GL PCIE5: mức hiệu suất theo danh mục: gold.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0331": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Đơn hàng: 131.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0332": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 1294467000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0334": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Samsung 980 Pro: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0336": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Apple MacBook Air (Late 2020): Processor Model: Apple M1 Chip.; Apple MacBook Air (Late 2020): RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0338": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Đơn hàng: 96.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0339": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0340": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0341": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Nitro 5 AN515-58-59JP: Processor Model: Core i5 12450H.; Acer Nitro 5 AN515-58-59JP: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0342": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Crucial P510: dung lượng: 1000 GB.; Crucial P510: kích thước/chuẩn thiết kế: M.2-2280.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "DISTINCT_OTHER_MODEL_EXTRA",
+    "secondary_note": "Mảnh KC3000/NV2được nêu rõ tên thiết bị khác; chưa gán dữ kiện này cho Crucial/Samsung. GiữPASSnội dungchính theo cùngrubric đãchốt,nhưng thông tin mẫu khác thừa vàcầnlọcbỏ. KhácclaimB12M/G305khôngràngbuộcởcohort_02."
+  },
+  "Q0343": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Samsung 990 Pro: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0345": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1189908000 VND.; Giá vốn: 1010759000 VND.; Lợi nhuận gộp: 179149000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0346": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 1240171000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0347": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0349": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Corsair RM850e (2025): loại: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0350": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-12400F: số nhân: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0356": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Dell Inspiron 15 3520: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0357": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-14400F: xung cơ bản: 2.5 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0358": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Đơn hàng: 118.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0359": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 950747000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0360": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0363": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Logitech G502 Hero: cảm biến: Optical.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0364": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 127647044 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0365": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0367": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Samsung 980 Pro: dung lượng: 2000 GB.; Samsung 980 Pro: cache: 2048 MB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "DISTINCT_OTHER_MODEL_EXTRA",
+    "secondary_note": "Mảnh KC3000/NV2được nêu rõ tên thiết bị khác; chưa gán dữ kiện này cho Crucial/Samsung. GiữPASSnội dungchính theo cùngrubric đãchốt,nhưng thông tin mẫu khác thừa vàcầnlọcbỏ. KhácclaimB12M/G305khôngràngbuộcởcohort_02."
+  },
+  "Q0368": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Logitech G305 LIGHTSPEED: DPI tối đa: 12000 dpi.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0369": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Đơn hàng: 131.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0370": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 1175440000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0371": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo Legion Slim 5i 16IRH8: Processor Model: Core i5 13500H.; Lenovo Legion Slim 5i 16IRH8: RAM: 16GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0372": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-14400F: số nhân: 10.; Intel Core i5-14400F: xung boost: 4.7 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0374": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận gộp: 147032000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0375": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1474785000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0376": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 5 7600X: số nhân: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0377": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus TUF Gaming VG27AQ: đường chéo: 27 inch.; Asus TUF Gaming VG27AQ: tần số quét: 165 Hz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0378": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Swift Go 14 SFG14-41-R5RB: Processor Model: Ryzen 5 7530U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0379": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 529597000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0380": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0381": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Western Digital WD_Black SN850X: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0382": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 7 9800X3D: xung cơ bản: 4.7 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0384": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận gộp: 178846000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0385": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0386": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0387": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Gigabyte X870E AORUS ELITE WIFI7: socket: AM5.; Gigabyte X870E AORUS ELITE WIFI7: RAM tối đa theo danh mục: 256 GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Giới hạn không lấy cấu hình khác để cam kết là cảnh báo chung,không nêu ThinkBookcó mặt trên boGigabyte. Dữ kiệnAM5/256GBđúng; cảnhbáothừa."
+  },
+  "Q0390": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1175440000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0391": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus TUF Gaming A15 FA506NF: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0392": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 7 5700X3D: xung cơ bản: 3 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0394": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 109067080 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0395": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1493219000 VND.; Doanh thu thuần: 609442000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0397": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus ZenBook 14 UM425UA: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0398": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Aspire 3 A315-59-56VC: Processor Core: 10.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0400": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0401": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus TUF GAMING B850-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0402": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Aspire 5 5P-A515-58P: Processor Core: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0403": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AOC 24G4XE: độ phân giải: 1920 × 1080 pixel.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0404": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0405": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 1203150000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0406": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-12400F: xung cơ bản: 2.5 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0407": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus TUF GAMING B850-PLUS WIFI: socket: AM5.; Asus TUF GAMING B850-PLUS WIFI: RAM tối đa theo danh mục: 192 GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0408": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Dell Inspiron 15 3520: Processor Model: Core i3 1215U.; Dell Inspiron 15 3520: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0409": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 141500520 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0414": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận hoạt động trước lãi vay và thuế: 60526591 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0415": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 609442000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0416": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Kingston FURY Beast 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).; Kingston FURY Beast 32 GB: độ trễ từ đầu tiên: 10 ns.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0417": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Razer Basilisk V3: kết nối: Wired.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0418": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Aspire 5 5P-A515-58P: Processor Model: Core i3 1305U.; Acer Aspire 5 5P-A515-58P: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0419": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0421": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 7 9800X3D: số nhân: 8.; AMD Ryzen 7 9800X3D: xung boost: 5.2 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0422": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo LOQ Gaming 15IRH8: Processor Core: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0423": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. MSI MAG A750GL PCIE5: loại: ATX.; MSI MAG A750GL PCIE5: công suất định mức theo danh mục: 750 W.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0425": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0426": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Logitech G305 LIGHTSPEED: cảm biến: Optical.; Logitech G305 LIGHTSPEED: kiểu tay: Right.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0427": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. MSI MAG A650BN: mức hiệu suất theo danh mục: bronze.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0428": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Razer DeathAdder Essential: kết nối: Wired.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0429": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 984310000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0430": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0431": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Crucial P3 Plus: dung lượng: 1000 GB.; Crucial P3 Plus: kích thước/chuẩn thiết kế: M.2-2280.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "DISTINCT_OTHER_MODEL_EXTRA",
+    "secondary_note": "Mảnh KC3000/NV2được nêu rõ tên thiết bị khác; chưa gán dữ kiện này cho Crucial/Samsung. GiữPASSnội dungchính theo cùngrubric đãchốt,nhưng thông tin mẫu khác thừa vàcầnlọcbỏ. KhácclaimB12M/G305khôngràngbuộcởcohort_02."
+  },
+  "Q0432": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Acer Swift Go 14 SFG14-41-R5RB: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0433": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-14600KF: số nhân: 14.; Intel Core i5-14600KF: xung boost: 5.3 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0434": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận hoạt động trước lãi vay và thuế: 13557620 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0438": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Kingston KC3000: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0441": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AOC 24G4XE: đường chéo: 24 inch.; AOC 24G4XE: tần số quét: 180 Hz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0442": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. MSI B760 GAMING PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0443": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.; Lenovo LOQ Gaming 15IRH8: RAM: 16GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0444": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 110729840 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0445": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0448": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 7 7700X: xung cơ bản: 4.5 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0449": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Chi phí vận hành: 107024380 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0450": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0452": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Intel Core i5-12400F: số nhân: 6.; Intel Core i5-12400F: xung boost: 4.4 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0456": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Samsung 990 Pro: dung lượng: 2000 GB.; Samsung 990 Pro: cache: 2048 MB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "DISTINCT_OTHER_MODEL_EXTRA",
+    "secondary_note": "Mảnh KC3000/NV2được nêu rõ tên thiết bị khác; chưa gán dữ kiện này cho Crucial/Samsung. GiữPASSnội dungchính theo cùngrubric đãchốt,nhưng thông tin mẫu khác thừa vàcầnlọcbỏ. KhácclaimB12M/G305khôngràngbuộcởcohort_02."
+  },
+  "Q0459": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0460": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0461": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 7 5700X3D: số nhân: 8.; AMD Ryzen 7 5700X3D: xung boost: 4.1 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0462": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 5 7600X: xung cơ bản: 4.7 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0463": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. AMD Ryzen 5 7600X: số nhân: 6.; AMD Ryzen 5 7600X: xung boost: 5.3 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0464": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Giá vốn: 839604000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0466": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Asus PRIME B550M-A WIFI II: socket: AM4.; Asus PRIME B550M-A WIFI II: RAM tối đa theo danh mục: 128 GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03",
+    "secondary_issue": "UNNECESSARY_ADDITIONAL_INFORMATION",
+    "secondary_note": "Thuộc tính chính đúng; có thông số cùng sản phẩm hoặc cảnh báo nền thừa,không gọi là tối ưu/gọn."
+  },
+  "Q0469": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lợi nhuận gộp: 172509000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0470": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  },
+  "Q0471": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc cả câu và nguồn/kỳ/SKU: đủ dữ kiện được hỏi, đúng đối tượng từ câu hiện tại hoặc lịch sử. Lenovo ThinkBook 15 G2 ITL: Processor Core: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh semantic reading of110outputs in35/35/40panels with prior same-session questions, answer text and source ownership against frozen required facts; not inferred from PASS_CHECKS, not independent human assessment.",
+    "cohort": "cohort_03"
+  }
+}

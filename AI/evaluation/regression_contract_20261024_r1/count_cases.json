@@ -1,0 +1,11 @@
+[
+  {"id":"C01","question":"Tìm cho tôi 3 thanh RAM dưới 3 triệu.","count":3,"budget":3000000},
+  {"id":"C02","question":"Cho 2 ổ SSD dưới 2 triệu.","count":2,"budget":2000000},
+  {"id":"C03","question":"Cho 2 bộ RAM dưới 3 triệu.","count":2,"budget":3000000},
+  {"id":"C04","question":"Cho 3 laptop dưới 20 triệu.","count":3,"budget":20000000},
+  {"id":"C05","question":"Cho 2 chiếc SSD dưới 2 triệu.","count":2,"budget":2000000},
+  {"id":"C06","question":"cho 3 thanh ram duoi 2,5 trieu","count":3,"budget":2500000},
+  {"id":"C07","question":"Cho 0 thanh RAM dưới 3 triệu.","clarify":true},
+  {"id":"C08","question":"Cho 21 bộ RAM dưới 3 triệu.","clarify":true},
+  {"id":"C09","question":"Cho 3 thanh RAM và 2 ổ SSD dưới 3 triệu.","clarify":true}
+]

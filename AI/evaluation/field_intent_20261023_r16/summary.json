@@ -1,0 +1,189 @@
+{
+  "cases": 91,
+  "production_parts": 123,
+  "exact_intent": 79,
+  "contract_invalid": 0,
+  "cohorts": {
+    "product_followup": {
+      "cases": 56,
+      "exact_intent": 52,
+      "invalid_contract": 0,
+      "issue_exact": 52,
+      "issue_field_mismatch": 4
+    },
+    "fallback_control": {
+      "cases": 30,
+      "exact_intent": 23,
+      "invalid_contract": 0,
+      "issue_unsafe_shortcut": 7,
+      "issue_exact": 23
+    },
+    "compound_lookup": {
+      "cases": 5,
+      "exact_intent": 4,
+      "invalid_contract": 0,
+      "issue_field_mismatch": 1,
+      "issue_exact": 4
+    }
+  },
+  "same_input": {
+    "baseline_exact": 68,
+    "candidate_exact": 79,
+    "fixes": [
+      "F15-Q0227_original_history",
+      "F15-Q0292_original_history",
+      "F15-Q0300_original_history",
+      "F15-Q0301_original_history",
+      "F15-Q0322_original_history",
+      "F15-Q0357_original_history",
+      "F15-Q0381_original_history",
+      "F15-Q0382_original_history",
+      "F15-Q0383_original_history",
+      "F15-Q0392_original_history",
+      "F15-Q0406_original_history",
+      "F15-Q0446_original_history",
+      "F15-Q0448_original_history",
+      "F15-Q0462_original_history",
+      "F15-A09",
+      "F15-C02"
+    ],
+    "regressions": [
+      "F15-Q0125_original_history",
+      "F15-Q0373_original_history",
+      "F15-C13",
+      "F15-C14",
+      "F15-C19"
+    ]
+  },
+  "issues": [
+    {
+      "id": "F15-Q0125_original_history",
+      "kind": "field_mismatch",
+      "missing_fields": [],
+      "extra_fields": [
+        "memory/cas_latency",
+        "memory/first_word_latency",
+        "memory/speed"
+      ]
+    },
+    {
+      "id": "F15-Q0247_original_history",
+      "kind": "field_mismatch",
+      "missing_fields": [],
+      "extra_fields": [
+        "memory/cas_latency",
+        "memory/first_word_latency",
+        "memory/speed"
+      ]
+    },
+    {
+      "id": "F15-Q0373_original_history",
+      "kind": "field_mismatch",
+      "missing_fields": [],
+      "extra_fields": [
+        "memory/cas_latency",
+        "memory/first_word_latency",
+        "memory/speed"
+      ]
+    },
+    {
+      "id": "F15-Q0478_original_history",
+      "kind": "field_mismatch",
+      "missing_fields": [],
+      "extra_fields": [
+        "memory/cas_latency",
+        "memory/first_word_latency",
+        "memory/speed"
+      ]
+    },
+    {
+      "id": "F15-C09",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "laptop/Display Resolution",
+        "laptop/Display Size (Inch)",
+        "laptop/Display Type",
+        "laptop/Graphics Chipset",
+        "laptop/Graphics Memory",
+        "laptop/Graphics Memory Accessibility"
+      ]
+    },
+    {
+      "id": "F15-C13",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "memory/cas_latency",
+        "memory/speed"
+      ]
+    },
+    {
+      "id": "F15-C14",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "monitor/refresh_rate"
+      ]
+    },
+    {
+      "id": "F15-C19",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "monitor/panel_type"
+      ]
+    },
+    {
+      "id": "F15-C31",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "cpu/boost_clock",
+        "cpu/core_count"
+      ]
+    },
+    {
+      "id": "F15-C33",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "laptop/Display Type",
+        "laptop/HDMI Port"
+      ]
+    },
+    {
+      "id": "F15-C34",
+      "kind": "unsafe_shortcut",
+      "missing_fields": [],
+      "extra_fields": [
+        "laptop/RAM",
+        "laptop/RAM Type"
+      ]
+    },
+    {
+      "id": "F15-C01",
+      "kind": "field_mismatch",
+      "missing_fields": [],
+      "extra_fields": [
+        "laptop/Processor Brand",
+        "laptop/Processor Core"
+      ]
+    }
+  ],
+  "total_seconds": 138.421,
+  "median_seconds": 0.844,
+  "prompt_token_range": [
+    477,
+    2619
+  ],
+  "output_token_range": [
+    10,
+    66
+  ],
+  "done_reasons": {
+    "stop": 91
+  },
+  "production_installed": false,
+  "decision": "Not accepted: same-input aggregate improves but unsafe fallback shortcuts increase4to7, including three new principle questions. Typed per-part contract prevents empty arrays, not semantic misbinding. Keep patch9 unchanged."
+}

@@ -1,0 +1,7 @@
+# Patch14 rejected after broader legacy regression
+
+100 complete/integrity unchanged, stderr empty. Semantic85PASS/15FAIL versus patch9's87/13: zero fixes, two regressions C31 and C34.92 exact-output verdicts inherited; all8 changed answers freshly read. C05/C06 are cleaner and A16 adds correct period labels; C03/C29/A15 remain incomplete. C44 unknown-SKU refusal remains unchanged. Source/quote audit and stage counts in summary.json.
+
+C31 product read leaves one part empty, fallback fills unknown thread-count request with a generic caveat and marks complete; original correctly declared the thread count unavailable. C34 product read falsely marks regional soldered-RAM question complete using current capacity/type, never invoking the reference caveat. These are the missing-detection risks noted before launch, now observed. Reject despite four fixes in focused224. Preserve raw/gold/reviews/code; restore patch9 and test. No full479 on rejected code.
+
+Next hypothesis needs an independent check of whether selected evidence actually answers each requested part, including a valid explicit unknown. Do not add another wording-only instruction or hardcode hardware fields/benchmark IDs. A small observational relevance-judge diagnostic using known correct/incorrect selected answers can establish whether the same local model can detect these failures before another production repair. It is not training or an independent validation set. Keep source facts and manual expected verdicts separate from the judge prompt.

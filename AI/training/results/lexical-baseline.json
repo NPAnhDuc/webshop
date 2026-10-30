@@ -1,0 +1,16 @@
+{
+  "method": "TF-IDF word unigrams/bigrams",
+  "scope": "Source retrieval only on same frozen pilot; not full chatbot accuracy",
+  "splits": {
+    "validation": {
+      "samples": 80,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0
+    },
+    "test": {
+      "samples": 174,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0
+    }
+  }
+}

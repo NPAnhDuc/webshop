@@ -1,0 +1,11 @@
+{
+  "cases": 48,
+  "dev": 32,
+  "holdout": 16,
+  "sha256": "b0577c7cc3034c07dab0cdd43d9a35fde8dfdb91b95c3997ea27929b7469c55d",
+  "limitations": [
+    "Small authored synthetic-shop benchmark; 16 single-fact families have two wording variants.",
+    "No production accuracy claim.",
+    "Missing policies must remain missing."
+  ]
+}

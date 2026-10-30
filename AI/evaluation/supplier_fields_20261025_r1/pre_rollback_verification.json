@@ -1,0 +1,7 @@
+{
+  "batch_complete": true,
+  "turns": 28,
+  "all_frozen_code_matches_before_rollback": true,
+  "regression": "Q0187 loses available lead-time evidence because procedural source is typed strategy, not procedure/policy.",
+  "candidate_rejected": true
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "later_checkpoint_after_book_staging",
+  "changed_files": [
+    {
+      "path": "D:\\Chatbot\\chatbotshop\\AI\\shopbot\\agent_conversation.py",
+      "r8_sha256": "e3044f41c4ad31a684f38f1af864ceec7b9657fa3d56c29c020a098e6b6dd0da",
+      "current_sha256": "8832901bb995d2ae503407079e1be9e5ddbab494ee7cc6326f2e42b1a658973e"
+    },
+    {
+      "path": "D:\\Chatbot\\chatbotshop\\AI\\shopbot\\agent_tools.py",
+      "r8_sha256": "f0d51a283631a156e568d3829abe67f0d940a298ee49acada264755834c659c8",
+      "current_sha256": "fbbc915cfc8ced8431af77ba97598ef70f68562b914f910265d3368428da388a"
+    },
+    {
+      "path": "D:\\Chatbot\\chatbotshop\\AI\\shopbot\\capabilities.py",
+      "r8_sha256": "983ff75a9367442be80afd94c75aabb0bb614ba1035bc8db28a783aea65472da",
+      "current_sha256": "0ca0a929716322ace77b01f9bf06104f5a9a76332ce6b4ca2f42e62545cd0023"
+    },
+    {
+      "path": "D:\\Chatbot\\chatbotshop\\AI\\shopbot\\catalog_planner.py",
+      "r8_sha256": "c93bbe17290e214bf4cdebf29f8bab53e5974120b9aa5adfbc9ca8aac22265c9",
+      "current_sha256": "f488604bdc749c0c6390162e6bd8cc2ad16a123846e3e62d689b46ae008f51d3"
+    }
+  ],
+  "interpretation": "Historical r9 rollback of two files was verified at that time. Current files now include additional product-facts/document-adapter changes outside that evaluated snapshot. Do not overwrite them or describe the whole current runtime as byte-identical to r8. Book source/package verification is independent and passed."
+}

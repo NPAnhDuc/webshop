@@ -1,0 +1,58 @@
+[
+  [
+    "test-policy",
+    "Điều kiện mua hàng KIỂM THỬ",
+    "policy",
+    "customer",
+    "Đây là điều kiện của SHOP KIỂM THỬ GIẢ LẬP, không phải cửa hàng thật.\n\nĐổi trả trong 7 ngày khi lỗi phần cứng do nhà sản xuất và có hóa đơn.\n\nBảo hành 12 tháng theo phiếu bảo hành thử nghiệm.\n\nGiao hàng trong 3–5 ngày làm việc tại khu vực thử nghiệm; nhân viên xác nhận lịch.\n\nHóa đơn VAT được yêu cầu ở bước xác nhận đơn của shop kiểm thử.\n\nTrả góp kiểm thử kỳ hạn 6 tháng, điều kiện và phí cần nhân viên xác nhận; không tự tính tiền phải trả."
+  ],
+  [
+    "test-promo",
+    "Khuyến mãi TEST10 KIỂM THỬ",
+    "promotion",
+    "customer",
+    "Chương trình KIỂM THỬ TEST10 giảm 10% cho laptop, kết thúc ngày 31/10/2026, không cộng dồn với mã khác. Đây không phải ưu đãi của cửa hàng thật."
+  ],
+  [
+    "test-info",
+    "Thông tin SHOP KIỂM THỬ",
+    "store_info",
+    "customer",
+    "Địa chỉ GIẢ LẬP: số 12 Đường Mẫu, khu vực kiểm thử. Không phải địa chỉ cửa hàng thật.\n\nGiờ mở cửa của SHOP KIỂM THỬ: 09:00–18:00 mỗi ngày. Liên hệ qua địa chỉ email test@example.invalid."
+  ],
+  [
+    "test-shopping",
+    "Hướng dẫn đặt và tra đơn KIỂM THỬ",
+    "shopping_guide",
+    "customer",
+    "Quy trình KIỂM THỬ: chọn sản phẩm, thêm vào giỏ, kiểm tra thông tin rồi gửi yêu cầu đặt hàng.\n\nTra cứu đơn kiểm thử qua trang hướng dẫn đính kèm email xác nhận. Nhập mã TEST10 ở ô mã giảm giá trước khi xác nhận đơn. Không có đơn nào được bot tạo khi chỉ đọc hướng dẫn."
+  ],
+  [
+    "test-guide",
+    "Hướng dẫn chọn máy KIỂM THỬ",
+    "buying_guide",
+    "customer",
+    "Bài hướng dẫn KIỂM THỬ: laptop học tập cân nhắc RAM 16 GB và SSD 512 GB, đối chiếu yêu cầu phần mềm của người học trước khi chọn model.\n\nĐể chọn màn hình đẹp theo bài KIỂM THỬ, đối chiếu độ phân giải, độ sáng và độ phủ màu; không suy ra chất lượng chỉ từ tên OLED hay IPS."
+  ],
+  [
+    "test-meeting",
+    "Biên bản họp KIỂM THỬ 20/10",
+    "meeting",
+    "admin",
+    "Biên bản họp KIỂM THỬ ngày 20/10/2026: Trưởng kho kiểm tra đơn nhập trước thứ Sáu. Chủ shop duyệt ngân sách chiến dịch trước khi triển khai."
+  ],
+  [
+    "test-returns-main",
+    "Quy định đổi trả MAIN KIỂM THỬ",
+    "policy",
+    "admin",
+    "Điều khoản MAIN KIỂM THỬ, có hiệu lực tháng 10/2026: laptop lỗi phần cứng do nhà sản xuất được đổi trả trong 7 ngày khi có hóa đơn."
+  ],
+  [
+    "test-returns-faq",
+    "FAQ đổi trả KIỂM THỬ",
+    "policy",
+    "admin",
+    "Điều khoản FAQ KIỂM THỬ, có hiệu lực tháng 10/2026: laptop lỗi phần cứng do nhà sản xuất được đổi trả trong 14 ngày khi có hóa đơn."
+  ]
+]

@@ -1,0 +1,7 @@
+{
+  "runtime_matches_kb3_final_r5": true,
+  "targeted_tests_passed": 51,
+  "test_seconds": 7.09,
+  "code_before_rollback_verified": true,
+  "candidate_code_preserved": "AI\\evaluation\\supplier_fields_20261025_r1\\candidate_code"
+}

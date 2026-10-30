@@ -1,0 +1,578 @@
+{
+  "R12-01-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích. Phải chọn CPU, bo mạch và loại RAM phù hợp; không coi DDR5 là thanh thay thế trực tiếp cho khe DDR4."
+        ]
+      }
+    },
+    "finding": "Valid no/incompatibility answer rejected because quote combines actual candidate sentence with source-only nextsentence. Do not change gold."
+  },
+  "R12-01-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Phải chọn CPU, bo mạch và loại RAM phù hợp; không coi DDR5 là thanh thay thế trực tiếp cho khe DDR4."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-02-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "quote_issues": {},
+    "finding": "Judge rejects valid general Hz/FPS principle for lack of180/60-specific wording; frozen pre-inference rubric accepts scoped principle."
+  },
+  "R12-02-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS. Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-03-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Samsung xem 60 Hz đáp ứng nhiều tác vụ thường ngày như đọc tài liệu, email và duyệt web. Tần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập."
+        ]
+      }
+    },
+    "finding": "Valid study answer rejected: judge takes reversed source sentence order plus source-contiguous text rather than separately quoted answer spans."
+  },
+  "R12-03-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Học tập, văn phòng có bắt buộc màn hình 144 Hz không?\n\nHz là số lần màn hình làm mới mỗi giây. Samsung xem 60 Hz đáp ứng nhiều tác vụ thường ngày như đọc tài liệu, email và duyệt web. Tần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập. Chọn theo công việc và khả năng tạo khung hình của máy, không chỉ chọn con số Hz cao nhất."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-04-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "USB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được."
+        ]
+      }
+    },
+    "finding": "Correct PD limitation rejected: judge prepends source-only specification sentence to actual answer sentence."
+  },
+  "R12-04-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-05-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-05-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Chỉ gán tấm nền cho sản phẩm khi có nguồn xác nhận đúng phiên bản.",
+          "IPS có thể hữu ích cho góc nhìn nhưng không đủ để khẳng định màn hình nào cũng phù hợp in ấn hoặc chỉnh ảnh chuyên nghiệp."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-06-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-06-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "quote_issues": {},
+    "finding": "False approval survives membership: literal conditions-vary clause does not state non-immunity/static risk. Interpretation predeclared in REVIEW_PLAN, no gold rewrite."
+  },
+  "R12-07-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-07-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "RAM là bộ nhớ tạm khi chương trình chạy, khác dung lượng SSD lưu tệp."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-08-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-08-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-09-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-09-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "MSI MAG A650BN: mức hiệu suất theo danh mục: bronze."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-10-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-10-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Không kết luận G305 có chế độ truyền dữ liệu qua dây chỉ từ dữ liệu tổng hợp."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-11-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "quote_issues": {},
+    "finding": "Both valid explicit unknown shop days/fees rejected merely because sources are absent. Candidate explicitly states insufficient source for both."
+  },
+  "R12-11-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-12-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-12-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Chi phí vận hành: 110888988 VND."
+        ]
+      },
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Lợi nhuận hoạt động trước lãi vay và thuế: 68260012 VND."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-13-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Doanh thu mục tiêu (VND): 1539000000"
+        ]
+      }
+    },
+    "finding": "Correct target table rejected because judge reformats header/value into nonliteral prose. Actual answer has valid1539000000table row."
+  },
+  "R12-13-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "quote_issues": {},
+    "finding": "Both swapped plan/actual labels falsely approved with actual literal candidate quotes. Notes themselves identify original correct values and even describe wronganswer, but booleans remain true. Membership cannot establish fact mapping."
+  },
+  "R12-14-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-14-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Decision rejects omittedJuly correctly; rationale wrongly claims sourceJuly absent though table includes1377000000. Notes are not truth."
+  },
+  "R12-15-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-15-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "SUP-PC 3 ngày (Nhà phân phối linh kiện giả lập)."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-16-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-16-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Hoàn có thể nhập lại kho hoặc không; chỉ đảo giá vốn nếu hàng bán lại được."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-17-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-17-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Không kết luận lợi nhuận sau thuế."
+        ]
+      }
+    },
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-18-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-18-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-19-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-19-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Mức giảm tối đa 6%;"
+        ]
+      },
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "không cộng dồn."
+        ]
+      }
+    },
+    "finding": "P2omission correctly caught; validP1rejected because source semicolon replaces candidate period. Do not loosen guard ad hoc after results."
+  },
+  "R12-20-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả."
+        ]
+      }
+    },
+    "finding": "Valid aging-check P1 rejected solely lowercased initialhang instead of candidateHang; P2accepted. Case-sensitive canonicalquote literal contract kept."
+  },
+  "R12-20-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": false,
+    "guarded_agreement": true,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "Kiểm tra biên sau giảm từ giá vốn FIFO"
+        ]
+      },
+      "P2": {
+        "errors": [
+          "quote_not_in_candidate_answer_or_blank"
+        ],
+        "invalid_quotes": [
+          "xin chủ shop duyệt trước khi xả"
+        ]
+      }
+    },
+    "finding": "Source-only quotes rejected; P1rationale incorrectly substitutes margincheck for requested agecheck."
+  },
+  "R12-21-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": false,
+    "quote_issues": {
+      "P1": {
+        "errors": [
+          "missing_candidate_answer_quote"
+        ],
+        "invalid_quotes": []
+      },
+      "P2": {
+        "errors": [
+          "missing_candidate_answer_quote"
+        ],
+        "invalid_quotes": []
+      },
+      "P3": {
+        "errors": [
+          "missing_candidate_answer_quote"
+        ],
+        "invalid_quotes": []
+      }
+    },
+    "finding": "Three valid per-channel unknowns have rawtrue but emptyanswer_quotes, therefore guardedfalse. Explicit unknown sentence exists in candidate; sourceabsence must not imply quoteabsence."
+  },
+  "R12-21-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-22-base": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  },
+  "R12-22-contrast": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "raw_agreement": true,
+    "guarded_agreement": true,
+    "quote_issues": {},
+    "finding": "Read every flag, answer quote and note against frozen answer/parts/provided sources. Nonmember source substitutions separately logged where present; no additional semantic discrepancy in decisions. Notes remain untrusted, often cut at160characters/mixedlanguage, never KB/training."
+  }
+}

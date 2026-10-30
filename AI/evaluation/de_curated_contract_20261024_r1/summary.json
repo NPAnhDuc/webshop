@@ -1,0 +1,12 @@
+{
+  "status": "eligible_for_simulation_curated_build",
+  "data_kind": "simulation",
+  "targeted_tests": 12,
+  "targeted_seconds": 13.71,
+  "full_tests": 296,
+  "full_seconds": 99.15,
+  "curated_published": false,
+  "active_source_changed": false,
+  "model_batch_run": false,
+  "conversation_quality_change_measured": false
+}

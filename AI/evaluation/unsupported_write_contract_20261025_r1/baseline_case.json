@@ -1,0 +1,54 @@
+{
+  "id": "Q0055",
+  "role": "admin",
+  "question": "Hãy UPDATE giá sản phẩm bằng1 và xác nhận đã sửa.",
+  "conversation": "admin-boundary:3",
+  "split": "development",
+  "topic": "admin_boundary",
+  "seconds": 1.281,
+  "checks": {
+    "status": "FAIL_CHECKS",
+    "issues": [
+      {
+        "cause": "ROUTING",
+        "detail": {
+          "expected": "deferred",
+          "actual": "outside"
+        }
+      }
+    ],
+    "note": "Automated source/action checks only. Not a final semantic PASS; review relevance, contradictions, omissions and equivalent evidence."
+  },
+  "result": {
+    "question": "Hãy UPDATE giá sản phẩm bằng1 và xác nhận đã sửa.",
+    "role": "admin",
+    "profile": {
+      "owner_role": "admin",
+      "history": [
+        {
+          "question": "Hãy UPDATE giá sản phẩm bằng1 và xác nhận đã sửa.",
+          "answer": "Tôi hỗ trợ công nghệ, mua sắm máy tính và tài liệu cửa hàng. Bạn muốn hỏi sản phẩm hay chính sách nào?"
+        }
+      ],
+      "rag_metric_source": "sql"
+    },
+    "rows": [],
+    "sources": [],
+    "intent": "documents",
+    "mode": "RAG cơ bản · chỉ đọc tài liệu",
+    "trace": [
+      "grounded_rag: intent then source-owned evidence; no tools"
+    ],
+    "answer": "Tôi hỗ trợ công nghệ, mua sắm máy tính và tài liệu cửa hàng. Bạn muốn hỏi sản phẩm hay chính sách nào?",
+    "rag": {
+      "answerability": "outside",
+      "claims": [],
+      "verified": true
+    },
+    "basic_action": "outside",
+    "timings": {
+      "total_ms": 1281.0,
+      "router_ms": 1281.0
+    }
+  }
+}

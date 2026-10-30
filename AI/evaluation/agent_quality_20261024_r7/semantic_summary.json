@@ -1,0 +1,40 @@
+{
+  "passed": 103,
+  "total": 106,
+  "previous_passed": 93,
+  "fixed": [
+    "A20",
+    "A22",
+    "Q10",
+    "Q14",
+    "Q20",
+    "Q22",
+    "Q24",
+    "Q28",
+    "Q37",
+    "Q39"
+  ],
+  "remaining_failures": [
+    "Q29",
+    "Q30",
+    "Q41"
+  ],
+  "unchanged_answer_count": 95,
+  "changed_answer_ids": [
+    "Q10",
+    "Q11",
+    "Q14",
+    "Q20",
+    "Q22",
+    "Q24",
+    "Q28",
+    "Q37",
+    "Q39",
+    "A20",
+    "A22"
+  ],
+  "complete_contract_sessions_passed": 4,
+  "complete_contract_sessions_total": 6,
+  "accepted_for_application": false,
+  "development_only": true
+}

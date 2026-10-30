@@ -1,0 +1,129 @@
+{
+  "cases": 31,
+  "distinct_question_texts": 24,
+  "parts": 57,
+  "exact_case_agreement": 26,
+  "part_agreement": 50,
+  "confusion": {
+    "correct_accept": 43,
+    "false_reject": 1,
+    "correct_reject": 7,
+    "false_accept": 6
+  },
+  "false_accepts": [
+    {
+      "id": "R9-025",
+      "part": "P1",
+      "expected": false,
+      "predicted": true,
+      "category": "wrong_attribute"
+    },
+    {
+      "id": "R9-026",
+      "part": "P1",
+      "expected": false,
+      "predicted": true,
+      "category": "omitted_part"
+    },
+    {
+      "id": "R9-028",
+      "part": "P2",
+      "expected": false,
+      "predicted": true,
+      "category": "omitted_part"
+    },
+    {
+      "id": "R9-031",
+      "part": "P1",
+      "expected": false,
+      "predicted": true,
+      "category": "false_unknown"
+    },
+    {
+      "id": "R9-031",
+      "part": "P2",
+      "expected": false,
+      "predicted": true,
+      "category": "false_unknown"
+    },
+    {
+      "id": "R9-031",
+      "part": "P3",
+      "expected": false,
+      "predicted": true,
+      "category": "false_unknown"
+    }
+  ],
+  "false_rejects": [
+    {
+      "id": "R9-001",
+      "part": "P3",
+      "expected": true,
+      "predicted": false,
+      "category": "valid_unknown"
+    }
+  ],
+  "categories": {
+    "supported": {
+      "correct_accept": 41
+    },
+    "valid_unknown": {
+      "false_reject": 1,
+      "correct_accept": 2
+    },
+    "omitted_part": {
+      "correct_reject": 2,
+      "false_accept": 2
+    },
+    "wrong_attribute": {
+      "correct_reject": 1,
+      "false_accept": 1
+    },
+    "wrong_scope": {
+      "correct_reject": 4
+    },
+    "false_unknown": {
+      "false_accept": 3
+    }
+  },
+  "cohorts": {
+    "anchor": {
+      "cases": 6,
+      "exact_case_agreement": 5,
+      "parts": 12,
+      "part_agreement": 11
+    },
+    "new": {
+      "cases": 20,
+      "exact_case_agreement": 18,
+      "parts": 34,
+      "part_agreement": 32
+    },
+    "constructed": {
+      "cases": 5,
+      "exact_case_agreement": 3,
+      "parts": 11,
+      "part_agreement": 7
+    }
+  },
+  "case_false_accepts": [
+    "R9-025",
+    "R9-026",
+    "R9-028",
+    "R9-031"
+  ],
+  "case_false_rejects": [
+    "R9-001"
+  ],
+  "prompt_token_range": [
+    321,
+    1554
+  ],
+  "done_reasons": {
+    "stop": 31
+  },
+  "total_seconds": 96.822,
+  "median_seconds": 2.546,
+  "production_verifier_installed": false,
+  "decision": "Do not install as a production completeness gate. Required part booleans still confuse source availability with content in the candidate answer; validate literal candidate-answer support in a new controlled diagnostic first."
+}

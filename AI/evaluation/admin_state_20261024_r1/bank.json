@@ -1,0 +1,118 @@
+[
+  {
+    "id": "A03",
+    "question": "Còn giá vốn thì sao?",
+    "memory": {
+      "owner_role": "admin",
+      "admin_context": {
+        "metric": "revenue",
+        "operation": "compare",
+        "active_period": {
+          "start": "2026-09-01",
+          "end": "2026-10-01",
+          "unit": "month",
+          "label": "2026-09"
+        },
+        "comparison_periods": [
+          {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          {
+            "start": "2026-09-01",
+            "end": "2026-10-01",
+            "unit": "month",
+            "label": "2026-09"
+          }
+        ],
+        "pending": false
+      }
+    },
+    "expected_operation": "compare",
+    "expected_periods": [
+      {
+        "start": "2026-08-01",
+        "end": "2026-09-01"
+      },
+      {
+        "start": "2026-09-01",
+        "end": "2026-10-01"
+      }
+    ],
+    "source_trace_sha256": "10d62797edef62e1d84dda773c331b185d8a7dc7e79a974f8d2c3e66db6e1417"
+  },
+  {
+    "id": "Q27",
+    "question": "Còn giá vốn?",
+    "memory": {
+      "owner_role": "admin",
+      "admin_context": {
+        "metric": "revenue",
+        "operation": "compare",
+        "active_period": {
+          "start": "2026-09-01",
+          "end": "2026-10-01",
+          "unit": "month",
+          "label": "2026-09"
+        },
+        "comparison_periods": [
+          {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          {
+            "start": "2026-09-01",
+            "end": "2026-10-01",
+            "unit": "month",
+            "label": "2026-09"
+          }
+        ],
+        "pending": false
+      }
+    },
+    "expected_operation": "compare",
+    "expected_periods": [
+      {
+        "start": "2026-08-01",
+        "end": "2026-09-01"
+      },
+      {
+        "start": "2026-09-01",
+        "end": "2026-10-01"
+      }
+    ],
+    "source_trace_sha256": "f0e9f54d2f22ec2b649baca991b13cf923d06dc06d177a10eb464698b31d1b9e"
+  },
+  {
+    "id": "Q36",
+    "question": "Còn giá vốn tháng đó?",
+    "memory": {
+      "owner_role": "admin",
+      "admin_context": {
+        "metric": "revenue",
+        "operation": "finance",
+        "active_period": {
+          "start": "2026-09-01",
+          "end": "2026-10-01",
+          "unit": "month",
+          "label": "2026-09"
+        },
+        "comparison_periods": [],
+        "pending": false,
+        "last_topic": "data_quality"
+      }
+    },
+    "expected_operation": "finance",
+    "expected_periods": [
+      {
+        "start": "2026-09-01",
+        "end": "2026-10-01"
+      }
+    ],
+    "source_trace_sha256": "0b81a760a4339af4ebf4a9739e545f88e61d51d59dc7fe87cc1341e8e60c397a"
+  }
+]

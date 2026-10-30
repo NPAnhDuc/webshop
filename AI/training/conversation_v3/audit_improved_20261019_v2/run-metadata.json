@@ -1,0 +1,15 @@
+{
+  "planned_questions": 106,
+  "conversation_groups": 88,
+  "question_bank_sha256": "df568af4949d1c8bb7aa01fbfc5f5bb5d3e561c7c4e83b458ab3ad26eaaf118a",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "llm_provider": "ollama",
+  "dataset_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "grading_scope": "Functional task fulfillment including answer contents and SQL oracle; unsupported tasks count FAIL; correct ambiguity clarification and access denial count PASS",
+  "frozen_sources": {
+    "shopbot/engine.py": "733ec6f92bbf853ae5b6c8a5a61f05ac95d1d26b38942ca3dd1e7f198dd044fd",
+    "shopbot/conversation.py": "b08d76359cc3bdd7bee8a41639292404de42753b8bb96c956a00593fbdb407a3",
+    "shopbot/store.py": "b56a74e4329e01b7945b53b77a43f64c630626e44c6b8c9279b7299f8b6def3a",
+    "shopbot/retrieval.py": "03a8cb41dd72c08d8d0c88966f04c3d6b649ca56b5adb1c22014029e611b3be5"
+  }
+}

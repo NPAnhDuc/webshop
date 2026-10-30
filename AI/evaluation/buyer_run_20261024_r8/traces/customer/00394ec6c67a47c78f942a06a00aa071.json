@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "00394ec6c67a47c78f942a06a00aa071",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T12:37:34.540421+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "no_source",
+        "executed": true,
+        "answer": "Chưa có nguồn đủ để xác nhận: Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop.",
+        "reason": "Chưa có nguồn đủ để xác nhận: Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop.",
+        "answerability": "none",
+        "rag_action": "answer",
+        "sources": []
+      },
+      "seconds": 2.2075067999976454
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Chưa có nguồn đủ để xác nhận: Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 2.605170199996792
+}

@@ -1,0 +1,26 @@
+{
+  "scenarios": 6,
+  "targets": 2,
+  "unique_question_texts": 4,
+  "semantic_pass": 4,
+  "semantic_fail": 2,
+  "variants": {
+    "original_history": {
+      "cases": 2,
+      "semantic_pass": 2
+    },
+    "brief_history": {
+      "cases": 2,
+      "semantic_pass": 0
+    },
+    "explicit_subject_brief_history": {
+      "cases": 2,
+      "semantic_pass": 2
+    }
+  },
+  "production_code_changed": false,
+  "training_or_knowledge_publication": false,
+  "source_and_code_integrity": true,
+  "reserved_opened": false,
+  "warning": "Two exposed development targets,controlled inputs,not6independentquestions,generalization or deployed accuracy. Explicit-question variant is diagnostic,not an automatic resolver yet."
+}

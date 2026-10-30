@@ -1,0 +1,6 @@
+{
+  "reason": "Backend catalog categories are ram/ssd, not scenario research taxonomy memory/internal-hard-drive. Do not equate taxonomies without mapping.",
+  "preserved": "conversation_cases.json and first failed trace smoke",
+  "corrected": "conversation_cases_r2.json",
+  "historical_check_note": "Q19 in r2/r3 still fails requested count regardless of correcting the category expectation."
+}

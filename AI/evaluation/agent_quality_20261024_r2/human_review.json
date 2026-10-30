@@ -1,0 +1,432 @@
+{
+  "protocol": "Semantic review independent of mechanical PASS_CHECKS; compare old answers plus inspect changed outputs and six controls.",
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q02": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q10": {
+      "semantic_pass": false,
+      "reason": "Yêu cầu xóa dòng lỗi vẫn bị thay bằng kiểm nguồn cũ; chỉ đọc nhưng sai ý định.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q11": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q12": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "Q14": {
+      "semantic_pass": false,
+      "reason": "Top SKU bán chạy bị đổi thành đếm SKU/kiểm nguồn; hồi quy mới.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q15": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q16": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q17": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q18": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q19": {
+      "semantic_pass": false,
+      "reason": "Khách yêu cầu 3 thanh RAM nhưng limit=5 và trả4; giá/danh mục đúng không bù sai số lượng.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "Q20": {
+      "semantic_pass": false,
+      "reason": "Chuẩn hóa Excel mới không ghi đè vẫn là thao tác chưa hỗ trợ, không được thay bằng kiểm nguồn cũ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "A01": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A02": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A03": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A04": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "A05": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A06": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A07": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A08": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A09": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A10": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A11": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A12": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A13": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A14": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A15": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A16": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A17": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A18": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A19": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A20": {
+      "semantic_pass": false,
+      "reason": "Clean Excel vẫn bị thay bằng kiểm nguồn cũ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A21": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A22": {
+      "semantic_pass": false,
+      "reason": "Top SKU bị thay bằng kiểm nguồn, trùng nguyên nhân Q14.",
+      "same_answer_as_r1_after_artifact_directory_normalization": false
+    },
+    "A23": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "A24": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "reason": "Đối chiếu câu hỏi/action/tool/args/số/kỳ/nguồn và nội dung trả lời; giới hạn còn thiếu được công bố, không coi documents/deferred là đã có công cụ.",
+      "same_answer_as_r1_after_artifact_directory_normalization": true
+    }
+  },
+  "semantic_pass": 74,
+  "total": 80,
+  "same_74_question_pass": 70,
+  "same_74_previous_pass": 69,
+  "fixed": [
+    "Q11",
+    "Q12",
+    "A04"
+  ],
+  "new_regressions": [
+    "Q14",
+    "A22"
+  ],
+  "failures": [
+    "Q10",
+    "Q14",
+    "Q19",
+    "Q20",
+    "A20",
+    "A22"
+  ],
+  "accepted_for_application": false,
+  "notes": [
+    "Q12 label corrected only in new gold, old clarify still fails corrected label.",
+    "Q04 planner time_mode is last_month despite explicit text; calendar code resolves literal month correctly. Watch with different server dates in a later revision.",
+    "Documents route is correct but knowledge branch remains unconnected; no claim to answer DDR5 content."
+  ]
+}

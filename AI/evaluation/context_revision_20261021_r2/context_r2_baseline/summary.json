@@ -1,0 +1,20 @@
+{
+  "cases": 24,
+  "semantic_pass": 12,
+  "semantic_fail": 12,
+  "checks": {
+    "FAIL_CHECKS": 12,
+    "PASS_CHECKS": 7,
+    "NEEDS_REVIEW": 5
+  },
+  "false_fail_checks_from_overbroad_gold": [
+    "R2D05",
+    "R2D06",
+    "R2D07",
+    "R2D08"
+  ],
+  "reserved_opened": false,
+  "bot_changed": false,
+  "median_seconds": 1.5074999999999998,
+  "warning": "Focused adversarial probes, not representative accuracy; overbroad numeric gold fields require a new fixture revision, not overwriting this bank."
+}

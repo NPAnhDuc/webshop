@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "fd554539e6c948748046df7edca87068",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:48:02.715813+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Làm AI local có bắt buộc dùng GPU rời, cần hỏi quy mô mô hình thế nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Làm AI local có bắt buộc dùng GPU rời, cần hỏi quy mô mô hình thế nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nCó GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nVới một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nXung GHz mô tả số chu kỳ mỗi giây.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]",
+        "reason": "GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nCó GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nVới một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nXung GHz mô tả số chu kỳ mỗi giây.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-cpu-gpu",
+            "title": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+            "source": "tech-cpu-gpu-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "1677b323fee6a18e04bce9b171c797cd8ba3f25ccd6ef99f8cd584cfe522dba7",
+            "text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+            "section": 1,
+            "chunk_id": "09c945275a1e156d99c54076ab9fb9bc6cabbde3cc67feec7d921e5db09e500b",
+            "score": 0.04865,
+            "dense_score": 0.5775,
+            "lexical_score": 0.1351,
+            "bm25_score": 10.5706,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-cpu-cores-clock",
+            "title": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+            "source": "tech-cpu-cores-clock-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "1ee582cc48a7e66bf9980d3647479d132c3631c41e422a4b8b05d04eadf06340",
+            "text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+            "section": 1,
+            "chunk_id": "b8db9cde64af700bda59bffbeeb88104c628e4648a26ef7d29abdee470635a8d",
+            "score": 0.04533,
+            "dense_score": 0.4763,
+            "lexical_score": 0.0619,
+            "bm25_score": 6.0657,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 6.0175307000026805
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nCó GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nVới một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nXung GHz mô tả số chu kỳ mỗi giây.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-cpu-gpu",
+        "title": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+        "source": "tech-cpu-gpu-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "1677b323fee6a18e04bce9b171c797cd8ba3f25ccd6ef99f8cd584cfe522dba7",
+        "text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+        "section": 1,
+        "chunk_id": "09c945275a1e156d99c54076ab9fb9bc6cabbde3cc67feec7d921e5db09e500b",
+        "score": 0.04865,
+        "dense_score": 0.5775,
+        "lexical_score": 0.1351,
+        "bm25_score": 10.5706,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-cpu-cores-clock",
+        "title": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+        "source": "tech-cpu-cores-clock-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "1ee582cc48a7e66bf9980d3647479d132c3631c41e422a4b8b05d04eadf06340",
+        "text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Nhân CPU, luồng và xung GHz dùng để làm gì?\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi. Xung GHz mô tả số chu kỳ mỗi giây. Khi chọn CPU phải xét cả tác vụ, số nhân/luồng và tính năng, không chỉ nhìn một thông số GHz. Với một mã CPU cụ thể, cần đọc bảng thông số của chính mã đó trước khi kết luận có đồ họa tích hợp.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/gaming-cpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Nhân CPU, luồng và xung GHz dùng để làm gì?",
+        "section": 1,
+        "chunk_id": "b8db9cde64af700bda59bffbeeb88104c628e4648a26ef7d29abdee470635a8d",
+        "score": 0.04533,
+        "dense_score": 0.4763,
+        "lexical_score": 0.0619,
+        "bm25_score": 6.0657,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 6.569877500005532
+}

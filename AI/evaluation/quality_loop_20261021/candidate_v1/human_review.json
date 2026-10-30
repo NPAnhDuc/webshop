@@ -1,0 +1,548 @@
+{
+  "Q0018": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0031": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0036": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0054": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0055": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Yêu cầu sửaSQL được gánoutside; không thực hiện là đúng giới hạn nhưng cần giải thíchdeferred theo tiêu chí đã chốt.",
+    "reviewed_by": "Codex"
+  },
+  "Q0072": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0077": {
+    "status": "PASS",
+    "cause": "PERIOD_BINDING_CORRECT",
+    "reason": "Hai tháng4 và5/2026 đều2 hoàn, giữ đủ hai trích dẫn thuộc đúng hai báo cáo thay vì gộp mất tháng5.",
+    "reviewed_by": "Codex"
+  },
+  "Q0082": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0096": {
+    "status": "PASS",
+    "cause": "PERMISSION_CORRECT",
+    "reason": "Từ chối đúng nguồn nội bộ/thông tin khách khác ở vai người mua, không còn báo nhầm model hỏng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0101": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không có tài liệu đúng mã giả, báo thiếu rõ và không thay bằng cấu hình máy khác; không trích nguồn sản phẩm khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0002": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đã đúng kỳ9/2026 và doanh thu1189908000, nhưng chưa xác định1539000000 là mục tiêu kế hoạch; câu đối chiếu chưa trả đủ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0012": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo chưa có thời hạn bảo hành pin của shop, không tự đặt.",
+    "reviewed_by": "Codex"
+  },
+  "Q0017": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có giao tiếp/DRAM nhưng bỏ giới hạn tốc độ theo phiên bản dung lượng, thêm nhiều giải thích chung không trả đủ phạm vi hỏi.",
+    "reviewed_by": "Codex"
+  },
+  "Q0020": {
+    "status": "FAIL",
+    "cause": "WRONG_FIELD",
+    "reason": "Lấy ngưỡng/mức đặt lại simulator cho câu hỏi MOQ; thiếu ghi rõ MOQ chưa có.",
+    "reviewed_by": "Codex"
+  },
+  "Q0030": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nhắc chủ shop duyệt từngSKU, chưa trả điều kiện mở seal/đổi màu hoặc nói rõ chưa có điều khoản này.",
+    "reviewed_by": "Codex"
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "EQUIVALENT_SOURCE",
+    "reason": "Nguồn tương đương nêu ngoài nhãn IPS phải xem màu,góc nhìn,tương phản,chuyển động; không suy chất lượng từ tên tấm nền.",
+    "reviewed_by": "Codex"
+  },
+  "Q0038": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DòngC-BTS ghi laptopvănphòng đủ xác định nhóm được hỏi; thông tin định vịGaming đi kèm là thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0048": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không bịa địa chỉ nhận bảo hành.",
+    "reviewed_by": "Codex"
+  },
+  "Q0071": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "DDR5 khácDDR4 và hệ thống phải hỗ trợ, không cam kết cắm thay trực tiếp.",
+    "reviewed_by": "Codex"
+  },
+  "Q0073": {
+    "status": "FAIL",
+    "cause": "ROUTING",
+    "reason": "Hỏi quy định tuổi tồn và người duyệt, bịdeferred toàn bộ dù có nguồn.",
+    "reviewed_by": "Codex"
+  },
+  "Q0095": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo thiếu giờ lễ của chính shop.",
+    "reviewed_by": "Codex"
+  },
+  "Q0102": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có trần6% và duyệtSKU nhưng chưa kết luận đối chiếu7%, đồng thời nói thiếu ngay phần trần vừa trích.",
+    "reviewed_by": "Codex"
+  },
+  "Q0109": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không tự đặt số ngày trả hàng vì đổi ý.",
+    "reviewed_by": "Codex"
+  },
+  "Q0125": {
+    "status": "FAIL",
+    "cause": "WRONG_ATTRIBUTE",
+    "reason": "Hỏi bộ RAM đang nói nhưng đổi thành DDR/tốc độ và gợi ý16/32GB chung, bỏ số thanh/dung lượng mỗi thanh.",
+    "reviewed_by": "Codex"
+  },
+  "Q0164": {
+    "status": "FAIL",
+    "cause": "WRONG_ATTRIBUTE",
+    "reason": "Độ trễ từ đầu tiên12ns bị thay bằngCAS36, không cùng thông số/đơn vị.",
+    "reviewed_by": "Codex"
+  },
+  "Q0210": {
+    "status": "FAIL",
+    "cause": "WRONG_PRODUCT",
+    "reason": "Hỏi VRAM card đã xác định nhưng lấy kết nốiG305 và RAM hàn, không trả8GB.",
+    "reviewed_by": "Codex"
+  },
+  "Q0247": {
+    "status": "FAIL",
+    "cause": "WRONG_ATTRIBUTE",
+    "reason": "Bỏ2x8GB của bộLPX, chỉ trảDDR4/tốc độ và khuyến nghị chung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0267": {
+    "status": "FAIL",
+    "cause": "WRONG_ATTRIBUTE",
+    "reason": "Hỏi đơn126 và hoàn4 nhưng lấygiávốn cùng hoàn4, thiếu số đơn.",
+    "reviewed_by": "Codex"
+  },
+  "Q0300": {
+    "status": "FAIL",
+    "cause": "CONTEXT",
+    "reason": "Có lịch sửDeepcoolCH160 nhưng vẫn hỏi lại model, mất mạch thuộc tính vật liệu hông.",
+    "reviewed_by": "Codex"
+  },
+  "Q0301": {
+    "status": "FAIL",
+    "cause": "CONTEXT",
+    "reason": "Có lịch sửCorsair4000D nhưng vẫn hỏi lại, không tra vật liệu hông có sẵn.",
+    "reviewed_by": "Codex"
+  },
+  "Q0352": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đúnglãihoạtđộng nhưng thiếu108627410 chi phí, lại đánh thiếu phần giới thiệu kỳ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0373": {
+    "status": "FAIL",
+    "cause": "WRONG_ATTRIBUTE",
+    "reason": "BộFURY2x16GB bị bỏ, thay bằng khuyến nghị chung và tốc độUSB/SSD.",
+    "reviewed_by": "Codex"
+  },
+  "Q0411": {
+    "status": "FAIL",
+    "cause": "WRONG_PRODUCT",
+    "reason": "VRAM16GB củaRTX5060Ti bị thay bằngShared củaMSIModern15.",
+    "reviewed_by": "Codex"
+  },
+  "Q0446": {
+    "status": "FAIL",
+    "cause": "CONTEXT",
+    "reason": "Có lịch sửNZXTH5Flow2024 nhưng vẫn hỏi lại, không trả vật liệu hông.",
+    "reviewed_by": "Codex"
+  },
+  "Q0467": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Cóxung1320MHz nhưng bỏtênGPU củaRTX3060, thay bằng định nghĩaGPUchung.",
+    "reviewed_by": "Codex"
+  },
+  "Q0114": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Hzcao không bắt buộc học tập, chọn theo công việc/khả năng tạo khung hình; có câu phụ thừa.",
+    "reviewed_by": "Codex"
+  },
+  "Q0116": {
+    "status": "FAIL",
+    "cause": "SUBGROUP_SCOPE",
+    "reason": "Dùng lãi gộp toàn shop179149000 cho câu riêngGaming, không ghi rõ thiếu phân nhóm.",
+    "reviewed_by": "Codex"
+  },
+  "Q0123": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Báo thiếu cả xuất hóa đơn công ty và thời hạn gửi.",
+    "reviewed_by": "Codex"
+  },
+  "Q0128": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Phân biệt6/6E/7 và điều kiện card/router/phần mềm để dùng6GHz.",
+    "reviewed_by": "Codex"
+  },
+  "Q0130": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_SELECTION",
+    "reason": "Kho có giới hạn lợi nhuận trước lãi vay/thuế khác sau thuế, nhưng bot báo thiếu toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0137": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Hỏi quà muaonline nhận tại shop nhưng trả bảo hành nước ngoài/thanh toán, không báo thiếu điều khoản quà.",
+    "reviewed_by": "Codex"
+  },
+  "Q0142": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Thông lượng chuẩn không là tốc độ Internet bảo đảm, không tự gánWiFi7 cho máy chưa có thông số.",
+    "reviewed_by": "Codex"
+  },
+  "Q0144": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "PO chưa nhận chưa vào tồn,receipts mốc tăng, đúngprocurementv2.",
+    "reviewed_by": "Codex"
+  },
+  "Q0151": {
+    "status": "PASS",
+    "cause": "MISSING_CORRECT",
+    "reason": "Không cam kết giao2giờ khi shop chưa có điều khoản.",
+    "reviewed_by": "Codex"
+  },
+  "Q0156": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nói nhiều nhân/GHz, không giải thích luồng hoặc giới hạn GHz so hiệu năng; lẫn6GHzWiFi và tốc độSSD vàoCPU.",
+    "reviewed_by": "Codex"
+  },
+  "Q0166": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Đủ thông số8/16/5,2GHz/120W và không đồng nhấtboost mọi tải/TDP cảPC.",
+    "reviewed_by": "Codex"
+  },
+  "Q0168": {
+    "status": "FAIL",
+    "cause": "WRONG_FOCUS",
+    "reason": "Không trả giới hạn dùng sốFPT thay shop, chỉ liệt kê doanh thu ba tháng khác.",
+    "reviewed_by": "Codex"
+  },
+  "Q0178": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đúng chưa xác lập nguyên nhân nhưng bỏviewmonthly_pnl/shop.sqlite; lặp cùng cảnh báo ba lần.",
+    "reviewed_by": "Codex"
+  },
+  "Q0185": {
+    "status": "PASS",
+    "cause": "SOURCE_BOUND",
+    "reason": "Tốc độ phụ thuộc host/thiết bị,không lấy số quảng cáo cam kết mọi tác vụ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0187": {
+    "status": "PASS",
+    "cause": "COMPARISON_CORRECT",
+    "reason": "Đọc riêng SUP-LAP 4 ngày và SUP-PC 3 ngày, giữ đúng nhãn dữ liệu mô phỏng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0194": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Có LCD/OLED và cảnh báo màu IPS nhưng không giải thích khác biệt TN/VA theo tiêu đề được hỏi; lặp OLED.",
+    "reviewed_by": "Codex"
+  },
+  "Q0196": {
+    "status": "FAIL",
+    "cause": "SCOPE_CONTRADICTION",
+    "reason": "Đã trích nhóm khác 10% nhưng lại báo thiếu mức cho phụ kiện, chưa áp đúng phạm vi nhóm.",
+    "reviewed_by": "Codex"
+  },
+  "Q0203": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Nêu vai trò CPU/GPU và điều kiện tăng tốc nhưng không trả lời rõ GPU có thay CPU được không.",
+    "reviewed_by": "Codex"
+  },
+  "Q0205": {
+    "status": "PASS",
+    "cause": "POLICY_EVIDENCE_CORRECT",
+    "reason": "Trả đúng không cộng dồn và trần 6%; đủ căn cứ loại phương án ghép 3%+4%, dù chưa diễn giải thành câu kết luận.",
+    "reviewed_by": "Codex"
+  },
+  "Q0212": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Nêu đúng rủi ro nội dung tĩnh và điều kiện thời gian; thừa OLED lặp và tần số quét, cần rút gọn.",
+    "reviewed_by": "Codex"
+  },
+  "Q0214": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_ROUTING",
+    "reason": "Câu về biên lợi nhuận GPU bị hiểu thành giải thích phần cứng, không trả chính sách 4% so với laptop 6%.",
+    "reviewed_by": "Codex"
+  },
+  "Q0221": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Nêu hai khe, pin 60Wh, nhiều cấu hình và không gán cấu hình cao nhất; Wh không là cam kết giờ pin.",
+    "reviewed_by": "Codex"
+  },
+  "Q0230": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Có tiêu chí game/độ phân giải và giới hạn không cam kết FPS; từ Không đầu câu không phù hợp nhưng nội dung chính đúng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0239": {
+    "status": "FAIL",
+    "cause": "SELECTION_OR_CHUNKING",
+    "reason": "Thiếu nội dung nền tảng IdeaPad và giới hạn SKU, thay bằng cảnh báo OLED và Wi-Fi không liên quan.",
+    "reviewed_by": "Codex"
+  },
+  "Q0241": {
+    "status": "FAIL",
+    "cause": "CAUSAL_SCOPE",
+    "reason": "Không trả giới hạn suy luận nhân quả của campaign_id, chỉ đọc doanh thu ba tháng tùy ý.",
+    "reviewed_by": "Codex"
+  },
+  "Q0248": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE_EXPLANATION",
+    "reason": "Nhận ra hai mã vùng khác nhau nhưng chưa nói thông số 408AU không xác nhận khả năng nâng cấp của mã shop.",
+    "reviewed_by": "Codex"
+  },
+  "Q0250": {
+    "status": "PASS",
+    "cause": "DIRECT_EVIDENCE_WITH_NOISE",
+    "reason": "Đơn bán xuất FIFO trả đúng xuất hàng; cảnh báo thiếu Trong quy trình là nhiễu, không đổi kết luận.",
+    "reviewed_by": "Codex"
+  },
+  "Q0257": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Giải thích điểm ảnh tự sáng và đen sâu, kèm giới hạn nội dung tĩnh; có lặp câu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0258": {
+    "status": "FAIL",
+    "cause": "SCOPE_INCOMPLETE",
+    "reason": "Lặp ngân sách chung ba quý và chỉ báo thiếu TikTok/Google; không xác nhận rõ chưa có phân bổ riêng cả ba kênh.",
+    "reviewed_by": "Codex"
+  },
+  "Q0281": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Có mốc 16GB cho game và 32GB đa nhiệm có điều kiện, không suy nâng cấp từ dung lượng; thừa thông số SSD không liên quan.",
+    "reviewed_by": "Codex"
+  },
+  "Q0288": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Phân biệt hình dạng M.2 với SATA/NVMe và yêu cầu kiểm tra khe hỗ trợ trước nâng cấp.",
+    "reviewed_by": "Codex"
+  },
+  "Q0295": {
+    "status": "PASS",
+    "cause": "CONDITION_CORRECT",
+    "reason": "Không đồng nhất 144Hz với 144FPS, nói rõ CPU/GPU phải tạo đủ khung hình.",
+    "reviewed_by": "Codex"
+  },
+  "Q0302": {
+    "status": "FAIL",
+    "cause": "RETRIEVAL_OR_ROUTING",
+    "reason": "Câu Photoshop/RAM bị trả OLED và tốc độ SSD; không trả điều kiện RAM cho Photoshop.",
+    "reviewed_by": "Codex"
+  },
+  "Q0309": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Nêu RAM hàn và một khe DDR4 SO-DIMM theo dòng, yêu cầu kiểm tra mã SKU trước cam kết.",
+    "reviewed_by": "Codex"
+  },
+  "Q0316": {
+    "status": "PASS",
+    "cause": "EXPLANATION_WITH_NOISE",
+    "reason": "Nêu SO-DIMM/RAM hàn và kiểm tra mã, khe, giới hạn hãng; thừa thông số SSD.",
+    "reviewed_by": "Codex"
+  },
+  "Q0323": {
+    "status": "PASS",
+    "cause": "CONFLICT_CORRECT",
+    "reason": "Chỉ ra nguồn nhập Wired/Wireless mâu thuẫn với hãng LIGHTSPEED và trường chưa đủ xác nhận.",
+    "reviewed_by": "Codex"
+  },
+  "Q0330": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_WITH_NOISE",
+    "reason": "Nêu hai khe DDR5 và cấu hình tối đa theo dòng không là trang bị mọi SKU; câu Wi-Fi chung là nhiễu.",
+    "reviewed_by": "Codex"
+  },
+  "Q0337": {
+    "status": "PASS",
+    "cause": "EXPLANATION_CORRECT",
+    "reason": "Phân biệt on-die ECC với ECC hệ thống, chỉ rõ lỗi ngoài chip và hỗ trợ nền tảng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0344": {
+    "status": "PASS",
+    "cause": "VARIANT_LIMIT_CORRECT",
+    "reason": "Tốc độ riêng bản 1TB/2TB và giới hạn thử nghiệm/cấu hình rõ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0351": {
+    "status": "FAIL",
+    "cause": "WRONG_VARIANT_SOURCE",
+    "reason": "Hỏi bản 081SG nhưng trả 408AU/041BD; nguồn và phạm vi SKU không đúng.",
+    "reviewed_by": "Codex"
+  },
+  "Q0019": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0039": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0424": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0526": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0026": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0107": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0064": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0080": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0110": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0183": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0251": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0117": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0383": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0195": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0451": {
+    "status": "PASS",
+    "cause": "STRATIFIED_CHECK_SAMPLE",
+    "reason": "Mẫu giữa danh sách PASS_CHECKS theo chủ đề; đã đọc câu trả lời và nguồn/phạm vi. Trả đúng yêu cầu hoặc từ chối/hỏi lại đúng giới hạn. Không dùng mẫu có chủ đích này làm điểm toàn bộ.",
+    "reviewed_by": "Codex"
+  },
+  "Q0396": {
+    "status": "PASS",
+    "cause": "REGRESSION_CONTROL_BASELINE",
+    "reason": "Đã đọc nguyên văn trước patch2: trả đủ loại ATX Mid Tower và thể tích 48.6L, đúng sản phẩm/nguồn.",
+    "reviewed_by": "Codex"
+  }
+}

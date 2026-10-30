@@ -1,0 +1,89 @@
+{
+  "cases": 224,
+  "semantic": {
+    "PASS": 221,
+    "FAIL": 3
+  },
+  "baseline_semantic": {
+    "PASS": 217,
+    "FAIL": 7
+  },
+  "variants": {
+    "brief_history": {
+      "PASS": 54,
+      "FAIL": 2
+    },
+    "explicit_subject_brief_history": {
+      "PASS": 56
+    },
+    "explicit_subject_original_history": {
+      "PASS": 56
+    },
+    "original_history": {
+      "PASS": 55,
+      "FAIL": 1
+    }
+  },
+  "checks": {
+    "PASS_CHECKS": 221,
+    "FAIL_CHECKS": 3
+  },
+  "inherited": 194,
+  "fresh": 30,
+  "changed_ids": [
+    "Q0125_original_history",
+    "Q0125_brief_history",
+    "Q0125_explicit_subject_brief_history",
+    "Q0191_original_history",
+    "Q0202_original_history",
+    "Q0247_original_history",
+    "Q0247_brief_history",
+    "Q0247_explicit_subject_brief_history",
+    "Q0373_original_history",
+    "Q0373_brief_history",
+    "Q0391_original_history",
+    "Q0422_original_history",
+    "Q0438_original_history",
+    "Q0438_brief_history",
+    "Q0478_original_history",
+    "Q0478_brief_history",
+    "Q0478_explicit_subject_brief_history",
+    "Q0113_explicit_subject_original_history",
+    "Q0125_explicit_subject_original_history",
+    "Q0175_explicit_subject_original_history",
+    "Q0202_explicit_subject_original_history",
+    "Q0246_explicit_subject_original_history",
+    "Q0247_explicit_subject_original_history",
+    "Q0321_explicit_subject_original_history",
+    "Q0356_explicit_subject_original_history",
+    "Q0373_explicit_subject_original_history",
+    "Q0397_explicit_subject_original_history",
+    "Q0402_explicit_subject_original_history",
+    "Q0422_explicit_subject_original_history",
+    "Q0478_explicit_subject_original_history"
+  ],
+  "fixed_ids": [
+    "Q0191_original_history",
+    "Q0478_brief_history",
+    "Q0125_explicit_subject_original_history",
+    "Q0247_explicit_subject_original_history"
+  ],
+  "regressed_ids": [],
+  "secondary_cases": 8,
+  "baseline_secondary_cases": 28,
+  "quote_checks": 235,
+  "quote_issues": [],
+  "private_leaks": [],
+  "evidence_reads": {
+    "product": 149,
+    "all_sources": 72
+  },
+  "no_selector_cases": [
+    "Q0300_brief_history",
+    "Q0301_original_history",
+    "Q0301_brief_history"
+  ],
+  "total_seconds": 860.748,
+  "median_seconds": 3.4684999999999997,
+  "production_accepted": false
+}

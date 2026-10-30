@@ -1,0 +1,8 @@
+{
+  "baseline_code_matches": true,
+  "tests": 72,
+  "before": "1 failed,20 passed with prior candidate and real fixture",
+  "temporary_directory_error": "first after run:70passed2errors; resolved with dedicated basetemp",
+  "training_allowed": false,
+  "ingestion_allowed": false
+}

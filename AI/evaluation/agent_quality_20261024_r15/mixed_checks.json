@@ -1,0 +1,117 @@
+{
+  "Q47": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q48": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q49": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q50": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q51": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q52": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q53": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q54": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q55": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q56": {
+    "checks_pass": false,
+    "errors": [
+      "partial_status",
+      "documents_availability",
+      "component_status",
+      "silent_omission"
+    ],
+    "semantic_review_required": true
+  },
+  "Q57": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q58": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tools",
+      "partial_status",
+      "knowledge_span",
+      "documents_availability",
+      "component_status",
+      "silent_omission",
+      "comparison_refs",
+      "catalog_source"
+    ],
+    "semantic_review_required": true
+  }
+}

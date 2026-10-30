@@ -1,0 +1,151 @@
+[
+  {
+    "id": "Q0017",
+    "question": "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp",
+      "DRAM",
+      "phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0071",
+    "question": "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu, có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu",
+      "có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu, có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0114",
+    "question": "Giải thích giúp tôi nội dung “Học tập, văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Học tập",
+      "văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Học tập, văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0128",
+    "question": "Giải thích giúp tôi nội dung “Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 6",
+      "6E",
+      "7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0156",
+    "question": "Giải thích giúp tôi nội dung “Nhân CPU, luồng và xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Nhân CPU",
+      "luồng",
+      "xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Nhân CPU, luồng và xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0166",
+    "question": "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số và giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số",
+      "giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số và giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0194",
+    "question": "Giải thích giúp tôi nội dung “IPS, TN, VA và OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “IPS",
+      "TN",
+      "VA",
+      "OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “IPS, TN, VA và OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0212",
+    "question": "Giải thích giúp tôi nội dung “Màn hình OLED và nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Màn hình OLED",
+      "nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Màn hình OLED và nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0257",
+    "question": "Giải thích giúp tôi nội dung “OLED là gì và vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “OLED là gì",
+      "vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “OLED là gì và vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0281",
+    "question": "Giải thích giúp tôi nội dung “RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “RAM 8 GB",
+      "16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0288",
+    "question": "Giải thích giúp tôi nội dung “SSD SATA, NVMe và M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “SSD SATA",
+      "NVMe",
+      "M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “SSD SATA, NVMe và M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0309",
+    "question": "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn",
+      "khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  },
+  {
+    "id": "Q0316",
+    "question": "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM và RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "before": [
+      "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM",
+      "RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate": [
+      "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM và RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện"
+    ]
+  }
+]

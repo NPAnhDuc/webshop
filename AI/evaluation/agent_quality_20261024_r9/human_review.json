@@ -1,0 +1,477 @@
+{
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q02": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q10": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q11": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q12": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q14": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q15": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q16": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q17": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q18": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q19": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q20": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q21": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q22": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q23": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q24": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q25": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q26": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q27": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q28": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q29": {
+      "semantic_pass": false,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q30": {
+      "semantic_pass": false,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q31": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q32": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q33": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q34": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q35": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q36": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q37": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q38": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q39": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q40": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q41": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q42": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q43": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q44": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q45": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q46": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A01": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A02": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A03": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A04": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A05": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A06": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A07": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A08": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A09": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A10": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A11": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A12": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A13": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A14": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A15": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A16": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A17": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A18": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A19": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A20": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A21": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A22": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A23": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "A24": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "reason": "Same normalized answer as r8, carry forward review."
+    },
+    "Q47": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q48": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q49": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q50": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q51": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q52": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q53": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q54": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q55": {
+      "semantic_pass": true,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q56": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q57": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    },
+    "Q58": {
+      "semantic_pass": false,
+      "reason": "Manually reviewed changed/unavailable or new mixed answer and tool arguments."
+    }
+  },
+  "development_only": true
+}

@@ -1,0 +1,755 @@
+{
+  "Q0140": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lenovo Legion Slim 5i 16IRH8: Processor Model: Core i5 13500H.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0141": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Crucial P510: dung lượng: 1000 GB.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0143": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0145": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. | 2026-01 | 1512000000 |",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0147": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 108627410 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0148": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0149": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Hai máy chưa rõ trong phiên mới: hỏi đối tượng trước khẳng định.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0150": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Không khẳng định giá/tồn tức thời hoặc giả lọc ngân sách khi thiếu nguồn/công cụ.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0152": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Khách xin giá nhập nội bộ bị từ chối đúng,khônglộnguồnadmin.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0154": {
+    "status": "FAIL",
+    "cause": "CROSS_PRODUCT_EVIDENCE",
+    "reason": "Đúng GPU GeForceRTX5060Ti nhưng chèn mã laptopB12M-041BD/408AU và giới hạn nâng cấp từtech-msi-variant vào câu hỏi cardMSIRTX5060Ti. Mã trong danh mục bị gán sai đối tượng; có đáp án chính đúng vẫnFAILvì claim phụ sai phạm vi.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0155": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. MSI Modern 15 B12M: Processor Model: Core i7 1255U.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0157": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0159": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. | 2026-02 | 918000000 |",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0161": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 110888988 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0167": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0169": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. | 2026-03 | 1228000000 |",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0170": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1493219000 VND.; Giá vốn: 1294467000 VND.; Lợi nhuận gộp: 198752000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0171": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0172": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0175": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lenovo IdeaPad Slim 3i 15ITL6: Processor Core: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0177": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0179": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 114022635 VND.; Lợi nhuận hoạt động trước lãi vay và thuế: 95154365 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0180": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lợi nhuận gộp: 187149000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0181": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0182": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Deepcool CH160: loại: Mini ITX Desktop.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0186": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0189": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lợi nhuận hoạt động trước lãi vay và thuế: -1390044 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0190": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 984310000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0193": {
+    "status": "FAIL",
+    "cause": "CROSS_PRODUCT_LIMITATION",
+    "reason": "Đúng đường chéo AsusVG27AQ27inch,nhưng nói trường kết nối này cần đối chiếu vàkhôngsẵnsàngnhập từtech-g305-source-conflict. Nguồn này chỉ nói chuộtLogitechG305; không áp cảnh báo riêng chuột cho màn hình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0197": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 108777780 VND.; Lợi nhuận hoạt động trước lãi vay và thuế: 38254220 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0198": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lợi nhuận gộp: 120582000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0199": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1077004000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0200": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Corsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0201": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. AOC 24G4XE: đường chéo: 24 inch.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0202": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Lenovo Legion Slim 5i 16IRH8: Processor Core: 12.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0204": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0206": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 141500520 VND.; Lợi nhuận hoạt động trước lãi vay và thuế: 45648480 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0207": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 114022635 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0208": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0209": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Crucial P510: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0211": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Razer Basilisk V3: cảm biến: Optical.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0213": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0215": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 131.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0218": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Asus PRIME B650-PLUS WIFI: kích thước/chuẩn thiết kế: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0219": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Intel Core i5-14600KF: số nhân: 14.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0220": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. AMD Ryzen 7 5700X3D: số nhân: 8.",
+    "secondary_issue": "INTERNAL_CATALOG_IDENTIFIER_NOISE",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0222": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0225": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0227": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Samsung 970 Evo Plus: loại: SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0228": {
+    "status": "FAIL",
+    "cause": "UNBOUND_AUXILIARY_CLAIM",
+    "reason": "Đúng loại nguồnMSIMAGA750GLlàATX nhưng chèn Hai loại bổ sung cho nhau từtech-cpu-gpu khi câu hỏi không có hai đối tượngCPU/GPU. Mảnh quan hệ có chủ thể từ nguồn khác không được ràng buộc choPSU,không chỉ là dài dòng cùng sản phẩm.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0233": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Chi phí vận hành: 110729840 VND.; Lợi nhuận hoạt động trước lãi vay và thuế: 61779160 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0235": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 1.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0237": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Kingston FURY Beast 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0238": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Western Digital WD_Black SN850X: dung lượng: 2000 GB.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0240": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0242": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 99.; Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0243": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 96.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0244": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1175440000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0245": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. LG UltraGear 27GR75Q-B: đường chéo: 27 inch.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0246": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. MSI Modern 15 B12M: Processor Core: 10.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0249": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "SKU giả không có nguồn: nói chưa xác nhận,không lấy máy khác thay;khôngclaimcấuhình.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0253": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0254": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Intel Core i5-14400F: số nhân: 10.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0255": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Asus PRIME B650-PLUS WIFI: socket: AM5.; Asus PRIME B650-PLUS WIFI: RAM tối đa theo danh mục: 192 GB.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0256": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. AMD Ryzen 7 9800X3D: số nhân: 8.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0259": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 65.; Sản phẩm hoàn trả: 1.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0260": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0264": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. HP 15-fd0202TU: Processor Model: Core i5 1335U.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0271": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Logitech G305 LIGHTSPEED: cảm biến: Optical.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0272": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Gigabyte X870E AORUS ELITE WIFI7: kích thước/chuẩn thiết kế: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0275": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 984310000 VND.; Giá vốn: 839604000 VND.; Lợi nhuận gộp: 144706000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0276": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 111.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0277": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0278": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Asus TUF Gaming VG27AQ: độ phân giải: 2560 × 1440 pixel.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0280": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Acer Nitro 5 AN515-58-59JP: Processor Model: Core i5 12450H.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0282": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1024280000 VND.; Giá vốn: 888376000 VND.; Lợi nhuận gộp: 135904000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0284": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0285": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Acer Aspire 5 5P-A515-58P: Processor Model: Core i3 1305U.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0289": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 135.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0292": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Intel Core i5-14600KF: xung cơ bản: 3.5 GHz.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0293": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. AMD Ryzen 7 7700X: số nhân: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0294": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Asus ZenBook 14 UM425UA: Processor Model: Ryzen 5 5500U.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "Thông tin chính đúng; có thông số cùng sản phẩm hoặc giải thích nền thừa. Không gán mã/giới hạn riêng của đối tượng khác như3caseFAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0296": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Đơn hàng: 151.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0297": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0298": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "secondary_note": "Thứ tự đáp án đảo9/2026rồi8/2026,nhưng mỗi2/4sảnphẩm có citation đúng kỳ; câu không yêu cầu trả lần lượt,không trộn số.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0303": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1175440000 VND.; Giá vốn: 1002931000 VND.; Lợi nhuận gộp: 172509000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0305": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 1493219000 VND.; Doanh thu thuần: 1024280000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0306": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. MSI Modern 15 B12M: Processor Model: Core i7 1255U.; MSI Modern 15 B12M: RAM: 16GB.",
+    "secondary_issue": "EXTRA_SAME_PRODUCT_OR_RELATED_BACKGROUND",
+    "secondary_note": "CPU/RAMcatalog đúng; thêm bản408AUđược nêu rõ mã khác,không gán thànhmãGPUhaycamkếtnângcấp. Vẫn là thông tin biến thể không cần thiết.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0311": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Giá vốn: 717998000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  },
+  "Q0312": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đã đọc câu hỏi/đáp án và nguồn: đủ thuộc tính/giá trị, đúng SKU/kỳ/phiên bản. Doanh thu thuần: 997980000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of three30case panels with user-history questions, answers, required approved facts and source ownership. Read full tech-msi-variant/tech-g305-source-conflict/tech-cpu-gpu for3cross-scopeFAIL. Separate from PASS_CHECKS, not independent human review.",
+    "cohort": "cohort_02"
+  }
+}

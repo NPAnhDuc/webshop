@@ -1,0 +1,31 @@
+{
+  "total": 479,
+  "reviewed": 479,
+  "unreviewed": 0,
+  "reviewed_subset": {
+    "FAIL": 29,
+    "PASS": 450
+  },
+  "inherited": 112,
+  "fresh": 367,
+  "pending_ids": [],
+  "roles": {
+    "customer": {
+      "total": 248,
+      "reviewed": 248,
+      "statuses": {
+        "PASS": 231,
+        "FAIL": 17
+      }
+    },
+    "admin": {
+      "total": 231,
+      "reviewed": 231,
+      "statuses": {
+        "PASS": 219,
+        "FAIL": 12
+      }
+    }
+  },
+  "warning": "All479development judgments recorded; Codex-authored, repeated numeric probes, not independent or overall600/real-useraccuracy. Statuses come only from saved Codex review; source/check agreement is not semantic PASS."
+}

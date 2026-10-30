@@ -1,0 +1,80 @@
+{
+  "cases": 224,
+  "semantic": {
+    "PASS": 206,
+    "FAIL": 18
+  },
+  "variants": {
+    "brief_history": {
+      "PASS": 50,
+      "FAIL": 6
+    },
+    "explicit_subject_brief_history": {
+      "PASS": 54,
+      "FAIL": 2
+    },
+    "explicit_subject_original_history": {
+      "PASS": 53,
+      "FAIL": 3
+    },
+    "original_history": {
+      "PASS": 49,
+      "FAIL": 7
+    }
+  },
+  "checks": {
+    "PASS_CHECKS": 206,
+    "FAIL_CHECKS": 18
+  },
+  "inherited": 200,
+  "fresh": 24,
+  "changed_ids": [
+    "Q0125_original_history",
+    "Q0163_original_history",
+    "Q0209_brief_history",
+    "Q0247_explicit_subject_brief_history",
+    "Q0334_brief_history",
+    "Q0343_brief_history",
+    "Q0356_original_history",
+    "Q0373_original_history",
+    "Q0373_brief_history",
+    "Q0373_explicit_subject_brief_history",
+    "Q0391_original_history",
+    "Q0422_original_history",
+    "Q0438_original_history",
+    "Q0438_brief_history",
+    "Q0478_original_history",
+    "Q0478_brief_history",
+    "Q0478_explicit_subject_brief_history",
+    "Q0113_explicit_subject_original_history",
+    "Q0125_explicit_subject_original_history",
+    "Q0175_explicit_subject_original_history",
+    "Q0247_explicit_subject_original_history",
+    "Q0356_explicit_subject_original_history",
+    "Q0373_explicit_subject_original_history",
+    "Q0478_explicit_subject_original_history"
+  ],
+  "fixed_ids": [
+    "Q0125_explicit_subject_original_history"
+  ],
+  "regressed_ids": [
+    "Q0125_original_history",
+    "Q0163_original_history",
+    "Q0209_brief_history",
+    "Q0247_explicit_subject_brief_history",
+    "Q0334_brief_history",
+    "Q0343_brief_history",
+    "Q0356_original_history",
+    "Q0373_original_history",
+    "Q0478_original_history",
+    "Q0478_explicit_subject_brief_history",
+    "Q0373_explicit_subject_original_history",
+    "Q0478_explicit_subject_original_history"
+  ],
+  "quote_checks": 259,
+  "quote_issues": [],
+  "private_leaks": [],
+  "total_seconds": 1178.551,
+  "median_seconds": 4.7115,
+  "accepted": false
+}

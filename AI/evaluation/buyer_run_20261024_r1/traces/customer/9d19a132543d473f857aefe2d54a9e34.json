@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "9d19a132543d473f857aefe2d54a9e34",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:33:27.791789+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Trong danh mục hiện có, lấy 2 bộ nguồn giá dưới 1950001 đồng giúp mình.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "unavailable",
+    "answer": "Chưa xác định chắc yêu cầu. Bạn nêu ngân sách hoặc hai mã máy cụ thể giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.1109504999913042
+}

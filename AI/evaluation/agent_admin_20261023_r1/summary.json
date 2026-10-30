@@ -1,0 +1,11 @@
+{
+  "semantic_pass": 50,
+  "total": 60,
+  "admin_pass": 14,
+  "admin_total": 24,
+  "buyer_pass": 36,
+  "buyer_total": 36,
+  "accepted_for_application": false,
+  "training_performed": false,
+  "median_seconds": 0.969
+}

@@ -1,0 +1,62 @@
+{
+  "Q0125_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  },
+  "Q0125_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  },
+  "Q0247_original_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  },
+  "Q0247_explicit_subject_brief_history": {
+    "status": "PASS",
+    "reason": "Read answer and requested source-owned fact: correct named product and requested attribute. Required: Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  },
+  "Q0125_explicit_subject_original_history": {
+    "status": "FAIL",
+    "reason": "Required Corsair kit 2 x 16 GB absent; substitutes generic RAM capacity and laptop upgrade advice despite ram_modules_8 in available evidence.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  },
+  "Q0247_explicit_subject_original_history": {
+    "status": "FAIL",
+    "reason": "Required Corsair kit 2 x 8 GB absent; substitutes Photoshop/soldered-RAM/DIMM cautions despite ram_modules_8 in available evidence.",
+    "secondary_issues": [
+      "IRRELEVANT_GENERIC_RAM_ADVICE"
+    ],
+    "reviewed_by": "Codex",
+    "review_method": "All6 raw outputs and all12 router/selector request/response traces read; exact answer/action/source equality with original controls confirmed.",
+    "inherited_from": "r2/r3 same-input baseline"
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "Q0113_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0113_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0125_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0125_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0163_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0163_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0175_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0175_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0191_recorded": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0191_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0202_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0202_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0209_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0209_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0210_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0210_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0218_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0218_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0227_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0227_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0246_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0246_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0247_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0247_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0272_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0272_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0278_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0278_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0292_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0292_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0300_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0300_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0301_recorded": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0301_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0314_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0314_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0321_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0321_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0322_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0322_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0327_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0327_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0329_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0329_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0334_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0334_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0343_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0343_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0356_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0356_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0357_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0357_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0368_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0368_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0373_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0373_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0381_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0381_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0382_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0382_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0383_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0383_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0391_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0391_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0392_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0392_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0397_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0397_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0398_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0398_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0401_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0401_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0402_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0402_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0403_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0403_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0406_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0406_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0411_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0411_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0417_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0417_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0422_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0422_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0427_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0427_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0428_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0428_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0432_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0432_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0438_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0438_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0442_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0442_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0446_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0446_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0448_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0448_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0462_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0462_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0471_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0471_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0472_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0472_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0478_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0478_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0486_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0486_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0488_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0488_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0496_recorded": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  },
+  "Q0496_contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual reading of56recorded answers and56literal nearby-attribute contrasts before inference. Coverage only, no factual accuracy verdict. CPUmodel does not give corecount; clarification does not answer fact. All contrast lines do not state requested attribute; no automatic QA-grade inheritance."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "4ce4f38783234b9b9c5868fa445eda64",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T03:35:19.914463+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Cho tôi gặp nhân viên tư vấn thật.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "handoff",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "handoff",
+    "answer": "Chưa có kênh chuyển nhân viên được kết nối; chưa có yêu cầu nào được gửi.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.24060640000971034
+}

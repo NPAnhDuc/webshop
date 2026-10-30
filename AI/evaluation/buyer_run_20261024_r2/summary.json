@@ -1,0 +1,61 @@
+{
+ "turns": 300,
+ "by_family": {
+  "product_fact": {
+   "fail": 134
+  },
+  "catalog_search": {
+   "pass": 40
+  },
+  "product_comparison": {
+   "pass": 20
+  },
+  "knowledge_policy": {
+   "fail": 30
+  },
+  "consultation": {
+   "fail": 20
+  },
+  "multi_turn": {
+   "pass": 55,
+   "fail": 1
+  }
+ },
+ "actions": {
+  "product_fact": {
+   "documents": 134
+  },
+  "catalog_search": {
+   "answer": 40
+  },
+  "product_comparison": {
+   "answer": 20
+  },
+  "knowledge_policy": {
+   "documents": 26,
+   "denied": 1,
+   "handoff": 3
+  },
+  "consultation": {
+   "clarify": 11,
+   "documents": 7,
+   "outside": 1,
+   "deferred": 1
+  },
+  "multi_turn": {
+   "answer": 52,
+   "clarify": 3,
+   "deferred": 1
+  }
+ },
+ "errors": {
+  "product_fact:value_not_answered": 103,
+  "product_fact:fact_tool_missing": 31,
+  "knowledge_policy:knowledge_not_answered": 30,
+  "consultation:needs_semantic_review": 20,
+  "knowledge_policy:not_routed_documents": 4,
+  "multi_turn:no_compare": 1
+ },
+ "median_seconds": 0.281,
+ "max_seconds": 1.687
+}

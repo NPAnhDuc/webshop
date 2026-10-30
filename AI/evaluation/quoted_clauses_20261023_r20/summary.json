@@ -1,0 +1,27 @@
+{
+  "development_rows": 479,
+  "quoted_rows": 28,
+  "changed_parser_rows": 13,
+  "no_paired_quote_rows_unchanged": 451,
+  "exact_title_retrieved": 24,
+  "rows_with_other_title_claims": 17,
+  "changed_ids": [
+    "Q0017",
+    "Q0071",
+    "Q0114",
+    "Q0128",
+    "Q0156",
+    "Q0166",
+    "Q0194",
+    "Q0212",
+    "Q0257",
+    "Q0281",
+    "Q0288",
+    "Q0309",
+    "Q0316"
+  ],
+  "edge_case_assertions": 5,
+  "model_calls": 0,
+  "semantic_improvement_measured": false,
+  "production_changed": false
+}

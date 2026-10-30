@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "cases": 32,
+    "answer_pass": 29,
+    "passage_recall": 0.8787878787878788,
+    "average_answer_words": 139.46875,
+    "note": "Same question bank. Errata credits equivalent anti-stacking evidence; original raw run preserved. No answer relabeling to favor the candidate."
+  },
+  "dev": {
+    "bank_sha256": "d400d477838304f8a88f71f481fbd1470f6da2d47bf685878d3c6e0b8bcc3b2a",
+    "errata_sha256": "fc1f0c09bc6bbdac7cdc43d547a585b79fee42a74488847ae3f0fdfb5680b616",
+    "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "split": "dev",
+    "cases": 32,
+    "retrieval_only": false,
+    "reranker": "0",
+    "answer_mode": "extractive",
+    "sources": {
+      "shopbot\\retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b",
+      "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+      "shopbot\\engine.py": "de0a0db7082899f3ffddafc475cb8a453647f291a93445b2b8fd49853c9cf475",
+      "shopbot\\rag_answer.py": "de56ed0de717ac713a93b4b63b036913014da1f8473b0a25c134a240c31fd1a6"
+    },
+    "limitations": "Authored synthetic-shop benchmark; wording-family variants are not independent customer conversations. No SQL or routing score included.",
+    "completed": 32,
+    "errors": 0,
+    "passage_recall": 0.9696969696969697,
+    "document_recall": 0.9696969696969697,
+    "all_evidence_pass": 28,
+    "answer_pass": 32,
+    "permissions_pass": 32,
+    "average_answer_words": 57.40625,
+    "retrieval_truncations": 0,
+    "elapsed_seconds": 155.92199999999866,
+    "by_kind": {
+      "supported": {
+        "cases": 28,
+        "passed": 28
+      },
+      "partial": {
+        "cases": 1,
+        "passed": 1
+      },
+      "missing": {
+        "cases": 2,
+        "passed": 2
+      },
+      "acl": {
+        "cases": 1,
+        "passed": 1
+      }
+    }
+  },
+  "holdout": {
+    "bank_sha256": "d400d477838304f8a88f71f481fbd1470f6da2d47bf685878d3c6e0b8bcc3b2a",
+    "errata_sha256": "fc1f0c09bc6bbdac7cdc43d547a585b79fee42a74488847ae3f0fdfb5680b616",
+    "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "split": "holdout",
+    "cases": 16,
+    "retrieval_only": false,
+    "reranker": "0",
+    "answer_mode": "extractive",
+    "sources": {
+      "shopbot\\retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b",
+      "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+      "shopbot\\engine.py": "5a14e9b99d7a1c26b4b1d8953df6e884df268af75ed44a95e9395f9fcc2a244d",
+      "shopbot\\rag_answer.py": "de56ed0de717ac713a93b4b63b036913014da1f8473b0a25c134a240c31fd1a6"
+    },
+    "limitations": "Authored synthetic-shop benchmark; wording-family variants are not independent customer conversations. No SQL or routing score included.",
+    "completed": 16,
+    "errors": 0,
+    "passage_recall": 0.9230769230769231,
+    "document_recall": 0.9230769230769231,
+    "all_evidence_pass": 10,
+    "answer_pass": 14,
+    "permissions_pass": 16,
+    "average_answer_words": 42.6875,
+    "retrieval_truncations": 0,
+    "elapsed_seconds": 101.85900000000402,
+    "by_kind": {
+      "supported": {
+        "cases": 10,
+        "passed": 9
+      },
+      "partial": {
+        "cases": 1,
+        "passed": 0
+      },
+      "missing": {
+        "cases": 4,
+        "passed": 4
+      },
+      "acl": {
+        "cases": 1,
+        "passed": 1
+      }
+    }
+  },
+  "conversation": {
+    "cases": 7,
+    "passed": 7,
+    "failed": 0,
+    "bank_sha256": "5f652722f42287ed235b2e3db471a40c37af322dd466c1c44a80cfc9becbc187",
+    "date": "2026-10-20",
+    "limitations": "Small development integration check, not production accuracy."
+  },
+  "span_audit": {
+    "checked": 64,
+    "invalid": [],
+    "scope": "Exact stored source spans; does not prove relevance, completeness or real-world truth."
+  },
+  "core": {
+    "planned_questions": 94,
+    "conversation_groups": 79,
+    "question_bank_sha256": "62510916a9e38016f42a3804f832dcdad5864dd14be5b7021cf15d56a2d66a9d",
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "llm_provider": "ollama",
+    "dataset_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "grading_scope": "Functional task fulfillment including answer contents and SQL oracle; unsupported tasks count FAIL; correct ambiguity clarification and access denial count PASS",
+    "frozen_sources": {
+      "shopbot/engine.py": "5a14e9b99d7a1c26b4b1d8953df6e884df268af75ed44a95e9395f9fcc2a244d",
+      "shopbot/conversation.py": "924344199abfb32b17153d1f3b14b409493f1cf806c2e98ae8a0c62de2cd2ed2",
+      "shopbot/store.py": "6c503c7a45c7a8d76d944375adf6665cdff9839ecbb67c99e3877c41303c745d",
+      "shopbot/retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b"
+    },
+    "elapsed_seconds": 216.31199999999808,
+    "completed": 94,
+    "passed": 84,
+    "failed": 10,
+    "failure_categories": {
+      "product_constraint": 1,
+      "no_matching_data": 1,
+      "unfulfilled_capability": 8
+    },
+    "regressions": []
+  },
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "corpus_correction": {
+    "before_sha256": "4756da4d272ae89dce18225f5ea098e655893bc0dbf9db3777d1d500542b57e5",
+    "after_sha256": "a222b702c50770800186f877419a50b6ccd3122f28494a92438ab46d5e68ee01",
+    "suppliers": [
+      [
+        "SUP-LAP",
+        "Nhà phân phối laptop giả lập",
+        4
+      ],
+      [
+        "SUP-PC",
+        "Nhà phân phối linh kiện giả lập",
+        3
+      ]
+    ],
+    "change": "Added procurement v2 with explicit supplier names, grounded in SQL. Original v1 retained. Financial DB unchanged.",
+    "effective_note": "Simulation initial facts reconstructed; not a real-world historical publication date."
+  },
+  "selected_mode": "extractive",
+  "reranker_active": false,
+  "code_sha256": {
+    "retrieval.py": "b78ea68441a8284ef6d4ef332e0949633f62fd815413e8d74a5457d4ab9b084b",
+    "dense_retrieval.py": "d41dc4cf0f5cc65947002c85cd989a8d332d8574a83194f68c021b1bb420b26f",
+    "chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+    "rag_answer.py": "e3ea430f7c49c7f5129aaad955e763372ee542cd0b5df115472c5b3bbd8d05e2",
+    "engine.py": "5a14e9b99d7a1c26b4b1d8953df6e884df268af75ed44a95e9395f9fcc2a244d",
+    "conversation.py": "924344199abfb32b17153d1f3b14b409493f1cf806c2e98ae8a0c62de2cd2ed2",
+    "business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098"
+  }
+}

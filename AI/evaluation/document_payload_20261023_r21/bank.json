@@ -1,0 +1,182 @@
+[
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-kc3000-capacity",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-kc3000-capacity"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0017"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu, có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-ddr5-basics",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-ddr5-basics"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0071"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-wifi-bands",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-wifi-bands"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0128"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Nhân CPU, luồng và xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-cpu-cores-clock",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-cpu-cores-clock"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0156"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “IPS, TN, VA và OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-panels-ips-oled",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-panels-ips-oled"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0194"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-loq-family",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-loq-family"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0221"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-ideapad-family",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-ideapad-family"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0239"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “OLED là gì và vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-oled-basics",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-oled-basics"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0257"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-ram-capacity",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-ram-capacity"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0281"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Máy học Photoshop cần bao nhiêu RAM?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-photoshop-requirements",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-photoshop-requirements"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0302"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Kingston NV2: thông số tốc độ thay đổi theo dung lượng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-nv2-capacity",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-nv2-capacity"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0344"
+  },
+  {
+    "role": "customer",
+    "question": "Giải thích giúp tôi nội dung “Modern 15 B12M-081SG: thông số chỉ cho bản SG”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "topic": "technology_reasoning",
+    "conversation": "tech:tech-msi-081sg",
+    "required": [],
+    "expected_behavior": "semantic",
+    "rubric": "Giải thích đúng ý nguồn và giới hạn, không gán thành chính sách shop. Nguồn chuẩn nằm trong snapshot; cần chấm nghĩa thủ công.",
+    "gold_document_ids": [
+      "tech-msi-081sg"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0351"
+  }
+]

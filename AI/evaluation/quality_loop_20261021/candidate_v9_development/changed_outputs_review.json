@@ -1,0 +1,122 @@
+{
+  "Q0162": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1024280000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0217": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0261": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 838580000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0269": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 838580000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0435": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0455": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0480": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1024280000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0550": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1474785000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0554": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1474785000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0560": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0568": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1203150000 VND.; Doanh thu thuần: 1189908000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0576": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0577": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1474785000 VND.; Doanh thu thuần: 997980000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0595": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1203150000 VND.; Doanh thu thuần: 1427320000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0599": {
+    "status": "PASS",
+    "cause": "CHANGED_SOURCE_OBJECTS_CONTENT_CORRECT",
+    "reason": "Đã đọc cả trước/sau: đủ hai giá trị đúng kỳ vàđúng nguồn, câu trả lời nguyên văn giống; source objects/thứ tự thay đổi không đổi kết luận. Doanh thu thuần: 1474785000 VND.; Doanh thu thuần: 1077004000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh comparison of all15changed cases and approved owners, same frozen rubric, separate from PASS_CHECKS; not independent.",
+    "cohort": "changed_outputs"
+  }
+}

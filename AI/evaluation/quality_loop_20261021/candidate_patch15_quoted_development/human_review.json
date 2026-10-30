@@ -1,0 +1,226 @@
+{
+  "Q0017": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có giao tiếp/DRAM và câu kiểm tra mã dung lượng nhưng thiếu tốc độ phân biệt dung lượng/giới hạn tối đa; thêm OLED không liên quan. Vẫn thiếu ý như baseline.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0035": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nội dung nguyên đáp án baseline: tương đương về màu,góc nhìn,tương phản và không suy chất lượng chỉ từ IPS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0071": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có DDR5 thế hệ mới nhưng bỏ rãnh khóa/không thay trực tiếp DDR4 và điều kiện CPU/bo mạch; thay bằng on-die ECC và provenance. Suy giảm baselinePASS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0114": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nêu không bắt buộc Hz cao cho mọi học tập, điều kiện máy phải đáp ứng FPS; câu OLED chung thừa. Giữ ý chính theo chuẩn baseline.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0128": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ nêu cần card/router/phần mềm; bỏ phần phân biệt WiFi6 ở2.4/5GHz với6E/7có6GHz trong bài được yêu cầu giải thích. Mất phần chính baseline đã có.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0142": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên đáp án baseline: không biến thông lượng WiFi thành tốc độ Internet; có câu SSD thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0156": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Đã bỏ WiFi/SSD nhiễu nhưng chỉ nêu nhân/GHz/iGPU; vẫn không giải thích luồng hoặc giới hạn không so hiệu năng chỉ bằng GHz. Chưa đủ sửa FAIL.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0166": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ còn điều kiện boost/TDP và câu WiFi chung, mất toàn bộ8nhân/16luồng/5.2GHz/120W của nội dung bài. Suy giảm baselinePASS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0185": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: tốc độ phụ thuộc host/hệ thống; không lấy số tối đa cam kết.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0194": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ phân nhóm LCD/OLED và lặp điểm ảnh tự sáng; mất cả giới hạn màu IPS/đúng phiên bản, không giải thích khác biệt cần hỏi. FAIL vẫn giữ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0203": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Nguyên baseline: nêu vai trò và điều kiện tăng tốc nhưng không kết luận quan hệ bổ sung/GPU không thay CPU.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0212": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nêu rủi ro nội dung tĩnh và điều kiện đúng model, không suy bảo hành shop; đã rút nhiều câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0221": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: hai kheDDR5,pin60Wh,không gán cấu hình cao nhất,Whkhông bảo đảm số giờ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0230": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: hỏi game/độ phân giải/nhu cầu và giới hạn không cam kếtFPS; từ Không đầu câu không phù hợp vẫn ghi chú.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0239": {
+    "status": "FAIL",
+    "cause": "WRONG_TOPIC",
+    "reason": "Nguyên baseline: hỏiIdeaPad nhưng trảOLED/WiFi.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0248": {
+    "status": "FAIL",
+    "cause": "SCOPE",
+    "reason": "Nguyên baseline: chỉRAM408AU,thiếu giới hạn không suy sang041BD/mã vùng khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0257": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Nêu tự sáng/đen sâu nhưng lặp ý, không có điều kiện hay giới hạnTVSamsung/không gán tính năng TV cho laptop hoặc điều kiện OLED tương đương. Mất điều kiện baseline có.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0281": {
+    "status": "FAIL",
+    "cause": "WRONG_TOPIC",
+    "reason": "Bỏ toàn bộ khuyến nghị16GB/32GB theo tác vụ; thay bằng nâng cấpRAM,SSDvàOLED. Suy giảm baselinePASS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0288": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có M2dùngSATA/NVMe và giải thíchNVMe nhưng không còn kiểm tra giao tiếp khe trước nâng cấp/điều kiện lắp. Suy giảm baselinePASS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0295": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline:144Hzkhông bảo đảm144FPS,CPU/GPUphải tạo đủ khung hình.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0302": {
+    "status": "FAIL",
+    "cause": "WRONG_TOPIC",
+    "reason": "Nguyên baseline: hỏiPhotoshopRAMnhưng trảOLED/SSD.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0309": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "ĐúngRAMhàn+một kheDDR4SO-DIMMtheodòng; nêu kiểm tra đúng mã/loại/khe/giới hạn hãng trước mua. Giới hạn theoSKU vẫn có qua nguồn tương đương.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0316": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "DIMM/SO-DIMM,RAMhànvà kiểm tra đúng mã/khe/giới hạn; đủ nội dung và điều kiện, bớt nhiễu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0323": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: xung độtWiredWirelessvớihãngLIGHTSPEED, trường cầnđối chiếu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0330": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Nguyên baseline: có giới hạn theoSKU nhưng thiếuhai kheDDR5; WiFikhông liênquan.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  },
+  "Q0337": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: ECCtrongchip khácECCtoànhệthống, cần nền tảng hỗ trợ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0344": {
+    "status": "PASS",
+    "cause": "CONTROL",
+    "reason": "Nguyên baseline: tốc độNV2riêng1TB/2TBvà điều kiện thử/cấu hình.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "PASS"
+  },
+  "Q0351": {
+    "status": "FAIL",
+    "cause": "WRONG_SCOPE",
+    "reason": "Nguyên baseline: hỏi081SGnhưng trảWiFi/OLED/408AU041BD, thiếu thông tin081SG.",
+    "reviewed_by": "Codex",
+    "review_method": "Read all28 exact answers and source texts against frozen patch9 review; separate semantic review from PASS_CHECKS.",
+    "baseline_status": "FAIL"
+  }
+}

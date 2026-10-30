@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "bdc8503c7c6c42f19918ddf4d1f3f86a",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:09.584225+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "RAM dual-channel là gì, khi nào có lợi?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "RAM dual-channel là gì, khi nào có lợi?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: khi nào có lợi.",
+        "reason": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: khi nào có lợi.",
+        "answerability": "partial",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-ram-upgrade",
+            "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+            "source": "tech-ram-upgrade-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "11279caccaa624b92048539db7ddb94675ea2e31b8861f57b52d10031a167893",
+            "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+            "section": 1,
+            "chunk_id": "97907013f676a86ce99836c880b2732e906a60b8c57873083fcfcb1a0f9f21c1",
+            "score": 0.04714,
+            "dense_score": 0.3387,
+            "lexical_score": 0.1302,
+            "bm25_score": 4.162,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.6524416000029305
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: khi nào có lợi.",
+    "sources": [
+      {
+        "document_id": "tech-ram-upgrade",
+        "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+        "source": "tech-ram-upgrade-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "11279caccaa624b92048539db7ddb94675ea2e31b8861f57b52d10031a167893",
+        "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+        "section": 1,
+        "chunk_id": "97907013f676a86ce99836c880b2732e906a60b8c57873083fcfcb1a0f9f21c1",
+        "score": 0.04714,
+        "dense_score": 0.3387,
+        "lexical_score": 0.1302,
+        "bm25_score": 4.162,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.079850299996906
+}

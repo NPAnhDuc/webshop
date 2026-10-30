@@ -1,0 +1,21 @@
+{
+  "cases": 56,
+  "semantic": {
+    "PASS": 54,
+    "FAIL": 2
+  },
+  "checks": {
+    "PASS_CHECKS": 54,
+    "FAIL_CHECKS": 2
+  },
+  "identical_to_patch11_original": 56,
+  "fail_ids": [
+    "Q0125_explicit_subject_original_history",
+    "Q0247_explicit_subject_original_history"
+  ],
+  "quote_checks": 72,
+  "quote_issues": [],
+  "total_seconds": 264.293,
+  "median_seconds": 3.8434999999999997,
+  "production_changed": false
+}

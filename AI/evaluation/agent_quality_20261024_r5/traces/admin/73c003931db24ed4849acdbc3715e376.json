@@ -1,0 +1,83 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "73c003931db24ed4849acdbc3715e376",
+  "parent_trace_id": "90c3701d75d640f3adbf3787cc684af0",
+  "recorded_at": "2026-10-24T02:48:50.728927+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Còn giá vốn thì sao?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin",
+    "admin_context": {
+      "metric": "revenue",
+      "operation": "compare",
+      "active_period": {
+        "start": "2026-09-01",
+        "end": "2026-10-01",
+        "unit": "month",
+        "label": "2026-09"
+      },
+      "comparison_periods": [
+        {
+          "start": "2026-08-01",
+          "end": "2026-09-01",
+          "unit": "month",
+          "label": "2026-08"
+        },
+        {
+          "start": "2026-09-01",
+          "end": "2026-10-01",
+          "unit": "month",
+          "label": "2026-09"
+        }
+      ],
+      "pending": false
+    }
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "metric": "revenue",
+      "operation": "compare",
+      "active_period": {
+        "start": "2026-09-01",
+        "end": "2026-10-01",
+        "unit": "month",
+        "label": "2026-09"
+      },
+      "comparison_periods": [
+        {
+          "start": "2026-08-01",
+          "end": "2026-09-01",
+          "unit": "month",
+          "label": "2026-08"
+        },
+        {
+          "start": "2026-09-01",
+          "end": "2026-10-01",
+          "unit": "month",
+          "label": "2026-09"
+        }
+      ],
+      "pending": false
+    }
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "clarify",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn xem chỉ tiêu nào, trong tháng, quý hoặc năm nào?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.829658600006951
+}

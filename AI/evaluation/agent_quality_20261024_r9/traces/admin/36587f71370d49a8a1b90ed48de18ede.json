@@ -1,0 +1,32 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "36587f71370d49a8a1b90ed48de18ede",
+  "parent_trace_id": "694e37d5afaf4e39bef1560990d6b3e6",
+  "recorded_at": "2026-10-24T06:37:42.488453+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Nguồn đó có bao nhiêu SKU và dòng sổ?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality"
+    }
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality"
+    }
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "unavailable",
+    "answer": "Chưa xác định chắc yêu cầu. Bạn nêu ngân sách hoặc hai mã máy cụ thể giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.9258910000062315
+}

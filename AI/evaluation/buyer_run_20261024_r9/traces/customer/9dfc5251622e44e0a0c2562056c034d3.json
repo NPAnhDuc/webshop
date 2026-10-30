@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "9dfc5251622e44e0a0c2562056c034d3",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:54.535392+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Muốn hủy đơn trước lúc giao thì làm theo bước nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Muốn hủy đơn trước lúc giao thì làm theo bước nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "deferred",
+        "executed": true,
+        "answer": "Yêu cầu này cần công cụ ngoài RAG cơ bản; tôi chưa thực hiện phép tính, truy vấn trực tiếp hay hành động đó. Tôi có thể đọc điều kiện hoặc báo cáo đã có.",
+        "reason": "Yêu cầu này cần công cụ ngoài RAG cơ bản; tôi chưa thực hiện phép tính, truy vấn trực tiếp hay hành động đó. Tôi có thể đọc điều kiện hoặc báo cáo đã có.",
+        "answerability": "deferred",
+        "rag_action": "deferred",
+        "sources": []
+      },
+      "seconds": 1.1792144999926677
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "deferred",
+    "answer": "Yêu cầu này cần công cụ ngoài RAG cơ bản; tôi chưa thực hiện phép tính, truy vấn trực tiếp hay hành động đó. Tôi có thể đọc điều kiện hoặc báo cáo đã có.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.6434695000061765
+}

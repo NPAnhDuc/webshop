@@ -1,0 +1,14 @@
+[
+  {
+    "id": "C31",
+    "role": "customer",
+    "question": "Intel Core i5-14400F có mấy nhân và boost tối đa bao nhiêu, còn số luồng đã được ghi trong tài liệu chưa?",
+    "topic": "known_unknown",
+    "expected_behavior": "partial",
+    "rubric": "10nhân,boost4,7GHz; số luồng không có trong bản lập chỉ mục, phải nói chưa xác nhận thay vì tự thêm20/16.",
+    "gold_document_ids": [
+      "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb"
+    ],
+    "conversation": "C31"
+  }
+]

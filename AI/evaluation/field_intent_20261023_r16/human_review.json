@@ -1,0 +1,772 @@
+{
+  "F15-Q0113_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0125_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/first_word_latency",
+      "memory/speed"
+    ],
+    "finding": "All fourmemorycolumns selected; kit-layout intent gold only modules. Report broad boRAM wording interpretation limit without posthocchanginglabels."
+  },
+  "F15-Q0163_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0175_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0191_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0202_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0209_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0210_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0218_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0227_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0246_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0247_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/first_word_latency",
+      "memory/speed"
+    ],
+    "finding": "All fourmemorycolumns selected; kit-layout intent gold only modules. Report broad boRAM wording interpretation limit without posthocchanginglabels."
+  },
+  "F15-Q0272_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0278_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0292_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0300_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0301_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0314_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0321_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0322_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0327_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0329_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0334_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0343_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0356_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0357_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0368_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0373_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/first_word_latency",
+      "memory/speed"
+    ],
+    "finding": "All fourmemorycolumns selected; kit-layout intent gold only modules. Report broad boRAM wording interpretation limit without posthocchanginglabels."
+  },
+  "F15-Q0381_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0382_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0383_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0391_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0392_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0397_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0398_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0401_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0402_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0403_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0406_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0411_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0417_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0422_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0427_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0428_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0432_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0438_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0442_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0446_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0448_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0462_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0471_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0472_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0478_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/first_word_latency",
+      "memory/speed"
+    ],
+    "finding": "All fourmemorycolumns selected; kit-layout intent gold only modules. Report broad boRAM wording interpretation limit without posthocchanginglabels."
+  },
+  "F15-Q0486_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0488_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-Q0496_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C09": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Display Resolution",
+      "laptop/Display Size (Inch)",
+      "laptop/Display Type",
+      "laptop/Graphics Chipset",
+      "laptop/Graphics Memory",
+      "laptop/Graphics Memory Accessibility"
+    ],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C10": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C11": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C12": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C13": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/speed"
+    ],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C14": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "monitor/refresh_rate"
+    ],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C15": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C16": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C17": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C19": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "monitor/panel_type"
+    ],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C20": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C21": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C24": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C30": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C31": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "cpu/boost_clock",
+      "cpu/core_count"
+    ],
+    "finding": "P3threadcount incorrectly maps cpu/core_count; mandatory part key alone does not guarantee correct meaning. Prior unsafe omission persists as explicit wrong mapping."
+  },
+  "F15-C33": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Display Type",
+      "laptop/HDMI Port"
+    ],
+    "finding": "USB-Cdisplay incorrectly maps HDMI/displaytype; source-specific request cannot be replaced with rawcatalogcolumns."
+  },
+  "F15-C34": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/RAM",
+      "laptop/RAM Type"
+    ],
+    "finding": "RegionalRAMsoldering incorrectly maps capacity/type; schema distinctions still not respected."
+  },
+  "F15-C36": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Aggregate fallback correct because days/fees sentinel, but contextP1 maps unrelated mouseattributes. Aggregateagreement hides invalid perpartmeaning."
+  },
+  "F15-C40": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C46": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A03": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A09": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A17": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A19": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A22": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A25": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A26": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A28": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A32": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-A38": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C01": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Processor Brand",
+      "laptop/Processor Core"
+    ],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C02": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C05": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  },
+  "F15-C06": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Contextpreamble maps size/type; union correct. No formal perpartgold, cannot claim precise question decomposition."
+  },
+  "F15-C27": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": [],
+    "finding": "Read every part selection, original question and derived aggregate against frozen gold. No production answer/truth verification."
+  }
+}

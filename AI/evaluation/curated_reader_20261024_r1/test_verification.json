@@ -1,0 +1,10 @@
+{
+  "new_reader_tests": 17,
+  "targeted_tests": 28,
+  "targeted_seconds": 16.29,
+  "full_tests": 321,
+  "full_seconds": 128.85,
+  "model_calls": 0,
+  "conversation_accuracy_measured": false,
+  "active_source_changed": false
+}

@@ -1,0 +1,80 @@
+{
+  "cases_sha256": "eb0c53ea41c85cc8e76f4eac16194a4c1e15fc4f5d171bd77d687c2cf898c6c8",
+  "implementation_sha256": "786fa4f64468119c4bfcaf287353cef2c4b780187a7bfb18f4688ad8c3f15a7e",
+  "passed": 2,
+  "total": 9,
+  "results": [
+    {
+      "id": "C01",
+      "passed": false,
+      "actual": {
+        "budget": 3000000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C02",
+      "passed": false,
+      "actual": {
+        "budget": 2000000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C03",
+      "passed": false,
+      "actual": {
+        "budget": 3000000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C04",
+      "passed": true,
+      "actual": {
+        "budget": 20000000,
+        "count": 3
+      }
+    },
+    {
+      "id": "C05",
+      "passed": true,
+      "actual": {
+        "budget": 2000000,
+        "count": 2
+      }
+    },
+    {
+      "id": "C06",
+      "passed": false,
+      "actual": {
+        "budget": 2500000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C07",
+      "passed": false,
+      "actual": {
+        "budget": 3000000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C08",
+      "passed": false,
+      "actual": {
+        "budget": 3000000,
+        "count": 0
+      }
+    },
+    {
+      "id": "C09",
+      "passed": false,
+      "actual": {
+        "budget": 3000000,
+        "count": 0
+      }
+    }
+  ]
+}

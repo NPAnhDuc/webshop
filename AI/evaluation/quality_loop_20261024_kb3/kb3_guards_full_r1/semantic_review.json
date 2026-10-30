@@ -1,0 +1,58 @@
+{
+  "status": "combined_guards_retained_local_source_intent_defect_still_open",
+  "cases": 479,
+  "integrity_unchanged": true,
+  "changed_answers": [
+    "Q0020",
+    "Q0038",
+    "Q0102",
+    "Q0445"
+  ],
+  "unchanged_answers": 475,
+  "action_changes": [],
+  "intent_changes": [],
+  "overall_semantic_accuracy": null,
+  "mechanical_checks": {
+    "PASS_CHECKS": 368,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 58
+  },
+  "semantic_changed_cases": [
+    {
+      "id": "Q0020",
+      "judgment": "improved_relevance_and_missing_MOQ_disclosure",
+      "note": "Supplier4/3dayleadtime retained, unrelatedwarranty/reorder claims removed; no corpus-wide absence asserted."
+    },
+    {
+      "id": "Q0038",
+      "judgment": "improved_uncertainty_not_eligibility_resolved",
+      "note": "Campaign table alone no longer counted full product eligibility support."
+    },
+    {
+      "id": "Q0102",
+      "judgment": "improved_exact_source_backed_comparison",
+      "note": "7%above6%by1percentagepoint; unknownapprover retained, no authorization."
+    },
+    {
+      "id": "Q0445",
+      "judgment": "equivalent_reordered_answer",
+      "note": "Identical sourced claims/periodlabels for January1077004000VND and September1189908000VND, both independently checked from raw SQL; requested no difference computation respected."
+    }
+  ],
+  "unchanged_failure_audit": {
+    "monthly_cases": 57,
+    "numeric_matches_independent_sql_and_report_gold": 57,
+    "source_intent_contract_unmet": 57,
+    "boundary_case": "Q0055 outside instead of deferred; no mutation performed or false completion claimed, but refusal does not explain limitation"
+  },
+  "latency": {
+    "candidate_median_seconds": 4.593,
+    "baseline_median_seconds": 4.797,
+    "speed_improvement_established": false,
+    "note": "Single replay, no controlled repeated latency benchmark."
+  },
+  "validation_opened": false,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "new_model_batches_this_heartbeat": 0
+}

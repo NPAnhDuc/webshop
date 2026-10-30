@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e79526a87e6a4ca0a1573100d13ad4cc",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:45:18.616325+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Sinh viên kiến trúc dùngRevit với ngân sách 25 triệu nên cân nhắc gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.316490299999714
+}

@@ -1,0 +1,13 @@
+{
+ "round": "dev_r2",
+ "split": "dev",
+ "model": "qwen3:4b-instruct-2507-q4_K_M",
+ "questions": 8,
+ "correct": 8,
+ "output_correct": 8,
+ "answered": 8,
+ "wrong_answered": [],
+ "mean_cells": 1,
+ "mean_seconds": 34.3,
+ "max_seconds": 102.8
+}

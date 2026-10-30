@@ -1,0 +1,63 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "c5625234d8464090978ec0e183747854",
+  "parent_trace_id": "b466e9ddc6274bb4bafb56faaa3c3327",
+  "recorded_at": "2026-10-24T10:46:35.954650+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "So sánh lựa chọn thứ nhất với lựa chọn thứ hai vừa hiển thị.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 2000000,
+        "limit": 2,
+        "category": "case",
+        "brand": null
+      },
+      "last_selection": [
+        "P9"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 2000000,
+        "limit": 2,
+        "category": "case",
+        "brand": null
+      },
+      "last_selection": [
+        "P9"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.3918318999931216
+}

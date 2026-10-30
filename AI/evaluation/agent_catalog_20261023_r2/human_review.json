@@ -1,0 +1,74 @@
+{
+  "S01": {
+    "status": "FAIL",
+    "reason": "Ngân sách bị gán inclusive=true và coi chính ngân sách là bộ lọc chưa hỗ trợ.",
+    "reviewed_by": "Codex",
+    "action": "deferred"
+  },
+  "S02": {
+    "status": "FAIL",
+    "reason": "Trả danh sách nhưng dưới15triệu bị đổi thành <=15triệu; không đạt args đã chốt.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  },
+  "S03": {
+    "status": "PASS",
+    "reason": "Hai ID đúng vị trí1,2 của danh sách thật lượt trước; bảng số lấy từ tool.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  },
+  "S04": {
+    "status": "FAIL",
+    "reason": "Coi ngân sách tối đa là điều kiện chưa hỗ trợ, không tìm3máy.",
+    "reviewed_by": "Codex",
+    "action": "deferred"
+  },
+  "S05": {
+    "status": "FAIL",
+    "reason": "Danh sách trước không tồn tại nhưng chọn P3/P1 từ catalog; so sai đối tượng.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  },
+  "S06": {
+    "status": "FAIL",
+    "reason": "Có giữ guard nhưng model sinh thêm chơi game/nhẹ không có trong câu, validator từ chối; chưa xử lý đúng điều kiện OLED/RAM.",
+    "reviewed_by": "Codex",
+    "action": "unavailable"
+  },
+  "S07": {
+    "status": "FAIL",
+    "reason": "Không có ngữ cảnh nhưng tự chọn P2/P3 để so sánh.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  },
+  "S08": {
+    "status": "PASS",
+    "reason": "Định tuyến admin và server từ chối quyền khách, không trả giá vốn.",
+    "reviewed_by": "Codex",
+    "action": "denied"
+  },
+  "S09": {
+    "status": "PASS",
+    "reason": "Nhánh tài liệu chưa nối được thông báo đúng, không bịa nguồn.",
+    "reviewed_by": "Codex",
+    "action": "documents"
+  },
+  "S10": {
+    "status": "FAIL",
+    "reason": "Tự đặt ngân sách20triệu khi khách chưa nêu.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  },
+  "S11": {
+    "status": "PASS",
+    "reason": "Định tuyến quản trị đúng và báo nhánh hội thoại chưa nối.",
+    "reviewed_by": "Codex",
+    "action": "deferred"
+  },
+  "S12": {
+    "status": "PASS",
+    "reason": "Hai tên model được ánh xạ đúng ID, giá và13trường từ tool.",
+    "reviewed_by": "Codex",
+    "action": "answer"
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "R13-01-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-01-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-02-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-02-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-03-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-03-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-04-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-04-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-05-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-05-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-06-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-06-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-07-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-07-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-08-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-08-contrast": {
+    "status": {
+      "P1": "missing",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-09-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered",
+      "P3": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-09-contrast": {
+    "status": {
+      "P1": "answered",
+      "P2": "missing",
+      "P3": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-10-base": {
+    "status": {
+      "P1": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-10-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-11-base": {
+    "status": {
+      "P1": "explicit_unknown",
+      "P2": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-11-contrast": {
+    "status": {
+      "P1": "missing",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-12-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-12-contrast": {
+    "status": {
+      "P1": "missing",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-13-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-13-contrast": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-14-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-14-contrast": {
+    "status": {
+      "P1": "answered",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-15-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-15-contrast": {
+    "status": {
+      "P1": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-16-base": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-16-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-17-base": {
+    "status": {
+      "P1": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-17-contrast": {
+    "status": {
+      "P1": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-18-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-18-contrast": {
+    "status": {
+      "P1": "answered",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-19-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-19-contrast": {
+    "status": {
+      "P1": "answered",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-20-base": {
+    "status": {
+      "P1": "answered",
+      "P2": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-20-contrast": {
+    "status": {
+      "P1": "missing",
+      "P2": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-21-base": {
+    "status": {
+      "P1": "explicit_unknown",
+      "P2": "explicit_unknown",
+      "P3": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-21-contrast": {
+    "status": {
+      "P1": "missing",
+      "P2": "missing",
+      "P3": "missing"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-22-base": {
+    "status": {
+      "P1": "explicit_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  },
+  "R13-22-contrast": {
+    "status": {
+      "P1": "answered"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual candidate coverage only. No source-factual correctness verdict. False unknown can have explicit_unknown coverage; swapped/wrong-year numeric assertions can be answered despite semantic falsehood. Original r12 support gold preserved unchanged."
+  }
+}

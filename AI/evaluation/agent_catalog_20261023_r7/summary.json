@@ -1,0 +1,13 @@
+{
+  "semantic_pass": 36,
+  "total": 36,
+  "development_only": true,
+  "independent_validation": false,
+  "accepted_for_application": false,
+  "median_seconds": 0.6715,
+  "p95_seconds": 1.391,
+  "total_seconds": 25.529,
+  "training_performed": false,
+  "default_mode_changed": false,
+  "notes": "Repeated development regression, not general accuracy. Includes guards and honest unconnected branch controls. Warm local Ollama timings, not controlled cold-start comparison."
+}

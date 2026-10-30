@@ -1,0 +1,1 @@
+Rejected:85PASS/15FAIL vs87/13,0fixes/2regressions C31/C34.92exact-output verdicts inherited,8changed freshly read.206ownedquotes/0issues. Three reference fallbacks did not preserve missing-thread/region correctness. Patch9 restored,193tests pass57.15s; no full479 on rejected code. See REPORT/summary/decision.

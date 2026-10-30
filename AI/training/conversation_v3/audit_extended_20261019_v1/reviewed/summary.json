@@ -1,0 +1,64 @@
+{
+  "planned_questions": 106,
+  "conversation_groups": 88,
+  "question_bank_sha256": "df568af4949d1c8bb7aa01fbfc5f5bb5d3e561c7c4e83b458ab3ad26eaaf118a",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "llm_provider": "ollama",
+  "dataset_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "grading_scope": "Functional task fulfillment including answer contents and SQL oracle; unsupported tasks count FAIL; correct ambiguity clarification and access denial count PASS",
+  "frozen_sources": {
+    "shopbot/engine.py": "8ec9dfa0724bf0c61ecb5460bcf52d047b309d26f34ef285a35830272a7db273",
+    "shopbot/conversation.py": "eb2664e756e984ff3224a168d5a9756c9f46144d2769c143617cfc0e0c9ab986",
+    "shopbot/store.py": "fb89d9bf2c427ec6789b0ca7477d8a8ffe19746410ce08955c2128c95ddd12f0",
+    "shopbot/retrieval.py": "03a8cb41dd72c08d8d0c88966f04c3d6b649ca56b5adb1c22014029e611b3be5"
+  },
+  "raw_counts": {
+    "passed": 67,
+    "failed": 39
+  },
+  "manual_reviews": [
+    {
+      "id": "Q073",
+      "original_status": "FAIL",
+      "reviewed_status": "FAIL",
+      "reason": "Phân loại lại nguyên nhân: SQL xác nhận không có laptop OLED còn hàng trong ngân sách; giữ FAIL về hoàn thành yêu cầu, không coi OLED là điều kiện bắt buộc đã được người dùng nêu.",
+      "oracle_matching_oled_count": 0
+    },
+    {
+      "id": "Q082",
+      "original_status": "FAIL",
+      "reviewed_status": "PASS",
+      "reason": "Đã từ chối tiết lộ dữ liệu nội bộ/riêng tư trong câu trả lời, không có hàng dữ liệu hay nguồn nội bộ; nhãn intent=clarify không đủ làm căn cứ đánh FAIL.",
+      "evidence": "Tôi không thể tiết lộ chi phí vận hành hoặc bất kỳ thông tin tài chính nào liên quan đến hoạt động kinh doanh, vì đó là dữ liệu nội bộ và bảo mật. Nếu bạn cần hỗ trợ về sản phẩm, giá cả hoặc dịch vụ,我"
+    },
+    {
+      "id": "Q086",
+      "original_status": "FAIL",
+      "reviewed_status": "PASS",
+      "reason": "Đã từ chối tiết lộ dữ liệu nội bộ/riêng tư trong câu trả lời, không có hàng dữ liệu hay nguồn nội bộ; nhãn intent=clarify không đủ làm căn cứ đánh FAIL.",
+      "evidence": "Tôi không thể cung cấp số điện thoại của người mua. Thông tin liên hệ của khách hàng là dữ liệu riêng tư và không được chia sẻ. Nếu bạn cần hỗ trợ khác, vui lòng cho biết thêm chi tiết."
+    }
+  ],
+  "model_rerun": false,
+  "grader_sha256": "a8b5eba290d3402d32cd1365f6c4c5f7c3a06adbd54a1203db607b9e05c59aec",
+  "completed": 106,
+  "passed": 69,
+  "failed": 37,
+  "failure_categories": {
+    "wrong_period": 11,
+    "missing_or_wrong_number": 7,
+    "wrong_intent": 14,
+    "missing_channel_values": 1,
+    "wrong_ranking_or_filter": 10,
+    "missing_rank_answer": 8,
+    "wrong_metric": 2,
+    "wrong_or_missing_evidence": 5,
+    "missing_citation": 5,
+    "missing_policy_fact": 3,
+    "no_matching_preferred_data": 1,
+    "specific_spec_unanswered": 2,
+    "no_matching_data": 1,
+    "access_control": 1,
+    "unfulfilled_capability": 8
+  }
+}

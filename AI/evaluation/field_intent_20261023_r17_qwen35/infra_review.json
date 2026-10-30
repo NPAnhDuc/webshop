@@ -1,0 +1,20 @@
+{
+  "F15-Q0113_original_history": {
+    "reviewed_by": "Codex",
+    "classification": "infrastructure_error_not_semantic_FAIL",
+    "observed": "HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11435/api/chat",
+    "evidence": "runtime_error_excerpt.log;actual qwen35loaded with6144context; no modelanswer available"
+  },
+  "F15-Q0125_original_history": {
+    "reviewed_by": "Codex",
+    "classification": "infrastructure_error_not_semantic_FAIL",
+    "observed": "HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11435/api/chat",
+    "evidence": "runtime_error_excerpt.log;actual qwen35loaded with6144context; no modelanswer available"
+  },
+  "F15-Q0163_original_history": {
+    "reviewed_by": "Codex",
+    "classification": "infrastructure_error_not_semantic_FAIL",
+    "observed": "HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11435/api/chat",
+    "evidence": "runtime_error_excerpt.log;actual qwen35loaded with6144context; no modelanswer available"
+  }
+}

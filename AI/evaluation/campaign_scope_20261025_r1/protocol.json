@@ -1,0 +1,9 @@
+{
+  "baseline": "kb3_supplier_fields_r2",
+  "change": "When selected campaign evidence only provides schedule/name/budget table without eligibility columns, retain sourced table and mark product applicability unanswered. Never infer eligible SKUs from campaign name.",
+  "development_only": true,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_edit": false,
+  "RAG_EVIDENCE_RERANK": "1"
+}

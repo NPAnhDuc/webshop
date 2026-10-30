@@ -1,0 +1,891 @@
+[
+  {
+    "id": "Q0017",
+    "question": "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp",
+      "DRAM",
+      "phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE_VARIANT_LIMIT",
+      "reason": "Nêu giao tiếp/DRAM nhưng thiếu giới hạn phiên bản dung lượng KC3000, thay bằng cảnh báo dung lượng flash chung.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-kc3000-capacity"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Kingston KC3000: giao tiếp: M.2 PCIe 4.0 X4.",
+      "NVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.",
+      "NVMe và SATA khác giao tiếp và đặc tính hiệu năng.",
+      "Không kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.",
+      "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng."
+    ],
+    "baseline_answer": "Kingston KC3000: giao tiếp: M.2 PCIe 4.0 X4.\n\n[Nguồn: catalog-15311338f518072cfa659390b765f41584c33a22b249885c4d1591dc9aa7af81-v3.md, mục Kingston KC3000, đoạn 1, phiên bản 3]\n\nNVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nNVMe và SATA khác giao tiếp và đặc tính hiệu năng.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nDatasheet KC3000 ghi M.2 2280, PCIe 4.0 x4 NVMe, NAND 3D TLC và có DRAM cache.\n\n[Nguồn: tech-kc3000-capacity-v1.md, mục Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng, đoạn 1, phiên bản 1]\n\nKhông kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]\n\nMột phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0035",
+    "question": "Giải thích giúp tôi nội dung “Chọn màn hình làm ảnh: ngoài IPS còn xem gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Chọn màn hình làm ảnh: ngoài IPS còn xem gì?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Chọn màn hình làm ảnh: ngoài IPS còn xem gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Chọn màn hình làm ảnh: ngoài IPS còn xem gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EQUIVALENT_SOURCE",
+      "reason": "Nguồn tương đương nêu ngoài nhãn IPS phải xem màu,góc nhìn,tương phản,chuyển động; không suy chất lượng từ tên tấm nền.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": false,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Từ FHD chỉ biết độ phân giải; mô tả LED chung chung chưa xác nhận máy là IPS hay OLED.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]\n\nKhông suy ra chất lượng màu chỉ từ tên IPS.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]\n\nKhi so sánh cần xem cả góc nhìn, màu, tương phản và chuyển động của đúng màn hình.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0071",
+    "question": "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu, có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“DDR5 khác DDR4 ở đâu, có cắm chung được không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu",
+      "có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “DDR5 khác DDR4 ở đâu, có cắm chung được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "SOURCE_BOUND",
+      "reason": "DDR5 khácDDR4 và hệ thống phải hỗ trợ, không cam kết cắm thay trực tiếp.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ddr5-basics"
+    ],
+    "baseline_claims_from_other_titles": [
+      "DDR5 là một thế hệ bộ nhớ RAM, kế tiếp DDR4.",
+      "Máy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua."
+    ],
+    "baseline_answer": "DDR5 là một thế hệ bộ nhớ RAM, kế tiếp DDR4.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nDDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]\n\nMáy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0114",
+    "question": "Giải thích giúp tôi nội dung “Học tập, văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Học tập, văn phòng có bắt buộc màn hình 144 Hz không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Học tập",
+      "văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Học tập, văn phòng có bắt buộc màn hình 144 Hz không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "SOURCE_BOUND",
+      "reason": "Hzcao không bắt buộc học tập, chọn theo công việc/khả năng tạo khung hình; có câu phụ thừa.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-refresh-study"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Điều kiện sử dụng và thiết kế từng model khác nhau.",
+      "Đánh giá cần dựa vào game, thiết lập và cấu hình thực tế."
+    ],
+    "baseline_answer": "Tần số cao có thể làm chuyển động mượt hơn nhưng không phải yêu cầu bắt buộc cho mọi nhu cầu học tập.\n\n[Nguồn: tech-refresh-study-v1.md, mục Học tập, văn phòng có bắt buộc màn hình 144 Hz không?, đoạn 1, phiên bản 1]\n\nChọn theo công việc và khả năng tạo khung hình của máy, không chỉ chọn con số Hz cao nhất.\n\n[Nguồn: tech-refresh-study-v1.md, mục Học tập, văn phòng có bắt buộc màn hình 144 Hz không?, đoạn 1, phiên bản 1]\n\nĐiều kiện sử dụng và thiết kế từng model khác nhau.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]\n\nĐánh giá cần dựa vào game, thiết lập và cấu hình thực tế.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0128",
+    "question": "Giải thích giúp tôi nội dung “Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 6",
+      "6E",
+      "7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "SOURCE_BOUND",
+      "reason": "Phân biệt6/6E/7 và điều kiện card/router/phần mềm để dùng6GHz.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-wifi-bands"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Theo hướng dẫn Intel, sản phẩm Wi-Fi 6 của hãng hoạt động ở 2,4 và 5 GHz; 6E/7 có thể hỗ trợ 6 GHz.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]\n\nĐể dùng 6 GHz cần cả card mạng, router tương thích và môi trường phần mềm hỗ trợ.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0142",
+    "question": "Giải thích giúp tôi nội dung “Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "SOURCE_BOUND",
+      "reason": "Thông lượng chuẩn không là tốc độ Internet bảo đảm, không tự gánWiFi7 cho máy chưa có thông số.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-wifi7-theory"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Không biến thông lượng lý thuyết của chuẩn Wi-Fi thành tốc độ Internet được bảo đảm.",
+      "Không dùng tốc độ quảng cáo tối đa làm cam kết tốc độ cho mọi tác vụ."
+    ],
+    "baseline_answer": "Không.\n\nKhông biến thông lượng lý thuyết của chuẩn Wi-Fi thành tốc độ Internet được bảo đảm.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]\n\nKhông lấy thông lượng đỉnh để hứa tốc độ Internet hay tự gán Wi-Fi 7 cho máy chưa có thông số card mạng.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]\n\nKhông dùng tốc độ quảng cáo tối đa làm cam kết tốc độ cho mọi tác vụ.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0156",
+    "question": "Giải thích giúp tôi nội dung “Nhân CPU, luồng và xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Nhân CPU, luồng và xung GHz dùng để làm gì?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Nhân CPU",
+      "luồng",
+      "xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Nhân CPU, luồng và xung GHz dùng để làm gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE",
+      "reason": "Chỉ nói nhiều nhân/GHz, không giải thích luồng hoặc giới hạn GHz so hiệu năng; lẫn6GHzWiFi và tốc độSSD vàoCPU.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-cpu-cores-clock"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Để dùng 6 GHz cần cả card mạng, router tương thích và môi trường phần mềm hỗ trợ.",
+      "Tốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s.",
+      "GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.",
+      "Mức tối đa này không phải cam kết cho mọi máy và mọi tệp."
+    ],
+    "baseline_answer": "Để dùng 6 GHz cần cả card mạng, router tương thích và môi trường phần mềm hỗ trợ.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]\n\nCPU nhiều nhân có thể xử lý nhiều công việc đồng thời; dựng video hoặc vừa chơi vừa stream có thể hưởng lợi.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nTốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nGPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nXung GHz mô tả số chu kỳ mỗi giây.\n\n[Nguồn: tech-cpu-cores-clock-v1.md, mục Nhân CPU, luồng và xung GHz dùng để làm gì?, đoạn 1, phiên bản 1]\n\nMức tối đa này không phải cam kết cho mọi máy và mọi tệp.\n\n[Nguồn: tech-kc3000-capacity-v1.md, mục Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0166",
+    "question": "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số và giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Ryzen 7 9800X3D: thông số và giới hạn diễn giải”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số",
+      "giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Ryzen 7 9800X3D: thông số và giới hạn diễn giải”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_WITH_NOISE",
+      "reason": "Đủ 8nhân/16luồng/boost5.2/TDP120 và giới hạn boost/TDP; thêm mã linh kiện/đồ họa và Wi-Fi không cần thiết.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ryzen9800x3d"
+    ],
+    "baseline_claims_from_other_titles": [
+      "AMD Ryzen 7 9800X3D: số nhân: 8.",
+      "Mã linh kiện: chưa có.",
+      "AMD Ryzen 7 9800X3D: đồ họa tích hợp theo dữ liệu nguồn: Radeon.",
+      "Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường."
+    ],
+    "baseline_answer": "AMD Ryzen 7 9800X3D: số nhân: 8.\n\n[Nguồn: catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215-v3.md, mục AMD Ryzen 7 9800X3D, đoạn 1, phiên bản 3]\n\nMã linh kiện: chưa có.\n\n[Nguồn: catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215-v3.md, mục AMD Ryzen 7 9800X3D, đoạn 1, phiên bản 3]\n\nAMD Ryzen 7 9800X3D: đồ họa tích hợp theo dữ liệu nguồn: Radeon.\n\n[Nguồn: catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215-v3.md, mục AMD Ryzen 7 9800X3D, đoạn 1, phiên bản 3]\n\nĐây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]\n\nBoost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0185",
+    "question": "Giải thích giúp tôi nội dung “Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "SOURCE_BOUND",
+      "reason": "Tốc độ phụ thuộc host/thiết bị,không lấy số quảng cáo cam kết mọi tác vụ.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-flash-speed"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Không dùng tốc độ quảng cáo tối đa làm cam kết tốc độ cho mọi tác vụ."
+    ],
+    "baseline_answer": "Không dùng tốc độ quảng cáo tối đa làm cam kết tốc độ cho mọi tác vụ.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nHướng dẫn Kingston nêu thiết bị tốc độ cao nối vào máy chỉ hỗ trợ tốc độ thấp hơn sẽ không tự đạt tốc độ cao của thiết bị.\n\n[Nguồn: tech-flash-speed-v1.md, mục Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?, đoạn 1, phiên bản 1]\n\nTốc độ còn phụ thuộc cấu hình hệ thống.\n\n[Nguồn: tech-flash-speed-v1.md, mục Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0194",
+    "question": "Giải thích giúp tôi nội dung “IPS, TN, VA và OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“IPS, TN, VA và OLED: phân biệt tấm nền”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “IPS",
+      "TN",
+      "VA",
+      "OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “IPS, TN, VA và OLED: phân biệt tấm nền”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE_EXPLANATION",
+      "reason": "Có LCD/OLED và cảnh báo màu IPS nhưng không giải thích khác biệt TN/VA theo tiêu đề được hỏi; lặp OLED.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-panels-ips-oled"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Nguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.",
+      "OLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.",
+      "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống."
+    ],
+    "baseline_answer": "IPS, TN và VA là các kiểu tấm nền LCD; OLED dùng cơ chế khác.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]\n\nKhông suy ra chất lượng màu chỉ từ tên IPS.\n\n[Nguồn: tech-panels-ips-oled-v1.md, mục IPS, TN, VA và OLED: phân biệt tấm nền, đoạn 1, phiên bản 1]\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0203",
+    "question": "Giải thích giúp tôi nội dung “CPU khác GPU như thế nào? GPU có thay CPU được không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“CPU khác GPU như thế nào? GPU có thay CPU được không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “CPU khác GPU như thế nào? GPU có thay CPU được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “CPU khác GPU như thế nào? GPU có thay CPU được không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE_EXPLANATION",
+      "reason": "Nêu vai trò CPU/GPU và điều kiện tăng tốc nhưng không trả lời rõ GPU có thay CPU được không.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-cpu-gpu"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nGPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0212",
+    "question": "Giải thích giúp tôi nội dung “Màn hình OLED và nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Màn hình OLED và nội dung tĩnh: cần lưu ý gì?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Màn hình OLED",
+      "nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Màn hình OLED và nội dung tĩnh: cần lưu ý gì?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_WITH_NOISE",
+      "reason": "Nêu đúng rủi ro nội dung tĩnh và điều kiện thời gian; thừa OLED lặp và tần số quét, cần rút gọn.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-oled-static"
+    ],
+    "baseline_claims_from_other_titles": [
+      "OLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.",
+      "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.",
+      "Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.",
+      "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.",
+      "Nguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+    ],
+    "baseline_answer": "OLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nOLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]\n\nMột màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0221",
+    "question": "Giải thích giúp tôi nội dung “Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "VARIANT_LIMIT_CORRECT",
+      "reason": "Nêu hai khe, pin 60Wh, nhiều cấu hình và không gán cấu hình cao nhất; Wh không là cam kết giờ pin.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-loq-family"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "PSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nDung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nKhông chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0230",
+    "question": "Giải thích giúp tôi nội dung “Chọn laptop chơi game: cần hỏi gì trước?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Chọn laptop chơi game: cần hỏi gì trước?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Chọn laptop chơi game: cần hỏi gì trước?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Chọn laptop chơi game: cần hỏi gì trước?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_WITH_NOISE",
+      "reason": "Có tiêu chí game/độ phân giải và giới hạn không cam kết FPS; từ Không đầu câu không phù hợp nhưng nội dung chính đúng.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-laptop-choice"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Không.\n\nCần biết game, độ phân giải và yêu cầu sử dụng trước khi chọn CPU/GPU.\n\n[Nguồn: tech-laptop-choice-v1.md, mục Chọn laptop chơi game: cần hỏi gì trước?, đoạn 1, phiên bản 1]\n\nĐây là tiêu chí tham khảo của hãng, chưa phải bài hướng dẫn do shop phê duyệt và không phải cam kết FPS.\n\n[Nguồn: tech-laptop-choice-v1.md, mục Chọn laptop chơi game: cần hỏi gì trước?, đoạn 1, phiên bản 1]\n\nRAM, SSD, màn hình và cổng kết nối cũng ảnh hưởng trải nghiệm.\n\n[Nguồn: tech-laptop-choice-v1.md, mục Chọn laptop chơi game: cần hỏi gì trước?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0239",
+    "question": "Giải thích giúp tôi nội dung “IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “IdeaPad 3 15ITL6: thông số theo dòng không phải theo SKU”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "WRONG_SCOPE",
+      "reason": "Hỏi IdeaPad theo dòng/SKU nhưng trả OLED và Wi-Fi; không trả nội dung đúng yêu cầu.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": false,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]\n\nCần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0248",
+    "question": "Giải thích giúp tôi nội dung “MSI Modern 15 B12M: phải phân biệt mã vùng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“MSI Modern 15 B12M: phải phân biệt mã vùng”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “MSI Modern 15 B12M: phải phân biệt mã vùng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “MSI Modern 15 B12M: phải phân biệt mã vùng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE_VARIANT_LIMIT",
+      "reason": "Chỉ trả RAM bản408AU, chưa nêu giới hạn không suy sang041BD hoặc bản vùng khác.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-msi-variant"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Bản thông số MSI Modern 15 B12M-408AU ghi RAM 16 GB DDR4-3200 onboard.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0257",
+    "question": "Giải thích giúp tôi nội dung “OLED là gì và vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“OLED là gì và vì sao hiển thị màu đen sâu?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “OLED là gì",
+      "vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “OLED là gì và vì sao hiển thị màu đen sâu?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_CORRECT",
+      "reason": "Giải thích điểm ảnh tự sáng và đen sâu, kèm giới hạn nội dung tĩnh; có lặp câu.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-oled-basics"
+    ],
+    "baseline_claims_from_other_titles": [
+      "OLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.",
+      "Nói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.",
+      "Nguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian."
+    ],
+    "baseline_answer": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nKhả năng điều khiển điểm ảnh giúp tạo tương phản và vùng đen sâu.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0281",
+    "question": "Giải thích giúp tôi nội dung “RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “RAM 8 GB",
+      "16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_WITH_NOISE",
+      "reason": "Có mốc 16GB cho game và 32GB đa nhiệm có điều kiện, không suy nâng cấp từ dung lượng; thừa thông số SSD không liên quan.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ram-capacity"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.",
+      "Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời.",
+      "DIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.",
+      "Tốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s.",
+      "Mức tối đa này không phải cam kết cho mọi máy và mọi tệp."
+    ],
+    "baseline_answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nCó laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nIntel khuyến nghị 16 GB cho game mới và cân nhắc 32 GB nếu vừa chơi vừa stream, trò chuyện hoặc mở nhiều ứng dụng.\n\n[Nguồn: tech-ram-capacity-v1.md, mục RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ, đoạn 1, phiên bản 1]\n\nTốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nMức tối đa này không phải cam kết cho mọi máy và mọi tệp.\n\n[Nguồn: tech-kc3000-capacity-v1.md, mục Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0288",
+    "question": "Giải thích giúp tôi nội dung “SSD SATA, NVMe và M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“SSD SATA, NVMe và M.2 khác nhau thế nào?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “SSD SATA",
+      "NVMe",
+      "M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “SSD SATA, NVMe và M.2 khác nhau thế nào?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_CORRECT",
+      "reason": "Phân biệt hình dạng M.2 với SATA/NVMe và yêu cầu kiểm tra khe hỗ trợ trước nâng cấp.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ssd-m2-nvme"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Nói đơn giản, đó là cách máy tính trao đổi lệnh với ổ lưu trữ; tên NVMe không phải dung lượng ổ.",
+      "NVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.",
+      "Nguồn kỹ thuật: https://nvmexpress.org/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop."
+    ],
+    "baseline_answer": "Ổ M.2 có thể dùng SATA hoặc NVMe qua PCIe.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nNVMe và SATA khác giao tiếp và đặc tính hiệu năng.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nM.2 là dạng thiết kế ổ cắm/ổ lưu trữ, không đồng nghĩa với NVMe.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nNói đơn giản, đó là cách máy tính trao đổi lệnh với ổ lưu trữ; tên NVMe không phải dung lượng ổ.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nNVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://nvmexpress.org/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nTrước khi nâng cấp phải kiểm tra giao tiếp mà khe của máy hỗ trợ; thấy cùng hình dáng M.2 chưa đủ kết luận lắp được.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0295",
+    "question": "Giải thích giúp tôi nội dung “Màn hình nhiều Hz có tự làm game tăng FPS không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Màn hình nhiều Hz có tự làm game tăng FPS không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Màn hình nhiều Hz có tự làm game tăng FPS không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Màn hình nhiều Hz có tự làm game tăng FPS không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "CONDITION_CORRECT",
+      "reason": "Không đồng nhất 144Hz với 144FPS, nói rõ CPU/GPU phải tạo đủ khung hình.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-refresh-fps"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao."
+    ],
+    "baseline_answer": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0302",
+    "question": "Giải thích giúp tôi nội dung “Máy học Photoshop cần bao nhiêu RAM?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Máy học Photoshop cần bao nhiêu RAM?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Máy học Photoshop cần bao nhiêu RAM?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Máy học Photoshop cần bao nhiêu RAM?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "RETRIEVAL_OR_ROUTING",
+      "reason": "Câu Photoshop/RAM bị trả OLED và tốc độ SSD; không trả điều kiện RAM cho Photoshop.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": false,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Bài nguồn nói về TV Samsung: chỉ dùng để giải thích nguyên lý, không gán các tính năng riêng của TV sang laptop OLED bất kỳ.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nĐây là mức tối đa theo điều kiện thử của hãng.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nĐiều kiện sử dụng và thiết kế từng model khác nhau.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0309",
+    "question": "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn",
+      "khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "VARIANT_LIMIT_CORRECT",
+      "reason": "Nêu RAM hàn và một khe DDR4 SO-DIMM theo dòng, yêu cầu kiểm tra mã SKU trước cam kết.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-thinkbook-family"
+    ],
+    "baseline_claims_from_other_titles": [
+      "DIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.",
+      "Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.",
+      "Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời."
+    ],
+    "baseline_answer": "Tài liệu nền tảng ThinkBook 15 G2 ITL mô tả một phần RAM hàn trên bo mạch và một khe DDR4 SO-DIMM.\n\n[Nguồn: tech-thinkbook-family-v1.md, mục ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM, đoạn 1, phiên bản 1]\n\nCần tra mã 20VE015VIN để xác nhận lượng RAM hàn, thanh đang lắp và cấu hình chính xác.\n\n[Nguồn: tech-thinkbook-family-v1.md, mục ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nCó laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0316",
+    "question": "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM và RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Nâng cấp RAM laptop: SO-DIMM và RAM hàn”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM",
+      "RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Nâng cấp RAM laptop: SO-DIMM và RAM hàn”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_WITH_NOISE",
+      "reason": "Nêu SO-DIMM/RAM hàn và kiểm tra mã, khe, giới hạn hãng; thừa thông số SSD.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ram-upgrade"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Phải xác nhận dung lượng và mã ổ trước khi trích tốc độ; không áp một con số chung cho mọi NV2.",
+      "Không lấy giới hạn cấu hình khác trong dòng làm cam kết nâng cấp cho máy cụ thể.",
+      "Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích."
+    ],
+    "baseline_answer": "DIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nPhải xác nhận dung lượng và mã ổ trước khi trích tốc độ; không áp một con số chung cho mọi NV2.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nCó laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nKhông lấy giới hạn cấu hình khác trong dòng làm cam kết nâng cấp cho máy cụ thể.\n\n[Nguồn: tech-thinkbook-family-v1.md, mục ThinkBook 15 G2 ITL: RAM hàn và khe SO-DIMM, đoạn 1, phiên bản 1]\n\nRãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0323",
+    "question": "Giải thích giúp tôi nội dung “Logitech G305: phát hiện xung đột dữ liệu kết nối”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Logitech G305: phát hiện xung đột dữ liệu kết nối”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Logitech G305: phát hiện xung đột dữ liệu kết nối”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Logitech G305: phát hiện xung đột dữ liệu kết nối”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "CONFLICT_CORRECT",
+      "reason": "Chỉ ra nguồn nhập Wired/Wireless mâu thuẫn với hãng LIGHTSPEED và trường chưa đủ xác nhận.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-g305-source-conflict"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Dữ liệu PCPartPicker đã nhập lại ghi Wired, Wireless.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]\n\nTrường kết nối này được đánh dấu cần đối chiếu và không đưa vào bản thông số sẵn sàng nhập.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]\n\nTrang hãng gọi G305 là LIGHTSPEED Wireless Gaming Mouse.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0330",
+    "question": "Giải thích giúp tôi nội dung “Legion Slim 5 16IRH8: khả năng RAM theo dòng máy”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Legion Slim 5 16IRH8: khả năng RAM theo dòng máy”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Legion Slim 5 16IRH8: khả năng RAM theo dòng máy”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Legion Slim 5 16IRH8: khả năng RAM theo dòng máy”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "INCOMPLETE_EXPLANATION",
+      "reason": "Có giới hạn không gán cấu hình tối đa cho mọi SKU nhưng thiếu thông tin nền tảng hai khe DDR5 khi giải thích bài Legion; còn câu Wi-Fi không liên quan.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-legion-family"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.",
+      "Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ."
+    ],
+    "baseline_answer": "Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]\n\nTùy chọn tối đa trong tài liệu nền tảng không đồng nghĩa tất cả máy bán ra đều trang bị mức đó.\n\n[Nguồn: tech-legion-family-v1.md, mục Legion Slim 5 16IRH8: khả năng RAM theo dòng máy, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0337",
+    "question": "Giải thích giúp tôi nội dung “DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "EXPLANATION_CORRECT",
+      "reason": "Phân biệt on-die ECC với ECC hệ thống, chỉ rõ lỗi ngoài chip và hỗ trợ nền tảng.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-ddr5-ecc"
+    ],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "On-die ECC của DDR5 sửa lỗi trong chip DRAM.\n\n[Nguồn: tech-ddr5-ecc-v1.md, mục DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?, đoạn 1, phiên bản 1]\n\nVì vậy on-die ECC không tự biến RAM DDR5 phổ thông thành bộ nhớ ECC cấp hệ thống của máy chủ; cần kiểm tra hỗ trợ của cả nền tảng.\n\n[Nguồn: tech-ddr5-ecc-v1.md, mục DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?, đoạn 1, phiên bản 1]\n\nNó không sửa được lỗi xảy ra ngoài chip hoặc trên đường truyền tới bộ điều khiển CPU.\n\n[Nguồn: tech-ddr5-ecc-v1.md, mục DDR5 có on-die ECC nghĩa là RAM ECC máy chủ không?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0344",
+    "question": "Giải thích giúp tôi nội dung “Kingston NV2: thông số tốc độ thay đổi theo dung lượng”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Kingston NV2: thông số tốc độ thay đổi theo dung lượng”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Kingston NV2: thông số tốc độ thay đổi theo dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Kingston NV2: thông số tốc độ thay đổi theo dung lượng”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "PASS",
+      "cause": "VARIANT_LIMIT_CORRECT",
+      "reason": "Tốc độ riêng bản 1TB/2TB và giới hạn thử nghiệm/cấu hình rõ.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": true,
+    "exact_title_in_available_fields": true,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [
+      "tech-nv2-capacity"
+    ],
+    "baseline_claims_from_other_titles": [
+      "Tốc độ còn phụ thuộc cấu hình hệ thống."
+    ],
+    "baseline_answer": "Tốc độ đọc/ghi tuần tự được liệt kê theo dung lượng: bản 1 TB tới 3.500/2.100 MB/s, khác bản 2 TB tới 3.500/2.800 MB/s.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nĐây là mức tối đa theo điều kiện thử của hãng.\n\n[Nguồn: tech-nv2-capacity-v1.md, mục Kingston NV2: thông số tốc độ thay đổi theo dung lượng, đoạn 1, phiên bản 1]\n\nTốc độ còn phụ thuộc cấu hình hệ thống.\n\n[Nguồn: tech-flash-speed-v1.md, mục Vì sao USB hoặc ổ lưu trữ không đạt tốc độ quảng cáo?, đoạn 1, phiên bản 1]"
+  },
+  {
+    "id": "Q0351",
+    "question": "Giải thích giúp tôi nội dung “Modern 15 B12M-081SG: thông số chỉ cho bản SG”. Điều nào trong đó chỉ đúng có điều kiện?",
+    "quoted_text": [
+      "“Modern 15 B12M-081SG: thông số chỉ cho bản SG”"
+    ],
+    "old_parts": [
+      "Giải thích giúp tôi nội dung “Modern 15 B12M-081SG: thông số chỉ cho bản SG”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "candidate_parts": [
+      "Giải thích giúp tôi nội dung “Modern 15 B12M-081SG: thông số chỉ cho bản SG”. Điều nào trong đó chỉ đúng có điều kiện"
+    ],
+    "baseline_review": {
+      "status": "FAIL",
+      "cause": "WRONG_VARIANT_SOURCE",
+      "reason": "Hỏi081SG nhưng trả Wi-Fi/OLED/408AU và041BD; không đúng phiên bản được hỏi.",
+      "reviewed_by": "Codex",
+      "review_method": "Exact answer/action/source objects match candidate_v5_development; inherited112purposeful reviews with provenance, not newly read or independent.",
+      "inherited_from": "candidate_v5_development/human_review.json"
+    },
+    "exact_title_in_returned_sources": false,
+    "exact_title_in_available_fields": false,
+    "source_snapshot_limitation": "sources contain only selected chunks; absence does not prove retrieval miss",
+    "title_documents": [],
+    "baseline_claims_from_other_titles": [],
+    "baseline_answer": "Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]\n\nCần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]\n\nMã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]"
+  }
+]

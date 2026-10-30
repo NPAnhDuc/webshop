@@ -1,0 +1,351 @@
+{
+  "cases": 44,
+  "parts": 68,
+  "distinct_question_texts": 22,
+  "raw": {
+    "exact_case_agreement": 25,
+    "part_agreement": 45,
+    "confusion": {
+      "answered -> answered": 32,
+      "missing -> explicit_unknown": 20,
+      "answered -> explicit_unknown": 3,
+      "missing -> missing": 4,
+      "explicit_unknown -> explicit_unknown": 9
+    },
+    "errors": [
+      {
+        "id": "R13-01-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-02-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-03-base",
+        "part": "P1",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-03-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-04-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-05-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-06-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-07-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-09-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-10-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-11-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-11-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-13-base",
+        "part": "P2",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-14-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-16-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-17-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-19-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-20-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-20-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P3",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-22-contrast",
+        "part": "P1",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      }
+    ],
+    "binary_coverage_case_agreement": 28,
+    "binary_coverage": {
+      "correct_covered": 44,
+      "false_covered": 20,
+      "correct_missing": 4
+    },
+    "exploratory_answered_only": {
+      "correct_answered": 32,
+      "correct_not_answered": 33,
+      "missed_answered": 3
+    },
+    "cohorts": {
+      "recorded": {
+        "cases": 22,
+        "exact_case_agreement": 20,
+        "parts": 34,
+        "part_agreement": 32
+      },
+      "constructed": {
+        "cases": 22,
+        "exact_case_agreement": 5,
+        "parts": 34,
+        "part_agreement": 13
+      }
+    },
+    "roles": {
+      "customer": {
+        "cases": 22,
+        "exact_case_agreement": 11,
+        "parts": 30,
+        "part_agreement": 18
+      },
+      "admin": {
+        "cases": 22,
+        "exact_case_agreement": 14,
+        "parts": 38,
+        "part_agreement": 27
+      }
+    }
+  },
+  "guarded": {
+    "exact_case_agreement": 35,
+    "part_agreement": 56,
+    "confusion": {
+      "answered -> answered": 32,
+      "missing -> explicit_unknown": 7,
+      "answered -> explicit_unknown": 3,
+      "missing -> missing": 17,
+      "explicit_unknown -> explicit_unknown": 7,
+      "explicit_unknown -> missing": 2
+    },
+    "errors": [
+      {
+        "id": "R13-01-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-02-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-03-base",
+        "part": "P1",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-04-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-06-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-11-base",
+        "part": "P1",
+        "expected": "explicit_unknown",
+        "predicted": "missing"
+      },
+      {
+        "id": "R13-11-base",
+        "part": "P2",
+        "expected": "explicit_unknown",
+        "predicted": "missing"
+      },
+      {
+        "id": "R13-13-base",
+        "part": "P2",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P1",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P2",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-21-contrast",
+        "part": "P3",
+        "expected": "missing",
+        "predicted": "explicit_unknown"
+      },
+      {
+        "id": "R13-22-contrast",
+        "part": "P1",
+        "expected": "answered",
+        "predicted": "explicit_unknown"
+      }
+    ],
+    "binary_coverage_case_agreement": 38,
+    "binary_coverage": {
+      "correct_covered": 42,
+      "false_covered": 7,
+      "correct_missing": 17,
+      "missed_covered": 2
+    },
+    "exploratory_answered_only": {
+      "correct_answered": 32,
+      "correct_not_answered": 33,
+      "missed_answered": 3
+    },
+    "cohorts": {
+      "recorded": {
+        "cases": 22,
+        "exact_case_agreement": 19,
+        "parts": 34,
+        "part_agreement": 30
+      },
+      "constructed": {
+        "cases": 22,
+        "exact_case_agreement": 16,
+        "parts": 34,
+        "part_agreement": 26
+      }
+    },
+    "roles": {
+      "customer": {
+        "cases": 22,
+        "exact_case_agreement": 16,
+        "parts": 30,
+        "part_agreement": 23
+      },
+      "admin": {
+        "cases": 22,
+        "exact_case_agreement": 19,
+        "parts": 38,
+        "part_agreement": 33
+      }
+    }
+  },
+  "id_issue_cases": [
+    "R13-03-contrast",
+    "R13-05-contrast",
+    "R13-07-contrast",
+    "R13-09-contrast",
+    "R13-10-contrast",
+    "R13-11-base",
+    "R13-11-contrast",
+    "R13-14-contrast",
+    "R13-16-contrast",
+    "R13-17-contrast",
+    "R13-19-contrast",
+    "R13-20-contrast"
+  ],
+  "id_issue_parts": 15,
+  "total_seconds": 98.453,
+  "median_seconds": 1.5625,
+  "prompt_token_range": [
+    354,
+    918
+  ],
+  "output_token_range": [
+    60,
+    243
+  ],
+  "done_reasons": {
+    "stop": 44
+  },
+  "production_installed": false,
+  "decision": "Not suitable as standalone coverage/completeness gate: explicit_unknown is confused with missing and substantive answered. Factual support remains untested, so no production acceptance or comparison to r12 correctness score."
+}

@@ -1,0 +1,9 @@
+{
+  "baseline": "kb3_campaign_scope_r1",
+  "contract": "discount_contract_20261025_r1",
+  "development_only": true,
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "RAG_EVIDENCE_RERANK": "1",
+  "change": "Typed current-source discount percentage comparison with Decimal, separate coverage of comparison and approval, no mutation."
+}

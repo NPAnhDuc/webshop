@@ -1,0 +1,1 @@
+Prepared and offline-checked only; automatic execution review rejected the combined launch command with `blocked by policy`, without specific reason. Attempted0/3, no inference/unload/results. Do not retry or split denied launch to bypass review. Production patch9 unchanged.

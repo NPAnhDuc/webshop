@@ -1,0 +1,2298 @@
+[
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của HP Victus Gaming 15-fa1251TX?",
+    "topic": "product_context",
+    "conversation": "Q0113_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c",
+        "version": 3,
+        "quote": "HP Victus Gaming 15-fa1251TX: Processor Core: 14."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0113_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0033",
+    "target_id": "Q0113",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, HP Victus Gaming 15-fa1251TX có CPU như thế nào?",
+          "answer": "HP Victus Gaming 15-fa1251TX: Display Type: FHD LED Display.\n\n[Nguồn: catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec028cdcea7e22c-v3.md, mục HP Victus Gaming 15-fa1251TX, đoạn 2, phiên bản 3]\n\nHP Victus Gaming 15-fa1251TX: Graphics Chipset: Nvidia RTX 3050 Graphics.\n\n[Nguồn: catalog-4dd041b2a1a087f7010dd3af5b464345c922cf6ef87104281ec02"
+        }
+      ],
+      "rag_product_subject": "HP Victus Gaming 15-fa1251TX",
+      "document_query": "Theo danh mục tham khảo, HP Victus Gaming 15-fa1251TX có CPU như thế nào?",
+      "rag_subject": "HP Victus Gaming 15-fa1251TX"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0033",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance RGB 32 GB?",
+    "topic": "product_context",
+    "conversation": "Q0125_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+        "version": 3,
+        "quote": "Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0125_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0034",
+    "target_id": "Q0125",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance RGB 32 GB: CAS latency: 36.\n\n[Nguồn: catalog-3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93-v3.md, mục Corsair Vengeance RGB 32 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-3d8f348c2fc"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance RGB 32 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance RGB 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance RGB 32 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0034",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Dell Vostro 15 3510?",
+    "topic": "product_context",
+    "conversation": "Q0163_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092",
+        "version": 3,
+        "quote": "Dell Vostro 15 3510: Processor Core: 4."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0163_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0127",
+    "target_id": "Q0163",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Dell Vostro 15 3510 có CPU như thế nào?",
+          "answer": "Dell Vostro 15 3510: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092-v3.md, mục Dell Vostro 15 3510, đoạn 2, phiên bản 3]\n\nDell Vostro 15 3510: RAM: 8GB.\n\n[Nguồn: catalog-4d3639044079fed27125c056d8db4cf5acd911b187dc3496322cf772275a7092-v3.md, mục Dell Vostro 15 3510, đoạn 1, phiên bản"
+        }
+      ],
+      "rag_product_subject": "Dell Vostro 15 3510",
+      "document_query": "Theo danh mục tham khảo, Dell Vostro 15 3510 có CPU như thế nào?",
+      "rag_subject": "Dell Vostro 15 3510"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0127",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Lenovo IdeaPad Slim 3i 15ITL6?",
+    "topic": "product_context",
+    "conversation": "Q0175_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c",
+        "version": 3,
+        "quote": "Lenovo IdeaPad Slim 3i 15ITL6: Processor Core: 4."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0175_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0139",
+    "target_id": "Q0175",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Lenovo IdeaPad Slim 3i 15ITL6 có CPU như thế nào?",
+          "answer": "Lenovo IdeaPad Slim 3i 15ITL6: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12bcec0c88d9a1c-v3.md, mục Lenovo IdeaPad Slim 3i 15ITL6, đoạn 2, phiên bản 3]\n\nLenovo IdeaPad Slim 3i 15ITL6: Graphics Memory Accessibility: Integrated.\n\n[Nguồn: catalog-01eec94bf55b77e191c4185e53a67d1e132371664fc9b310e12"
+        }
+      ],
+      "rag_product_subject": "Lenovo IdeaPad Slim 3i 15ITL6",
+      "document_query": "Theo danh mục tham khảo, Lenovo IdeaPad Slim 3i 15ITL6 có CPU như thế nào?",
+      "rag_subject": "Lenovo IdeaPad Slim 3i 15ITL6"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0139",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Dell Latitude 3430?",
+    "topic": "product_context",
+    "conversation": "Q0191_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6",
+        "version": 3,
+        "quote": "Dell Latitude 3430: Processor Core: 6."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0191_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0085",
+    "target_id": "Q0191",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Dell Latitude 3430 có CPU như thế nào?",
+          "answer": "Dell Latitude 3430: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6-v3.md, mục Dell Latitude 3430, đoạn 2, phiên bản 3]\n\nDell Latitude 3430: Touch Screen: No.\n\n[Nguồn: catalog-a593b00374e32cd9fd04a8e0be87a9e4892d6d60c0b708f811ea5aaee5dd55d6-v3.md, mục Dell Latitude 3430, đoạn 2, phiên"
+        }
+      ],
+      "rag_product_subject": "Dell Latitude 3430",
+      "document_query": "Theo danh mục tham khảo, Dell Latitude 3430 có CPU như thế nào?",
+      "rag_subject": "Dell Latitude 3430"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0085",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Lenovo Legion Slim 5i 16IRH8?",
+    "topic": "product_context",
+    "conversation": "Q0202_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf",
+        "version": 3,
+        "quote": "Lenovo Legion Slim 5i 16IRH8: Processor Core: 12."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0202_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0140",
+    "target_id": "Q0202",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Lenovo Legion Slim 5i 16IRH8 có CPU như thế nào?",
+          "answer": "Lenovo Legion Slim 5i 16IRH8: Display Resolution: 2560x1600.\n\n[Nguồn: catalog-7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c650ed3acd8fbf-v3.md, mục Lenovo Legion Slim 5i 16IRH8, đoạn 2, phiên bản 3]\n\nLenovo Legion Slim 5i 16IRH8: Graphics Chipset: Nvidia RTX 4050 Graphics.\n\n[Nguồn: catalog-7bf3496c4c551140ad0ba93210771103268de54e0ffca4c389c65"
+        }
+      ],
+      "rag_product_subject": "Lenovo Legion Slim 5i 16IRH8",
+      "document_query": "Theo danh mục tham khảo, Lenovo Legion Slim 5i 16IRH8 có CPU như thế nào?",
+      "rag_subject": "Lenovo Legion Slim 5i 16IRH8"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0140",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Crucial P510?",
+    "topic": "product_context",
+    "conversation": "Q0209_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-e4d1eb6b8e55c3b81ecf7c6fac1e76374fff51516138b575a77e9963318bd4aa",
+        "version": 3,
+        "quote": "Crucial P510: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-e4d1eb6b8e55c3b81ecf7c6fac1e76374fff51516138b575a77e9963318bd4aa"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0209_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0141",
+    "target_id": "Q0209",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Crucial P510 có dung lượng như thế nào?",
+          "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]\n\nKhông kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn n"
+        }
+      ],
+      "rag_product_subject": "Crucial P510",
+      "document_query": "Theo danh mục tham khảo, Crucial P510 có dung lượng như thế nào?",
+      "rag_subject": "Crucial P510"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0141",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn VRAM của MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION?",
+    "topic": "product_context",
+    "conversation": "Q0210_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-dca21cffcb61642e2da871ecfe078cd88013985349e2f9e3f27faac21a60e910",
+        "version": 3,
+        "quote": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: VRAM: 8 GB."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-dca21cffcb61642e2da871ecfe078cd88013985349e2f9e3f27faac21a60e910"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0210_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0173",
+    "target_id": "Q0210",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION có GPU như thế nào?",
+          "answer": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: GPU: GeForce RTX 4060 Ti.\n\n[Nguồn: catalog-dca21cffcb61642e2da871ecfe078cd88013985349e2f9e3f27faac21a60e910-v3.md, mục MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION, đoạn 1, phiên bản 3]\n\nMSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION: VRAM: 8 GB.\n\n[Nguồn: catalog-dca21cffcb61642"
+        }
+      ],
+      "rag_product_subject": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION",
+      "document_query": "Theo danh mục tham khảo, MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION có GPU như thế nào?",
+      "rag_subject": "MSI RTX 4060 Ti 8G GAMING SLIM MONSTER HUNTER EDITION"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0173",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kích thước/chuẩn thiết kế của Asus PRIME B650-PLUS WIFI?",
+    "topic": "product_context",
+    "conversation": "Q0218_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-c6488d4e841b7392e018b629fdd6b8c8ce461577492399eef5b7cb292af86aa6",
+        "version": 3,
+        "quote": "Asus PRIME B650-PLUS WIFI: kích thước/chuẩn thiết kế: ATX."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-c6488d4e841b7392e018b629fdd6b8c8ce461577492399eef5b7cb292af86aa6"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0218_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0099",
+    "target_id": "Q0218",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus PRIME B650-PLUS WIFI có socket như thế nào?",
+          "answer": "Asus PRIME B650-PLUS WIFI: socket: AM5.\n\n[Nguồn: catalog-c6488d4e841b7392e018b629fdd6b8c8ce461577492399eef5b7cb292af86aa6-v3.md, mục Asus PRIME B650-PLUS WIFI, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Asus PRIME B650-PLUS WIFI",
+      "document_query": "Theo danh mục tham khảo, Asus PRIME B650-PLUS WIFI có socket như thế nào?",
+      "rag_subject": "Asus PRIME B650-PLUS WIFI"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0099",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Samsung 970 Evo Plus?",
+    "topic": "product_context",
+    "conversation": "Q0227_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-285147ac7837de424abf63c75ada6f00bc439a271a550ee23866b385b330fcd0",
+        "version": 3,
+        "quote": "Samsung 970 Evo Plus: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-285147ac7837de424abf63c75ada6f00bc439a271a550ee23866b385b330fcd0"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0227_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0016",
+    "target_id": "Q0227",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Samsung 970 Evo Plus có dung lượng như thế nào?",
+          "answer": "Samsung 970 Evo Plus: dung lượng: 1000 GB.\n\n[Nguồn: catalog-285147ac7837de424abf63c75ada6f00bc439a271a550ee23866b385b330fcd0-v3.md, mục Samsung 970 Evo Plus, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Samsung 970 Evo Plus",
+      "document_query": "Theo danh mục tham khảo, Samsung 970 Evo Plus có dung lượng như thế nào?",
+      "rag_subject": "Samsung 970 Evo Plus"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0016",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của MSI Modern 15 B12M?",
+    "topic": "product_context",
+    "conversation": "Q0246_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1",
+        "version": 3,
+        "quote": "MSI Modern 15 B12M: Processor Core: 10."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0246_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0155",
+    "target_id": "Q0246",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI Modern 15 B12M có CPU như thế nào?",
+          "answer": "MSI Modern 15 B12M: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 2, phiên bản 3]\n\nMSI Modern 15 B12M: Processor Core: 10.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phi"
+        }
+      ],
+      "rag_product_subject": "MSI Modern 15 B12M",
+      "document_query": "Theo danh mục tham khảo, MSI Modern 15 B12M có CPU như thế nào?",
+      "rag_subject": "MSI Modern 15 B12M"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0155",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Corsair Vengeance LPX 16 GB?",
+    "topic": "product_context",
+    "conversation": "Q0247_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+        "version": 3,
+        "quote": "Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0247_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0200",
+    "target_id": "Q0247",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Corsair Vengeance LPX 16 GB: CAS latency: 16.\n\n[Nguồn: catalog-517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a-v3.md, mục Corsair Vengeance LPX 16 GB, đoạn 2, phiên bản 3]\n\nCorsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-517c4a98422"
+        }
+      ],
+      "rag_product_subject": "Corsair Vengeance LPX 16 GB",
+      "document_query": "Theo danh mục tham khảo, Corsair Vengeance LPX 16 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Corsair Vengeance LPX 16 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0200",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kích thước/chuẩn thiết kế của Gigabyte X870E AORUS ELITE WIFI7?",
+    "topic": "product_context",
+    "conversation": "Q0272_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2",
+        "version": 3,
+        "quote": "Gigabyte X870E AORUS ELITE WIFI7: kích thước/chuẩn thiết kế: ATX."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0272_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0068",
+    "target_id": "Q0272",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Gigabyte X870E AORUS ELITE WIFI7 có socket như thế nào?",
+          "answer": "Gigabyte X870E AORUS ELITE WIFI7: socket: AM5.\n\n[Nguồn: catalog-3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2-v3.md, mục Gigabyte X870E AORUS ELITE WIFI7, đoạn 1, phiên bản 3]\n\nKhông suy từ tên hoặc ảnh.\n\n[Nguồn: catalog-3306789bd8e6247c1b5adae63310a4811a68177bcf53e8ad75a8d637d2c0e5a2-v3.md, mục Gigabyte X870E AORUS ELITE WIFI7, "
+        }
+      ],
+      "rag_product_subject": "Gigabyte X870E AORUS ELITE WIFI7",
+      "document_query": "Theo danh mục tham khảo, Gigabyte X870E AORUS ELITE WIFI7 có socket như thế nào?",
+      "rag_subject": "Gigabyte X870E AORUS ELITE WIFI7"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0068",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn độ phân giải của Asus TUF Gaming VG27AQ?",
+    "topic": "product_context",
+    "conversation": "Q0278_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-80c7806acde7949635c084a5fa6fcdf20a0dd8816d86fa7c56f59a5e4be6738f",
+        "version": 3,
+        "quote": "Asus TUF Gaming VG27AQ: độ phân giải: 2560 × 1440 pixel."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-80c7806acde7949635c084a5fa6fcdf20a0dd8816d86fa7c56f59a5e4be6738f"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0278_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0193",
+    "target_id": "Q0278",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus TUF Gaming VG27AQ có đường chéo như thế nào?",
+          "answer": "Trường kết nối này được đánh dấu cần đối chiếu và không đưa vào bản thông số sẵn sàng nhập.\n\n[Nguồn: tech-g305-source-conflict-v1.md, mục Logitech G305: phát hiện xung đột dữ liệu kết nối, đoạn 1, phiên bản 1]\n\nAsus TUF Gaming VG27AQ: đường chéo: 27 inch.\n\n[Nguồn: catalog-80c7806acde7949635c084a5fa6fcdf20a0dd8816d86fa7c56f59a5e4be6738f-v3.md, mục A"
+        }
+      ],
+      "rag_product_subject": "Asus TUF Gaming VG27AQ",
+      "document_query": "Theo danh mục tham khảo, Asus TUF Gaming VG27AQ có đường chéo như thế nào?",
+      "rag_subject": "Asus TUF Gaming VG27AQ"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0193",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của Intel Core i5-14600KF?",
+    "topic": "product_context",
+    "conversation": "Q0292_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-8e9a39cee3d830394b4f3114061a0cb40eb49af4ec79bf91dacc2eef94e3c084",
+        "version": 3,
+        "quote": "Intel Core i5-14600KF: xung cơ bản: 3.5 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-8e9a39cee3d830394b4f3114061a0cb40eb49af4ec79bf91dacc2eef94e3c084"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0292_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0219",
+    "target_id": "Q0292",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Intel Core i5-14600KF có số nhân như thế nào?",
+          "answer": "Intel Core i5-14600KF: số nhân: 14.\n\n[Nguồn: catalog-8e9a39cee3d830394b4f3114061a0cb40eb49af4ec79bf91dacc2eef94e3c084-v3.md, mục Intel Core i5-14600KF, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Intel Core i5-14600KF",
+      "document_query": "Theo danh mục tham khảo, Intel Core i5-14600KF có số nhân như thế nào?",
+      "rag_subject": "Intel Core i5-14600KF"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0219",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của Deepcool CH160?",
+    "topic": "product_context",
+    "conversation": "Q0300_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171",
+        "version": 3,
+        "quote": "Deepcool CH160: vật liệu hông: Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0300_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0182",
+    "target_id": "Q0300",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+          "answer": "Deepcool CH160: vật liệu hông: Tempered Glass.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]\n\nDeepcool CH160: loại: Mini ITX Desktop.\n\n[Nguồn: catalog-b2a5e436f83c19404871a6aa2836c544e4dba5021c50b43d7ec78f273f3db171-v3.md, mục Deepcool CH160, đoạn 1, phiên bản 3]\n\nD"
+        }
+      ],
+      "rag_product_subject": "Deepcool CH160",
+      "document_query": "Theo danh mục tham khảo, Deepcool CH160 có loại như thế nào?",
+      "rag_subject": "Deepcool CH160"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0182",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của Corsair 4000D Airflow?",
+    "topic": "product_context",
+    "conversation": "Q0301_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-349a9bcb6e003baee5b28124c6d755ef4c51d12df241ed8bddf0127f9af0c9f6",
+        "version": 3,
+        "quote": "Corsair 4000D Airflow: vật liệu hông: Tinted Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-349a9bcb6e003baee5b28124c6d755ef4c51d12df241ed8bddf0127f9af0c9f6"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0301_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0112",
+    "target_id": "Q0301",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair 4000D Airflow có loại như thế nào?",
+          "answer": "Corsair 4000D Airflow: loại: ATX Mid Tower.\n\n[Nguồn: catalog-349a9bcb6e003baee5b28124c6d755ef4c51d12df241ed8bddf0127f9af0c9f6-v3.md, mục Corsair 4000D Airflow, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Corsair 4000D Airflow",
+      "document_query": "Theo danh mục tham khảo, Corsair 4000D Airflow có loại như thế nào?",
+      "rag_subject": "Corsair 4000D Airflow"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0112",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Apple MacBook Air (Late 2020)?",
+    "topic": "product_context",
+    "conversation": "Q0314_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa",
+        "version": 3,
+        "quote": "Apple MacBook Air (Late 2020): Processor Core: 8."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0314_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0097",
+    "target_id": "Q0314",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Apple MacBook Air (Late 2020) có CPU như thế nào?",
+          "answer": "Apple MacBook Air (Late 2020): Display Type: Retina.\n\n[Nguồn: catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa-v3.md, mục Apple MacBook Air (Late 2020), đoạn 2, phiên bản 3]\n\nApple MacBook Air (Late 2020): Display Resolution: 2560x1600.\n\n[Nguồn: catalog-15bf0f5ed3d4ac16d4e624690beda50747bb516bf07c8a01c026f8a07da885fa-v3.md, "
+        }
+      ],
+      "rag_product_subject": "Apple MacBook Air (Late 2020)",
+      "document_query": "Theo danh mục tham khảo, Apple MacBook Air (Late 2020) có CPU như thế nào?",
+      "rag_subject": "Apple MacBook Air (Late 2020)"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0097",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Acer Nitro 5 AN515-58-59JP?",
+    "topic": "product_context",
+    "conversation": "Q0321_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8",
+        "version": 3,
+        "quote": "Acer Nitro 5 AN515-58-59JP: Processor Core: 8."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0321_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0280",
+    "target_id": "Q0321",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Acer Nitro 5 AN515-58-59JP có CPU như thế nào?",
+          "answer": "Acer Nitro 5 AN515-58-59JP: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8-v3.md, mục Acer Nitro 5 AN515-58-59JP, đoạn 2, phiên bản 3]\n\nAcer Nitro 5 AN515-58-59JP: HDMI Port: 1.\n\n[Nguồn: catalog-e8984ab22bacb81a6690709a3fa5edc1e754823e1b3b8b5549875f9c9b9993c8-v3.md, mục Acer Nitro 5 "
+        }
+      ],
+      "rag_product_subject": "Acer Nitro 5 AN515-58-59JP",
+      "document_query": "Theo danh mục tham khảo, Acer Nitro 5 AN515-58-59JP có CPU như thế nào?",
+      "rag_subject": "Acer Nitro 5 AN515-58-59JP"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0280",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Crucial P3 Plus?",
+    "topic": "product_context",
+    "conversation": "Q0322_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c",
+        "version": 3,
+        "quote": "Crucial P3 Plus: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0322_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0084",
+    "target_id": "Q0322",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Crucial P3 Plus có dung lượng như thế nào?",
+          "answer": "Crucial P3 Plus: dung lượng: 1000 GB.\n\n[Nguồn: catalog-64dc7f047585e37bf0becd21f1d5d8ec58a9b06dbcb991bb0ef34edbf525163c-v3.md, mục Crucial P3 Plus, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Crucial P3 Plus",
+      "document_query": "Theo danh mục tham khảo, Crucial P3 Plus có dung lượng như thế nào?",
+      "rag_subject": "Crucial P3 Plus"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0084",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn mức hiệu suất theo danh mục của MSI MAG A750GL PCIE5?",
+    "topic": "product_context",
+    "conversation": "Q0327_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-1e1acb4461bc7bf000a8d2210b3ad79b4861a7c641259e46d479103fe7216efa",
+        "version": 3,
+        "quote": "MSI MAG A750GL PCIE5: mức hiệu suất theo danh mục: gold."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-1e1acb4461bc7bf000a8d2210b3ad79b4861a7c641259e46d479103fe7216efa"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0327_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0228",
+    "target_id": "Q0327",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI MAG A750GL PCIE5 có loại như thế nào?",
+          "answer": "Hai loại bổ sung cho nhau.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nMSI MAG A750GL PCIE5: loại: ATX.\n\n[Nguồn: catalog-1e1acb4461bc7bf000a8d2210b3ad79b4861a7c641259e46d479103fe7216efa-v3.md, mục MSI MAG A750GL PCIE5, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "MSI MAG A750GL PCIE5",
+      "document_query": "Theo danh mục tham khảo, MSI MAG A750GL PCIE5 có loại như thế nào?",
+      "rag_subject": "MSI MAG A750GL PCIE5"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0228",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn VRAM của MSI GeForce RTX 3060 Ventus 2X 12G?",
+    "topic": "product_context",
+    "conversation": "Q0329_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-752d9ae6e8f14d830d0e400d1b154957fb249003791d7d1709f586b5b7a199e1",
+        "version": 3,
+        "quote": "MSI GeForce RTX 3060 Ventus 2X 12G: VRAM: 12 GB."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-752d9ae6e8f14d830d0e400d1b154957fb249003791d7d1709f586b5b7a199e1"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0329_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0299",
+    "target_id": "Q0329",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI GeForce RTX 3060 Ventus 2X 12G có GPU như thế nào?",
+          "answer": "MSI GeForce RTX 3060 Ventus 2X 12G: GPU: GeForce RTX 3060 12GB.\n\n[Nguồn: catalog-752d9ae6e8f14d830d0e400d1b154957fb249003791d7d1709f586b5b7a199e1-v3.md, mục MSI GeForce RTX 3060 Ventus 2X 12G, đoạn 1, phiên bản 3]\n\nMSI GeForce RTX 3060 Ventus 2X 12G: VRAM: 12 GB.\n\n[Nguồn: catalog-752d9ae6e8f14d830d0e400d1b154957fb249003791d7d1709f586b5b7a199e1-v3.m"
+        }
+      ],
+      "rag_product_subject": "MSI GeForce RTX 3060 Ventus 2X 12G",
+      "document_query": "Theo danh mục tham khảo, MSI GeForce RTX 3060 Ventus 2X 12G có GPU như thế nào?",
+      "rag_subject": "MSI GeForce RTX 3060 Ventus 2X 12G"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0299",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Samsung 980 Pro?",
+    "topic": "product_context",
+    "conversation": "Q0334_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-7dc2b0b34bb68c72e9cf9eef4e232e51642bca2aba11dc870d6fed57c34c962b",
+        "version": 3,
+        "quote": "Samsung 980 Pro: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-7dc2b0b34bb68c72e9cf9eef4e232e51642bca2aba11dc870d6fed57c34c962b"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0334_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0070",
+    "target_id": "Q0334",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Samsung 980 Pro có dung lượng như thế nào?",
+          "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]\n\nKhông kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn n"
+        }
+      ],
+      "rag_product_subject": "Samsung 980 Pro",
+      "document_query": "Theo danh mục tham khảo, Samsung 980 Pro có dung lượng như thế nào?",
+      "rag_subject": "Samsung 980 Pro"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0070",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Samsung 990 Pro?",
+    "topic": "product_context",
+    "conversation": "Q0343_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-b182cda76ba681d381cb42f7cd4a01b11f7b0aa88fdec3667cd7b6ab66b69a58",
+        "version": 3,
+        "quote": "Samsung 990 Pro: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-b182cda76ba681d381cb42f7cd4a01b11f7b0aa88fdec3667cd7b6ab66b69a58"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0343_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0183",
+    "target_id": "Q0343",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Samsung 990 Pro có dung lượng như thế nào?",
+          "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]\n\nKhông kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn n"
+        }
+      ],
+      "rag_product_subject": "Samsung 990 Pro",
+      "document_query": "Theo danh mục tham khảo, Samsung 990 Pro có dung lượng như thế nào?",
+      "rag_subject": "Samsung 990 Pro"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0183",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Dell Inspiron 15 3520?",
+    "topic": "product_context",
+    "conversation": "Q0356_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090",
+        "version": 3,
+        "quote": "Dell Inspiron 15 3520: Processor Core: 6."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0356_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0050",
+    "target_id": "Q0356",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Dell Inspiron 15 3520 có CPU như thế nào?",
+          "answer": "Dell Inspiron 15 3520: Display Type: Full HD Display.\n\n[Nguồn: catalog-beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090-v3.md, mục Dell Inspiron 15 3520, đoạn 2, phiên bản 3]\n\nDell Inspiron 15 3520: Operating System: Win-11 Home.\n\n[Nguồn: catalog-beb1ccb3c40ba232bccce21f6e97956fdb6bad33b34d20d86d1afbe5624e9090-v3.md, mục Dell Inspir"
+        }
+      ],
+      "rag_product_subject": "Dell Inspiron 15 3520",
+      "document_query": "Theo danh mục tham khảo, Dell Inspiron 15 3520 có CPU như thế nào?",
+      "rag_subject": "Dell Inspiron 15 3520"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0050",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của Intel Core i5-14400F?",
+    "topic": "product_context",
+    "conversation": "Q0357_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb",
+        "version": 3,
+        "quote": "Intel Core i5-14400F: xung cơ bản: 2.5 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0357_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0254",
+    "target_id": "Q0357",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Intel Core i5-14400F có số nhân như thế nào?",
+          "answer": "Intel Core i5-14400F: số nhân: 10.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Intel Core i5-14400F",
+      "document_query": "Theo danh mục tham khảo, Intel Core i5-14400F có số nhân như thế nào?",
+      "rag_subject": "Intel Core i5-14400F"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0254",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn DPI tối đa của Logitech G305 LIGHTSPEED?",
+    "topic": "product_context",
+    "conversation": "Q0368_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-a8126e19618722d49b8b39daf606b809c3b3e9d657ac4b8c63ca4a31122fde17",
+        "version": 3,
+        "quote": "Logitech G305 LIGHTSPEED: DPI tối đa: 12000 dpi."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-a8126e19618722d49b8b39daf606b809c3b3e9d657ac4b8c63ca4a31122fde17"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0368_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0271",
+    "target_id": "Q0368",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Logitech G305 LIGHTSPEED có cảm biến như thế nào?",
+          "answer": "Logitech G305 LIGHTSPEED: cảm biến: Optical.\n\n[Nguồn: catalog-a8126e19618722d49b8b39daf606b809c3b3e9d657ac4b8c63ca4a31122fde17-v3.md, mục Logitech G305 LIGHTSPEED, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Logitech G305 LIGHTSPEED",
+      "document_query": "Theo danh mục tham khảo, Logitech G305 LIGHTSPEED có cảm biến như thế nào?",
+      "rag_subject": "Logitech G305 LIGHTSPEED"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0271",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của Kingston FURY Beast 32 GB?",
+    "topic": "product_context",
+    "conversation": "Q0373_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-f93e886025717109d535f8b601c627694977190384d0a14e5f50ddb22867d94e",
+        "version": 3,
+        "quote": "Kingston FURY Beast 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-f93e886025717109d535f8b601c627694977190384d0a14e5f50ddb22867d94e"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0373_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0237",
+    "target_id": "Q0373",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Kingston FURY Beast 32 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "Kingston FURY Beast 32 GB: CAS latency: 30.\n\n[Nguồn: catalog-f93e886025717109d535f8b601c627694977190384d0a14e5f50ddb22867d94e-v3.md, mục Kingston FURY Beast 32 GB, đoạn 2, phiên bản 3]\n\nKingston FURY Beast 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-f93e886025717109d"
+        }
+      ],
+      "rag_product_subject": "Kingston FURY Beast 32 GB",
+      "document_query": "Theo danh mục tham khảo, Kingston FURY Beast 32 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "Kingston FURY Beast 32 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0237",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Western Digital WD_Black SN850X?",
+    "topic": "product_context",
+    "conversation": "Q0381_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-9db57a7d1b0bc53af235b27053f8656666b2d00f1383fa0f1ff664debf32b860",
+        "version": 3,
+        "quote": "Western Digital WD_Black SN850X: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-9db57a7d1b0bc53af235b27053f8656666b2d00f1383fa0f1ff664debf32b860"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0381_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0238",
+    "target_id": "Q0381",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Western Digital WD_Black SN850X có dung lượng như thế nào?",
+          "answer": "Một phần dung lượng bộ nhớ Flash được dùng cho định dạng và chức năng khác nên không phải toàn bộ dung lượng công bố đều dành cho dữ liệu người dùng.\n\n[Nguồn: tech-flash-capacity-v1.md, mục Dung lượng công bố và dung lượng dùng được có giống nhau không?, đoạn 1, phiên bản 1]\n\nWestern Digital WD_Black SN850X: dung lượng: 2000 GB.\n\n[Nguồn: catalog-9d"
+        }
+      ],
+      "rag_product_subject": "Western Digital WD_Black SN850X",
+      "document_query": "Theo danh mục tham khảo, Western Digital WD_Black SN850X có dung lượng như thế nào?",
+      "rag_subject": "Western Digital WD_Black SN850X"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0238",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của AMD Ryzen 7 9800X3D?",
+    "topic": "product_context",
+    "conversation": "Q0382_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215",
+        "version": 3,
+        "quote": "AMD Ryzen 7 9800X3D: xung cơ bản: 4.7 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0382_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0256",
+    "target_id": "Q0382",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, AMD Ryzen 7 9800X3D có số nhân như thế nào?",
+          "answer": "AMD Ryzen 7 9800X3D: số nhân: 8.\n\n[Nguồn: catalog-20627684ea0548ecdaef1e6d76270b0e9c733c5c4ea267c4a099c8832f4c3215-v3.md, mục AMD Ryzen 7 9800X3D, đoạn 1, phiên bản 3]\n\nBảng AMD ghi Ryzen 7 9800X3D có 8 nhân, 16 luồng, boost tối đa 5,2 GHz và TDP mặc định 120 W.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, "
+        }
+      ],
+      "rag_product_subject": "AMD Ryzen 7 9800X3D",
+      "document_query": "Theo danh mục tham khảo, AMD Ryzen 7 9800X3D có số nhân như thế nào?",
+      "rag_subject": "AMD Ryzen 7 9800X3D"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0256",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kích thước/chuẩn thiết kế của Asus PRIME B550M-A WIFI II?",
+    "topic": "product_context",
+    "conversation": "Q0383_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-6eb51f4a845a42d927919d341984360495448ada42f55ef7d5870e6b5f333972",
+        "version": 3,
+        "quote": "Asus PRIME B550M-A WIFI II: kích thước/chuẩn thiết kế: Micro ATX."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-6eb51f4a845a42d927919d341984360495448ada42f55ef7d5870e6b5f333972"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0383_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0098",
+    "target_id": "Q0383",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus PRIME B550M-A WIFI II có socket như thế nào?",
+          "answer": "Asus PRIME B550M-A WIFI II: socket: AM4.\n\n[Nguồn: catalog-6eb51f4a845a42d927919d341984360495448ada42f55ef7d5870e6b5f333972-v3.md, mục Asus PRIME B550M-A WIFI II, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Asus PRIME B550M-A WIFI II",
+      "document_query": "Theo danh mục tham khảo, Asus PRIME B550M-A WIFI II có socket như thế nào?",
+      "rag_subject": "Asus PRIME B550M-A WIFI II"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0098",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Asus TUF Gaming A15 FA506NF?",
+    "topic": "product_context",
+    "conversation": "Q0391_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2",
+        "version": 3,
+        "quote": "Asus TUF Gaming A15 FA506NF: Processor Core: 6."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0391_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0051",
+    "target_id": "Q0391",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus TUF Gaming A15 FA506NF có CPU như thế nào?",
+          "answer": "Asus TUF Gaming A15 FA506NF: Display Type: FHD LED Display.\n\n[Nguồn: catalog-7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2-v3.md, mục Asus TUF Gaming A15 FA506NF, đoạn 2, phiên bản 3]\n\nAsus TUF Gaming A15 FA506NF: RAM: 8GB.\n\n[Nguồn: catalog-7910e2f35be3a42f108825bbf4cd8096f85c8b47bf52712c634b0f6812b257c2-v3.md, mục Asus TUF Gamin"
+        }
+      ],
+      "rag_product_subject": "Asus TUF Gaming A15 FA506NF",
+      "document_query": "Theo danh mục tham khảo, Asus TUF Gaming A15 FA506NF có CPU như thế nào?",
+      "rag_subject": "Asus TUF Gaming A15 FA506NF"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0051",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của AMD Ryzen 7 5700X3D?",
+    "topic": "product_context",
+    "conversation": "Q0392_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-4f18cab5f769b246ad783f9473bd6eed6a2899092dd3e42de4b8fb31d0cb9c78",
+        "version": 3,
+        "quote": "AMD Ryzen 7 5700X3D: xung cơ bản: 3 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-4f18cab5f769b246ad783f9473bd6eed6a2899092dd3e42de4b8fb31d0cb9c78"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0392_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0220",
+    "target_id": "Q0392",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, AMD Ryzen 7 5700X3D có số nhân như thế nào?",
+          "answer": "AMD Ryzen 7 5700X3D: số nhân: 8.\n\n[Nguồn: catalog-4f18cab5f769b246ad783f9473bd6eed6a2899092dd3e42de4b8fb31d0cb9c78-v3.md, mục AMD Ryzen 7 5700X3D, đoạn 1, phiên bản 3]\n\nMã danh mục: 4f18cab5f769b246ad783f9473bd6eed6a2899092dd3e42de4b8fb31d0cb9c78.\n\n[Nguồn: catalog-4f18cab5f769b246ad783f9473bd6eed6a2899092dd3e42de4b8fb31d0cb9c78-v3.md, mục AMD Ryzen"
+        }
+      ],
+      "rag_product_subject": "AMD Ryzen 7 5700X3D",
+      "document_query": "Theo danh mục tham khảo, AMD Ryzen 7 5700X3D có số nhân như thế nào?",
+      "rag_subject": "AMD Ryzen 7 5700X3D"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0220",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Asus ZenBook 14 UM425UA?",
+    "topic": "product_context",
+    "conversation": "Q0397_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc",
+        "version": 3,
+        "quote": "Asus ZenBook 14 UM425UA: Processor Core: 6."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0397_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0294",
+    "target_id": "Q0397",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus ZenBook 14 UM425UA có CPU như thế nào?",
+          "answer": "Asus ZenBook 14 UM425UA: Display Type: FHD.\n\n[Nguồn: catalog-675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc-v3.md, mục Asus ZenBook 14 UM425UA, đoạn 2, phiên bản 3]\n\nAsus ZenBook 14 UM425UA: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-675dc82b5a646a467ee8700a0996d29f087df0ffb7ee41334bdf1290338534fc-v3.md, mục Asus ZenBook 14 U"
+        }
+      ],
+      "rag_product_subject": "Asus ZenBook 14 UM425UA",
+      "document_query": "Theo danh mục tham khảo, Asus ZenBook 14 UM425UA có CPU như thế nào?",
+      "rag_subject": "Asus ZenBook 14 UM425UA"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0294",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Acer Aspire 3 A315-59-56VC?",
+    "topic": "product_context",
+    "conversation": "Q0398_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705",
+        "version": 3,
+        "quote": "Acer Aspire 3 A315-59-56VC: Processor Core: 10."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0398_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0014",
+    "target_id": "Q0398",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Acer Aspire 3 A315-59-56VC có CPU như thế nào?",
+          "answer": "Acer Aspire 3 A315-59-56VC: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705-v3.md, mục Acer Aspire 3 A315-59-56VC, đoạn 2, phiên bản 3]\n\nAcer Aspire 3 A315-59-56VC: RAM: 8GB.\n\n[Nguồn: catalog-2c7e67b138aa88035c62b6dc52e8865156b2d3bb1e94a52887ddcf8466cea705-v3.md, mục Acer Aspire 3 A31"
+        }
+      ],
+      "rag_product_subject": "Acer Aspire 3 A315-59-56VC",
+      "document_query": "Theo danh mục tham khảo, Acer Aspire 3 A315-59-56VC có CPU như thế nào?",
+      "rag_subject": "Acer Aspire 3 A315-59-56VC"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0014",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kích thước/chuẩn thiết kế của Asus TUF GAMING B850-PLUS WIFI?",
+    "topic": "product_context",
+    "conversation": "Q0401_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-7ac8293143f64b96e17d87991c1b33ff6a850b5d8a7a8c75e9bb2ed3524c7b3d",
+        "version": 3,
+        "quote": "Asus TUF GAMING B850-PLUS WIFI: kích thước/chuẩn thiết kế: ATX."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-7ac8293143f64b96e17d87991c1b33ff6a850b5d8a7a8c75e9bb2ed3524c7b3d"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0401_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0052",
+    "target_id": "Q0401",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Asus TUF GAMING B850-PLUS WIFI có socket như thế nào?",
+          "answer": "Asus TUF GAMING B850-PLUS WIFI: socket: AM5.\n\n[Nguồn: catalog-7ac8293143f64b96e17d87991c1b33ff6a850b5d8a7a8c75e9bb2ed3524c7b3d-v3.md, mục Asus TUF GAMING B850-PLUS WIFI, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Asus TUF GAMING B850-PLUS WIFI",
+      "document_query": "Theo danh mục tham khảo, Asus TUF GAMING B850-PLUS WIFI có socket như thế nào?",
+      "rag_subject": "Asus TUF GAMING B850-PLUS WIFI"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0052",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Acer Aspire 5 5P-A515-58P?",
+    "topic": "product_context",
+    "conversation": "Q0402_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0",
+        "version": 3,
+        "quote": "Acer Aspire 5 5P-A515-58P: Processor Core: 5."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0402_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0285",
+    "target_id": "Q0402",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Acer Aspire 5 5P-A515-58P có CPU như thế nào?",
+          "answer": "Acer Aspire 5 5P-A515-58P: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0-v3.md, mục Acer Aspire 5 5P-A515-58P, đoạn 2, phiên bản 3]\n\nAcer Aspire 5 5P-A515-58P: RAM: 8GB.\n\n[Nguồn: catalog-aab3847c5592627507797bf6255ee692c94635cf2c51ba380cb276c5804022d0-v3.md, mục Acer Aspire 5 5P-A51"
+        }
+      ],
+      "rag_product_subject": "Acer Aspire 5 5P-A515-58P",
+      "document_query": "Theo danh mục tham khảo, Acer Aspire 5 5P-A515-58P có CPU như thế nào?",
+      "rag_subject": "Acer Aspire 5 5P-A515-58P"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0285",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn độ phân giải của AOC 24G4XE?",
+    "topic": "product_context",
+    "conversation": "Q0403_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12",
+        "version": 3,
+        "quote": "AOC 24G4XE: độ phân giải: 1920 × 1080 pixel."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0403_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0201",
+    "target_id": "Q0403",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, AOC 24G4XE có đường chéo như thế nào?",
+          "answer": "AOC 24G4XE: đường chéo: 24 inch.\n\n[Nguồn: catalog-a0778acc1ac59c3e48b63cbca76375857326f43f2069d3f06a7f3eebbc7b4a12-v3.md, mục AOC 24G4XE, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "AOC 24G4XE",
+      "document_query": "Theo danh mục tham khảo, AOC 24G4XE có đường chéo như thế nào?",
+      "rag_subject": "AOC 24G4XE"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0201",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của Intel Core i5-12400F?",
+    "topic": "product_context",
+    "conversation": "Q0406_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-7719e96537610f3d2ae0fac067c7809bcbca00d7b7c13b69099130fe73992cb4",
+        "version": 3,
+        "quote": "Intel Core i5-12400F: xung cơ bản: 2.5 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-7719e96537610f3d2ae0fac067c7809bcbca00d7b7c13b69099130fe73992cb4"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0406_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0350",
+    "target_id": "Q0406",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Intel Core i5-12400F có số nhân như thế nào?",
+          "answer": "Intel Core i5-12400F: số nhân: 6.\n\n[Nguồn: catalog-7719e96537610f3d2ae0fac067c7809bcbca00d7b7c13b69099130fe73992cb4-v3.md, mục Intel Core i5-12400F, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Intel Core i5-12400F",
+      "document_query": "Theo danh mục tham khảo, Intel Core i5-12400F có số nhân như thế nào?",
+      "rag_subject": "Intel Core i5-12400F"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0350",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn VRAM của MSI RTX 5060 Ti 16G INSPIRE 2X OC?",
+    "topic": "product_context",
+    "conversation": "Q0411_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3a40ad6ac20ca8e772a09d6f23a7eb4f24755e6c8a31f3754bb5eb897d277e2a",
+        "version": 3,
+        "quote": "MSI RTX 5060 Ti 16G INSPIRE 2X OC: VRAM: 16 GB."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3a40ad6ac20ca8e772a09d6f23a7eb4f24755e6c8a31f3754bb5eb897d277e2a"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0411_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0154",
+    "target_id": "Q0411",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI RTX 5060 Ti 16G INSPIRE 2X OC có GPU như thế nào?",
+          "answer": "Mã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]\n\nTài liệu này chỉ xác nhận bản 408AU; chưa đủ để kết luận bản 041BD nâng cấp được hay không.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn "
+        }
+      ],
+      "rag_product_subject": "MSI RTX 5060 Ti 16G INSPIRE 2X OC",
+      "document_query": "Theo danh mục tham khảo, MSI RTX 5060 Ti 16G INSPIRE 2X OC có GPU như thế nào?",
+      "rag_subject": "MSI RTX 5060 Ti 16G INSPIRE 2X OC"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0154",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kết nối của Razer Basilisk V3?",
+    "topic": "product_context",
+    "conversation": "Q0417_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-a2f8c8d487a673677719cfe7ecacd408dcfea090123d6ef31321a67bdf83cb78",
+        "version": 3,
+        "quote": "Razer Basilisk V3: kết nối: Wired."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-a2f8c8d487a673677719cfe7ecacd408dcfea090123d6ef31321a67bdf83cb78"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0417_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0211",
+    "target_id": "Q0417",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Razer Basilisk V3 có cảm biến như thế nào?",
+          "answer": "Razer Basilisk V3: cảm biến: Optical.\n\n[Nguồn: catalog-a2f8c8d487a673677719cfe7ecacd408dcfea090123d6ef31321a67bdf83cb78-v3.md, mục Razer Basilisk V3, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Razer Basilisk V3",
+      "document_query": "Theo danh mục tham khảo, Razer Basilisk V3 có cảm biến như thế nào?",
+      "rag_subject": "Razer Basilisk V3"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0211",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Lenovo LOQ Gaming 15IRH8?",
+    "topic": "product_context",
+    "conversation": "Q0422_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33",
+        "version": 3,
+        "quote": "Lenovo LOQ Gaming 15IRH8: Processor Core: 8."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0422_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0386",
+    "target_id": "Q0422",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Lenovo LOQ Gaming 15IRH8 có CPU như thế nào?",
+          "answer": "Lenovo LOQ Gaming 15IRH8: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 2, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: Graphics Memory Accessibility: Dedicated.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3"
+        }
+      ],
+      "rag_product_subject": "Lenovo LOQ Gaming 15IRH8",
+      "document_query": "Theo danh mục tham khảo, Lenovo LOQ Gaming 15IRH8 có CPU như thế nào?",
+      "rag_subject": "Lenovo LOQ Gaming 15IRH8"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0386",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn mức hiệu suất theo danh mục của MSI MAG A650BN?",
+    "topic": "product_context",
+    "conversation": "Q0427_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe",
+        "version": 3,
+        "quote": "MSI MAG A650BN: mức hiệu suất theo danh mục: bronze."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0427_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0313",
+    "target_id": "Q0427",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI MAG A650BN có loại như thế nào?",
+          "answer": "MSI MAG A650BN: loại: ATX.\n\n[Nguồn: catalog-3df5e885dd92eb0757698f9765403d14d45f51b9266d10dd725511772d7f4ebe-v3.md, mục MSI MAG A650BN, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "MSI MAG A650BN",
+      "document_query": "Theo danh mục tham khảo, MSI MAG A650BN có loại như thế nào?",
+      "rag_subject": "MSI MAG A650BN"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0313",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kết nối của Razer DeathAdder Essential?",
+    "topic": "product_context",
+    "conversation": "Q0428_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-95a534457590f6c18dea18ccbf2f99caa583b2f99c73cae3b7f5816b15ecf850",
+        "version": 3,
+        "quote": "Razer DeathAdder Essential: kết nối: Wired."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-95a534457590f6c18dea18ccbf2f99caa583b2f99c73cae3b7f5816b15ecf850"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0428_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0111",
+    "target_id": "Q0428",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Razer DeathAdder Essential có cảm biến như thế nào?",
+          "answer": "Razer DeathAdder Essential: cảm biến: Optical.\n\n[Nguồn: catalog-95a534457590f6c18dea18ccbf2f99caa583b2f99c73cae3b7f5816b15ecf850-v3.md, mục Razer DeathAdder Essential, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Razer DeathAdder Essential",
+      "document_query": "Theo danh mục tham khảo, Razer DeathAdder Essential có cảm biến như thế nào?",
+      "rag_subject": "Razer DeathAdder Essential"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0111",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Acer Swift Go 14 SFG14-41-R5RB?",
+    "topic": "product_context",
+    "conversation": "Q0432_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-0d1e921a974d5be9280c001db157bf593526b46d5599d752df06dfd7f4d8e3be",
+        "version": 3,
+        "quote": "Acer Swift Go 14 SFG14-41-R5RB: Processor Core: 6."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-0d1e921a974d5be9280c001db157bf593526b46d5599d752df06dfd7f4d8e3be"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0432_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0378",
+    "target_id": "Q0432",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Acer Swift Go 14 SFG14-41-R5RB có CPU như thế nào?",
+          "answer": "Acer Swift Go 14 SFG14-41-R5RB: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-0d1e921a974d5be9280c001db157bf593526b46d5599d752df06dfd7f4d8e3be-v3.md, mục Acer Swift Go 14 SFG14-41-R5RB, đoạn 2, phiên bản 3]\n\nAcer Swift Go 14 SFG14-41-R5RB: Display Size (Inch): 14.\n\n[Nguồn: catalog-0d1e921a974d5be9280c001db157bf593526b46d5599d752df06dfd7f4d8e3be-v"
+        }
+      ],
+      "rag_product_subject": "Acer Swift Go 14 SFG14-41-R5RB",
+      "document_query": "Theo danh mục tham khảo, Acer Swift Go 14 SFG14-41-R5RB có CPU như thế nào?",
+      "rag_subject": "Acer Swift Go 14 SFG14-41-R5RB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0378",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn loại của Kingston KC3000?",
+    "topic": "product_context",
+    "conversation": "Q0438_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-15311338f518072cfa659390b765f41584c33a22b249885c4d1591dc9aa7af81",
+        "version": 3,
+        "quote": "Kingston KC3000: loại: SSD."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-15311338f518072cfa659390b765f41584c33a22b249885c4d1591dc9aa7af81"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0438_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0069",
+    "target_id": "Q0438",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Kingston KC3000 có dung lượng như thế nào?",
+          "answer": "Kingston KC3000: dung lượng: 2048 GB.\n\n[Nguồn: catalog-15311338f518072cfa659390b765f41584c33a22b249885c4d1591dc9aa7af81-v3.md, mục Kingston KC3000, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Kingston KC3000",
+      "document_query": "Theo danh mục tham khảo, Kingston KC3000 có dung lượng như thế nào?",
+      "rag_subject": "Kingston KC3000"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0069",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kích thước/chuẩn thiết kế của MSI B760 GAMING PLUS WIFI?",
+    "topic": "product_context",
+    "conversation": "Q0442_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-ee2d7931b81ddeaeb317d9e95d25217653675002f1d27ad1719734052a4797e8",
+        "version": 3,
+        "quote": "MSI B760 GAMING PLUS WIFI: kích thước/chuẩn thiết kế: ATX."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-ee2d7931b81ddeaeb317d9e95d25217653675002f1d27ad1719734052a4797e8"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0442_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0032",
+    "target_id": "Q0442",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, MSI B760 GAMING PLUS WIFI có socket như thế nào?",
+          "answer": "MSI B760 GAMING PLUS WIFI: socket: LGA1700.\n\n[Nguồn: catalog-ee2d7931b81ddeaeb317d9e95d25217653675002f1d27ad1719734052a4797e8-v3.md, mục MSI B760 GAMING PLUS WIFI, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "MSI B760 GAMING PLUS WIFI",
+      "document_query": "Theo danh mục tham khảo, MSI B760 GAMING PLUS WIFI có socket như thế nào?",
+      "rag_subject": "MSI B760 GAMING PLUS WIFI"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0032",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn vật liệu hông của NZXT H5 Flow (2024)?",
+    "topic": "product_context",
+    "conversation": "Q0446_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438",
+        "version": 3,
+        "quote": "NZXT H5 Flow (2024): vật liệu hông: Tempered Glass."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0446_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0126",
+    "target_id": "Q0446",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, NZXT H5 Flow (2024) có loại như thế nào?",
+          "answer": "NZXT H5 Flow (2024): vật liệu hông: Tempered Glass.\n\n[Nguồn: catalog-6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438-v3.md, mục NZXT H5 Flow (2024), đoạn 1, phiên bản 3]\n\nNZXT H5 Flow (2024): loại: ATX Mid Tower.\n\n[Nguồn: catalog-6d80f639a0901679845ecc8e6c0b895d6e47f7aca628afe12b64cc06ca119438-v3.md, mục NZXT H5 Flow (2024), đoạn 1"
+        }
+      ],
+      "rag_product_subject": "NZXT H5 Flow (2024)",
+      "document_query": "Theo danh mục tham khảo, NZXT H5 Flow (2024) có loại như thế nào?",
+      "rag_subject": "NZXT H5 Flow (2024)"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0126",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của AMD Ryzen 7 7700X?",
+    "topic": "product_context",
+    "conversation": "Q0448_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-a42c71398b07e30bd31f842b62b64ba322bf521e7dea0c8bd19fbde112f3869e",
+        "version": 3,
+        "quote": "AMD Ryzen 7 7700X: xung cơ bản: 4.5 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-a42c71398b07e30bd31f842b62b64ba322bf521e7dea0c8bd19fbde112f3869e"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0448_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0293",
+    "target_id": "Q0448",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, AMD Ryzen 7 7700X có số nhân như thế nào?",
+          "answer": "AMD Ryzen 7 7700X: số nhân: 8.\n\n[Nguồn: catalog-a42c71398b07e30bd31f842b62b64ba322bf521e7dea0c8bd19fbde112f3869e-v3.md, mục AMD Ryzen 7 7700X, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "AMD Ryzen 7 7700X",
+      "document_query": "Theo danh mục tham khảo, AMD Ryzen 7 7700X có số nhân như thế nào?",
+      "rag_subject": "AMD Ryzen 7 7700X"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0293",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn xung cơ bản của AMD Ryzen 5 7600X?",
+    "topic": "product_context",
+    "conversation": "Q0462_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-c9ab253a5d81db91a15166655f5abdfad3fcf5210f55424a67e41111296e620f",
+        "version": 3,
+        "quote": "AMD Ryzen 5 7600X: xung cơ bản: 4.7 GHz."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-c9ab253a5d81db91a15166655f5abdfad3fcf5210f55424a67e41111296e620f"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0462_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0376",
+    "target_id": "Q0462",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, AMD Ryzen 5 7600X có số nhân như thế nào?",
+          "answer": "AMD Ryzen 5 7600X: số nhân: 6.\n\n[Nguồn: catalog-c9ab253a5d81db91a15166655f5abdfad3fcf5210f55424a67e41111296e620f-v3.md, mục AMD Ryzen 5 7600X, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "AMD Ryzen 5 7600X",
+      "document_query": "Theo danh mục tham khảo, AMD Ryzen 5 7600X có số nhân như thế nào?",
+      "rag_subject": "AMD Ryzen 5 7600X"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0376",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của Lenovo ThinkBook 15 G2 ITL?",
+    "topic": "product_context",
+    "conversation": "Q0471_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-9d2cf777d54302b4c0a7f3d0f4f0866b441a3af2de79dd4bb91bf1de5ae99f35",
+        "version": 3,
+        "quote": "Lenovo ThinkBook 15 G2 ITL: Processor Core: 4."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-9d2cf777d54302b4c0a7f3d0f4f0866b441a3af2de79dd4bb91bf1de5ae99f35"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0471_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0315",
+    "target_id": "Q0471",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Lenovo ThinkBook 15 G2 ITL có CPU như thế nào?",
+          "answer": "Lenovo ThinkBook 15 G2 ITL: Display Type: FHD.\n\n[Nguồn: catalog-9d2cf777d54302b4c0a7f3d0f4f0866b441a3af2de79dd4bb91bf1de5ae99f35-v3.md, mục Lenovo ThinkBook 15 G2 ITL, đoạn 2, phiên bản 3]\n\nLenovo ThinkBook 15 G2 ITL: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-9d2cf777d54302b4c0a7f3d0f4f0866b441a3af2de79dd4bb91bf1de5ae99f35-v3.md, mục Lenovo T"
+        }
+      ],
+      "rag_product_subject": "Lenovo ThinkBook 15 G2 ITL",
+      "document_query": "Theo danh mục tham khảo, Lenovo ThinkBook 15 G2 ITL có CPU như thế nào?",
+      "rag_subject": "Lenovo ThinkBook 15 G2 ITL"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0315",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn số nhân CPU của HP 15-fd0202TU?",
+    "topic": "product_context",
+    "conversation": "Q0472_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-918991685e362df8f799e996de2c3ec56fd9b8026a6fc4da5f39bb7757f239d5",
+        "version": 3,
+        "quote": "HP 15-fd0202TU: Processor Core: 10."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-918991685e362df8f799e996de2c3ec56fd9b8026a6fc4da5f39bb7757f239d5"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0472_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0264",
+    "target_id": "Q0472",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, HP 15-fd0202TU có CPU như thế nào?",
+          "answer": "HP 15-fd0202TU: Display Resolution: 1920x1080.\n\n[Nguồn: catalog-918991685e362df8f799e996de2c3ec56fd9b8026a6fc4da5f39bb7757f239d5-v3.md, mục HP 15-fd0202TU, đoạn 2, phiên bản 3]\n\nHP 15-fd0202TU: RAM: 8GB.\n\n[Nguồn: catalog-918991685e362df8f799e996de2c3ec56fd9b8026a6fc4da5f39bb7757f239d5-v3.md, mục HP 15-fd0202TU, đoạn 1, phiên bản 3]\n\nHP 15-fd0202TU:"
+        }
+      ],
+      "rag_product_subject": "HP 15-fd0202TU",
+      "document_query": "Theo danh mục tham khảo, HP 15-fd0202TU có CPU như thế nào?",
+      "rag_subject": "HP 15-fd0202TU"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0264",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn bộ RAM của G.Skill Trident Z5 RGB 64 GB?",
+    "topic": "product_context",
+    "conversation": "Q0478_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+        "version": 3,
+        "quote": "G.Skill Trident Z5 RGB 64 GB: bộ RAM: 2 thanh × 32 GB mỗi thanh."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0478_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0015",
+    "target_id": "Q0478",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+          "answer": "G.Skill Trident Z5 RGB 64 GB: CAS latency: 32.\n\n[Nguồn: catalog-92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359-v3.md, mục G.Skill Trident Z5 RGB 64 GB, đoạn 2, phiên bản 3]\n\nG.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).\n\n[Nguồn: catalog-92d13967"
+        }
+      ],
+      "rag_product_subject": "G.Skill Trident Z5 RGB 64 GB",
+      "document_query": "Theo danh mục tham khảo, G.Skill Trident Z5 RGB 64 GB có thế hệ và tốc độ RAM như thế nào?",
+      "rag_subject": "G.Skill Trident Z5 RGB 64 GB"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0015",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn công suất định mức theo danh mục của Corsair RM850e (2025)?",
+    "topic": "product_context",
+    "conversation": "Q0486_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-ee59b9f517117dd598b100a03bd4952cee24905dfdc5557a985baa46ff624bf2",
+        "version": 3,
+        "quote": "Corsair RM850e (2025): công suất định mức theo danh mục: 850 W."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-ee59b9f517117dd598b100a03bd4952cee24905dfdc5557a985baa46ff624bf2"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0486_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0349",
+    "target_id": "Q0486",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Corsair RM850e (2025) có loại như thế nào?",
+          "answer": "Corsair RM850e (2025): loại: ATX.\n\n[Nguồn: catalog-ee59b9f517117dd598b100a03bd4952cee24905dfdc5557a985baa46ff624bf2-v3.md, mục Corsair RM850e (2025), đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Corsair RM850e (2025)",
+      "document_query": "Theo danh mục tham khảo, Corsair RM850e (2025) có loại như thế nào?",
+      "rag_subject": "Corsair RM850e (2025)"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0349",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn độ phân giải của LG UltraGear 27GR75Q-B?",
+    "topic": "product_context",
+    "conversation": "Q0488_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-70dc0d3fe32cc2116bdc20e7abac3a3521fa7a29469eb12c70cf87603895d569",
+        "version": 3,
+        "quote": "LG UltraGear 27GR75Q-B: độ phân giải: 2560 × 1440 pixel."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-70dc0d3fe32cc2116bdc20e7abac3a3521fa7a29469eb12c70cf87603895d569"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0488_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0245",
+    "target_id": "Q0488",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, LG UltraGear 27GR75Q-B có đường chéo như thế nào?",
+          "answer": "LG UltraGear 27GR75Q-B: đường chéo: 27 inch.\n\n[Nguồn: catalog-70dc0d3fe32cc2116bdc20e7abac3a3521fa7a29469eb12c70cf87603895d569-v3.md, mục LG UltraGear 27GR75Q-B, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "LG UltraGear 27GR75Q-B",
+      "document_query": "Theo danh mục tham khảo, LG UltraGear 27GR75Q-B có đường chéo như thế nào?",
+      "rag_subject": "LG UltraGear 27GR75Q-B"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0245",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  },
+  {
+    "role": "customer",
+    "question": "Còn kết nối của Logitech G502 Hero?",
+    "topic": "product_context",
+    "conversation": "Q0496_explicit_subject_original_history",
+    "required": [
+      {
+        "document_id": "catalog-5935e8da7b96afb4f7abfab7d90e678673e16f3dc8d7cde6e563c7ed0697df36",
+        "version": 3,
+        "quote": "Logitech G502 Hero: kết nối: Wired."
+      }
+    ],
+    "expected_behavior": "facts",
+    "rubric": "",
+    "gold_document_ids": [
+      "catalog-5935e8da7b96afb4f7abfab7d90e678673e16f3dc8d7cde6e563c7ed0697df36"
+    ],
+    "today": "2026-10-21",
+    "split": "development",
+    "id": "Q0496_explicit_subject_original_history",
+    "variant": "explicit_subject_original_history",
+    "parent_id": "Q0363",
+    "target_id": "Q0496",
+    "input_profile": {
+      "owner_role": "customer",
+      "history": [
+        {
+          "question": "Theo danh mục tham khảo, Logitech G502 Hero có cảm biến như thế nào?",
+          "answer": "Logitech G502 Hero: cảm biến: Optical.\n\n[Nguồn: catalog-5935e8da7b96afb4f7abfab7d90e678673e16f3dc8d7cde6e563c7ed0697df36-v3.md, mục Logitech G502 Hero, đoạn 1, phiên bản 3]"
+        }
+      ],
+      "rag_product_subject": "Logitech G502 Hero",
+      "document_query": "Theo danh mục tham khảo, Logitech G502 Hero có cảm biến như thế nào?",
+      "rag_subject": "Logitech G502 Hero"
+    },
+    "input_provenance": {
+      "round": "candidate_v9_development",
+      "parent_id": "Q0363",
+      "note": "Recorded previous model response as untrusted conversation input, not a knowledge publication or a gold answer. No desired answer supplied to Engine."
+    }
+  }
+]

@@ -1,0 +1,302 @@
+{
+  "A01": {
+    "status": "FAIL",
+    "reason": "Nhầm câu hỏi một kỳ thành compare, không báo doanh thu tháng trước.",
+    "reviewed_by": "Codex"
+  },
+  "A02": {
+    "status": "FAIL",
+    "reason": "Đưa so kỳ sang so sản phẩm, mất hội thoại tài chính.",
+    "reviewed_by": "Codex"
+  },
+  "A03": {
+    "status": "FAIL",
+    "reason": "Tiếp tục đưa đổi chỉ tiêu sang so sản phẩm.",
+    "reviewed_by": "Codex"
+  },
+  "A04": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A05": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A06": {
+    "status": "FAIL",
+    "reason": "Câu xác nhận kỳ bị đưa sang tìm sản phẩm.",
+    "reviewed_by": "Codex"
+  },
+  "A07": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A08": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A09": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A10": {
+    "status": "FAIL",
+    "reason": "Hỏi doanh thu kỳ không có dữ liệu bị đưa sang sản phẩm.",
+    "reviewed_by": "Codex"
+  },
+  "A11": {
+    "status": "FAIL",
+    "reason": "Action clarify trùng nhưng lời hỏi lại về loại sản phẩm; sai ngữ nghĩa tài chính.",
+    "reviewed_by": "Codex"
+  },
+  "A12": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A13": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A14": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A15": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A16": {
+    "status": "FAIL",
+    "reason": "Nhầm lợi nhuận ròng sau thuế thành lãi hoạt động, không được thay metric dù có disclaimer.",
+    "reviewed_by": "Codex"
+  },
+  "A17": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A18": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A19": {
+    "status": "FAIL",
+    "reason": "Không có kỳ đang xem vì A06 lỗi; không hoàn thành chuỗi kỳ vọng.",
+    "reviewed_by": "Codex"
+  },
+  "A20": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A21": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A22": {
+    "status": "FAIL",
+    "reason": "Xếp hạng bán hàng nội bộ bị đưa sang tìm sản phẩm.",
+    "reviewed_by": "Codex"
+  },
+  "A23": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "A24": {
+    "status": "FAIL",
+    "reason": "Năm viết liền chưa định tuyến/giải kỳ đúng.",
+    "reviewed_by": "Codex"
+  },
+  "B-S01": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S02": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S03": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S04": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S05": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S06": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S07": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S08": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S09": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S10": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S11": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-S12": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N01": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N02": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N03": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N04": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N05": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N06": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N07": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N08": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N09": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N10": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N11": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N12": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N13": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N14": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N15": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N16": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N17": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N18": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N19": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N20": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N21": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N22": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N23": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  },
+  "B-N24": {
+    "status": "PASS",
+    "reason": "Đã đọc hành động, plan, nguồn, số liệu và ngữ cảnh; các guard kiểm tra riêng với đáp án chuẩn.",
+    "reviewed_by": "Codex"
+  }
+}

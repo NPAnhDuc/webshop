@@ -1,0 +1,155 @@
+[
+  {
+    "id": "baseline_C31",
+    "origin_round": "old100_patch9",
+    "origin_id": "C31",
+    "payload": {
+      "question": "Intel Core i5-14400F có mấy nhân và boost tối đa bao nhiêu, còn số luồng đã được ghi trong tài liệu chưa?",
+      "confirmed_subject": "Intel Core i5-14400F",
+      "parts": {
+        "P1": "Intel Core i5-14400F có mấy nhân",
+        "P2": "boost tối đa bao nhiêu",
+        "P3": "còn số luồng đã được ghi trong tài liệu chưa"
+      },
+      "answer": "Intel Core i5-14400F: số nhân: 10.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nChưa có nguồn đủ để xác nhận: còn số luồng đã được ghi trong tài liệu chưa.",
+      "declared_unanswered": [
+        "còn số luồng đã được ghi trong tài liệu chưa"
+      ],
+      "sources": [
+        {
+          "source": "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md",
+          "title": "Intel Core i5-14400F",
+          "version": 3,
+          "text": "Intel Core i5-14400F\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nIntel Core i5-14400F: số nhân: 10.\n\nIntel Core i5-14400F: xung cơ bản: 2.5 GHz.\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\nIntel Core i5-14400F: vi kiến trúc: Raptor Lake Refresh.\n\nIntel Core i5-14400F: TDP: 65 W."
+        }
+      ]
+    }
+  },
+  {
+    "id": "baseline_C34",
+    "origin_round": "old100_patch9",
+    "origin_id": "C34",
+    "payload": {
+      "question": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không?",
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "parts": {
+        "P1": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không"
+      },
+      "answer": "Mã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]\n\nTài liệu này chỉ xác nhận bản 408AU; chưa đủ để kết luận bản 041BD nâng cấp được hay không.\n\n[Nguồn: tech-msi-variant-v1.md, mục MSI Modern 15 B12M: phải phân biệt mã vùng, đoạn 1, phiên bản 1]",
+      "declared_unanswered": [],
+      "sources": [
+        {
+          "source": "tech-msi-variant-v1.md",
+          "title": "MSI Modern 15 B12M: phải phân biệt mã vùng",
+          "version": 1,
+          "text": "MSI Modern 15 B12M: phải phân biệt mã vùng\n\nBản thông số MSI Modern 15 B12M-408AU ghi RAM 16 GB DDR4-3200 onboard. Mã trong danh mục là B12M-041BD-BB71255U16GXXDX11EMH, khác mã 408AU. Tài liệu này chỉ xác nhận bản 408AU; chưa đủ để kết luận bản 041BD nâng cấp được hay không. Cũng không được nhầm Modern 15 với Modern 15 H.\n\nNguồn: https://storage-asset.msi.com/specSheet/au/bnp/Modern%2015%20B12M-408AU.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ]
+    }
+  },
+  {
+    "id": "trial_C31",
+    "origin_round": "old100_patch14",
+    "origin_id": "C31",
+    "payload": {
+      "question": "Intel Core i5-14400F có mấy nhân và boost tối đa bao nhiêu, còn số luồng đã được ghi trong tài liệu chưa?",
+      "confirmed_subject": "Intel Core i5-14400F",
+      "parts": {
+        "P1": "Intel Core i5-14400F có mấy nhân",
+        "P2": "boost tối đa bao nhiêu",
+        "P3": "còn số luồng đã được ghi trong tài liệu chưa"
+      },
+      "answer": "Intel Core i5-14400F: số nhân: 10.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\n[Nguồn: catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md, mục Intel Core i5-14400F, đoạn 1, phiên bản 3]\n\nĐây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường.\n\n[Nguồn: tech-wifi7-theory-v1.md, mục Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?, đoạn 1, phiên bản 1]",
+      "declared_unanswered": [],
+      "sources": [
+        {
+          "source": "catalog-37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb-v3.md",
+          "title": "Intel Core i5-14400F",
+          "version": 3,
+          "text": "Intel Core i5-14400F\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 37519dda6cf19f177d3952b4f6ccfbb1edeac669bbb3734536315de55ecfc6fb. Mã linh kiện: chưa có.\n\nNguồn bộ dữ liệu: docyx/pc-part-dataset.\n\nIntel Core i5-14400F: số nhân: 10.\n\nIntel Core i5-14400F: xung cơ bản: 2.5 GHz.\n\nIntel Core i5-14400F: xung boost: 4.7 GHz.\n\nIntel Core i5-14400F: vi kiến trúc: Raptor Lake Refresh.\n\nIntel Core i5-14400F: TDP: 65 W."
+        },
+        {
+          "source": "tech-wifi7-theory-v1.md",
+          "title": "Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?",
+          "version": 1,
+          "text": "Wi-Fi 7: thông lượng lý thuyết có phải tốc độ tải Internet không?\n\nInfographic Intel nêu kênh 320 MHz và 4K QAM là các tính năng Wi-Fi 7. Đây là khả năng kỹ thuật theo điều kiện được ghi trong tài liệu; kết quả thực tế còn phụ thuộc cấu hình và môi trường. Không lấy thông lượng đỉnh để hứa tốc độ Internet hay tự gán Wi-Fi 7 cho máy chưa có thông số card mạng.\n\nNguồn: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-07/wifi7-features-bandwidth-qam-infographic-nologo-1920-1080.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop."
+        }
+      ]
+    }
+  },
+  {
+    "id": "trial_C34",
+    "origin_round": "old100_patch14",
+    "origin_id": "C34",
+    "payload": {
+      "question": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không?",
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "parts": {
+        "P1": "Máy MSI Modern 15 B12M-041BD của shop có chắc RAM hàn giống hệt B12M-408AU không"
+      },
+      "answer": "MSI Modern 15 B12M: RAM: 16GB.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]",
+      "declared_unanswered": [],
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        }
+      ]
+    }
+  },
+  {
+    "id": "control_C05",
+    "origin_round": "old100_patch14",
+    "origin_id": "C05",
+    "payload": {
+      "question": "Nó có cổng LAN và HDMI không, trả lời riêng từng cổng giúp tôi.",
+      "confirmed_subject": "MSI Modern 15 B12M",
+      "parts": {
+        "P1": "Nó có cổng LAN",
+        "P2": "HDMI không"
+      },
+      "answer": "MSI Modern 15 B12M: LAN: No.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 2, phiên bản 3]\n\nMSI Modern 15 B12M: HDMI Port: 1.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 2, phiên bản 3]",
+      "declared_unanswered": [],
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nMSI Modern 15 B12M: Graphics Memory Accessibility: Integrated.\n\nMSI Modern 15 B12M: Graphics Memory: Shared.\n\nMSI Modern 15 B12M: Display Size (Inch): 15.6.\n\nMSI Modern 15 B12M: Display Type: FHD LED Display.\n\nMSI Modern 15 B12M: Display Resolution: 1920x1080.\n\nMSI Modern 15 B12M: Touch Screen: No.\n\nMSI Modern 15 B12M: Optical Drive: No.\n\nMSI Modern 15 B12M: HDMI Port: 1.\n\nMSI Modern 15 B12M: LAN: No.\n\nMSI Modern 15 B12M: Finger Print Sensor: No.\n\nMSI Modern 15 B12M: Operating System: Win-11 Home.\n\nMSI Modern 15 B12M: Power Adapter: 65W.\n\nMSI Modern 15 B12M: Weight (Kg): 1.7 kg."
+        }
+      ]
+    }
+  },
+  {
+    "id": "control_C06",
+    "origin_round": "old100_patch14",
+    "origin_id": "C06",
+    "payload": {
+      "question": "So RAM của MSI Modern 15 B12M và Lenovo LOQ Gaming 15IRH8: dung lượng giống nhau không, loại RAM khác nhau gì?",
+      "confirmed_subject": "MSI Modern 15 B12M; Lenovo LOQ Gaming 15IRH8",
+      "parts": {
+        "P1": "So RAM của MSI Modern 15 B12M",
+        "P2": "Lenovo LOQ Gaming 15IRH8: dung lượng giống nhau không",
+        "P3": "loại RAM khác nhau gì"
+      },
+      "answer": "MSI Modern 15 B12M: RAM: 16GB.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\n[Nguồn: catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md, mục MSI Modern 15 B12M, đoạn 1, phiên bản 3]\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\n[Nguồn: catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md, mục Lenovo LOQ Gaming 15IRH8, đoạn 1, phiên bản 3]",
+      "declared_unanswered": [],
+      "sources": [
+        {
+          "source": "catalog-2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1-v3.md",
+          "title": "MSI Modern 15 B12M",
+          "version": 3,
+          "text": "MSI Modern 15 B12M\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 2243d61cc7fbfde1c3d93d38a133c97a6edb6b1d950fca079a016c91c049a5f1. Mã linh kiện: B12M-041BD-BB71255U16GXXDX11EMH.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nMSI Modern 15 B12M: Processor Brand: Intel.\n\nMSI Modern 15 B12M: Processor Model: Core i7 1255U.\n\nMSI Modern 15 B12M: Processor Core: 10.\n\nMSI Modern 15 B12M: RAM: 16GB.\n\nMSI Modern 15 B12M: RAM Type: DDR4.\n\nMSI Modern 15 B12M: Installed SSD Type: NVMe PCIe.\n\nMSI Modern 15 B12M: Graphics Chipset: Intel Iris Xe Graphics."
+        },
+        {
+          "source": "catalog-68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33-v3.md",
+          "title": "Lenovo LOQ Gaming 15IRH8",
+          "version": 3,
+          "text": "Lenovo LOQ Gaming 15IRH8\n\nThông số mở rộng từ danh mục tham khảo hiện có, chưa xác minh đúng SKU Việt Nam. Không phải cam kết hàng đang bán.\n\nMã danh mục: 68999d66ddb777cb061ce852f404dd944df76cd8b088ff5da57d1b020f769b33. Mã linh kiện: 82XV00SGLK.\n\nNguồn bộ dữ liệu: msjahid/ryans-laptop-inventory-and-specifications.\n\nLenovo LOQ Gaming 15IRH8: Processor Brand: Intel.\n\nLenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.\n\nLenovo LOQ Gaming 15IRH8: Processor Core: 8.\n\nLenovo LOQ Gaming 15IRH8: RAM: 16GB.\n\nLenovo LOQ Gaming 15IRH8: RAM Type: DDR5.\n\nLenovo LOQ Gaming 15IRH8: Installed SSD Type: NVMe PCIe.\n\nLenovo LOQ Gaming 15IRH8: Graphics Chipset: Nvidia RTX 2050 Graphics."
+        }
+      ]
+    }
+  }
+]

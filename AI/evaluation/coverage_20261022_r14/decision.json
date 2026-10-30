@@ -1,0 +1,6 @@
+{
+  "state": "rejected_answered_only_gate",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "Reject answered-only coverage gate: systematic near-attribute false approvals survive candidate-only context and valid answer IDs. Stop extending this judge family; inspect typed requested-field binding before another production repair."
+}

@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-24",
+  "today": "2026-10-24",
+  "database": "D:\\Chatbot\\chatbotshop\\AI\\data\\business_sql\\scenario_v1\\shop.sqlite",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "knowledge_manifest": "D:\\Chatbot\\chatbotshop\\AI\\data\\unstructured\\managed\\ecdd21ab64861674\\manifest.json",
+  "knowledge_sha256": "9407cebdd0e739743a764ccc3c1763ee5c44d35f7a813652d30e367ecc573d4f",
+  "bank_sha256": "f7de5d26bc55b94b97f4f882e1ab2189d6e98b42ca2800c9ac082878ea98832b",
+  "gold_sha256": "cb9b88632e885c84e57eb53af4541e4e7ec89d9717493ae54756dee7d75ea977",
+  "counts": {
+    "admin": 300,
+    "customer": 300
+  },
+  "splits": {
+    "development": 479,
+    "validation": 121
+  },
+  "topics": {
+    "admin_boundary": 4,
+    "business_reasoning": 24,
+    "missing_period": 4,
+    "quarter_target": 4,
+    "monthly_multi": 36,
+    "monthly_single": 84,
+    "multi_period": 132,
+    "clarification": 10,
+    "handoff": 5,
+    "live_boundary": 10,
+    "missing_shop_terms": 10,
+    "permission": 10,
+    "product_single": 67,
+    "technology_reasoning": 34,
+    "unknown_product": 20,
+    "month_target": 12,
+    "product_context": 67,
+    "product_multi": 67
+  },
+  "families": 454,
+  "unique_question_texts": 545,
+  "note": "600 NEW generated cases. Source-bound checks are not semantic correctness. Validation families unseen during repair; same underlying knowledge. No fine-tuning from QA/gold.",
+  "parent": {
+    "revision": "quality_loop_20261024_kb",
+    "knowledge_sha256": "6f97c66adee280b254c09bb6df628395fe8e3b4a831f65e84023a9d6c0b8e1d2"
+  },
+  "change": "Adds admin handbook pack handbook_20261024 (9 docs, internal_methodology) on top of technology_20261024_gaps; same date 2026-10-24."
+}

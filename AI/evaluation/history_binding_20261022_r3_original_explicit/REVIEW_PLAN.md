@@ -1,0 +1,7 @@
+# Missing control after rejected patch11
+
+56 explicit current-question inputs with ORIGINAL parent histories on restored patch9. This completes the missing condition; r2 explicit naming used alternate histories only. Same frozen56 development targets and source facts. Input profiles are byte-equivalent objects to r2 original_history, including truncated assistant text. No answer facts inserted into questions; no model response becomes knowledge or gold.
+
+Read all changed outputs against r2 original and rejected patch11 original with the same profile. Require56 and unchanged integrity. Separate semantic judgments, exact source ownership, irrelevant additions, and PASS_CHECKS. If identical outputs occur, inherit a recorded semantic judgment only for exact answer/action/source-object identity and explicitly document that comparison. Determine whether the two Corsair failures also occur with a naturally explicit user question on unchanged patch9. Do not infer causal certainty from a small selected subset; all56 targets are included and repeated/correlated development cases are not independent validation.
+
+No production repair in this batch; patch11 already rejected and patch9 restored. Further production work should address evidence relevance/owner binding based on traces, not add missing kit facts which already exist, remove history wholesale, or hardcode benchmark fields/answers. Any later candidate needs same-input regression plus broader479 and old100 before acceptance. Reserved24 and validation are not used here.

@@ -1,0 +1,14 @@
+{
+  "new_checks_pass": 11,
+  "new_total": 14,
+  "regression_checks_pass": 58,
+  "regression_total": 60,
+  "median_seconds": 0.937,
+  "max_seconds": 23.953,
+  "integrity": {
+    "unchanged": true,
+    "turns": 74
+  },
+  "accepted_for_application": false,
+  "note": "Mechanical checks do not replace semantic review. A20 wrong read-only tool is still a failure."
+}

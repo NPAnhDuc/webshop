@@ -1,0 +1,1 @@
+Prepared only, NEVER queried. Superseded by r10 before any model call: remove an extra unknown-answer cue from the A12 semantic part and clarify the A02 follow-up part. Original bank/gold/script/metadata preserved; manual labels unchanged. No results or performance score.

@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "Q10",
+    "conversation": "new-w",
+    "question": "Xóa các dòng lỗi trong dữ liệu.",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Xóa các dòng lỗi trong dữ liệu.",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Xóa các dòng lỗi trong dữ liệu.",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "Q14",
+    "conversation": "new-r",
+    "question": "Top5 SKU bán chạy tháng9/2026?",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Top5 SKU bán chạy tháng9/2026?",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Top5 SKU bán chạy tháng9/2026?",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "Q19",
+    "conversation": "control-Q19",
+    "question": "Tìm cho tôi 3 thanh RAM dưới 3 triệu.",
+    "role": "admin",
+    "expected": {
+      "action": "answer",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Tìm cho tôi 3 thanh RAM dưới 3 triệu.",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Tìm cho tôi 3 thanh RAM dưới 3 triệu.",
+            "answer": "Tìm thấy 4/5 sản phẩm được yêu cầu, theo giá tăng dần:\n\n1. Corsair Vengeance LPX 16 GB — Bản tiêu chuẩn chính hãng — 1.170.000 đ; số lượng khả dụng 15.\n2. G.Skill Ripjaws V 32 GB — Bản tiêu chuẩn chính hãng — 2.010.000 đ; số lượng khả dụng 15.\n3. Corsair Vengeance RGB 32 GB — Bản tiêu chuẩn chính hãng — 2.400.000 đ; số lượng khả dụng 15.\n4. TEAMGRO"
+          }
+        ],
+        "catalog_context": {
+          "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+          "filters": {
+            "max_price_exclusive": 3000000,
+            "limit": 5,
+            "category": "ram",
+            "brand": null
+          },
+          "last_selection": [
+            "P24",
+            "P56",
+            "P18",
+            "P3"
+          ]
+        },
+        "last_product_names": [
+          "Corsair Vengeance LPX 16 GB",
+          "G.Skill Ripjaws V 32 GB",
+          "Corsair Vengeance RGB 32 GB",
+          "TEAMGROUP T-Force Delta RGB 32 GB"
+        ]
+      },
+      "rows": [
+        {
+          "id": "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+          "name": "Corsair Vengeance LPX 16 GB",
+          "slug": "corsair-vengeance-lpx-16-gb",
+          "specs": {
+            "ram_type": "DDR5",
+            "ram_gb": 32,
+            "ram_speed_mhz": 6000
+          },
+          "variant": {
+            "id": "var-517c4a98-1",
+            "sku": "SKU-517C4A98",
+            "name": "Bản tiêu chuẩn chính hãng",
+            "price": 1170000,
+            "status": "active",
+            "available_qty": 15
+          },
+          "api_path": "/api/products/corsair-vengeance-lpx-16-gb",
+          "product_page_url": null
+        },
+        {
+          "id": "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+          "name": "G.Skill Ripjaws V 32 GB",
+          "slug": "g-skill-ripjaws-v-32-gb",
+          "specs": {
+            "ram_type": "DDR4",
+            "ram_gb": 32,
+            "ram_speed_mhz": 3200
+          },
+          "variant": {
+            "id": "var-c63a970e-1",
+            "sku": "SKU-C63A970E",
+            "name": "Bản tiêu chuẩn chính hãng",
+            "price": 2010000,
+            "status": "active",
+            "available_qty": 15
+          },
+          "api_path": "/api/products/g-skill-ripjaws-v-32-gb",
+          "product_page_url": null
+        },
+        {
+          "id": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+          "name": "Corsair Vengeance RGB 32 GB",
+          "slug": "corsair-vengeance-rgb-32-gb",
+          "specs": {
+            "ram_type": "DDR5",
+            "ram_gb": 32,
+            "ram_speed_mhz": 6000
+          },
+          "variant": {
+            "id": "var-3d8f348c-1",
+            "sku": "SKU-3D8F348C",
+            "name": "Bản tiêu chuẩn chính hãng",
+            "price": 2400000,
+            "status": "active",
+            "available_qty": 15
+          },
+          "api_path": "/api/products/corsair-vengeance-rgb-32-gb",
+          "product_page_url": null
+        },
+        {
+          "id": "0cce20938aae4a0802e0d840347b6878e13884e9ea5da7b72577c6ca59fd0e86",
+          "name": "TEAMGROUP T-Force Delta RGB 32 GB",
+          "slug": "teamgroup-t-force-delta-rgb-32-gb",
+          "specs": {
+            "ram_type": "DDR5",
+            "ram_gb": 32,
+            "ram_speed_mhz": 6000
+          },
+          "variant": {
+            "id": "var-0cce2093-1",
+            "sku": "SKU-0CCE2093",
+            "name": "Bản tiêu chuẩn chính hãng",
+            "price": 2670000,
+            "status": "active",
+            "available_qty": 15
+          },
+          "api_path": "/api/products/teamgroup-t-force-delta-rgb-32-gb",
+          "product_page_url": null
+        }
+      ],
+      "sources": [
+        {
+          "source": {
+            "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+            "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+            "price_observed_at": null,
+            "notice": "Captured project demo data, not live commercial offers"
+          },
+          "data_kind": "simulation",
+          "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+        }
+      ],
+      "intent": "products",
+      "mode": "agent_tools · structured catalog prototype",
+      "trace": [
+        "agent: planner slots then server tools; no generated arithmetic"
+      ],
+      "plan": {
+        "action": "search",
+        "budget_max_vnd": 3000000,
+        "budget_inclusive": false,
+        "limit": 0,
+        "category": "ram",
+        "brand": "",
+        "continuation": false,
+        "clear_brand": false,
+        "unsupported_filters": false,
+        "product_refs": []
+      },
+      "answer": "Tìm thấy 4/5 sản phẩm được yêu cầu, theo giá tăng dần:\n\n1. Corsair Vengeance LPX 16 GB — Bản tiêu chuẩn chính hãng — 1.170.000 đ; số lượng khả dụng 15.\n2. G.Skill Ripjaws V 32 GB — Bản tiêu chuẩn chính hãng — 2.010.000 đ; số lượng khả dụng 15.\n3. Corsair Vengeance RGB 32 GB — Bản tiêu chuẩn chính hãng — 2.400.000 đ; số lượng khả dụng 15.\n4. TEAMGROUP T-Force Delta RGB 32 GB — Bản tiêu chuẩn chính hãng — 2.670.000 đ; số lượng khả dụng 15.\n\nChưa có permalink sản phẩm được cấu hình; tôi không tự tạo link trang mua hàng.\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh mọi biến thể; giá/tồn chưa phải dữ liệu trực tiếp của shop.",
+      "basic_action": "answer",
+      "tool_evidence": {
+        "data": {
+          "products": [
+            {
+              "id": "517c4a98422aebc21becdfdb794bfe83b9eff9b2d5e7c8ad960366426829742a",
+              "name": "Corsair Vengeance LPX 16 GB",
+              "slug": "corsair-vengeance-lpx-16-gb",
+              "specs": {
+                "ram_type": "DDR5",
+                "ram_gb": 32,
+                "ram_speed_mhz": 6000
+              },
+              "variant": {
+                "id": "var-517c4a98-1",
+                "sku": "SKU-517C4A98",
+                "name": "Bản tiêu chuẩn chính hãng",
+                "price": 1170000,
+                "status": "active",
+                "available_qty": 15
+              },
+              "api_path": "/api/products/corsair-vengeance-lpx-16-gb",
+              "product_page_url": null
+            },
+            {
+              "id": "c63a970ec7f23608647b6d793a91cb366a2f0bde79c61824be1bff84b5f280cf",
+              "name": "G.Skill Ripjaws V 32 GB",
+              "slug": "g-skill-ripjaws-v-32-gb",
+              "specs": {
+                "ram_type": "DDR4",
+                "ram_gb": 32,
+                "ram_speed_mhz": 3200
+              },
+              "variant": {
+                "id": "var-c63a970e-1",
+                "sku": "SKU-C63A970E",
+                "name": "Bản tiêu chuẩn chính hãng",
+                "price": 2010000,
+                "status": "active",
+                "available_qty": 15
+              },
+              "api_path": "/api/products/g-skill-ripjaws-v-32-gb",
+              "product_page_url": null
+            },
+            {
+              "id": "3d8f348c2fc4efa25e9ee48c76bb796666ad8f793845a6e6a8483fd96900eb93",
+              "name": "Corsair Vengeance RGB 32 GB",
+              "slug": "corsair-vengeance-rgb-32-gb",
+              "specs": {
+                "ram_type": "DDR5",
+                "ram_gb": 32,
+                "ram_speed_mhz": 6000
+              },
+              "variant": {
+                "id": "var-3d8f348c-1",
+                "sku": "SKU-3D8F348C",
+                "name": "Bản tiêu chuẩn chính hãng",
+                "price": 2400000,
+                "status": "active",
+                "available_qty": 15
+              },
+              "api_path": "/api/products/corsair-vengeance-rgb-32-gb",
+              "product_page_url": null
+            },
+            {
+              "id": "0cce20938aae4a0802e0d840347b6878e13884e9ea5da7b72577c6ca59fd0e86",
+              "name": "TEAMGROUP T-Force Delta RGB 32 GB",
+              "slug": "teamgroup-t-force-delta-rgb-32-gb",
+              "specs": {
+                "ram_type": "DDR5",
+                "ram_gb": 32,
+                "ram_speed_mhz": 6000
+              },
+              "variant": {
+                "id": "var-0cce2093-1",
+                "sku": "SKU-0CCE2093",
+                "name": "Bản tiêu chuẩn chính hãng",
+                "price": 2670000,
+                "status": "active",
+                "available_qty": 15
+              },
+              "api_path": "/api/products/teamgroup-t-force-delta-rgb-32-gb",
+              "product_page_url": null
+            }
+          ],
+          "total_matching": 4,
+          "requested_count": 5,
+          "returned_count": 4,
+          "ordering": "price_ascending; not a suitability or performance ranking"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      }
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "Q20",
+    "conversation": "control-Q20",
+    "question": "Đọc bảng Excel mới và chuẩn hóa các dòng, nhưng không ghi đè file gốc.",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Đọc bảng Excel mới và chuẩn hóa các dòng, nhưng không ghi đè file gốc.",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Đọc bảng Excel mới và chuẩn hóa các dòng, nhưng không ghi đè file gốc.",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "Q22",
+    "conversation": "control-Q22",
+    "question": "Mã SKU nào có doanh thu cao nhất?",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Mã SKU nào có doanh thu cao nhất?",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Mã SKU nào có doanh thu cao nhất?",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "Q24",
+    "conversation": "control-Q24",
+    "question": "Làm sạch bản sao Excel, giữ nguyên dữ liệu cũ.",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "tool": null
+    },
+    "baseline_result": {
+      "question": "Làm sạch bản sao Excel, giữ nguyên dữ liệu cũ.",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Làm sạch bản sao Excel, giữ nguyên dữ liệu cũ.",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "A03",
+    "conversation": "a",
+    "question": "Còn giá vốn thì sao?",
+    "role": "admin",
+    "expected": {
+      "action": "answer",
+      "metric": "cost",
+      "periods": [
+        {
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01"
+          },
+          "rows": 200,
+          "metrics": {
+            "revenue": 1427320000,
+            "cost": 1240171000,
+            "gross_profit": 187149000,
+            "expenses": 141500520,
+            "orders": 163,
+            "refunds": 35140000,
+            "operating_profit": 45648480,
+            "gross_margin_pct": 13.11
+          }
+        },
+        {
+          "period": {
+            "start": "2026-09-01",
+            "end": "2026-10-01"
+          },
+          "rows": 157,
+          "metrics": {
+            "revenue": 1189908000,
+            "cost": 1010759000,
+            "gross_profit": 179149000,
+            "expenses": 110888988,
+            "orders": 131,
+            "refunds": 35532000,
+            "operating_profit": 68260012,
+            "gross_margin_pct": 15.06
+          }
+        }
+      ],
+      "chart": false,
+      "compare": true
+    },
+    "baseline_result": {
+      "question": "Còn giá vốn thì sao?",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Doanh thu tháng trước bao nhiêu?",
+            "answer": "Báo cáo 2026-09 — tổng theo bản ghi hiện có:\n\n| Chỉ tiêu | Giá trị |\n|---|---:|\n| Doanh thu thuần | 1.189.908.000 đ |\n\nLãi gộp = doanh thu thuần − giá vốn; lãi hoạt động = lãi gộp − chi phí vận hành. Chưa tính lãi vay và thuế, không gọi là lãi ròng.\nĐộ phủ ngày đầu/cuối có bản ghi chưa chứng minh kỳ đã đầy đủ. Chênh lệch quan sát chưa chứng minh ng"
+          },
+          {
+            "question": "So với tháng trước thì sao?",
+            "answer": "So sánh 2026-09 với 2026-08 (mốc):\n\n| Chỉ tiêu | Kỳ mốc | Kỳ đang xét | Chênh lệch | Thay đổi |\n|---|---:|---:|---:|---:|\n| Doanh thu thuần | 1.427.320.000 đ | 1.189.908.000 đ | -237.412.000 đ | -16.63% |\n\nHai kỳ dài 31 và 30 ngày; đây là so sánh tổng, chưa chuẩn hóa theo ngày.\n\nLãi gộp = doanh thu thuần − giá vốn; lãi hoạt động = lãi gộp − chi phí"
+          },
+          {
+            "question": "Còn giá vốn thì sao?",
+            "answer": "Bạn muốn xem chỉ tiêu nào, trong tháng, quý hoặc năm nào?"
+          }
+        ],
+        "admin_context": {
+          "metric": "revenue",
+          "operation": "compare",
+          "active_period": {
+            "start": "2026-09-01",
+            "end": "2026-10-01",
+            "unit": "month",
+            "label": "2026-09"
+          },
+          "comparison_periods": [
+            {
+              "start": "2026-08-01",
+              "end": "2026-09-01",
+              "unit": "month",
+              "label": "2026-08"
+            },
+            {
+              "start": "2026-09-01",
+              "end": "2026-10-01",
+              "unit": "month",
+              "label": "2026-09"
+            }
+          ],
+          "pending": false
+        }
+      },
+      "rows": [],
+      "sources": [],
+      "intent": "business_analysis",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "clarify",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "answer": "Bạn muốn xem chỉ tiêu nào, trong tháng, quý hoặc năm nào?",
+      "basic_action": "clarify"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "A20",
+    "conversation": "o",
+    "question": "Làm sạch file Excel dữ liệu bán hàng của shop giúp tôi.",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "metric": null,
+      "periods": [],
+      "chart": false,
+      "compare": false
+    },
+    "baseline_result": {
+      "question": "Làm sạch file Excel dữ liệu bán hàng của shop giúp tôi.",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Làm sạch file Excel dữ liệu bán hàng của shop giúp tôi.",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  },
+  {
+    "id": "A22",
+    "conversation": "q",
+    "question": "Top5 SKU bán chạy tháng9/2026?",
+    "role": "admin",
+    "expected": {
+      "action": "deferred",
+      "metric": null,
+      "periods": [],
+      "chart": false,
+      "compare": false
+    },
+    "baseline_result": {
+      "question": "Top5 SKU bán chạy tháng9/2026?",
+      "role": "admin",
+      "profile": {
+        "owner_role": "admin",
+        "history": [
+          {
+            "question": "Top5 SKU bán chạy tháng9/2026?",
+            "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nCh"
+          }
+        ],
+        "admin_context": {
+          "last_topic": "data_quality"
+        }
+      },
+      "rows": [],
+      "sources": [
+        {
+          "source_id": "retail_sim_v1",
+          "manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+          "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+          "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+          "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+          "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+          "data_kind": "simulation"
+        }
+      ],
+      "intent": "data_quality",
+      "mode": "agent_tools · SQL finance",
+      "trace": [
+        "admin: typed semantic plan; calendar code; allowlisted read-only SQL"
+      ],
+      "admin_plan": {
+        "operation": "data_quality",
+        "metric": "overview",
+        "time_mode": "missing",
+        "period_unit": "none"
+      },
+      "tool_evidence": {
+        "calls": [
+          {
+            "tool": "admin.data_quality",
+            "arguments": {},
+            "output": {
+              "tool": "admin.data_quality",
+              "data_kind": "simulation",
+              "visibility": "admin_only",
+              "source_id": "retail_sim_v1",
+              "source_manifest_sha256": "68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b",
+              "database_sha256": "2518f490d7a0c8a8b26d9ec7d5d22fecd3f2891b12207abbcbe80f48168515e4",
+              "raw_manifest_sha256": "e72cd28d9b0b8c82d7abd32921316d64b65d25ce3ec05d8eb4f7ff00d0463e0d",
+              "reconciliation_manifest_sha256": "2a79cc2b6003c2d07202db97181a45467b14855772385d3aea9a935dfec1c67c",
+              "contract_sha256": "7c04e698395e7ca7b37dd3a5c7bc45d73a362f08a721a1ae3e66b411f9bff864",
+              "period": {
+                "start_inclusive": "2025-10-01",
+                "end_inclusive": "2026-09-30"
+              },
+              "row_counts": {
+                "products": 67,
+                "financial_ledger": 1748,
+                "operating_expenses": 99,
+                "inventory_daily": 24455
+              },
+              "parity_checks_passed": 8,
+              "observed_financial_dates": {
+                "first": "2025-10-01",
+                "last": "2026-09-30"
+              },
+              "coverage": {
+                "inventory": "declared day x SKU grid reconciled",
+                "sales": "unverified; absent days are not zero",
+                "demand": "not observed"
+              },
+              "active_source_changed": false,
+              "limitations": [
+                "Simulated internal projection, not real shop or live backend data.",
+                "Passing these checks does not certify complete sales, policies, licenses or external truth.",
+                "Orders, customer identities, purchase/movement records and forecast are outside this projection.",
+                "Server must supply the authenticated role; file metadata does not authenticate a user."
+              ]
+            }
+          }
+        ]
+      },
+      "answer": "Kiểm tra toàn bộ revision dữ liệu mô phỏng retail_sim_v1 (không phải riêng kỳ vừa hỏi):\n- Kỳ khai báo: 2025-10-01 đến 2026-09-30 (gồm hai đầu).\n- 67 SKU; 1748 dòng sổ bán/hoàn; 99 khoản chi phí; 24455 snapshot tồn ngày/SKU.\n- Ngày có bản ghi tài chính: 2025-10-01 đến 2026-09-30.\n- 8 kiểm tra parity đã đạt; reader đã kiểm hash/lineage và số dòng.\nChưa xác nhận dữ liệu bán hàng đầy đủ: ngày vắng bản ghi không tự là doanh thu 0. Đối soát tồn không chứng minh đủ doanh số hay dữ liệu thị trường thật. Số dòng sổ không phải số đơn. Chưa xử lý Excel mới hoặc tự sửa dữ liệu.\nNguồn: retail_sim_v1; manifest SHA256 68273c7d55983ff23b5708f1698c016fa45136515e4f5ee55aa97ec5f183658b.",
+      "basic_action": "answer"
+    },
+    "baseline_semantic_pass": false
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "d8b6809bd56940b1a10f3283578b7268",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:23:21.572598+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Top5 SKU bán chạy tháng9/2026?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin"
+  },
+  "state_after": {
+    "owner_role": "admin"
+  },
+  "plans": {
+    "admin_plan": {
+      "operation": "unsupported",
+      "metric": "overview",
+      "time_mode": "missing",
+      "period_unit": "none"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "deferred",
+    "answer": "Chưa nối công cụ xếp hạng bán hàng theo SKU. Đếm SKU trong danh mục không phải xếp hạng doanh số.",
+    "sources": [],
+    "state_resolution": {
+      "method": "explicit_unsupported_capability",
+      "capability": "sales.rank"
+    }
+  },
+  "error_type": null,
+  "seconds": 0.2966931000119075
+}

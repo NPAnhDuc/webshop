@@ -1,0 +1,1 @@
+Completed44/integritytrue; all outputs reviewed. Rejected as production gate, no integration. See REPORT,summary,human_review,decision. No runner remains.

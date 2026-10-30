@@ -1,0 +1,5 @@
+{
+  "state": "no_usable_decoder_mode",
+  "production_accepted": false,
+  "reason": "No usable compatibility workaround: schema/jsonobject500; unconstrained200degenerates to repeated8 until300tokenlimit. Format bypass alone is not safe. Cause not established; cachedstate across variants may confound. Next isolate freshmodelrunner/sampling/backend with bounded canaries, not full91 or productionchange."
+}

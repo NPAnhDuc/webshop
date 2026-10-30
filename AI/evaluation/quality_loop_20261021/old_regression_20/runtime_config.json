@@ -1,0 +1,13 @@
+{
+  "CHATBOT_MODE": "basic_rag",
+  "LLM_PROVIDER": "ollama",
+  "OLLAMA_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+  "PLANNER_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+  "OLLAMA_BASE_URL": "http://127.0.0.1:11435",
+  "OLLAMA_NUM_GPU": "99",
+  "CONVERSATION_MODE": "semantic",
+  "VI_EMBEDDING_URL": "http://127.0.0.1:8011",
+  "RAG_SYNTHESIS": "1",
+  "RAG_ANSWER_MODE": "extractive",
+  "RAG_RERANK": "0"
+}

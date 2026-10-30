@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "8133886259ca428093271fd6286272fb",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:30:34.727715+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "USB-C có đảm bảo máy nào cũng sạc và xuất hình được không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "USB-C có đảm bảo máy nào cũng sạc và xuất hình được không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nĐây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nKhi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+        "reason": "Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nĐây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nKhi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-usb-pd",
+            "title": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+            "source": "tech-usb-pd-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "63b08a7f3292798590cd3163e726bbdd07b3d6d702680fe1eda263d55990624a",
+            "text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+            "section": 1,
+            "chunk_id": "ce392d487b9213c47b8332afbf7b916e51f87c6ef6649191cd95a96a14ec3f79",
+            "score": 0.04918,
+            "dense_score": 0.7118,
+            "lexical_score": 0.2717,
+            "bm25_score": 13.0671,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-thunderbolt-usbc",
+            "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "source": "tech-thunderbolt-usbc-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+            "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "section": 1,
+            "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+            "score": 0.04839,
+            "dense_score": 0.6692,
+            "lexical_score": 0.2443,
+            "bm25_score": 13.015,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 6.189537099999143
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nĐây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nKhi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-usb-pd",
+        "title": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+        "source": "tech-usb-pd-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "63b08a7f3292798590cd3163e726bbdd07b3d6d702680fe1eda263d55990624a",
+        "text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp. Đây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được. Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\nNguồn: https://www.usb.org/usb-charger-pd\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+        "section": 1,
+        "chunk_id": "ce392d487b9213c47b8332afbf7b916e51f87c6ef6649191cd95a96a14ec3f79",
+        "score": 0.04918,
+        "dense_score": 0.7118,
+        "lexical_score": 0.2717,
+        "bm25_score": 13.0671,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-thunderbolt-usbc",
+        "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "source": "tech-thunderbolt-usbc-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+        "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "section": 1,
+        "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+        "score": 0.04839,
+        "dense_score": 0.6692,
+        "lexical_score": 0.2443,
+        "bm25_score": 13.015,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 6.86543370000436
+}

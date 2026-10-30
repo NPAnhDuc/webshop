@@ -1,0 +1,39 @@
+{
+  "cases": 24,
+  "compared_to": "context_r3_candidate1",
+  "before_semantic_pass": 17,
+  "semantic_pass": 18,
+  "semantic_fail": 6,
+  "fixed_ids": [
+    "R2D15"
+  ],
+  "regressed_ids": [],
+  "changed_answer_action_source_ids": [
+    "R2D15"
+  ],
+  "checks": {
+    "PASS_CHECKS": 17,
+    "FAIL_CHECKS": 2,
+    "NEEDS_REVIEW": 5
+  },
+  "roles": {
+    "customer": {
+      "cases": 8,
+      "semantic_pass": 7
+    },
+    "admin": {
+      "cases": 16,
+      "semantic_pass": 11
+    }
+  },
+  "quote_checks": 14,
+  "quote_issues": [],
+  "private_source_leaks": [],
+  "median_seconds": 2.4764999999999997,
+  "total_seconds": 92.404,
+  "before_median_seconds": 2.7965,
+  "before_total_seconds": 98.467,
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Focused24development, not overall chatbot accuracy. No raw data/gold/model change. Prompt-only gain1case still needs old100 regression, including actual procedure/mixed requests."
+}

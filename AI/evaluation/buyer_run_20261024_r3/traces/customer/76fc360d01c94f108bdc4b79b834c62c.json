@@ -1,0 +1,65 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "76fc360d01c94f108bdc4b79b834c62c",
+  "parent_trace_id": "dd9caf492e3343a5a9e59bb09d7bd210",
+  "recorded_at": "2026-10-24T08:01:42.600170+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Xin bảng thông số của hai sản phẩm đầu ở kết quả mới.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 22000000,
+        "limit": 2,
+        "category": "laptop",
+        "brand": null
+      },
+      "last_selection": [
+        "P12",
+        "P1"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 22000000,
+        "limit": 2,
+        "category": "laptop",
+        "brand": null
+      },
+      "last_selection": [
+        "P12",
+        "P1"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "laptop",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.3040003999922192
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "c770513751ab4691a3decb2477a7837f",
+  "parent_trace_id": "47ba1fd22566415c9e2be8d35a99215b",
+  "recorded_at": "2026-10-24T08:12:00.316439+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Theo bản thông tin đang có, G.Skill Trident Z5 RGB 64 GB là loại RAM nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "facts",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": [
+        "P42"
+      ],
+      "fact_fields": [
+        "ram_type"
+      ]
+    }
+  },
+  "calls": [
+    {
+      "tool": "catalog.product_facts",
+      "arguments": {
+        "product_id": "92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+        "fields": [
+          "ram_type"
+        ]
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "data": {
+          "product": {
+            "id": "92d139676d3d197432453358850c32977d1fd7a76a2a5f83c684f62ecb16e359",
+            "name": "G.Skill Trident Z5 RGB 64 GB",
+            "category": "ram",
+            "api_path": "/api/products/g-skill-trident-z5-rgb-64-gb",
+            "product_page_url": null
+          },
+          "facts": [
+            {
+              "field": "ram_type",
+              "value": "DDR5",
+              "missing": false
+            }
+          ],
+          "limitations": [
+            "Missing means absent from the captured record, not that the product lacks the feature."
+          ]
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00",
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "price_basis": "variant price in captured snapshot; not verified live shop pricing",
+        "spec_basis": "product record; not independently verified for every variant",
+        "link_status": "product_page_url unavailable until storefront permalink is configured"
+      },
+      "seconds": 9.729999874252826e-05
+    }
+  ],
+  "result": {
+    "intent": "facts",
+    "basic_action": "answer",
+    "answer": "Theo bản ghi sản phẩm G.Skill Trident Z5 RGB 64 GB:\n- Loại RAM: DDR5\n\nDữ liệu mô phỏng tại 2026-10-23T09:17:59.068865+00:00. Thông số là bản ghi sản phẩm, chưa xác minh với nhà sản xuất cho mọi biến thể.",
+    "sources": [
+      {
+        "source": {
+          "path": "D:\\Chatbot\\chatbotshop\\backend\\data\\store_state.json",
+          "sha256": "f8cd8309dd2d2ab094dd669b0229e17aeaf502498e2e523e729683c6c985a2e8",
+          "price_observed_at": null,
+          "notice": "Captured project demo data, not live commercial offers"
+        },
+        "data_kind": "simulation",
+        "snapshot_captured_at": "2026-10-23T09:17:59.068865+00:00"
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 0.26798710000002757
+}

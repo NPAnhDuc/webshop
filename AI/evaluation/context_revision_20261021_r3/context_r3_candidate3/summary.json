@@ -1,0 +1,39 @@
+{
+  "cases": 24,
+  "compared_to": "context_r3_candidate1_patch7",
+  "before_semantic_pass": 17,
+  "semantic_pass": 18,
+  "semantic_fail": 6,
+  "fixed_ids": [
+    "R2D10"
+  ],
+  "regressed_ids": [],
+  "changed_answer_action_source_ids": [
+    "R2D10"
+  ],
+  "checks": {
+    "PASS_CHECKS": 17,
+    "FAIL_CHECKS": 2,
+    "NEEDS_REVIEW": 5
+  },
+  "roles": {
+    "customer": {
+      "cases": 8,
+      "semantic_pass": 8
+    },
+    "admin": {
+      "cases": 16,
+      "semantic_pass": 10
+    }
+  },
+  "quote_checks": 12,
+  "quote_issues": [],
+  "private_source_leaks": [],
+  "median_seconds": 2.2495000000000003,
+  "total_seconds": 93.217,
+  "before_median_seconds": 2.7965,
+  "before_total_seconds": 98.467,
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Focused development probes,not overall chatbot accuracy. Patch8 rejected andnotapplied; currentpatch9gainisD10,notD15. Old100score87belongs patch7; regression required forpatch9. Cache/warmup uncontrolled,no speed claim."
+}

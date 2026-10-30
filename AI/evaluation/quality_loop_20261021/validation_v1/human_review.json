@@ -1,0 +1,849 @@
+{
+  "Q0004": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0005": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0022": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0037": {
+    "status": "FAIL",
+    "cause": "ROUTING_CLARIFY_INSTEAD_OF_DEFER",
+    "reason": "Yêu cầu chạy dự báo/nhập chính xác ngoài RAG cơ bản; bot hỏi model/kỳ thay vì nói rõ chưa có công cụ. Không có dự báo hay ghi dữ liệu được thực hiện.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0040": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0042": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0043": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0045": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Chưa có đối tượng trong hội thoại, hỏi lại đúng trước khi khẳng định.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0046": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Nói rõ chưa kết nối kênh nhân viên, chưa gửi yêu cầu; không giả vờ đã chuyển.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0053": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Phân biệt240W đặc tả với khả năng thực tế mọi máy/dây, không cam kết công suất máy cụ thể.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0056": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng điều kiện chỉ đảo giá vốn khi hàng bán lại được; còn câu biên/khuyến mãi thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0060": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0061": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0062": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0066": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Thiếu ngân hàng/phụ phí shop thật, nói rõ chưa có nguồn, không lấy chính sách ngoài thay.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0075": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0078": {
+    "status": "FAIL",
+    "cause": "UNRESOLVED_REFERENCE",
+    "reason": "Hội thoại chưa xác định máy nhưng bot trả chính sách chung thay vì hỏi máy nào/đối tượng bảo hành; không bịa thời hạn cụ thể.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0081": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Không bịa phí huyện đảo khi shop chưa cung cấp.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0083": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Có đúng loại case, thêm vật liệu/thể tích cùngSKU; không thiếu yêu cầu chính.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0086": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Phân biệt response time/input lag và không suy1ms toàn hệ thống, đủ ý.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0087": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng model giả không có nguồn; không thay bằng thông số máy khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0088": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Bảng C-TET đúng ngày15/1–10/2/2026 và ngân sách18triệu gắn chiến dịch, không nhầm ngân sách thường xuyên.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0090": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0091": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0093": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Chưa có đối tượng trong hội thoại, hỏi lại đúng trước khi khẳng định.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0094": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Nói rõ chưa có giá/tồn thời gian thực hoặc đường dẫn xác minh, không cam kết.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0100": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đủ thông số AppleIPS/pin/cổng theo dòng và điều kiện cổng/cáp; còn nhiễu OLED/Hz/PD không được hỏi, cần giảm.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0104": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0106": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0115": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng model giả không có nguồn; không thay bằng thông số máy khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0119": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0120": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0121": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Chưa có đối tượng trong hội thoại, hỏi lại đúng trước khi khẳng định.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0122": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Nói rõ chưa có giá/tồn thời gian thực hoặc đường dẫn xác minh, không cam kết.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0124": {
+    "status": "FAIL",
+    "cause": "AUTHORIZATION_RESPONSE",
+    "reason": "Khách hỏi doanh thu nội bộ nhưng bot báo thiếu nguồn thay vì từ chối theo quyền. Không có nguồn/số liệu nội bộ rò rỉ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0133": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0146": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0153": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0158": {
+    "status": "FAIL",
+    "cause": "CONTRADICTORY_MISSING",
+    "reason": "Nêu đủ quy mô5người, phân khúc office/gaming phổ thông/nâng cấp và kênh, nhưng lại báo thiếu phân khúc; kèm tồn kho/khuyến mãi không được hỏi.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0160": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0165": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0174": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0176": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Nêu TB5 dùngUSB-C nhưng không mọi cổng cùng tính năng, phải kiểm máy/cáp/dock; không gán cho cổng bất kỳ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0184": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "ĐủGPU đúng4070TiSUPER; câu mãMSI laptop không liên quan, không phải thông số GPU, cần bỏ nhiễu.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0188": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0192": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0216": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0223": {
+    "status": "FAIL",
+    "cause": "DATE_CONCLUSION_MISSING",
+    "reason": "Có ngày hết hạn31/8/2026 nhưng không kết luận đã hết hạn vào21/10/2026, lại báo thiếu phần đó.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0224": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0226": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0229": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0231": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng model giả không có nguồn; không thay bằng thông số máy khác.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0232": {
+    "status": "FAIL",
+    "cause": "BUDGET_SCOPE_INCOMPLETE",
+    "reason": "Chỉ đưa bảng ngân sách chiến dịch C-BUNDLE24triệu; không trả rõ không thể gọi đây là ngân sách cả năm.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0234": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0236": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0252": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0262": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0265": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng phần dung lượng dành cho định dạng/chức năng và cách tính đơn vị, không kết luận lỗi ổ từ dung lượng hiển thị; thừa giới hạn tốc độ.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0266": {
+    "status": "FAIL",
+    "cause": "HISTORICAL_VERSION_INCOMPLETE",
+    "reason": "Chỉ trả bản từ tháng4 mức6%, thiếu bản tháng3/5% hoặc giới hạn đọc lịch sử rõ; không đối chiếu đúng hai phiên bản.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0268": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0270": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0273": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đúng cần đối chiếu cổng/phụ kiện/cáp, không mọiUSB-C sạc/xuất hình; thừaHz/FPS.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0274": {
+    "status": "FAIL",
+    "cause": "ACCOUNTING_QUESTION_MISROUTED",
+    "reason": "Hỏi nguyên tắc hàng mua chưa bán có vào giá vốn không, không cần biết kỳ/model cụ thể; bot hỏi lại đối tượng nên bỏ câu trả lời có trong nguồn.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0279": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0283": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0286": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0287": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0290": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0291": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0304": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0310": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0326": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0328": {
+    "status": "FAIL",
+    "cause": "ATTRIBUTE_OMISSION",
+    "reason": "Hỏi loại và thể tích MontechAIR903MAX, chỉ có vật liệu hông/54.2L, thiếu loại ATXMidTower; có đủ trong nguồn.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0333": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0348": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0353": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0354": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0355": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0361": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0362": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0366": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0388": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0389": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0393": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0399": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0410": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0412": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0413": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0420": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0436": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0437": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0439": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0440": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0447": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0453": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0454": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0457": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0465": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0475": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0477": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0481": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0485": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0490": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0493": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0513": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0518": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0520": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0522": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0524": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0541": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0542": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0548": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0559": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0562": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0564": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0565": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0574": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0581": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0582": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0593": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  },
+  "Q0596": {
+    "status": "PASS",
+    "cause": "REVIEWED_ADEQUATE",
+    "reason": "Đã đọc đủ thông tin yêu cầu và đối chiếu từng giá trị/thuộc tính với nguồn đúng SKU/kỳ/phiên bản; không dùng mục tiêu thay thực hiện. Có thể còn câu thừa.",
+    "reviewed_by": "Codex",
+    "review_method": "Read question, answer, current conversation/source ownership and frozen expectations; fresh semantic assessment, not automatic source-check acceptance."
+  }
+}

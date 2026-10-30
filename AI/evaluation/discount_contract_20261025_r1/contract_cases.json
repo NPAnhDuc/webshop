@@ -1,0 +1,290 @@
+[
+  {
+    "id": "D001",
+    "question": "Tôi muốn giảm7%, đối chiếu trần giảm giá và người duyệt giúp tôi.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "7",
+      "cap_percent": "6",
+      "relation": "above",
+      "absolute_difference_percentage_points": "1",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D002",
+    "question": "Đề xuất giảm5% có vượt trần không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "5",
+      "cap_percent": "6",
+      "relation": "below",
+      "absolute_difference_percentage_points": "1",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D003",
+    "question": "Giảm6% so với mức tối đa có vượt không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "6",
+      "cap_percent": "6",
+      "relation": "equal",
+      "absolute_difference_percentage_points": "0",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D004",
+    "question": "Không giảm, tức0%, đối chiếu trần hiện hành.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "0",
+      "cap_percent": "6",
+      "relation": "below",
+      "absolute_difference_percentage_points": "6",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D005",
+    "question": "Tôi giảm5,5%, đối chiếu trần.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "5.5",
+      "cap_percent": "6",
+      "relation": "below",
+      "absolute_difference_percentage_points": "1/2",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D006",
+    "question": "Giảm6,01% có vượt trần không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "6.01",
+      "cap_percent": "6",
+      "relation": "above",
+      "absolute_difference_percentage_points": "1/100",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D007",
+    "question": "Đề nghị giảm6,1%, kiểm trần.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "6.1",
+      "cap_percent": "6",
+      "relation": "above",
+      "absolute_difference_percentage_points": "1/10",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D008",
+    "question": "Giảm100% có vượt trần được ghi không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "source": "pricing-policy-v2.md",
+    "expected": {
+      "operation": "compare_policy_percentage",
+      "metric": "discount_rate",
+      "requested_percent": "100",
+      "cap_percent": "6",
+      "relation": "above",
+      "absolute_difference_percentage_points": "94",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D009",
+    "question": "Tôi muốn giảm-1%, đối chiếu trần.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "invalid_percent_range",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D010",
+    "question": "Giảm101% có được không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "invalid_percent_range",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D011",
+    "question": "Giảm5% hay7%, đối chiếu trần.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "ambiguous_requested_rate",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D012",
+    "question": "Giảm theo mức đó, đối chiếu trần.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "missing_requested_rate",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D013",
+    "question": "Biên gộp7% có đạt tối thiểu không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "different_metric_margin_not_discount",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D014",
+    "question": "Tính giá bán sau giảm7% giúp tôi.",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "missing_price_and_financial_operands",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D015",
+    "question": "Gộp hai mã giảm3% và4% được không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "stacking_policy_not_simple_rate_sum",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D016",
+    "question": "Giảm7% có chắc đủ lợi nhuận không?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "requires_price_fifo_cost_and_margin_rule",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D017",
+    "question": "Khách hàng được giảm7% không?",
+    "role": "customer",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "customer_no_private_policy_or_approval",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D018",
+    "question": "Ngày24/10/2026 ai duyệt tất cả thay đổi giá?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "quarterly_approval_cannot_be_global_current",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D019",
+    "question": "Hàng tồn91ngày ai duyệt trước khi xả?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "current_policy_conditional_owner_approval_not_general",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  },
+  {
+    "id": "D020",
+    "question": "Theo kế hoạch Q3/2026 ai phải duyệt thay đổi giá?",
+    "role": "admin",
+    "reference_date": "2026-10-24",
+    "expected": {
+      "simple_comparison_allowed": false,
+      "reason": "explicit_historical_quarter_owner_approval_not_current",
+      "approval_granted": false,
+      "mutation_allowed": false
+    }
+  }
+]

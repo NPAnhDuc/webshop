@@ -1,0 +1,47 @@
+{
+  "cases_sha256": "70045ed4b246291ed45de7d3341b68cda8e9bd3b279848705ced7c9b2419cc8e",
+  "results": [
+    {
+      "id": "K01",
+      "actual": "executed",
+      "passed": true
+    },
+    {
+      "id": "K02",
+      "actual": "ValueError",
+      "passed": false
+    },
+    {
+      "id": "K03",
+      "actual": "ValueError",
+      "passed": false
+    },
+    {
+      "id": "K04",
+      "actual": "ValueError",
+      "passed": false
+    },
+    {
+      "id": "K05",
+      "actual": "ValueError",
+      "passed": false
+    },
+    {
+      "id": "K06",
+      "actual": "ValueError",
+      "passed": false
+    },
+    {
+      "id": "K07",
+      "actual": "ValueError",
+      "passed": true
+    },
+    {
+      "id": "K08",
+      "actual": "PermissionError",
+      "passed": true
+    }
+  ],
+  "passed": 3,
+  "total": 8
+}

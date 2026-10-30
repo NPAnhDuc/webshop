@@ -1,0 +1,492 @@
+[
+ {
+  "id": "BUY-195",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "RAM DDR4 và DDR5 khác nhau thế nào với người dùng văn phòng?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "DDR5 khác DDR4 ở đâu, có cắm chung được không?",
+   "DDR5 là gì?",
+   "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?"
+  ],
+  "answer": "Máy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nDDR5 là một thế hệ bộ nhớ RAM, kế tiếp DDR4.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nDDR5 là thế hệ RAM mới hơn DDR4, có thay đổi về tổ chức truy cập và cấp điện.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]\n\nVới dòng Intel Core đời mới (Series 1, Series 2), tên dạng \"Core 5/7\" và số hiệu bắt đầu bằng 1, 2… để chỉ thế hệ; cùng một cấp",
+  "seconds": 15.047
+ },
+ {
+  "id": "BUY-196",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "SSD NVMe khác SSD SATA ở điểm nào khi mở máy và chép tệp?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "SSD SATA, NVMe và M.2 khác nhau thế nào?",
+   "NVMe là gì?",
+   "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+   "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?"
+  ],
+  "answer": "NVMe là giao thức giao tiếp dành cho lưu trữ không mất dữ liệu, thường được dùng với SSD qua PCIe.\n\n[Nguồn: glossary-nvme-v1.md, mục NVMe là gì?, đoạn 1, phiên bản 1]\n\nNVMe và SATA khác giao tiếp và đặc tính hiệu năng.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nM.2 là dạng thiết kế ổ cắm/ổ lưu trữ, không đồng nghĩa với NVMe.\n\n[Nguồn: tech-ssd-m2-nvme-v1.md, mục SSD SATA, NVMe và M.2 khác nhau thế nào?, đoạn 1, phiên bản 1]\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD ",
+  "seconds": 8.578
+ },
+ {
+  "id": "BUY-197",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "OLED và IPS có ưu nhược điểm gì khi học online lâu?",
+  "status": "answered",
+  "answerability": "partial",
+  "sources": [
+   "OLED là gì?",
+   "OLED là gì và vì sao hiển thị màu đen sâu?"
+  ],
+  "answer": "OLED dùng điểm ảnh tự phát sáng thay cho đèn nền truyền thống.\n\n[Nguồn: tech-oled-basics-v1.md, mục OLED là gì và vì sao hiển thị màu đen sâu?, đoạn 1, phiên bản 1]\n\nOLED dùng các điểm ảnh tự phát sáng, không cần đèn nền truyền thống.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nNói đơn giản, từng điểm ảnh có thể tự bật hoặc tắt để tạo hình ảnh.\n\n[Nguồn: glossary-oled-v1.md, mục OLED là gì?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: IPS có ưu nhược điểm gì khi học online lâu.",
+  "seconds": 6.359
+ },
+ {
+  "id": "BUY-198",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Màn hình 120 Hz có làm mọi trò chơi chạy 120 FPS không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+   "Tần số quét là gì?"
+  ],
+  "answer": "Một màn hình 144 Hz không tự bảo đảm máy chơi mọi game ở 144 FPS.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nMáy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]\n\nĐể tận dụng tần số cao, hệ thống CPU/GPU còn phải tạo đủ khung hình cho nội dung.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]",
+  "seconds": 6.234
+ },
+ {
+  "id": "BUY-199",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Độ phủ màu sRGB và độ sáng màn hình nói lên điều gì?",
+  "status": "unavailable",
+  "answerability": "unverified",
+  "sources": [],
+  "answer": "Model local chưa chọn được bằng chứng đủ chắc chắn. Bạn thử lại giúp tôi nhé.",
+  "seconds": 6.937
+ },
+ {
+  "id": "BUY-200",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "GPU tích hợp có phải lúc nào cũng yếu hơn GPU rời không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "VRAM khác RAM máy tính ở đâu?"
+  ],
+  "answer": "Không suy ra một GPU tích hợp cụ thể yếu hơn mọi GPU rời, hay một máy cụ thể chạy được game/phần mềm nào; cần đối chiếu đúng model GPU và yêu cầu phần mềm.\n\n[Nguồn: tech-gpu-integrated-discrete-v1.md, mục GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?, đoạn 2, phiên bản 1]\n\nGPU tích hợp (đồ họa tích hợp) được xây dựng bên trong bộ xử lý và không có bộ nhớ đồ họa riêng; nó dùng chung bộ nhớ hệ thống (RAM) với CPU.\n\n[Nguồn: tech-gpu-integrated-discrete-v1.md, mục GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?, đoạn 1, phiên bản 1]\n\n",
+  "seconds": 6.422
+ },
+ {
+  "id": "BUY-201",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "TDP có phải chính là điện năng máy luôn tiêu thụ không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Ryzen 7 9800X3D: thông số và giới hạn diễn giải"
+  ],
+  "answer": "Boost tối đa không phải xung được duy trì trong mọi tác vụ; TDP trong bảng không phải phép đo điện năng của cả dàn máy.\n\n[Nguồn: tech-ryzen9800x3d-v1.md, mục Ryzen 7 9800X3D: thông số và giới hạn diễn giải, đoạn 1, phiên bản 1]",
+  "seconds": 5.172
+ },
+ {
+  "id": "BUY-202",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Pin 56 Wh có thể suy ra chính xác dùng được mấy giờ không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+   "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+   "Dung lượng công bố và dung lượng dùng được có giống nhau không?"
+  ],
+  "answer": "Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nCần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\n[Nguồn: tech-macbook-air-m1-v1.md, mục MacBook Air M1 2020: màn hình và cổng của dòng máy, đoạn 1, phiên bản 1]\n\nKhông kết luận ổ bị lỗi chỉ từ việc dung lượng sử dụng hiển thị nhỏ hơn nhãn sản phẩm; cần kiểm tra cách tính đơn vị và phần dung lượng dành riêng.\n\n[Nguồn: tech-flash-capacity-v1.md, ",
+  "seconds": 6.516
+ },
+ {
+  "id": "BUY-203",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "USB-C có đảm bảo máy nào cũng sạc và xuất hình được không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?",
+   "Cổng USB-C có chắc sạc và xuất màn hình được không?"
+  ],
+  "answer": "Muốn xác nhận sạc qua USB-C phải kiểm tra khả năng của laptop, bộ sạc và cáp cho đúng trường hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nĐây là mức hỗ trợ của đặc tả, không phải công suất mọi máy hoặc mọi dây USB-C nhận được.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?, đoạn 1, phiên bản 1]\n\nUSB PD Revision 3.1 mở rộng khả năng cấp điện tới 240 W cùng yêu cầu cáp phù hợp.\n\n[Nguồn: tech-usb-pd-v1.md, mục USB Power Delivery 240 W có nghĩa máy nào cũng sạc được 240 W?,",
+  "seconds": 7.062
+ },
+ {
+  "id": "BUY-204",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Thunderbolt và USB-C có phải cùng một thứ không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+   "Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C"
+  ],
+  "answer": "USB-C mô tả kiểu đầu nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nKhông phải mọi cổng USB-C đều có cùng các chức năng đó.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nTài liệu kỹ thuật Intel mô tả Thunderbolt 5 trên nền đầu nối USB-C và các yêu cầu hỗ trợ đi kèm.\n\n[Nguồn: tech-thunderbolt5-v1.md, mục Thunderbolt 5: không nhầm thông lượng chuẩn với mọi cổng USB-C, đoạn 1, phiên bản 1]\n\nThunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ ",
+  "seconds": 4.953
+ },
+ {
+  "id": "BUY-205",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Hai CPU cùng tên i5 có chắc hiệu năng ngang nhau không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?",
+   "Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?"
+  ],
+  "answer": "Không kết luận hiệu năng ngang nhau chỉ từ chữ i5; cần đối chiếu đầy đủ số hiệu (kể cả hậu tố) và thông số của đúng model.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\nVì vậy hai CPU cùng ghi \"i5\" có thể khác thế hệ và khác số hiệu.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục Hai CPU cùng tên i5 có giống nhau không? Đọc thế hệ CPU Intel Core thế nào?, đoạn 2, phiên bản 1]\n\n\"i5\" (hoặc i3, i7, i9) chỉ là cấp dòng sản phẩm, không xác định một CPU cụ thể.\n\n[Nguồn: tech-cpu-name-generation-v1.md, mục",
+  "seconds": 6.984
+ },
+ {
+  "id": "BUY-206",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Dung lượng VRAM khác RAM máy tính ở đâu?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "VRAM khác RAM máy tính ở đâu?",
+   "VRAM khác RAM máy tính ở đâu?"
+  ],
+  "answer": "Không đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nVới đồ họa tích hợp Intel, Intel cho biết GPU không có bộ nhớ riêng mà dùng bộ nhớ chia sẻ được cấp phát tự động; vì vậy dung lượng RAM của máy không phải VRAM riêng.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nRAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]",
+  "seconds": 11.484
+ },
+ {
+  "id": "BUY-207",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Nguồn 80 Plus có tự chứng minh đủ công suất cho mọi bộ PC không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+   "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?"
+  ],
+  "answer": "Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\n80 PLUS là chương trình đặc tả và chứng nhậ",
+  "seconds": 6.672
+ },
+ {
+  "id": "BUY-208",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "RAM dual-channel là gì, khi nào có lợi?",
+  "status": "answered",
+  "answerability": "partial",
+  "sources": [
+   "Nâng cấp RAM laptop: SO-DIMM và RAM hàn"
+  ],
+  "answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: khi nào có lợi.",
+  "seconds": 5.282
+ },
+ {
+  "id": "BUY-209",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Ổ SSD gần đầy có thể ảnh hưởng hiệu năng như thế nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?",
+   "Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?"
+  ],
+  "answer": "Tài liệu Samsung nói về SSD trung tâm dữ liệu; mức chậm thực tế khi ổ gần đầy phụ thuộc model, firmware và kiểu ghi.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 2, phiên bản 1]\n\nSSD phải xóa khối dữ liệu cũ trước khi ghi lại, và xóa lâu hơn ghi.\n\n[Nguồn: tech-ssd-free-space-v1.md, mục Ổ SSD gần đầy có làm chậm máy không? Vì sao SSD cần chừa dung lượng trống?, đoạn 1, phiên bản 1]\n\nĐể giữ tốc độ ghi, bộ điều khiển SSD chạy thu gom rác (garbage collection): gom các trang còn hợp lệ về một chỗ và xóa các khối chứa trang ",
+  "seconds": 6.797
+ },
+ {
+  "id": "BUY-210",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Shop cho đổi máy do không thích màu trong bao lâu?",
+  "status": "clarify",
+  "answerability": "clarify",
+  "sources": [],
+  "answer": "Bạn đang nhắc tới sản phẩm/model, kỳ hoặc tài liệu cụ thể nào? Tôi cần xác định rõ đối tượng trước khi trả lời.",
+  "seconds": 0.485
+ },
+ {
+  "id": "BUY-211",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Mua online phát hiện điểm chết màn hình thì shop xử lý thế nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Chính sách dùng cho shop giả lập",
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Khi bán thật cần chủ shop duyệt điều kiện theo từng SKU.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nKhách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nKhông phải chính sách hay kết quả kinh doanh thật.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập, đoạn 1, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+  "seconds": 3.187
+ },
+ {
+  "id": "BUY-212",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Bảo hành pin khác bảo hành toàn máy ở điểm nào theo chính sách shop.",
+  "seconds": 2.922
+ },
+ {
+  "id": "BUY-213",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Hóa đơn VAT của shop được xuất khi nào và cần thông tin gì?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Hóa đơn VAT của shop được xuất khi nào; cần thông tin gì.",
+  "seconds": 3.093
+ },
+ {
+  "id": "BUY-214",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Điều kiện trả góp của shop có bắt buộc dùng thẻ tín dụng không?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Điều kiện trả góp của shop có bắt buộc dùng thẻ tín dụng không.",
+  "seconds": 3.0
+ },
+ {
+  "id": "BUY-215",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Hộp đã mở có còn được trả hàng theo chính sách shop không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Chính sách này chỉ dùng demo.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+  "seconds": 3.156
+ },
+ {
+  "id": "BUY-216",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Shop có nhận bảo hành nếu khách tự nâng RAM không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nKhông lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nKhi bán thật cần chủ shop duyệt điều kiện theo từng SKU.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệ",
+  "seconds": 2.922
+ },
+ {
+  "id": "BUY-217",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Hàng trưng bày có chính sách riêng nào tại shop?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Chính sách này chỉ dùng demo.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+  "seconds": 2.844
+ },
+ {
+  "id": "BUY-218",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Giao đến tỉnh khác mất bao lâu theo chính sách hiện hành?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Giao đến tỉnh khác mất bao lâu theo chính sách hiện hành.",
+  "seconds": 2.906
+ },
+ {
+  "id": "BUY-219",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Shop có thu phí giao máy và lắp đặt không?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Shop có thu phí giao máy; lắp đặt không.",
+  "seconds": 3.078
+ },
+ {
+  "id": "BUY-220",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Muốn hủy đơn trước lúc giao thì làm theo bước nào?",
+  "status": "deferred",
+  "answerability": "deferred",
+  "sources": [],
+  "answer": "Yêu cầu này cần công cụ ngoài RAG cơ bản; tôi chưa thực hiện phép tính, truy vấn trực tiếp hay hành động đó. Tôi có thể đọc điều kiện hoặc báo cáo đã có.",
+  "seconds": 1.578
+ },
+ {
+  "id": "BUY-221",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Mã giảm giá có dùng cùng chương trình trả góp không?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Mã giảm giá có dùng cùng chương trình trả góp không.",
+  "seconds": 2.937
+ },
+ {
+  "id": "BUY-222",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Chi nhánh shop ở đâu và giờ mở cửa hôm nay thế nào?",
+  "status": "no_source",
+  "answerability": "none",
+  "sources": [],
+  "answer": "Chưa có nguồn đủ để xác nhận: Chi nhánh shop ở đâu; giờ mở cửa hôm nay thế nào.",
+  "seconds": 2.765
+ },
+ {
+  "id": "BUY-223",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Làm sao liên hệ nhân viên thật của shop để xác nhận thông số?",
+  "status": "handoff",
+  "answerability": "handoff",
+  "sources": [],
+  "answer": "Hiện chưa có kênh chuyển nhân viên được kết nối, nên chưa có yêu cầu nào được gửi.",
+  "seconds": 1.703
+ },
+ {
+  "id": "BUY-224",
+  "role": "customer",
+  "family": "knowledge_policy",
+  "question": "Nếu thông tin hai tài liệu bảo hành khác nhau thì ưu tiên bản nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Không lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+  "seconds": 2.953
+ },
+ {
+  "id": "BUY-226",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Lập trình Android và chạy máy ảo thì ưu tiên RAM hay GPU?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "VRAM khác RAM máy tính ở đâu?",
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "VRAM khác RAM máy tính ở đâu?"
+  ],
+  "answer": "VRAM (bộ nhớ đồ họa, frame buffer) là bộ nhớ tốc độ cao nằm trên card đồ họa, phục vụ GPU xử lý và hiển thị hình ảnh.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]\n\nRAM máy tính (bộ nhớ hệ thống) là bộ nhớ chung của máy.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 1, phiên bản 1]\n\nKhông đổi dung lượng RAM thành VRAM hay ngược lại khi tư vấn.\n\n[Nguồn: tech-vram-system-ram-v1.md, mục VRAM khác RAM máy tính ở đâu?, đoạn 2, phiên bản 1]\n\nGPU tích hợp (đồ họa tích hợp) được xây dựng bên trong bộ xử lý và không có bộ nhớ",
+  "seconds": 7.407
+ },
+ {
+  "id": "BUY-229",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Muốn chơi Black Myth Wukong, chưa biết độ phân giải thì có thể cam kếtFPS chưa?",
+  "status": "answered",
+  "answerability": "partial",
+  "sources": [
+   "Màn hình nhiều Hz có tự làm game tăng FPS không?",
+   "Chọn laptop chơi game: cần hỏi gì trước?"
+  ],
+  "answer": "Tần số quét là khả năng làm mới hình ảnh của màn hình.\n\n[Nguồn: tech-refresh-fps-v1.md, mục Màn hình nhiều Hz có tự làm game tăng FPS không?, đoạn 1, phiên bản 1]\n\nCần biết game, độ phân giải và yêu cầu sử dụng trước khi chọn CPU/GPU.\n\n[Nguồn: tech-laptop-choice-v1.md, mục Chọn laptop chơi game: cần hỏi gì trước?, đoạn 1, phiên bản 1]\n\nChưa có nguồn đủ để xác nhận: Muốn chơi Black Myth Wukong.",
+  "seconds": 7.234
+ },
+ {
+  "id": "BUY-232",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Máy học tập cho con nhỏ nên cân nhắc độ bền và bảo hành như thế nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ",
+   "Chính sách dùng cho shop giả lập"
+  ],
+  "answer": "Khách muốn xác nhận bảo hành hoặc thanh toán cần liên hệ nhân viên.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nKhông lấy thời hạn bảo hành của cửa hàng nước ngoài áp dụng cho shop Việt Nam.\n\n[Nguồn: customer-policy-v1.md, mục Chính sách dùng cho shop giả lập > Đổi trả và bảo hành, đoạn 2, phiên bản 1]\n\nVới học tập cần hỏi phần mềm, số ứng dụng chạy đồng thời và khả năng nâng cấp của đúng máy.\n\n[Nguồn: tech-ram-capacity-v1.md, mục RAM 8 GB, 16 GB hay 32 GB: chọn theo tác vụ, đoạn 1, phiên bản 1]\n\nNhiều ứng dụng cùng lúc cần ",
+  "seconds": 5.266
+ },
+ {
+  "id": "BUY-234",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Muốn chỉnh ảnh màu chính xác thì màn hình cần thông số và kiểm chứng nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Tần số quét là gì?",
+   "Cổng USB-C có chắc sạc và xuất màn hình được không?"
+  ],
+  "answer": "Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]",
+  "seconds": 6.688
+ },
+ {
+  "id": "BUY-236",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Làm AI local có bắt buộc dùng GPU rời, cần hỏi quy mô mô hình thế nào?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?",
+   "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+   "VRAM khác RAM máy tính ở đâu?"
+  ],
+  "answer": "GPU tích hợp (đồ họa tích hợp) được xây dựng bên trong bộ xử lý và không có bộ nhớ đồ họa riêng; nó dùng chung bộ nhớ hệ thống (RAM) với CPU.\n\n[Nguồn: tech-gpu-integrated-discrete-v1.md, mục GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?, đoạn 1, phiên bản 1]\n\nGPU rời (đồ họa rời, card đồ họa) là chip riêng, có bộ nhớ riêng không chia sẻ với CPU.\n\n[Nguồn: tech-gpu-integrated-discrete-v1.md, mục GPU tích hợp và GPU rời khác nhau thế nào? GPU tích hợp có luôn yếu hơn không?, đoạn 1, phiên bản 1]\n\nIntel mô tả đồ họa rời cho hiệu năng cao hơn đồ họa tích hợp vì có b",
+  "seconds": 7.125
+ },
+ {
+  "id": "BUY-239",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Muốn nâng máy cũ nhưng chưa biết model, có thể mua RAM bất kỳ không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+   "DDR5 là gì?",
+   "Kingston KC3000: giao tiếp, DRAM và phiên bản dung lượng"
+  ],
+  "answer": "Máy dùng RAM DDR4 không mặc nhiên lắp được RAM DDR5; cần kiểm tra hệ thống có hỗ trợ DDR5 trước khi mua.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nDDR5 là một thế hệ bộ nhớ RAM, kế tiếp DDR4.\n\n[Nguồn: glossary-ddr5-v1.md, mục DDR5 là gì?, đoạn 1, phiên bản 1]\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nKhông suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hà",
+  "seconds": 5.813
+ },
+ {
+  "id": "BUY-241",
+  "role": "customer",
+  "family": "consultation",
+  "question": "Dùng Linux là chính thì có thể cam kết mọi laptop đều tương thích không?",
+  "status": "answered",
+  "answerability": "full",
+  "sources": [
+   "Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?",
+   "DDR5 khác DDR4 ở đâu, có cắm chung được không?"
+  ],
+  "answer": "Rãnh khóa được thiết kế để ngăn lắp nhầm các thế hệ không tương thích.\n\n[Nguồn: tech-ddr5-basics-v1.md, mục DDR5 khác DDR4 ở đâu, có cắm chung được không?, đoạn 1, phiên bản 1]\n\nĐể dùng 6 GHz cần cả card mạng, router tương thích và môi trường phần mềm hỗ trợ.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]\n\nChỉ nâng router không đủ nếu máy không hỗ trợ.\n\n[Nguồn: tech-wifi-bands-v1.md, mục Wi-Fi 6, 6E và 7: vì sao chưa chắc dùng được 6 GHz?, đoạn 1, phiên bản 1]",
+  "seconds": 6.297
+ }
+]

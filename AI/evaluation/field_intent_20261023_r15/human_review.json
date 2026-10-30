@@ -1,0 +1,696 @@
+{
+  "F15-Q0113_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0125_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0163_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0175_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0191_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0202_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0209_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0210_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0218_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0227_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [
+      "internal-hard-drive/type"
+    ],
+    "extra_fields": [
+      "internal-hard-drive/cache"
+    ]
+  },
+  "F15-Q0246_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0247_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "memory/modules"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0272_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0278_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0292_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0300_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "case/side_panel"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0301_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "case/side_panel"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0314_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0321_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0322_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [
+      "internal-hard-drive/type"
+    ],
+    "extra_fields": [
+      "internal-hard-drive/cache"
+    ]
+  },
+  "F15-Q0327_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0329_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0334_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0343_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0356_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0357_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0368_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0373_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0381_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [
+      "internal-hard-drive/type"
+    ],
+    "extra_fields": [
+      "internal-hard-drive/cache"
+    ]
+  },
+  "F15-Q0382_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "over_fallback",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0383_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "motherboard/form_factor"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0391_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0392_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "over_fallback",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0397_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0398_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0401_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0402_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0403_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0406_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0411_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0417_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0422_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0427_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0428_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0432_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0438_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0442_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0446_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "case/side_panel"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0448_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0462_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [
+      "cpu/core_clock"
+    ],
+    "extra_fields": []
+  },
+  "F15-Q0471_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0472_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0478_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "memory/cas_latency",
+      "memory/first_word_latency",
+      "memory/speed"
+    ]
+  },
+  "F15-Q0486_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0488_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-Q0496_original_history": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C09": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Display Resolution",
+      "laptop/Display Size (Inch)",
+      "laptop/Display Type"
+    ]
+  },
+  "F15-C10": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C11": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C12": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C13": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C14": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C15": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C16": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C17": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C19": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C20": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C21": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C24": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C30": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C31": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "cpu/boost_clock",
+      "cpu/core_count"
+    ]
+  },
+  "F15-C33": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Display Type",
+      "laptop/HDMI Port"
+    ]
+  },
+  "F15-C34": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "unsafe_shortcut",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/RAM"
+    ]
+  },
+  "F15-C36": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C40": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C46": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A03": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A09": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "invalid_contract",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A17": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A19": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A22": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A25": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A26": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A28": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A32": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-A38": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C01": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Processor Brand",
+      "laptop/Processor Core"
+    ]
+  },
+  "F15-C02": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "field_mismatch",
+    "missing_fields": [],
+    "extra_fields": [
+      "laptop/Graphics Chipset"
+    ]
+  },
+  "F15-C05": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C06": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  },
+  "F15-C27": {
+    "reviewed_by": "Codex",
+    "reviewed": true,
+    "classification": "exact",
+    "missing_fields": [],
+    "extra_fields": []
+  }
+}

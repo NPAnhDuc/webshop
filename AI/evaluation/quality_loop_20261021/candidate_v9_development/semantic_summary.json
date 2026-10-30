@@ -1,0 +1,118 @@
+{
+  "cases": 479,
+  "semantic_pass": 450,
+  "semantic_fail": 29,
+  "reviewed": 479,
+  "inherited": 112,
+  "fresh": 367,
+  "roles": {
+    "customer": {
+      "PASS": 231,
+      "FAIL": 17
+    },
+    "admin": {
+      "PASS": 219,
+      "FAIL": 12
+    }
+  },
+  "topics": {
+    "admin_boundary": {
+      "PASS": 2,
+      "FAIL": 1
+    },
+    "business_reasoning": {
+      "FAIL": 11,
+      "PASS": 6
+    },
+    "clarification": {
+      "PASS": 6
+    },
+    "handoff": {
+      "PASS": 4
+    },
+    "live_boundary": {
+      "PASS": 8
+    },
+    "missing_period": {
+      "PASS": 4
+    },
+    "missing_shop_terms": {
+      "PASS": 6,
+      "FAIL": 2
+    },
+    "month_target": {
+      "PASS": 9
+    },
+    "monthly_multi": {
+      "PASS": 27
+    },
+    "monthly_single": {
+      "PASS": 66
+    },
+    "multi_period": {
+      "PASS": 102
+    },
+    "permission": {
+      "PASS": 9
+    },
+    "product_context": {
+      "PASS": 54,
+      "FAIL": 2
+    },
+    "product_multi": {
+      "PASS": 55,
+      "FAIL": 1
+    },
+    "product_single": {
+      "PASS": 53,
+      "FAIL": 3
+    },
+    "quarter_target": {
+      "PASS": 3
+    },
+    "technology_reasoning": {
+      "FAIL": 9,
+      "PASS": 19
+    },
+    "unknown_product": {
+      "PASS": 17
+    }
+  },
+  "conversation_groups": 358,
+  "groups_all_pass": 330,
+  "secondary_issue_cases": 53,
+  "failed_ids": [
+    "Q0002",
+    "Q0017",
+    "Q0020",
+    "Q0030",
+    "Q0055",
+    "Q0073",
+    "Q0102",
+    "Q0116",
+    "Q0137",
+    "Q0154",
+    "Q0156",
+    "Q0168",
+    "Q0178",
+    "Q0191",
+    "Q0193",
+    "Q0194",
+    "Q0196",
+    "Q0203",
+    "Q0214",
+    "Q0228",
+    "Q0239",
+    "Q0241",
+    "Q0248",
+    "Q0258",
+    "Q0301",
+    "Q0302",
+    "Q0330",
+    "Q0351",
+    "Q0396"
+  ],
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Fulldevelopment rubric(mainfacts;secondarynoise recorded),not independent validation or real-user accuracy; manyfinancialtemplates.112reviews inherited exact outputs,367fresh; no overall600semantic score forpatch9."
+}

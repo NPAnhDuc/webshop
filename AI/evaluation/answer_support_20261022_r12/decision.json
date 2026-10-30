@@ -1,0 +1,6 @@
+{
+  "state": "rejected_as_production_gate",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "Reject r11-style combined judge as production gate: false accepts survive literal membership; valid unknowns, tables, implicit answers and harmless typography are falsely rejected. Keep diagnostic evidence and accepted patch9 unchanged."
+}

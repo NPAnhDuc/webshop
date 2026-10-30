@@ -1,0 +1,14 @@
+{
+  "new_checks_pass": 18,
+  "new_total": 24,
+  "regression_checks_pass": 57,
+  "regression_total": 60,
+  "median_seconds": 0.7655000000000001,
+  "max_seconds": 21.156,
+  "integrity": {
+    "unchanged": true,
+    "turns": 84
+  },
+  "accepted_for_application": false,
+  "note": "Mechanical checks do not replace semantic review. New revision corrects Q12 gold and tests six new controls."
+}

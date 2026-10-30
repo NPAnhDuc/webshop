@@ -1,0 +1,47 @@
+{
+  "code": {
+    "app.py": "20d8f2228d56906a9d3dd0b5635b86e2b8465046b6ef5ede27d0b46489985f1b",
+    "shopbot\\__init__.py": "3d3522e3a3d7e828a278da85449f12b48558b67133240f3a0800150e81f3e5b4",
+    "shopbot\\agent_conversation.py": "792855628b74288d3150a3cd2d04239172e08cf8c6104463f363bc5ca45ec598",
+    "shopbot\\agent_tools.py": "ac3e3074504d47ebdde8b3f514e2ab2c2e010730fe6194f8170f5b030d37af65",
+    "shopbot\\analytics.py": "4222a12407603b8a6adf40cdf166aa853f1e987d01da000fd0a0d08dc67f562a",
+    "shopbot\\basic_rag.py": "d80b6a19982c866db5aa5ed916162033536bff9a253f8aa2c67cd3ec66c22bf9",
+    "shopbot\\business_analysis.py": "88b472889d9671c957b74e314a6b8fa315b3e9e30c9cac05bf50817de576074d",
+    "shopbot\\business_review.py": "3161861914d39d5741eb3f7c78dd1b106f50bd457704ea60d091836bcb882098",
+    "shopbot\\catalog_planner.py": "c8df09765d4f9201a3a82aa0be89bd157b43b3572a51d770f7fc95867fcb8e18",
+    "shopbot\\chunking.py": "a5ca1b546743004c68a7e08f6a3c307e7b6e263015841b7e74c48c3db58a229e",
+    "shopbot\\conversation.py": "b703252837273e2212d72bd59e0375a699d0460325f9a2d17e4cd9d38146ed81",
+    "shopbot\\dense_retrieval.py": "7941050449f41809a678f02e6afd72071511444dc339aa0a0cbdd494e24fd95f",
+    "shopbot\\engine.py": "a1ac2730e9f39ee12d4e4536f8e8991f9b71dedac23289a1960dac80da17bbe1",
+    "shopbot\\grounded_rag.py": "78b0cf822b4f3e574a664ef5373ee3c5ef61c94c574d90432ddfb5ba99f4b323",
+    "shopbot\\knowledge.py": "24e7219ea5380da3c79372966544df97050bcd32a25b69263b2ea6a54bcbb1fe",
+    "shopbot\\knowledge_ui.py": "e25726ad79ddc55ff06b7de66c1dd6ce7458f74e32357d944208cd4feb15edf6",
+    "shopbot\\layout.py": "fd1421f7a30af63220097d0858ad5a10d2bc374b62c916c392c760d4e5273ad3",
+    "shopbot\\metric_contract.py": "29a26a03951eb6a7f25a58425c36b0d7634204a5fe8cec42a10aafe617c06a41",
+    "shopbot\\metric_controller.py": "06fc782e5b981ad52a404a4fb18774c67f7aa2d703c4fb2523bee21577d84fef",
+    "shopbot\\monthly.py": "3f21779a2a7f26e8232e88dfd84a64800b1956e5381610484716d1c7d6a8d93a",
+    "shopbot\\monthly_ui.py": "ec4de1c4c621c08c7ee36dfcecae3aee47592016cf2d153fa867e7e49990adc7",
+    "shopbot\\quality_eval.py": "aa6e65141aeb9e64b06e573c03cce301e1156e93dd4bbcbc7deb2ed84e3a8633",
+    "shopbot\\rag_answer.py": "e9d80d574d6327d6309029852f894d3aab0759f5b09298f967b08db49880623e",
+    "shopbot\\rag_scope.py": "80daaaea7e4ef7a78e5bb1a44314e75ca9a212b00ac9d24977ed70a236ffee81",
+    "shopbot\\reporting.py": "5a40a22db036f6621bcd1c4c8c9efd8b6957e47bc676ddf11954461d5ef92584",
+    "shopbot\\retrieval.py": "4eed4e1b4d85fc3c36d4a3b03375a26381f6cb0920f2f2a50ec190b18c490bf4",
+    "shopbot\\sales.py": "674b18a56448f71bcb7fc6830cd21d0f260c7e019f9dfee65204410cb36a688a",
+    "shopbot\\store.py": "57447d75722203c5b6cb0da0c8e0e0dba7bb5cada88d460ecc93d801cb53c9bf",
+    "shopbot\\validation.py": "5affcef867af12a96b849e8f22a4685d96982081d6b7cc7247adc57a84ee62e5",
+    "scripts\\run_quality_agent_catalog_r2.py": "cc92c69722d982533fd1c3ac373899701246406871750af66feb7586f7bd5df5"
+  },
+  "config": {
+    "OLLAMA_BASE_URL": "http://127.0.0.1:11435",
+    "OLLAMA_MODEL": "qwen3:4b-instruct-2507-q4_K_M",
+    "OLLAMA_NUM_GPU": "99"
+  },
+  "files": {
+    "D:\\Chatbot\\chatbotshop\\AI\\data\\agent_platform_20261023\\catalog_v1\\catalog_public.json": "b3f66fafadc77b5c4824ae9b0400af7a912fa217d3b6b872a074e44f4f2da743",
+    "D:\\Chatbot\\chatbotshop\\AI\\data\\business_sql\\scenario_v1\\shop.sqlite": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\agent_catalog_20261023_r2\\bank.json": "aa8a64347075c05bd8c2c7b1d6573420d54b6a9ac615d959485374a5dea70a5c",
+    "D:\\Chatbot\\chatbotshop\\AI\\evaluation\\agent_catalog_20261023_r2\\gold.json": "49fefd8a0bc9ca86a0892aa4a786274c0ac4d98266f333d4b8889a20f406e6f1"
+  },
+  "date": "2026-10-23",
+  "mode": "Opt-in Engine agent_tools, staged local planner; unchanged r1 development bank, deterministic numeric renderer. Twelve developer-authored development turns/nine conversations; not independent validation or RAG479 score. No embedding/retrieval/service launch/unload; gold never enters planner input."
+}

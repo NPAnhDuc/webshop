@@ -1,0 +1,364 @@
+{
+  "R9-001": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-002": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-003": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": false
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-004": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-005": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-006": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-007": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-008": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-009": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-010": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-011": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-012": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-013": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-014": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-015": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-016": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-017": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-018": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-019": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-020": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-021": {
+    "checks": {
+      "P1": true
+    },
+    "categories": {
+      "P1": "valid_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-022": {
+    "checks": {
+      "P1": true,
+      "P2": true,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-023": {
+    "checks": {
+      "P1": true,
+      "P2": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-024": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_scope"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-025": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_attribute"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-026": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-027": {
+    "checks": {
+      "P1": false,
+      "P2": false
+    },
+    "categories": {
+      "P1": "wrong_scope",
+      "P2": "wrong_scope"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-028": {
+    "checks": {
+      "P1": true,
+      "P2": false
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-029": {
+    "checks": {
+      "P1": true,
+      "P2": false,
+      "P3": true
+    },
+    "categories": {
+      "P1": "supported",
+      "P2": "omitted_part",
+      "P3": "supported"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-030": {
+    "checks": {
+      "P1": false
+    },
+    "categories": {
+      "P1": "wrong_scope"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  },
+  "R9-031": {
+    "checks": {
+      "P1": false,
+      "P2": false,
+      "P3": false
+    },
+    "categories": {
+      "P1": "false_unknown",
+      "P2": "false_unknown",
+      "P3": "false_unknown"
+    },
+    "reviewed_by": "Codex",
+    "basis": "Manual comparison of requested semantic parts, recorded answer and provided source context; not copied automatically from whole-answer PASS_CHECKS/QA grade."
+  }
+}

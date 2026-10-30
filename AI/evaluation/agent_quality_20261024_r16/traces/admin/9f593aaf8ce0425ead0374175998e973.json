@@ -1,0 +1,42 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "9f593aaf8ce0425ead0374175998e973",
+  "parent_trace_id": "8388f6383c734e979e746fcb54094abe",
+  "recorded_at": "2026-10-24T08:40:36.856929+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "admin",
+  "question": "Doanh thu tháng đó?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality"
+    }
+  },
+  "state_after": {
+    "owner_role": "admin",
+    "admin_context": {
+      "last_topic": "data_quality",
+      "metric": "revenue",
+      "pending": true,
+      "operation": "finance"
+    }
+  },
+  "plans": {
+    "admin_plan": {
+      "metric": "revenue",
+      "operation": "finance",
+      "period_unit": "month",
+      "time_mode": "same_period"
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "business_analysis",
+    "basic_action": "clarify",
+    "answer": "Bạn xác nhận một tháng, quý hoặc năm cần báo cáo nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.3179965000017546
+}

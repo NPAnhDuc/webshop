@@ -1,0 +1,55 @@
+{
+  "cases": 100,
+  "semantic_pass": 87,
+  "semantic_fail": 13,
+  "roles": {
+    "customer": {
+      "PASS": 47,
+      "FAIL": 3
+    },
+    "admin": {
+      "PASS": 40,
+      "FAIL": 10
+    }
+  },
+  "compared_to": "old100_patch7",
+  "before_pass": 87,
+  "fixed_ids": [],
+  "regressed_ids": [],
+  "failed_ids": [
+    "C03",
+    "C29",
+    "C35",
+    "A15",
+    "A20",
+    "A23",
+    "A29",
+    "A30",
+    "A35",
+    "A39",
+    "A40",
+    "A44",
+    "A50"
+  ],
+  "unchanged_answer_action_source_cases": 98,
+  "changed_case_reviews": 2,
+  "changed_ids": [
+    "A16",
+    "A17"
+  ],
+  "focused_product_cases_reread": [
+    "C02",
+    "C03",
+    "C06",
+    "C44"
+  ],
+  "quote_checks": 210,
+  "integrity_issues": [],
+  "median_seconds": 4.605,
+  "total_seconds": 481.01,
+  "previous_median_seconds": 4.875,
+  "previous_total_seconds": 486.16,
+  "reserved_opened": false,
+  "production_accepted": false,
+  "warning": "Old development benchmark, not an independent validation/overallaccuracy score; timing/cache uncontrolled, no speed attribution."
+}

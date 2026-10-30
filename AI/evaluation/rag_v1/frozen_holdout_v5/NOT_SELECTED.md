@@ -1,0 +1,1 @@
+Preliminary v5 holdout run was not inspected for tuning. Final v6 changes address only development failures: missing effective-date metadata, supplier names grounded in SQL, and document follow-up query rewriting. Use final_holdout_v6 for the final result.

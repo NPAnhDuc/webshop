@@ -1,0 +1,71 @@
+{
+  "passed": 3,
+  "total": 8,
+  "model_calls": 0,
+  "cases": [
+    {
+      "question": "MOQ nhà cung cấp là bao nhiêu?",
+      "source": "Nhà cung cấp có lead time 4 ngày.",
+      "expected_claim": false,
+      "actual_claim": true,
+      "answer": "Nhà cung cấp có lead time 4 ngày.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": false
+    },
+    {
+      "question": "Số lượng đặt hàng tối thiểu nhà cung cấp là bao nhiêu?",
+      "source": "Nhà cung cấp có lead time 9 ngày.",
+      "expected_claim": false,
+      "actual_claim": true,
+      "answer": "Nhà cung cấp có lead time 9 ngày.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": false
+    },
+    {
+      "question": "MOQ nhà cung cấp là bao nhiêu?",
+      "source": "Bảo hành cần liên hệ nhân viên.",
+      "expected_claim": false,
+      "actual_claim": true,
+      "answer": "Bảo hành cần liên hệ nhân viên.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": false
+    },
+    {
+      "question": "Lead time nhà cung cấp bao lâu?",
+      "source": "MOQ nhà cung cấp là 10 sản phẩm.",
+      "expected_claim": false,
+      "actual_claim": true,
+      "answer": "MOQ nhà cung cấp là 10 sản phẩm.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": false
+    },
+    {
+      "question": "Thời gian giao hàng của nhà cung cấp là bao lâu?",
+      "source": "Bảo hành là 12 tháng.",
+      "expected_claim": false,
+      "actual_claim": true,
+      "answer": "Bảo hành là 12 tháng.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": false
+    },
+    {
+      "question": "MOQ nhà cung cấp là bao nhiêu?",
+      "source": "MOQ nhà cung cấp là 10 sản phẩm.",
+      "expected_claim": true,
+      "actual_claim": true,
+      "answer": "MOQ nhà cung cấp là 10 sản phẩm.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": true
+    },
+    {
+      "question": "Số lượng đặt tối thiểu của nhà cung cấp là bao nhiêu?",
+      "source": "Số lượng đặt tối thiểu là 7 sản phẩm.",
+      "expected_claim": true,
+      "actual_claim": true,
+      "answer": "Số lượng đặt tối thiểu là 7 sản phẩm.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": true
+    },
+    {
+      "question": "Lead time nhà cung cấp bao lâu?",
+      "source": "Thời gian giao hàng của nhà cung cấp là 6 ngày.",
+      "expected_claim": true,
+      "actual_claim": true,
+      "answer": "Thời gian giao hàng của nhà cung cấp là 6 ngày.\n\n[Nguồn: fixture.md, mục , đoạn 1, phiên bản 1]",
+      "passed": true
+    }
+  ]
+}

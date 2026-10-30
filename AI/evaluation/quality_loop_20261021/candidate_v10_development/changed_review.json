@@ -1,0 +1,642 @@
+{
+  "Q0014": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Aspire 3 A315-59-56VC: Processor Model: Core i5 1235U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0015": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. G.Skill Trident Z5 RGB 64 GB: thế hệ và tốc độ RAM: DDR5, mức 6400 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0033": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. HP Victus Gaming 15-fa1251TX: Processor Model: Core i7 13700H.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0034": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Corsair Vengeance RGB 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0050": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Inspiron 15 3520: Processor Model: Core i3 1215U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0051": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus TUF Gaming A15 FA506NF: Processor Model: Ryzen 5 7535HS.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0068": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Gigabyte X870E AORUS ELITE WIFI7: socket: AM5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0070": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Samsung 980 Pro: dung lượng: 2000 GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0084": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Crucial P3 Plus: dung lượng: 1000 GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0085": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Latitude 3430: Processor Model: Core i3 1215U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0097": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Apple MacBook Air (Late 2020): Processor Model: Apple M1 Chip.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0125": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Corsair Vengeance RGB 32 GB: bộ RAM: 2 thanh × 16 GB mỗi thanh.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0126": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. NZXT H5 Flow (2024): loại: ATX Mid Tower.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0127": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Vostro 15 3510: Processor Model: Core i5 1135G7.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0134": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 838580000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0139": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo IdeaPad Slim 3i 15ITL6: Processor Model: Core i7 1165G7.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0140": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo Legion Slim 5i 16IRH8: Processor Model: Core i5 13500H.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0141": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Crucial P510: dung lượng: 1000 GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0148": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0154": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãloạibằngchứngphụsaiđốitượng,kếtquảchỉcònnguồnđúngsảnphẩm;khôngchỉlàPASS_CHECKS. Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. MSI RTX 5060 Ti 16G INSPIRE 2X OC: GPU: GeForce RTX 5060 Ti.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0155": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. MSI Modern 15 B12M: Processor Model: Core i7 1255U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0182": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Deepcool CH160: loại: Mini ITX Desktop.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0183": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Samsung 990 Pro: dung lượng: 2000 GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0191": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "CâunốigiữDellLatitude3430vàtrảđúng6nhân,trướcthiếuý. Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Latitude 3430: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0193": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãloạibằngchứngphụsaiđốitượng,kếtquảchỉcònnguồnđúngsảnphẩm;khôngchỉlàPASS_CHECKS. Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus TUF Gaming VG27AQ: đường chéo: 27 inch.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0200": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Corsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0202": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo Legion Slim 5i 16IRH8: Processor Core: 12.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0217": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0220": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. AMD Ryzen 7 5700X3D: số nhân: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0228": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãloạibằngchứngphụsaiđốitượng,kếtquảchỉcònnguồnđúngsảnphẩm;khôngchỉlàPASS_CHECKS. Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. MSI MAG A750GL PCIE5: loại: ATX.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0237": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Kingston FURY Beast 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0247": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Corsair Vengeance LPX 16 GB: bộ RAM: 2 thanh × 8 GB mỗi thanh.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0253": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0256": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. AMD Ryzen 7 9800X3D: số nhân: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0264": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. HP 15-fd0202TU: Processor Model: Core i5 1335U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0280": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Nitro 5 AN515-58-59JP: Processor Model: Core i5 12450H.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0285": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Aspire 5 5P-A515-58P: Processor Model: Core i3 1305U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0294": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus ZenBook 14 UM425UA: Processor Model: Ryzen 5 5500U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0299": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. MSI GeForce RTX 3060 Ventus 2X 12G: GPU: GeForce RTX 3060 12GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0300": {
+    "status": "FAIL",
+    "cause": "FALSE_CLARIFICATION_WITH_KNOWN_PRODUCT",
+    "reason": "CóDeepcoolCH160trongrag_product_subjectvàlịchsử,nhưng routerhỏimodelthayvìtrảTemperedGlass. Trướcpatch9trảđược,ngữcảnhkhôngthiếu.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0307": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Vostro 15 3510: Processor Model: Core i5 1135G7.; Dell Vostro 15 3510: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0315": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo ThinkBook 15 G2 ITL: Processor Model: Core i5 1135G7.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0319": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0320": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. HP Victus Gaming 15-fa1251TX: Processor Model: Core i7 13700H.; HP Victus Gaming 15-fa1251TX: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0335": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Corsair Vengeance LPX 16 GB: thế hệ và tốc độ RAM: DDR4, mức 3200 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).; Corsair Vengeance LPX 16 GB: độ trễ từ đầu tiên: 10 ns.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0341": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Nitro 5 AN515-58-59JP: Processor Model: Core i5 12450H.; Acer Nitro 5 AN515-58-59JP: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0342": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Crucial P510: dung lượng: 1000 GB.; Crucial P510: kích thước/chuẩn thiết kế: M.2-2280.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0367": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Samsung 980 Pro: dung lượng: 2000 GB.; Samsung 980 Pro: cache: 2048 MB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "ThêmKC3000đượcnêurõtênmodelkhác,khônggánchoSamsung/Crucial;giữcùngrubricnộidungchínhvàghinoise.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0371": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo Legion Slim 5i 16IRH8: Processor Model: Core i5 13500H.; Lenovo Legion Slim 5i 16IRH8: RAM: 16GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0377": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus TUF Gaming VG27AQ: đường chéo: 27 inch.; Asus TUF Gaming VG27AQ: tần số quét: 165 Hz.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0378": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Swift Go 14 SFG14-41-R5RB: Processor Model: Ryzen 5 7530U.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0386": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0391": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus TUF Gaming A15 FA506NF: Processor Core: 6.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0405": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Doanh thu thuần: 609442000 VND.; Doanh thu thuần: 1203150000 VND.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0408": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Inspiron 15 3520: Processor Model: Core i3 1215U.; Dell Inspiron 15 3520: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0416": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Kingston FURY Beast 32 GB: thế hệ và tốc độ RAM: DDR5, mức 6000 theo danh mục (nhãn đơn vị nguồn: MHz; không coi là xung vật lý).; Kingston FURY Beast 32 GB: độ trễ từ đầu tiên: 10 ns.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0421": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. AMD Ryzen 7 9800X3D: số nhân: 8.; AMD Ryzen 7 9800X3D: xung boost: 5.2 GHz.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0422": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo LOQ Gaming 15IRH8: Processor Core: 8.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0431": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Crucial P3 Plus: dung lượng: 1000 GB.; Crucial P3 Plus: kích thước/chuẩn thiết kế: M.2-2280.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "ThêmKC3000đượcnêurõtênmodelkhác,khônggánchoSamsung/Crucial;giữcùngrubricnộidungchínhvàghinoise.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0435": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0443": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo LOQ Gaming 15IRH8: Processor Model: Core i5 12450H.; Lenovo LOQ Gaming 15IRH8: RAM: 16GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0455": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0456": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Samsung 990 Pro: dung lượng: 2000 GB.; Samsung 990 Pro: cache: 2048 MB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "ThêmKC3000đượcnêurõtênmodelkhác,khônggánchoSamsung/Crucial;giữcùngrubricnộidungchínhvàghinoise.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0460": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0478": {
+    "status": "FAIL",
+    "cause": "KIT_LAYOUT_REPLACED_BY_DDR",
+    "reason": "CóG.Skill64GBvàram_modules_1trongứngviên,nhưngchọnDDR5/6400vàPhotoshop,khôngtrả2thanh×32GB. Trướcpatch9trảđúngbốtríkit.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0483": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Asus TUF Gaming A15 FA506NF: Processor Model: Ryzen 5 7535HS.; Asus TUF Gaming A15 FA506NF: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0487": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Lenovo ThinkBook 15 G2 ITL: Processor Model: Core i5 1135G7.; Lenovo ThinkBook 15 G2 ITL: RAM: 8GB.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0506": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. HP 15-fd0202TU: Processor Model: Core i5 1335U.; HP 15-fd0202TU: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0507": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Dell Latitude 3430: Processor Model: Core i3 1215U.; Dell Latitude 3430: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0512": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Acer Aspire 3 A315-59-56VC: Processor Model: Core i5 1235U.; Acer Aspire 3 A315-59-56VC: RAM: 8GB.",
+    "secondary_issue": "EXTRA_RELATED_OR_DISTINCT_MODEL_INFORMATION",
+    "secondary_note": "Nộidungchínhđúngnhưngvẫncóthôngtin/cảnhbáo/thôngsốthừa;khônggọilàđápánhoànhảo.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0536": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0557": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0560": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 2.; Sản phẩm hoàn trả: 2.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0561": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 4.; Sản phẩm hoàn trả: 5.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  },
+  "Q0583": {
+    "status": "PASS",
+    "cause": "READ_AND_CONFIRMED",
+    "reason": "Đãđọcđápánmớivà nguồn:đủý,đúngsảnphẩm/kỳ/giátrị,mọitừngcitationgiữnguồntươngứng. Sản phẩm hoàn trả: 5.; Sản phẩm hoàn trả: 4.",
+    "reviewed_by": "Codex",
+    "review_method": "Fresh reading of75changed answers, frozen facts and source ownership with prior user questions; bothregressiontraces/knownproductstate checked. Separate from checks; not independent.",
+    "cohort": "changed_outputs"
+  }
+}

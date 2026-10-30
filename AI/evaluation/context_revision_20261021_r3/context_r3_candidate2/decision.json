@@ -1,0 +1,7 @@
+{
+  "state": "rejected_after_old100_regression_restore_patch7",
+  "candidate_retained": false,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "old100_patch8 gives88PASS versus87,but regressesA36 andworsenscampaigncontextA35/A34. Reject broad prompt despite2fixesC35/A20. Restore exactpatch7 bot code; retain date-frozen test.18of24belongs rejectedcandidate, activepatch7has17of24. Reserved notopened."
+}

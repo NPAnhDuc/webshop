@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "54a4cd991a474b86911f595d31726a32",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:45:51.751936+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Pin 56 Wh có thể suy ra chính xác dùng được mấy giờ không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Pin 56 Wh có thể suy ra chính xác dùng được mấy giờ không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nCần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\n[Nguồn: tech-macbook-air-m1-v1.md, mục MacBook Air M1 2020: màn hình và cổng của dòng máy, đoạn 1, phiên bản 1]",
+        "reason": "Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nCần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\n[Nguồn: tech-macbook-air-m1-v1.md, mục MacBook Air M1 2020: màn hình và cổng của dòng máy, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-loq-family",
+            "title": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+            "source": "tech-loq-family-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "a0419445e786b2f4399caa655ba5265f9fcf19981afeccdbe702a8925db21c71",
+            "text": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy\n\nPSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình. Đây là tài liệu dòng máy, chưa xác nhận đầy đủ mã 82XV00SGLK của danh mục. Không chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop. Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRH8/LOQ_15IRH8_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy\n\nPSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình. Đây là tài liệu dòng máy, chưa xác nhận đầy đủ mã 82XV00SGLK của danh mục. Không chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop. Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRH8/LOQ_15IRH8_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+            "section": 1,
+            "chunk_id": "c79e431bb700f53ede2c0f0cd356cd69d73297f7ec80c03cc1319e3bda74deec",
+            "score": 0.04817,
+            "dense_score": 0.2225,
+            "lexical_score": 0.1413,
+            "bm25_score": 10.8031,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-macbook-air-m1",
+            "title": "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+            "source": "tech-macbook-air-m1-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "2eb3d7c154112f01f66aab4175acad8a954102d03da8b908ac88b82bd568aea6",
+            "text": "MacBook Air M1 2020: màn hình và cổng của dòng máy\n\nApple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort. RAM và SSD có lựa chọn theo cấu hình đặt hàng. Cần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\nNguồn: https://support.apple.com/en-us/111883\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "MacBook Air M1 2020: màn hình và cổng của dòng máy\n\nApple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort. RAM và SSD có lựa chọn theo cấu hình đặt hàng. Cần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\nNguồn: https://support.apple.com/en-us/111883\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+            "section": 1,
+            "chunk_id": "399c0503e5fc3a76a94813f766f8c3d61cad94efff34c113c560f1fba74e93c9",
+            "score": 0.04813,
+            "dense_score": 0.2264,
+            "lexical_score": 0.1201,
+            "bm25_score": 10.5926,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 4.861623000004329
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\n[Nguồn: tech-loq-family-v1.md, mục Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy, đoạn 1, phiên bản 1]\n\nCần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\n[Nguồn: tech-macbook-air-m1-v1.md, mục MacBook Air M1 2020: màn hình và cổng của dòng máy, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-loq-family",
+        "title": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+        "source": "tech-loq-family-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "a0419445e786b2f4399caa655ba5265f9fcf19981afeccdbe702a8925db21c71",
+        "text": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy\n\nPSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình. Đây là tài liệu dòng máy, chưa xác nhận đầy đủ mã 82XV00SGLK của danh mục. Không chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop. Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRH8/LOQ_15IRH8_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy\n\nPSREF LOQ 15IRH8 mô tả hai khe SO-DIMM DDR5 và pin 60 Wh, đồng thời liệt kê nhiều lựa chọn CPU, GPU và màn hình. Đây là tài liệu dòng máy, chưa xác nhận đầy đủ mã 82XV00SGLK của danh mục. Không chọn tùy ý một cấu hình cao nhất trong bảng rồi gán cho sản phẩm shop. Dung lượng Wh không phải cam kết số giờ pin cho mọi tác vụ.\n\nNguồn: https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRH8/LOQ_15IRH8_Spec.pdf\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Lenovo LOQ 15IRH8: tài liệu nền tảng của dòng máy",
+        "section": 1,
+        "chunk_id": "c79e431bb700f53ede2c0f0cd356cd69d73297f7ec80c03cc1319e3bda74deec",
+        "score": 0.04817,
+        "dense_score": 0.2225,
+        "lexical_score": 0.1413,
+        "bm25_score": 10.8031,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-macbook-air-m1",
+        "title": "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+        "source": "tech-macbook-air-m1-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "2eb3d7c154112f01f66aab4175acad8a954102d03da8b908ac88b82bd568aea6",
+        "text": "MacBook Air M1 2020: màn hình và cổng của dòng máy\n\nApple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort. RAM và SSD có lựa chọn theo cấu hình đặt hàng. Cần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\nNguồn: https://support.apple.com/en-us/111883\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "MacBook Air M1 2020: màn hình và cổng của dòng máy\n\nApple mô tả MacBook Air M1 2020 có màn hình 13,3 inch IPS 2560×1600, pin tích hợp 49,9 Wh và hai cổng Thunderbolt/USB 4 hỗ trợ sạc cùng DisplayPort. RAM và SSD có lựa chọn theo cấu hình đặt hàng. Cần xác nhận mã máy thực tế trước khi gán lựa chọn cấu hình; số giờ pin hãng thử nghiệm không phải cam kết sử dụng thực tế của shop.\n\nNguồn: https://support.apple.com/en-us/111883\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "MacBook Air M1 2020: màn hình và cổng của dòng máy",
+        "section": 1,
+        "chunk_id": "399c0503e5fc3a76a94813f766f8c3d61cad94efff34c113c560f1fba74e93c9",
+        "score": 0.04813,
+        "dense_score": 0.2264,
+        "lexical_score": 0.1201,
+        "bm25_score": 10.5926,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.34922249999363
+}

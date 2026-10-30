@@ -1,0 +1,52 @@
+{
+  "completed": 479,
+  "planned": 479,
+  "integrity": true,
+  "before": {
+    "PASS_CHECKS": 413,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 13
+  },
+  "after": {
+    "PASS_CHECKS": 422,
+    "NEEDS_REVIEW": 53,
+    "FAIL_CHECKS": 4
+  },
+  "fixed_check_ids": [
+    "Q0125",
+    "Q0164",
+    "Q0210",
+    "Q0247",
+    "Q0267",
+    "Q0300",
+    "Q0352",
+    "Q0373",
+    "Q0411",
+    "Q0446",
+    "Q0467"
+  ],
+  "regressed_check_ids": [
+    "Q0191",
+    "Q0396"
+  ],
+  "matched89_before": {
+    "PASS_CHECKS": 77,
+    "NEEDS_REVIEW": 7,
+    "FAIL_CHECKS": 5
+  },
+  "matched89_after": {
+    "PASS_CHECKS": 79,
+    "NEEDS_REVIEW": 7,
+    "FAIL_CHECKS": 3
+  },
+  "manual_review": {
+    "cases": 112,
+    "statuses": {
+      "FAIL": 26,
+      "PASS": 86
+    },
+    "note": "Purposeful sample; inherited identical answers explicitly identified; not representative accuracy."
+  },
+  "validation_opened": false,
+  "markdown_summary": "Toàn479 cùng ID: trước {'PASS_CHECKS': 413, 'NEEDS_REVIEW': 53, 'FAIL_CHECKS': 13}, sau {'PASS_CHECKS': 422, 'NEEDS_REVIEW': 53, 'FAIL_CHECKS': 4}.11 lỗi kiểm tra được sửa,2 suy giảm Q0191/Q0396 so v1 (tác động kết hợp patch2+5). Riêng89 đã có patch2: {'PASS_CHECKS': 77, 'NEEDS_REVIEW': 7, 'FAIL_CHECKS': 5} → {'PASS_CHECKS': 79, 'NEEDS_REVIEW': 7, 'FAIL_CHECKS': 3}; Q0267/Q0352 sửa được, không có chuyển PASS_CHECKS→FAIL_CHECKS trong89. Còn4 lỗi Q0055/Q0191/Q0301/Q0396. Không gọi các số này là độ đúng ngữ nghĩa.181 test mã qua; chưa nghiệm thu, chưa mở121 validation. [Chi tiết](PATCH5_REPORT.md)."
+}

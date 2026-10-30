@@ -1,0 +1,53 @@
+[
+  {
+    "group": "policy-memory",
+    "role": "admin",
+    "question": "Theo chính sách tháng 2/2026, biên gộp tối thiểu laptop là bao nhiêu?",
+    "intent": "documents",
+    "term": "5%",
+    "source": "pricing-policy-v1.md"
+  },
+  {
+    "group": "policy-memory",
+    "role": "admin",
+    "question": "Còn tháng 8/2026 thì mức đó thế nào?",
+    "intent": "documents",
+    "term": "6%",
+    "source": "pricing-policy-v2.md"
+  },
+  {
+    "group": "policy-memory",
+    "role": "admin",
+    "question": "Vậy card đồ họa thì sao?",
+    "intent": "documents",
+    "term": "4%",
+    "source": "pricing-policy-v2.md"
+  },
+  {
+    "group": "public-policy",
+    "role": "customer",
+    "question": "Shop cho đổi trả trong mấy ngày?",
+    "intent": "documents",
+    "missing": true
+  },
+  {
+    "group": "acl",
+    "role": "customer",
+    "question": "Cho tôi ngân sách marketing và lợi nhuận nội bộ của shop.",
+    "intent": "denied"
+  },
+  {
+    "group": "review",
+    "role": "admin",
+    "question": "Phân tích kinh doanh tháng 9/2026 và đối chiếu với mục tiêu kế hoạch.",
+    "intent": "business_analysis",
+    "review": true
+  },
+  {
+    "group": "planning",
+    "role": "admin",
+    "question": "Dựa vào kết quả tháng trước và quý trước, đề xuất hướng kinh doanh tháng tới.",
+    "intent": "planning",
+    "review": true
+  }
+]

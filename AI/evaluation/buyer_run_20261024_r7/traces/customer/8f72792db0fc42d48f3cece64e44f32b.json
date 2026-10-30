@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "8f72792db0fc42d48f3cece64e44f32b",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T10:45:53.049961+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Cùng giá nhưng một máy 16 GB và một máy 8 GB GPU mạnh hơn, nên hỏi nhu cầu gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.5208569999958854
+}

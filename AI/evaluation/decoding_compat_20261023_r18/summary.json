@@ -1,0 +1,54 @@
+{
+  "planned": 3,
+  "attempted": 3,
+  "http_successes": 1,
+  "valid_contracts": 0,
+  "qa_semantics_scored": false,
+  "variants": [
+    {
+      "id": "full_schema",
+      "http_status": 500,
+      "contract_valid": false,
+      "error_body": "{\"error\":\"llama-server chat error: map[code:500 message:got exception: Unexpected empty grammar stack after accepting piece: 8 (23) type:server_error]\"}",
+      "parse_error": null,
+      "done_reason": null,
+      "prompt_tokens": null,
+      "output_tokens": null,
+      "content_chars": 0,
+      "unique_content_chars": [],
+      "seconds": 25.25
+    },
+    {
+      "id": "json_object",
+      "http_status": 500,
+      "contract_valid": false,
+      "error_body": "{\"error\":\"llama-server chat error: map[code:500 message:got exception: Unexpected empty grammar stack after accepting piece: 8 (23) type:server_error]\"}",
+      "parse_error": null,
+      "done_reason": null,
+      "prompt_tokens": null,
+      "output_tokens": null,
+      "content_chars": 0,
+      "unique_content_chars": [],
+      "seconds": 0.157
+    },
+    {
+      "id": "unconstrained",
+      "http_status": 200,
+      "contract_valid": false,
+      "error_body": null,
+      "parse_error": "TypeError: 'int' object is not iterable",
+      "done_reason": "length",
+      "prompt_tokens": 1050,
+      "output_tokens": 300,
+      "content_chars": 300,
+      "unique_content_chars": [
+        "8"
+      ],
+      "seconds": 5.141
+    }
+  ],
+  "total_seconds": 30.548,
+  "runtime_version": "0.7.0-dev build1 commit620d2225c Clang18.1.8 WindowsAMD64",
+  "production_installed": false,
+  "decision": "No usable compatibility workaround: schema/jsonobject500; unconstrained200degenerates to repeated8 until300tokenlimit. Format bypass alone is not safe. Cause not established; cachedstate across variants may confound. Next isolate freshmodelrunner/sampling/backend with bounded canaries, not full91 or productionchange."
+}

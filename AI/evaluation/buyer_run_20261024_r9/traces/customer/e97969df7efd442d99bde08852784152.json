@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "e97969df7efd442d99bde08852784152",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:44:04.393249+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Nguồn 80 Plus có tự chứng minh đủ công suất cho mọi bộ PC không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Nguồn 80 Plus có tự chứng minh đủ công suất cho mọi bộ PC không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 1, phiên bản 1]",
+        "reason": "Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-psu-80plus",
+            "title": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+            "source": "tech-psu-80plus-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "8023ef0c3f4ba49fe443d83861f7c8e189fa62ab68a6a6b76a795008114de5ed",
+            "text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành. Theo trang chương trình, đặc tả yêu cầu bộ nguồn đạt hiệu suất năng lượng từ 80% trở lên tại 10%, 20%, 50% và 100% công suất định mức của chính bộ nguồn, với hệ số công suất thực từ 0,9 trở lên. Các mức chứng nhận tăng dần về hiệu suất, từ Standard đến Titanium; mức Ruby mới nhất hướng tới nguồn máy chủ trung tâm dữ liệu.",
+            "retrieval_text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành. Theo trang chương trình, đặc tả yêu cầu bộ nguồn đạt hiệu suất năng lượng từ 80% trở lên tại 10%, 20%, 50% và 100% công suất định mức của chính bộ nguồn, với hệ số công suất thực từ 0,9 trở lên. Các mức chứng nhận tăng dần về hiệu suất, từ Standard đến Titanium; mức Ruby mới nhất hướng tới nguồn máy chủ trung tâm dữ liệu.",
+            "heading_path": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+            "section": 1,
+            "chunk_id": "cd91f23831ecf795d93e557cf49a844b79586507ef39ec2fadc2bddf500a2c31",
+            "score": 0.0484,
+            "dense_score": 0.687,
+            "lexical_score": 0.4315,
+            "bm25_score": 34.9033,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-psu-80plus",
+            "title": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+            "source": "tech-psu-80plus-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-24",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "8023ef0c3f4ba49fe443d83861f7c8e189fa62ab68a6a6b76a795008114de5ed",
+            "text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó. Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\nNguồn: https://www.clearesult.com/80plus/program-details ; https://www.clearesult.com/insights/answering-your-80-PLUS-questions (trang FAQ nêu mức tải 20%, 50%, 100%; dùng theo trang chương trình)\n\nĐối chiếu: 24/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó. Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\nNguồn: https://www.clearesult.com/80plus/program-details ; https://www.clearesult.com/insights/answering-your-80-PLUS-questions (trang FAQ nêu mức tải 20%, 50%, 100%; dùng theo trang chương trình)\n\nĐối chiếu: 24/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+            "section": 3,
+            "chunk_id": "b2d7f0f4d6fc85828d1c8452be5bd964f8b849510228eb0af6ffdf353ac8eef6",
+            "score": 0.04788,
+            "dense_score": 0.7002,
+            "lexical_score": 0.3903,
+            "bm25_score": 30.1132,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 6.139444699991145
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 3, phiên bản 1]\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành.\n\n[Nguồn: tech-psu-80plus-v1.md, mục Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-psu-80plus",
+        "title": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+        "source": "tech-psu-80plus-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "8023ef0c3f4ba49fe443d83861f7c8e189fa62ab68a6a6b76a795008114de5ed",
+        "text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành. Theo trang chương trình, đặc tả yêu cầu bộ nguồn đạt hiệu suất năng lượng từ 80% trở lên tại 10%, 20%, 50% và 100% công suất định mức của chính bộ nguồn, với hệ số công suất thực từ 0,9 trở lên. Các mức chứng nhận tăng dần về hiệu suất, từ Standard đến Titanium; mức Ruby mới nhất hướng tới nguồn máy chủ trung tâm dữ liệu.",
+        "retrieval_text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\n80 PLUS là chương trình đặc tả và chứng nhận hiệu suất cho bộ nguồn (PSU) gắn trong máy tính, do CLEAResult vận hành. Theo trang chương trình, đặc tả yêu cầu bộ nguồn đạt hiệu suất năng lượng từ 80% trở lên tại 10%, 20%, 50% và 100% công suất định mức của chính bộ nguồn, với hệ số công suất thực từ 0,9 trở lên. Các mức chứng nhận tăng dần về hiệu suất, từ Standard đến Titanium; mức Ruby mới nhất hướng tới nguồn máy chủ trung tâm dữ liệu.",
+        "heading_path": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+        "section": 1,
+        "chunk_id": "cd91f23831ecf795d93e557cf49a844b79586507ef39ec2fadc2bddf500a2c31",
+        "score": 0.0484,
+        "dense_score": 0.687,
+        "lexical_score": 0.4315,
+        "bm25_score": 34.9033,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-psu-80plus",
+        "title": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+        "source": "tech-psu-80plus-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-24",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "8023ef0c3f4ba49fe443d83861f7c8e189fa62ab68a6a6b76a795008114de5ed",
+        "text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó. Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\nNguồn: https://www.clearesult.com/80plus/program-details ; https://www.clearesult.com/insights/answering-your-80-PLUS-questions (trang FAQ nêu mức tải 20%, 50%, 100%; dùng theo trang chương trình)\n\nĐối chiếu: 24/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?\n\nChứng nhận này nói về hiệu suất chuyển đổi điện của bộ nguồn ở các mức tải theo công suất định mức của nó. Nó không xác nhận công suất định mức đó đủ cho một cấu hình PC cụ thể; cần tính riêng nhu cầu điện của linh kiện và khuyến nghị nguồn của nhà sản xuất card đồ họa.\n\nNguồn: https://www.clearesult.com/80plus/program-details ; https://www.clearesult.com/insights/answering-your-80-PLUS-questions (trang FAQ nêu mức tải 20%, 50%, 100%; dùng theo trang chương trình)\n\nĐối chiếu: 24/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Nguồn 80 PLUS là gì? Chứng nhận 80 PLUS có chứng minh đủ công suất cho bộ PC không?",
+        "section": 3,
+        "chunk_id": "b2d7f0f4d6fc85828d1c8452be5bd964f8b849510228eb0af6ffdf353ac8eef6",
+        "score": 0.04788,
+        "dense_score": 0.7002,
+        "lexical_score": 0.3903,
+        "bm25_score": 30.1132,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 6.5897371000028215
+}

@@ -1,0 +1,21 @@
+{
+  "cases": 6,
+  "agreement": 5,
+  "false_accept_ids": [
+    "trial_C31"
+  ],
+  "false_reject_ids": [],
+  "correct_accepts": 4,
+  "correct_rejects": 1,
+  "prompt_token_range": [
+    696,
+    1537
+  ],
+  "done_reasons": {
+    "stop": 6
+  },
+  "total_seconds": 40.844,
+  "median_seconds": 3.1014999999999997,
+  "production_verifier_installed": false,
+  "decision": "Do not install this whole-answer judge as a production gate; it accepts one of two known incorrect answers. Selected feasibility controls only, not independent accuracy."
+}

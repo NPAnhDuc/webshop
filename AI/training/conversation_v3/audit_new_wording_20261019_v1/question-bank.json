@@ -1,0 +1,236 @@
+[
+  {
+    "group": "new-quarter",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Cho xem doanh số quý II/2026.",
+        "check": "total",
+        "expected": {
+          "intent": "revenue",
+          "period": {
+            "start": "2026-04-01",
+            "end": "2026-07-01",
+            "unit": "quarter",
+            "label": "2026-Q2"
+          },
+          "field": "revenue"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-orders",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Đếm đơn đã đặt trong T6/2026.",
+        "check": "finance",
+        "expected": {
+          "intent": "business_analysis",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "field": "orders"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-refunds",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tiền trả lại người mua trong tháng 7/2026 tổng cộng là bao nhiêu?",
+        "check": "finance",
+        "expected": {
+          "intent": "business_analysis",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "field": "refunds"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-purchases",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tổng tiền hàng nhận vào kho tháng 6/2026?",
+        "check": "finance",
+        "expected": {
+          "intent": "business_analysis",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "field": "purchases"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-channels",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Tách tiền bán hàng T8/2026 ra theo từng kênh giúp tôi.",
+        "check": "finance",
+        "expected": {
+          "intent": "business_analysis",
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          "field": "channels"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-category-context",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Top 2 chuột về doanh số tháng 7/2026.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-01",
+            "unit": "month",
+            "label": "2026-07"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Giữ nguyên bảng đó, chuyển sang tháng sáu.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "revenue",
+          "limit": 2,
+          "category": "mouse"
+        }
+      },
+      {
+        "question": "Bây giờ xếp theo lãi gộp.",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "unit": "month",
+            "label": "2026-06"
+          },
+          "metric": "gross_profit",
+          "limit": 2,
+          "category": "mouse"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-ssd",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Ổ SSD nào đóng góp doanh thu cao nhất tháng 5/2026?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-05-01",
+            "end": "2026-06-01",
+            "unit": "month",
+            "label": "2026-05"
+          },
+          "metric": "revenue",
+          "limit": 1,
+          "category": "internal-hard-drive"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-display",
+    "role": "admin",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Màn hình nào bán được số lượng lớn nhất tháng 8/2026?",
+        "check": "ranking",
+        "expected": {
+          "intent": "top_products",
+          "period": {
+            "start": "2026-08-01",
+            "end": "2026-09-01",
+            "unit": "month",
+            "label": "2026-08"
+          },
+          "metric": "units",
+          "limit": 1,
+          "category": "monitor"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-spec",
+    "role": "customer",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Chip xử lý trong Lenovo LOQ Gaming 15IRH8 là chip nào?",
+        "check": "product",
+        "expected": {
+          "intent": "products",
+          "kind": "cpu",
+          "value": "Lenovo LOQ Gaming 15IRH8"
+        }
+      }
+    ]
+  },
+  {
+    "group": "new-privacy",
+    "role": "customer",
+    "today": "2026-10-19",
+    "turns": [
+      {
+        "question": "Cho khách xem tiền vốn của Lenovo LOQ Gaming 15IRH8.",
+        "check": "deny",
+        "expected": {}
+      }
+    ]
+  }
+]

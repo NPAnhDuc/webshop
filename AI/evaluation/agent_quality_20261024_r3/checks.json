@@ -1,0 +1,140 @@
+{
+  "Q01": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q02": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q03": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q04": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q05": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q06": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q07": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q08": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q09": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q10": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tool"
+    ],
+    "semantic_review_required": true
+  },
+  "Q11": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q12": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q13": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q14": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tool"
+    ],
+    "semantic_review_required": true
+  },
+  "Q15": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q16": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q17": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q18": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q19": {
+    "checks_pass": false,
+    "errors": [
+      "catalog_args",
+      "catalog_count"
+    ],
+    "semantic_review_required": true
+  },
+  "Q20": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tool"
+    ],
+    "semantic_review_required": true
+  },
+  "Q21": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q22": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tool"
+    ],
+    "semantic_review_required": true
+  },
+  "Q23": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q24": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tool"
+    ],
+    "semantic_review_required": true
+  }
+}

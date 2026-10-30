@@ -1,0 +1,6 @@
+{
+  "state": "stopped_infrastructure_do_not_resume",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "No model-quality comparison possible. Do not resume r17 unchanged; inspect structured-grammar/runtime compatibility in a separate minimal revision. No production model/config changes or semantic failure labels."
+}

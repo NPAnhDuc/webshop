@@ -1,0 +1,14 @@
+{
+  "new_checks_pass": 19,
+  "new_total": 24,
+  "regression_checks_pass": 57,
+  "regression_total": 60,
+  "median_seconds": 0.8514999999999999,
+  "max_seconds": 26.734,
+  "integrity": {
+    "unchanged": true,
+    "turns": 106
+  },
+  "accepted_for_application": false,
+  "note": "Same84 questions as r4 plus22 contracts graded separately. Q12/Q18 now explicitly call registered-disabled public documents tool. Public doc calls are not admin access; no knowledge or accuracy improvement claimed."
+}

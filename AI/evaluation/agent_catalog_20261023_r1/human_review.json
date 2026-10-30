@@ -1,0 +1,98 @@
+{
+  "S01": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S02": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S03": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "handoff",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S04": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S05": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "clarify",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S06": {
+    "status": "FAIL",
+    "expected_action": "deferred",
+    "actual_action": "clarify",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S07": {
+    "status": "FAIL",
+    "expected_action": "clarify",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S08": {
+    "status": "FAIL",
+    "expected_action": "denied",
+    "actual_action": "handoff",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S09": {
+    "status": "PASS",
+    "expected_action": "documents",
+    "actual_action": "documents",
+    "cause": "CONTROL",
+    "reviewed_by": "Codex",
+    "reason": "Chính sách được định tuyến vào nhánh tài liệu chưa kết nối; không khẳng định có nguồn."
+  },
+  "S10": {
+    "status": "FAIL",
+    "expected_action": "clarify",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S11": {
+    "status": "FAIL",
+    "expected_action": "deferred",
+    "actual_action": "outside",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  },
+  "S12": {
+    "status": "FAIL",
+    "expected_action": "answer",
+    "actual_action": "deferred",
+    "cause": "ROUTING_OR_SLOT_ERROR",
+    "reviewed_by": "Codex",
+    "reason": "Đã đọc câu hỏi, toàn bộ plan và phản hồi: không đạt action đã chốt. Không có số liệu sản phẩm được thực thi; không biến kiểm tra injected planner thành chất lượng model thật."
+  }
+}

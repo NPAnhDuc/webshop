@@ -1,0 +1,16 @@
+{
+  "promoted": false,
+  "active_code": "candidate_v2_targeted",
+  "reason": "Removing generated answers from both product router and selector history loses useful dialogue context on four previously passing cases. Reverted byte-identically after batch.",
+  "fixed_ids": [
+    "Q0301"
+  ],
+  "regressed_ids": [
+    "Q0300",
+    "Q0373",
+    "Q0446",
+    "Q0478"
+  ],
+  "tests_for_rejected_candidate": 179,
+  "validation_opened": false
+}

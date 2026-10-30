@@ -1,0 +1,17 @@
+{
+  "production_restored": "patch9",
+  "production_files_verified": 26,
+  "rollback_unit_tests": 193,
+  "rollback_unit_seconds": 50.07,
+  "ollama_recovered": true,
+  "ollama_version": "0.40.5",
+  "ollama_pid": 18100,
+  "ollama_listener": 11435,
+  "embedding_listener_present": false,
+  "embedding_launch_review": "blocked by policy",
+  "specific_reason_provided": false,
+  "denied_command_executed": false,
+  "retried_denied_launch": false,
+  "model_batch_retried": false,
+  "semantic_results": 0
+}

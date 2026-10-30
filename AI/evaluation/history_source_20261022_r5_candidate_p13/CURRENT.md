@@ -1,0 +1,1 @@
+Rejected:206PASS/18FAIL vs217/7;1fix/12regressions.200exact-output reviews inherited,24changed freshly read. All raw/gold/snapshots preserved. Restored patch9;193tests pass56.87s. No production improvement. Six-case observational payload diagnostic r6 runs separately; no further prompt change before tracing actual requests/token metadata.

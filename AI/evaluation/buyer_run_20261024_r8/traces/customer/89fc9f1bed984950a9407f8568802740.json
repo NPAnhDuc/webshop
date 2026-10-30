@@ -1,0 +1,63 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "89fc9f1bed984950a9407f8568802740",
+  "parent_trace_id": "f273d46d61a74c74936ba038dbed128a",
+  "recorded_at": "2026-10-24T12:39:18.442668+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Lấy hai lựa chọn đầu vừa tìm để so, thiếu thông số thì ghi thiếu.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 12000000,
+        "limit": 2,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 12000000,
+        "limit": 2,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "compare",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn chọn hai model khác nhau để tôi so sánh nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 0.4032193000020925
+}

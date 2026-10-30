@@ -1,0 +1,199 @@
+{
+  "id": "Q0038",
+  "role": "admin",
+  "question": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+  "conversation": "business:12",
+  "split": "development",
+  "topic": "business_reasoning",
+  "seconds": 6.187,
+  "checks": {
+    "status": "NEEDS_REVIEW",
+    "issues": [],
+    "note": "Automated source/action checks only. Not a final semantic PASS; review relevance, contradictions, omissions and equivalent evidence."
+  },
+  "result": {
+    "question": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+    "role": "admin",
+    "profile": {
+      "owner_role": "admin",
+      "history": [
+        {
+          "question": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+          "answer": "| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |\n|---|---|---|---|---:|---:|\n| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |\n\n[Nguồn: marketing-calendar-v1.md, mục Lịch marketing và cách đo > Lịch chiến dịch, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là "
+        }
+      ],
+      "document_query": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+      "rag_subject": "Lịch marketing và cách đo"
+    },
+    "rows": [],
+    "sources": [
+      {
+        "document_id": "marketing-calendar",
+        "title": "Lịch marketing và cách đo",
+        "source": "marketing-calendar-v1.md",
+        "version": 1,
+        "effective_from": "2025-10-01",
+        "effective_to": null,
+        "status": "approved",
+        "audience": "admin",
+        "authority": "synthetic_shop_document",
+        "data_kind": "demo",
+        "doc_type": "marketing",
+        "text": "Lịch marketing và cách đo > Lịch chiến dịch\n\n| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |\n|---|---|---|---|---:|---:|\n| C-BUNDLE | Bundle laptop và chuột | 2025-11-01 | 2025-11-30 | 24000000 | 200 |\n| C-TET | Ưu đãi trước Tết | 2026-01-15 | 2026-02-10 | 18000000 | 300 |\n| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |",
+        "retrieval_text": "Lịch marketing và cách đo > Lịch chiến dịch\n\n| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |\n|---|---|---|---|---:|---:|\n| C-BUNDLE | Bundle laptop và chuột | 2025-11-01 | 2025-11-30 | 24000000 | 200 |\n| C-TET | Ưu đãi trước Tết | 2026-01-15 | 2026-02-10 | 18000000 | 300 |\n| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |",
+        "heading_path": "Lịch marketing và cách đo > Lịch chiến dịch",
+        "section": 2,
+        "chunk_id": "73ed7f0d0f6157beeb3bf9f7afd85589e3020819edbf1febd15e6bf978dcd7a7",
+        "score": 0.04739,
+        "dense_score": 0.3617,
+        "lexical_score": 0.097,
+        "bm25_score": 12.0285,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ],
+    "intent": "documents",
+    "mode": "RAG cơ bản · chỉ đọc tài liệu",
+    "trace": [
+      "grounded_rag: intent then source-owned evidence; no tools",
+      "evidence: ordered by trained reranker"
+    ],
+    "plan": {
+      "action": "answer",
+      "query": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể?",
+      "task": "summary",
+      "doc_types": [
+        "strategy"
+      ],
+      "category": "all",
+      "private_request": false,
+      "parts": {
+        "P1": "Lịch C-BTS áp dụng cho cả laptop gaming hay chỉ nhóm cụ thể"
+      },
+      "scope": {
+        "months": [],
+        "quarters": [],
+        "reference_date": "2026-10-24"
+      }
+    },
+    "answer": "| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |\n|---|---|---|---|---:|---:|\n| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |\n\n[Nguồn: marketing-calendar-v1.md, mục Lịch marketing và cách đo > Lịch chiến dịch, đoạn 2, phiên bản 1]\n\nSố liệu và quy định shop trong các nguồn này là dữ liệu mô phỏng.",
+    "basic_action": "answer",
+    "rag": {
+      "answerability": "full",
+      "claims": [
+        {
+          "text": "| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |\n|---|---|---|---|---:|---:|\n| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |",
+          "evidence": [
+            {
+              "chunk_id": "73ed7f0d0f6157beeb3bf9f7afd85589e3020819edbf1febd15e6bf978dcd7a7",
+              "quotes": [
+                "| Mã | Chiến dịch | Bắt đầu | Kết thúc | Ngân sách (VND) | Giảm giá (basis points) |",
+                "|---|---|---|---|---:|---:|",
+                "| C-BTS | Tựu trường laptop văn phòng | 2026-08-01 | 2026-08-31 | 28000000 | 600 |"
+              ],
+              "source": "marketing-calendar-v1.md"
+            }
+          ]
+        }
+      ],
+      "verified": true,
+      "unanswered": [],
+      "part_evidence": {
+        "P1": [
+          "marketing_17"
+        ]
+      },
+      "field_bindings": [],
+      "available_fields": [
+        {
+          "id": "marketing_1",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "strategy_2",
+          "document_id": "procurement"
+        },
+        {
+          "id": "strategy_3",
+          "document_id": "procurement"
+        },
+        {
+          "id": "policy_4",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "strategy_5",
+          "document_id": "procurement"
+        },
+        {
+          "id": "strategy_6",
+          "document_id": "positioning"
+        },
+        {
+          "id": "marketing_7",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "strategy_8",
+          "document_id": "positioning"
+        },
+        {
+          "id": "policy_9",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "strategy_10",
+          "document_id": "positioning"
+        },
+        {
+          "id": "marketing_11",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "marketing_12",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "marketing_13",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "marketing_14",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "policy_15",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "policy_16",
+          "document_id": "customer-policy"
+        },
+        {
+          "id": "marketing_17",
+          "document_id": "marketing-calendar"
+        },
+        {
+          "id": "strategy_18",
+          "document_id": "positioning"
+        },
+        {
+          "id": "strategy_19",
+          "document_id": "procurement"
+        },
+        {
+          "id": "policy_20",
+          "document_id": "customer-policy"
+        }
+      ],
+      "method": "scoped retrieval and per-part source selection"
+    },
+    "timings": {
+      "router_ms": 1375.0,
+      "retrieval_ms": 2468.0,
+      "model_ms": 2344.0,
+      "total_ms": 6187.0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Same24 exposed development cases: first16 previously changed IDs +8 boundary/period/handoff controls. No gold or source changes.",
+  "baseline": "kb2_rag5_rerank_r1",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "RAG_EVIDENCE_RERANK": "1",
+  "worker": "existing8011 listener only; no startup/retry/bypass",
+  "change": "source-frame context excluded only from answer obligation keys, original question retained",
+  "source_frames_model_prompts_unchanged": true,
+  "independent_validation": false,
+  "training_allowed": false,
+  "ingestion_allowed": false
+}

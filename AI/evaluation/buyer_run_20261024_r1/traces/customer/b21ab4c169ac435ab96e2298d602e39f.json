@@ -1,0 +1,69 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "b21ab4c169ac435ab96e2298d602e39f",
+  "parent_trace_id": "1d96d53273f54c79963f25356cbc7545",
+  "recorded_at": "2026-10-24T07:34:30.218729+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Vẫn loại vừa rồi, hạ trần xuống 12000000 đồng và lấy 2 món nhé.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 15000000,
+        "limit": 5,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32",
+        "P17",
+        "P66",
+        "P60"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 15000000,
+        "limit": 5,
+        "category": "vga",
+        "brand": null
+      },
+      "last_selection": [
+        "P32",
+        "P17",
+        "P66",
+        "P60"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "vga",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": false,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.6012842999916757
+}

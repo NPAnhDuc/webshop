@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "551f057dc28b42f2b3323ec6bbd80f40",
+  "parent_trace_id": "6bec91e970fe4cb9a1ddbcf387781511",
+  "recorded_at": "2026-10-24T07:35:10.154461+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Vẫn loại vừa rồi, hạ trần xuống 2000000 đồng và lấy 2 món nhé.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.3765375000075437
+}

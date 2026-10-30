@@ -1,0 +1,30 @@
+[
+  {
+    "document_id": "sales-plan-2026-Q3",
+    "title": "Kế hoạch bán hàng 2026-Q3",
+    "source": "sales-plan-2026-Q3-v1.md",
+    "version": 1,
+    "effective_from": "2025-10-01",
+    "effective_to": null,
+    "status": "approved",
+    "audience": "admin",
+    "authority": "synthetic_shop_document",
+    "data_kind": "demo",
+    "doc_type": "sales_plan",
+    "text": "# Kế hoạch bán hàng 2026-Q3\n\nDỮ LIỆU MÔ PHỎNG — SHOP GIẢ LẬP retail_sim_v1. Không phải chính sách hay kết quả kinh doanh thật.\n\n## Mục tiêu doanh thu\n\nKỳ: 2026-Q3. Mục tiêu doanh thu thuần sau hoàn trả, chưa VAT: 4698000000 VND. Biên lợi nhuận gộp mục tiêu: 14,5%. Đây là kế hoạch định trước, không điều chỉnh theo kết quả.\n\n| Tháng | Doanh thu mục tiêu (VND) |\n|---|---:|\n| 2026-07 | 1377000000 |\n| 2026-08 | 1782000000 |\n| 2026-09 | 1539000000 |\n\n## Theo dõi và giới hạn\n\nĐối soát doanh thu thuần với financial_ledger, giá vốn theo FIFO. Không trừ toàn bộ tiền nhập hàng vào lợi nhuận. Báo riêng lợi nhuận gộp, lợi nhuận hoạt động và dòng tiền. Chưa có bằng chứng để suy ra quan hệ nhân quả chỉ từ tăng trưởng doanh thu.\n\n## Ngân sách\n\nMarketing thường xuyên 12000000 VND/tháng; chiến dịch có ngân sách riêng. Chủ shop phải duyệt trước mọi thay đổi giá và đơn nhập hàng."
+  },
+  {
+    "document_id": "pricing-policy",
+    "title": "Quy định giá và biên gộp",
+    "source": "pricing-policy-v2.md",
+    "version": 2,
+    "effective_from": "2026-04-01",
+    "effective_to": null,
+    "status": "approved",
+    "audience": "admin",
+    "authority": "synthetic_shop_document",
+    "data_kind": "demo",
+    "doc_type": "policy",
+    "text": "# Quy định giá và biên gộp\n\nDỮ LIỆU MÔ PHỎNG — SHOP GIẢ LẬP retail_sim_v1. Không phải chính sách hay kết quả kinh doanh thật.\n\n## Ràng buộc\n\nTừ 2026-04-01, biên gộp tối thiểu cho laptop 6%, card đồ họa 4%, nhóm khác 10%. Mức giảm tối đa 6%; không cộng dồn. Hàng tồn trên 90 ngày phải xem dữ liệu tuổi tồn và xin chủ shop duyệt trước khi xả. Kiểm tra biên sau giảm từ giá vốn FIFO; không hứa mức giá nếu chưa được duyệt."
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "938ab093ede044029f22b98b5ba72265",
+  "parent_trace_id": "819ad0f947b443dc8b7eb085d6e963f3",
+  "recorded_at": "2026-10-24T07:34:51.343059+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Bỏ lựa chọn cũ, chuyển sang ổ SSD, lấy 3 món dưới 2000000 đồng.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 2000000,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "ssd",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": true,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.3138506999966921
+}

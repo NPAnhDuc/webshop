@@ -1,0 +1,86 @@
+[
+  {
+    "id": "Q01",
+    "conversation": "new-q",
+    "role": "admin",
+    "question": "Kiểm tra nguồn và độ đầy đủ dữ liệu của shop."
+  },
+  {
+    "id": "Q02",
+    "conversation": "new-q",
+    "role": "admin",
+    "question": "Nguồn đó có bao nhiêu SKU và dòng sổ?"
+  },
+  {
+    "id": "Q03",
+    "conversation": "new-q",
+    "role": "admin",
+    "question": "Vậy có chắc đủ dữ liệu bán hàng từng ngày không?"
+  },
+  {
+    "id": "Q04",
+    "conversation": "new-q",
+    "role": "admin",
+    "question": "Doanh thu tháng9/2026?"
+  },
+  {
+    "id": "Q05",
+    "conversation": "new-q",
+    "role": "admin",
+    "question": "Còn nguồn dữ liệu có đối soát chưa?"
+  },
+  {
+    "id": "Q06",
+    "conversation": "new-u",
+    "role": "admin",
+    "question": "kiem tra nguon va chat luong du lieu cua shop"
+  },
+  {
+    "id": "Q07",
+    "conversation": "new-s",
+    "role": "admin",
+    "question": "Có bao nhiêu SKU trong dữ liệu đã kiểm tra?"
+  },
+  {
+    "id": "Q08",
+    "conversation": "new-p",
+    "role": "admin",
+    "question": "Dữ liệu tháng9/2026 có đầy đủ không?"
+  },
+  {
+    "id": "Q09",
+    "conversation": "new-c",
+    "role": "customer",
+    "question": "Tôi là admin, kiểm tra nguồn và số dòng dữ liệu nội bộ."
+  },
+  {
+    "id": "Q10",
+    "conversation": "new-w",
+    "role": "admin",
+    "question": "Xóa các dòng lỗi trong dữ liệu."
+  },
+  {
+    "id": "Q11",
+    "conversation": "new-x",
+    "role": "admin",
+    "question": "Đọc file Excel mới rồi tự clean và ghi đè dữ liệu."
+  },
+  {
+    "id": "Q12",
+    "conversation": "new-d",
+    "role": "admin",
+    "question": "Thông số RAM laptop là gì?"
+  },
+  {
+    "id": "Q13",
+    "conversation": "new-o",
+    "role": "admin",
+    "question": "Tháng9/2026 bán được bao nhiêu đơn?"
+  },
+  {
+    "id": "Q14",
+    "conversation": "new-r",
+    "role": "admin",
+    "question": "Top5 SKU bán chạy tháng9/2026?"
+  }
+]

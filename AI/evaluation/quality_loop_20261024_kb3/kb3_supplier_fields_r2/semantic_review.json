@@ -1,0 +1,46 @@
+{
+  "revision": "r2",
+  "status": "retain_narrow_runtime_fix_not_full_system_acceptance",
+  "requested_cases": 24,
+  "actual_cases": 28,
+  "changed_answers": [
+    "Q0020"
+  ],
+  "unchanged_answers": 27,
+  "overall_semantic_accuracy": null,
+  "mechanical_checks": {
+    "PASS_CHECKS": 11,
+    "NEEDS_REVIEW": 17
+  },
+  "cases": [
+    {
+      "id": "Q0020",
+      "status": "improved_evidence_coverage_and_relevance",
+      "before": "Unrelated warranty and reorder claims; no explicit MOQ evidence gap.",
+      "after": "Only cited supplier lead time SUP-LAP4days/SUP-PC3days retained; explicitly marks MOQ unconfirmed. Does not assert absence across entire corpus.",
+      "source": "procurement-v2.md section2 version2, strategy/synthetic_shop_document",
+      "claims_before": 5,
+      "claims_after": 1
+    },
+    {
+      "id": "Q0187",
+      "status": "baseline_answer_preserved_r1_false_abstention_removed",
+      "note": "Both supplier values retained and cited with simulation label; same answer text as r5, not a new baseline improvement."
+    }
+  ],
+  "control_scope": "27 unchanged answer texts and all28 basic_action values equal r5; no independent full semantic acceptance of unchanged cases.",
+  "known_open": [
+    "Q0038 campaign eligibility not proved by campaign-name table",
+    "Q0102 cap comparison and approver coverage",
+    "broader supplier aliases, sources with other authorities, entity-specific operand coverage not certified"
+  ],
+  "timing": {
+    "baseline_subset_median_seconds": 6.2345,
+    "candidate_median_seconds": 6.343500000000001,
+    "conclusion": "No speed improvement demonstrated; single sequential replay."
+  },
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "validation_opened": false,
+  "model_batches_this_heartbeat": 0
+}

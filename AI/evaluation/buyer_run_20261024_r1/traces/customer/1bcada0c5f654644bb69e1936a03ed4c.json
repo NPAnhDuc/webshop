@@ -1,0 +1,71 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "1bcada0c5f654644bb69e1936a03ed4c",
+  "parent_trace_id": "566bdc3cb2854e9c8ed411ef60c158ea",
+  "recorded_at": "2026-10-24T07:34:35.431526+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Vẫn loại vừa rồi, hạ trần xuống 5000000 đồng và lấy 2 món nhé.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 7000000,
+        "limit": 5,
+        "category": "mainboard",
+        "brand": null
+      },
+      "last_selection": [
+        "P30",
+        "P63",
+        "P57",
+        "P20",
+        "P35"
+      ]
+    }
+  },
+  "state_after": {
+    "owner_role": "customer",
+    "catalog_context": {
+      "revision": "b2050804f90fd2691e57e0191616096f0b19c87627e3ddc0e0aa7c46e63bfcf0",
+      "filters": {
+        "max_price_exclusive": 7000000,
+        "limit": 5,
+        "category": "mainboard",
+        "brand": null
+      },
+      "last_selection": [
+        "P30",
+        "P63",
+        "P57",
+        "P20",
+        "P35"
+      ]
+    }
+  },
+  "plans": {
+    "plan": {
+      "action": "search",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "mainboard",
+      "brand": "",
+      "continuation": true,
+      "clear_brand": true,
+      "unsupported_filters": true,
+      "product_refs": []
+    }
+  },
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "deferred",
+    "answer": "Bộ lọc này chưa được kết nối đầy đủ; tôi chưa thể bỏ qua điều kiện đó để đưa danh sách đúng yêu cầu.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.576660200007609
+}

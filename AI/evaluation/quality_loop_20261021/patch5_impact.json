@@ -1,0 +1,371 @@
+[
+  {
+    "id": "Q0023",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 6/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0041",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 9/2026",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0059",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 11/2025",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0118",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 12/2025",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0132",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 1/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0170",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 11/2025",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0179",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 12/2025",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0197",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 4/2026",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0206",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 8/2026",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0215",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 9/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0233",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 5/2026",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0242",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 10/2025",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0251",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 3/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0259",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 2/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0267",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 1/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0275",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 10/2025",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0282",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 7/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0289",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 3/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0296",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 11/2025",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0303",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 5/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0317",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 3/2026",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0324",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 8/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0331",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 12/2025",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0338",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 6/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  },
+  {
+    "id": "Q0345",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 9/2026",
+      "trả riêng từng chỉ tiêu: doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ],
+    "after": [
+      "doanh thu thuần",
+      "giá vốn",
+      "lợi nhuận gộp."
+    ]
+  },
+  {
+    "id": "Q0352",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 10/2025",
+      "trả riêng từng chỉ tiêu: chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ],
+    "after": [
+      "chi phí vận hành",
+      "lợi nhuận hoạt động trước lãi vay / thuế."
+    ]
+  },
+  {
+    "id": "Q0358",
+    "topic": "monthly_multi",
+    "before": [
+      "Từ báo cáo 5/2026",
+      "trả riêng từng chỉ tiêu: đơn hàng",
+      "sản phẩm hoàn trả."
+    ],
+    "after": [
+      "đơn hàng",
+      "sản phẩm hoàn trả."
+    ]
+  }
+]

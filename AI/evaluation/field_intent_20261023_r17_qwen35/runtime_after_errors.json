@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "name": "shop-qwen:latest",
+      "model": "shop-qwen:latest",
+      "size": 3151799255,
+      "digest": "3b570fdfaa4206e147d3ee3ec0e1232b78746b0bacc0ca82d806eedd39467160",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "4.2B",
+        "quantization_level": "Q4_K_M"
+      },
+      "expires_at": "2026-10-23T03:02:15.7645031+07:00",
+      "size_vram": 3151799255,
+      "context_length": 6144,
+      "runner": "llamacpp"
+    }
+  ]
+}

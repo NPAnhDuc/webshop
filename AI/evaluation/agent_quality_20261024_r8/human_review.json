@@ -1,0 +1,535 @@
+{
+  "protocol": "Separate comparison with r7, no new semantic gains in106. Development already exposed.",
+  "cases": {
+    "Q01": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q02": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q03": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q04": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q05": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q06": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q07": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q08": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q09": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q10": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q11": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q12": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q13": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q14": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q15": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q16": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q17": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q18": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q19": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q20": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q21": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q22": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q23": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q24": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q25": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q26": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q27": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q28": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q29": {
+      "semantic_pass": false,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q30": {
+      "semantic_pass": false,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q31": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q32": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q33": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q34": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q35": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q36": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q37": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q38": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q39": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q40": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q41": {
+      "semantic_pass": false,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q42": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q43": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q44": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q45": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "Q46": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A01": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A02": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A03": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A04": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A05": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A06": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A07": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A08": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A09": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A10": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A11": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A12": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A13": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A14": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A15": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A16": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A17": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A18": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A19": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A20": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A21": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A22": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A23": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "A24": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S01": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S02": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S03": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S04": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S05": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S06": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S07": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S08": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S09": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S10": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S11": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-S12": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N01": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N02": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N03": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N04": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N05": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N06": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N07": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N08": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N09": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N10": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N11": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N12": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N13": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N14": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N15": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N16": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N17": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N18": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N19": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N20": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N21": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N22": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N23": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    },
+    "B-N24": {
+      "semantic_pass": true,
+      "same_answer_and_tool_args_as_r7": true,
+      "reason": "Carry forward r7 semantic review after identical normalized answer and tool/args verification. New20 lexical scope probes are not included in this end-to-end score."
+    }
+  }
+}

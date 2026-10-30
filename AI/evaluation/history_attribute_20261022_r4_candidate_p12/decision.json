@@ -1,0 +1,4 @@
+{
+  "state": "rejected_restore_patch9",
+  "reason": "Three fixes but nine regressions; attribute-only ordering insufficient and harms explicit questions."
+}

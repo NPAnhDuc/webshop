@@ -1,0 +1,12 @@
+{
+  "training_inputs_unchanged_after_price_review": true,
+  "sha256": {
+    "corpus.jsonl": "29c19e95885fb02a8746ec8310afb9f0c1d9410ac73070868308d23754a0c6ac",
+    "qa.jsonl": "33d7b4d873045297bd0ba87af79f02e6d26ec93fee01983fa1867bb507a6e276",
+    "daily_demand.csv": "44f9427c3d567271cd0f1833afadbc30b2e6c08c224cd9ed734bde2a1d33a688",
+    "kev-train.jsonl": "5390da80eef0a9cb57320441409716cbe63993f1749f4f7c1a3c5fcd35118588",
+    "kev-validation.jsonl": "83889f9c08614faf9a687d21ba1afbfea8176e3fffe961ab822d254b264304a3",
+    "kev-test.jsonl": "8dcc8f9e72a085210438985ab162ba3e6d62721ca2b799ceefb0237944baff89"
+  },
+  "explanation": "Only synthetic transaction prices/costs and numerical tool-case answers changed. Retriever corpus/QA and forecast daily units used by Colab are byte-identical."
+}

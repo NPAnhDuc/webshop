@@ -1,0 +1,6 @@
+{
+  "stage": "initial-v3-launcher",
+  "resolved": true,
+  "cause": "Windows backslash member paths on Linux",
+  "fix": "package with Path.as_posix and run trainer in notebook to retain traceback"
+}

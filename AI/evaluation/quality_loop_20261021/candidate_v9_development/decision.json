@@ -1,0 +1,7 @@
+{
+  "state": "full479_semantic_review_complete",
+  "candidate_retained": true,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "Checksunchangedfrompatch5,all15changedcasesreadcorrect,112priorreviewsexactoutputs. All367previously-unreviewed cases now read;29failuresremain, prioritize source-preamble phantom part documented inCOHORT_02_FINDINGS before openingreserved."
+}

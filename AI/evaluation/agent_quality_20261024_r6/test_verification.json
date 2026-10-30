@@ -1,0 +1,13 @@
+{
+  "targeted_tests": 44,
+  "targeted_seconds": 11.51,
+  "full_tests": 384,
+  "full_seconds": 114.23,
+  "binding_contract_before": 0,
+  "binding_contract_after": 3,
+  "binding_contract_total": 3,
+  "contract_uses_deliberately_bad_injected_planner": true,
+  "model_batches": 1,
+  "active_source_changed": false,
+  "accepted_for_application": false
+}

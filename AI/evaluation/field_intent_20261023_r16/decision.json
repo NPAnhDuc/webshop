@@ -1,0 +1,6 @@
+{
+  "state": "not_accepted_scope_regressions",
+  "production_accepted": false,
+  "active_code": "patch9",
+  "reason": "Not accepted: same-input aggregate improves but unsafe fallback shortcuts increase4to7, including three new principle questions. Typed per-part contract prevents empty arrays, not semantic misbinding. Keep patch9 unchanged."
+}

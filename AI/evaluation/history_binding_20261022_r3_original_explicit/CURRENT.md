@@ -1,0 +1,1 @@
+Completed56/integritytrue; semantic54PASS/2FAIL. All56 exact answer/action/source objects match rejected patch11 original-history output. Both Corsair kit failures reproduce with explicit questions on patch9. See REPORT/summary/human_review. Patch12 attribute-ordering trial runs separately in history_attribute_20261022_r4_candidate_p12.

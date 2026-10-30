@@ -1,0 +1,35 @@
+{
+  "before": {
+    "date": "2026-10-20",
+    "clock": "Asia/Bangkok",
+    "mode": "basic_rag",
+    "mapping": {
+      "product_A": "Lenovo LOQ Gaming 15IRH8",
+      "product_B": "MSI Modern 15 B12M",
+      "supplier_A": "SUP-LAP"
+    },
+    "attachment_sha256": "2d4d251d87a94119c6612362f75026545084f207405bfbadf7255b9682a4b903",
+    "bank_sha256": "7bfa279ea50d0fded5fec8c2342cca8d06e496c764a0b2afaebe052721c62387",
+    "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "knowledge_sha256": "5c43e7e258a8ffaa4392dd9f00ceb9b5267a066c6af089349ea45c9430abe72b",
+    "source_sha256": {
+      "shopbot/basic_rag.py": "01f946ab5c021451113ca90ab6191c4441d623e8d36d0283f9ead19ab2f9f05c",
+      "shopbot/engine.py": "748659add7f7aee854fb62b1944019073037b86642398b47b4472f7f1843c3d8",
+      "shopbot/retrieval.py": "ad819c6d6faa7adef392d81ec210d43b7c1e0ca51f7dd5264728cdf9ddfc78e4",
+      "shopbot/rag_answer.py": "e9d80d574d6327d6309029852f894d3aab0759f5b09298f967b08db49880623e"
+    },
+    "assumptions": [
+      "Relative/current quarter means Q4/2026; do not silently substitute Q4/2025.",
+      "September means September 2026.",
+      "Questions 1–6, 26–27, 31–36, 43–44, 46–47 run with within-group conversation memory.",
+      "No answer hint after the arrow is provided to the chatbot.",
+      "A missing-data refusal is not a full functionality pass.",
+      "Question 8 supplied assertion that 144Hz only benefits gaming is not accepted without source support."
+    ]
+  },
+  "after": {
+    "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+    "knowledge_sha256": "5c43e7e258a8ffaa4392dd9f00ceb9b5267a066c6af089349ea45c9430abe72b"
+  },
+  "unchanged": true
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "b8cdfd95fa794daf8fe5bdfe4b1e4dd3",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T16:39:11.219561+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Độ phủ màu sRGB và độ sáng màn hình nói lên điều gì?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Độ phủ màu sRGB và độ sáng màn hình nói lên điều gì?"
+      },
+      "principal_role": "customer",
+      "status": "unavailable",
+      "output": {
+        "tool": "documents.answer",
+        "status": "unavailable",
+        "executed": false,
+        "answer": "Model local chưa chọn được bằng chứng đủ chắc chắn. Bạn thử lại giúp tôi nhé.",
+        "reason": "Model local chưa chọn được bằng chứng đủ chắc chắn. Bạn thử lại giúp tôi nhé.",
+        "answerability": "unverified",
+        "rag_action": "unavailable",
+        "sources": []
+      },
+      "seconds": 6.39542590000201
+    }
+  ],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "documents",
+    "answer": "Model local chưa chọn được bằng chứng đủ chắc chắn. Bạn thử lại giúp tôi nhé.",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 6.934079300001031
+}

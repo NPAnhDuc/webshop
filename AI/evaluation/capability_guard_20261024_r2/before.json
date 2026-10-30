@@ -1,0 +1,127 @@
+{
+  "passed": 9,
+  "total": 20,
+  "model_calls": 0,
+  "cases": [
+    {
+      "question": "Chuẩn hóa dữ liệu là gì?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Xóa dữ liệu có nghĩa là gì?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Làm sạch Excel nghĩa là gì?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Vì sao phải chuẩn hóa dữ liệu?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Hướng dẫn cách làm sạch file Excel.",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Giải thích cách clean và chuẩn hóa dữ liệu.",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "Dữ liệu đã làm sạch chưa?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "File Excel đã được chuẩn hóa chưa?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Các dòng lỗi đã xóa chưa?",
+      "expected": null,
+      "actual": "file.transform",
+      "passed": false
+    },
+    {
+      "question": "Giải thích Excel là gì rồi xóa dữ liệu lỗi.",
+      "expected": "file.transform",
+      "actual": null,
+      "passed": false
+    },
+    {
+      "question": "Chuẩn hóa dữ liệu là gì? Sau đó làm sạch Excel giúp tôi.",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Không xóa hay sửa dữ liệu, chỉ kiểm tra nguồn.",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "Đừng clean hoặc chuẩn hóa file, chỉ kiểm tra dữ liệu.",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "question": "Không clean file gốc nhưng làm sạch bản sao Excel.",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Làm sạch file Excel được không?",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Có thể chuẩn hóa file này giúp tôi không?",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Xóa các dòng chưa chuẩn hóa.",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Dữ liệu chưa làm sạch, hãy chuẩn hóa file Excel.",
+      "expected": "file.transform",
+      "actual": "file.transform",
+      "passed": true
+    },
+    {
+      "question": "Giải thích doanh thu là gì rồi tìm top5 SKU bán chạy.",
+      "expected": "sales.rank",
+      "actual": null,
+      "passed": false
+    },
+    {
+      "question": "Chỉ giải thích khái niệm xếp hạng doanh thu theo SKU là gì.",
+      "expected": null,
+      "actual": "sales.rank",
+      "passed": false
+    }
+  ]
+}

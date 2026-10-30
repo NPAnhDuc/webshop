@@ -1,0 +1,23 @@
+{
+  "full_schema": {
+    "reviewed_by": "Codex",
+    "http_status": 500,
+    "classification": "runtime_error",
+    "contract_valid": false,
+    "note": "Read boundedHTTPbody and newruntimeerrors; no semanticFAIL label."
+  },
+  "json_object": {
+    "reviewed_by": "Codex",
+    "http_status": 500,
+    "classification": "runtime_error",
+    "contract_valid": false,
+    "note": "Read boundedHTTPbody and newruntimeerrors; no semanticFAIL label."
+  },
+  "unconstrained": {
+    "reviewed_by": "Codex",
+    "http_status": 200,
+    "classification": "degenerate_output_not_usable",
+    "contract_valid": false,
+    "note": "HTTP200body is only repeated8digits, lengthstop300tokens; validJSONnumber is not requiredobject/fieldcontract. No repair or ingestion."
+  }
+}

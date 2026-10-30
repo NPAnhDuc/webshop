@@ -1,0 +1,46 @@
+{
+  "cases": 50,
+  "claims_quotes_checked": 89,
+  "evidence_integrity_errors": [],
+  "technical_source_ids_retrieved": [
+    "tech-cpu-cores-clock",
+    "tech-cpu-gpu",
+    "tech-flash-capacity",
+    "tech-flash-speed",
+    "tech-kc3000-capacity",
+    "tech-laptop-choice",
+    "tech-legion-family",
+    "tech-loq-family",
+    "tech-macbook-air-m1",
+    "tech-monitor-photo",
+    "tech-monitor-response",
+    "tech-nv2-capacity",
+    "tech-oled-basics",
+    "tech-oled-static",
+    "tech-panels-ips-oled",
+    "tech-photoshop-requirements",
+    "tech-ram-capacity",
+    "tech-ram-upgrade",
+    "tech-refresh-fps",
+    "tech-refresh-study",
+    "tech-ryzen9800x3d",
+    "tech-ssd-m2-nvme",
+    "tech-thunderbolt-usbc",
+    "tech-thunderbolt5",
+    "tech-usb-pd"
+  ],
+  "catalog_versions_retrieved": [
+    3
+  ],
+  "actions": {
+    "answer": 43,
+    "live_product": 1,
+    "outside": 2,
+    "denied": 1,
+    "deferred": 3
+  },
+  "seconds": 405.61,
+  "frozen_corpus_integrity": true,
+  "acceptance_score": "not automatically scored",
+  "receipt_manifest_matches": true
+}

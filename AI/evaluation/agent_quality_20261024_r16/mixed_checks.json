@@ -1,0 +1,71 @@
+{
+  "Q47": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q48": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q49": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q50": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q51": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q52": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q53": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q54": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q55": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q56": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q57": {
+    "checks_pass": true,
+    "errors": [],
+    "semantic_review_required": true
+  },
+  "Q58": {
+    "checks_pass": false,
+    "errors": [
+      "action",
+      "tools",
+      "knowledge_span",
+      "documents_not_executed",
+      "silent_omission",
+      "partial_status",
+      "comparison_refs",
+      "catalog_source"
+    ],
+    "semantic_review_required": true
+  }
+}

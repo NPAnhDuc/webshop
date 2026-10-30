@@ -1,0 +1,53 @@
+{
+  "status": "retain_narrow_comparison_pending_broad_regression",
+  "baseline": "kb3_campaign_scope_r1",
+  "actual_cases": 28,
+  "changed_answers": [
+    "Q0102"
+  ],
+  "unchanged_answers": 27,
+  "action_changes": [],
+  "integrity_unchanged": true,
+  "overall_semantic_accuracy": null,
+  "mechanical_checks": {
+    "PASS_CHECKS": 11,
+    "NEEDS_REVIEW": 17
+  },
+  "cases": [
+    {
+      "id": "Q0102",
+      "status": "supported_comparison_completed_approver_remains_unknown",
+      "request": "7%",
+      "source_cap": "6%",
+      "source": "pricing-policy-v2.md section2 version2",
+      "source_quote": "Mức giảm tối đa 6%; không cộng dồn.",
+      "derived_difference": "1 percentage point above cap",
+      "calculation": {
+        "operation": "compare_policy_percentage",
+        "metric": "discount_rate",
+        "requested_percent": "7",
+        "cap_percent": "6",
+        "relation": "above",
+        "absolute_difference_percentage_points": "1",
+        "approval_granted": false,
+        "mutation_allowed": false,
+        "evidence_id": "policy_7",
+        "quote": "Mức giảm tối đa 6%; không cộng dồn.",
+        "reference_date": "2026-10-24"
+      },
+      "unanswered": [
+        "người duyệt giúp tôi."
+      ],
+      "approval_granted": false
+    }
+  ],
+  "control_scope": "27answer texts and all28actions unchanged; no independent semantic acceptance for every unchanged case.",
+  "timing": {
+    "candidate_median_seconds": 6.390499999999999,
+    "baseline_median_seconds": 6.3675,
+    "speed_improvement_demonstrated": false
+  },
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "validation_opened": false
+}

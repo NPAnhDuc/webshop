@@ -1,0 +1,36 @@
+{
+  "examples": [
+    {
+      "role": "user",
+      "content": "{\"today_Asia_Bangkok\": \"2026-10-19\", \"role\": \"admin\", \"question\": \"Cho hai mẫu có doanh số lớn nhất tháng 11/2025.\", \"memory\": {}}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"intent\": \"top_products\", \"time_mode\": \"explicit\", \"period_unit\": \"month\", \"metric\": \"revenue\", \"limit\": 2, \"continuation\": false, \"changed_slots\": [], \"category\": \"all\", \"analysis_focus\": \"overview\", \"requested_spec\": \"overview\", \"private_request\": true, \"standalone_question\": \"Cho hai mẫu có doanh số lớn nhất tháng 11/2025.\", \"clarification\": \"\"}"
+    },
+    {
+      "role": "user",
+      "content": "{\"today_Asia_Bangkok\": \"2026-10-19\", \"role\": \"admin\", \"question\": \"Ba mẫu bán được nhiều chiếc nhất tháng 2/2026.\", \"memory\": {}}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"intent\": \"top_products\", \"time_mode\": \"explicit\", \"period_unit\": \"month\", \"metric\": \"units\", \"limit\": 3, \"continuation\": false, \"changed_slots\": [], \"category\": \"all\", \"analysis_focus\": \"overview\", \"requested_spec\": \"overview\", \"private_request\": true, \"standalone_question\": \"Ba mẫu bán được nhiều chiếc nhất tháng 2/2026.\", \"clarification\": \"\"}"
+    }
+  ],
+  "question": "Top 2 chuột về doanh số tháng 7/2026.",
+  "response": {
+    "analysis_focus": "overview",
+    "category": "mouse",
+    "changed_slots": [],
+    "clarification": "",
+    "continuation": false,
+    "intent": "top_products",
+    "limit": 2,
+    "metric": "revenue",
+    "period_unit": "month",
+    "private_request": true,
+    "requested_spec": "overview",
+    "standalone_question": "Top 2 chuột về doanh số tháng 7/2026.",
+    "time_mode": "explicit"
+  }
+}

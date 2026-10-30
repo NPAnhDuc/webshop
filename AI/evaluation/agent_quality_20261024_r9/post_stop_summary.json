@@ -1,0 +1,27 @@
+{
+  "normal_completion": false,
+  "stop_reason": "Three consecutive unavailable at Q56-Q58; all118 results preserved, no rerun.",
+  "baseline106_passed": 100,
+  "baseline106_total": 106,
+  "previous_passed": 103,
+  "new12_passed": 7,
+  "new12_total": 12,
+  "new_regressions": [
+    "Q02",
+    "Q15",
+    "Q19"
+  ],
+  "remaining_old_failures": [
+    "Q29",
+    "Q30",
+    "Q41"
+  ],
+  "candidate_rejected": true,
+  "restored_files": {
+    "catalog_planner.py": true,
+    "agent_conversation.py": true
+  },
+  "trace_records": 118,
+  "role_question_parent_links_passed": true,
+  "default_mode_unchanged": true
+}

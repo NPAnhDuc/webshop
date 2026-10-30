@@ -1,0 +1,32 @@
+{
+  "baseline_C31": {
+    "reason": "Correctly accepts explicit unknown thread count alongside supplied core/boost facts; generated reason is cut at field-length boundary.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  },
+  "baseline_C34": {
+    "reason": "Correctly accepts the explicit regional applicability limitation.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  },
+  "trial_C31": {
+    "reason": "False acceptance: reasoning praises core/boost but the answer omits the asked thread-count availability and substitutes a generic statement. This is the critical completeness failure.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  },
+  "trial_C34": {
+    "reason": "Correctly rejects capacity/type as insufficient proof of regional soldered-RAM equivalence. Outputs paragraphs rather than part IDs, allowed by this diagnostic schema but unsuitable for direct per-part integration.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  },
+  "control_C05": {
+    "reason": "Correctly accepts separate LAN and HDMI answers.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  },
+  "control_C06": {
+    "reason": "Correctly accepts both capacities and RAM generations.",
+    "reviewed_by": "Codex",
+    "method": "Fresh reading of all six judge outputs against saved manual source-based verdicts; judge is not gold."
+  }
+}

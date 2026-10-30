@@ -1,0 +1,24 @@
+{
+  "checks_pass": 58,
+  "total_checks": 58,
+  "tests_pass": 284,
+  "test_seconds": 82.97,
+  "synthetic": true,
+  "source_modified": false,
+  "curated_published": false,
+  "model_batch_run": false,
+  "totals": {
+    "opening_inventory_value": 1502710000,
+    "purchases_received": 11767250000,
+    "net_cogs": 11615510000,
+    "closing_inventory_value": 1654450000,
+    "closing_units": 312,
+    "inventory_rows": 24455,
+    "movement_rows": 2126,
+    "declared_period": {
+      "start": "2025-10-01",
+      "end": "2026-09-30",
+      "days": 365
+    }
+  }
+}

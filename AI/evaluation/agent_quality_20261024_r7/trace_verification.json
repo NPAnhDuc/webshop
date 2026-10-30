@@ -1,0 +1,18 @@
+{
+  "turns": 106,
+  "trace_records": 106,
+  "role_question_parent_links_passed": true,
+  "unsupported_turns_without_any_tool_call": [
+    "A20",
+    "A22",
+    "Q10",
+    "Q11",
+    "Q14",
+    "Q20",
+    "Q22",
+    "Q24",
+    "Q28",
+    "Q37",
+    "Q39"
+  ]
+}

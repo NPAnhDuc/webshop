@@ -1,0 +1,8 @@
+{
+  "review": "Source audit before inspecting the held-out run. Original bank and raw runs remain unchanged.",
+  "changes": {
+    "R009": {"equivalent_evidence": [{"document": "pricing-policy", "quote": "không cộng dồn"}]},
+    "R010": {"equivalent_evidence": [{"document": "pricing-policy", "quote": "không cộng dồn"}]},
+    "R037": {"kind": "partial", "reason": "Source requires approval for prices and purchase orders, but does not explicitly authorize/forbid changing the marketing budget. The budget part must remain unknown."}
+  }
+}

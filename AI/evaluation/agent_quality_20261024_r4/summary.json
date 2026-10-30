@@ -1,0 +1,14 @@
+{
+  "new_checks_pass": 19,
+  "new_total": 24,
+  "regression_checks_pass": 57,
+  "regression_total": 60,
+  "median_seconds": 0.9225,
+  "max_seconds": 25.375,
+  "integrity": {
+    "unchanged": true,
+    "turns": 84
+  },
+  "accepted_for_application": false,
+  "note": "Same84 questions/gold as r3. Q19 checker category corrected to canonical catalog ram; old failure still fails the independent count criterion. Structured traces enabled. Mechanical checks do not replace semantic review."
+}

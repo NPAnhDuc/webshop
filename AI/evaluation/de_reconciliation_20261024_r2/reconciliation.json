@@ -1,0 +1,324 @@
+{
+  "schema": "de-reconciliation-v1",
+  "source": {
+    "path": "D:\\Chatbot\\chatbotshop\\AI\\data\\de_pipeline\\retail_sim_v1\\revision_20261023_1607\\raw\\ledger.sqlite",
+    "sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028"
+  },
+  "implementation_sha256": "c17249b9ef6d89f7c1930896d7b1f7367d87df88196760bb9895d313feb6d827",
+  "passed": true,
+  "checks": [
+    {
+      "check": "schema:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:purchase_orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:purchase_lines",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:receipts",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:inventory_moves",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:inventory_daily",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "schema:metadata",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:purchase_orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:purchase_lines",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:receipts",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:inventory_moves",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:inventory_daily",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "typed_values:metadata",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:products",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:purchase_orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:purchase_lines",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:receipts",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:orders",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:financial_ledger",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:inventory_moves",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:inventory_daily",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_identity:metadata",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:purchase_lines",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:receipts",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:returns",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:order_items",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:inventory_moves",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "known_sku:inventory_daily",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "purchase_lines_valid",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "receipts_match_purchase_lines",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "receipts_do_not_exceed_order",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "sale_movement_matches_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "receipt_movement_matches_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "return_movement_matches_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "one_movement_per_source",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "explained_movements",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "movement_signs",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "independent_fifo_replay",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "no_negative_intraday_inventory",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "daily_snapshots_match_movements",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "current_stock_matches_replay",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "declared_inventory_period",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "unique_daily_snapshots",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "daily_snapshot_coverage",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "inventory_dates_within_period",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "opening_moves_at_period_start",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "inventory_cost_conservation",
+      "passed": true,
+      "violations": 0
+    }
+  ],
+  "quarantine_samples": [],
+  "totals": {
+    "opening_inventory_value": 1502710000,
+    "purchases_received": 11767250000,
+    "net_cogs": 11615510000,
+    "closing_inventory_value": 1654450000,
+    "closing_units": 312,
+    "inventory_rows": 24455,
+    "movement_rows": 2126,
+    "declared_period": {
+      "start": "2025-10-01",
+      "end": "2026-09-30",
+      "days": 365
+    }
+  },
+  "curated_published": false,
+  "source_modified": false,
+  "limitations": [
+    "FIFO assumes integer unit costs and one movement per source event, with restocked returns appended as new lots.",
+    "Intraday FIFO order is the declared (day, integer movement id) order; missing timestamps are not inferred.",
+    "No fixed return window or forced 365-day period. Inventory coverage follows the declared period, not imputed sales days.",
+    "Currency, tax, external truth, business policy and CSV/Excel mapping remain unverified."
+  ]
+}

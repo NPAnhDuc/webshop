@@ -1,0 +1,115 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "6aaf8f0b96ba496196aed15377218716",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:46:21.171121+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Dung lượng VRAM khác RAM máy tính ở đâu?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Dung lượng VRAM khác RAM máy tính ở đâu?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "CPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nGPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nHai loại bổ sung cho nhau.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]",
+        "reason": "CPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nGPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nHai loại bổ sung cho nhau.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-cpu-gpu",
+            "title": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+            "source": "tech-cpu-gpu-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "1677b323fee6a18e04bce9b171c797cd8ba3f25ccd6ef99f8cd584cfe522dba7",
+            "text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+            "section": 1,
+            "chunk_id": "09c945275a1e156d99c54076ab9fb9bc6cabbde3cc67feec7d921e5db09e500b",
+            "score": 0.04019,
+            "dense_score": 0.5342,
+            "lexical_score": 0.0192,
+            "bm25_score": 2.8628,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 10.97687600000063
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "CPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nGPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]\n\nHai loại bổ sung cho nhau.\n\n[Nguồn: tech-cpu-gpu-v1.md, mục CPU khác GPU như thế nào? GPU có thay CPU được không?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-cpu-gpu",
+        "title": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+        "source": "tech-cpu-gpu-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "1677b323fee6a18e04bce9b171c797cd8ba3f25ccd6ef99f8cd584cfe522dba7",
+        "text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "CPU khác GPU như thế nào? GPU có thay CPU được không?\n\nCPU phù hợp xử lý nhiều loại công việc và tác vụ cần hiệu năng từng nhân hoặc độ trễ thấp. GPU có nhiều lõi chuyên biệt cùng xử lý song song, hữu ích cho đồ họa, video và một số tác vụ AI. Hai loại bổ sung cho nhau. Có GPU mạnh không có nghĩa máy sẽ nhanh ở mọi phần mềm; phần mềm phải sử dụng được khả năng tăng tốc tương ứng.\n\nNguồn: https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "CPU khác GPU như thế nào? GPU có thay CPU được không?",
+        "section": 1,
+        "chunk_id": "09c945275a1e156d99c54076ab9fb9bc6cabbde3cc67feec7d921e5db09e500b",
+        "score": 0.04019,
+        "dense_score": 0.5342,
+        "lexical_score": 0.0192,
+        "bm25_score": 2.8628,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 11.576100999998744
+}

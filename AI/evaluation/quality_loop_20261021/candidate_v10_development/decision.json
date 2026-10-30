@@ -1,0 +1,8 @@
+{
+  "state": "rejected_restore_patch9",
+  "promoted": false,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "Fixes4includingphantompreamblecontamination,noise53to30,but breaks2knownproductfollowupsQ0300/Q0478. Reject standalonepatch10;contextdependenceonpreviousgeneratedanswer needsseparaterepairbeforetryingpreamblecleanupagain.",
+  "restore": "patch10_before_code/grounded_rag.py and test_grounded_rag.py"
+}

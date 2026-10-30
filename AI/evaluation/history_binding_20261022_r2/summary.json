@@ -1,0 +1,40 @@
+{
+  "cases": 168,
+  "targets": 56,
+  "distinct_question_texts": 68,
+  "semantic": {
+    "PASS": 163,
+    "FAIL": 5
+  },
+  "variants": {
+    "original_history": {
+      "PASS": 54,
+      "FAIL": 2
+    },
+    "brief_history": {
+      "PASS": 53,
+      "FAIL": 3
+    },
+    "explicit_subject_brief_history": {
+      "PASS": 56
+    }
+  },
+  "checks": {
+    "PASS_CHECKS": 163,
+    "FAIL_CHECKS": 5
+  },
+  "fail_ids": [
+    "Q0191_original_history",
+    "Q0300_brief_history",
+    "Q0301_original_history",
+    "Q0301_brief_history",
+    "Q0478_brief_history"
+  ],
+  "secondary_cases": 16,
+  "quote_checks": 192,
+  "quote_issues": [],
+  "private_leaks": [],
+  "total_seconds": 830.866,
+  "median_seconds": 4.515499999999999,
+  "production_changed": false
+}

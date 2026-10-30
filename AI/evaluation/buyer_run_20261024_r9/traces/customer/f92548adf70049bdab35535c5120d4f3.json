@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "f92548adf70049bdab35535c5120d4f3",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T15:45:39.889528+00:00",
+  "server_date": "2026-10-24",
+  "principal_role": "customer",
+  "question": "Muốn chỉnh ảnh màu chính xác thì màn hình cần thông số và kiểm chứng nào?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Muốn chỉnh ảnh màu chính xác thì màn hình cần thông số và kiểm chứng nào?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]",
+        "reason": "Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "glossary-refresh-rate",
+            "title": "Tần số quét là gì?",
+            "source": "glossary-refresh-rate-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "technical_reference",
+            "sha256": "c90034fc595acaed8103c45d8e5218017958138cb3fd0e1737ce672fb4d775e7",
+            "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "retrieval_text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+            "heading_path": "Tần số quét là gì?",
+            "section": 1,
+            "chunk_id": "d8c8a46ef4755d619ab782ef405565dd18fad89e484742a60514cd4c6df41dda",
+            "score": 0.04665,
+            "dense_score": 0.4368,
+            "lexical_score": 0.1161,
+            "bm25_score": 14.4047,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-thunderbolt-usbc",
+            "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "source": "tech-thunderbolt-usbc-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+            "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+            "section": 1,
+            "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+            "score": 0.04471,
+            "dense_score": 0.2959,
+            "lexical_score": 0.1196,
+            "bm25_score": 14.2923,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 6.248408900006325
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\n[Nguồn: tech-thunderbolt-usbc-v1.md, mục Cổng USB-C có chắc sạc và xuất màn hình được không?, đoạn 1, phiên bản 1]\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.\n\n[Nguồn: glossary-refresh-rate-v1.md, mục Tần số quét là gì?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "glossary-refresh-rate",
+        "title": "Tần số quét là gì?",
+        "source": "glossary-refresh-rate-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "technical_reference",
+        "sha256": "c90034fc595acaed8103c45d8e5218017958138cb3fd0e1737ce672fb4d775e7",
+        "text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "retrieval_text": "Tần số quét là gì?\n\nTần số quét cho biết màn hình làm mới hình ảnh bao nhiêu lần trong một giây, đo bằng Hz. Ví dụ 144 Hz là 144 lần làm mới mỗi giây. Máy còn cần CPU và GPU tạo đủ khung hình để tận dụng màn hình tần số quét cao.\n\nNguồn kỹ thuật: https://insights.samsung.com/2026/06/17/finding-the-right-refresh-rate-know-the-best-hz-for-your-needs/\n\nBản diễn giải kỹ thuật tham khảo, không phải chính sách hoặc bài hướng dẫn đã duyệt riêng của shop.",
+        "heading_path": "Tần số quét là gì?",
+        "section": 1,
+        "chunk_id": "d8c8a46ef4755d619ab782ef405565dd18fad89e484742a60514cd4c6df41dda",
+        "score": 0.04665,
+        "dense_score": 0.4368,
+        "lexical_score": 0.1161,
+        "bm25_score": 14.4047,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-thunderbolt-usbc",
+        "title": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "source": "tech-thunderbolt-usbc-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "488d6ee4446b7ecf971c066d0f7117f48a3ef73424d5fe3ab77a44749d2836f2",
+        "text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Cổng USB-C có chắc sạc và xuất màn hình được không?\n\nUSB-C mô tả kiểu đầu nối. Thunderbolt 4 dùng đầu USB-C nhưng có yêu cầu chứng nhận về dữ liệu, hình ảnh và cấp điện. Không phải mọi cổng USB-C đều có cùng các chức năng đó. Khi mua hub, dây hoặc màn hình, phải đối chiếu tính năng của cổng máy, phụ kiện và dây; tốc độ thực tế bị giới hạn bởi khả năng chung của các thiết bị kết nối.\n\nNguồn: https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-4-vs-usb-c.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Cổng USB-C có chắc sạc và xuất màn hình được không?",
+        "section": 1,
+        "chunk_id": "f8cdb8f129a97fd86608a9e611a9a80af1b520e0c551a40ef767357287e05134",
+        "score": 0.04471,
+        "dense_score": 0.2959,
+        "lexical_score": 0.1196,
+        "bm25_score": 14.2923,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 6.511684400000377
+}

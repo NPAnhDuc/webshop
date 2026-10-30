@@ -1,0 +1,9 @@
+# Whole-answer relevance judge is not reliable enough to install
+
+Six calls complete/integrity unchanged, stderr empty. All6 decisions/reasons read manually against saved source-based labels. Agreement5/6: four correct acceptances, one correct rejection (regional soldered-RAM case), one false acceptance (missing thread-count part). Thus it detects only one of the two selected incorrect outputs. This is feasibility agreement on chosen development controls, not chatbot accuracy, independent evaluation or training.
+
+The false acceptance praises correct core/boost facts while overlooking the unanswered third part. A generic fallback caveat is still not a thread-count answer. The aggregate acceptable flag and optional free-form missing list permit this omission; they must not be installed as a trustworthy production gate. Reasons are bounded300characters and some finish with malformed/mixed-language text; retained raw outputs show this, and no rationale is promoted to knowledge or gold. No false rejection observed in these four selected acceptable answers, which does not establish general calibration.
+
+Prompts696–1537tokens under6144, all done_reason=stop; normal output limits. Total/model timing in summary.json includes cold start. No production verifier installed, source/model/config unchanged, manual labels/reasons withheld from every request. Production restored patch9 with193tests passed57.15s.
+
+Next hypothesis requires mandatory per-question-part relevance decisions computed into completeness by server, rather than one aggregate model approval. Before any production change test it on a broader development diagnostic including correct explicit unknowns, wrong nearby attributes, regional scope and relevant comparisons. Preserve gold/old outputs and keep labels outside prompts. Do not merely rerun these six with tuned wording or train from judge verdicts. No second batch this heartbeat; old121validation and reserved24 untouched.

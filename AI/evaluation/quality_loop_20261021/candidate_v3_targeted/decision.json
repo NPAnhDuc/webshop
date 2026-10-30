@@ -1,0 +1,14 @@
+{
+  "promoted": false,
+  "active_code": "candidate_v2_targeted",
+  "reason": "No net improvement on matched89; fixes Q0396 but regresses Q0473. Reverted experiment after batch.",
+  "fixed_ids": [
+    "Q0396"
+  ],
+  "regressed_ids": [
+    "Q0473"
+  ],
+  "source_data_changed": false,
+  "validation_opened": false,
+  "tests_for_rejected_candidate": 179
+}

@@ -1,0 +1,162 @@
+{
+  "C01": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng i5-12450H,16GB,DDR5 và đúng SKU."
+  },
+  "C02": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ LOQ từ lượt trước, trả đồ họa rời Dedicated và4GB."
+  },
+  "C03": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Chỉ trả RAM hiện có16GB và DDR5, không phân biệt hoặc báo thiếu mức nâng tối đa; tự gắn full."
+  },
+  "C04": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng Win11Home và1,7kg của MSI041BD, khắc phục lỗi sai trọng tâm trước."
+  },
+  "C05": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Giữ MSI, trả LAN No và HDMI1 riêng biệt."
+  },
+  "C06": {
+    "status": "FAIL",
+    "cause": "INCOMPLETE",
+    "reason": "Có16GB của cả hai và DDR5 của LOQ nhưng thiếu DDR4 của MSI nên chưa trả đủ khác biệt."
+  },
+  "C07": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đổi chủ đề sang MSI, đúng Corei7-1255U."
+  },
+  "C08": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Integrated đủ bác bỏ card rời NVIDIA, giữ đúng MSI."
+  },
+  "C09": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không tự chọn máy từ hai hãng; hỏi rõ model và tiêu chí so sánh."
+  },
+  "C10": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Câu nối không có ngữ cảnh được hỏi lại đối tượng."
+  },
+  "C11": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt M.2 là dạng thiết kế, có SATA và NVMe."
+  },
+  "C12": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Bác bỏ DDR5 cắm tạm DDR4 qua rãnh khóa/thế hệ không tương thích."
+  },
+  "C13": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng ECC trong chip, không tự thành ECC cấp hệ thống."
+  },
+  "C14": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt Hz và FPS, yêu cầu CPU/GPU tạo đủ khung hình; ví dụ144Hz vẫn đúng nguyên lý."
+  },
+  "C15": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có đủ60Hz đáp ứng tác vụ thường ngày và Hz cao không bắt buộc. Vẫn kèm thông tin CPU thừa."
+  },
+  "C16": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt đầu USB-C với yêu cầu chứng nhận Thunderbolt, cần xác nhận cổng/cáp/dock."
+  },
+  "C17": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không gán240W đặc tả cho mọi máy; kiểm tra máy,sạc,cáp."
+  },
+  "C18": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt response time điểm ảnh với input lag toàn chuỗi."
+  },
+  "C19": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "IPS không bảo đảm màu chuẩn; có độ chính xác màu,không gian màu,hiệu chuẩn."
+  },
+  "C20": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu rủi ro hình tĩnh gây lưu ảnh vĩnh viễn; không bịa bảo hành."
+  },
+  "C21": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng8GB tối thiểu,16GB+ khuyến nghị và không bảo đảm file lớn mượt."
+  },
+  "C22": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "CPU xử lý đa dạng, GPU mạnh không làm mọi phần mềm nhanh; có các câu Hz thừa."
+  },
+  "C23": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phân biệt RAM tạm và SSD lưu tệp, đủ sửa tiền đề. Có câu NVMe thừa."
+  },
+  "C24": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Có RAM hàn, cần đúng mã/số khe/giới hạn; không suy từ dung lượng."
+  },
+  "C25": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Nêu điều kiện card/router/phần mềm hỗ trợ6GHz; chỉ đổi router chưa đủ."
+  },
+  "C26": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng2x16GB,DDR5; khắc phục bỏ sót thế hệ RAM."
+  },
+  "C27": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng650W,bronze,không modular, đúng model."
+  },
+  "C28": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng2000GB và M.2 PCIe4.0x4 của SKU."
+  },
+  "C29": {
+    "status": "FAIL",
+    "cause": "CLARIFICATION",
+    "reason": "Hỏi đã rõ biến thể2048GB và nguồn1024GB, nhưng hỏi lại hai model/tiêu chí, không trả phần đã biết."
+  },
+  "C30": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Không cam kết truyền dây, giải thích trường kết nối bị cách ly/chưa đối chiếu."
+  },
+  "C31": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Đúng10nhân vàboost4,7GHz, báo chưa xác nhận số luồng."
+  },
+  "C32": {
+    "status": "PASS",
+    "cause": "OK",
+    "reason": "Phủ định cả boost liên tục và TDP CPU bằng công suất cả PC; có câu phụ thừa."
+  }
+}

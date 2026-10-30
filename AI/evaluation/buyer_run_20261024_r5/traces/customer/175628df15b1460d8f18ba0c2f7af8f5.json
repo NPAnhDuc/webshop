@@ -1,0 +1,169 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "175628df15b1460d8f18ba0c2f7af8f5",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T08:32:50.787764+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Dùng Linux là chính thì có thể cam kết mọi laptop đều tương thích không?",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {
+    "plan": {
+      "action": "documents",
+      "budget_max_vnd": 0,
+      "budget_inclusive": false,
+      "limit": 0,
+      "category": "",
+      "brand": "",
+      "continuation": false,
+      "clear_brand": false,
+      "unsupported_filters": false,
+      "product_refs": []
+    }
+  },
+  "calls": [
+    {
+      "tool": "documents.answer",
+      "arguments": {
+        "question": "Dùng Linux là chính thì có thể cam kết mọi laptop đều tương thích không?"
+      },
+      "principal_role": "customer",
+      "status": "success",
+      "output": {
+        "tool": "documents.answer",
+        "status": "answered",
+        "executed": true,
+        "answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nĐiều kiện sử dụng và thiết kế từng model khác nhau.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]",
+        "reason": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nĐiều kiện sử dụng và thiết kế từng model khác nhau.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]",
+        "answerability": "full",
+        "rag_action": "answer",
+        "sources": [
+          {
+            "document_id": "tech-ram-upgrade",
+            "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+            "source": "tech-ram-upgrade-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "11279caccaa624b92048539db7ddb94675ea2e31b8861f57b52d10031a167893",
+            "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+            "section": 1,
+            "chunk_id": "97907013f676a86ce99836c880b2732e906a60b8c57873083fcfcb1a0f9f21c1",
+            "score": 0.04716,
+            "dense_score": 0.4183,
+            "lexical_score": 0.1107,
+            "bm25_score": 5.5256,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          },
+          {
+            "document_id": "tech-oled-static",
+            "title": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+            "source": "tech-oled-static-v1.md",
+            "version": 1,
+            "doc_type": "glossary",
+            "category": "all",
+            "audience": "customer",
+            "effective_from": "2026-10-20",
+            "effective_to": null,
+            "status": "approved",
+            "data_kind": "demo",
+            "authority": "external_technical_reference",
+            "sha256": "30990e57b8f8d28974fdad621cbfb91c2092dfd5772cdb2db813c9ed2cf4b460",
+            "text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "retrieval_text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+            "heading_path": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+            "section": 1,
+            "chunk_id": "e5dfc7bc8f078c68579a3dd12efbc2d7e1af56b4a7a2e545e5d185169687ca20",
+            "score": 0.04227,
+            "dense_score": 0.2272,
+            "lexical_score": 0.0977,
+            "bm25_score": 5.4643,
+            "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+            "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+            "embedding_truncated": false
+          }
+        ]
+      },
+      "seconds": 5.499157099999138
+    }
+  ],
+  "result": {
+    "intent": "documents",
+    "basic_action": "answer",
+    "answer": "Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nTrước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ.\n\n[Nguồn: tech-ram-upgrade-v1.md, mục Nâng cấp RAM laptop: SO-DIMM và RAM hàn, đoạn 1, phiên bản 1]\n\nĐiều kiện sử dụng và thiết kế từng model khác nhau.\n\n[Nguồn: tech-oled-static-v1.md, mục Màn hình OLED và nội dung tĩnh: cần lưu ý gì?, đoạn 1, phiên bản 1]",
+    "sources": [
+      {
+        "document_id": "tech-ram-upgrade",
+        "title": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+        "source": "tech-ram-upgrade-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "11279caccaa624b92048539db7ddb94675ea2e31b8861f57b52d10031a167893",
+        "text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn\n\nDIMM thường dùng ở máy bàn; SO-DIMM nhỏ hơn, thường dùng ở laptop. Có laptop hàn RAM lên bo mạch nên không thay được như thanh RAM rời. Trước khi mua RAM, kiểm tra đúng mã máy, loại bộ nhớ, số khe và giới hạn được hãng hỗ trợ. Không suy ra khả năng nâng cấp chỉ từ RAM hiện tại là 8 GB hay 16 GB.\n\nNguồn: https://www.intel.com/content/www/us/en/gaming/resources/how-much-ram-gaming.html\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Nâng cấp RAM laptop: SO-DIMM và RAM hàn",
+        "section": 1,
+        "chunk_id": "97907013f676a86ce99836c880b2732e906a60b8c57873083fcfcb1a0f9f21c1",
+        "score": 0.04716,
+        "dense_score": 0.4183,
+        "lexical_score": 0.1107,
+        "bm25_score": 5.5256,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      },
+      {
+        "document_id": "tech-oled-static",
+        "title": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+        "source": "tech-oled-static-v1.md",
+        "version": 1,
+        "doc_type": "glossary",
+        "category": "all",
+        "audience": "customer",
+        "effective_from": "2026-10-20",
+        "effective_to": null,
+        "status": "approved",
+        "data_kind": "demo",
+        "authority": "external_technical_reference",
+        "sha256": "30990e57b8f8d28974fdad621cbfb91c2092dfd5772cdb2db813c9ed2cf4b460",
+        "text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "retrieval_text": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?\n\nNguồn Samsung nêu hình ảnh hoặc logo tĩnh có thể gây lưu ảnh vĩnh viễn theo thời gian. Điều kiện sử dụng và thiết kế từng model khác nhau. Cần xem hướng dẫn của chính màn hình; không khẳng định mọi OLED đều bị hoặc không thể bị burn-in, và không suy ra điều kiện bảo hành của shop từ bài viết này.\n\nNguồn: https://www.samsung.com/us/tvs/tv-buying-guide/why-oled-tvs-are-worth-it/\n\nĐối chiếu: 20/10/2026. Tài liệu tham khảo bên ngoài; không phải chính sách hoặc cam kết của shop.",
+        "heading_path": "Màn hình OLED và nội dung tĩnh: cần lưu ý gì?",
+        "section": 1,
+        "chunk_id": "e5dfc7bc8f078c68579a3dd12efbc2d7e1af56b4a7a2e545e5d185169687ca20",
+        "score": 0.04227,
+        "dense_score": 0.2272,
+        "lexical_score": 0.0977,
+        "bm25_score": 5.4643,
+        "retrieval": "Vietnamese dense + TF-IDF + BM25 RRF",
+        "embedding_model": "dangvantuan/vietnamese-embedding:4ab46e46ba5902328ba0742e489e75f787932f2b",
+        "embedding_truncated": false
+      }
+    ]
+  },
+  "error_type": null,
+  "seconds": 5.759833999996772
+}

@@ -1,0 +1,15 @@
+{
+  "active_as": "Vietnamese conversation adapter provides advisory predictions to local Qwen3 planner; not a standalone router",
+  "live_authored_pilot": {
+    "passed": 15,
+    "total": 15
+  },
+  "scope": "Experimental local prototype only",
+  "numerical_data": "Validated SQL; synthetic shop, not learned financial numbers",
+  "memory": "Role-scoped in-session state and six recent turns",
+  "limitations": [
+    "Confidence is not calibrated on real customer conversations.",
+    "15 authored pilot turns are not a production accuracy estimate."
+  ],
+  "embedding_isolation": "Eight frozen layers shared; four adapted layers copied separately; retrieval uses original embedding encoder."
+}

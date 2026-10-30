@@ -1,0 +1,10 @@
+{
+  "baseline": "kb3_guards_full_r1",
+  "change": "Honor explicit report-source requests before SQL metric shortcut; preserve source preference for compatible metric follow-ups, reset for direct or changed-domain requests.",
+  "requested_ids": 81,
+  "development_only": true,
+  "RAG_EVIDENCE_RERANK": "1",
+  "training_allowed": false,
+  "ingestion_allowed": false,
+  "source_change": false
+}

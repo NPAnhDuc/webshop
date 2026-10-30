@@ -1,0 +1,14 @@
+{
+  "status": "built_verified_not_activated",
+  "data_kind": "simulation",
+  "targeted_tests": 8,
+  "targeted_seconds": 10.95,
+  "full_tests": 304,
+  "full_seconds": 116.95,
+  "parity_checks": 8,
+  "curated_published": false,
+  "active_source_changed": false,
+  "model_batch_run": false,
+  "conversation_quality_change_measured": false,
+  "curated_revision": "AI/data/de_pipeline/retail_sim_v1/curated_20261024_r1"
+}

@@ -1,0 +1,7 @@
+{
+  "state": "no_old100_regression_continue_broader_development",
+  "candidate_retained": true,
+  "production_accepted": false,
+  "reserved_opened": false,
+  "reason": "Same87/100,noPASS-to-FAIL; targeted18/24notrepresentative. Keep codefrozenandrerun479developmentbeforefurtherrepairoropeningreserved."
+}

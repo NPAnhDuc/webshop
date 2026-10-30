@@ -1,0 +1,16 @@
+{
+  "turns": 12,
+  "conversations": 9,
+  "semantic_action_pass": 1,
+  "semantic_action_fail": 11,
+  "tool_evidence_turns": 0,
+  "unsupported_flag_true": 12,
+  "unavailable": 0,
+  "seconds_total": 83.939,
+  "seconds_median": 4.7035,
+  "unit_tests_passed": 214,
+  "unit_seconds": 51.41,
+  "accepted_for_application": false,
+  "training_performed": false,
+  "default_chat_mode_changed": false
+}

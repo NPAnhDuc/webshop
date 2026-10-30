@@ -1,0 +1,26 @@
+{
+  "schema": "agent-turn-trace-v1",
+  "trace_id": "cdac26e627274676a846c96e5d794dc8",
+  "parent_trace_id": null,
+  "recorded_at": "2026-10-24T07:34:48.001265+00:00",
+  "server_date": "2026-10-23",
+  "principal_role": "customer",
+  "question": "Mình muốn xem 4 phụ kiện dưới 2000000 đồng.",
+  "training_allowed": false,
+  "state_before": {
+    "owner_role": "customer"
+  },
+  "state_after": {
+    "owner_role": "customer"
+  },
+  "plans": {},
+  "calls": [],
+  "result": {
+    "intent": "clarify",
+    "basic_action": "clarify",
+    "answer": "Bạn muốn tìm loại sản phẩm nào trong danh mục máy tính của shop?",
+    "sources": []
+  },
+  "error_type": null,
+  "seconds": 1.1285977000079583
+}

@@ -1,0 +1,374 @@
+[
+  {
+    "id": "case/external_volume",
+    "category": "case",
+    "name": "external_volume",
+    "description": "thể tích ngoài của vỏ case"
+  },
+  {
+    "id": "case/internal_35_bays",
+    "category": "case",
+    "name": "internal_35_bays",
+    "description": "số khay ổ cứng cỡ ba phẩy năm inch"
+  },
+  {
+    "id": "case/side_panel",
+    "category": "case",
+    "name": "side_panel",
+    "description": "vật liệu tấm hông vỏ case"
+  },
+  {
+    "id": "case/type",
+    "category": "case",
+    "name": "type",
+    "description": "loại và dạng kích thước vỏ case"
+  },
+  {
+    "id": "cpu/boost_clock",
+    "category": "cpu",
+    "name": "boost_clock",
+    "description": "xung boost tối đa bộ xử lý"
+  },
+  {
+    "id": "cpu/core_clock",
+    "category": "cpu",
+    "name": "core_clock",
+    "description": "xung cơ bản bộ xử lý"
+  },
+  {
+    "id": "cpu/core_count",
+    "category": "cpu",
+    "name": "core_count",
+    "description": "số nhân bộ xử lý"
+  },
+  {
+    "id": "cpu/graphics",
+    "category": "cpu",
+    "name": "graphics",
+    "description": "đồ họa tích hợp của bộ xử lý"
+  },
+  {
+    "id": "cpu/microarchitecture",
+    "category": "cpu",
+    "name": "microarchitecture",
+    "description": "vi kiến trúc bộ xử lý"
+  },
+  {
+    "id": "cpu/tdp",
+    "category": "cpu",
+    "name": "tdp",
+    "description": "công suất nhiệt thiết kế của bộ xử lý"
+  },
+  {
+    "id": "internal-hard-drive/cache",
+    "category": "internal-hard-drive",
+    "name": "cache",
+    "description": "bộ nhớ đệm của ổ lưu trữ"
+  },
+  {
+    "id": "internal-hard-drive/capacity",
+    "category": "internal-hard-drive",
+    "name": "capacity",
+    "description": "dung lượng lưu trữ của ổ"
+  },
+  {
+    "id": "internal-hard-drive/form_factor",
+    "category": "internal-hard-drive",
+    "name": "form_factor",
+    "description": "dạng kích thước vật lý ổ lưu trữ"
+  },
+  {
+    "id": "internal-hard-drive/interface",
+    "category": "internal-hard-drive",
+    "name": "interface",
+    "description": "giao tiếp kết nối ổ lưu trữ"
+  },
+  {
+    "id": "internal-hard-drive/type",
+    "category": "internal-hard-drive",
+    "name": "type",
+    "description": "loại ổ lưu trữ"
+  },
+  {
+    "id": "laptop/Display Resolution",
+    "category": "laptop",
+    "name": "Display Resolution",
+    "description": "độ phân giải màn hình"
+  },
+  {
+    "id": "laptop/Display Size (Inch)",
+    "category": "laptop",
+    "name": "Display Size (Inch)",
+    "description": "kích thước đường chéo màn hình"
+  },
+  {
+    "id": "laptop/Display Type",
+    "category": "laptop",
+    "name": "Display Type",
+    "description": "loại màn hình theo nhãn danh mục"
+  },
+  {
+    "id": "laptop/Finger Print Sensor",
+    "category": "laptop",
+    "name": "Finger Print Sensor",
+    "description": "cảm biến vân tay"
+  },
+  {
+    "id": "laptop/Graphics Chipset",
+    "category": "laptop",
+    "name": "Graphics Chipset",
+    "description": "model chip đồ họa"
+  },
+  {
+    "id": "laptop/Graphics Memory",
+    "category": "laptop",
+    "name": "Graphics Memory",
+    "description": "dung lượng hoặc mô tả bộ nhớ đồ họa"
+  },
+  {
+    "id": "laptop/Graphics Memory Accessibility",
+    "category": "laptop",
+    "name": "Graphics Memory Accessibility",
+    "description": "bộ nhớ đồ họa riêng hay dùng chung"
+  },
+  {
+    "id": "laptop/HDMI Port",
+    "category": "laptop",
+    "name": "HDMI Port",
+    "description": "cổng HDMI"
+  },
+  {
+    "id": "laptop/Installed SSD Type",
+    "category": "laptop",
+    "name": "Installed SSD Type",
+    "description": "loại SSD được lắp"
+  },
+  {
+    "id": "laptop/LAN",
+    "category": "laptop",
+    "name": "LAN",
+    "description": "cổng mạng LAN"
+  },
+  {
+    "id": "laptop/Operating System",
+    "category": "laptop",
+    "name": "Operating System",
+    "description": "hệ điều hành"
+  },
+  {
+    "id": "laptop/Optical Drive",
+    "category": "laptop",
+    "name": "Optical Drive",
+    "description": "ổ đĩa quang"
+  },
+  {
+    "id": "laptop/Power Adapter",
+    "category": "laptop",
+    "name": "Power Adapter",
+    "description": "bộ cấp nguồn cho laptop"
+  },
+  {
+    "id": "laptop/Processor Brand",
+    "category": "laptop",
+    "name": "Processor Brand",
+    "description": "hãng bộ xử lý"
+  },
+  {
+    "id": "laptop/Processor Core",
+    "category": "laptop",
+    "name": "Processor Core",
+    "description": "số nhân bộ xử lý"
+  },
+  {
+    "id": "laptop/Processor Model",
+    "category": "laptop",
+    "name": "Processor Model",
+    "description": "mã model bộ xử lý"
+  },
+  {
+    "id": "laptop/RAM",
+    "category": "laptop",
+    "name": "RAM",
+    "description": "dung lượng RAM hiện có"
+  },
+  {
+    "id": "laptop/RAM Type",
+    "category": "laptop",
+    "name": "RAM Type",
+    "description": "thế hệ hoặc loại RAM"
+  },
+  {
+    "id": "laptop/Touch Screen",
+    "category": "laptop",
+    "name": "Touch Screen",
+    "description": "màn hình cảm ứng"
+  },
+  {
+    "id": "laptop/Weight (Kg)",
+    "category": "laptop",
+    "name": "Weight (Kg)",
+    "description": "khối lượng laptop"
+  },
+  {
+    "id": "memory/cas_latency",
+    "category": "memory",
+    "name": "cas_latency",
+    "description": "độ trễ CAS của bộ RAM"
+  },
+  {
+    "id": "memory/first_word_latency",
+    "category": "memory",
+    "name": "first_word_latency",
+    "description": "độ trễ từ dữ liệu đầu tiên của bộ RAM"
+  },
+  {
+    "id": "memory/modules",
+    "category": "memory",
+    "name": "modules",
+    "description": "số thanh RAM trong bộ và dung lượng mỗi thanh"
+  },
+  {
+    "id": "memory/speed",
+    "category": "memory",
+    "name": "speed",
+    "description": "thế hệ DDR và mức tốc độ của RAM"
+  },
+  {
+    "id": "monitor/aspect_ratio",
+    "category": "monitor",
+    "name": "aspect_ratio",
+    "description": "tỷ lệ khung hình màn hình"
+  },
+  {
+    "id": "monitor/panel_type",
+    "category": "monitor",
+    "name": "panel_type",
+    "description": "kiểu tấm nền màn hình"
+  },
+  {
+    "id": "monitor/refresh_rate",
+    "category": "monitor",
+    "name": "refresh_rate",
+    "description": "tần số quét màn hình"
+  },
+  {
+    "id": "monitor/resolution",
+    "category": "monitor",
+    "name": "resolution",
+    "description": "độ phân giải màn hình"
+  },
+  {
+    "id": "monitor/response_time",
+    "category": "monitor",
+    "name": "response_time",
+    "description": "thời gian phản hồi điểm ảnh"
+  },
+  {
+    "id": "monitor/screen_size",
+    "category": "monitor",
+    "name": "screen_size",
+    "description": "kích thước màn hình"
+  },
+  {
+    "id": "motherboard/form_factor",
+    "category": "motherboard",
+    "name": "form_factor",
+    "description": "chuẩn kích thước thiết kế bo mạch chủ"
+  },
+  {
+    "id": "motherboard/max_memory",
+    "category": "motherboard",
+    "name": "max_memory",
+    "description": "dung lượng RAM tối đa của bo mạch"
+  },
+  {
+    "id": "motherboard/memory_slots",
+    "category": "motherboard",
+    "name": "memory_slots",
+    "description": "số khe RAM trên bo mạch"
+  },
+  {
+    "id": "motherboard/socket",
+    "category": "motherboard",
+    "name": "socket",
+    "description": "socket lắp CPU của bo mạch"
+  },
+  {
+    "id": "mouse/connection_type",
+    "category": "mouse",
+    "name": "connection_type",
+    "description": "kiểu kết nối chuột"
+  },
+  {
+    "id": "mouse/hand_orientation",
+    "category": "mouse",
+    "name": "hand_orientation",
+    "description": "thiết kế dùng tay nào"
+  },
+  {
+    "id": "mouse/max_dpi",
+    "category": "mouse",
+    "name": "max_dpi",
+    "description": "DPI tối đa của chuột"
+  },
+  {
+    "id": "mouse/tracking_method",
+    "category": "mouse",
+    "name": "tracking_method",
+    "description": "loại cảm biến chuột"
+  },
+  {
+    "id": "power-supply/efficiency",
+    "category": "power-supply",
+    "name": "efficiency",
+    "description": "mức chứng nhận hiệu suất bộ nguồn"
+  },
+  {
+    "id": "power-supply/modular",
+    "category": "power-supply",
+    "name": "modular",
+    "description": "kiểu cáp modular của bộ nguồn"
+  },
+  {
+    "id": "power-supply/type",
+    "category": "power-supply",
+    "name": "type",
+    "description": "chuẩn loại bộ nguồn"
+  },
+  {
+    "id": "power-supply/wattage",
+    "category": "power-supply",
+    "name": "wattage",
+    "description": "công suất định mức bộ nguồn"
+  },
+  {
+    "id": "video-card/boost_clock",
+    "category": "video-card",
+    "name": "boost_clock",
+    "description": "xung boost của card đồ họa"
+  },
+  {
+    "id": "video-card/chipset",
+    "category": "video-card",
+    "name": "chipset",
+    "description": "model chip đồ họa"
+  },
+  {
+    "id": "video-card/core_clock",
+    "category": "video-card",
+    "name": "core_clock",
+    "description": "xung cơ bản của card đồ họa"
+  },
+  {
+    "id": "video-card/length",
+    "category": "video-card",
+    "name": "length",
+    "description": "chiều dài card đồ họa"
+  },
+  {
+    "id": "video-card/memory",
+    "category": "video-card",
+    "name": "memory",
+    "description": "dung lượng VRAM của card đồ họa"
+  }
+]

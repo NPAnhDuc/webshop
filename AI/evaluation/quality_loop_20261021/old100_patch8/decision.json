@@ -1,0 +1,7 @@
+{
+  "state": "rejected_restore_patch7",
+  "promoted": false,
+  "restore": "context_revision_20261021_r3/patch8_before_code/grounded_rag.py",
+  "reason": "2fixes(C35/A20),1newcampaignfailureA36;A35alreadyFAILlosescontextworse,A34morecontradictory. Reject broad routing prompt despite87to88total. Keep raw/snapshot, no secondmodelbatch. Retain date-frozen test fixture, no productiondatachanges.",
+  "reserved_opened": false
+}

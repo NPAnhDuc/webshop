@@ -1,0 +1,96 @@
+{
+  "cases": 224,
+  "semantic": {
+    "PASS": 211,
+    "FAIL": 13
+  },
+  "baseline": {
+    "PASS": 217,
+    "FAIL": 7
+  },
+  "variants": {
+    "brief_history": {
+      "PASS": 53,
+      "FAIL": 3
+    },
+    "explicit_subject_brief_history": {
+      "PASS": 52,
+      "FAIL": 4
+    },
+    "explicit_subject_original_history": {
+      "PASS": 52,
+      "FAIL": 4
+    },
+    "original_history": {
+      "PASS": 54,
+      "FAIL": 2
+    }
+  },
+  "checks": {
+    "PASS_CHECKS": 213,
+    "FAIL_CHECKS": 11
+  },
+  "inherited": 188,
+  "fresh": 36,
+  "changed_ids": [
+    "Q0125_original_history",
+    "Q0125_explicit_subject_brief_history",
+    "Q0163_original_history",
+    "Q0191_original_history",
+    "Q0202_original_history",
+    "Q0227_original_history",
+    "Q0227_brief_history",
+    "Q0247_original_history",
+    "Q0247_brief_history",
+    "Q0247_explicit_subject_brief_history",
+    "Q0373_original_history",
+    "Q0373_brief_history",
+    "Q0373_explicit_subject_brief_history",
+    "Q0391_original_history",
+    "Q0422_original_history",
+    "Q0422_explicit_subject_brief_history",
+    "Q0438_original_history",
+    "Q0438_brief_history",
+    "Q0442_explicit_subject_brief_history",
+    "Q0471_original_history",
+    "Q0478_original_history",
+    "Q0478_brief_history",
+    "Q0478_explicit_subject_brief_history",
+    "Q0113_explicit_subject_original_history",
+    "Q0125_explicit_subject_original_history",
+    "Q0175_explicit_subject_original_history",
+    "Q0202_explicit_subject_original_history",
+    "Q0247_explicit_subject_original_history",
+    "Q0321_explicit_subject_original_history",
+    "Q0356_explicit_subject_original_history",
+    "Q0373_explicit_subject_original_history",
+    "Q0397_explicit_subject_original_history",
+    "Q0402_explicit_subject_original_history",
+    "Q0422_explicit_subject_original_history",
+    "Q0442_explicit_subject_original_history",
+    "Q0478_explicit_subject_original_history"
+  ],
+  "fixed_ids": [
+    "Q0191_original_history",
+    "Q0478_brief_history",
+    "Q0247_explicit_subject_original_history"
+  ],
+  "regressed_ids": [
+    "Q0125_explicit_subject_brief_history",
+    "Q0227_original_history",
+    "Q0227_brief_history",
+    "Q0373_explicit_subject_brief_history",
+    "Q0442_explicit_subject_brief_history",
+    "Q0478_explicit_subject_brief_history",
+    "Q0373_explicit_subject_original_history",
+    "Q0442_explicit_subject_original_history",
+    "Q0478_explicit_subject_original_history"
+  ],
+  "secondary_cases": 20,
+  "quote_checks": 258,
+  "quote_issues": [],
+  "private_leaks": [],
+  "total_seconds": 949.679,
+  "median_seconds": 3.9219999999999997,
+  "accepted": false
+}

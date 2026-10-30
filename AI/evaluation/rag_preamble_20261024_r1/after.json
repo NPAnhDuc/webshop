@@ -1,0 +1,141 @@
+{
+  "model_calls": 0,
+  "passed": 12,
+  "total": 12,
+  "cases": [
+    {
+      "question": "Theo danh mục tham khảo, Laptop X có CPU như thế nào?",
+      "expected": [
+        "Laptop X có CPU như thế nào"
+      ],
+      "actual": [
+        "Laptop X có CPU như thế nào"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo danh mục tham khảo, Bộ RAM X có thế hệ và tốc độ RAM như thế nào?",
+      "expected": [
+        "Bộ RAM X có thế hệ",
+        "tốc độ RAM như thế nào"
+      ],
+      "actual": [
+        "Bộ RAM X có thế hệ",
+        "tốc độ RAM như thế nào"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Dựa trên tài liệu hiện có, MOQ là bao nhiêu?",
+      "expected": [
+        "MOQ là bao nhiêu"
+      ],
+      "actual": [
+        "MOQ là bao nhiêu"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo nguồn của shop, ngân sách chiến dịch là bao nhiêu?",
+      "expected": [
+        "ngân sách chiến dịch là bao nhiêu"
+      ],
+      "actual": [
+        "ngân sách chiến dịch là bao nhiêu"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Căn cứ vào báo cáo, số đơn và hoàn trả là bao nhiêu?",
+      "expected": [
+        "số đơn",
+        "hoàn trả là bao nhiêu"
+      ],
+      "actual": [
+        "số đơn",
+        "hoàn trả là bao nhiêu"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo danh mục, RAM là 8 GB, CPU là Intel đúng không?",
+      "expected": [
+        "RAM là 8 GB",
+        "CPU là Intel đúng không"
+      ],
+      "actual": [
+        "RAM là 8 GB",
+        "CPU là Intel đúng không"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo danh mục tham khảo",
+      "expected": [
+        "Theo danh mục tham khảo"
+      ],
+      "actual": [
+        "Theo danh mục tham khảo"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo danh mục có CPU như thế nào, RAM bao nhiêu?",
+      "expected": [
+        "Theo danh mục có CPU như thế nào",
+        "RAM bao nhiêu"
+      ],
+      "actual": [
+        "Theo danh mục có CPU như thế nào",
+        "RAM bao nhiêu"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Giá tối đa 19,5 triệu và RAM 16 GB?",
+      "expected": [
+        "Giá tối đa 19,5 triệu",
+        "RAM 16 GB"
+      ],
+      "actual": [
+        "Giá tối đa 19,5 triệu",
+        "RAM 16 GB"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Lợi nhuận hoạt động trước lãi vay và thuế là bao nhiêu?",
+      "expected": [
+        "Lợi nhuận hoạt động trước lãi vay / thuế là bao nhiêu"
+      ],
+      "actual": [
+        "Lợi nhuận hoạt động trước lãi vay / thuế là bao nhiêu"
+      ],
+      "passed": true
+    },
+    {
+      "question": "Từ báo cáo 3/2025, ghi từng chỉ tiêu: tiền hàng; phí giao.",
+      "expected": [
+        "tiền hàng",
+        "phí giao."
+      ],
+      "actual": [
+        "tiền hàng",
+        "phí giao."
+      ],
+      "passed": true
+    },
+    {
+      "question": "Theo danh mục tham khảo, thông số nào còn thiếu, vì sao chưa xác nhận?",
+      "expected": [
+        "thông số nào còn thiếu",
+        "vì sao chưa xác nhận"
+      ],
+      "actual": [
+        "thông số nào còn thiếu",
+        "vì sao chưa xác nhận"
+      ],
+      "passed": true
+    }
+  ]
+}

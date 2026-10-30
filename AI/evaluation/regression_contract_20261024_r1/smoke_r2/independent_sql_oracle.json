@@ -1,0 +1,47 @@
+{
+  "schema": "independent-sql-oracle-v1",
+  "data_kind": "simulation",
+  "source_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "queries": {
+    "ledger": "SELECT SUM(revenue),SUM(cost),SUM(revenue-cost),COUNT(*) FROM financial_ledger WHERE day>=? AND day<?",
+    "expenses": "SELECT SUM(amount) FROM operating_expenses WHERE day>=? AND day<?",
+    "orders": "SELECT COUNT(*) FROM orders WHERE day>=? AND day<?"
+  },
+  "periods": [
+    {
+      "start": "2026-08-01",
+      "end_exclusive": "2026-09-01",
+      "revenue": 1427320000,
+      "cost": 1240171000,
+      "gross_profit": 187149000,
+      "operating_expenses": 141500520,
+      "operating_profit_before_interest_tax": 45648480,
+      "orders": 163,
+      "source_rows": 200
+    },
+    {
+      "start": "2026-09-01",
+      "end_exclusive": "2026-10-01",
+      "revenue": 1189908000,
+      "cost": 1010759000,
+      "gross_profit": 179149000,
+      "operating_expenses": 110888988,
+      "operating_profit_before_interest_tax": 68260012,
+      "orders": 131,
+      "source_rows": 157
+    },
+    {
+      "start": "2026-07-01",
+      "end_exclusive": "2026-10-01",
+      "revenue": 3641508000,
+      "cost": 3139306000,
+      "gross_profit": 502202000,
+      "operating_expenses": 361456588,
+      "operating_profit_before_interest_tax": 140745412,
+      "orders": 395,
+      "source_rows": 482
+    }
+  ],
+  "uses_bot_calculation_functions": false,
+  "training_allowed": false
+}
