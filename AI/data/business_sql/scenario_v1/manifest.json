@@ -1,0 +1,26 @@
+{
+  "synthetic": true,
+  "scenario_id": "retail_sim_v1",
+  "period": [
+    "2025-10-01",
+    "2026-09-30"
+  ],
+  "counts": {
+    "products": 67,
+    "orders": 1427,
+    "order_items": 1717,
+    "purchase_orders": 320,
+    "receipts": 317,
+    "returns": 31,
+    "inventory_daily": 24455,
+    "operating_expenses": 99
+  },
+  "catalog_sha256": "7b799d77d3d7e7c17ae86fda0305a57908f47e1b960ac5741943bcb95ebbdb7b",
+  "opening_inventory_value": 1502710000,
+  "closing_inventory_value": 1654450000,
+  "net_revenue": 13495418000,
+  "gross_profit": 1879908000,
+  "operating_profit_before_interest_tax": 487858402,
+  "monthly_revenue_min": 609442000,
+  "monthly_revenue_max": 1493219000
+}

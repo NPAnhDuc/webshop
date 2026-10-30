@@ -35,3 +35,17 @@ opencode.json
 
 # Team channel and agent rules stay local
 /node.txt
+
+# AI data the chatbot needs to run; everything else under AI/data stays on this machine
+!AI/data/
+AI/data/*
+!AI/data/business_sql/
+AI/data/business_sql/*
+!AI/data/business_sql/scenario_v1/
+AI/data/business_sql/scenario_v1/csv/
+AI/data/business_sql/scenario_v1/*.sql
+!AI/data/unstructured/
+AI/data/unstructured/*
+!AI/data/unstructured/README.md
+!AI/data/unstructured/managed/
+AI/data/**/write.lock

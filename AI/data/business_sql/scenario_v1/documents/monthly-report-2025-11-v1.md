@@ -1,0 +1,11 @@
+# Báo cáo tháng 2025-11
+
+DỮ LIỆU MÔ PHỎNG — SHOP GIẢ LẬP retail_sim_v1. Không phải chính sách hay kết quả kinh doanh thật.
+
+## Kết quả kỳ 2025-11
+
+Doanh thu thuần: 1493219000 VND. Giá vốn: 1294467000 VND. Lợi nhuận gộp: 198752000 VND. Chi phí vận hành: 138225409 VND. Lợi nhuận hoạt động trước lãi vay và thuế: 60526591 VND. Đơn hàng: 151. Sản phẩm hoàn trả: 2.
+
+## Nguồn và nhận định
+
+Nguồn: view monthly_pnl trong shop.sqlite, dữ liệu mô phỏng. Báo cáo mô tả kết quả, chưa xác lập nguyên nhân. Khi cần số mới phải truy vấn SQL. Không đưa báo cáo các tháng giữ riêng vào tập huấn luyện để học thuộc số liệu.

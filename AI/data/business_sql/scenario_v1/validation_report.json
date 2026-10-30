@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": 41,
+  "failures": [],
+  "products": 67,
+  "products_with_sales": 67,
+  "unknown_product_ids": 0,
+  "period_days": 365,
+  "opening_inventory_value": 1502710000,
+  "purchases_received": 11767250000,
+  "net_cogs": 11615510000,
+  "closing_inventory_value": 1654450000,
+  "synthetic": true,
+  "not_evidence_of_real_market_accuracy": true
+}

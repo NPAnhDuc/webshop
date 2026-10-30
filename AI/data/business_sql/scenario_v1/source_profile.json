@@ -1,0 +1,65 @@
+{
+  "source_event_rows": 885129,
+  "event_counts": {
+    "view": 793748,
+    "cart": 54035,
+    "purchase": 37346
+  },
+  "purchase_event_fraction_not_session_conversion": 0.042192719931219064,
+  "purchase_category_counts": {
+    "unknown": 7568,
+    "computers.components.videocards": 6888,
+    "electronics.telephone": 4119,
+    "stationery.cartrige": 2739,
+    "computers.peripherals.printer": 2557,
+    "computers.notebook": 1297,
+    "computers.components.motherboard": 1266,
+    "computers.components.cpu": 1213,
+    "electronics.audio.acoustic": 848,
+    "electronics.tablet": 819,
+    "auto.accessories.player": 685,
+    "computers.peripherals.camera": 521,
+    "computers.components.hdd": 485,
+    "computers.components.power_supply": 483,
+    "computers.peripherals.wifi": 406,
+    "electronics.video.tv": 389,
+    "appliances.environment.vacuum": 297,
+    "construction.tools.soldering": 289,
+    "construction.tools.drill": 278,
+    "computers.desktop": 268,
+    "computers.peripherals.joystick": 265,
+    "computers.components.cooler": 227,
+    "electronics.audio.headphone": 222,
+    "computers.ebooks": 212,
+    "computers.peripherals.monitor": 204,
+    "computers.peripherals.scanner": 165,
+    "construction.tools.saw": 163,
+    "appliances.sewing_machine": 130,
+    "auto.accessories.videoregister": 129,
+    "computers.peripherals.mouse": 128
+  },
+  "purchase_month_counts": {
+    "2020-09": 1007,
+    "2020-10": 6276,
+    "2020-11": 7574,
+    "2020-12": 6531,
+    "2021-01": 8315,
+    "2021-02": 7643
+  },
+  "source_price_median_not_vnd": 65.71,
+  "purchase_price_reservoir_size": 10000,
+  "purchase_history_head_sample_rows": 200000,
+  "sample_order_ids": 109519,
+  "head_sample_mean_lines_per_order": 1.8261671490791551,
+  "limitations": [
+    "Source price currency is not verified here; no VND conversion.",
+    "Head sample can truncate orders and is not a random or seasonally representative sample.",
+    "These distributions are comparison context. Shop category mix, demand and margins remain explicit assumptions.",
+    "Purchase event fraction is not a conversion rate per user/session.",
+    "No source product IDs mapped to the 67 product IDs."
+  ],
+  "source_manifest_paths": [
+    "D:\\Chatbot\\chatbotshop\\AI\\data\\structured\\raw\\mkechinov__ecommerce-events-history-in-electronics-store\\manifest.json",
+    "D:\\Chatbot\\chatbotshop\\AI\\data\\structured\\raw\\mkechinov__ecommerce-purchase-history-from-electronics-store\\manifest.json"
+  ]
+}

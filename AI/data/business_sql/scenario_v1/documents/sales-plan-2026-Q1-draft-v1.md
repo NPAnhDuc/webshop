@@ -1,0 +1,5 @@
+# BẢN NHÁP kế hoạch 2026-Q1
+
+DỮ LIỆU MÔ PHỎNG — SHOP GIẢ LẬP retail_sim_v1. Không phải chính sách hay kết quả kinh doanh thật.
+
+Chưa duyệt. Mục tiêu dự thảo 3858000000 VND. Không dùng làm mục tiêu chính thức.
