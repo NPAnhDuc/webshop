@@ -355,7 +355,7 @@
     "source": "customer-policy-v1.md",
     "version": 1,
     "effective_from": "2025-10-01",
-    "effective_to": null,
+    "effective_to": "2026-10-29",
     "status": "approved",
     "audience": "customer",
     "authority": "synthetic_shop_document",

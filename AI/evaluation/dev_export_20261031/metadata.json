@@ -1,0 +1,6 @@
+{
+ "source": "Kaggle phiên bản 7, base3",
+ "split": "development",
+ "cases": 864,
+ "note": "Chỉ gồm câu development. Không có câu validation hay held-out."
+}

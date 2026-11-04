@@ -1,4 +1,5 @@
 import importlib
+import sqlite3
 import pytest
 from fastapi.testclient import TestClient
 
@@ -80,6 +81,55 @@ def test_answers_reach_the_web_without_citations_or_internal_paths(server,monkey
     monkeypatch.setattr(engine,'ask',lambda *a,**k:dict(answer=sql,profile={}))
     insight=client.post('/api/chat/admin',json=dict(query='Doanh thu?'),headers=KEY).json()['insight']
     assert '1.189.908.000 VND' in insight and 'data/' not in insight and 'shop.sqlite' not in insight
+
+
+@pytest.fixture
+def shop_db(tmp_path):
+    path=tmp_path/'shop.sqlite'
+    con=sqlite3.connect(path)
+    con.execute('CREATE TABLE products(sku TEXT,name TEXT,price INTEGER)')
+    con.executemany('INSERT INTO products VALUES(?,?,?)',[(f'hash{i}',f'Laptop {i}',1000*i) for i in range(1,8)])
+    con.commit();con.close()
+    return path
+
+
+def product_source(sku):return dict(document_id=f'catalog-{sku}',doc_type='product',title='Tên trong tài liệu')
+
+
+def test_products_come_from_the_database_in_answer_order(server,monkeypatch,shop_db):
+    api_server,engine,client=server
+    monkeypatch.setattr(api_server,'db_path',shop_db)
+    monkeypatch.setattr(engine,'ask',lambda *a,**k:dict(answer='Có.',sources=[product_source('hash2'),product_source('hash1'),product_source('hash2'),
+        product_source('khong-co'),dict(document_id='tech-oled',doc_type='buying_guide')],rows=[dict(name='Laptop 3',price=999999)],profile={}))
+    body=client.post('/api/chat/customer',json=dict(message='So sánh'),headers=KEY).json()
+    assert body['products']==[dict(sku='hash3',name='Laptop 3',price=3000),dict(sku='hash2',name='Laptop 2',price=2000),dict(sku='hash1',name='Laptop 1',price=1000)]
+
+
+def test_products_stop_at_five_and_are_empty_without_product_sources(server,monkeypatch,shop_db):
+    api_server,engine,client=server
+    monkeypatch.setattr(api_server,'db_path',shop_db)
+    monkeypatch.setattr(engine,'ask',lambda *a,**k:dict(answer='Có.',sources=[product_source(f'hash{i}') for i in range(1,8)],profile={}))
+    assert [p['sku'] for p in client.post('/api/chat/customer',json=dict(message='Laptop'),headers=KEY).json()['products']]==[f'hash{i}' for i in range(1,6)]
+    monkeypatch.setattr(engine,'ask',lambda *a,**k:dict(answer='Chào bạn',sources=[],profile={}))
+    assert client.post('/api/chat/customer',json=dict(message='Chào'),headers=KEY).json()['products']==[]
+
+
+def test_a_broken_product_lookup_never_loses_the_answer(server,monkeypatch,tmp_path):
+    api_server,engine,client=server
+    broken=tmp_path/'broken.sqlite';sqlite3.connect(broken).close()
+    monkeypatch.setattr(api_server,'db_path',broken)
+    monkeypatch.setattr(engine,'ask',lambda *a,**k:dict(answer='Vẫn trả lời.',sources=[product_source('hash1')],profile={}))
+    body=client.post('/api/chat/customer',json=dict(message='Laptop'),headers=KEY).json()
+    assert body['replyText']=='Vẫn trả lời.' and body['products']==[]
+
+
+def test_health_reports_an_empty_knowledge_store(server,monkeypatch):
+    api_server,_,client=server
+    monkeypatch.setattr(api_server,'knowledge_documents',254)
+    assert client.get('/health').json()['status']=='healthy'
+    monkeypatch.setattr(api_server,'knowledge_documents',0)
+    body=client.get('/health').json()
+    assert body['status']=='degraded' and body['knowledgeDocuments']==0
 
 
 def test_no_cors_by_default_and_errors_do_not_leak(server,monkeypatch):

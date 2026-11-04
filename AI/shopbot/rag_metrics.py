@@ -13,16 +13,17 @@ from .retrieval import normalize
 
 METRICS=[
  ('gross_profit',r'\b(?:lai gop|loi nhuan gop)\b','Lãi gộp (lợi nhuận gộp)','totals','gross_profit','VND'),
- ('operating_profit',r'\b(?:loi nhuan|lai) hoat dong\b','Lợi nhuận hoạt động trước lãi vay và thuế','financial','operating_profit_before_interest_tax','VND'),
- ('cost',r'\bgia von\b','Giá vốn hàng bán','totals','cost','VND'),
- ('revenue',r'\bdoanh thu(?: thuan)?\b','Doanh thu thuần','totals','revenue','VND'),
- ('orders',r'\b(?:so don|don hang)\b','Số đơn hàng','financial','orders','đơn'),
+ ('operating_profit',r'\b(?:(?:loi nhuan|lai) hoat dong|loi nhuan truoc lai vay)\b','Lợi nhuận hoạt động trước lãi vay và thuế','financial','operating_profit_before_interest_tax','VND'),
+ ('cost',r'\b(?:gia von|tien von)\b','Giá vốn hàng bán','totals','cost','VND'),
+ ('revenue',r'\b(?:doanh thu(?: thuan)?|dt (?:thuan|sau tra hang))\b','Doanh thu thuần','totals','revenue','VND'),
+ ('orders',r'\b(?:so don|don hang|luong don)\b','Số đơn hàng','financial','orders','đơn'),
  ('expenses',r'\bchi phi (?:van hanh|hoat dong)\b','Chi phí vận hành','financial','operating_expenses','VND'),
  ('refunds',r'\b(?:tien hoan|hoan tien)\b','Tiền hoàn cho khách','financial','refunds','VND'),
+ ('return_units',r'\b(?:hang|san pham) (?:bi )?(?:tra ve|hoan tra)\b','Số sản phẩm hoàn trả','financial','return_units','sản phẩm'),
 ]
 EXCLUDE=re.compile(r'\b(?:muc tieu|ke hoach|du kien|du bao|vi sao|tai sao|nguyen nhan|do dau|nhom|nganh hang|kenh|sku|san pham|'
                    r'laptop|linh kien|gaming|chien dich|campaign|so voi muc|dat bao nhieu phan tram|bao cao .* co|view|cot|bang|sql)\b')
-ASK=re.compile(r'\?|\b(?:bao nhieu|la gi|the nao|ra sao|cho (?:toi|minh) (?:biet|xem)|tong)\b')
+ASK=re.compile(r'\?|\b(?:bao nhieu|bn|la gi|the nao|ra sao|cho (?:toi|minh)|tong)\b')
 
 
 def metric_source(question,previous=None):
@@ -35,7 +36,7 @@ def metric_source(question,previous=None):
     q=normalize(question)
     has_metric=any(re.search(m[1],q) for m in METRICS)
     explicit_report=(re.search(r'\b(?:doc|trich|theo|trong|tu)\b[^.!?;]{0,65}\bbao cao\b',q)
-                     or ('bao cao' in q and re.search(r'\b(?:duoc ghi|ghi ro|da neu)\b',q)))
+                     or ('bao cao' in q and re.search(r'\b(?:ghi|da neu)\b',q)))
     if explicit_report:return 'document'
     if has_metric and re.search(r'\b(?:database|du lieu goc|so cai|giao dich goc)\b',q):return 'sql'
     followup=re.search(r'^\s*(?:con\b|cung\b)|\b(?:thang do|quy do|ky do|ky vua noi)\b',q)
@@ -61,7 +62,8 @@ def metric_request(question,role,scope,source_intent=None):
     if role!='admin':return None
     if (source_intent or metric_source(question))=='document':return None
     q=normalize(question)
-    if EXCLUDE.search(q) or not ASK.search(q):return None
+    # "sản phẩm hoàn trả" is a shop total, unlike "sản phẩm" as a breakdown.
+    if EXCLUDE.search(q.replace('san pham hoan tra',' ')) or not ASK.search(q):return None
     # An amount already in the question is a claim to check against documents.
     if re.search(r'\d{5,}|\d+\s*(?:trieu|ty|vnd|dong|%)',q):return None
     asked=[m for m in METRICS if re.search(m[1],q)]

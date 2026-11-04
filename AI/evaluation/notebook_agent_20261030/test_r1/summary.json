@@ -1,0 +1,15 @@
+{
+ "round": "test_r1",
+ "split": "test",
+ "model": "qwen3:4b-instruct-2507-q4_K_M",
+ "questions": 16,
+ "correct": 13,
+ "output_correct": 14,
+ "answered": 14,
+ "wrong_answered": [
+  "t14"
+ ],
+ "mean_cells": 1.12,
+ "mean_seconds": 21.6,
+ "max_seconds": 62.8
+}

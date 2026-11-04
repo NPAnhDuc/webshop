@@ -23,10 +23,28 @@ def test_direct_kpi_remains_on_sql_path(question):
  ('Từ dữ liệu gốc, doanh thu tháng 9/2026 bao nhiêu?','document','sql'),
  ('Theo báo cáo tháng 9/2026, giá vốn bao nhiêu?','sql','document'),
  ('Còn chính sách giao hàng?','document','sql'),
+ ('Báo cáo 12/2025 ghi giá vốn thế nào?','sql','document'),
+ ('Giá vốn tháng 10/2025 và tháng 3/2026 mỗi tháng bao nhiêu? Chỉ đọc số, không tính.','sql','sql'),
 ])
 def test_source_preference_keep_reset_and_override(question,previous,expected):
  from shopbot.rag_metrics import metric_source
  assert metric_source(question,previous)==expected
+
+
+@pytest.mark.parametrize('question,keys',[
+ ('ky 1/2026 so hang bi tra ve la bn',['return_units']),
+ ('Số sản phẩm hoàn trả tháng 10/2025 và tháng 9/2026 mỗi tháng bao nhiêu?',['return_units']),
+ ('ky 3/2026 dt sau tra hang la bn',['revenue']),
+ ('Kỳ 1/2026: cho tôi tiền vốn hàng bán cùng lượng đơn.',['cost','orders']),
+ ('Tháng 7/2026 doanh thu sau trả hàng và lợi nhuận trước lãi vay và thuế là bao nhiêu?',['operating_profit','revenue']),
+])
+def test_everyday_metric_wording_reaches_sql(question,keys):
+ asked,_=metric_request(question,'admin',resolve_scope(question,date(2026,10,24)))
+ assert [m[0] for m in asked]==keys
+
+
+def test_product_breakdown_stays_on_documents():
+ assert metric_request('Doanh thu sản phẩm laptop tháng 9/2026 là bao nhiêu?','admin',resolve_scope('tháng 9/2026',date(2026,10,24))) is None
 
 
 def test_two_turn_report_metric_keeps_source_and_period(monkeypatch):

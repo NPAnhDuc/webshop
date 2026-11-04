@@ -5,6 +5,8 @@ $env:OLLAMA_HOST='127.0.0.1:11435'
 $env:OLLAMA_MODELS="$PSScriptRoot\models\ollama"
 $env:OLLAMA_VULKAN='1'
 $env:OLLAMA_NO_CLOUD='1'
+# llama-server otherwise keeps up to 8 GB of old prompts per model in RAM.
+$env:LLAMA_ARG_CACHE_RAM='0'
 $env:HF_HOME="$PSScriptRoot\models\huggingface"
 $env:HF_HUB_DISABLE_TELEMETRY='1'
 $env:DO_NOT_TRACK='1'

@@ -105,6 +105,8 @@ services:
       - OLLAMA_NOPRUNE=1
       - OLLAMA_KEEP_ALIVE=30m
       - OLLAMA_NO_CLOUD=1
+      # llama-server otherwise keeps up to 8 GB of old prompts per model in RAM.
+      - LLAMA_ARG_CACHE_RAM=0
     volumes:
       # Models imported locally (qwen3 base, shopbot-qwen-sft-*). Stop the Windows Ollama
       # before `ollama create` so two servers never write this folder at once.

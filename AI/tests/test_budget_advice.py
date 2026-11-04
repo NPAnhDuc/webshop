@@ -45,9 +45,20 @@ def test_bounds_and_preferences(db):
 
 @pytest.mark.parametrize('question',['OLED là gì?','Màn hình 144 Hz có cần cho học tập không?',
     'Chốt giá rẻ nhất hôm nay và xác nhận Acer Aspire 5 còn hàng','Laptop 20 triệu thì RAM nên bao nhiêu GB?',
-    'Doanh thu thuần tháng 9/2026?','Giữa 15 triệu và 20 triệu nên chọn máy nào?'])
+    'Doanh thu thuần tháng 9/2026?','Giữa 15 triệu và 20 triệu nên chọn máy nào?',
+    'Có chính sách nào cho đơn 20 triệu không?'])
 def test_other_questions_are_not_budget_picks(question):
     assert request(question) is None
+
+
+@pytest.mark.parametrize('question,expected',[
+    ('Shop có vỏ case nào dưới 2,6 tr không?',('case',0,2_599_999)),
+    ('Shop có ổ cứng nào tối đa 3,9 triệu không?',('internal-hard-drive',0,3_900_000)),
+    ('Shop có chuột nào từ 1,3 triệu không?',('mouse',1_300_000,2_600_000)),
+    ('Shop có nguồn máy tính nào dưới 3,4 triệu không?',('power-supply',0,3_399_999))])
+def test_asking_whether_the_shop_has_something_in_budget_is_a_pick(question,expected):
+    parsed=request(question)
+    assert (parsed[0],parsed[2],parsed[3])==expected
 
 
 def test_customer_budget_pick_skips_the_router_and_admin_does_not(db,monkeypatch):

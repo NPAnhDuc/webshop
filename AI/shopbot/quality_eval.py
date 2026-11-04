@@ -13,12 +13,24 @@ def select_cases(bank,split,limit=0,requested=None):
  if limit<0:raise ValueError('Negative limit')
  return allowed[:limit] if limit else allowed
 
+def sql_figure_matches(gold,claims):
+ # A direct metric comes from shop.sqlite and cites no report; it counts when the same month gives the report's figure.
+ period=re.fullmatch(r'monthly-report-(\d{4}-\d{2})',gold['document_id'])
+ value=re.search(r':\s*(-?\d+)\b',gold['quote'])
+ if not period or not value:return False
+ for claim in claims:
+  shown=re.match(r'\s*(-?\d[\d.]*)',claim.get('text','').partition(':')[2])
+  if shown and shown[1].replace('.','')==value[1] and any(e.get('chunk_id')=='sql-financial-ledger' and e.get('period')==period[1] for e in claim.get('evidence',[])):return True
+ return False
+
 def grade(case,result):
  issues=[];sources={s['chunk_id']:s for s in result.get('sources',[])}
  def fail(cause,detail):issues.append(dict(cause=cause,detail=detail))
  if not result or result.get('basic_action')=='unavailable':fail('INFRASTRUCTURE','No reliable model result')
  behavior=case['expected_behavior']
- if result.get('rows') and behavior!='catalog_pick':fail('UNEXPECTED_TOOL','RAG emitted tool rows')
+ # A live_product answer may read one product's row; anything wider is a tool result.
+ rows=result.get('rows') or []
+ if rows and behavior!='catalog_pick' and not (behavior=='live_product' and len(rows)==1):fail('UNEXPECTED_TOOL','RAG emitted tool rows')
  if case['role']=='customer' and any(s.get('audience')=='admin' for s in sources.values()):fail('PERMISSION','Private source supplied to customer')
  claims=result.get('rag',{}).get('claims',[])
  for claim in claims:
@@ -28,14 +40,21 @@ def grade(case,result):
  available={v['document_id'] for v in result.get('rag',{}).get('available_fields',[])}
  if behavior=='facts':
   for gold in case['required']:
-   matches=[]
-   for claim in claims:
-    for e in claim.get('evidence',[]):
-     s=sources.get(e.get('chunk_id'),{})
-     if s.get('document_id')==gold['document_id'] and s.get('version')==gold['version']:
-      matches.extend(e.get('quotes',[]))
-   if not any(canonical(gold['quote']) in canonical(q) for q in matches):
-    fail('SELECTION_OR_CHUNKING' if gold['document_id'] in available else 'RETRIEVAL_OR_ROUTING',gold)
+   accepted=[gold,*gold.get('any_of',[])]
+   matched=False
+   for option in accepted:
+    matches=[]
+    for claim in claims:
+     for e in claim.get('evidence',[]):
+      s=sources.get(e.get('chunk_id'),{})
+      if s.get('document_id')==option['document_id'] and s.get('version')==option['version']:
+       matches.extend(e.get('quotes',[]))
+    if any(canonical(option['quote']) in canonical(q) for q in matches):
+     matched=True
+     break
+   available_gold={option['document_id'] for option in accepted}
+   if not matched and not sql_figure_matches(gold,claims):
+    fail('SELECTION_OR_CHUNKING' if available_gold & available else 'RETRIEVAL_OR_ROUTING',gold)
  elif behavior=='unknown':
   if claims:fail('WRONG_SCOPE','Unsupported requested model/period replaced with other facts')
   if result.get('rag',{}).get('answerability') not in ('none','unverified'):fail('MISSING_NOT_ACKNOWLEDGED','No unambiguous missing-evidence decision')

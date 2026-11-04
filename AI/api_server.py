@@ -17,6 +17,7 @@ Environment:
 import hmac
 import os
 import re
+import sqlite3
 import sys
 import threading
 import time
@@ -121,6 +122,31 @@ def for_reader(answer: str) -> str:
     return "\n\n".join(paragraphs)
 
 
+def answer_products(result: Dict[str, Any], limit: int = 5) -> list:
+    """Products the answer rests on, in the order it used them, for the web's product cards.
+    Names and prices always come from the shop database, never from model text."""
+    wanted = [("name", row["name"]) for row in result.get("rows") or [] if isinstance(row, dict) and row.get("name")]
+    wanted += [("sku", str(source.get("document_id", "")).removeprefix("catalog-"))
+               for source in result.get("sources") or []
+               if isinstance(source, dict) and source.get("doc_type") == "product"]
+    if not wanted or db_path is None:
+        return []
+    from shopbot.store import connect
+
+    products: Dict[str, Dict[str, Any]] = {}
+    try:
+        with connect(db_path, readonly=True) as con:
+            for column, value in wanted:
+                row = con.execute(f"SELECT sku, name, price FROM products WHERE {column} = ?", (value,)).fetchone()
+                if row and len(products) < limit:
+                    products.setdefault(row["sku"], dict(sku=row["sku"], name=row["name"], price=row["price"]))
+    except sqlite3.Error as e:
+        # Cards are extra; the written answer must still reach the shopper.
+        print(f"[AI Model Server] product lookup error: {e!r}")
+        return []
+    return list(products.values())
+
+
 def ask(eng, question: str, role: str, session_id: Optional[str]):
     key = session_key(role, session_id)
     result = eng.ask(question, role=role, profile=sessions.get(key) if key else {})
@@ -132,13 +158,15 @@ def ask(eng, question: str, role: str, session_id: Optional[str]):
 # Lazy/Graceful initialization of the shopbot Engine
 engine = None
 db_path = None
+knowledge_documents = None
 
 def get_engine():
-    global engine, db_path
+    global engine, db_path, knowledge_documents
     if engine is None:
         try:
             from shopbot.store import initialize, connect
             from shopbot.engine import Engine
+            from shopbot.knowledge import KnowledgeStore
 
             db_path = (ROOT / os.getenv("SHOP_DATABASE", "data/structured/shop.db")).resolve()
             if not db_path.exists():
@@ -149,6 +177,9 @@ def get_engine():
             initialize(db_path)
             engine = Engine(db_path)
             print(f"[AI Model Server] Initialized Engine with database: {db_path}")
+            knowledge_documents = len(KnowledgeStore(db_path).all_records())
+            if not knowledge_documents:
+                print(f"[AI Model Server] WARNING: no knowledge documents for {db_path}; answers will have no sources.")
         except Exception as e:
             print(f"[AI Model Server] Engine init error: {e}")
     return engine
@@ -167,9 +198,10 @@ class AdminChatRequest(BaseModel):
 def health_check():
     eng = get_engine()
     return {
-        "status": "healthy",
+        "status": "degraded" if eng is None or knowledge_documents == 0 else "healthy",
         "service": "techstore-ai-model-docker",
         "engineLoaded": eng is not None,
+        "knowledgeDocuments": knowledge_documents,
         "adminChannel": bool(os.getenv("AI_INTERNAL_KEY")),
     }
 
@@ -185,7 +217,7 @@ def chat_customer(req: CustomerChatRequest, x_internal_key: Optional[str] = Head
         return {
             "success": True,
             "replyText": "Chào bạn! Tôi là Trợ lý AI TechStore được đóng gói Docker. Rất sẵn lòng hỗ trợ bạn tìm kiếm cấu hình máy tính và giải đáp thắc mắc!",
-            "suggestedPills": ["Tư vấn Laptop Gaming", "Build PC 25 triệu", "Chính sách trả góp 0%"],
+            "suggestedPills": ["Tư vấn Laptop Gaming", "Build PC 25 triệu", "Chính sách trả góp"],
             "action": "ai_docker_response"
         }
 
@@ -200,9 +232,10 @@ def chat_customer(req: CustomerChatRequest, x_internal_key: Optional[str] = Head
             "suggestedPills": [
                 "Tư vấn thêm chi tiết",
                 "Laptop trong tầm giá này",
-                "Chính sách bảo hành 30 ngày"
+                "Chính sách bảo hành"
             ],
             # Document names and chunk ids stay server-side; shoppers only see the answer.
+            "products": answer_products(result),
             "action": "ai_inference"
         }
     except HTTPException:

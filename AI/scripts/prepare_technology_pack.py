@@ -248,7 +248,7 @@ def main():
         if source['status']=='downloaded':
             assert sha(PACK/source['raw'])==source['sha256']
             assert sha(PACK/source['extracted'])==source['text_sha256']
-    managed=ROOT/'data/unstructured/managed/ecdd21ab64861674/manifest.json'
+    managed=ROOT/'data/unstructured/managed/e397df083984c120/manifest.json'
     counts=dict(downloaded_sources=sum(s['status']=='downloaded' for s in sources),attempted_sources=len(sources),
                 raw_bytes=sum(s.get('bytes',0) for s in sources),pdf_pages=sum(s.get('pages',0) for s in sources),
                 curated_notes=len(notes),web_reviewed_notes=sum(n['source_capture']=='web_reviewed' for n in notes),

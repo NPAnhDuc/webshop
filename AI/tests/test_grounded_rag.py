@@ -178,7 +178,8 @@ def test_reference_article_cannot_identify_product_from_absent_dialogue(monkeypa
         return dict(action='answer',query=question,doc_types=['glossary'],task='lookup',private_request=False)
     monkeypatch.setattr('shopbot.grounded_rag.chat',router)
     result=answer(question,'customer',{},'unused',TODAY)
-    assert len(calls)==1 and result['basic_action']=='clarify' and not result['sources']
+    # The route guard may ask before the router does; either way nothing reaches the selector.
+    assert len(calls)<=1 and result['basic_action']=='clarify' and not result['sources']
     assert not result['rag']['claims']
 
 
@@ -188,7 +189,7 @@ def test_reference_article_cannot_identify_product_from_absent_dialogue(monkeypa
     ('Laptop Z710 có cổng nào?',{'history':[{'question':'Màn hình Y900 có gì?','answer':'Đã chọn'}],'rag_product_subject':'Màn hình Y900'}),
 ])
 def test_bound_or_explicit_product_is_not_confused_with_missing_history(monkeypatch,question,profile):
-    doc=source('Laptop Z710: cổng: HDMI.');doc.update(doc_type='product',title='Laptop Z710',retrieval='explicit named product')
+    doc=source('Laptop Z710: kết nối: HDMI.');doc.update(doc_type='product',title='Laptop Z710',retrieval='explicit named product')
     monkeypatch.setattr('shopbot.grounded_rag.search',lambda *a,**k:[doc])
     calls=[]
     def model(system,payload,schema,**kwargs):

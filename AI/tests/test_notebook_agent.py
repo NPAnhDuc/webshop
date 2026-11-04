@@ -161,6 +161,30 @@ def test_agent_rejects_answer_with_invented_number(tmp_path):
     assert 'không thấy trong output' in ask.seen[2]['note']
 
 
+def test_agent_restates_the_output_when_only_the_unit_is_wrong(tmp_path):
+    ask=scripted([dict(code='print(3276634000)'),dict(done=True,answer='3.276634 triệu đồng')])
+    result=agent.run_agent('Tổng là bao nhiêu đồng?',ask=ask,output_dir=tmp_path)
+    assert result.status=='answered' and result.answer=='3.276.634.000' and len(ask.seen)==2
+
+
+def test_agent_does_not_restate_when_the_digits_differ(tmp_path):
+    ask=scripted([dict(code='print(67)'),dict(done=True,answer='6,8 triệu')]+[dict()]*5)
+    assert agent.run_agent('x',ask=ask,output_dir=tmp_path).status=='unverified'
+
+
+def test_every_retry_differs_and_carries_the_error(tmp_path):
+    ask=scripted([dict(code='print(undefined_value)')]*12)
+    result=agent.run_agent('x',ask=ask,output_dir=tmp_path)
+    assert len(result.cells)==1 and result.status=='failed'
+    assert 'NameError' in ask.seen[2]['note'] and ask.seen[2]!=ask.seen[3]
+
+
+def test_agent_stops_when_nothing_changes(tmp_path):
+    ask=scripted([dict(code='print(undefined_value)')]*12)
+    result=agent.run_agent('x',ask=ask,output_dir=tmp_path)
+    assert result.model_calls==1+agent.MAX_IDLE_TURNS
+
+
 def test_agent_requires_executed_cell_before_answering(tmp_path):
     ask=scripted([dict(done=True,answer='Không có số nào.')]+[dict()]*11)
     result=agent.run_agent('Có bao nhiêu?',ask=ask,output_dir=tmp_path)

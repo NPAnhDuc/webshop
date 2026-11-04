@@ -1,0 +1,36 @@
+{
+  "created": "2026-10-31",
+  "today": "2026-10-31",
+  "database": "data/business_sql/scenario_v1/shop.sqlite",
+  "knowledge_manifest": "data/unstructured/managed/e397df083984c120/manifest.json",
+  "knowledge_sha256": "075c9e8b1e3220a357ef7d4e951445cfe991f214ff8f533aa5e56c111cc79871",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "bank_sha256": "f3ebcece6d921c73e3007dac3ee08e89b2b68487fb565f2388271de12ed1c1f7",
+  "gold_sha256": "6872b9dbabe17b5962e0be12408c0be8f7f8022fcc4c14119f0761f795106712",
+  "counts": {
+    "customer_policy": 25,
+    "product_advice": 30,
+    "unsupported_product": 15,
+    "privacy_or_handoff": 15,
+    "admin_business_question": 25,
+    "multi_turn": 10
+  },
+  "splits": {
+    "development": 120
+  },
+  "groups": {
+    "customer_policy": 25,
+    "product_advice": 30,
+    "unsupported_product": 15,
+    "privacy_or_handoff": 15,
+    "admin_business_question": 25,
+    "multi_turn": 10
+  },
+  "calculation_cases": 12,
+  "quality_checks": {
+    "no_diacritic": 12,
+    "colloquial_abbreviations": 10,
+    "long_20_words": 16
+  },
+  "note": "Independently authored second development bank; not a held-out split."
+}

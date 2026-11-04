@@ -135,12 +135,13 @@ def main():
                 self.respond(200,{'embeddings':vectors,'truncated':truncated,'model':metadata['model'],'revision':metadata['revision']})
             except (ValueError,KeyError,TypeError) as exc: self.respond(400,{'error':str(exc)})
         def log_message(self,fmt,*args): pass
-    print(json.dumps({'ready':True,'model':metadata['model'],'max_tokens':limit,'port':8011}),flush=True)
+    port=int(os.getenv('VI_EMBEDDING_PORT','8011'))
+    print(json.dumps({'ready':True,'model':metadata['model'],'max_tokens':limit,'port':port}),flush=True)
     # One serving thread: torch/oneDNN keep per-thread buffers, and a new thread per
     # request leaked hundreds of MB per few dozen requests. Inference was already
     # serialised by the lock, so throughput is unchanged.
     # Loopback by default; the Docker image sets VI_EMBEDDING_HOST=0.0.0.0 on its private network.
-    HTTPServer((os.getenv('VI_EMBEDDING_HOST','127.0.0.1'),8011),Handler).serve_forever()
+    HTTPServer((os.getenv('VI_EMBEDDING_HOST','127.0.0.1'),port),Handler).serve_forever()
 
 
 if __name__=='__main__': main()

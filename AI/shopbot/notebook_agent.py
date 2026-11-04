@@ -32,7 +32,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DB_PATH=ROOT/'data/business_sql/scenario_v1/shop.sqlite'
 OUTPUT_DIR=ROOT/'runtime/notebook_agent'
 DEFAULT_MODEL='qwen3:4b-instruct-2507-q4_K_M'
-MAX_CELLS=8;MAX_MODEL_CALLS=12;CELL_TIMEOUT=30;TOTAL_TIMEOUT=300;MAX_TOKENS=900;LOAD_TIMEOUT=420
+MAX_CELLS=8;MAX_MODEL_CALLS=12;MAX_IDLE_TURNS=4;CELL_TIMEOUT=30;TOTAL_TIMEOUT=300;MAX_TOKENS=900;LOAD_TIMEOUT=420
 MEMORY_LIMIT=1_500_000_000;MAX_OUTPUT_CHARS=200_000;OBSERVED_CHARS=1800;OLD_OBSERVED_CHARS=400
 
 STEP_SCHEMA={'type':'object','properties':{'thought':{'type':'string','maxLength':300},'code':{'type':'string'},
@@ -269,6 +269,8 @@ SYSTEM="""Bạn là chuyên viên dữ liệu của shop bán đồ công nghệ
 Dữ liệu từ 2025-10 đến 2026-09, tiền là đồng VND. Bảng và cột:
 {tables}
 monthly_pnl mỗi tháng một dòng, month dạng 'YYYY-MM': net_revenue=doanh thu thuần, net_cogs=giá vốn, net_units=số đơn vị bán ròng, gross_profit=lãi gộp, operating_expenses=chi phí vận hành, operating_profit_before_interest_tax=lãi hoạt động trước lãi vay và thuế, order_count=số đơn, return_units=số đơn vị hoàn, refunds=tiền hoàn, purchases_received=giá trị hàng nhập nhận, operating_cash_flow_assuming_cash_settlement=dòng tiền hoạt động, target_revenue=mục tiêu doanh thu.
+financial_ledger mỗi dòng một giao dịch, kind là 'sale' hoặc 'return'; dòng 'return' có revenue và cost âm, nên doanh thu ròng là SUM(revenue) không lọc kind. Bán ròng theo nhóm hàng thì nối products qua sku.
+monthly_pnl đã có sẵn target_revenue, không cần nối monthly_targets để lấy mục tiêu doanh thu.
 Biến có sẵn, không tạo lại: conn (SQLite chỉ đọc), pd, np, plt, sqlite3. Đọc bằng pd.read_sql(sql, conn). Không gọi sqlite3.connect, không đọc/ghi tệp, không dùng mạng, shell, os; chỉ import pandas, numpy, sqlite3, matplotlib.
 Mỗi lượt trả đúng một JSON:
 - Chưa có kết quả: thought là kế hoạch ngắn, code là một ô Python in kết quả bằng print, done=false, answer rỗng.
@@ -290,6 +292,22 @@ def unsupported_numbers(answer,evidence):
         value=next(iter(numbers(match[0])),None)
         if value is not None and not any(abs(item-value)<=tolerance for item in known):missing.append(match[0])
     return missing
+
+
+SINGLE_INT=re.compile(r'\s*(-?\d+)(?:\.0+)?\s*')
+
+
+def exact_from_output(answer,cell):
+    """The printed number when the answer only got its scale wrong (3.276634 triệu for 3276634000), else empty."""
+    match=SINGLE_INT.fullmatch(cell.text or '') if cell.status=='ok' else None
+    if not match:return ''
+    written=[re.sub(r'\D','',token[1]).rstrip('0') for token in NUMBER_TOKEN.finditer(DATE_TOKENS.sub(' ',answer.lower()))]
+    return f'{int(match[1]):,}'.replace(',','.') if match[1].lstrip('-').rstrip('0') in written else ''
+
+
+def last_error(cells):
+    """First line of the newest failed cell, so a retry is told what went wrong."""
+    return next((cell.text.strip().splitlines()[0][:200] for cell in reversed(cells) if cell.status!='ok' and cell.text.strip()),'')
 
 
 def default_model():
@@ -336,14 +354,14 @@ def run_agent(question,*,ask=None,model=None,db_path=DB_PATH,max_cells=MAX_CELLS
     started=time.monotonic();model=model or default_model();warm=ask is None
     system=SYSTEM.format(tables=table_summary(db_path))
     if ask is None:ask=lambda payload:chat(system,payload,STEP_SCHEMA,max_tokens=MAX_TOKENS,model=model)
-    cells=[];calls=0;note='';status='failed';answer='';rejected='';error=''
+    cells=[];calls=0;idle=0;note='';status='failed';answer='';rejected='';error=''
     if warm:
         try:warm_model(model);started=time.monotonic()
         except requests.RequestException as exc:error=f'Không nạp được model: {exc}'
     with SandboxKernel(db_path,output_dir) as kernel:
-        while not error and calls<MAX_MODEL_CALLS and time.monotonic()-started<total_timeout:
-            calls+=1
-            try:step=ask(dict(question=question,history=history_payload(cells),note=note,cells_left=max_cells-len(cells)))
+        while not error and calls<MAX_MODEL_CALLS and idle<MAX_IDLE_TURNS and time.monotonic()-started<total_timeout:
+            calls+=1;idle+=1
+            try:step=ask(dict(question=question,history=history_payload(cells),note=note,cells_left=max_cells-len(cells),attempt=calls))
             except requests.RequestException as exc:
                 error=f'Lỗi gọi model: {exc}';break
             except (ValueError,KeyError,TypeError):
@@ -351,16 +369,19 @@ def run_agent(question,*,ask=None,model=None,db_path=DB_PATH,max_cells=MAX_CELLS
             note='';code=str(step.get('code') or '').strip();thought=str(step.get('thought') or '')
             if code:
                 if len(cells)>=max_cells:note='Hết số ô cho phép. Trả lời bằng kết quả đã có, code rỗng.';continue
-                if cells and cells[-1].code==code:note='Ô này giống hệt ô trước. Hãy sửa code hoặc trả lời.';continue
+                if cells and cells[-1].code==code:note=f'Ô này giống hệt ô trước. Hãy sửa code hoặc trả lời. {last_error(cells)}'.strip();continue
                 issues=check_code(code)
                 if issues:cell=Cell(code=code,status='refused',text='Từ chối, chưa chạy: '+' '.join(issues))
                 else:cell=kernel.run(code,timeout=cell_timeout)
-                cell.thought=thought;cells.append(cell);continue
+                cell.thought=thought;cells.append(cell);idle=0;continue
             candidate=str(step.get('answer') or '').strip()
             successful='\n'.join(cell.text for cell in cells if cell.status=='ok')
             if not step.get('done') or not candidate:note='Thiếu code hoặc câu trả lời. Viết một ô code, hoặc done=true kèm answer.';continue
-            if not successful:note='Chưa có ô nào chạy thành công. Hãy viết code lấy số từ dữ liệu.';continue
+            if not successful:note=f'Chưa có ô nào chạy thành công. Hãy viết code lấy số từ dữ liệu. {last_error(cells)}'.strip();continue
             unsupported=unsupported_numbers(candidate,f'{question}\n{successful}')
+            exact=exact_from_output(candidate,cells[-1]) if unsupported else ''
+            if exact:
+                status='answered';answer=exact;break
             if unsupported:
                 rejected=candidate
                 note=f"Câu trả lời có số không thấy trong output: {', '.join(unsupported[:6])}. Hãy print đúng các số đó bằng code hoặc sửa câu trả lời.";continue

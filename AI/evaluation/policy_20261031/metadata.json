@@ -1,0 +1,17 @@
+{
+ "created": "2026-10-31",
+ "today": "2026-10-31",
+ "database": "D:\\Chatbot\\chatbotshop\\AI\\data\\business_sql\\scenario_v1\\shop.sqlite",
+ "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+ "knowledge_manifest": "D:\\Chatbot\\chatbotshop\\AI\\data\\unstructured\\managed\\e397df083984c120\\manifest.json",
+ "knowledge_sha256": "075c9e8b1e3220a357ef7d4e951445cfe991f214ff8f533aa5e56c111cc79871",
+ "bank_sha256": "c14f6c643b22017a49c835b5e73d6f0b9341cc80960b0440a44ba56978fec631",
+ "gold_sha256": "83113b5b8f9b43d395e988ef83512769838bdcf2f7394169cbde47903ebf8b6e",
+ "counts": {
+  "cases": 31
+ },
+ "splits": {
+  "development": 31
+ },
+ "note": "Written with the policy text in view, so this is a development check, not held-out. Source-bound checks are not semantic correctness."
+}

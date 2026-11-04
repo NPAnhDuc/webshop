@@ -10,7 +10,11 @@ TYPES=['product','glossary','buying_guide','policy','promotion','store_info','sh
        'strategy','sales_plan','marketing','monthly_report','procedure','meeting']
 
 
-def namespace(db):return hashlib.sha256(str(Path(db).resolve()).encode()).hexdigest()[:16]
+def namespace(db):
+    # Keyed on the path inside the project, so the documents follow the data to another machine or into Docker.
+    path=Path(db).resolve()
+    key=path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else str(path)
+    return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
 class KnowledgeStore:

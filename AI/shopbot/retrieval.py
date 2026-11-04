@@ -69,6 +69,15 @@ def named_product(document,question):
     return title in question or any(re.search(r'(?<!\w)'+re.escape(token)+r'(?!\w)',question) for token in product_codes(title))
 
 
+def about_model(document,question,products):
+    # "DDR5 là gì?" carries a code-shaped token too, but it is not about the product asked of.
+    # Containment keeps a regional variant: "b12m-081sg" belongs to the catalog's "b12m".
+    if normalize(document.get('title','?')) in question:return True
+    held=[code for product in products for code in product_codes(product.get('title',''))]
+    return any(re.search(r'(?<!\w)'+re.escape(token)+r'(?!\w)',question) and any(token in code or code in token for code in held)
+               for token in product_codes(document.get('title','')))
+
+
 def search(question, role, extra_dir=None, db_path=DB, as_of=None, doc_types=None, top_k=6, categories=None, scope=None, historical=False):
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.metrics.pairwise import cosine_similarity
@@ -148,7 +157,8 @@ def search(question, role, extra_dir=None, db_path=DB, as_of=None, doc_types=Non
         names={d['document_id'] for d in named};codes=set(token for d in named for token in product_codes(d.get('title','')))
         if names:
             documents=[d for d in documents if (d.get('doc_type')!='product' or d['document_id'] in names)
-                       and (not product_codes(d.get('title','')) or not codes or bool(codes.intersection(product_codes(d.get('title','')))))]
+                       and (not product_codes(d.get('title','')) or not codes or bool(codes.intersection(product_codes(d.get('title',''))))
+                            or named_product(d,q))]
     for document in documents:
         import os
         chunks.extend(chunk_document(document,max_words=100 if os.getenv('VI_EMBEDDING_URL') else 180))

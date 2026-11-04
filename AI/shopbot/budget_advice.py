@@ -12,7 +12,7 @@ from .retrieval import normalize
 
 # Customer wording that asks the shop to pick products for them.
 ASKS_FOR_PICK = re.compile(r'\b(?:goi y|tu van|nen mua|nen chon|nen lay|chon giup|chon dum|tim giup|tim dum|tim (?:may|con|mau|laptop)'
-                           r'|kiem (?:may|con|giup)|recommend|co (?:may|con|mau|loai) nao|(?:may|con|mau|laptop) nao|mua (?:may|con|laptop|man hinh))\b')
+                           r'|kiem (?:may|con|giup)|recommend|co [a-z0-9 ]{1,30}? nao|(?:may|con|mau|laptop) nao|mua (?:may|con|laptop|man hinh))\b')
 MONEY = re.compile(r'(?P<bound>khoang|tam|tam khoang|quanh|duoi|nho hon|toi da|khong qua|khong vuot qua|tren|tu|hon)?\s*'
                    r'(?P<number>\d+(?:[.,]\d+)?)\s*(?P<unit>trieu|tr|cu)(?![a-z])')
 # Category nouns, most specific first; "máy"/"con máy" alone means a laptop in this catalog.
@@ -31,6 +31,7 @@ CATEGORIES = [
 SCREEN = re.compile(r'\b(?:man hinh|man|hien thi)\b.{0,12}\b(?:dep|net|sac net|chat luong|xin|tot|dinh)\b|\b(?:do hoa|chinh anh|thiet ke|xem phim)\b')
 GAMING = re.compile(r'\b(?:choi game|gaming|game)\b')
 LIGHT = re.compile(r'\b(?:nhe|mong nhe|di chuyen|mang di)\b')
+NOTE = 'Giá theo danh mục của shop; giá và tồn kho chính xác tại thời điểm mua xem trên trang sản phẩm.'
 
 
 def vnd(amount):
@@ -159,7 +160,6 @@ def advise(question, db_path):
         head = f"Hiện shop không có {label} nào còn hàng trong tầm {band}."
         nearest = sorted([p for p in items if p['stock'] > 0], key=lambda p: abs(p['price'] - budget))[:2]
         picks = (['Gần ngân sách nhất:'] + [_line(i + 1, p) for i, p in enumerate(nearest)]) if nearest else []
-    note = 'Giá theo danh mục của shop; giá và tồn kho chính xác tại thời điểm mua xem trên trang sản phẩm.'
-    return dict(answer='\n\n'.join(x for x in [head, '\n'.join(picks), note] if x),
+    return dict(answer='\n\n'.join(x for x in [head, '\n'.join(picks), NOTE] if x),
                 rows=[dict(name=p['name'], price=p['price'], stock=p['stock']) for p in available[:3]],
                 criterion=criterion, band=(low, high), category=category)

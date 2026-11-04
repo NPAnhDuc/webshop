@@ -1,0 +1,131 @@
+{
+  "created": "2026-10-31",
+  "today": "2026-10-31",
+  "database": "data/business_sql/scenario_v1/shop.sqlite",
+  "database_sha256": "f544a0a0255d78a06f01833275170a6f2eda89f2c9053a923433e420ca365028",
+  "knowledge_manifest": "data/unstructured/managed/e397df083984c120/manifest.json",
+  "knowledge_sha256": "075c9e8b1e3220a357ef7d4e951445cfe991f214ff8f533aa5e56c111cc79871",
+  "bank_sha256": "ad131e95d069821623ed0dce48dcd929bb910761b6ec8fbfdcd044963595459b",
+  "gold_sha256": "a8ef48cb22e9b8907e0ed08fa58b9bf7c853572160f32d17b6efb2b98c91f362",
+  "counts": {
+    "customer_policy": 25,
+    "product_advice": 30,
+    "unsupported_product": 15,
+    "privacy_or_handoff": 15,
+    "admin_business_question": 25,
+    "multi_turn": 10
+  },
+  "splits": {
+    "development": 120
+  },
+  "groups": {
+    "customer_policy": 25,
+    "product_advice": 30,
+    "unsupported_product": 15,
+    "privacy_or_handoff": 15,
+    "admin_business_question": 25,
+    "multi_turn": 10
+  },
+  "boundary_pairs": {
+    "customer_policy": [
+      [
+        "N007",
+        "N013"
+      ],
+      [
+        "N009",
+        "N015"
+      ],
+      [
+        "N021",
+        "N022"
+      ]
+    ],
+    "product_advice": [
+      [
+        "N026",
+        "N056"
+      ],
+      [
+        "N028",
+        "N058"
+      ],
+      [
+        "N029",
+        "N060"
+      ]
+    ],
+    "unsupported_product": [
+      [
+        "N056",
+        "N026"
+      ],
+      [
+        "N057",
+        "N031"
+      ],
+      [
+        "N059",
+        "N055"
+      ]
+    ],
+    "privacy_or_handoff": [
+      [
+        "N071",
+        "N074"
+      ],
+      [
+        "N075",
+        "N078"
+      ],
+      [
+        "N076",
+        "N082"
+      ]
+    ],
+    "admin_business_question": [
+      [
+        "N096",
+        "N094"
+      ],
+      [
+        "N099",
+        "N095"
+      ],
+      [
+        "N110",
+        "N101"
+      ]
+    ],
+    "multi_turn": [
+      [
+        "N111",
+        "N112"
+      ],
+      [
+        "N117",
+        "N118"
+      ],
+      [
+        "N119",
+        "N120"
+      ]
+    ]
+  },
+  "quality_checks": {
+    "labels": {
+      "facts": 85,
+      "clarify": 7,
+      "unknown": 11,
+      "denied": 9,
+      "live_product": 5,
+      "handoff": 3
+    },
+    "no_diacritic": 23,
+    "abbreviations": 22,
+    "long_questions_20_words": 15,
+    "three_turn_conversations": 2,
+    "topic_switch_conversations": 2
+  },
+  "note": "All prompts are individually authored in this script; this is a development set, not a held-out evaluation."
+}

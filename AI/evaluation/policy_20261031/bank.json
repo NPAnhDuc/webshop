@@ -1,0 +1,629 @@
+[
+ {
+  "role": "customer",
+  "question": "Laptop bảo hành bao lâu?",
+  "topic": "shop_policy",
+  "conversation": "policy:0",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Laptop được bảo hành 24 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P001"
+ },
+ {
+  "role": "customer",
+  "question": "laptop bao hanh may thang",
+  "topic": "shop_policy",
+  "conversation": "policy:1",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Laptop được bảo hành 24 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P002"
+ },
+ {
+  "role": "customer",
+  "question": "chuột mua ở shop bảo hành mấy tháng",
+  "topic": "shop_policy",
+  "conversation": "policy:2",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Vỏ case và chuột được bảo hành 12 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P003"
+ },
+ {
+  "role": "customer",
+  "question": "RAM được bảo hành bao nhiêu tháng?",
+  "topic": "shop_policy",
+  "conversation": "policy:3",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "CPU, mainboard, RAM, ổ cứng, card đồ hoạ, nguồn và màn hình được bảo hành 24 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P004"
+ },
+ {
+  "role": "customer",
+  "question": "Bảo hành tính từ khi nào?",
+  "topic": "shop_policy",
+  "conversation": "policy:4",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Thời hạn bảo hành tính từ ngày mua, tra theo số đơn hàng hoặc số điện thoại đặt hàng."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P005"
+ },
+ {
+  "role": "customer",
+  "question": "Máy bị vào nước có được bảo hành không?",
+  "topic": "shop_policy",
+  "conversation": "policy:5",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Bảo hành không áp dụng khi máy bị rơi vỡ, vào nước, cháy nổ do nguồn điện ngoài, hoặc đã bị sửa chữa ngoài TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P006"
+ },
+ {
+  "role": "customer",
+  "question": "Có vệ sinh máy miễn phí không?",
+  "topic": "shop_policy",
+  "conversation": "policy:6",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Vệ sinh máy và tra keo tản nhiệt được miễn phí trong thời hạn bảo hành."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P007"
+ },
+ {
+  "role": "customer",
+  "question": "Sản phẩm lỗi thì đổi trong bao nhiêu ngày?",
+  "topic": "shop_policy",
+  "conversation": "policy:7",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "TechStore đổi 1 đổi 1 trong 30 ngày cho sản phẩm lỗi phần cứng do nhà sản xuất, được kỹ thuật xác nhận, đủ hộp và phụ kiện."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P008"
+ },
+ {
+  "role": "customer",
+  "question": "Đổi ý không muốn mua nữa thì trả hàng trong mấy ngày?",
+  "topic": "shop_policy",
+  "conversation": "policy:8",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "TechStore nhận trả hàng hoàn tiền trong 7 ngày với sản phẩm chưa kích hoạt, còn nguyên tem và đủ hộp, phụ kiện."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P009"
+ },
+ {
+  "role": "customer",
+  "question": "Trả hàng được hoàn bao nhiêu phần trăm?",
+  "topic": "shop_policy",
+  "conversation": "policy:9",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "Trả hàng trong 7 ngày được hoàn 100% giá đã trả."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P010"
+ },
+ {
+  "role": "customer",
+  "question": "Tiền hoàn về đâu?",
+  "topic": "shop_policy",
+  "conversation": "policy:10",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "Tiền hoàn về đúng phương thức đã thanh toán."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P011"
+ },
+ {
+  "role": "customer",
+  "question": "Hết hàng cùng mẫu thì đổi thế nào?",
+  "topic": "shop_policy",
+  "conversation": "policy:11",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "Sản phẩm đổi 1 đổi 1 là sản phẩm cùng mẫu; hết hàng cùng mẫu thì đổi mẫu tương đương hoặc hoàn tiền."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P012"
+ },
+ {
+  "role": "customer",
+  "question": "Phát hiện hàng giả thì shop đền thế nào?",
+  "topic": "shop_policy",
+  "conversation": "policy:12",
+  "required": [
+   {
+    "document_id": "policy-returns",
+    "version": 1,
+    "quote": "TechStore đền 200% giá trị sản phẩm nếu phát hiện hàng giả."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-returns"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P013"
+ },
+ {
+  "role": "customer",
+  "question": "Trả góp 0% có những kỳ hạn nào?",
+  "topic": "shop_policy",
+  "conversation": "policy:13",
+  "required": [
+   {
+    "document_id": "policy-installment",
+    "version": 1,
+    "quote": "TechStore có trả góp 0% lãi suất qua thẻ tín dụng, kỳ hạn 3, 6, 9 hoặc 12 tháng."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-installment"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P014"
+ },
+ {
+  "role": "customer",
+  "question": "Sản phẩm nào được trả góp 0%?",
+  "topic": "shop_policy",
+  "conversation": "policy:14",
+  "required": [
+   {
+    "document_id": "policy-installment",
+    "version": 1,
+    "quote": "Trả góp 0% chỉ áp dụng cho sản phẩm có nhãn \"Trả góp 0%\" trên web."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-installment"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P015"
+ },
+ {
+  "role": "customer",
+  "question": "Trả góp bằng CCCD lãi suất bao nhiêu?",
+  "topic": "shop_policy",
+  "conversation": "policy:15",
+  "required": [
+   {
+    "document_id": "policy-installment",
+    "version": 1,
+    "quote": "Lãi suất trả góp bằng CCCD do công ty tài chính quyết định, không phải 0%."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-installment"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P016"
+ },
+ {
+  "role": "customer",
+  "question": "Trả góp qua những ngân hàng nào?",
+  "topic": "shop_policy",
+  "conversation": "policy:16",
+  "required": [
+   {
+    "document_id": "policy-installment",
+    "version": 1,
+    "quote": "Số tiền trả hằng tháng và danh sách ngân hàng xem ở bước thanh toán hoặc hỏi nhân viên."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-installment"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P017"
+ },
+ {
+  "role": "customer",
+  "question": "Đơn bao nhiêu thì được miễn phí giao hàng?",
+  "topic": "shop_policy",
+  "conversation": "policy:17",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "TechStore miễn phí giao hàng cho đơn từ 500.000đ."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P018"
+ },
+ {
+  "role": "customer",
+  "question": "Đơn 300 nghìn có mất phí ship không?",
+  "topic": "shop_policy",
+  "conversation": "policy:18",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "Đơn dưới 500.000đ tính phí giao hàng khi thanh toán."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P019"
+ },
+ {
+  "role": "customer",
+  "question": "Giao nhanh 2 giờ áp dụng ở đâu?",
+  "topic": "shop_policy",
+  "conversation": "policy:19",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "TechStore giao nhanh 2 giờ ở nội thành Hà Nội và TP.HCM."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P020"
+ },
+ {
+  "role": "customer",
+  "question": "Giao về Đà Nẵng mất mấy ngày?",
+  "topic": "shop_policy",
+  "conversation": "policy:20",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "Các tỉnh thành khác nhận hàng trong 2–4 ngày làm việc."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P021"
+ },
+ {
+  "role": "customer",
+  "question": "Có được kiểm tra hàng trước khi nhận không?",
+  "topic": "shop_policy",
+  "conversation": "policy:21",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "Khách được kiểm tra hàng trước khi nhận."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P022"
+ },
+ {
+  "role": "customer",
+  "question": "Lắp PC build có mất tiền không?",
+  "topic": "shop_policy",
+  "conversation": "policy:22",
+  "required": [
+   {
+    "document_id": "policy-shipping",
+    "version": 1,
+    "quote": "Lắp đặt PC build được miễn phí khi giao ở nội thành Hà Nội và TP.HCM."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-shipping"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P023"
+ },
+ {
+  "role": "customer",
+  "question": "Hiện shop có khuyến mãi gì không?",
+  "topic": "shop_policy",
+  "conversation": "policy:23",
+  "required": [
+   {
+    "document_id": "policy-promotion",
+    "version": 1,
+    "quote": "Tính đến 30/10/2026, TechStore không có chương trình khuyến mãi nào đang chạy."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-promotion"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P024"
+ },
+ {
+  "role": "customer",
+  "question": "Giá trên web đã là giá bán chưa?",
+  "topic": "shop_policy",
+  "conversation": "policy:24",
+  "required": [
+   {
+    "document_id": "policy-promotion",
+    "version": 1,
+    "quote": "Giá trên web là giá bán hiện tại của TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-promotion"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P025"
+ },
+ {
+  "role": "customer",
+  "question": "Shop có bảo hành tận nhà không?",
+  "topic": "shop_policy",
+  "conversation": "policy-other:0",
+  "required": [],
+  "expected_behavior": "unknown",
+  "rubric": "",
+  "gold_document_ids": [],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P026"
+ },
+ {
+  "role": "customer",
+  "question": "Giao trễ thì shop đền bao nhiêu?",
+  "topic": "shop_policy",
+  "conversation": "policy-other:1",
+  "required": [],
+  "expected_behavior": "unknown",
+  "rubric": "",
+  "gold_document_ids": [],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P027"
+ },
+ {
+  "role": "customer",
+  "question": "Máy 20 triệu trả góp 12 tháng mỗi tháng trả bao nhiêu?",
+  "topic": "shop_policy",
+  "conversation": "policy-other:2",
+  "required": [],
+  "expected_behavior": "deferred",
+  "rubric": "",
+  "gold_document_ids": [],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P028"
+ },
+ {
+  "role": "customer",
+  "question": "Laptop bảo hành bao lâu?",
+  "topic": "shop_policy",
+  "conversation": "policy-follow",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Laptop được bảo hành 24 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P029"
+ },
+ {
+  "role": "customer",
+  "question": "Còn chuột thì sao?",
+  "topic": "shop_policy",
+  "conversation": "policy-follow",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Vỏ case và chuột được bảo hành 12 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P030"
+ },
+ {
+  "role": "admin",
+  "question": "Chính sách bảo hành laptop của shop là bao lâu?",
+  "topic": "shop_policy",
+  "conversation": "policy-admin",
+  "required": [
+   {
+    "document_id": "policy-warranty",
+    "version": 1,
+    "quote": "Laptop được bảo hành 24 tháng tại TechStore."
+   }
+  ],
+  "expected_behavior": "facts",
+  "rubric": "",
+  "gold_document_ids": [
+   "policy-warranty"
+  ],
+  "today": "2026-10-31",
+  "split": "development",
+  "id": "P031"
+ }
+]
