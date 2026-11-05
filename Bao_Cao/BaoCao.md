@@ -47,11 +47,17 @@ Bảng dưới đây giải thích các từ chuyên môn dùng trong báo cáo.
 | Fact table | Bảng sự kiện | Bảng ghi các con số đo được của nghiệp vụ, ví dụ số lượng bán, doanh thu. |
 | Dimension table | Bảng chiều | Bảng mô tả ngữ cảnh của con số: ngày nào, sản phẩm gì, khách nào. |
 | Grain | Độ mịn | Một dòng trong bảng sự kiện biểu diễn điều gì, ví dụ "một dòng = một sản phẩm trong một đơn". |
+| Degenerate dimension | Chiều suy biến | Mã (ví dụ mã đơn hàng) nằm luôn trong bảng sự kiện, không cần bảng chiều riêng vì không có thuộc tính mô tả nào khác. |
+| ROLAP / MOLAP / HOLAP | Relational / Multidimensional / Hybrid OLAP | Ba kiểu máy chủ OLAP: tính trên bảng quan hệ, tính trên khối dữ liệu dựng sẵn, hoặc kết hợp cả hai. |
+| Medallion | Kiến trúc ba tầng đồng – bạc – vàng | Cách chia tầng dữ liệu: thô (bronze), đã kiểm tra (silver), đã tổng hợp để dùng (gold). |
+| Support / Confidence / Lift | Độ hỗ trợ / độ tin cậy / độ nâng | Ba con số đo một luật kết hợp "mua A thì mua B": hay gặp đến đâu, chắc đến đâu, hơn ngẫu nhiên bao nhiêu lần. |
+| Text-to-SQL | — | Hỏi bằng ngôn ngữ tự nhiên, máy tự viết câu SQL để lấy số liệu. |
 | KDD | Knowledge Discovery in Databases | Toàn bộ quá trình đi từ dữ liệu thô đến tri thức dùng được. Khai phá dữ liệu là một bước trong đó. |
 | CRISP-DM | Cross-Industry Standard Process for Data Mining | Quy trình chuẩn 6 giai đoạn để làm một dự án khai phá dữ liệu. |
 | Khai phá văn bản | Text mining | Khai phá dữ liệu trên văn bản tự nhiên (câu hỏi, bài viết). |
 | Truy xuất thông tin | Information Retrieval (IR) | Bài toán tìm ra tài liệu liên quan nhất với một câu hỏi, giống máy tìm kiếm. |
 | Token | Đơn vị từ | Mảnh nhỏ nhất máy xử lý: một từ, một âm tiết hoặc một mảnh từ. |
+| Chunking | Chia đoạn | Cắt tài liệu dài thành các đoạn ngắn để tìm kiếm và đưa vào mô hình. |
 | TF-IDF | Term Frequency – Inverse Document Frequency | Cách cho điểm một từ: xuất hiện nhiều trong tài liệu này nhưng hiếm ở tài liệu khác thì điểm cao. |
 | BM25 | Best Matching 25 | Công thức chấm điểm tài liệu theo từ khóa, cải tiến từ TF-IDF, dùng trong nhiều máy tìm kiếm. |
 | Embedding | Vector nhúng | Dãy số (ví dụ 768 số) biểu diễn nghĩa của một câu. Hai câu cùng nghĩa có vector gần nhau. |
@@ -68,6 +74,8 @@ Bảng dưới đây giải thích các từ chuyên môn dùng trong báo cáo.
 | Precision | Độ chính xác | Trong các kết quả máy trả về, bao nhiêu phần đúng. |
 | Recall | Độ phủ | Trong các kết quả đúng có thật, máy tìm được bao nhiêu phần. |
 | F1 | F1-score | Trung bình điều hòa của precision và recall, một con số tóm tắt cả hai. |
+| Macro-F1 / Micro-F1 | — | Macro-F1: tính F1 riêng từng nhãn rồi lấy trung bình, nhãn hiếm được tính ngang nhãn phổ biến. Micro-F1: gộp mọi câu rồi mới tính, nên nghiêng về nhãn phổ biến. |
+| Hit@k | Success@k | Tỉ lệ câu hỏi có ít nhất một kết quả đúng trong k kết quả đầu. |
 | MRR | Mean Reciprocal Rank | Trung bình của 1/hạng của kết quả đúng đầu tiên. Kết quả đúng càng lên đầu thì càng cao. |
 | Train / dev / test | Tập huấn luyện / kiểm định / kiểm tra | Ba phần dữ liệu tách riêng: để học, để chỉnh, để chấm điểm cuối. |
 | Rò rỉ dữ liệu | Data leakage | Lỗi để dữ liệu dùng chấm điểm lọt vào lúc học, làm điểm cao giả. |
@@ -104,7 +112,7 @@ Vì vậy đề tài chọn hướng **lấy dữ liệu làm gốc**: mọi câ
 ## Phương pháp thực hiện
 
 - Nghiên cứu tài liệu: sách giáo trình, bài báo gốc của từng thuật toán, tài liệu kỹ thuật (danh sách ở phần Tài liệu tham khảo).
-- Thực nghiệm: cài đặt bằng Python, huấn luyện trên GPU miễn phí của Kaggle, đo bằng hơn 1.500 câu hỏi chia thành nhiều bộ, mỗi bản chạy hai lần để loại bỏ dao động ngẫu nhiên.
+- Thực nghiệm: cài đặt bằng Python, huấn luyện trên GPU miễn phí của Kaggle, đo bằng hơn 1.500 câu hỏi chia thành nhiều bộ. Mô hình chạy với temperature = 0 (luôn chọn từ có xác suất cao nhất) và mỗi bản chạy hai lần để phát hiện các câu còn dao động.
 
 ## Bố cục báo cáo
 
@@ -214,9 +222,23 @@ Dữ liệu nhiều chiều thường được hình dung như một **khối l�
 
 Các số trong Bảng 1.2 lấy từ cơ sở dữ liệu mô phỏng của đề tài (`shop.sqlite`). Phép roll-up được kiểm tra lại: cộng doanh thu bốn quý của laptop, và cộng doanh thu ba tháng của quý 4/2025, đều khớp với view tổng hợp `monthly_pnl`.
 
-### 1.2.6. Hai trường phái xây dựng: Inmon và Kimball
+### 1.2.6. Các kiểu máy chủ OLAP: ROLAP, MOLAP, HOLAP
 
-*Bảng 1.3. So sánh cách tiếp cận Inmon và Kimball*
+Thao tác OLAP thì giống nhau, nhưng **máy chủ OLAP** (phần mềm thực hiện các thao tác đó) có ba cách lưu và tính dữ liệu [1]:
+
+*Bảng 1.3. So sánh ba kiểu máy chủ OLAP*
+
+| Kiểu | Lưu dữ liệu ở đâu | Cách tính | Ưu điểm | Nhược điểm |
+|---|---|---|---|---|
+| **ROLAP** (Relational OLAP) | Bảng quan hệ thường (bảng sự kiện, bảng chiều) | Mỗi thao tác được dịch thành câu SQL `GROUP BY`, tính lúc hỏi | Chứa được dữ liệu rất lớn; dữ liệu mới vào là hỏi được ngay | Câu hỏi gộp nhiều chiều có thể chậm |
+| **MOLAP** (Multidimensional OLAP) | Khối dữ liệu (cube) dựng sẵn, lưu dạng mảng nhiều chiều | Các tổng đã tính trước, chỉ việc đọc ra | Trả lời rất nhanh | Tốn chỗ khi nhiều chiều; phải dựng lại khối khi dữ liệu đổi |
+| **HOLAP** (Hybrid OLAP) | Dữ liệu chi tiết ở bảng quan hệ, các tổng hay dùng ở khối | Tổng thì đọc từ khối, chi tiết thì chạy SQL | Cân bằng giữa tốc độ và dung lượng | Phức tạp hơn khi vận hành |
+
+Đề tài thuộc kiểu **ROLAP**: mọi con số được tính bằng câu SQL trên các bảng của `shop.sqlite` ngay lúc hỏi. View `monthly_pnl` gần giống một bảng tổng hợp dựng sẵn, nhưng vẫn là view SQL, được tính lại mỗi lần đọc. Với một năm dữ liệu (1.427 đơn), ROLAP đã đủ nhanh, không cần dựng khối.
+
+### 1.2.7. Hai trường phái xây dựng: Inmon và Kimball
+
+*Bảng 1.4. So sánh cách tiếp cận Inmon và Kimball*
 
 | Tiêu chí | Inmon (từ trên xuống) | Kimball (từ dưới lên) |
 |---|---|---|
@@ -227,7 +249,25 @@ Các số trong Bảng 1.2 lấy từ cơ sở dữ liệu mô phỏng của đ�
 
 Hiện nay còn có **hồ dữ liệu (data lake)**: lưu mọi dữ liệu thô (cả văn bản, ảnh, log) với chi phí rẻ, chưa cần thiết kế trước. Kết hợp hồ dữ liệu với khả năng quản lý của kho dữ liệu thì gọi là **lakehouse**. Đề tài dùng cả hai ý: bảng số liệu có cấu trúc nằm trong SQLite (giống kho dữ liệu), còn tài liệu văn bản nằm trong thư mục có file kê khai `manifest.json` (giống hồ dữ liệu có siêu dữ liệu).
 
-### 1.2.7. Phân loại kho dữ liệu
+**Kiến trúc medallion (đồng – bạc – vàng).** Đây là cách chia tầng phổ biến hiện nay trong lakehouse [46]. Dữ liệu đi qua ba tầng, tầng sau chỉ đọc tầng trước:
+
+- **Bronze (đồng):** dữ liệu thô, chép nguyên từ nguồn, không sửa gì. Dùng để chạy lại khi các bước sau có lỗi.
+- **Silver (bạc):** dữ liệu đã kiểm tra, làm sạch và thống nhất (đúng kiểu, không trùng, khớp khóa).
+- **Gold (vàng):** dữ liệu đã tổng hợp theo nhu cầu sử dụng: báo cáo, chỉ số, bảng cho phân tích.
+
+Quy trình nạp dữ liệu của đề tài (mục 3.4) khớp **gần đúng** với ba tầng này:
+
+*Bảng 1.5. Các module dữ liệu của đề tài theo kiến trúc medallion*
+
+| Tầng | Module trong đề tài | Việc làm |
+|---|---|---|
+| Bronze | `de_snapshot` | Chụp bản thô có mã băm, phát hiện nếu file nguồn bị đổi |
+| Silver | `de_audit`, `de_reconcile` | Kiểm tra kiểu, khóa, phép tính từng dòng; chạy lại nhập – xuất FIFO để đối soát tồn kho |
+| Gold | `de_curated`, view `monthly_pnl` | Bản tổng hợp cho admin; lãi lỗ theo tháng |
+
+Điểm khác với medallion chuẩn: tầng silver của đề tài **không tự sửa** dữ liệu. `de_audit` chỉ đọc, ghi lại dòng lỗi và dừng nếu có lỗi (fail-closed), vì với số liệu kế toán, tự sửa sai còn nguy hiểm hơn dừng lại báo lỗi.
+
+### 1.2.8. Phân loại kho dữ liệu
 
 - **Kho dữ liệu doanh nghiệp (Enterprise Data Warehouse – EDW):** kho trung tâm cho toàn công ty.
 - **Data mart phụ thuộc:** lấy dữ liệu từ EDW. **Data mart độc lập:** lấy thẳng từ nguồn (nhanh nhưng dễ lệch số giữa các phòng).
@@ -282,8 +322,32 @@ Có nhiều cách phân loại, tùy nhìn theo mục đích, loại dữ liệu
 **Khai phá mô tả (descriptive):** không có nhãn, tìm cấu trúc ẩn trong dữ liệu.
 
 - **Phân cụm (clustering):** gom các đối tượng giống nhau thành nhóm. Ví dụ: chia khách thành nhóm "săn khuyến mãi", "thân thiết", "mua một lần".
-- **Luật kết hợp (association rules):** tìm các thứ hay đi cùng nhau. Ví dụ: "mua CPU thì 60% mua thêm mainboard" (thuật toán Apriori [5]).
+- **Luật kết hợp (association rules):** tìm các thứ hay đi cùng nhau, dạng "mua A thì thường mua B" (thuật toán Apriori [5]). Ví dụ tính tay ở cuối mục này.
 - **Phát hiện bất thường (anomaly detection):** tìm điểm lạ. Ví dụ: giao dịch gian lận, đơn hoàn trả bất thường.
+
+**Ví dụ tính tay luật kết hợp trên dữ liệu của đề tài.** Một luật A → B ("mua A thì mua B") được đo bằng ba con số:
+
+```math
+\mathrm{support}(A \to B) = \frac{\text{số đơn có cả A và B}}{\text{tổng số đơn}}
+\mathrm{confidence}(A \to B) = \frac{\text{số đơn có cả A và B}}{\text{số đơn có A}}
+\mathrm{lift}(A \to B) = \frac{\mathrm{confidence}(A \to B)}{P(B)}, \qquad P(B) = \frac{\text{số đơn có B}}{\text{tổng số đơn}}
+```
+
+- **Support (độ hỗ trợ):** luật gặp thường xuyên đến đâu. Support quá thấp thì luật có thể chỉ là trùng hợp.
+- **Confidence (độ tin cậy):** trong các đơn có A, bao nhiêu phần trăm có B.
+- **Lift (độ nâng):** có A thì khả năng có B **cao gấp bao nhiêu lần** so với bình thường. Lift > 1: A và B hay đi cùng nhau; lift = 1: không liên quan; lift < 1: ít đi cùng nhau.
+
+Đếm trên `shop.sqlite` (1.427 đơn, theo nhóm hàng của từng đơn): 558 đơn có laptop, 297 đơn có chuột, 178 đơn có cả hai.
+
+```text
+support(laptop → chuột)    = 178 / 1.427 = 0,1247   (12,5% số đơn)
+confidence(laptop → chuột) = 178 / 558   = 0,3190   (31,9% đơn có laptop thì có chuột)
+P(chuột)                   = 297 / 1.427 = 0,2081
+lift(laptop → chuột)       = 0,3190 / 0,2081 = 1,53
+confidence(chuột → laptop) = 178 / 297   = 0,5993
+```
+
+Khách mua laptop thì khả năng mua kèm chuột cao gấp **1,53 lần** so với một đơn bất kỳ. Ví dụ cũng cho thấy luật **có chiều**: support và lift của hai chiều bằng nhau, nhưng confidence thì khác: 31,9% theo chiều laptop → chuột, 59,9% theo chiều chuột → laptop. Lưu ý: dữ liệu bán hàng của đề tài là mô phỏng, nên luật này phản ánh cách bộ mô phỏng tạo đơn chứ không phải hành vi của khách thật. Trong dữ liệu này cũng **không có** đơn nào mua cả CPU lẫn mainboard, nên không thể lấy ví dụ "mua CPU thì mua mainboard".
 
 Nhánh của đề tài là **khai phá văn bản và truy xuất thông tin**, nằm giữa hai nhóm (Hình 1.3): phần **phân lớp ý định** thuộc khai phá dự đoán, còn phần **xếp hạng tài liệu theo độ tương tự** dùng cùng ý tưởng "đo khoảng cách" với phân cụm và thuật toán láng giềng gần.
 
@@ -325,7 +389,7 @@ Năm 2006, hội nghị IEEE ICDM bình chọn **10 thuật toán khai phá dữ
 Theo Fayyad và cộng sự [2], quá trình KDD gồm 5 bước chính (Hình 1.4):
 
 1. **Chọn lọc (selection):** xác định bài toán và chọn phần dữ liệu liên quan. Ví dụ muốn dự báo doanh số laptop thì chỉ lấy dữ liệu bán laptop, không cần dữ liệu chuột.
-2. **Tiền xử lý (preprocessing):** làm sạch dữ liệu: xử lý giá trị thiếu, bỏ trùng, sửa lỗi nhập. Bước này thường tốn **60–80% thời gian** của cả dự án.
+2. **Tiền xử lý (preprocessing):** làm sạch dữ liệu: xử lý giá trị thiếu, bỏ trùng, sửa lỗi nhập. Bước này **thường được cho là** chiếm phần lớn thời gian của dự án (con số hay được nhắc là 60–80%). Đây là ước lượng từ khảo sát người làm nghề, không phải số đo chính xác.
 3. **Biến đổi (transformation):** đưa dữ liệu về dạng thuật toán dùng được: chuẩn hóa thang đo, tạo đặc trưng mới, giảm số chiều. Với văn bản, bước này là biến câu chữ thành vector số.
 4. **Khai phá (data mining):** chọn và chạy thuật toán: phân lớp, phân cụm, luật kết hợp…
 5. **Diễn giải và đánh giá (interpretation/evaluation):** kiểm tra mẫu tìm được có đúng, có ích không, rồi trình bày cho người dùng.
@@ -338,15 +402,15 @@ Quá trình này **lặp**: kết quả bước 5 không tốt thì quay lại b
 
 CRISP-DM là quy trình chuẩn dùng trong công nghiệp [7], gồm 6 giai đoạn (Hình 1.5):
 
-*Bảng 1.4. Sáu giai đoạn CRISP-DM và cách đề tài thực hiện*
+*Bảng 1.6. Sáu giai đoạn CRISP-DM và cách đề tài thực hiện*
 
 | Giai đoạn | Việc chính | Trong đề tài |
 |---|---|---|
 | 1. Hiểu bài toán kinh doanh | Xác định mục tiêu, tiêu chí thành công | Bot trả lời đúng theo dữ liệu cửa hàng, không bịa, có nguồn |
 | 2. Hiểu dữ liệu | Thu thập, mô tả, kiểm tra chất lượng | Rà 11 bộ dữ liệu công khai, chọn 2 bộ làm thông số sản phẩm |
 | 3. Chuẩn bị dữ liệu | Làm sạch, tích hợp, tạo đặc trưng | Dựng `products.sqlite`, mô phỏng một năm bán hàng, chia đoạn tài liệu |
-| 4. Xây dựng mô hình | Chọn thuật toán, huấn luyện | Truy xuất lai TF-IDF + BM25 + vector nhúng; tinh chỉnh Qwen3 4B bằng LoRA |
-| 5. Đánh giá | Đo trên dữ liệu chưa thấy, so với mục tiêu | Hơn 1.500 câu hỏi, mỗi bản chạy hai lần, không câu nào được từ đạt thành trượt |
+| 4. Xây dựng mô hình | Chọn thuật toán, huấn luyện | Truy xuất lai TF-IDF + BM25 + vector nhúng; luật định tuyến; Qwen3 4B làm router; tinh chỉnh LoRA cho bước chọn bằng chứng |
+| 5. Đánh giá | Đo trên dữ liệu chưa thấy, so với mục tiêu | Hơn 1.500 câu hỏi, mỗi bản chạy hai lần; bản mới chỉ được dùng khi không có câu nào trước đạt mà sau bị trượt (lỗi lùi – regression) |
 | 6. Triển khai | Đưa vào sử dụng, theo dõi | Dịch vụ FastAPI, web gọi qua `AI_SERVICE_URL` |
 
 Điểm khác của CRISP-DM so với KDD là nó **bắt đầu và kết thúc bằng nghiệp vụ**: giai đoạn đầu là hiểu bài toán kinh doanh, giai đoạn cuối là triển khai vào thực tế, chứ không dừng ở chỗ tìm ra mẫu.
@@ -370,19 +434,37 @@ Dữ liệu thực tế thường "bẩn". Theo Han và cộng sự [1], tiền 
 
 - *Chuẩn hóa min–max:* đưa về khoảng [0, 1].
 
-```text
-x' = (x − min) / (max − min)
-Ví dụ: RAM 8, 16, 32 GB  →  0; 0,333; 1
+```math
+x' = \frac{x - \min}{\max - \min}
 ```
+
+Ví dụ: RAM 8, 16, 32 GB → 0; 0,333; 1.
 
 - *Chuẩn hóa z-score:* đưa về trung bình 0, độ lệch chuẩn 1.
 
-```text
-x' = (x − trung bình) / độ lệch chuẩn
+```math
+x' = \frac{x - \mu}{\sigma}
 ```
+
+Trong đó μ là trung bình, σ là độ lệch chuẩn.
 
 - *Rời rạc hóa:* biến số liên tục thành nhóm. Ví dụ giá thành "dưới 15 triệu", "15–25 triệu", "trên 25 triệu".
 - *Với văn bản:* chuyển chữ thường, chuẩn hóa dấu, tách từ, biến thành vector (chi tiết ở Chương 2).
+
+**e) Các tiêu chí chất lượng dữ liệu**
+
+Trước khi làm sạch, cần biết dữ liệu "bẩn" ở chỗ nào. Wang và Strong [45] đưa ra nhiều chiều chất lượng dữ liệu; bốn chiều hay dùng nhất là đầy đủ, chính xác, nhất quán và kịp thời. Module `de_audit` của đề tài (chỉ đọc, không sửa dữ liệu) kiểm tra các chiều này bằng các phép kiểm cụ thể:
+
+*Bảng 1.7. Tiêu chí chất lượng dữ liệu và phép kiểm tương ứng trong `de_audit`*
+
+| Tiêu chí | Ý nghĩa | Phép kiểm trong `de_audit` |
+|---|---|---|
+| Đầy đủ (completeness) | Không thiếu cột, không thiếu giá trị bắt buộc | `schema:*`: bảng có đủ cột cần thiết; `typed_values:*`: ô chữ không được rỗng |
+| Chính xác (accuracy, validity) | Giá trị đúng kiểu, đúng miền, đúng phép tính | Số phải là số nguyên, ngày phải đúng dạng `YYYY-MM-DD`; `line_arithmetic`: doanh thu = số lượng × đơn giá − giảm giá; `ledger_signs`: dòng bán có số dương, dòng trả hàng có số âm; `nonnegative_expenses`: chi phí không âm |
+| Nhất quán (consistency) | Các bảng khớp nhau, không mâu thuẫn | `foreign_keys`, `known_sku:*`: mã sản phẩm phải có trong bảng sản phẩm; `sale_matches_source`, `return_matches_source`: sổ cái khớp đơn hàng và phiếu trả; `return_totals_within_sale`: không trả nhiều hơn số đã bán; `unique_identity:*`: không trùng mã |
+| Kịp thời (timeliness) | Dữ liệu đủ mới, phủ đúng khoảng thời gian | Ghi lại ngày đầu và ngày cuối quan sát được của từng bảng. `de_audit` **không** tự kết luận dữ liệu đã đủ, vì thấy ngày đầu và ngày cuối chưa chứng minh được giữa hai ngày đó không thiếu ngày nào |
+
+Ngoài ra, `de_audit` tính mã băm SHA-256 của file trước và sau khi kiểm. Nếu file bị đổi trong lúc kiểm thì báo cáo kiểm tra bị hủy.
 
 ### 1.5.4. Đánh giá và chống rò rỉ dữ liệu
 
@@ -396,7 +478,7 @@ Một mô hình chỉ đáng tin khi được chấm trên dữ liệu **nó ch�
 
 ## 1.6. Lĩnh vực ứng dụng
 
-*Bảng 1.5. Một số lĩnh vực ứng dụng khai phá dữ liệu*
+*Bảng 1.8. Một số lĩnh vực ứng dụng khai phá dữ liệu*
 
 | Lĩnh vực | Bài toán điển hình | Kỹ thuật hay dùng |
 |---|---|---|
@@ -425,20 +507,25 @@ Lĩnh vực của đề tài là **bán lẻ và chăm sóc khách hàng**. Ở 
 7. **Ngôn ngữ ít tài nguyên, trong đó có tiếng Việt:** tiếng Việt có dấu, từ ghép nhiều âm tiết, người dùng hay gõ không dấu hoặc viết tắt. Các mô hình như PhoBERT [10] được huấn luyện riêng cho tiếng Việt cho kết quả tốt hơn mô hình đa ngôn ngữ chung.
 8. **Khai phá đồ thị và tri thức:** đồ thị tri thức (knowledge graph) kết hợp với LLM để trả lời câu hỏi nhiều bước.
 9. **Tự động hóa (AutoML) và vận hành (MLOps):** tự chọn thuật toán và tham số; theo dõi mô hình sau khi triển khai, phát hiện khi chất lượng giảm.
+10. **Hỏi số liệu bằng ngôn ngữ tự nhiên (Text-to-SQL):** người dùng hỏi "doanh thu quý 2 so với quý 1 tăng bao nhiêu?", máy tự viết câu SQL rồi chạy trên kho dữ liệu. Bộ dữ liệu Spider [44] là mốc đánh giá phổ biến của hướng này. Các vấn đề còn mở: câu SQL sinh ra có thể chạy được nhưng tính sai (nối nhầm bảng, lọc nhầm kỳ); câu hỏi mơ hồ ("tháng trước" là tháng nào); và an toàn (không để câu SQL sửa hoặc xóa dữ liệu).
 
-Đề tài đụng tới các hướng 2, 3, 4, 6 và 7: kiểm soát chất lượng và nguồn dữ liệu, không để lộ dữ liệu nội bộ cho khách, mọi câu trả lời phải chỉ ra được nguồn, dùng RAG cho tiếng Việt.
+Đề tài đụng tới các hướng 2, 3, 4, 6, 7 và 10: kiểm soát chất lượng và nguồn dữ liệu, không để lộ dữ liệu nội bộ cho khách, mọi câu trả lời phải chỉ ra được nguồn, dùng RAG cho tiếng Việt. Với hướng 10, đề tài **chưa** cho mô hình tự viết SQL. Module `shop_calc` nhận diện câu hỏi rồi điền vào các câu SQL viết sẵn có tham số (kỳ, chỉ số, phép tính). Cách này kém linh hoạt hơn Text-to-SQL, nhưng con số luôn đúng và câu SQL không bao giờ ghi vào dữ liệu. Text-to-SQL có kiểm tra là hướng mở rộng tự nhiên của phần trả lời cho quản trị viên.
 
 ## 1.8. Liên hệ giữa lý thuyết và đề tài
 
-*Bảng 1.6. Các khái niệm của Chương 1 xuất hiện trong đề tài*
+*Bảng 1.9. Các khái niệm của Chương 1 xuất hiện trong đề tài*
 
 | Khái niệm | Thành phần tương ứng trong đề tài |
 |---|---|
 | Nguồn dữ liệu | Bộ dữ liệu linh kiện trên GitHub, bộ laptop trên Kaggle, trang tài liệu của hãng |
-| ETL, vùng tạm | Các module `de_snapshot` (chụp bản thô), `de_audit` (kiểm tra), `de_reconcile` (đối soát), `de_curated` (tổng hợp) |
+| ETL, vùng tạm, medallion | Các module `de_snapshot` (chụp bản thô, tầng bronze), `de_audit` (kiểm tra) và `de_reconcile` (đối soát) (tầng silver), `de_curated` (tổng hợp, tầng gold) |
+| Chất lượng dữ liệu | Các phép kiểm của `de_audit` (Bảng 1.7) |
+| Máy chủ OLAP | Kiểu ROLAP: tính bằng SQL trên `shop.sqlite` lúc hỏi |
 | Kho dữ liệu | `shop.sqlite`: 17 bảng, có bảng sự kiện và bảng chiều |
-| Bảng sự kiện | `order_items`, `financial_ledger`, `inventory_daily`, `returns`… |
-| Bảng chiều | `products`, `customers`, `orders`, `campaigns`, `suppliers` |
+| Bảng sự kiện | `order_items` (độ mịn: một sản phẩm trong một đơn), `financial_ledger`, `inventory_daily`, `returns`… |
+| Bảng chiều | `products`, `customers`, `campaigns`, `suppliers` |
+| Bảng đầu đơn và chiều suy biến | `orders` giữ ngày, kênh, khách, chiến dịch của từng đơn. Theo Kimball [4], đây là phần "đầu đơn" của sự kiện bán hàng, không phải một chiều thật: mã đơn đóng vai **chiều suy biến** trong `order_items`, còn ngày, kênh, khách, chiến dịch là khóa trỏ tới các chiều |
+| Luật kết hợp | Ví dụ laptop → chuột ở mục 1.4.1 |
 | Data mart / view tổng hợp | View `monthly_pnl` (lãi lỗ theo tháng) |
 | Siêu dữ liệu | Bảng `metadata`, file `manifest.json` của tài liệu, file kê khai nguồn ảnh |
 | Khai phá văn bản | Tìm đoạn tài liệu liên quan cho câu hỏi |
@@ -460,7 +547,7 @@ Chương 1 đã trình bày:
 Chatbot của đề tài phải giải hai bài toán khai phá văn bản:
 
 1. **Bài toán phân lớp ý định (intent classification):** đọc câu hỏi và quyết định nó thuộc loại nào: cần tra tài liệu để trả lời, cần hỏi lại vì chưa rõ, nằm ngoài phạm vi cửa hàng, đòi thông tin nội bộ (phải từ chối), hay muốn gặp nhân viên. Đây là bài toán **phân lớp có giám sát**.
-2. **Bài toán xếp hạng tài liệu (document ranking):** trong 286 tài liệu (chia thành khoảng 600–800 đoạn nhỏ), tìm ra vài đoạn liên quan nhất với câu hỏi. Đây là bài toán **truy xuất thông tin**, dựa trên **độ tương tự** giữa câu hỏi và đoạn văn.
+2. **Bài toán xếp hạng tài liệu (document ranking):** trong 144 tài liệu đang hiệu lực (chia thành 433 đoạn nhỏ), tìm ra vài đoạn liên quan nhất với câu hỏi. Đây là bài toán **truy xuất thông tin**, dựa trên **độ tương tự** giữa câu hỏi và đoạn văn.
 
 Hai bài toán có chung các bước: tiền xử lý văn bản, biến văn bản thành vector, rồi đo khoảng cách hoặc độ tương tự. Chương này lần lượt trình bày từng bước, và với mỗi bước giới thiệu các thuật toán cùng nhánh, kể cả những thuật toán đề tài không chọn, để thấy vì sao đề tài chọn cách hiện tại.
 
@@ -496,6 +583,8 @@ Tiếng Anh tách từ bằng dấu cách là gần đủ. Tiếng Việt thì k
 
 Đề tài giữ lại các mã có gạch ngang như "C-BTS", "B12M-081SG" thành một token, vì đây là mã khuyến mãi hoặc mã máy, không được cắt rời.
 
+Tách từ không phải lúc nào cũng có lợi. Dao và cộng sự (VinAI) [38] dựng bộ dữ liệu PhoATIS (5.871 câu, 28 ý định, 82 loại thông tin cần trích) cho bài toán nhận diện ý định tiếng Việt. Kết luận của họ: với bài toán nhận diện ý định và trích thông tin, tách từ tự động và PhoBERT **kém hiệu quả hơn** so với ở các bài toán tiếng Việt khác; mô hình làm trên âm tiết không thua mô hình làm trên từ đã tách. Vì vậy đề tài chỉ tách từ cho bước vector nhúng (mô hình bắt buộc), còn TF-IDF và BM25 làm việc trên âm tiết.
+
 ### 2.2.4. Sửa lỗi gõ và từ viết tắt
 
 Người dùng hay viết tắt: "bh" (bảo hành), "ko" hoặc "k" (không), "hd" (hóa đơn). Đề tài có một bảng viết tắt nhỏ để mở rộng trước khi tìm. Với lỗi gõ, đề tài so mỗi từ (từ 4 chữ cái trở lên) với kho từ vựng của tài liệu bằng thư viện `difflib`. Nếu có **đúng một** từ trong kho đủ giống (độ giống từ 0,75 đến 0,85 tùy độ dài) thì sửa theo từ đó; có nhiều ứng viên thì giữ nguyên, để tránh sửa sai.
@@ -523,14 +612,13 @@ Nhược điểm: từ nào cũng được coi quan trọng như nhau. Từ "lap
 
 TF-IDF sửa nhược điểm trên bằng cách nhân hai thành phần [11], [12]:
 
-```text
-TF(t, d)     = số lần từ t xuất hiện trong tài liệu d / tổng số từ của d
-IDF(t)       = ln( N / df(t) )
-TF-IDF(t, d) = TF(t, d) × IDF(t)
-
-trong đó:  N     = tổng số tài liệu
-           df(t) = số tài liệu có chứa từ t
+```math
+\mathrm{TF}(t, d) = \frac{\text{số lần từ } t \text{ xuất hiện trong } d}{\text{tổng số từ của } d}
+\mathrm{IDF}(t) = \ln \frac{N}{\mathrm{df}(t)}
+\mathrm{TF\text{-}IDF}(t, d) = \mathrm{TF}(t, d) \times \mathrm{IDF}(t)
 ```
+
+Trong đó N là tổng số tài liệu, df(t) là số tài liệu có chứa từ t.
 
 Ý nghĩa:
 
@@ -553,7 +641,19 @@ Câu hỏi q = "bao hanh laptop".
 | hanh | 1 (chỉ D2) | 1,0986 |
 | laptop | 3 (cả ba) | ln 1 = 0 |
 
-Điểm của D2 = (1/10)×1,0986 + (1/10)×1,0986 + (1/10)×0 = **0,2197**. D1 và D3 không chứa "bao", "hanh" nên được **0**. Như vậy D2 (tài liệu bảo hành) đứng đầu, đúng như mong đợi.
+**Bản đơn giản hóa: cộng TF-IDF của các từ trong câu hỏi.** Điểm của D2 = (1/10)×1,0986 + (1/10)×1,0986 + (1/10)×0 = **0,2197**. D1 và D3 không chứa "bao", "hanh" nên được **0**. Như vậy D2 (tài liệu bảo hành) đứng đầu, đúng như mong đợi.
+
+**Bản đúng quy trình: cosine giữa hai vector TF-IDF** (mô hình không gian vector, mục 2.5.1). Vector câu hỏi chỉ có hai số khác 0: "bao" và "hanh", mỗi số bằng (1/3) × 1,0986 = 0,3662. Vector D2 có 9 số bằng (1/10) × 1,0986 = 0,1099 (9 từ chỉ có ở D2) và số 0 ở chỗ "laptop".
+
+```text
+q · D2   = 0,3662 × 0,1099 + 0,3662 × 0,1099      = 0,0805
+‖q‖      = 0,3662 × √2                            = 0,5179
+‖D2‖     = 0,1099 × √9                            = 0,3296
+cos(q, D2) = 0,0805 / (0,5179 × 0,3296)           = 0,4714
+cos(q, D1) = cos(q, D3) = 0      (không có từ chung nào có IDF > 0)
+```
+
+Hai cách cho cùng thứ tự ở ví dụ này. Cosine còn chia cho độ dài vector, nên tài liệu dài không được lợi chỉ vì có nhiều từ.
 
 Ví dụ cũng cho thấy một điểm yếu: từ "laptop" có IDF = 0, tức là bị bỏ hẳn. Nếu câu hỏi chỉ là "laptop" thì không tài liệu nào có điểm. BM25 ở mục 2.5.2 khắc phục điểm này.
 
@@ -572,13 +672,26 @@ Các bước phát triển:
 
 Đề tài dùng mô hình **vietnamese-embedding** [32]: một Sentence-BERT xây trên PhoBERT, cho mỗi câu một vector **768 số**. Vector được chuẩn hóa về độ dài 1 (chuẩn L2), nên phép nhân vô hướng giữa hai vector chính bằng cosine của góc giữa chúng.
 
-> **Điểm kỹ thuật – giới hạn độ dài:** PhoBERT chỉ đọc được tối đa khoảng 256 token một lần. Đoạn văn dài hơn bị cắt bớt và phần sau không được tính vào vector. Vì vậy khi bật vector nhúng, đề tài chia tài liệu thành đoạn **100 từ** thay vì 180 từ, và ghi lại đoạn nào bị cắt để kiểm tra.
+> **Điểm kỹ thuật – giới hạn độ dài là 256 token, không phải 512:** hai file cấu hình của mô hình [49] ghi hai con số khác nhau. File `sentence_bert_config.json` ghi `max_seq_length = 512`, nhưng file `config.json` ghi `max_position_embeddings = 258`, tức bảng vị trí của mô hình chỉ có 258 ô. Mô hình kiểu RoBERTa (PhoBERT thuộc loại này) dành 2 ô cho ký hiệu đặc biệt, nên đọc được tối đa **258 − 2 = 256 token**. Đưa vào dài hơn sẽ lỗi, vì vị trí thứ 257 không có trong bảng. Code của đề tài lấy con số thật từ mô hình: `limit = min(512, model.config.max_position_embeddings − 2) = 256` (file `scripts/vietnamese_embedding_service.py`). Phần vượt 256 token bị cắt và không được tính vào vector; mỗi đoạn có cờ `truncated` ghi lại việc này.
+
+Con số 256 token là lý do đề tài chia đoạn **100 từ** khi bật vector nhúng, thay vì 180 từ. Đo trên 144 tài liệu đang hiệu lực, bằng chính bộ tách token của mô hình (sau khi tách từ bằng `pyvi`): mỗi "từ" (đếm theo dấu cách, tức là âm tiết) trung bình thành khoảng 1,85 token, vì chữ hiếm, số và mã sản phẩm bị cắt thành nhiều mảnh.
+
+*Bảng 2.2. Độ dài đoạn theo token và tỉ lệ đoạn bị cắt*
+
+| Giới hạn | Số đoạn | Trung vị số token | 95% số đoạn dưới | Dài nhất | Số đoạn vượt 256 token |
+|---|---|---|---|---|---|
+| 100 từ | 433 | 136 | 268 | 368 | 25 (5,8%) |
+| 180 từ | 311 | 145 | 414 | 522 | 60 (19,3%) |
+
+Với đoạn 180 từ, gần một phần năm số đoạn bị cắt mất phần cuối; với đoạn 100 từ chỉ còn 5,8%. Số 25 đoạn bị cắt cũng khớp với số đoạn có cờ `truncated` trong bộ nhớ đệm vector của hệ thống.
+
+**Vì sao chọn mô hình dựa trên PhoBERT.** Bộ đánh giá VN-MTEB [39] (41 bộ dữ liệu, 6 loại tác vụ, 18 mô hình) cho thấy các mô hình lớn hơn, dùng mã hóa vị trí xoay (RoPE), làm tốt hơn các mô hình dùng vị trí tuyệt đối như kiểu BERT. Các lựa chọn mạnh hơn gồm bge-m3 [51] (khoảng 568 triệu tham số, đọc được 8.192 token) và multilingual-e5 [52]. Đề tài vẫn chọn vietnamese-embedding vì: (1) nhẹ, khoảng 135 triệu tham số, file 540 MB, chạy được trên CPU của máy cá nhân cùng lúc với Qwen3 4B; (2) huấn luyện riêng cho tiếng Việt; (3) giới hạn 256 token không phải vấn đề lớn khi đoạn đã được chia 100 từ. Đổi sang mô hình RoPE là một hướng cải tiến, cần đo lại trên các bộ câu hỏi trước khi dùng.
 
 ## 2.4. Các độ đo tương tự
 
 Khi văn bản đã thành vector, "hai văn bản giống nhau" trở thành "hai vector gần nhau". Có nhiều cách đo:
 
-*Bảng 2.2. Các độ đo tương tự và khoảng cách thường dùng*
+*Bảng 2.3. Các độ đo tương tự và khoảng cách thường dùng*
 
 | Độ đo | Công thức | Ý nghĩa | Dùng khi |
 |---|---|---|---|
@@ -623,19 +736,17 @@ Mô hình không gian vector (Vector Space Model – Salton) [12] là thuật to
 
 BM25 (Okapi BM25) do Robertson và cộng sự phát triển, dựa trên mô hình xác suất về độ liên quan [13]. Đây là thuật toán mặc định của nhiều máy tìm kiếm như Elasticsearch, Lucene.
 
-```text
-                         f(t, D) × (k1 + 1)
-BM25(D, Q) = Σ IDF(t) × ─────────────────────────────────────
-            t∈Q         f(t, D) + k1 × (1 − b + b × |D| / avgdl)
-
-IDF(t) = ln( 1 + (N − n(t) + 0,5) / (n(t) + 0,5) )
-
-f(t, D) : số lần từ t xuất hiện trong tài liệu D
-|D|     : độ dài tài liệu D (số từ)
-avgdl   : độ dài trung bình của các tài liệu
-n(t)    : số tài liệu chứa t;   N: tổng số tài liệu
-k1, b   : hai tham số, thường k1 = 1,2 và b = 0,75
+```math
+\mathrm{BM25}(D, Q) = \sum_{t \in Q} \mathrm{IDF}(t) \cdot \frac{f(t, D) \cdot (k_1 + 1)}{f(t, D) + k_1 \cdot \left(1 - b + b \cdot \frac{|D|}{\mathrm{avgdl}}\right)}
+\mathrm{IDF}(t) = \ln\left(1 + \frac{N - n(t) + 0{,}5}{n(t) + 0{,}5}\right)
 ```
+
+Trong đó:
+
+- f(t, D): số lần từ t xuất hiện trong tài liệu D;
+- |D|: độ dài tài liệu D (số từ); avgdl: độ dài trung bình của các tài liệu;
+- n(t): số tài liệu chứa t; N: tổng số tài liệu;
+- k₁, b: hai tham số, thường k₁ = 1,2 và b = 0,75.
 
 BM25 cải tiến TF-IDF ở ba điểm:
 
@@ -643,9 +754,11 @@ BM25 cải tiến TF-IDF ở ba điểm:
 2. **Chuẩn hóa độ dài (tham số b):** tài liệu dài tự nhiên chứa nhiều từ hơn. Với b = 0,75, tài liệu dài hơn trung bình bị giảm điểm, tài liệu ngắn hơn được tăng điểm. Khi b = 0 thì bỏ hẳn phần chuẩn hóa này.
 3. **IDF luôn dương:** nhờ "1 +" trong logarit, từ có ở mọi tài liệu vẫn được một chút điểm, không bị về 0 như TF-IDF cổ điển.
 
+> **Điểm kỹ thuật – có nhiều phiên bản BM25, đề tài dùng bản nào:** công thức IDF có "1 +" ở trên là bản của Lucene và Elasticsearch [47]. Bản gốc của Robertson [13] là IDF(t) = ln((N − n(t) + 0,5) / (n(t) + 0,5)), **không có "1 +"**. Với bản gốc, từ có ở hơn một nửa số tài liệu sẽ có IDF âm, tức là càng chứa từ đó thì điểm càng thấp. Thư viện `rank_bm25` (lớp `BM25Okapi`) [48] dùng bản gốc, rồi thay các IDF âm bằng một giá trị sàn nhỏ (epsilon × IDF trung bình). Đề tài **không dùng thư viện** mà tự cài BM25 trong hàm `bm25_scores` của file `shopbot/retrieval.py`, theo bản Lucene có "1 +", với k₁ = 1,2 và b = 0,75. Công thức trong mục này và ví dụ tính tay dưới đây đều đúng với code đó (code rút gọn ở mục 3.7).
+
 **Ví dụ tính tay** với cùng ba tài liệu ở mục 2.3.2 (N = 3, avgdl = (7 + 10 + 8)/3 = 8,333):
 
-*Bảng 2.3. IDF theo công thức BM25*
+*Bảng 2.4. IDF theo công thức BM25*
 
 | Từ | n(t) | IDF = ln(1 + (3 − n + 0,5)/(n + 0,5)) |
 |---|---|---|
@@ -662,7 +775,7 @@ laptop : 0,1335 × 2,2 / 2,38       = 0,1234
 BM25(D2) = 1,9366
 ```
 
-*Bảng 2.4. Kết quả xếp hạng bằng BM25 so với TF-IDF cổ điển*
+*Bảng 2.5. Kết quả xếp hạng bằng BM25 so với TF-IDF cổ điển*
 
 | Tài liệu | TF-IDF cổ điển | BM25 | Ghi chú |
 |---|---|---|---|
@@ -685,7 +798,7 @@ Có hai kiến trúc (Hình 2.3):
 - **Bi-encoder:** mã hóa câu hỏi và đoạn văn **riêng rẽ** thành hai vector, rồi tính cosine. Vector của đoạn văn tính trước một lần và lưu lại, nên khi có câu hỏi mới chỉ cần mã hóa câu hỏi. Đây là cách dùng để **tìm** trong kho lớn. Đề tài dùng cách này.
 - **Cross-encoder:** đưa **cả câu hỏi và đoạn văn** vào mô hình cùng lúc, mô hình so từng từ của hai bên với nhau rồi cho ra một điểm liên quan [18]. Chính xác hơn, nhưng phải chạy mô hình một lần cho **mỗi cặp**, nên chỉ dùng để **xếp lại** vài chục ứng viên đã tìm bằng bi-encoder. Đề tài đã huấn luyện thử một bộ xếp lại kiểu này (`evidence_reranker`) nhưng chưa bật, vì chưa qua hết các bộ đánh giá.
 
-Khi kho rất lớn (hàng triệu đoạn), tính cosine với từng đoạn quá chậm. Khi đó người ta dùng **tìm láng giềng gần đúng (Approximate Nearest Neighbor – ANN)**, như đồ thị HNSW [19] hoặc thư viện FAISS: chấp nhận đôi khi sót một kết quả để đổi lấy tốc độ nhanh gấp hàng trăm lần. Kho của đề tài chỉ khoảng 800 đoạn, nên **tính đúng với từng đoạn** vẫn nhanh, không cần ANN. Vector được lưu đệm (cache) theo mã băm của nội dung đoạn, nên chỉ đoạn mới hoặc đoạn bị sửa mới phải tính lại.
+Khi kho rất lớn (hàng triệu đoạn), tính cosine với từng đoạn quá chậm. Khi đó người ta dùng **tìm láng giềng gần đúng (Approximate Nearest Neighbor – ANN)**, như đồ thị HNSW [19] hoặc thư viện FAISS: chấp nhận đôi khi sót một kết quả để đổi lấy tốc độ nhanh gấp hàng trăm lần. Kho của đề tài chỉ khoảng 430 đoạn, nên **tính đúng với từng đoạn** vẫn nhanh, không cần ANN. Vector được lưu đệm (cache) theo mã băm của nội dung đoạn, nên chỉ đoạn mới hoặc đoạn bị sửa mới phải tính lại.
 
 ### 2.5.4. Trộn nhiều cách xếp hạng (rank fusion)
 
@@ -702,12 +815,11 @@ Có hai hướng giải quyết:
 1. **Trộn theo điểm (CombSUM, tổ hợp lồi):** chuẩn hóa điểm của mỗi cách về [0, 1] rồi cộng có trọng số. Có thể tốt hơn nếu chỉnh trọng số kỹ, nhưng phải có dữ liệu để chỉnh, và trọng số tốt cho bộ này chưa chắc tốt cho bộ khác.
 2. **Trộn theo thứ hạng (Reciprocal Rank Fusion – RRF)** [14]: bỏ qua điểm, chỉ dùng **thứ hạng**.
 
-```text
-RRF(d) = Σ   1 / (k + hạng_r(d))
-         r∈R
-R: các bảng xếp hạng;  hạng_r(d): vị trí của d trong bảng r (bắt đầu từ 1)
-k: hằng số, Cormack và cộng sự đề xuất k = 60
+```math
+\mathrm{RRF}(d) = \sum_{r \in R} \frac{1}{k + \mathrm{hạng}_r(d)}
 ```
+
+Trong đó R là tập các bảng xếp hạng; hạng_r(d) là vị trí của d trong bảng r (bắt đầu từ 1); k là hằng số, Cormack và cộng sự đề xuất k = 60.
 
 Hằng số k = 60 làm chênh lệch giữa hạng 1 và hạng 2 không quá lớn, nên một đoạn **được nhiều cách xếp khá cao** sẽ thắng một đoạn **chỉ được một cách xếp hạng 1**.
 
@@ -715,7 +827,7 @@ Hằng số k = 60 làm chênh lệch giữa hạng 1 và hạng 2 không quá l
 
 **Ví dụ tính tay** (Hình 2.4). Bốn đoạn A, B, C, D được ba cách xếp như sau:
 
-*Bảng 2.5. Tính điểm RRF*
+*Bảng 2.6. Tính điểm RRF*
 
 | Đoạn | Hạng TF-IDF | Hạng BM25 | Hạng vector | Điểm RRF |
 |---|---|---|---|---|
@@ -728,6 +840,32 @@ Hằng số k = 60 làm chênh lệch giữa hạng 1 và hạng 2 không quá l
 
 > **Điểm kỹ thuật – vì sao đề tài chọn RRF:** RRF không cần dữ liệu để chỉnh trọng số, không cần chuẩn hóa điểm, và khi một nguồn bị lỗi (ví dụ dịch vụ vector không chạy) thì chỉ cần bỏ bảng đó ra. Cormack và cộng sự cho thấy RRF tốt hơn từng hệ thống riêng lẻ và tốt hơn phương pháp Condorcet trên nhiều bộ dữ liệu TREC [14].
 
+### 2.5.5. Chia đoạn tài liệu (chunking)
+
+Các thuật toán xếp hạng ở trên không chấm cả tài liệu mà chấm từng **đoạn**. Lý do: tài liệu dài thường bàn nhiều ý, trong khi câu hỏi chỉ cần một ý; mô hình vector nhúng có giới hạn độ dài (256 token, mục 2.3.3); và bước trả lời chỉ đọc được vài đoạn. Cách chia đoạn vì vậy ảnh hưởng trực tiếp tới việc tìm đúng.
+
+*Bảng 2.7. Các cách chia đoạn tài liệu*
+
+| Cách chia | Làm thế nào | Ưu điểm | Nhược điểm |
+|---|---|---|---|
+| Theo số từ (hoặc số token) cố định | Cắt mỗi n từ một lần | Đơn giản, đoạn đều nhau | Hay cắt ngang câu, ngang bảng |
+| Theo câu | Gom các câu liền nhau đến khi đủ độ dài | Không cắt ngang câu | Đoạn dài ngắn không đều |
+| Theo nghĩa (semantic) | Dùng vector nhúng của từng câu, cắt ở chỗ hai câu liền nhau khác nghĩa nhiều | Mỗi đoạn một ý | Tốn công tính vector khi lập chỉ mục |
+| Theo cấu trúc | Cắt theo tiêu đề, đoạn văn, bảng | Giữ được ngữ cảnh "đoạn này thuộc mục nào" | Cần tài liệu có cấu trúc rõ |
+| Có chồng lấn (overlap) | Đoạn sau lặp lại vài câu cuối của đoạn trước | Ý nằm ở ranh giới không bị mất | Nhiều đoạn hơn, tốn chỗ và thời gian lập chỉ mục |
+
+Bennani và Moslonka (2026) [40] so sánh các cách này cho bài toán hỏi đáp có truy xuất. Ba kết luận chính: **chồng lấn không giúp gì đo được mà còn tăng chi phí lập chỉ mục**; **chia theo câu là cách lợi nhất về chi phí**, cho kết quả ngang chia theo nghĩa khi ngữ cảnh đến khoảng 5.000 token; và chất lượng tụt khi ngữ cảnh đưa cho mô hình vượt khoảng 2.500 token.
+
+> **Liên hệ đề tài:** hàm `chunk_document` (file `shopbot/chunking.py`) chia **theo cấu trúc rồi theo câu**, không có chồng lấn. Cụ thể: cắt theo tiêu đề; mỗi đoạn mang đường dẫn tiêu đề ở đầu ("Chính sách bảo hành > Điều kiện"); bảng được chia theo nhóm dòng và lặp lại dòng tiêu đề của bảng; đoạn văn dài được gom theo câu đến khi gần chạm giới hạn 100 từ (180 từ khi không dùng vector nhúng); chỉ câu dài bất thường mới bị cắt theo số từ, và không bỏ mất từ nào. Cách làm này khớp với kết luận của [40]: không tốn chi phí cho chồng lấn, không cắt ngang câu. Giới hạn 100 từ được chọn theo số token đo được ở Bảng 2.2.
+
+### 2.5.6. Các hướng khác cùng nhánh
+
+Một số kỹ thuật truy xuất khác thuộc cùng nhánh, đề tài chưa dùng:
+
+- **Mở rộng câu hỏi (query expansion), thuật toán Rocchio [43]:** thêm vào câu hỏi những từ hay đi cùng trong các tài liệu tìm được đầu tiên, rồi tìm lại. Ví dụ câu hỏi "pin trâu" được thêm "thời lượng", "giờ sử dụng". Đề tài mới làm một phần nhỏ của ý này: mở rộng từ viết tắt ("bh" → "bảo hành").
+- **SPLADE [41] (truy xuất thưa có học):** vẫn là vector thưa như BM25, nhưng trọng số mỗi từ do mô hình transformer học ra, và mô hình còn tự thêm các từ liên quan không có trong câu. Có được cái lợi của so khớp từ khóa (nhanh, giải thích được) lẫn hiểu nghĩa.
+- **ColBERT [42] (tương tác muộn):** nằm giữa bi-encoder và cross-encoder. Mỗi **từ** của đoạn văn có một vector, tính trước và lưu lại; khi có câu hỏi, mỗi từ của câu hỏi tìm từ giống nhất trong đoạn rồi cộng điểm. Chính xác gần cross-encoder nhưng vẫn tìm được trong kho lớn, đổi lại tốn chỗ lưu hơn nhiều.
+
 ## 2.6. Các thuật toán phân lớp cùng nhánh
 
 ### 2.6.1. Bài toán phân lớp ý định
@@ -736,7 +874,9 @@ Hằng số k = 60 làm chênh lệch giữa hạng 1 và hạng 2 không quá l
 - **Đầu ra:** một nhãn trong tập nhãn cố định. Trong đề tài, các nhãn chính là: `answer` (tra tài liệu để trả lời), `clarify` (hỏi lại vì chưa rõ), `outside` (ngoài phạm vi), `deferred` (cần công cụ chưa có), `live_product` (cần giá/tồn kho thời gian thực, đặt hàng), `handoff` (gặp nhân viên), `denied` (từ chối vì là thông tin nội bộ).
 - **Dữ liệu học:** các cặp (câu hỏi, nhãn đúng).
 
-Dưới đây là các thuật toán phân lớp kinh điển. Cả năm thuật toán đầu đều nằm trong danh sách 10 thuật toán khai phá dữ liệu tiêu biểu [6].
+**Nhãn bị lệch (mất cân bằng).** Phần lớn câu hỏi là câu cần tra tài liệu để trả lời; các nhãn khác rất hiếm. Trong dữ liệu huấn luyện router v5 (640 câu), nhãn `answer` chiếm 530 câu (82,8%), còn `handoff` chỉ có 4 câu và `live_product` 6 câu. Trên 810 câu hỏi development của các bộ đánh giá mở, `answer` chiếm 679 câu (83,8%). Một mô hình chỉ luôn đoán `answer` đã đúng 83,8%, nên **độ chính xác chung (accuracy) không nói được mô hình có tốt hay không**. Cách đo và cách xử lý nhãn lệch ở mục 2.8.1.
+
+Dưới đây là các thuật toán phân lớp kinh điển. kNN, Naive Bayes, SVM và C4.5/CART nằm trong danh sách 10 thuật toán khai phá dữ liệu tiêu biểu [6]. Hồi quy logistic không có trong danh sách đó, nhưng được trình bày vì đây là mốc so sánh chuẩn cho bài toán phân loại văn bản.
 
 ### 2.6.2. k láng giềng gần nhất (kNN)
 
@@ -761,17 +901,37 @@ Dưới đây là các thuật toán phân lớp kinh điển. Cả năm thuật
 
 **Ý tưởng:** dùng định lý Bayes để tính xác suất câu hỏi thuộc mỗi nhãn, với giả định "ngây thơ" rằng các từ xuất hiện độc lập với nhau [29].
 
-```text
-P(nhãn | câu) ∝ P(nhãn) × Π P(từ_i | nhãn)
-                          i
-P(từ | nhãn) = (số lần từ xuất hiện trong các câu của nhãn + 1)
-               / (tổng số từ của nhãn + |V|)          ← làm trơn Laplace
-|V|: kích thước từ vựng
+```math
+P(c \mid \text{câu}) \propto P(c) \cdot \prod_{i} P(w_i \mid c)
+P(w \mid c) = \frac{\mathrm{count}(w, c) + 1}{\mathrm{count}(c) + |V|}
 ```
 
-**Ví dụ:** trong dữ liệu học, từ "bảo hành" xuất hiện nhiều ở nhãn "hỏi chính sách", hiếm ở nhãn "hỏi sản phẩm". Câu mới chứa "bảo hành" sẽ có xác suất nghiêng về "hỏi chính sách".
+Trong đó c là nhãn; count(w, c) là số lần từ w xuất hiện trong các câu của nhãn c; count(c) là tổng số từ của nhãn c; |V| là số từ khác nhau trong dữ liệu học. Phép cộng 1 ở tử số gọi là **làm trơn Laplace**: nó tránh trường hợp một từ chưa từng gặp ở một nhãn làm cả tích bằng 0.
 
-**Làm trơn Laplace** (cộng 1) để tránh trường hợp một từ chưa từng gặp ở một nhãn làm cả tích bằng 0.
+**Ví dụ tính tay.** Dữ liệu học có 4 câu (đã bỏ dấu), hai nhãn CS ("hỏi chính sách") và SP ("hỏi sản phẩm"):
+
+*Bảng 2.8. Dữ liệu học cho ví dụ Naive Bayes*
+
+| Câu | Nhãn |
+|---|---|
+| bao hanh bao lau | CS |
+| bao hanh doi tra | CS |
+| laptop ram bao nhieu | SP |
+| chuot bao nhieu tien | SP |
+
+Mỗi nhãn có 8 từ, từ vựng có |V| = 10 từ khác nhau, P(CS) = P(SP) = 2/4 = 0,5. Câu mới: "bao hanh laptop".
+
+```text
+                 Nhãn CS                         Nhãn SP
+P(bao | ·)    = (3 + 1)/(8 + 10) = 4/18       = (2 + 1)/(8 + 10) = 3/18
+P(hanh | ·)   = (2 + 1)/18       = 3/18       = (0 + 1)/18       = 1/18
+P(laptop | ·) = (0 + 1)/18       = 1/18       = (1 + 1)/18       = 2/18
+
+Điểm CS = 0,5 × 4 × 3 × 1 / 18³ = 6 / 5.832 = 0,001029
+Điểm SP = 0,5 × 3 × 1 × 2 / 18³ = 3 / 5.832 = 0,000514
+```
+
+Điểm CS gấp đôi điểm SP, nên câu được gán nhãn **CS** (hỏi chính sách). Có thể thấy rõ cách mô hình "cân" từng từ: "laptop" kéo về SP, nhưng "hanh" chỉ có ở CS nên kéo mạnh hơn. Nhờ làm trơn Laplace, "hanh" chưa từng gặp ở SP vẫn được 1/18 thay vì 0; nếu không có bước này, điểm SP sẽ bằng 0 chỉ vì một từ.
 
 **Ưu điểm:** rất nhanh, cần ít dữ liệu, là mốc so sánh tốt cho phân loại văn bản.
 **Nhược điểm:** giả định độc lập sai với ngôn ngữ thật ("không" + "được" khác nghĩa hẳn với từng từ riêng); xác suất tính ra thường bị đẩy quá về 0 hoặc 1.
@@ -780,10 +940,12 @@ P(từ | nhãn) = (số lần từ xuất hiện trong các câu của nhãn + 1
 
 **Ý tưởng:** học một trọng số cho mỗi từ ứng với mỗi nhãn; cộng trọng số của các từ trong câu rồi đưa qua hàm softmax để ra xác suất.
 
-```text
-z_c = w_c · x + b_c                 (điểm của nhãn c; x là vector TF-IDF của câu)
-P(c | x) = e^(z_c) / Σ_j e^(z_j)    (softmax: biến điểm thành xác suất, tổng = 1)
+```math
+z_c = \mathbf{w}_c \cdot \mathbf{x} + b_c
+P(c \mid \mathbf{x}) = \frac{e^{z_c}}{\sum_{j} e^{z_j}}
 ```
+
+Trong đó **x** là vector TF-IDF của câu, z_c là điểm của nhãn c. Hàm softmax biến các điểm thành xác suất có tổng bằng 1.
 
 Mô hình học bằng cách giảm dần **hàm mất mát cross-entropy** qua nhiều vòng (gradient descent). Ưu điểm: nhanh, xác suất đáng tin hơn Naive Bayes, xem được trọng số để biết từ nào quan trọng. Nhược điểm: vẫn chỉ nhìn từng từ riêng lẻ trên vector TF-IDF, không hiểu thứ tự từ.
 
@@ -799,11 +961,30 @@ Mô hình học bằng cách giảm dần **hàm mất mát cross-entropy** qua 
 
 **Cây quyết định (C4.5 [22], CART [23]):** chia dữ liệu bằng chuỗi câu hỏi có/không, ví dụ "câu có chứa 'bảo hành' không?" → "có chứa tên sản phẩm không?" → nhãn. Mỗi lần chia chọn câu hỏi làm dữ liệu "thuần" nhất, đo bằng **entropy** hoặc **độ vẩn đục Gini**:
 
-```text
-Entropy(S) = − Σ p_i × log2(p_i)
-Gini(S)    = 1 − Σ p_i²
-p_i: tỉ lệ mẫu thuộc nhãn i trong tập S
+```math
+\mathrm{Entropy}(S) = -\sum_{i} p_i \log_2 p_i
+\mathrm{Gini}(S) = 1 - \sum_{i} p_i^2
+\mathrm{IG}(S, A) = \mathrm{Entropy}(S) - \sum_{v} \frac{|S_v|}{|S|}\,\mathrm{Entropy}(S_v)
 ```
+
+Trong đó p_i là tỉ lệ mẫu thuộc nhãn i trong tập S. **Độ lợi thông tin (information gain – IG)** của một câu hỏi chia A là entropy giảm được sau khi chia; S_v là phần dữ liệu ứng với câu trả lời v. C4.5 chọn câu hỏi chia có IG lớn nhất (chính xác hơn là tỉ số IG, để không thiên vị câu hỏi có nhiều nhánh); CART chọn câu hỏi làm Gini giảm nhiều nhất.
+
+**Ví dụ tính tay.** Có 8 câu hỏi: 4 câu "hỏi chính sách" (CS), 4 câu "hỏi sản phẩm" (SP). So hai câu hỏi chia:
+
+- A₁ = "câu có chứa 'bảo hành' không?": nhánh **có** gồm 3 câu, cả 3 là CS; nhánh **không** gồm 5 câu: 1 CS, 4 SP.
+- A₂ = "câu có dấu chấm hỏi không?": nhánh **có** gồm 6 câu: 3 CS, 3 SP; nhánh **không** gồm 2 câu: 1 CS, 1 SP.
+
+```text
+Entropy(S)            = −(0,5 × log2 0,5 + 0,5 × log2 0,5)      = 1
+A₁: Entropy(có)       = 0                                        (toàn CS, đã "thuần")
+    Entropy(không)    = −(0,2 × log2 0,2 + 0,8 × log2 0,8)      = 0,7219
+    IG(A₁)            = 1 − (3/8 × 0 + 5/8 × 0,7219)             = 0,5488
+A₂: Entropy(có)       = Entropy(không) = 1                       (vẫn nửa nọ nửa kia)
+    IG(A₂)            = 1 − (6/8 × 1 + 2/8 × 1)                  = 0
+Gini(S) = 1 − (0,5² + 0,5²) = 0,5;   Gini(nhánh không của A₁) = 1 − (0,2² + 0,8²) = 0,32
+```
+
+Cây chọn A₁ ("có chứa 'bảo hành' không") làm câu hỏi đầu tiên, vì nó tách dữ liệu rõ hơn hẳn. A₂ có IG = 0, tức là hỏi xong không biết thêm gì về nhãn.
 
 Ưu điểm: dễ hiểu, đọc được như luật. Nhược điểm: dễ "học thuộc" dữ liệu (quá khớp – overfitting).
 
@@ -829,21 +1010,41 @@ Tinh chỉnh toàn bộ một mô hình 4 tỉ tham số cần rất nhiều b�
 
 **Ý tưởng LoRA:** khi tinh chỉnh, phần thay đổi của một ma trận trọng số thường có "hạng thấp", tức là có thể viết gần đúng bằng tích hai ma trận rất hẹp. Vì vậy:
 
-```text
-h = W·x + (α / r) · B·A·x
-
-W : ma trận gốc kích thước d × d, ĐÓNG BĂNG (không học)
-A : ma trận r × d, học        B : ma trận d × r, học (khởi tạo bằng 0)
-r : hạng (rank), rất nhỏ so với d;   α : hệ số tỉ lệ
+```math
+\mathbf{h} = W\mathbf{x} + \frac{\alpha}{r}\, B A \mathbf{x}
 ```
 
-**Ví dụ số tham số:** một ma trận 2560 × 2560 có 6.553.600 tham số. Với r = 16, LoRA chỉ học A và B: 16 × 2560 × 2 = **81.920 tham số, khoảng 1,25%**. Do B khởi tạo bằng 0, lúc bắt đầu mô hình giữ nguyên hành vi gốc, rồi lệch dần theo dữ liệu học.
+Trong đó:
+
+- W là ma trận gốc kích thước d_out × d_in, **đóng băng** (không học);
+- A là ma trận r × d_in, được học;
+- B là ma trận d_out × r, được học, khởi tạo bằng 0;
+- r là hạng (rank), rất nhỏ so với d_in và d_out; α là hệ số tỉ lệ.
+
+Một lớp gắn LoRA chỉ học thêm r × (d_in + d_out) tham số thay vì d_in × d_out. Do B khởi tạo bằng 0, lúc bắt đầu mô hình giữ nguyên hành vi gốc, rồi lệch dần theo dữ liệu học.
+
+> **Điểm kỹ thuật – số tham số LoRA thật của đề tài:** các lớp trong Qwen3-4B **không vuông**. Theo file `config.json` của Qwen3-4B-Instruct-2507 [26]: kích thước ẩn 2.560; phần chú ý có 32 đầu truy vấn và 8 đầu khóa/giá trị, mỗi đầu 128 chiều; phần mạng truyền thẳng rộng 9.728; có 36 tầng. Với r = 16, gắn vào 7 lớp chiếu như ở mục 3.8, mỗi tầng có số tham số học như Bảng 2.9.
+
+*Bảng 2.9. Số tham số LoRA (r = 16) của một tầng Qwen3-4B*
+
+| Lớp | d_in → d_out | Tham số gốc | Tham số LoRA = 16 × (d_in + d_out) |
+|---|---|---|---|
+| q_proj | 2.560 → 4.096 | 10.485.760 | 106.496 |
+| k_proj | 2.560 → 1.024 | 2.621.440 | 57.344 |
+| v_proj | 2.560 → 1.024 | 2.621.440 | 57.344 |
+| o_proj | 4.096 → 2.560 | 10.485.760 | 106.496 |
+| gate_proj | 2.560 → 9.728 | 24.903.680 | 196.608 |
+| up_proj | 2.560 → 9.728 | 24.903.680 | 196.608 |
+| down_proj | 9.728 → 2.560 | 24.903.680 | 196.608 |
+| **Một tầng** | | **100.925.440** | **917.504** |
+
+Nhân với 36 tầng: 917.504 × 36 = **33.030.144 tham số được học**, khoảng **0,82%** của khoảng 4,02 tỉ tham số của mô hình. Nói cách khác, LoRA chỉ học chưa tới 1% số tham số mà vẫn đổi được hành vi của mô hình. Cách tính này giống cách thư viện PEFT đếm "trainable parameters", nhưng con số được tính từ cấu hình chứ chưa in ra từ lần huấn luyện; lần train v6 sẽ in con số thật để đối chiếu.
 
 **QLoRA** [25] đi xa thêm một bước: nén mô hình gốc xuống 4 bit để tiết kiệm bộ nhớ, rồi gắn LoRA lên trên. Đề tài dùng cách này để tinh chỉnh Qwen3 4B trên GPU T4 16 GB miễn phí của Kaggle (chi tiết ở mục 3.8).
 
 ### 2.6.8. So sánh các thuật toán phân lớp
 
-*Bảng 2.6. So sánh các thuật toán phân lớp văn bản*
+*Bảng 2.10. So sánh các thuật toán phân lớp văn bản*
 
 | Thuật toán | Cần bao nhiêu dữ liệu | Tốc độ | Hiểu ngữ cảnh, thứ tự từ | Dễ giải thích | Ghi chú |
 |---|---|---|---|---|---|
@@ -852,7 +1053,9 @@ r : hạng (rank), rất nhỏ so với d;   α : hệ số tỉ lệ
 | Hồi quy logistic | Vừa | Nhanh | Không | Khá | Xác suất đáng tin |
 | SVM | Vừa | Nhanh | Không | Khó | Mạnh với văn bản trước thời học sâu |
 | Cây quyết định | Vừa | Nhanh | Không | Rất dễ | Dễ quá khớp, kém với văn bản thưa |
-| Transformer tinh chỉnh (LoRA) | Vừa đến nhiều | Chậm hơn, cần GPU | Có | Khó | Đề tài chọn làm bộ định tuyến |
+| PhoBERT tinh chỉnh làm bộ phân lớp | Vừa (vài nghìn câu có nhãn) | Nhanh, chạy được trên CPU | Có | Khó | Mốc so sánh mạnh cho tiếng Việt [38] |
+| LLM không huấn luyện (zero-shot, có JSON schema) | Không cần, chỉ cần lời nhắc | Chậm, cần GPU | Có | Khó | Router đang dùng của đề tài (Qwen3 4B bản gốc) |
+| LLM tinh chỉnh (LoRA) | Vừa đến nhiều | Chậm, cần GPU | Có | Khó | Đề tài dùng cho bước chọn bằng chứng sản phẩm; router tinh chỉnh v5 chưa qua cổng (mục 3.8) |
 
 ## 2.7. Kết hợp luật và học máy
 
@@ -863,41 +1066,101 @@ Mô hình học máy luôn có tỉ lệ sai nhất định. Với một số tr
 
 Ưu điểm: những ca quan trọng thì đúng tuyệt đối và giải thích được; mô hình không phải học những ca hiếm. Nhược điểm: luật phải được kiểm thử kỹ để không bắt nhầm câu bình thường. Đề tài kiểm tra mỗi luật mới trên 1.285 câu hỏi mở và đếm số câu bị đổi quyết định (mục 3.6).
 
+**Ngưỡng tin cậy và "không chắc thì hỏi lại".** Một hướng khác để bớt sai là cho mô hình được **từ chối đoán**: nếu xác suất của nhãn tốt nhất thấp hơn một ngưỡng, hệ thống không làm theo nhãn đó mà hỏi lại người dùng. Kỹ thuật này gọi là **phân lớp có lựa chọn (selective classification)** [50]. Hạ ngưỡng thì hệ thống trả lời được nhiều câu hơn nhưng sai nhiều hơn; nâng ngưỡng thì ít sai hơn nhưng hỏi lại nhiều hơn. Điều kiện để dùng được là xác suất của mô hình phải "đáng tin": mô hình nói 90% thì khoảng 90% số lần phải đúng.
+
+Đề tài áp dụng ý này ở ba chỗ, theo đúng mục tiêu "không bịa":
+
+1. **Truy xuất có ngưỡng:** đoạn văn chỉ được dùng khi cosine TF-IDF > 0,08 hoặc cosine vector > 0,45. Không đoạn nào qua ngưỡng thì bot nói "chưa có nguồn", không đoán.
+2. **Bước chọn bằng chứng có ô "thiếu":** mô hình phải liệt kê phần nào của câu hỏi chưa có nguồn trả lời (`missing`). Phần đó được trả lời là chưa có thông tin, thay vì để mô hình tự điền.
+3. **Câu chỉ trỏ mơ hồ** ("con đó", "máy vừa nói" khi chưa có máy nào) được luật chuyển sang `clarify`.
+
+Router của đề tài là LLM trả về JSON, không trả về xác suất đã hiệu chỉnh, nên **chưa có ngưỡng tin cậy cho router**. Đây là một hướng cải tiến: lấy xác suất của token nhãn, hoặc chạy vài lần rồi đo mức đồng thuận, sau đó chọn ngưỡng trên phần development.
+
 ## 2.8. Đánh giá mô hình
 
 ### 2.8.1. Đánh giá phân lớp
 
 Với một nhãn cụ thể, ví dụ "từ chối":
 
-*Bảng 2.7. Ma trận nhầm lẫn cho một nhãn*
+*Bảng 2.11. Ma trận nhầm lẫn cho một nhãn*
 
 | | Thực tế: cần từ chối | Thực tế: không cần |
 |---|---|---|
 | **Máy đoán: từ chối** | TP (đúng) | FP (từ chối oan) |
 | **Máy đoán: không từ chối** | FN (để lọt) | TN (đúng) |
 
-```text
-Precision = TP / (TP + FP)     trong các câu máy từ chối, bao nhiêu câu đáng từ chối
-Recall    = TP / (TP + FN)     trong các câu đáng từ chối, máy bắt được bao nhiêu
-F1        = 2 × Precision × Recall / (Precision + Recall)
-Accuracy  = (TP + TN) / tổng
+```math
+\mathrm{Precision} = \frac{TP}{TP + FP}
+\mathrm{Recall} = \frac{TP}{TP + FN}
+F_1 = \frac{2 \cdot \mathrm{Precision} \cdot \mathrm{Recall}}{\mathrm{Precision} + \mathrm{Recall}}
+\mathrm{Accuracy} = \frac{TP + TN}{\text{tổng số câu}}
 ```
+
+- **Precision:** trong các câu máy từ chối, bao nhiêu câu đáng từ chối.
+- **Recall:** trong các câu đáng từ chối, máy bắt được bao nhiêu.
 
 Với nhãn "từ chối", để lọt (FN) nguy hiểm hơn từ chối oan (FP), nên cần ưu tiên **recall**. Với nhãn "trả lời", trả lời bừa (FP) nguy hiểm hơn, nên cần ưu tiên **precision**. Vì vậy không thể chỉ nhìn một con số accuracy chung.
 
+**Nhiều nhãn và nhãn lệch: macro-F1, micro-F1.** Khi có nhiều nhãn, ma trận nhầm lẫn có một hàng và một cột cho mỗi nhãn. Từ đó tính precision, recall, F1 cho **từng** nhãn (coi nhãn đó là "dương", mọi nhãn khác là "âm"), rồi gộp lại theo hai cách:
+
+```math
+\text{Macro-}F_1 = \frac{1}{K}\sum_{k=1}^{K} F_{1,k}
+\text{Micro-}F_1 = F_1 \text{ tính trên tổng } TP, FP, FN \text{ của mọi nhãn}
+```
+
+K là số nhãn. Macro-F1 tính mỗi nhãn **ngang nhau**, nên nhãn hiếm bị sai sẽ kéo điểm xuống rõ. Micro-F1 tính mỗi **câu** ngang nhau; với bài toán mỗi câu một nhãn, micro-F1 bằng đúng accuracy, nên bị nhãn phổ biến lấn át.
+
+Ví dụ thật trên 810 câu development (83,8% là `answer`), mô hình TF-IDF + hồi quy logistic học từ 640 câu của dữ liệu router v5 (chi tiết ở mục 3.10.4):
+
+*Bảng 2.12. Accuracy và macro-F1 khi nhãn bị lệch*
+
+| Mô hình | Accuracy (= micro-F1) | Macro-F1 |
+|---|---|---|
+| Luôn đoán `answer` | 0,838 | 0,130 |
+| TF-IDF + hồi quy logistic, không cân bằng nhãn | 0,872 | 0,396 |
+| TF-IDF + hồi quy logistic, có trọng số theo lớp | 0,863 | 0,501 |
+
+Mô hình "luôn đoán `answer`" không làm được gì có ích mà accuracy vẫn 0,838; macro-F1 0,130 mới cho thấy điều đó.
+
+**Trọng số theo lớp (class weight)** là cách xử lý nhãn lệch đơn giản nhất: khi tính hàm mất mát, lỗi ở nhãn hiếm bị phạt nặng hơn, tỉ lệ nghịch với số mẫu của nhãn. Bảng trên cho thấy cái giá: accuracy giảm nhẹ (0,872 → 0,863) vì mô hình bớt đoán `answer`, nhưng macro-F1 tăng rõ (0,396 → 0,501) vì các nhãn hiếm được bắt nhiều hơn. Ma trận nhầm lẫn của mô hình có trọng số:
+
+*Bảng 2.13. Ma trận nhầm lẫn nhiều nhãn (TF-IDF + hồi quy logistic có trọng số theo lớp; hàng: nhãn đúng, cột: nhãn đoán)*
+
+| Đúng / Đoán | answer | clarify | deferred | denied | handoff | live_product | outside |
+|---|---|---|---|---|---|---|---|
+| answer (679) | **639** | 8 | 11 | 16 | 0 | 2 | 3 |
+| clarify (24) | 7 | **15** | 0 | 1 | 0 | 0 | 1 |
+| deferred (2) | 1 | 0 | **1** | 0 | 0 | 0 | 0 |
+| denied (27) | 2 | 0 | 3 | **20** | 2 | 0 | 0 |
+| handoff (11) | 2 | 0 | 1 | 1 | **7** | 0 | 0 |
+| live_product (19) | 8 | 0 | 0 | 3 | 0 | **2** | 6 |
+| outside (48) | 25 | 1 | 5 | 2 | 0 | 0 | **15** |
+
+Đọc theo hàng: trong 48 câu ngoài phạm vi, mô hình chỉ nhận ra 15 câu, còn 25 câu bị coi là câu cần trả lời. Đây đúng là loại lỗi nguy hiểm nhất: bot đem tài liệu không liên quan ra trả lời một câu không phải việc của shop.
+
+Còn một cách khác là **lấy mẫu lại**: nhân bản câu của nhãn hiếm, hoặc bớt câu của nhãn phổ biến. Khi huấn luyện router v5, đề tài dùng cách nhân bản: các nhóm câu mới được đưa vào dữ liệu học hai lần (mục 3.8).
+
 ### 2.8.2. Đánh giá truy xuất
 
-- **Recall@k:** tỉ lệ câu hỏi có ít nhất một đoạn đúng nằm trong k kết quả đầu.
+- **Hit@k (còn gọi Success@k):** tỉ lệ câu hỏi có **ít nhất một** đoạn đúng nằm trong k kết quả đầu.
+- **Recall@k:** với từng câu hỏi, lấy số đoạn đúng tìm được trong k kết quả đầu chia cho **tổng số đoạn đúng** của câu đó, rồi lấy trung bình trên các câu hỏi. Khi mỗi câu hỏi chỉ có đúng một đoạn đúng, Recall@k bằng Hit@k; khi một câu cần nhiều đoạn (ví dụ so sánh hai sản phẩm), hai con số khác nhau.
 - **MRR (Mean Reciprocal Rank):** trung bình của 1/hạng của đoạn đúng đầu tiên.
 - **nDCG@k [28]:** có tính mức độ liên quan (rất liên quan, hơi liên quan), và phạt khi đoạn đúng nằm thấp.
 
-**Ví dụ:** 10 câu hỏi, hạng của đoạn đúng lần lượt là 1, 1, 2, (không có trong top 5), 1, 3, 1, (không có), 2, 1.
+```math
+\mathrm{Recall@}k = \frac{1}{|Q|}\sum_{q \in Q} \frac{|\text{đoạn đúng của } q \text{ trong top } k|}{|\text{đoạn đúng của } q|}
+\mathrm{MRR} = \frac{1}{|Q|}\sum_{q \in Q} \frac{1}{\mathrm{hạng}_q}
+```
+
+**Ví dụ:** 10 câu hỏi, **mỗi câu có đúng một đoạn đúng**, hạng của đoạn đúng lần lượt là 1, 1, 2, (không có trong top 5), 1, 3, 1, (không có), 2, 1. Vì mỗi câu chỉ có một đoạn đúng nên ở đây Hit@k = Recall@k.
 
 ```text
-Recall@1 = 5/10 = 0,5     (5 câu có đoạn đúng ở hạng 1)
-Recall@3 = 8/10 = 0,8
+Hit@1 = Recall@1 = 5/10 = 0,5     (5 câu có đoạn đúng ở hạng 1)
+Hit@3 = Recall@3 = 8/10 = 0,8
 MRR = (1 + 1 + 1/2 + 0 + 1 + 1/3 + 1 + 0 + 1/2 + 1) / 10 = 0,6333
 ```
+
+Nếu câu thứ 3 cần **hai** đoạn đúng và chỉ đoạn thứ nhất (hạng 2) nằm trong top 3, thì câu đó vẫn được tính "trúng" khi đo Hit@3, nhưng chỉ được 1/2 khi đo Recall@3. Khi đó Recall@3 = (7 + 0,5)/10 = 0,75, còn Hit@3 vẫn là 0,8.
 
 ### 2.8.3. Đánh giá cả hệ thống chatbot
 
@@ -908,11 +1171,11 @@ MRR = (1 + 1 + 1/2 + 0 + 1 + 1/3 + 1 + 0 + 1/2 + 1) / 10 = 0,6333
 - Câu trả lời có chứa câu bằng chứng bắt buộc không (cho phép vài cách diễn đạt tương đương).
 - Con số có khớp với số tính bằng SQL từ cơ sở dữ liệu không.
 
-Mỗi phiên bản chạy **hai lần**. Một câu chỉ bị tính là "từ đạt thành trượt" khi nó trượt ở **mọi** lần chạy, để loại bỏ dao động ngẫu nhiên của mô hình.
+**Giảm dao động giữa các lần chạy.** Mọi lời gọi mô hình dùng **temperature = 0** (luôn chọn từ có xác suất cao nhất, không lấy mẫu ngẫu nhiên) và đầu ra bị ràng buộc theo một **JSON schema** (mô hình chỉ được sinh JSON đúng các trường và giá trị cho phép). Đề tài không đặt seed riêng: với temperature = 0 thì không có bước lấy mẫu nào cần seed. Dù vậy, kết quả vẫn có thể lệch nhẹ giữa hai lần chạy, do phép tính số thực trên GPU không hoàn toàn cố định và do dịch vụ phụ (vector nhúng) đôi khi quá thời gian chờ. Vì vậy mỗi phiên bản chạy **hai lần**. Một câu chỉ bị tính là "từ đạt thành trượt" khi nó trượt ở **mọi** lần chạy, còn câu đạt lần này trượt lần kia được tách riêng là **dao động**. Hai lần chạy chỉ **giảm** và **phát hiện** được dao động, không loại bỏ hẳn được nó.
 
 ## 2.9. Lý do chọn phương pháp cho đề tài
 
-*Bảng 2.8. Yêu cầu của đề tài và phương pháp được chọn*
+*Bảng 2.14. Yêu cầu của đề tài và phương pháp được chọn*
 
 | Yêu cầu | Phương pháp chọn | Lý do |
 |---|---|---|
@@ -920,13 +1183,38 @@ Mỗi phiên bản chạy **hai lần**. Một câu chỉ bị tính là "từ �
 | Hiểu cách hỏi khác mặt chữ | Vector nhúng PhoBERT | Hiểu nghĩa tiếng Việt |
 | Bắt cụm từ ("bảo hành", "trả góp") | TF-IDF n-gram 1–2 | Rẻ, ổn định |
 | Gộp ba cách mà không cần dữ liệu chỉnh trọng số | RRF k = 60 | Không phụ thuộc thang điểm |
-| Phân lớp ý định đa dạng, tiếng Việt tự nhiên | Qwen3 4B tinh chỉnh LoRA | Hiểu ngữ cảnh, chạy được trên GPU miễn phí |
+| Phân lớp ý định đa dạng, tiếng Việt tự nhiên | Qwen3 4B bản gốc, có lời nhắc và JSON schema | Hiểu ngữ cảnh, không cần dữ liệu có nhãn thật; đồng thời viết lại câu tìm kiếm và chọn loại tài liệu |
+| Chọn đúng câu bằng chứng trong bản ghi sản phẩm | Qwen3 4B tinh chỉnh LoRA (bản v1) | Bản gốc hay lấy thêm dòng thông số không được hỏi |
 | Ca nhạy cảm phải chắc chắn đúng | Luật viết tay chạy trước mô hình | Giải thích được, không phụ thuộc xác suất |
 | Số liệu kinh doanh phải đúng tuyệt đối | Tính bằng SQL, không để mô hình tự tính | Mô hình ngôn ngữ cộng trừ không đáng tin |
 
+**Vì sao không dùng PhoBERT tinh chỉnh làm bộ phân lớp ý định?** Đây là cách làm chuẩn cho tiếng Việt: mô hình JointIDSF xây trên PhoBERT cho kết quả tốt trên PhoATIS [38], và PhoBERT nhỏ (khoảng 135 triệu tham số so với 4 tỉ của Qwen3 4B), chạy nhanh trên CPU. Đề tài chưa chọn cách này vì ba lý do:
+
+1. **Không có dữ liệu có nhãn thật.** PhoATIS có 5.871 câu do người gán nhãn. Đề tài chỉ có 640 câu router tự sinh, trong đó nhiều nhãn chỉ có 4–13 câu. Mô hình phân lớp học từ chừng đó câu rất dễ học thuộc khuôn câu tự sinh. LLM bản gốc thì không cần dữ liệu có nhãn: chỉ cần mô tả nhãn trong lời nhắc.
+2. **Router không chỉ chọn nhãn.** Mỗi lần gọi, router trả về một JSON gồm hướng xử lý, câu tìm kiếm đã viết lại (ví dụ thay "nó" bằng tên máy ở lượt trước), loại tài liệu cần tìm, nhóm sản phẩm, và cờ "đòi dữ liệu nội bộ". Bộ phân lớp PhoBERT chỉ làm được phần đầu, phần còn lại cần thêm mô hình khác.
+3. **Đo thử bằng mốc so sánh đơn giản.** Một mô hình TF-IDF + hồi quy logistic (cùng họ "túi từ + bộ phân lớp tuyến tính" như các thuật toán ở mục 2.6), học từ 640 câu router, đạt macro-F1 0,626 trên phần validation; cả hệ thống (luật + Qwen3 4B) đạt 0,828 (mục 3.10.4).
+
+PhoBERT tinh chỉnh vẫn là hướng đáng thử khi có câu hỏi thật của khách để gán nhãn. Khi đó nên đo nó trên cùng các bộ câu hỏi, so với mốc TF-IDF + hồi quy logistic và với router hiện tại.
+
 ## Tiểu kết Chương 2
 
-Chương 2 đã trình bày các thuật toán của nhánh khai phá văn bản – truy xuất thông tin – phân lớp, từ tiền xử lý tiếng Việt, biểu diễn văn bản (túi từ, TF-IDF, vector nhúng), độ đo tương tự, xếp hạng (vector space, BM25, truy xuất dày, RRF) đến phân lớp (kNN, Naive Bayes, hồi quy logistic, SVM, cây quyết định, transformer tinh chỉnh bằng LoRA) và cách đánh giá. Các ví dụ tính tay cho thấy: BM25 khắc phục điểm yếu IDF bằng 0 của TF-IDF cổ điển, còn RRF gộp được nhiều bảng xếp hạng mà không cần chuẩn hóa điểm. Chương 3 trình bày cách đề tài ghép các thuật toán này thành một chatbot hoàn chỉnh.
+Chương 2 đã trình bày các thuật toán của nhánh khai phá văn bản – truy xuất thông tin – phân lớp:
+
+- tiền xử lý tiếng Việt;
+- biểu diễn văn bản: túi từ, TF-IDF, vector nhúng;
+- độ đo tương tự;
+- xếp hạng: vector space, BM25, truy xuất dày, RRF, cùng cách chia đoạn tài liệu;
+- phân lớp: kNN, Naive Bayes, hồi quy logistic, SVM, cây quyết định, transformer tinh chỉnh bằng LoRA, và cách xử lý nhãn lệch;
+- cách đánh giá: macro-F1, Hit@k, Recall@k, MRR.
+
+Các ví dụ tính tay cho thấy:
+
+- BM25 khắc phục điểm yếu IDF bằng 0 của TF-IDF cổ điển.
+- RRF gộp được nhiều bảng xếp hạng mà không cần chuẩn hóa điểm.
+- Naive Bayes và cây quyết định "cân" từng từ để chọn nhãn.
+- Với nhãn lệch, accuracy có thể cao mà mô hình vô dụng.
+
+Các con số kỹ thuật đều lấy từ cấu hình và code thật: giới hạn 256 token của mô hình vector nhúng, bản BM25 kiểu Lucene, 33 triệu tham số LoRA. Chương 3 trình bày cách đề tài ghép các thuật toán này thành một chatbot hoàn chỉnh.
 
 # CHƯƠNG 3. ỨNG DỤNG VÀO CHATBOT TECHSTORE
 
@@ -983,7 +1271,7 @@ Mỗi sản phẩm trong `products.sqlite` lưu `source_id`, `source_file`, `sou
 | Sổ tay phân tích kinh doanh | 10 | Nhóm tự viết (phương pháp, từ điển dữ liệu, câu SQL mẫu) |
 | Chính sách cửa hàng | 5 | Nhóm tự soạn cho bản demo (bảo hành, đổi trả, giao hàng, trả góp, khuyến mãi); không phải chính sách thật |
 | Tài liệu nội bộ mô phỏng | 27 | Sinh cùng dữ liệu kinh doanh, chỉ admin xem được |
-| **Tổng** | **286** | Chia thành 598 đoạn (mỗi đoạn tối đa 180 từ) hoặc 807 đoạn (tối đa 100 từ) |
+| **Tổng** | **286** | Tính cả các bản không còn hiệu lực. Tại ngày 31/10/2026, bộ tìm kiếm chỉ dùng tài liệu đang hiệu lực: 144 tài liệu với admin, 115 với khách. 144 tài liệu của admin chia thành 433 đoạn (mỗi đoạn tối đa 100 từ) hoặc 311 đoạn (tối đa 180 từ) |
 
 ### 3.2.4. Ảnh sản phẩm và mô hình
 
@@ -1008,11 +1296,13 @@ Mỗi sản phẩm trong `products.sqlite` lưu `source_id`, `source_file`, `sou
 | `purchase_lines`, `receipts` | 320, 317 | Sự kiện | Một dòng đặt nhập, một lần nhận hàng |
 | `operating_expenses` | 99 | Sự kiện | Một khoản chi |
 | `products` (+ `product_facts`) | 67 | Chiều | Một sản phẩm |
-| `orders` | 1.427 | Chiều đơn hàng | Một đơn (ngày, kênh, khách, chiến dịch) |
+| `orders` | 1.427 | Đầu đơn (thuộc sự kiện bán hàng) | Một đơn (ngày, kênh, khách, chiến dịch) |
 | `customers` | 1.200 | Chiều | Một khách (phân khúc) |
 | `campaigns`, `suppliers` | 3, 2 | Chiều | Một chiến dịch, một nhà cung cấp |
 | `monthly_targets` | 12 | Chỉ tiêu | Mục tiêu doanh thu, biên lãi của một tháng |
 | `metadata` | 9 | Siêu dữ liệu | Kỳ dữ liệu, đơn vị tiền, cách tính giá vốn |
+
+Bảng `orders` cần nói rõ hơn. Theo cách thiết kế của Kimball [4], một đơn hàng gồm phần **đầu đơn** (ngày, kênh, khách, chiến dịch) và các **dòng đơn** (từng sản phẩm). Bảng sự kiện nên đặt ở mức dòng đơn (`order_items`). Mã đơn khi đó là **chiều suy biến (degenerate dimension)**: nó nằm ngay trong bảng sự kiện để gom các dòng của cùng một đơn, nhưng không cần bảng chiều riêng vì bản thân nó không có thuộc tính mô tả nào. Trong `shop.sqlite`, phần đầu đơn được tách thành bảng `orders` để không lặp ngày, kênh, khách ở từng dòng. Vì vậy `orders` là một phần của sự kiện bán hàng chứ không phải một bảng chiều; các chiều thật là ngày, kênh, khách hàng và chiến dịch mà nó trỏ tới.
 
 View `monthly_pnl` đóng vai trò **data mart tài chính**: tổng hợp sẵn doanh thu thuần, giá vốn, lãi gộp, chi phí hoạt động, lợi nhuận trước lãi vay và thuế, số đơn, mục tiêu theo từng tháng.
 
@@ -1056,6 +1346,8 @@ GROUP BY 1, 2 ORDER BY 2;
 4. **Tổng hợp (`de_curated`):** dựng bản tổng hợp riêng cho admin phân tích, tách khỏi dữ liệu bot đang dùng.
 5. **Làm mới hằng tháng (`monthly`):** khi có tháng mới, cập nhật số liệu và tài liệu, rồi lập chỉ mục lại để tìm kiếm. **Không huấn luyện lại mô hình**: thêm tài liệu chỉ cần lập chỉ mục, không cần train.
 
+Theo kiến trúc medallion (mục 1.2.7), bước 1 là tầng bronze, bước 2–3 là tầng silver, bước 4 cùng view `monthly_pnl` là tầng gold.
+
 > **Điểm kỹ thuật – nguyên tắc "sai thì dừng" (fail-closed):** nếu một bước kiểm tra không đạt (ví dụ tồn kho đối soát lệch), quy trình dừng hẳn và giữ nguyên dữ liệu cũ, thay vì nạp dữ liệu có thể sai. Đối với chatbot, trả lời bằng số cũ nhưng đúng an toàn hơn trả lời bằng số mới nhưng sai.
 
 ## 3.5. Kiến trúc hệ thống
@@ -1067,7 +1359,7 @@ Hệ thống gồm ba phần (Hình 3.4):
 1. **Web:** trang bán hàng và trang quản trị viết bằng React; backend viết bằng Node.js + Express, chạy trên dịch vụ Render.
 2. **Dịch vụ AI:** viết bằng Python, dùng FastAPI, có hai cổng: `/api/chat/customer` cho khách và `/api/chat/admin` cho quản trị viên. Backend gọi dịch vụ AI qua địa chỉ cấu hình trong biến `AI_SERVICE_URL`.
 3. **Các thành phần AI:**
-   - Ollama chạy mô hình Qwen3 4B đã tinh chỉnh LoRA.
+   - Ollama chạy hai bản Qwen3 4B: bản gốc làm router (bộ định tuyến), và bản tinh chỉnh LoRA v1 làm bước chọn bằng chứng cho câu hỏi về sản phẩm.
    - Dịch vụ vector nhúng chạy mô hình vietnamese-embedding trên máy cục bộ.
    - Cơ sở dữ liệu `shop.sqlite` và kho tài liệu.
 
@@ -1089,12 +1381,13 @@ Hàm `grounded_rag.answer` xử lý mỗi câu hỏi theo thứ tự sau (Hình 
 | | | "lương nhân viên bán hàng bao nhiêu" | `denied` |
 | | | "cho mình gặp nhân viên tư vấn" | `handoff` |
 | | | "con màu đen đó giá sao" (chưa nói máy nào) | `clarify`: hỏi lại máy nào |
+| | | "giải phương trình x² − 5x + 6 = 0" (không nhắc gì tới shop) | `outside`: nói rõ là ngoài phạm vi |
 | 4. Tư vấn ngân sách, tra sản phẩm | Lọc trực tiếp trong bảng sản phẩm | "tầm 20 triệu màn hình đẹp" | Danh sách máy lấy từ `products` |
-| 5. Router (Qwen3 4B + LoRA) | Phân lớp ý định các câu còn lại | "máy này có hợp làm đồ họa không" | `answer` → sang bước 6 |
+| 5. Router (Qwen3 4B bản gốc) | Phân lớp ý định các câu còn lại | "máy này có hợp làm đồ họa không" | `answer` → sang bước 6 |
 | 6. Truy xuất lai | Tìm các đoạn liên quan (mục 3.7) | | Top-k đoạn đã lọc theo quyền |
-| 7. Chọn bằng chứng | Mô hình chỉ được chọn câu có sẵn trong đoạn, không tự viết số | | Câu trả lời trích nguyên văn + nguồn |
+| 7. Chọn bằng chứng | Mô hình chỉ được chọn câu có sẵn trong đoạn, không tự viết số (bản tinh chỉnh LoRA v1 cho bản ghi sản phẩm, bản gốc cho các loại khác) | | Câu trả lời trích nguyên văn + nguồn |
 
-> **Điểm kỹ thuật – vì sao luật chạy trước router:** ở bản đánh giá 18, có 23 câu trượt vì router đi nhầm đường: khách nhờ đặt hàng thì bot báo "cần công cụ ngoài", khách hỏi lương nhân viên thì bot nói "ngoài phạm vi" thay vì từ chối, khách nói "con màu đen đó" thì bot đoán bừa một máy. Nhóm thêm luật cho các trường hợp này. Trước khi dùng, luật được chạy trên **1.285 câu hỏi mở** (không đụng các bộ khóa): 42 câu đổi quyết định, câu nào cũng đổi sang đúng hành vi mong đợi, không câu nào đổi sai.
+> **Điểm kỹ thuật – vì sao luật chạy trước router:** ở bản đánh giá 18, có 23 câu trượt vì router đi nhầm đường: khách nhờ đặt hàng thì bot báo "cần công cụ ngoài", khách hỏi lương nhân viên thì bot nói "ngoài phạm vi" thay vì từ chối, khách nói "con màu đen đó" thì bot đoán bừa một máy. Nhóm thêm luật cho các trường hợp này. Trước khi dùng, luật được chạy trên **1.285 câu hỏi mở** (không đụng các bộ khóa): 42 câu đổi quyết định, câu nào cũng đổi sang đúng hành vi mong đợi, không câu nào đổi sai. Ở bản 22, nhóm thêm luật "ngoài phạm vi": câu bài tập, giải toán, viết code, chửi bot, vay tiền, sức khỏe, pháp lý, hỏi sàn hoặc dịch vụ khác, **mà không nhắc gì tới máy móc, mua bán hay shop**, thì trả lời ngoài phạm vi. Câu như "laptop nào viết code Python mượt" vẫn đi đường bình thường. Chạy lại trên 1.285 câu mở: đúng 17 câu đổi quyết định, đều là câu ngoài phạm vi.
 
 ## 3.7. Cài đặt truy xuất lai
 
@@ -1142,6 +1435,13 @@ def bm25_scores(question, texts):
 
 ![Hình 3.7. Vòng huấn luyện và đánh giá trên Kaggle](hinh/h3_7_vong_huan_luyen_danh_gia.png)
 
+**Hiện trạng.** Đề tài dùng hai bản Qwen3 4B:
+
+- **Router: bản gốc, chưa tinh chỉnh.** Router chạy với lời nhắc mô tả từng nhãn, temperature = 0, và đầu ra bị ràng buộc theo JSON schema (mục 2.8.3).
+- **Bước chọn bằng chứng cho bản ghi sản phẩm: bản tinh chỉnh LoRA v1.** Bản gốc hay lấy thêm những dòng thông số không được hỏi; bản v1 bỏ được các dòng đó. Bản v1 chỉ dùng cho câu hỏi về sản phẩm, vì với câu hỏi chính sách hay báo cáo nó lại làm mất bằng chứng.
+
+Nhóm đã tinh chỉnh một router riêng (**bản v5**, mô tả dưới đây), nhưng **chưa dùng**. Lúc huấn luyện, v5 chọn đúng 94,4% phần dev. Nhưng khi chạy cả hệ thống, kết quả khác hẳn. Ở bản đánh giá 7, v5 làm trượt 10 trên 31 câu của bộ chính sách, vì đẩy câu hỏi chính sách sang tài liệu giải thích thuật ngữ. Ở bản 10, sau khi đã sửa thêm, v5 vẫn làm 4 câu đang đạt chuyển thành trượt ở cả hai lần chạy. Theo quy tắc cổng (mục 3.10.1), bản có lỗi lùi không được dùng thay bản cũ. Đây là ví dụ rõ cho việc **điểm của riêng một bộ phận không đủ để quyết định**: phải đo cả hệ thống.
+
 ### 3.8.1. Dữ liệu huấn luyện
 
 - **Cách tạo:** nhóm tự sinh câu hỏi từ đặc tả của router và từ dữ liệu trong cơ sở dữ liệu (tên sản phẩm, kỳ báo cáo, chỉ số). Nhãn lấy theo đặc tả và dữ liệu, **không lấy câu trả lời của mô hình nào làm nhãn**.
@@ -1159,13 +1459,15 @@ def bm25_scores(question, texts):
 | Nạp mô hình | 4 bit (thư viện Unsloth [35]) | Kiểu QLoRA, để vừa GPU T4 16 GB |
 | LoRA r / α / dropout | 16 / 32 / 0 | Hạng 16, hệ số tỉ lệ α/r = 2 |
 | Lớp gắn LoRA | q, k, v, o, gate, up, down | Cả phần chú ý và phần mạng truyền thẳng |
+| Số tham số được học | 33.030.144 (khoảng 0,82%) | Tính từ cấu hình mô hình, xem Bảng 2.9 |
+| Nhãn hiếm | Các nhóm câu mới đưa vào hai lần | Cách nhân bản mẫu để nhãn hiếm không bị lấn át (mục 2.8.1) |
 | Số vòng (epoch) | 2 | Đi qua dữ liệu train 2 lần |
 | Tốc độ học | 5 × 10⁻⁵, giảm theo hàm cosine, khởi động 20 bước | Học chậm để không làm hỏng kiến thức gốc |
 | Batch | 1 × tích lũy 8 bước | Tương đương batch 8, tiết kiệm bộ nhớ |
 | Phần cứng | GPU T4 miễn phí của Kaggle | |
 | Xuất ra | GGUF, chạy bằng Ollama [36] | |
 
-Trên phần dev lúc huấn luyện, router v5 chọn đúng **118/125 câu (94,4%)**. Đây chỉ là điểm của riêng bộ định tuyến; chất lượng thật của cả hệ thống được đo ở mục 3.10.
+Trên phần dev lúc huấn luyện, router v5 chọn đúng **118/125 câu (94,4%)**. Đây chỉ là điểm của riêng bộ định tuyến; như đã nói ở đầu mục, khi đo cả hệ thống thì v5 chưa qua cổng nên chưa được dùng. Nhóm đang chuẩn bị bản v6 (mục 3.11).
 
 ## 3.9. Trả lời số liệu cho quản trị viên
 
@@ -1199,30 +1501,29 @@ Mỗi phiên bản được chạy trên Kaggle (GPU T4, khoảng 3–4 giây m�
 
 ### 3.10.2. Kết quả
 
-![Hình 3.8. Kết quả bản đánh giá 19 trên Kaggle](hinh/h3_8_ket_qua_ban_19.png)
+![Hình 3.8. Kết quả bản đánh giá 19 và bản 22 trên Kaggle](hinh/h3_8_ket_qua_ban_22.png)
 
-*Bảng 3.8. Kết quả bản đánh giá 19 (natural2 chấm theo cách chấm mới)*
+*Bảng 3.8. Kết quả bản đánh giá 19 và bản 22 (cùng cách chấm mới)*
 
-| Bộ | Đạt / tổng | Tỉ lệ |
-|---|---|---|
-| natural2 | 101 / 120 | 84,2% |
-| natural | 106 / 120 | 88,3% |
-| policy | 29 / 31 | 93,5% |
-| kb3 development | 425 / 479 | 88,7% |
-| kb3 validation | 106 / 121 | 87,6% |
-| expansion development | 326 / 354 | 92,1% |
-| expansion validation | 142 / 185 | 76,8% |
-| Ngoài phạm vi (80 câu ngoài lề) | 57 / 80 | 71,3% |
-| Đối chứng của bộ ngoài phạm vi | 14 / 20 | 70,0% |
+| Bộ | Bản 19 | Bản 22 | Tỉ lệ bản 22 |
+|---|---|---|---|
+| natural2 | 101 / 120 | **117** / 120 | 97,5% |
+| natural | 106 / 120 | 107 / 120 | 89,2% |
+| policy | 29 / 31 | 29 / 31 | 93,5% |
+| kb3 development | 425 / 479 | 425 / 479 | 88,7% |
+| kb3 validation | 106 / 121 | 106 / 121 | 87,6% |
+| expansion development | 326 / 354 | 333 / 354 | 94,1% |
+| expansion validation | 142 / 185 | 145 / 185 | 78,4% |
+| Ngoài phạm vi, 80 câu ngoài lề (development 48 + validation 32) | 57 / 80 (34 + 23) | **72** / 80 (48 + 24) | 90,0% |
+| Đối chứng của bộ ngoài phạm vi (development 12 + validation 8) | 14 / 20 (9 + 5) | 17 / 20 (11 + 6) | 85,0% |
 
 Nhận xét:
 
-- **Bản 19 qua cổng:** so với bản 18, mọi bộ ra đúng số câu đạt như cũ, không câu nào từ đạt thành trượt. Hai lượt chạy cho kết quả giống nhau.
-- **natural2 tăng từ 98 lên 101** chỉ nhờ sửa cách chấm: ba câu bot trả lời đúng nhưng trích câu khác với đáp án mẫu. Cách chấm mới cho phép một câu có vài câu bằng chứng tương đương (`any_of`). Để so sánh công bằng, bản 19 được chấm lại bằng cách chấm mới trước khi dùng làm mốc cho bản 20.
-- **Expansion validation thấp hơn development** (76,8% so với 92,1%). Điều này đúng như mong đợi khi nhóm chỉ sửa theo phần development: phần validation đo khả năng **tổng quát** chứ không đo việc "học thuộc". Khoảng cách này cho thấy còn lỗi chưa được phát hiện ở phần development.
-- **Bộ ngoài phạm vi yếu nhất**, đây là lần chạy đầu, trước khi sửa. Các nhóm yếu: bài tập và giải toán (2/9), viết code (2/8), hỏi về cửa hàng khác (3/7). Kiểu sai hay gặp:
-  - Bot trả lời "chưa có nguồn", hoặc lôi tài liệu không liên quan ra (hỏi code Python thì trích bài về CPU), thay vì nói rõ là ngoài phạm vi.
-  - Bị chửi kiểu "bot ngu" thì bot hỏi lại "máy nào".
+- **Bản 22 qua cổng** so với cả bản 21 và bản 19: không có câu nào trước đạt mà sau trượt, ở cả 9 phần của các bộ. Hai lượt chạy cho kết quả giống hệt nhau.
+- **Cổng đã chặn được một lỗi thật.** Bản 20 thêm luật nhận diện câu đặt hàng. Điểm tăng mạnh (natural2 từ 101 lên 117), nhưng phần validation của bộ ngoài phạm vi mất 1 câu. Nhóm không mở câu đó; chỉ từ số đếm theo nhóm biết đó là câu về cửa hàng khác bị coi nhầm là đặt hàng. Luật được sửa ở bản 21 (nhờ đặt vé, phòng, đồ ăn, hay đặt trên sàn khác thì không phải đặt hàng của shop), và câu đó đúng trở lại.
+- **natural2 tăng từ 101 lên 117** nhờ sửa định tuyến: câu đặt hàng, câu hỏi thông tin nội bộ, câu chỉ trỏ chưa rõ máy nào. Trong 43 câu mở bị luật mới đổi quyết định, 24 câu từ trượt thành đạt, không câu nào từ đạt thành trượt.
+- **Bộ ngoài phạm vi: development tăng mạnh, validation tăng ít.** Sau khi thêm luật ngoài phạm vi (bản 22), phần development đạt 48/48, nhưng phần validation chỉ từ 23 lên 24/32. Theo số đếm theo nhóm, nhóm viết code ở validation vẫn 0/3. Luật bắt tốt kiểu câu đã thấy nhưng khái quát kém sang câu lạ. Nhóm **không** sửa luật theo phần validation, vì làm vậy thì validation không còn là phép đo khách quan nữa. Phần này để router học ở bản v6.
+- **Expansion validation vẫn thấp hơn development** (78,4% so với 94,1%). Đây là điều bình thường khi chỉ sửa theo phần development: validation đo khả năng **tổng quát**. Khoảng cách này cho thấy vẫn còn lỗi chưa lộ ra ở phần development.
 
 ### 3.10.3. Phân tích lỗi và cải tiến
 
@@ -1232,13 +1533,49 @@ Nhóm phân loại mỗi câu trượt theo nguyên nhân trước khi sửa:
 
 | Loại lỗi | Ví dụ | Cách sửa |
 |---|---|---|
-| Định tuyến sai | Đặt hàng qua chat bị coi là "cần công cụ ngoài" | Thêm luật `route_guard` (bản 20) |
+| Định tuyến sai | Đặt hàng qua chat bị coi là "cần công cụ ngoài" | Thêm luật `route_guard` (bản 20, sửa ở bản 21) |
 | Tìm sai tài liệu | Mã biến thể "B12M-081SG" bị lấn bởi dòng catalog "B12M" | Cho tài liệu riêng của mã biến thể cạnh tranh ngang với catalog |
 | Thiếu từ khóa chính sách | "giao trong bao lâu", "trả lại hàng" không được nhận là câu chính sách | Bổ sung từ khóa |
 | Chấm oan | Bot trích câu đúng nhưng khác đáp án mẫu | Cho phép đáp án thay thế (`any_of`) |
-| Ngoài phạm vi chưa nói rõ | Bài tập, code, câu chửi | Đang làm cho bản 21 |
+| Ngoài phạm vi chưa nói rõ | Bài tập, code, câu chửi | Thêm luật ngoài phạm vi (bản 22); câu lạ để router v6 học |
+| Nhãn đề cũ | Bộ đề ghi "hẹn lại" cho câu phép tính, nhưng máy tính SQL (`shop_calc`) đã tính đúng | Cổng không tính đây là lỗi; cần sửa nhãn của bộ đề |
 
-Phiên bản 20 (sửa định tuyến và cách chấm mới) đang được chạy trên Kaggle tại thời điểm viết báo cáo.
+**Lỗi do mô hình hay do code?** Trước khi quyết định có huấn luyện lại router hay không, nhóm viết script `failure_causes.py` để gán **một** nguyên nhân cho mỗi câu trượt ở phần development, theo thứ tự: hạ tầng → luật chặn sai → router chọn sai đường → tìm kiếm không ra tài liệu đúng → chọn sai câu trích → nói sai phạm vi. Kết quả trên bản 21 (trước khi thêm luật ngoài phạm vi):
+
+*Bảng 3.10. Nguyên nhân các câu development còn trượt ở bản 21*
+
+| Nguyên nhân | Số câu | Thuộc về |
+|---|---|---|
+| Router chọn sai đường | 27 (14 ở bộ ngoài phạm vi, 11 ở expansion, 2 ở natural) | Mô hình |
+| Chọn sai câu trích | 18 | Mô hình |
+| Nói sai phạm vi | 2 | Mô hình |
+| Tìm kiếm không ra tài liệu đúng | 8 | Code |
+
+Đọc kỹ thì 6 trong 11 câu "router sai" của expansion thật ra là **nhãn đề cũ**: máy tính SQL đã trả lời đúng. Ba trong 8 câu "tìm kiếm" có chung một nguyên nhân trong code: khi câu hỏi gắn với một sản phẩm, bot chỉ đưa bản ghi sản phẩm mà không đưa bài kỹ thuật liên quan. Quyết định của nhóm:
+
+1. 14 câu ngoài phạm vi: sửa bằng luật trước, vì rẻ hơn huấn luyện (bản 22).
+2. Phần lỗi do mô hình còn lại (chọn câu trích, router với câu lạ): đủ nhiều để huấn luyện bản v6.
+
+### 3.10.4. So sánh với mốc TF-IDF + hồi quy logistic
+
+Để trả lời câu hỏi "có cần LLM không, hay một bộ phân lớp đơn giản là đủ?", nhóm dựng một mốc so sánh: TF-IDF (từ 1–2 âm tiết, cộng ký tự 2–4) + hồi quy logistic có trọng số theo lớp, học từ 640 câu của dữ liệu router v5. Hướng xử lý mong đợi được quy về 7 nhãn (`facts`, `unknown`, `semantic` → `answer`). So sánh với hướng xử lý (`basic_action`) mà **cả hệ thống** bản 22 chọn:
+
+*Bảng 3.11. Mốc TF-IDF + hồi quy logistic so với cả hệ thống bản 22*
+
+| Phần dữ liệu | Số câu | Mô hình | Accuracy | Macro-F1 |
+|---|---|---|---|---|
+| Development (natural, natural2, policy, kb3, ngoài phạm vi) | 810 | TF-IDF + hồi quy logistic | 0,863 | 0,501 |
+| | | Cả hệ thống bản 22 | 0,996 | 0,949 |
+| Validation (kb3, expansion, ngoài phạm vi; chỉ xem số tổng) | 329 | TF-IDF + hồi quy logistic | 0,842 | 0,626 |
+| | | Cả hệ thống bản 22 | 0,930 | 0,828 |
+
+Cách đọc bảng:
+
+- Con số trên phần development **thiên vị hệ thống**, vì các luật được viết dựa trên chính các câu này. Phép so sánh công bằng là phần **validation**, nơi cả hai đều chưa từng nhìn thấy câu hỏi: hệ thống hơn mốc 0,20 macro-F1.
+- Đây là so sánh **cả hệ thống** (luật + Qwen3 4B), không phải riêng Qwen3 4B, vì đề tài dùng chúng cùng nhau. Mốc TF-IDF + hồi quy logistic cũng có thể được ghép thêm luật; khi đó khoảng cách sẽ nhỏ hơn.
+- Mốc học từ câu tự sinh, nên kém nhất ở các nhãn hiếm và ở câu ngoài phạm vi (Bảng 2.13). Đây đúng là điểm yếu của bộ phân lớp "túi từ" khi ít dữ liệu: không có từ khóa quen thì không đoán được.
+
+Script dựng lại bảng này nằm ở `Bao_Cao/cong_cu/moc_tfidf_logistic.py`.
 
 ## 3.11. Hạn chế và hướng phát triển
 
@@ -1248,34 +1585,39 @@ Phiên bản 20 (sửa định tuyến và cách chấm mới) đang được ch
 2. **Chính sách cửa hàng là bản soạn tạm**, cần thay bằng chính sách thật.
 3. **Ảnh sản phẩm chưa có quyền dùng thương mại.**
 4. **Tốc độ phụ thuộc phần cứng:** trên GPU T4 mỗi câu mất 3–4 giây, nhưng trên máy cá nhân thiếu RAM có câu mất tới 20–120 giây.
-5. **Bộ ngoài phạm vi** mới đạt 71,3%, cần cải thiện.
-6. **Bộ xếp lại (cross-encoder)** đã huấn luyện nhưng chưa bật, vì chưa qua hết các bộ đánh giá.
+5. **Câu ngoài phạm vi kiểu lạ:** phần development đạt 48/48 nhờ luật, nhưng phần validation chỉ 24/32; luật chưa khái quát được.
+6. **Router đang là mô hình gốc:** bản tinh chỉnh v5 chưa qua cổng; router chưa có ngưỡng tin cậy để tự chuyển sang hỏi lại khi không chắc.
+7. **Bộ xếp lại (cross-encoder)** đã huấn luyện nhưng chưa bật, vì chưa qua hết các bộ đánh giá.
+8. **Một số nhãn trong bộ đề đã cũ:** 6 câu phép tính của bộ expansion ghi "hẹn lại" trong khi máy tính SQL đã tính đúng.
 
 **Hướng phát triển:**
 
-1. Thu thập câu hỏi thật của khách (đã ẩn danh) để đánh giá và huấn luyện.
-2. Sửa nhóm câu ngoài phạm vi theo phần development, đo lại bằng phần validation.
-3. Tách lỗi còn lại thành "lỗi do mô hình" và "lỗi do code". Chỉ khi lỗi do mô hình chiếm phần đáng kể mới huấn luyện bản v6.
-4. Bật bộ xếp lại khi qua đủ cổng.
-5. Triển khai dịch vụ AI lên GPU trên cloud để web dùng ổn định.
-6. Khai thác thêm kho dữ liệu cho admin: dự báo nhu cầu, phân khúc khách hàng (RFM), luật kết hợp giữa các sản phẩm hay mua cùng nhau.
+1. Thu thập câu hỏi thật của khách (đã ẩn danh) để đánh giá và huấn luyện; khi có dữ liệu này thì thử PhoBERT tinh chỉnh làm bộ phân lớp ý định và so với mốc ở mục 3.10.4.
+2. Huấn luyện router bản v6 trên câu hỏi ngoài phạm vi viết mới (chưa từng xem bộ đánh giá), câu đối chứng và yêu cầu thao tác của admin; chỉ dùng nếu qua cổng so với bản 22.
+3. Thêm ngưỡng tin cậy cho router (mục 2.7): không chắc thì hỏi lại.
+4. Sửa lỗi tìm kiếm do code: khi câu hỏi gắn với một sản phẩm, vẫn cho bài kỹ thuật liên quan cạnh tranh với bản ghi sản phẩm.
+5. Thử đổi mô hình vector nhúng sang loại dùng RoPE, đọc được đoạn dài hơn (bge-m3, multilingual-e5), đo lại trên các bộ câu hỏi.
+6. Bật bộ xếp lại khi qua đủ cổng.
+7. Mở rộng phần trả lời số liệu theo hướng Text-to-SQL có kiểm tra (mục 1.7), giữ nguyên nguyên tắc chỉ đọc.
+8. Triển khai dịch vụ AI lên GPU trên cloud để web dùng ổn định.
+9. Khai thác thêm kho dữ liệu cho admin: dự báo nhu cầu, phân khúc khách hàng (RFM), luật kết hợp giữa các sản phẩm hay mua cùng nhau (ví dụ laptop → chuột ở mục 1.4.1).
 
 ## Tiểu kết Chương 3
 
 Chương 3 đã trình bày cách áp dụng lý thuyết vào chatbot TechStore:
 
 - Dữ liệu được ghi nguồn đầy đủ và tổ chức thành một kho dữ liệu nhỏ theo lược đồ chòm sao, nạp qua quy trình ETL có kiểm tra.
-- Câu hỏi đi qua luật chắc chắn trước, rồi qua bộ định tuyến Qwen3 4B tinh chỉnh LoRA. Tài liệu được tìm bằng truy xuất lai TF-IDF + BM25 + vector nhúng, trộn bằng RRF. Số liệu admin được tính bằng SQL.
-- Hệ thống được đo trên hơn 1.500 câu hỏi, tách development/validation, có cổng chống đi lùi. Bản 19 đạt 84–94% ở các bộ chính; bộ ngoài phạm vi còn yếu và đang được cải thiện.
+- Câu hỏi đi qua luật chắc chắn trước, rồi qua router Qwen3 4B bản gốc. Tài liệu được tìm bằng truy xuất lai TF-IDF + BM25 + vector nhúng, trộn bằng RRF. Bằng chứng cho câu hỏi sản phẩm được chọn bằng bản Qwen3 4B tinh chỉnh LoRA. Số liệu admin được tính bằng SQL.
+- Hệ thống được đo trên hơn 1.500 câu hỏi, tách development/validation, có cổng chống đi lùi. Bản 22 đạt 87,6–97,5% ở natural, natural2, policy, kb3 và expansion development; expansion validation đạt 78,4%; bộ ngoài phạm vi đạt 90,0% câu ngoài lề và 85,0% câu đối chứng. Trên phần validation, cả hệ thống hơn mốc TF-IDF + hồi quy logistic 0,20 macro-F1. Câu ngoài phạm vi kiểu lạ là điểm yếu còn lại, sẽ xử lý ở router v6.
 
 # KẾT LUẬN
 
 **Kết quả đạt được:**
 
 1. Về lý thuyết, báo cáo đã trình bày:
-   - Kho dữ liệu: định nghĩa, kiến trúc, mô hình nhiều chiều, OLAP, hai trường phái Inmon và Kimball.
-   - Khai phá dữ liệu: khái niệm, phân loại, quy trình KDD và CRISP-DM, tiền xử lý, lĩnh vực ứng dụng và hướng nghiên cứu.
-   - Các thuật toán của nhánh khai phá văn bản, truy xuất thông tin và phân lớp: TF-IDF, BM25, vector nhúng, RRF, kNN, Naive Bayes, hồi quy logistic, SVM, cây quyết định, transformer và LoRA. Có ví dụ tính tay cho TF-IDF, BM25, cosine, RRF và các độ đo đánh giá.
+   - Kho dữ liệu: định nghĩa, kiến trúc, mô hình nhiều chiều, thao tác OLAP và các kiểu máy chủ ROLAP/MOLAP/HOLAP, hai trường phái Inmon và Kimball, kiến trúc medallion.
+   - Khai phá dữ liệu: khái niệm, phân loại, luật kết hợp, quy trình KDD và CRISP-DM, tiền xử lý và tiêu chí chất lượng dữ liệu, lĩnh vực ứng dụng và hướng nghiên cứu (kể cả Text-to-SQL).
+   - Các thuật toán của nhánh khai phá văn bản, truy xuất thông tin và phân lớp: TF-IDF, BM25, vector nhúng, RRF, chia đoạn tài liệu, kNN, Naive Bayes, hồi quy logistic, SVM, cây quyết định, transformer và LoRA; cách xử lý nhãn lệch và ngưỡng tin cậy. Có ví dụ tính tay cho TF-IDF, BM25, cosine, RRF, Naive Bayes, entropy, luật kết hợp và các độ đo đánh giá.
 2. Về ứng dụng, đề tài đã:
    - Xây dựng được chatbot TechStore có dẫn nguồn, phân quyền khách và admin, trả lời số liệu bằng SQL.
    - Tổ chức dữ liệu thành kho dữ liệu nhỏ có ghi nguồn đầy đủ.
@@ -1284,6 +1626,7 @@ Chương 3 đã trình bày cách áp dụng lý thuyết vào chatbot TechStore
 **Bài học rút ra:**
 
 - **Dữ liệu và cách đo quan trọng không kém thuật toán.** Nhiều lần điểm tăng không phải nhờ đổi mô hình mà nhờ sửa dữ liệu, sửa luật định tuyến, hoặc sửa cách chấm.
+- **Điểm của một bộ phận không thay được phép đo cả hệ thống.** Router v5 chọn đúng 94,4% phần dev nhưng làm cả hệ thống đi lùi, nên không được dùng.
 - **Kết hợp nhiều phương pháp tốt hơn dựa vào một phương pháp:** luật cho ca chắc chắn, mô hình cho ca đa dạng, SQL cho con số, truy xuất lai cho tìm kiếm.
 - **Không tin điểm trên dữ liệu đã nhìn.** Khoảng cách giữa development và validation nhắc nhở rằng phải giữ một phần dữ liệu không đụng tới.
 
@@ -1364,6 +1707,36 @@ Chương 3 đã trình bày cách áp dụng lý thuyết vào chatbot TechStore
 [36] Ollama. [https://github.com/ollama/ollama](https://github.com/ollama/ollama)
 
 [37] F. Pedregosa, G. Varoquaux, A. Gramfort, et al., "Scikit-learn: Machine Learning in Python," *JMLR*, vol. 12, pp. 2825–2830, 2011.
+
+[38] M. H. Dao, T. H. Truong, D. Q. Nguyen, "Intent Detection and Slot Filling for Vietnamese," *Proc. INTERSPEECH*, 2021. [https://arxiv.org/abs/2104.02021](https://arxiv.org/abs/2104.02021); mã nguồn và bộ PhoATIS: [https://github.com/VinAIResearch/JointIDSF](https://github.com/VinAIResearch/JointIDSF)
+
+[39] L. Pham, T. Luu, T. Vo, M. Nguyen, V. Hoang, "VN-MTEB: Vietnamese Massive Text Embedding Benchmark," 2025. [https://arxiv.org/abs/2507.21500](https://arxiv.org/abs/2507.21500)
+
+[40] S. Bennani, C. Moslonka, "A Systematic Analysis of Chunking Strategies for Reliable Question Answering," 2026. [https://arxiv.org/abs/2601.14123](https://arxiv.org/abs/2601.14123)
+
+[41] T. Formal, B. Piwowarski, S. Clinchant, "SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking," *Proc. SIGIR*, 2021. [https://arxiv.org/abs/2107.05720](https://arxiv.org/abs/2107.05720)
+
+[42] O. Khattab, M. Zaharia, "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT," *Proc. SIGIR*, 2020. [https://arxiv.org/abs/2004.12832](https://arxiv.org/abs/2004.12832)
+
+[43] J. J. Rocchio, "Relevance Feedback in Information Retrieval," in G. Salton (ed.), *The SMART Retrieval System: Experiments in Automatic Document Processing*, Prentice-Hall, pp. 313–323, 1971.
+
+[44] T. Yu, R. Zhang, K. Yang, et al., "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task," *Proc. EMNLP*, 2018. [https://arxiv.org/abs/1809.08887](https://arxiv.org/abs/1809.08887)
+
+[45] R. Y. Wang, D. M. Strong, "Beyond Accuracy: What Data Quality Means to Data Consumers," *Journal of Management Information Systems*, vol. 12, no. 4, pp. 5–33, 1996.
+
+[46] Databricks, "What is a medallion architecture?" [https://www.databricks.com/glossary/medallion-architecture](https://www.databricks.com/glossary/medallion-architecture)
+
+[47] Apache Lucene, "BM25Similarity" (tài liệu API, bản 9.9). [https://lucene.apache.org/core/9_9_0/core/org/apache/lucene/search/similarities/BM25Similarity.html](https://lucene.apache.org/core/9_9_0/core/org/apache/lucene/search/similarities/BM25Similarity.html)
+
+[48] D. Brown, "rank_bm25: A collection of BM25 algorithms in Python," GitHub. [https://github.com/dorianbrown/rank_bm25](https://github.com/dorianbrown/rank_bm25)
+
+[49] dangvantuan, "vietnamese-embedding: config.json và sentence_bert_config.json," Hugging Face, bản `4ab46e4`. [https://huggingface.co/dangvantuan/vietnamese-embedding/tree/main](https://huggingface.co/dangvantuan/vietnamese-embedding/tree/main)
+
+[50] Y. Geifman, R. El-Yaniv, "Selective Classification for Deep Neural Networks," *NeurIPS*, 2017. [https://arxiv.org/abs/1705.08500](https://arxiv.org/abs/1705.08500)
+
+[51] J. Chen, S. Xiao, P. Zhang, et al., "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation," 2024. [https://arxiv.org/abs/2402.03216](https://arxiv.org/abs/2402.03216)
+
+[52] L. Wang, N. Yang, X. Huang, et al., "Multilingual E5 Text Embeddings: A Technical Report," 2024. [https://arxiv.org/abs/2402.05672](https://arxiv.org/abs/2402.05672)
 
 # PHỤ LỤC
 

@@ -13,6 +13,8 @@ from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.shared import Cm, Pt, RGBColor
 
 sys.stdout.reconfigure(encoding="utf8")
+# latex2mathml may be installed beside the scripts rather than in the environment.
+sys.path.append(str(Path(__file__).resolve().parent.parent / "pylib"))
 BASE = Path(__file__).resolve().parent.parent
 SRC, DST = BASE / "BaoCao.md", BASE / "BaoCao.docx"
 FONT, CODE_FONT = "Times New Roman", "Consolas"
@@ -210,15 +212,54 @@ def table(doc, rows):
                 shade(cell._tc.get_or_add_tcPr(), "DCE6F2")
     trpr = t.rows[0]._tr.get_or_add_trPr()
     h = OxmlElement("w:tblHeader"); h.set(qn("w:val"), "true"); trpr.append(h)
+    # A row never breaks across pages; a short table stays on one page with its caption.
+    for ri, row in enumerate(t.rows):
+        row._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
+        if len(t.rows) <= 15 and ri < len(t.rows) - 1:
+            for cell in row.cells:
+                for p in cell.paragraphs:
+                    p.paragraph_format.keep_with_next = True
     fmt(doc.add_paragraph(), after=4)
+
+
+def box_border(p, color="9AA3AE"):
+    # Same border on every line of a block: Word draws one frame around the consecutive paragraphs.
+    ppr = p._p.get_or_add_pPr()
+    borders = OxmlElement("w:pBdr")
+    for side in ("top", "left", "bottom", "right"):
+        b = OxmlElement(f"w:{side}")
+        b.set(qn("w:val"), "single"); b.set(qn("w:sz"), "6"); b.set(qn("w:space"), "4"); b.set(qn("w:color"), color)
+        borders.append(b)
+    ppr.append(borders)
 
 
 def code(doc, lines):
     size = 8.5 if max(len(l) for l in lines) > 80 else 9.5
     for i, l in enumerate(lines):
         p = fmt(doc.add_paragraph(), WD_ALIGN_PARAGRAPH.LEFT, after=0, line=1.0, left=0.5, keep=i < len(lines) - 1)
+        box_border(p)
         shade(p._p.get_or_add_pPr(), "F3F4F6")
         set_font(p.add_run(l if l else " "), CODE_FONT, size)
+    fmt(doc.add_paragraph(), after=2)
+
+
+MML2OMML = r"C:\Program Files\Microsoft Office\root\Office16\MML2OMML.XSL"
+_xslt = None
+
+
+def math(doc, lines):
+    """One Word equation (OMML) per LaTeX line: LaTeX -> MathML (latex2mathml) -> OMML (Office's own XSLT)."""
+    global _xslt
+    from lxml import etree
+    from latex2mathml.converter import convert
+    if _xslt is None:
+        _xslt = etree.XSLT(etree.parse(MML2OMML))
+    for i, latex in enumerate(l for l in lines if l.strip()):
+        omath = _xslt(etree.fromstring(convert(latex.strip()))).getroot()
+        para = etree.SubElement(etree.Element("dummy"), qn("m:oMathPara"))
+        para.append(omath)
+        p = fmt(doc.add_paragraph(), WD_ALIGN_PARAGRAPH.CENTER, before=2, after=4, line=1.0, keep=True)
+        p._p.append(para)
     fmt(doc.add_paragraph(), after=2)
 
 
@@ -288,7 +329,7 @@ def main():
             j = i + 1
             while not lines[j].strip().startswith("```"):
                 j += 1
-            code(doc, lines[i + 1:j]); i = j + 1; continue
+            (math if s == "```math" else code)(doc, lines[i + 1:j]); i = j + 1; continue
         if s.startswith("|"):
             j = i
             while j < len(lines) and lines[j].strip().startswith("|"):

@@ -23,13 +23,29 @@ C = {
 }
 
 
-def canvas(w, h):
+def canvas(w, h, text_scale=1.35):
+    # Diagrams are drawn on wide canvases and shrunk to 16 cm in Word, so their text is
+    # enlarged here: 9 pt on a 12-inch canvas would print at under 5 pt.
     fig, ax = plt.subplots(figsize=(w, h))
     ax.set_xlim(0, w)
     ax.set_ylim(0, h)
     ax.set_aspect("equal")
     ax.axis("off")
+    ax._text_scale = text_scale
     return fig, ax
+
+
+from matplotlib.axes import Axes
+_axes_text = Axes.text
+
+
+def _scaled_text(self, *args, **kwargs):
+    if "fontsize" in kwargs:
+        kwargs["fontsize"] *= getattr(self, "_text_scale", 1.0)
+    return _axes_text(self, *args, **kwargs)
+
+
+Axes.text = _scaled_text
 
 
 def box(ax, x, y, w, h, text, kind="proc", size=10, bold=False, align="center"):
@@ -99,7 +115,7 @@ def fig_dw_architecture():
         arrow(ax, right(b), left(etl))
     stg = box(ax, 5.5, 2.45, 1.7, 1.4, "Vùng tạm\n(Staging)", "data", 9.5)
     arrow(ax, right(etl), left(stg))
-    dw = box(ax, 7.8, 1.85, 2.2, 2.6, "KHO DỮ LIỆU\n\ntích hợp\ntheo chủ đề\ncó lịch sử\nít thay đổi", "data", 9.5, True)
+    dw = box(ax, 7.8, 1.85, 2.2, 2.6, "KHO DỮ LIỆU\n\ntích hợp\ntheo chủ đề\ncó lịch sử\nkhông thay đổi", "data", 9.5, True)
     arrow(ax, right(stg), left(dw))
     meta = box(ax, 7.8, 0.35, 2.2, 0.95, "Siêu dữ liệu\n(metadata)", "ext", 9)
     arrow(ax, top(meta), bottom(dw), style="<|-|>")
@@ -118,9 +134,9 @@ def fig_dw_architecture():
 
 def fig_star_schema():
     w, h = 12, 7.4
-    fig, ax = canvas(w, h)
+    fig, ax = canvas(w, h, 1.12)
     title(ax, w, h, "Lược đồ hình sao (star schema): một bảng sự kiện, nhiều bảng chiều")
-    fact = box(ax, 4.3, 2.4, 3.4, 2.7, "FACT_BAN_HANG\n─────────────\nma_ngay (FK)\nma_san_pham (FK)\nma_khach_hang (FK)\nma_cua_hang (FK)\n─────────────\nso_luong\ndoanh_thu\ngia_von", "key", 9.5, True)
+    fact = box(ax, 4.3, 2.2, 3.4, 3.1, "FACT_BAN_HANG\n─────────────\nma_ngay (FK)\nma_san_pham (FK)\nma_khach_hang (FK)\nma_cua_hang (FK)\n─────────────\nso_luong\ndoanh_thu\ngia_von", "key", 9.5, True)
     dims = [
         (0.3, 4.6, "DIM_NGAY\n────────\nma_ngay (PK)\nngay, thang\nquy, nam\nngay_le"),
         (8.6, 4.6, "DIM_SAN_PHAM\n────────\nma_san_pham (PK)\nten, hang\ndanh_muc\ngia_niem_yet"),
@@ -133,13 +149,13 @@ def fig_star_schema():
         fx = 4.3 if x < 4 else 7.7
         fy = 4.4 if y > 3 else 3.1
         arrow(ax, (fx, fy), (b[0] + (b[2] if x < 4 else 0), cy), style="-", lw=1.4)
-    ax.text(6.0, 1.75, "FK = khóa ngoại trỏ sang bảng chiều; PK = khóa chính", ha="center", fontsize=8.5, color="#555555")
+    ax.text(6.0, 0.15, "FK = khóa ngoại trỏ sang bảng chiều; PK = khóa chính", ha="center", fontsize=8.5, color="#555555")
     save(fig, "h1_2_luoc_do_hinh_sao.png")
 
 
 def fig_kdd():
-    w, h = 15, 4.6
-    fig, ax = canvas(w, h)
+    w, h = 15, 4.9
+    fig, ax = canvas(w, h, 1.6)
     title(ax, w, h, "Quy trình khám phá tri thức (KDD) theo Fayyad và cộng sự (1996)")
     names = ["Dữ liệu\nthô", "Dữ liệu\nmục tiêu", "Dữ liệu\nđã làm sạch", "Dữ liệu\nđã biến đổi", "Mẫu\n(pattern)", "Tri thức"]
     kinds = ["ext", "data", "data", "data", "model", "key"]
@@ -181,7 +197,7 @@ def fig_crisp():
 
 def fig_taxonomy():
     w, h = 15, 7.6
-    fig, ax = canvas(w, h)
+    fig, ax = canvas(w, h, 1.5)
     title(ax, w, h, "Phân loại các bài toán khai phá dữ liệu theo mục đích")
     root = box(ax, 6.0, 5.8, 3.0, 0.85, "Khai phá dữ liệu", "key", 11, True)
     pred = box(ax, 1.4, 4.3, 3.6, 0.85, "Dự đoán (predictive)\ncó nhãn, đoán giá trị mới", "proc", 9.5, True)
@@ -207,14 +223,22 @@ def fig_taxonomy():
 # ---------- Chapter 2 ----------
 
 def fig_text_pipeline():
-    w, h = 15.5, 3.9
+    # Two rows so the figure stays narrow: at 16 cm in Word the text prints at about 8 pt.
+    w, h = 9.4, 5.6
     fig, ax = canvas(w, h)
-    title(ax, w, h, "Các bước khai phá văn bản dùng trong truy xuất thông tin")
-    steps = [("Văn bản thô\n\"Bảo hành\nlaptop?\"", "ext"), ("Chuẩn hóa\nchữ thường,\nbỏ dấu", "proc"), ("Tách từ\n(token)", "proc"),
-             ("Biểu diễn\nTF-IDF, BM25,\nvector nhúng", "model"), ("Đo độ\ntương tự\ncosine", "proc"), ("Xếp hạng,\nlấy top-k", "proc"), ("Đoạn văn\nliên quan\nnhất", "data")]
-    bs = [box(ax, 0.2 + i * 2.2, 0.6, 1.85, 2.1, t, k, 9.2) for i, (t, k) in enumerate(steps)]
-    for i in range(len(bs) - 1):
-        arrow(ax, right(bs[i]), left(bs[i + 1]))
+    ax.text(w / 2, h - 0.2, "Các bước khai phá văn bản trong truy xuất thông tin", ha="center", va="top", fontsize=13, fontweight="bold")
+    top_row = [("1. Văn bản thô\n\"Bảo hành\nlaptop?\"", "ext"), ("2. Chuẩn hóa\nchữ thường,\nbỏ dấu", "proc"), ("3. Tách từ\n(token)", "proc"),
+               ("4. Biểu diễn\nTF-IDF, BM25,\nvector nhúng", "model")]
+    bottom_row = [("5. Đo độ\ntương tự\n(cosine)", "proc"), ("6. Xếp hạng,\nlấy top-k", "proc"), ("7. Đoạn văn\nliên quan\nnhất", "data")]
+    bw, bh, gap = 1.95, 1.45, 0.42
+    tb = [box(ax, 0.2 + i * (bw + gap), 3.0, bw, bh, t, k, 11) for i, (t, k) in enumerate(top_row)]
+    # The second row runs right to left under the first, ending under step 2.
+    bb = [box(ax, 0.2 + (3 - i) * (bw + gap), 0.55, bw, bh, t, k, 11) for i, (t, k) in enumerate(bottom_row)]
+    for i in range(len(tb) - 1):
+        arrow(ax, right(tb[i]), left(tb[i + 1]))
+    arrow(ax, bottom(tb[3]), top(bb[0]))
+    for i in range(len(bb) - 1):
+        arrow(ax, left(bb[i]), right(bb[i + 1]))
     save(fig, "h2_1_quy_trinh_khai_pha_van_ban.png")
 
 
@@ -224,19 +248,21 @@ def fig_vector_space():
     ax.set_ylim(0, 1.05)
     ax.set_xlabel('trọng số từ "bảo hành"', fontsize=10)
     ax.set_ylabel('trọng số từ "gaming"', fontsize=10)
-    vecs = {"Câu hỏi q": ((0.9, 0.25), "#B83A3A", (0.78, 0.29)), "D2: chính sách bảo hành": ((0.85, 0.12), "#2E8B57", (0.6, 0.155)),
-            "D1: laptop gaming": ((0.15, 0.9), "#2F6DB5", (0.16, 0.93))}
+    ax.set_xlim(0, 1.45)
+    ax.set_ylim(0, 1.08)
+    # Labels sit beyond each arrow tip, clear of the other arrows and the axes.
+    vecs = {"Câu hỏi q": ((0.9, 0.3), "#B83A3A", (0.93, 0.31)), "D2: chính sách bảo hành": ((0.85, 0.12), "#2E8B57", (0.88, 0.085)),
+            "D1: laptop gaming": ((0.15, 0.9), "#2F6DB5", (0.19, 0.92))}
     for name, ((x, y), col, (lx, ly)) in vecs.items():
         ax.annotate("", xy=(x, y), xytext=(0, 0), arrowprops=dict(arrowstyle="-|>", color=col, lw=2))
-        ax.text(lx, ly, name, color=col, fontsize=9.5, fontweight="bold")
-    a1 = math.degrees(math.atan2(0.25, 0.9))
+        ax.text(lx, ly, name, color=col, fontsize=10.5, fontweight="bold", va="center")
+    a1 = math.degrees(math.atan2(0.3, 0.9))
     a2 = math.degrees(math.atan2(0.12, 0.85))
     a3 = math.degrees(math.atan2(0.9, 0.15))
-    ax.add_patch(Arc((0, 0), 0.6, 0.6, theta1=a2, theta2=a1, color="#2E8B57", lw=1.5))
-    ax.add_patch(Arc((0, 0), 0.35, 0.35, theta1=a1, theta2=a3, color="#2F6DB5", lw=1.5))
-    ax.text(0.36, 0.005, "θ nhỏ → giống", color="#2E8B57", fontsize=9)
-    ax.text(0.11, 0.22, "θ lớn → khác", color="#2F6DB5", fontsize=9)
-    ax.set_title("Mô hình không gian vector: góc càng nhỏ, hai văn bản càng giống", fontsize=11, fontweight="bold")
+    ax.add_patch(Arc((0, 0), 0.7, 0.7, theta1=a2, theta2=a1, color="#2E8B57", lw=2.2, label="góc q – D2 nhỏ → giống nhau"))
+    ax.add_patch(Arc((0, 0), 0.4, 0.4, theta1=a1, theta2=a3, color="#2F6DB5", lw=2.2, label="góc q – D1 lớn → khác nhau"))
+    ax.legend(loc="upper right", fontsize=10, frameon=True)
+    ax.set_title("Mô hình không gian vector:\ngóc càng nhỏ, hai văn bản càng giống", fontsize=12, fontweight="bold")
     ax.grid(alpha=0.25)
     save(fig, "h2_2_khong_gian_vector.png")
 
@@ -244,20 +270,28 @@ def fig_vector_space():
 def fig_knn():
     import random
     rnd = random.Random(7)
-    fig, ax = plt.subplots(figsize=(6.4, 5.2))
-    a = [(rnd.gauss(0.32, 0.12), rnd.gauss(0.62, 0.12)) for _ in range(18)]
-    b = [(rnd.gauss(0.68, 0.12), rnd.gauss(0.36, 0.12)) for _ in range(18)]
-    ax.scatter(*zip(*a), c="#2F6DB5", s=45, label='Nhãn "hỏi sản phẩm"')
-    ax.scatter(*zip(*b), marker="s", c="#C46A1B", s=45, label='Nhãn "hỏi chính sách"')
-    q = (0.47, 0.5)
-    pts = [(p, "a") for p in a] + [(p, "b") for p in b]
-    near = sorted(pts, key=lambda t: math.dist(t[0], q))[:5]
-    rad = math.dist(near[-1][0], q)
-    ax.add_patch(Circle(q, rad, fill=False, ls="--", ec="#444444"))
-    ax.scatter([q[0]], [q[1]], marker="*", s=260, c="#B83A3A", label="Câu hỏi mới (chưa có nhãn)", zorder=5)
-    na = sum(1 for _, l in near if l == "a")
-    ax.set_title(f"kNN với k = 5: {na} láng giềng xanh, {5 - na} láng giềng cam → chọn nhãn đa số", fontsize=10.5, fontweight="bold")
-    ax.legend(fontsize=8.5, loc="upper right")
+    fig, ax = plt.subplots(figsize=(6.4, 5.6))
+    q, radius = (0.5, 0.5), 0.17
+    # The 5 nearest points are placed well inside the circle and every other point well outside,
+    # so "2 blue, 3 orange" can be counted on the printed page.
+    near_a = [(q[0] + r * math.cos(math.radians(t)), q[1] + r * math.sin(math.radians(t))) for r, t in ((0.09, 125), (0.12, 200))]
+    near_b = [(q[0] + r * math.cos(math.radians(t)), q[1] + r * math.sin(math.radians(t))) for r, t in ((0.07, 330), (0.10, 20), (0.11, 270))]
+    def far(cx, cy, n):
+        out = []
+        while len(out) < n:
+            p = (rnd.gauss(cx, 0.13), rnd.gauss(cy, 0.13))
+            if math.dist(p, q) > radius + 0.07 and 0.02 < p[0] < 0.98 and 0.02 < p[1] < 0.98:
+                out.append(p)
+        return out
+    a = near_a + far(0.27, 0.7, 16)
+    b = near_b + far(0.73, 0.3, 16)
+    ax.scatter(*zip(*a), c="#2F6DB5", s=55, label='Nhãn "hỏi sản phẩm" (xanh)', zorder=3)
+    ax.scatter(*zip(*b), marker="s", c="#C46A1B", s=55, label='Nhãn "hỏi chính sách" (cam)', zorder=3)
+    ax.add_patch(Circle(q, radius, fill=False, ls="--", ec="#444444", lw=1.4))
+    ax.scatter([q[0]], [q[1]], marker="*", s=300, c="#B83A3A", label="Câu hỏi mới (chưa có nhãn)", zorder=5)
+    ax.set_title("kNN với k = 5: trong vòng tròn có 2 điểm xanh, 3 điểm cam\n→ gán nhãn đa số: \"hỏi chính sách\"", fontsize=11.5, fontweight="bold")
+    ax.legend(fontsize=9.5, loc="upper center", bbox_to_anchor=(0.5, -0.02), ncol=1, frameon=False)
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1)
     ax.set_xticks([]); ax.set_yticks([])
     ax.set_aspect("equal")
     save(fig, "h2_3_knn.png")
@@ -297,7 +331,7 @@ def fig_rrf():
         ax.text(x + 1.0, 4.75, name, ha="center", fontsize=10, fontweight="bold")
         for i, item in enumerate(r):
             box(ax, x, 3.85 - i * 0.85, 2.0, 0.65, f"hạng {i + 1}: đoạn {item}", "data", 9)
-    rrf = box(ax, 8.2, 1.95, 1.4, 1.5, "RRF\nΣ 1/(60+hạng)", "key", 9.5, True)
+    rrf = box(ax, 8.0, 1.95, 1.9, 1.5, "RRF\nΣ 1/(60 + hạng)", "key", 9, True)
     ax.plot([7.75, 7.75], [1.3, 4.5], color="#444444", lw=1.3)
     for y in (4.17, 3.32, 2.47, 1.62):
         ax.plot([7.6, 7.75], [y, y], color="#444444", lw=1.0)
@@ -305,7 +339,7 @@ def fig_rrf():
     fused = [("B", 0.04865), ("A", 0.04840), ("C", 0.04789), ("D", 0.04712)]
     ax.text(11.6, 4.75, "Kết quả trộn", ha="center", fontsize=10, fontweight="bold")
     for i, (item, s) in enumerate(fused):
-        box(ax, 10.3, 3.85 - i * 0.85, 2.6, 0.65, f"{i + 1}. đoạn {item}  ({s:.5f})", "proc", 9)
+        box(ax, 10.3, 3.85 - i * 0.85, 2.6, 0.65, f"{i + 1}. đoạn {item}  ({format(s, '.5f').replace('.', ',')})", "proc", 9)
     arrow(ax, right(rrf), (10.3, 2.7))
     save(fig, "h2_5_tron_thu_hang_rrf.png")
 
@@ -315,9 +349,9 @@ def fig_lora():
     fig, ax = canvas(w, h)
     title(ax, w, h, "LoRA: giữ nguyên ma trận gốc W, chỉ học hai ma trận nhỏ A và B")
     x_in = box(ax, 0.3, 2.1, 1.4, 0.9, "đầu vào x", "ext", 9.5)
-    W = box(ax, 2.6, 3.0, 2.6, 1.4, "W (d × d)\nđóng băng\nkhông cập nhật", "data", 9.5, True)
-    A = box(ax, 2.6, 0.5, 1.15, 1.6, "A\n(r × d)\nhọc", "model", 9.5, True)
-    B = box(ax, 4.05, 0.5, 1.15, 1.6, "B\n(d × r)\nhọc", "model", 9.5, True)
+    W = box(ax, 2.6, 3.0, 2.6, 1.4, "W (d_out × d_in)\nđóng băng\nkhông cập nhật", "data", 9.5, True)
+    A = box(ax, 2.6, 0.5, 1.15, 1.6, "A\n(r × d_in)\nhọc", "model", 9.5, True)
+    B = box(ax, 4.05, 0.5, 1.15, 1.6, "B\n(d_out × r)\nhọc", "model", 9.5, True)
     plus = Circle((6.6, 2.55), 0.35, fc="white", ec="#444444", lw=1.4)
     ax.add_patch(plus); ax.text(6.6, 2.55, "+", ha="center", va="center", fontsize=16)
     out = box(ax, 7.6, 2.1, 2.9, 0.9, "h = W·x + (α/r)·B·A·x", "key", 9.5, True)
@@ -346,10 +380,10 @@ def fig_system():
     arrow(ax, bottom(be), top(fb), label="lỗi / quá 90 giây", size=8)
     ai = box(ax, 9.3, 3.7, 2.4, 2.6, "Dịch vụ AI\nFastAPI\n\n/api/chat/customer\n/api/chat/admin", "model", 9.2, True)
     arrow(ax, right(be), (9.3, 5.0), label="AI_SERVICE_URL", size=8)
-    ol = box(ax, 12.5, 5.6, 2.3, 1.0, "Ollama\nQwen3 4B + LoRA", "model", 9)
+    ol = box(ax, 12.5, 5.6, 2.3, 1.15, "Ollama: Qwen3 4B\nrouter: bản gốc\nchọn bằng chứng: LoRA", "model", 8.0)
     em = box(ax, 12.5, 4.3, 2.3, 1.0, "Dịch vụ vector\nvietnamese-\nembedding", "model", 8.8)
     db = box(ax, 12.5, 2.9, 2.3, 1.0, "shop.sqlite\n(dữ liệu shop)", "data", 9)
-    dc = box(ax, 12.5, 1.5, 2.3, 1.0, "259 tài liệu\n(manifest.json)", "data", 9)
+    dc = box(ax, 12.5, 1.5, 2.3, 1.0, "286 tài liệu\n(manifest.json)", "data", 9)
     for b in (ol, em, db, dc):
         arrow(ax, (11.7, 5.0), left(b), lw=1.0)
     ax.text(7.5, 0.5, "Web chạy trên Render; dịch vụ AI chạy riêng (máy cá nhân hoặc cloud GPU), web gọi qua biến AI_SERVICE_URL.", ha="center", fontsize=8.8, color="#555555")
@@ -363,7 +397,7 @@ def fig_sources():
     s = [("Trang chính thức của hãng\n(Intel, Kingston, Lenovo…)", 6.2), ("docyx/pc-part-dataset\n(GitHub, MIT)", 5.1), ("Ryans laptop\n(Kaggle, Apache 2.0)", 4.1),
          ("Bộ dữ liệu sàn TMĐT\n(Kaggle, UCI)", 2.7), ("Trang hãng và\nnhà bán lẻ (ảnh)", 1.4), ("Hugging Face\n(Qwen3, PhoBERT)", 0.3)]
     sb = [box(ax, 0.2, y, 3.3, 0.8, t, "ext", 8.8) for t, y in s]
-    docs = box(ax, 9.0, 5.6, 2.9, 1.3, "259 tài liệu RAG\n201 catalog, 43 kỹ thuật,\n10 sổ tay, 5 chính sách", "data", 8.8, True)
+    docs = box(ax, 9.0, 5.45, 2.9, 1.55, "286 tài liệu RAG\n201 catalog, 43 kỹ thuật,\n10 sổ tay, 5 chính sách,\n27 nội bộ", "data", 8.4, True)
     ps = box(ax, 5.0, 4.3, 2.9, 1.4, "products.sqlite\n67 sản phẩm\n(48 linh kiện + 19 laptop)", "data", 8.8, True)
     sim = box(ax, 5.0, 2.5, 2.9, 1.3, "Bộ mô phỏng (simulator)\nchỉ lấy phân phối\nthống kê", "proc", 8.8)
     sc = box(ax, 9.0, 2.5, 2.9, 1.3, "shop.sqlite (MÔ PHỎNG)\n1.427 đơn, 365 ngày tồn\n99 khoản chi", "data", 8.8, True)
@@ -384,7 +418,7 @@ def fig_sources():
 def fig_shop_schema():
     w, h = 15, 8.4
     fig, ax = canvas(w, h)
-    title(ax, w, h, "Lược đồ dữ liệu shop.sqlite: bảng sự kiện (vàng) và bảng chiều (xanh)")
+    title(ax, w, h, "Lược đồ shop.sqlite: sự kiện (vàng), chiều (xanh)")
     prod = box(ax, 5.9, 3.4, 3.2, 1.7, "products (67)\n──────────\nsku (PK), name, category\nprice, stock\n+ product_facts", "data", 8.8, True)
     facts = [
         (0.2, 6.2, "order_items (1.717)\nsku, quantity, list_price\ndiscount, revenue, cost"),
@@ -398,13 +432,15 @@ def fig_shop_schema():
         b = box(ax, x, y, 3.3, 1.35, t, "key", 8.6)
         arrow(ax, (b[0] + b[2] / 2, b[1] if y > 4 else b[1] + b[3]) if x == 5.9 else ((b[0] if x > 9 else b[0] + b[2]), b[1] + b[3] / 2),
               ((7.5, 5.1) if y > 4 else (7.5, 3.4)) if x == 5.9 else ((9.1 if x > 9 else 5.9), 4.25), style="-", lw=1.2)
-    dims = [(0.2, 3.9, "orders (1.427)\nday, channel\ncustomer_id, campaign_id"), (0.2, 1.9, "customers (1.200)\nsegment"),
+    # orders is the header part of the sale event (its id is a degenerate dimension in order_items), so it is drawn as an event.
+    box(ax, 0.2, 3.9, 3.3, 1.2, "orders (1.427): đầu đơn\nday, channel\ncustomer_id, campaign_id", "key", 8.4)
+    dims = [(0.2, 1.9, "customers (1.200)\nsegment"),
             (0.2, 0.2, "campaigns (3), suppliers (2)\noperating_expenses (99)\nmonthly_targets (12)")]
     for x, y, t in dims:
         box(ax, x, y, 3.3, 1.2 if y > 1 else 1.3, t, "data", 8.4)
     arrow(ax, (1.85, 6.2), (1.85, 5.1), style="-", lw=1.2)
     arrow(ax, (1.85, 3.9), (1.85, 3.1), style="-", lw=1.2)
-    ax.text(4.6, 2.55, "VIEW monthly_pnl:\ndoanh thu thuần, giá vốn,\nlãi gộp, chi phí, mục tiêu\ntheo tháng (tính bằng SQL)", ha="center", fontsize=8.4,
+    ax.text(4.65, 1.05, "VIEW monthly_pnl:\ndoanh thu thuần, giá vốn,\nlãi gộp, chi phí, mục tiêu\ntheo tháng (tính bằng SQL)", ha="center", fontsize=8.4,
             bbox=dict(fc="#F3ECFA", ec="#7B4FA8", boxstyle="round,pad=0.4"))
     save(fig, "h3_3_luoc_do_shop_sqlite.png")
 
@@ -440,22 +476,22 @@ def fig_question_flow():
     d3 = (6.5, 7.65)
     diamond(ax, *d3, 4.6, 1.1, "Luật chặn (route_guard)\nnhận ra trường hợp rõ?")
     arrow(ax, (6.5, 8.6), (6.5, 8.2))
-    r3 = box(ax, 10.0, 6.95, 2.7, 1.4, "đặt hàng → live_product\ngặp nhân viên → handoff\n\"con đó\" → clarify\nhãng lạ → unknown", "warn", 8.3)
+    r3 = box(ax, 9.75, 6.75, 3.15, 1.8, "đặt hàng → live_product\ngặp nhân viên → handoff\n\"con đó\" → clarify\nhãng lạ → unknown\nbài tập, code… → outside", "warn", 8.0)
     arrow(ax, (8.8, 7.65), left(r3), label="có", size=8)
     d4 = (6.5, 6.15)
     diamond(ax, *d4, 4.6, 1.1, "Tư vấn ngân sách /\ntra cứu sản phẩm?")
     arrow(ax, (6.5, 7.1), (6.5, 6.7))
     r4 = box(ax, 10.0, 5.75, 2.7, 0.8, "Lọc catalog trong\nshop.sqlite", "data", 8.8)
     arrow(ax, (8.8, 6.15), left(r4), label="có", size=8)
-    rt = box(ax, 4.6, 4.25, 3.8, 0.9, "Router: Qwen3 4B + LoRA chọn hành động\n(answer, clarify, outside, deferred …)", "model", 8.8, True)
+    rt = box(ax, 4.3, 4.2, 4.4, 1.0, "Router: Qwen3 4B (bản gốc)\nchọn answer, clarify, outside…", "model", 8.6, True)
     arrow(ax, (6.5, 5.3), top(rt))
-    ot = box(ax, 0.2, 4.25, 3.5, 0.9, "outside / clarify / deferred\n→ câu trả lời mẫu an toàn", "warn", 8.6)
+    ot = box(ax, 0.2, 4.25, 3.4, 0.9, "outside / clarify /\ndeferred → câu mẫu", "warn", 8.4)
     arrow(ax, left(rt), right(ot))
-    rv = box(ax, 4.6, 2.65, 3.8, 0.95, "Truy xuất lai: TF-IDF + BM25 + vector\n→ trộn RRF → lọc theo vai trò, kỳ", "proc", 8.8, True)
+    rv = box(ax, 4.3, 2.6, 4.4, 1.05, "Truy xuất lai: TF-IDF + BM25\n+ vector → RRF → lọc quyền", "proc", 8.6, True)
     arrow(ax, bottom(rt), top(rv), label="answer", size=8)
-    sel = box(ax, 4.6, 1.15, 3.8, 0.95, "Chọn câu bằng chứng (selector)\nchỉ trích nguyên văn tài liệu", "model", 8.8)
+    sel = box(ax, 4.3, 1.1, 4.4, 1.0, "Chọn câu bằng chứng: chỉ trích\nnguyên văn (SP: LoRA v1)", "model", 8.6)
     arrow(ax, bottom(rv), top(sel))
-    fin = box(ax, 4.6, 0.0, 3.8, 0.7, "Trả lời + nguồn trích dẫn", "key", 9.2, True)
+    fin = box(ax, 4.3, 0.0, 4.4, 0.7, "Trả lời + nguồn trích dẫn", "key", 9.2, True)
     arrow(ax, bottom(sel), top(fin))
     for d in (d1, d2, d3, d4):
         ax.text(d[0] - 0.15, d[1] - 0.72, "không", fontsize=8, color="#555555", ha="right", va="center")
@@ -463,7 +499,7 @@ def fig_question_flow():
 
 
 def fig_hybrid():
-    w, h = 15, 5.8
+    w, h = 15, 6.4
     fig, ax = canvas(w, h)
     title(ax, w, h, "Truy xuất lai (hybrid retrieval) trong retrieval.search")
     d = box(ax, 0.2, 2.2, 2.1, 1.4, "Tài liệu được\nphép xem\n(lọc vai trò, kỳ)", "data", 8.8)
@@ -506,22 +542,27 @@ def fig_train_eval():
 
 
 def fig_results():
-    banks = [("natural2\n(120 câu)", 101, 120), ("natural\n(120 câu)", 106, 120), ("policy\n(31 câu)", 29, 31),
-             ("kb3 dev\n(479 câu)", 425, 479), ("kb3 val\n(121 câu)", 106, 121), ("expansion dev\n(354 câu)", 326, 354),
-             ("expansion val\n(185 câu)", 142, 185), ("ngoài phạm vi\n(80 câu)", 57, 80)]
-    fig, ax = plt.subplots(figsize=(11, 4.8))
-    names = [b[0] for b in banks]
-    pct = [b[1] / b[2] * 100 for b in banks]
-    bars = ax.bar(names, pct, color=["#2F6DB5"] * 7 + ["#C46A1B"], width=0.62)
-    for bar, (n, p, t) in zip(bars, banks):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1.2, f"{p}/{t}\n{p * 1000 // t / 10 + (0.1 if p * 1000 % t * 2 >= t else 0):.1f}%", ha="center", fontsize=8.6)
-    ax.set_ylim(0, 112)
-    ax.set_ylabel("tỉ lệ câu đạt (%)")
-    ax.set_title("Kết quả bản đánh giá 19 trên Kaggle (natural2 chấm theo cách chấm mới)", fontsize=11.5, fontweight="bold")
+    # (name, v19 passed, v22 passed, total)
+    banks = [("natural2", 101, 117, 120), ("natural", 106, 107, 120), ("policy", 29, 29, 31),
+             ("kb3 dev", 425, 425, 479), ("kb3 val", 106, 106, 121), ("expansion\ndev", 326, 333, 354),
+             ("expansion\nval", 142, 145, 185), ("ngoài\nphạm vi", 57, 72, 80), ("đối\nchứng", 14, 17, 20)]
+    pct = lambda p, t: math.floor(p * 1000 / t + 0.5) / 10  # half up, so 57/80 shows 71.3
+    fig, ax = plt.subplots(figsize=(9.2, 4.9))
+    xs = range(len(banks))
+    wd = 0.38
+    ax.bar([x - wd / 2 for x in xs], [pct(b[1], b[3]) for b in banks], wd, color="#A9C1E3", label="Bản 19")
+    bars = ax.bar([x + wd / 2 for x in xs], [pct(b[2], b[3]) for b in banks], wd, color="#2F6DB5", label="Bản 22")
+    for bar, b in zip(bars, banks):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1.0, f"{pct(b[2], b[3]):.1f}".replace(".", ","), ha="center", fontsize=9.5)
+    ax.set_xticks(list(xs))
+    ax.set_xticklabels([b[0] for b in banks], fontsize=10)
+    ax.set_ylim(0, 108)
+    ax.set_ylabel("tỉ lệ câu đạt (%)", fontsize=10.5)
+    ax.set_title("Kết quả đánh giá trên Kaggle: bản 19 và bản 22 (số trên cột: bản 22)", fontsize=12, fontweight="bold")
     ax.spines[["top", "right"]].set_visible(False)
-    ax.tick_params(axis="x", labelsize=8.6)
     ax.grid(axis="y", alpha=0.25)
-    save(fig, "h3_8_ket_qua_ban_19.png")
+    ax.legend(fontsize=10, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=2, frameon=False)
+    save(fig, "h3_8_ket_qua_ban_22.png")
 
 
 for f in [fig_dw_architecture, fig_star_schema, fig_kdd, fig_crisp, fig_taxonomy, fig_text_pipeline, fig_vector_space, fig_knn,
