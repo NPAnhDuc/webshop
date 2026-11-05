@@ -21,9 +21,24 @@ def decide(question, role="customer", has_history=False, has_subject=None):
     "Đặt hộ mình cái laptop này nhé, chiều mình gửi tiền cọc.",
     "Mình vừa chuyển khoản xong, chốt đơn giúp mình.",
     "Lên đơn con chuột này cho mình, mai mình chuyển khoản.",
+    "Đặt giúp mình bản 16GB RAM nhé.",
+    "Đặt giúp em chiếc màn hình 27 inch, em chuyển khoản sau.",
 ])
 def test_an_order_placed_in_the_chat_goes_to_the_product_page(question):
     assert decide(question) == "live_product"
+
+
+@pytest.mark.parametrize("question", [
+    "Đặt giúp mình vé máy bay đi Đà Nẵng cuối tuần này.",
+    "Đặt hộ mình phòng khách sạn ở Đà Lạt được không?",
+    "Đặt giúp mình hai ly trà sữa nhé.",
+    "Đặt giúp tôi bàn 4 người tối nay.",
+    "Đặt hộ mình cái tai nghe trên Shopee, mai mình chuyển khoản.",
+    "Mình vừa chuyển khoản cho Lazada rồi mà chưa thấy đơn.",
+    "Chốt đơn giúp mình bên Thế Giới Di Động được không?",
+])
+def test_an_order_for_something_elsewhere_is_not_the_shops_order(question):
+    assert decide(question) != "live_product"
 
 
 @pytest.mark.parametrize("question", [

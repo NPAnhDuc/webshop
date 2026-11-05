@@ -73,12 +73,55 @@ def _asks_for_staff(text):
     return bool(staff and contact) and not _has(text, ("the nao", "bao lau", "quy trinh", "chinh sach", "co phai"))
 
 
+# Another seller or platform: an order there is outside the shop, not one to take through this chat.
+ELSEWHERE = re.compile(
+    r"\b(?:shopee|lazada|tiki|sendo|tiktok shop|amazon|ebay|taobao|grab(?:food)?|shopeefood|baemin|gojek"
+    r"|the gioi di dong|tgdd|dien may xanh|fpt shop|cellphones|phong vu|gearvn|shop khac|cua hang khac)\b")
+# What follows "đặt giúp": tickets, rooms, tables, food, rides and appointments are not the shop's goods.
+NOT_SOLD = re.compile(
+    r"(?:ve|khach san|phong|homestay|tour|ban an|ban \d+ nguoi|do an|com|tra sua|pizza|taxi|xe|lich|spa|hoa(?! don)|banh)\b")
+
+
 def _places_order(text):
     """Ordering, a deposit or a payment made through the chat; the shop takes orders on its product pages."""
     order = re.search(
         r"\bdat (?:mua )?(?:giup|ho)\b|\b(?:gui|chuyen) (?:tien )?coc\b|\b(?:da|vua) chuyen khoan\b"
         r"|\bchuyen khoan (?:roi|sau)\b|\bmai (?:minh |toi )?chuyen khoan\b|\b(?:chot|len|xac nhan) don\b", text)
-    return bool(order) and not _has(text, ("the nao", "lam sao", "cach", "quy trinh", "huong dan", "bao lau", "khi nao", "chinh sach"))
+    if not order or _has(text, ("the nao", "lam sao", "cach", "quy trinh", "huong dan", "bao lau", "khi nao", "chinh sach")):
+        return False
+    if ELSEWHERE.search(text):
+        return False
+    # Skip "mình", then a count and its unit: "đặt giúp mình hai ly trà sữa".
+    thing = re.match(r"\s*(?:(?:cho|giup|ho) )?(?:(?:minh|toi|em|anh|chi|tui) )?(?:(?:\d+|mot|hai|ba|bon|nam|vai) )?"
+                     r"(?:(?:ly|coc|phan|suat|hop|chai|chiec|cai|con) )?", text[order.end():])
+    return not (order.group().startswith("dat") and NOT_SOLD.match(text, order.end() + thing.end()))
+
+
+# Hardware, buying and the shop itself: a question touching any of these is the router's to decide.
+SHOP_TOPIC = re.compile(
+    r"\b(?:laptop|may tinh|pc|macbook|ram|cpu|chip|card|vga|gpu|man hinh|ssd|hdd|o cung|chuot|ban phim|tai nghe|loa|webcam"
+    r"|mainboard|bo mach|nguon|tan nhiet|quat|pin|sac|cau hinh|thong so|bao hanh|tra gop|doi tra|hoan tien|don hang"
+    r"|san pham|techstore|shop|cua hang|mua|bh"
+    # "may" is both "máy" and "mấy"; only a machine someone points at is the former.
+    r"|may (?:nay|do|kia|ay|cu|moi|minh|em|toi|con))\b")
+# Homework, coding, insults and money or health advice: whole requests outside a computer shop.
+OFF_TOPIC = re.compile(
+    r"\b(?:giai (?:bai|toan|he )?(?:phuong trinh|bat phuong trinh)|phuong trinh|dao ham|tich phan|nguyen ham|luong giac"
+    r"|van toc|gia toc|dinh luat|dinh ly|thuyet (?:tuong doi|tien hoa|luong tu)|dan y|bai van|nghi luan|van mau"
+    r"|bai tap (?:toan|ly|hoa|van|tieng anh|ve nha)|dich (?:sang|ra) tieng)\b"
+    r"|\b(?:viet|cho minh|lam|sua|fix|debug)(?: \w+){0,3}? (?:code|regex|script|doan ma|chuong trinh|thuat toan)\b|\bregex\b"
+    r"|\bbot (?:ngu|ngoc|dot|vo dung)\b|\bngu (?:the|vay|qua)\b|\bvo dung\b|\bnhu cut\b|\b(?:dm|dmm|vcl|clm)\b"
+    r"|\bvay (?:tieu dung|tin chap|the chap|ngan hang|mua nha)\b|\bgui tiet kiem\b|\bco phieu\b|\bchung khoan\b|\bbitcoin\b"
+    r"|\buong thuoc\b|\bbac si\b|\bly hon\b|\bluat su\b")
+# Streaming and other services the shop has nothing to do with.
+SERVICES = re.compile(r"\b(?:netflix|spotify|youtube premium|disney)\b")
+
+
+def _off_topic(text):
+    """A request with nothing of the shop in it: homework, code, insults, another platform."""
+    if SHOP_TOPIC.search(ELSEWHERE.sub(" ", text)):
+        return False
+    return bool(OFF_TOPIC.search(text) or ELSEWHERE.search(text) or SERVICES.search(text))
 
 
 # A product the user points at without naming it: "con màu đen đó", "chiếc nhỏ hơn", "cái ấy".
@@ -229,6 +272,8 @@ def guard(question, role, has_history=False, known_products=(), vocabulary=(), h
         ):
             return "denied"
 
+        if _off_topic(text):
+            return "outside"
         if _places_order(text):
             return "live_product"
         if _asks_for_staff(text):
@@ -260,6 +305,8 @@ def guard(question, role, has_history=False, known_products=(), vocabulary=(), h
             return "unknown_product"
 
     if role == "admin":
+        if _off_topic(text):
+            return "outside"
         if _admin_requests_calculation(text) and not _has(text, ("chi doc", "khong tinh", "khong can tinh", "doc so lieu")):
             return "deferred"
         if _admin_requests_write(text):
