@@ -32,12 +32,12 @@ COUNT_WORDS = re.compile(r"\btop\s*[1-5]\b|\b(?:[1-5]|mot|hai|ba)\s+(?=thang|ken
 # "mỗi ngày", "nếu"), and the answer would be a right number for another question.
 COMMON_WORDS = frozenset("la bao nhieu duoc cua trong thi vay the nhi a nhe oi shop minh toi ta cho hoi biet xem giup tinh tien dong tong co va so voi mang lai".split())
 _FILTER = "kenh danh muc nhom qua tai o tu"
-_CHANGE = f"chenh lech nhau tang giam hay thay doi cao thap nhieu it lon nho hon {_FILTER}"
+_CHANGE = f"chenh lech nhau tang giam hay thay doi bien dong ra sao the nao cao thap nhieu it lon nho hon {_FILTER}"
 OPERATION_WORDS = {
     "difference": frozenset(_CHANGE.split()),
     "pct_change": frozenset((_CHANGE + " phan tram truong").split()),
     "ratio": frozenset("ty le phan tram theo bien binh quan trung moi tren chia don luot hoan tra hang san pham da ban tong luong chiem quy doi ra may".split()),
-    "rank": frozenset(f"top xep cao lon nhieu thap it nhat thang nao {_FILTER}".split()),
+    "rank": frozenset(f"top xep cao lon nhieu thap it nhat thang nao cac {_FILTER}".split()),
     "filter": frozenset(_FILTER.split()),
     "total": frozenset("gop tong cong so con".split()),
     "target_difference": frozenset("thuc hien cao hay thap hon ke hoach".split()),
@@ -232,7 +232,7 @@ def _operation(q: str, filtered: bool) -> tuple[str | None, str | None]:
             and re.search(r"\b(?:cao|thap) hon\b", q) and re.search(r"\bbao nhieu\b", q)):
         return "target_difference", None
 
-    comparison_terms = r"(?:chenh(?:\s+(?:lech|nhau))?|lech|tang|giam|thay doi)"
+    comparison_terms = r"(?:chenh(?:\s+(?:lech|nhau))?|lech|tang|giam|thay doi|bien dong)"
     if ((re.search(r"\btong\b", q) or re.search(r"\bgop\s+chi phi\b", q))
             and len(list(MENTION.finditer(q))) >= 2
             and not re.search(rf"\b{comparison_terms}\b", q)):
@@ -240,6 +240,9 @@ def _operation(q: str, filtered: bool) -> tuple[str | None, str | None]:
 
     if re.search(rf"\b{comparison_terms}\b", q) and re.search(r"%|phan tram", q):
         return "pct_change", None
+    relative_previous = re.search(r"\bso voi\s+(?:thang|quy|ky)\s+(?:lien\s+)?truoc(?:\s+do)?\b", q)
+    if relative_previous and (re.search(rf"\b{comparison_terms}\b", q) or re.search(r"\b(?:ra sao|the nao)\b", q)):
+        return "difference", None
     if re.search(rf"\b(?:chenh(?:\s+(?:lech|nhau))?|lech|tang bao nhieu|giam bao nhieu|thay doi bao nhieu)\b", q):
         return "difference", None
     if re.search(r"\b(?:cao|thap|nhieu|it|lon|nho) hon\b", q) and re.search(r"\bbao nhieu\b", q):
@@ -253,6 +256,69 @@ def _operation(q: str, filtered: bool) -> tuple[str | None, str | None]:
     if filtered and re.search(r"\b(?:doanh thu|dt|lai gop|loi nhuan gop|lg)\b", q):
         return "filter", None
     return None, None
+
+
+def _previous_period(period: str) -> str:
+    if "-Q" in period:
+        year, quarter = map(int, period.split("-Q"))
+        return f"{year - (quarter == 1):04}-Q{(quarter - 2) % 4 + 1}"
+    year, month = map(int, period.split("-"))
+    return f"{year - (month == 1):04}-{(month - 2) % 12 + 1:02}"
+
+
+def _relative_comparison_periods(question: str, scope: dict, reference: date) -> list[str] | None:
+    """Resolve one named/relative anchor and its immediately preceding like period."""
+    q = normalize(question)
+    relation = re.search(r"\bso voi\s+(thang|quy|ky)\s+(?:lien\s+)?truoc(?:\s+do)?\b", q)
+    if not relation:
+        return None
+    explicit = _parse_mentions(question, {"reference_date": reference.isoformat(), "months": [], "quarters": []})
+    anchor = explicit[0] if len(explicit) == 1 else None
+    if len(explicit) > 1:
+        return None
+
+    before_relation = q[:relation.start()]
+    if anchor is None and re.search(r"\bthang\s+(?:nay|hien tai)\b", before_relation):
+        anchor = f"{reference.year:04}-{reference.month:02}"
+    if anchor is None and re.search(r"\bquy\s+(?:nay|hien tai)\b", before_relation):
+        anchor = f"{reference.year:04}-Q{(reference.month - 1) // 3 + 1}"
+    if anchor is None and re.search(r"\bthang\s+(?:vua roi|vua qua|truoc)\b", before_relation):
+        anchor = _previous_period(f"{reference.year:04}-{reference.month:02}")
+    if anchor is None and re.search(r"\bquy\s+(?:vua roi|vua qua|truoc)\b", before_relation):
+        anchor = _previous_period(f"{reference.year:04}-Q{(reference.month - 1) // 3 + 1}")
+    if anchor is None:
+        scoped_months = list(scope.get("months", []))
+        scoped_quarters = list(scope.get("quarters", []))
+        if len(scoped_months) == 1 and not scoped_quarters:
+            anchor = scoped_months[0]
+        elif len(scoped_quarters) == 1 and not scoped_months:
+            anchor = scoped_quarters[0]
+    if anchor is None:
+        return None
+
+    is_quarter = "-Q" in anchor
+    requested_unit = relation[1]
+    if (requested_unit == "month" and is_quarter) or (requested_unit == "quy" and not is_quarter):
+        return None
+    return [anchor, _previous_period(anchor)]
+
+
+def _relative_period_supported(period: str, reference: date) -> bool:
+    if _validated_period(period, reference):
+        return True
+    try:
+        start, end, _ = _range(period)
+    except (ValueError, IndexError):
+        return False
+    if start == DATA_END and start <= reference:
+        return True
+    next_month = _month_bounds(f"{reference.year:04}-{reference.month:02}")[1]
+    return start == next_month
+
+
+def _missing_relative_period(period: str, other: str) -> str:
+    return (f"Chưa thể so sánh vì {_label(period)} chưa có đủ dữ liệu giao dịch; "
+            f"chưa tính chênh lệch với {_label(other)}.")
 
 
 def _ranking_months(q: str, scope: dict, reference: date) -> list[str] | None:
@@ -282,17 +348,25 @@ def calc_request(question, role, scope) -> dict | None:
     operation, ratio_kind = _operation(q, bool(category or channel))
     if operation is None:
         return None
+    reference = date.fromisoformat(scope.get("reference_date", date.today().isoformat()))
+    relative_periods = _relative_comparison_periods(question, scope, reference)
     base_first, from_to = _base_named_first(q)
     metric_hint = _metric(q)
     allow_return_adjustment = metric_hint == "revenue" or ratio_kind in {"refund_share_of_revenue", "revenue_per_order"}
-    if not _understood(rest, operation, from_to, allow_return_adjustment):
+    understood_rest = rest
+    if relative_periods:
+        understood_rest = re.sub(r"\bso voi\s+(?:thang|quy|ky)\s+(?:lien\s+)?truoc(?:\s+do)?\b", " ", understood_rest)
+        understood_rest = re.sub(r"\b(?:thang|quy)\s+(?:nay|hien tai|vua roi|vua qua|truoc)\b", " ", understood_rest)
+    if not _understood(understood_rest, operation, from_to, allow_return_adjustment):
         return None
-    reference = date.fromisoformat(scope.get("reference_date", date.today().isoformat()))
     mentions = _parse_mentions(question, scope)
 
     if operation in {"difference", "pct_change"}:
+        if relative_periods:
+            mentions = relative_periods
         if len(mentions) != 2 or any(not _validated_period(p, reference) for p in mentions):
-            return None
+            if not relative_periods or not all(_relative_period_supported(p, reference) for p in mentions):
+                return None
         if ("-Q" in mentions[0]) != ("-Q" in mentions[1]):
             return None
         metric = _metric(q)
@@ -300,7 +374,8 @@ def calc_request(question, role, scope) -> dict | None:
             return None
         periods = mentions[::-1] if base_first else mentions
         return {"operation": operation, "metric": metric, "periods": periods, "category": category,
-                "channel": channel, "reference_date": reference.isoformat()}
+                "channel": channel, "reference_date": reference.isoformat(),
+                "relative_period_comparison": bool(relative_periods)}
 
     if operation == "target_difference":
         metric = _metric(q)
@@ -342,7 +417,7 @@ def calc_request(question, role, scope) -> dict | None:
     count_match = re.search(r"\btop\s*([1-5])\b|\b([1-5])\s+(?:thang|kenh|danh muc|nhom)\b", q)
     count_words = re.search(r"\b(mot|hai|ba)\s+(?:thang|kenh|danh muc|nhom)\b", q)
     count = int(count_match[1] or count_match[2]) if count_match else {"mot": 1, "hai": 2, "ba": 3}[count_words[1]] if count_words else 1
-    if re.search(r"\bthang\s+(?:nao|cao nhat|thap nhat)\b|\b(?:\d+|mot|hai|ba)\s+thang\b", q):
+    if re.search(r"\bthang\s+(?:nao|co|cao nhat|thap nhat)\b|\b(?:cac|\d+|mot|hai|ba)\s+thang\b", q):
         entity = "month"
     elif re.search(r"\b(?:danh muc|nhom hang)\b", q):
         entity = "category"
@@ -357,9 +432,12 @@ def calc_request(question, role, scope) -> dict | None:
             return None
         if (category or channel) and metric not in {"revenue", "gross_profit"}:
             return None
+        limit = count
+        if re.search(r"\bxep hang\b", q) and count_match is None and count_words is None:
+            limit = len(candidates)
         return {"operation": "rank", "metric": metric, "entity": entity, "periods": candidates,
                 "category": category, "channel": channel, "whole_year": not quarter_only,
-                "direction": direction, "limit": count, "reference_date": reference.isoformat()}
+                "direction": direction, "limit": limit, "reference_date": reference.isoformat()}
     if category or channel or metric not in {"revenue", "gross_profit"} or count > 3:
         return None
     if len(mentions) != 1 or not _validated_period(mentions[0], reference):
@@ -478,7 +556,19 @@ def _calculate(db_path, request: dict):
         periods = request["periods"]
         if periods[0] == periods[1]:
             return "Hai kỳ được hỏi giống nhau nên không thể tính chênh lệch.", rows, sources
-        reports = [_analyze(db_path, p) for p in periods]
+        if request.get("relative_period_comparison"):
+            reference = date.fromisoformat(request["reference_date"])
+            for period in periods:
+                if not _validated_period(period, reference):
+                    return _missing_relative_period(period, periods[1] if period == periods[0] else periods[0]), rows, sources
+            reports = []
+            for period in periods:
+                try:
+                    reports.append(_analyze(db_path, period))
+                except ValueError:
+                    return _missing_relative_period(period, periods[1] if period == periods[0] else periods[0]), rows, sources
+        else:
+            reports = [_analyze(db_path, p) for p in periods]
         filtered = request.get("category") or request.get("channel")
         values = [_group_value(db_path, report, period, request.get("category"), request.get("channel"), request["metric"]) if filtered
                   else _value(report, request["metric"])[0] for report, period in zip(reports, periods)]
@@ -497,7 +587,12 @@ def _calculate(db_path, request: dict):
             rows = [{"period": p, "value": v, "unit": unit} for p, v in zip(periods, values)]
             rows.append({"period": "chênh lệch", "value": result, "unit": unit})
             first, second = _label(periods[0]), _label(periods[1])
-            text = f"{name} {first}: {_format(values[0], unit)}; {second}: {_format(values[1], unit)}; chênh lệch ({first} trừ {second}): {_format(result, unit)} ({first} {'cao hơn' if result > 0 else 'thấp hơn' if result < 0 else 'bằng'})."
+            if request.get("relative_period_comparison"):
+                direction = "tăng" if result > 0 else "giảm" if result < 0 else "không đổi"
+                text = (f"{name} {first}: {_format(values[0], unit)}; {second}: {_format(values[1], unit)}; "
+                        f"chênh lệch ({first} trừ {second}): {_format(result, unit)} ({direction} so với {second}).")
+            else:
+                text = f"{name} {first}: {_format(values[0], unit)}; {second}: {_format(values[1], unit)}; chênh lệch ({first} trừ {second}): {_format(result, unit)} ({first} {'cao hơn' if result > 0 else 'thấp hơn' if result < 0 else 'bằng'})."
         sources = [_source(period, request["metric"]) for period in periods]
         return text, rows, sources
 

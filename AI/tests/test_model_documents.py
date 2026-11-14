@@ -48,19 +48,22 @@ def test_an_article_titled_with_the_model_code_survives_product_isolation(monkey
     assert expected in fragments(selector)
 
 
-def test_isolation_still_drops_articles_about_other_things(monkeypatch):
+def test_isolation_keeps_generic_memory_articles_when_catalog_is_missing(monkeypatch):
     _, selector = ask(monkeypatch, "LOQ 15IRH8 có mấy khe SO-DIMM, dùng RAM DDR5 phải không?", types=("product", "glossary"))
-    assert "DIMM thường dùng ở máy bàn" not in fragments(selector)
+    assert "DIMM thường dùng ở máy bàn" in fragments(selector)
 
 
-@pytest.mark.parametrize("question", [
-    "LOQ 15IRH8 có mấy khe SO-DIMM, dùng RAM DDR5 phải không?",
-    "Lenovo LOQ Gaming 15IRH8 dùng DDR5 hay DDR4 vậy?",
+@pytest.mark.parametrize("question,generic_ddr5_offered", [
+    ("LOQ 15IRH8 có mấy khe SO-DIMM, dùng RAM DDR5 phải không?", True),
+    ("Lenovo LOQ Gaming 15IRH8 dùng DDR5 hay DDR4 vậy?", False),
 ])
-def test_a_technology_named_in_the_question_is_not_a_model(monkeypatch, question):
+def test_a_technology_named_in_the_question_is_not_a_model(monkeypatch, question, generic_ddr5_offered):
     result, selector = ask(monkeypatch, question, types=("product", "glossary"))
     assert "evidence: isolated to bound product records" in result["trace"]
-    assert "on-die ECC" not in fragments(selector)
+    # Generic explanations can supplement missing catalog values without
+    # becoming articles about the bound model.
+    assert not about_model(dict(title="DDR5 là gì?"), question, [dict(title="Lenovo LOQ Gaming 15IRH8")])
+    assert ("on-die ECC" in fragments(selector)) is generic_ddr5_offered
     assert "cắm chung" not in fragments(selector)
 
 
@@ -123,6 +126,7 @@ def test_the_catalog_pass_does_not_lose_lines_to_the_article_budget(monkeypatch)
     _, calls = selector_calls(monkeypatch, SLOTS, decide)
     assert ARTICLE in fragments(calls[1])
     monkeypatch.setattr(retrieval, "about_model", lambda *_: False)
+    monkeypatch.setattr(grounded_rag, "generic_product_article", lambda *_: False)
     _, without_articles = selector_calls(monkeypatch, SLOTS, decide)
     assert len(without_articles) == 1
     assert calls[0]["fragments"] == without_articles[0]["fragments"]

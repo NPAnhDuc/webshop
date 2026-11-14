@@ -3,10 +3,13 @@
 Facts are rendered exclusively from approved, role-filtered source fragments. No
 generated SQL, financial calculation, tool execution or unconstrained fact writing.
 """
-import os,re,time
+import os,re,time,unicodedata
 from .retrieval import search,normalize
 from .rag_scope import resolve_scope
 from .rag_answer import chat,evidence_fragments,canonical
+
+RERANK_TOP_MIN=0.0
+RERANK_TOP_MARGIN=3.0
 
 # Short instructions plus typed SOURCE labels are easier for the local 4B than
 # asking it to remember arbitrary fragment IDs and a long list of routing prose.
@@ -89,7 +92,38 @@ def customer_story(question):
 
 POLICY_TOPIC=re.compile(r'\b(?:bao hanh|bh|tr gop|ship|shipper|free ?ship|mo hop|den bu|hang gia|ve tinh|doi tra|doi hang|doi mau|doi the nao|tra hang|tra lai|hoan tien|tien hoan|tra gop|giao hang|giao nhanh|giao ve|giao tre|giao trong|nhan hang|ngay lam viec|'
                         r'phi ship|phi giao|mien phi ship|khuyen mai|uu dai|kiem tra hang|lap pc|lap dat|ve sinh may|gia tren web)\b')
+ADMIN_BUSINESS_TERMS=re.compile(
+    r'\b(?:bien gop|bien loi nhuan|bien toi thieu|gia von|gia ban toi thieu|'
+    r'muc giam|giam toi da|giam gia toi da|cong don|hang ton|ton kho|ton tren|'
+    r'xa hang|xa kho|nhap hang|nha cung cap|dat hang ncc|duyet gia|xin duyet|'
+    r'phe duyet|chinh sach gia|quy dinh gia)\b'
+)
+LIVE_SIGNAL=re.compile(
+    r'\b(?:gia|bao nhieu tien|tien|re nhat|dat nhat|chot gia|khoa gia|giam gia|'
+    r'con hang|het hang|ton|con khong|co san|san hang|so luong|giu|dat|coc|'
+    r'chuyen khoan|thanh toan|mua|chot|xac nhan|don|hom nay|bay gio|ngay luc nay|'
+    r'hien tai|toi nay|chieu nay|ngan sach|trieu|tr|nghin|dong|vnd)\b|'
+    r'\b\d+(?:[.,]\d+)?\s*k\b'
+)
 CALCULATION=re.compile(r'\b(?:moi (?:thang|ky)|tinh(?! sao| the nao)|tong)\b')
+ACCENTED_CALCULATION=re.compile(r'\b(?:tính|tổng|mỗi (?:tháng|kỳ))\b')
+UNACCENTED_NONCALC_TINH=re.compile(
+    r'\b(?:o tinh|ve tinh|cac tinh|tinh thanh|tinh khac|ngoai tinh|noi tinh|'
+    r'lien tinh|tinh xa|tinh/thanh|tinh trang|tinh hinh|tinh nang)\b'
+)
+
+
+def asks_calculation(question):
+    """Recognize calculation words without treating accented homophones as verbs."""
+    if not isinstance(question,str):return False
+    raw=question.casefold()
+    if any(unicodedata.category(char)=='Mn' for char in unicodedata.normalize('NFD',raw)):
+        # These are ordinary phrases even though they begin with the verb form.
+        raw=re.sub(r'\btính\s+(?:sao|thế nào|năng)\b',' ',raw)
+        return bool(ACCENTED_CALCULATION.search(raw))
+    normalized=normalize(question)
+    normalized=UNACCENTED_NONCALC_TINH.sub(' ',normalized)
+    return bool(CALCULATION.search(normalized))
 # Shop shorthand the documents spell out; lexical search cannot match "bh" to "bảo hành".
 SHORTHAND=((r'\bbh\b','bảo hành'),(r'\bsp\b','sản phẩm'),(r'\btr gop\b','trả góp'),(r'\bfree ?ship\b','miễn phí giao hàng'),
            (r'\bship(?:per)?\b','giao hàng'),(r'\bbn\b','bao nhiêu'),(r'\bdc\b','được'),(r'\bko\b','không'))
@@ -112,6 +146,56 @@ def ledger_source(text):
 def spell_out(text):
     for short,full in SHORTHAND:text=re.sub(short,full,text,flags=re.I)
     return text
+
+
+def catalog_value_request(question,products=()):
+    """Preserve value lookups by default; defer explicit conceptual requests."""
+    q=normalize(question)
+    q=re.sub(r'^\s*(?:shop|ban|ad|admin|anh|chi|em) oi\b[\s,]*','',q)
+    for title in sorted(products,key=len,reverse=True):
+        q=q.replace(normalize(title),' ')
+        q=q.replace(normalize(re.sub(r'\s*\([^)]*\)','',title)).strip(),' ')
+    # Reading the same field on two explicitly named products is still a
+    # value lookup, unlike comparing the meaning of two technologies.
+    comparison=len(products)>1 and bool(re.search(r'\bkhac (?:gi )?nhau\b',q))
+    if comparison:q=re.sub(r'\bkhac (?:gi )?nhau\b',' ',q)
+    conceptual=(r'\b(?:giai thich|nghia|y nghia|vi sao|tai sao|vi dau|ly do|'
+                r'khac|so sanh|cach|nguyen ly|hoat dong|loi ich|loi the|tac dung|cong dung|'
+                r'cong viec|tac vu|kieu viec|'
+                r'can (?:kiem tra|xac minh|xac nhan|biet|doi chieu)|phai (?:kiem tra|biet|chon|xac nhan)|'
+                r'nen (?:quan tam|chon|xem)|dung de)\b')
+    if re.search(conceptual,q):return False
+    if re.search(r'\b(?:lay|cap phat|chia se|luu|giu)\b.+\b(?:bo nho|du lieu)\b',q):return False
+    if re.search(r'\b(?:tinh|doi|quy doi|quy thanh)\b.+\b(?:ram|vram)\b',q):return False
+    if re.match(r'^\s*(?:thunderbolt|ddr\d+|usb(?:-c)?|wi-fi|wifi|pcie|nvme)\b',q):return False
+    return True
+
+
+def generic_product_article(document,question,products,known_names=()):
+    """Keep relevant technology explanations, never a different model's specs."""
+    if document.get('doc_type') not in ('glossary','buying_guide'):return False
+    title=normalize(document.get('title',''))
+    heading=title.split(':',1)[0].strip()
+    if not heading:return False
+    # A code-less family title can still identify a catalog product.
+    owners=[normalize(product.get('title','')) for product in products]
+    names=[normalize(name) for name in known_names]+owners
+    if any(re.search(r'(?<!\w)'+re.escape(heading)+r'(?!\w)',name) for name in names):
+        return any(re.search(r'(?<!\w)'+re.escape(heading)+r'(?!\w)',name) for name in owners)
+    codes=[token for token in re.findall(r'[a-z0-9-]+',title)
+           if len(token)>=3 and re.search(r'[a-z]',token) and re.search(r'\d',token)]
+    protocol=r'(?:ddr|usb|wifi|pcie|nvme)\d+(?:[a-z])?|\d+(?:gb|tb|hz|mhz|ghz|wh|w|fps)'
+    if any(not re.fullmatch(protocol,code) for code in codes):return False
+    # Search has already ranked relevance. A code-less unknown family title
+    # in mixed case is an entity rather than a generic technology heading.
+    original_heading=document.get('title','').split(':',1)[0]
+    if re.search(r'[a-z][A-Z]',original_heading):
+        tokens=re.findall(r'\b[\w-]+\b',heading)
+        # A family name alone cannot transfer a different processor/generation.
+        return any(all(re.search(r'(?<!\w)'+re.escape(token)+r'(?!\w)',
+                                 normalize(product.get('title','')+' '+product.get('text','')))
+                       for token in tokens) for product in products)
+    return True
 
 
 def expanded_types(preferred,role):
@@ -185,11 +269,29 @@ def answer(question,role,profile,db,today,model=None):
                                                   period=item['period'],metric=item['metric'])]) for item in calculated['sources'][:1]]
             result['rag'].update(claims=claims,method='deterministic SQL calculation',calculation=calculated['rows'])
             return result
+        from .plan_reader import answer_plan,plan_request
+        plan=plan_request(question,role,calc_scope)
+        if plan:
+            if calc_scope['months'] or calc_scope['quarters']:p['rag_scope']=calc_scope
+            planned=answer_plan(plan)
+            base['trace'].append('plan: target read by code (no router, no model selection)')
+            if planned['source']:
+                base['sources']=[planned['source']]
+            result=finish(planned['answer'],planned['answerability'],'answer')
+            if planned['claim']:
+                result['rag'].update(claims=[planned['claim']],method='deterministic approved-plan lookup')
+            else:
+                result['rag'].update(method='deterministic approved-plan lookup',period=planned['period'])
+            return result
     # Clear boundaries need no model; a question the guard is unsure of goes to the router.
     from .product_lookup import product_names
     from .route_guard import corpus_words,guard
     known=product_names(db)
     decision=guard(question,role,bool(p.get('history') or p.get('rag_product_subject')),known,corpus_words(),bool(p.get('rag_product_subject')))
+    if decision=='outside' and any(re.search(r'(?<!\w)'+re.escape(normalize(name))+r'(?!\w)',q) for name in known if name):
+        # An exact catalog name supplies the hardware context even when a
+        # substring also resembles an off-topic phrase. Let the router decide.
+        decision=None;base['trace'].append('route guard: outside reconsidered for named catalog product')
     if decision=='unknown_product':
         if known:
             base['trace'].append('route guard: product not in the catalog')
@@ -288,13 +390,34 @@ def answer(question,role,profile,db,today,model=None):
         # A fine-tuned router deferred "báo cáo tháng X và tháng Y" readings once it
         # had seen returns calculations; a negated "không tính …" is no calculation.
         asked=re.sub(r'\bkhong (?:can |phai )?(?:tinh|cong|tru|so sanh)\b[^,.;?]*','',q)
+        # "Báo cáo … ghi …" reads what the report records; drop only that "ghi",
+        # never the words between, which may themselves ask for a calculation.
+        asked=re.sub(r'(\bbao cao\b[^,.;?]*?)\bghi\b',r'\1',asked)
+        asked_preserving_accents=re.sub(
+            r'\bkhông (?:cần |phải )?(?:tính|cộng|trừ|so sánh)\b[^,.;?]*','',question.casefold())
+        asked_preserving_accents=re.sub(
+            r'\bkhong (?:can |phai )?(?:tinh|cong|tru|so sanh)\b[^,.;?]*','',asked_preserving_accents)
         if (route['action']=='deferred' and role=='admin' and scope['months'] and 'bao cao' in q
-                and not re.search(r'\b(?:tinh|cong|tru|tong|trung binh|ty le|phan tram|chenh lech|tang|giam|xep hang|du bao|ve (?:bieu do|do thi|anh)|bieu do|do thi|truy van|sql|nhap|dat hang|ghi|cap nhat|sua|xoa|xuat)\b|%',asked)):
+                and not re.search(r'\b(?:cong|tru|tong|trung binh|ty le|phan tram|chenh lech|tang|giam|xep hang|du bao|ve (?:bieu do|do thi|anh)|bieu do|do thi|truy van|sql|nhap|dat hang|ghi|cap nhat|sua|xoa|xuat)\b|%',asked)
+                and not asks_calculation(asked_preserving_accents)):
             route.update(action='answer',types=['monthly_report'])
             base['trace'].append('router deferred overridden: reading confirmed monthly reports, no calculation asked')
-        if shop_policy and route['action'] in ('deferred','live_product','outside','clarify') and not CALCULATION.search(q):
+        if shop_policy and route['action'] in ('deferred','live_product','outside','clarify') and not asks_calculation(question):
             route.update(action='answer',types=['policy'])
             base['trace'].append('router overridden: shop policy is read from documents')
+        if (role=='customer' and route['action']=='live_product' and not p.get('history')
+                and not p.get('rag_product_subject') and not p.get('rag_subject')
+                and not LIVE_SIGNAL.search(q)):
+            route.update(action='answer',types=['product'])
+            base['trace'].append('router live_product overridden: no price, stock or order asked')
+        if role=='admin' and route['action']=='live_product':
+            route.update(action='deferred')
+            base['trace'].append('router live_product overridden: admin requests go to deferred')
+        if route['action'] in ('outside','clarify') and p.get('rag_product_subject'):
+            from .product_specs import asked_subject_fields
+            if asked_subject_fields(question,p['rag_product_subject']):
+                route.update(action='answer',types=['product'])
+                base['trace'].append('router overridden: follow-up names a field of the bound product')
         if route['action']!='answer':
             result=finish(ACTION_TEXT[route['action']],route['action'],route['action']);result['timings']['router_ms']=router_ms
             return result
@@ -322,6 +445,15 @@ def answer(question,role,profile,db,today,model=None):
     # A customer reads no internal document, so a route only to those would find nothing.
     internal={'procedure','strategy','sales_plan','marketing','monthly_report','meeting'}
     if (shop_policy or (role!='admin' and set(preferred)<=internal)) and preferred and 'policy' not in preferred:preferred=[*preferred,'policy']
+    named_catalog_product=any(
+        re.search(r'(?<!\w)'+re.escape(normalize(name))+r'(?!\w)',q)
+        for name in known if name
+    )
+    technical_types={'product','glossary','buying_guide'}
+    if (role=='admin' and not requested_types and preferred and set(preferred)<=technical_types
+            and not named_catalog_product and ADMIN_BUSINESS_TERMS.search(q)):
+        preferred=list(dict.fromkeys([*preferred,'policy','procedure']))
+        base['trace'].append('admin business terms: technical route widened to policy documents')
     if role=='admin' and rule_question and not requested_types and preferred and set(preferred)<={'monthly_report'}:
         # "Is it correct to …" asks for a rule; monthly reports only hold
         # figures, and twelve of them would crowd out every rule document.
@@ -330,6 +462,10 @@ def answer(question,role,profile,db,today,model=None):
     plain_query=spell_out(query)
     docs=search(plain_query,role,db_path=db,as_of=today,top_k=12,scope=scope,historical=historical,doc_types=preferred or None)
     broader_types=expanded_types(preferred,role)
+    if 'product' in preferred and any(d.get('doc_type')=='product' and d.get('retrieval')=='explicit named product' for d in docs):
+        # Mixed routes (e.g. product + policy) still need technical context for
+        # a bound model; retain every originally requested source type.
+        broader_types=sorted(set(broader_types)|{'product','glossary','buying_guide'})
     if not requested_types and preferred and set(broader_types)!=set(preferred) and not (route and route.get('strict')):
         broader=search(plain_query,role,db_path=db,as_of=today,top_k=12,scope=scope,historical=historical,doc_types=broader_types)
         seen={d['chunk_id'] for d in docs}
@@ -412,9 +548,11 @@ def answer(question,role,profile,db,today,model=None):
         from .retrieval import about_model
         asked_model=normalize(query)
         bound=[d for d in docs if d.get('document_id') in owned]
-        isolated=[d for d in docs if d.get('document_id') in owned or (d.get('doc_type')!='product' and about_model(d,asked_model,bound))]
+        isolated=[d for d in docs if d.get('document_id') in owned or (d.get('doc_type')!='product' and
+                  (about_model(d,asked_model,bound) or generic_product_article(d,query,bound,known)))]
         if isolated:
             docs=isolated;product_isolated=True;base['trace'].append('evidence: isolated to bound product records')
+    rerank_scores={}
     def bounded_evidence(docs):
         fragments=evidence_fragments(docs)
         fragments={k:v for k,v in fragments.items() if not normalize(v['text']).startswith(('nguon:','doi chieu:','tai lieu tham khao ben ngoai;','thong so mo rong tu danh muc'))}
@@ -464,6 +602,8 @@ def answer(question,role,profile,db,today,model=None):
                 response=requests.post(endpoint+'/rerank',json=dict(query=query if product_subject else question,texts=texts),timeout=(3,60))
                 response.raise_for_status();scores=response.json()['scores']
                 if len(scores)!=len(head):raise ValueError('Reranker score count mismatch')
+                for value,score in zip(head,scores):
+                    rerank_scores[(value['source']['chunk_id'],value['text'])]=round(float(score),4)
                 order=sorted(range(len(head)),key=lambda i:-scores[i])
                 best_regular=max((scores[i] for i in range(len(head)) if not head[i]['source'].get('soft_extra')),default=float('-inf'))
                 order=[i for i in order if not head[i]['source'].get('soft_extra') or scores[i]>best_regular]
@@ -501,7 +641,7 @@ def answer(question,role,profile,db,today,model=None):
         # "B12M-408AU" is a regional variant of the catalog's B12M; its line may not apply.
         catalog_names=normalize(' '.join(products))
         variant=any(code not in catalog_names for code in re.findall(r'(?<![\w-])[a-z0-9]*\d[a-z0-9]*-[a-z0-9]+(?![\w-])',q))
-        lines=None if variant else pick_fields(question,list(evidence_fragments([d for d in docs if d.get('document_id') in owned]).values()),products)
+        lines=None if variant or not catalog_value_request(question,products) else pick_fields(question,list(evidence_fragments([d for d in docs if d.get('document_id') in owned]).values()),products)
         if lines:
             held={(v['source']['chunk_id'],v['text']):k for k,v in fragments.items()}
             picked=[]
@@ -568,6 +708,8 @@ Không chọn câu phụ, miễn trách nhiệm chung, URL hay thông tin liên 
         if not isinstance(exc,(requests.RequestException,ValueError,KeyError,TypeError)):raise
         base['trace'].append('evidence controller unavailable: '+type(exc).__name__)
         return finish('Model local chưa chọn được bằng chứng đủ chắc chắn. Bạn thử lại giúp tôi nhé.','unverified','unavailable')
+    selector_raw=dict(answers={k:list(v or []) for k,v in selection['answers'].items()},
+                      missing=list(selection['missing']),negative=list(selection['negative']))
     base['plan']=dict(action=action,query=query,task=route.get('task','lookup') if route else 'lookup',doc_types=preferred,category='all',private_request=action=='denied',parts=part_ids,scope=scope)
     messages={
         'outside':'Tôi hỗ trợ mua sắm máy tính và tra tài liệu cửa hàng. Bạn muốn hỏi sản phẩm hay chính sách nào?',
@@ -579,6 +721,22 @@ Không chọn câu phụ, miễn trách nhiệm chung, URL hay thông tin liên 
     if action in messages:
         if action=='denied':base['intent']='denied'
         return finish(messages[action],action if action in ['outside','handoff','denied'] else 'deferred',action)
+    scored_fragments=[(score,key) for key,value in fragments.items()
+                      if (score:=rerank_scores.get((value['source']['chunk_id'],value['text']))) is not None]
+    if not picked and len(scored_fragments)>=2:
+        ranked_fragments=sorted(scored_fragments,key=lambda item:-item[0])
+        top_score,top_id=ranked_fragments[0]
+        second_score=ranked_fragments[1][0]
+        selected_any=any(selection['answers'].get(key) for key in part_ids)
+        selected_top=any(top_id in (selection['answers'].get(key) or []) for key in part_ids)
+        if (top_score>=RERANK_TOP_MIN and top_score-second_score>=RERANK_TOP_MARGIN
+                and selected_any and not selected_top):
+            target=next((key for key in part_ids if not selection['answers'].get(key)),next(iter(part_ids)))
+            answers={key:list(selection['answers'].get(key) or []) for key in part_ids}
+            answers[target].append(top_id)
+            missing=[key for key in selection['missing'] if key!=target]
+            selection=dict(selection,answers=answers,missing=missing)
+            base['trace'].append('evidence: reranker top fragment added to selector picks')
     p['document_query']=query
     from .period_binding import bind_monthly_parts
     period_answers,period_bindings=bind_monthly_parts(question,part_ids,selection['answers'],fragments,scope,today)
@@ -669,7 +827,12 @@ Không chọn câu phụ, miễn trách nhiệm chung, URL hay thông tin liên 
                          field_bindings=field_bindings,scope_checks=scope_checks,period_bindings=period_bindings,
                          calculations=([{k:v for k,v in calculation.items() if k!='source'}] if calculation else [])+[{k:v for k,v in r.items() if k!='source'} for r in validity or []],
                          code_bindings=code_bindings,
-                         available_fields=[dict(id=k,document_id=v['source'].get('document_id')) for k,v in fragments.items()],
+                         available_fields=[dict(id=k,document_id=v['source'].get('document_id'),
+                                                 chunk_id=v['source'].get('chunk_id'),
+                                                 text=v['text'].removeprefix(v['source'].get('title','')+': ')[:300],
+                                                 rerank_score=rerank_scores.get((v['source'].get('chunk_id'),v['text'])))
+                                           for k,v in fragments.items()],
+                         selector_raw=selector_raw,
                          method='scoped retrieval and per-part source selection'),
                 timings=dict(router_ms=router_ms,retrieval_ms=round((model_start-retrieval_start)*1000,1),model_ms=round((time.monotonic()-model_start)*1000,1),total_ms=round((time.monotonic()-start)*1000,1)))
     return base

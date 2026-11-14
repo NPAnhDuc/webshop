@@ -40,7 +40,8 @@ def resolve_scope(question,today,previous=None):
     elif 'thang truoc' in q:
         month_pairs=[(reference.year-(reference.month==1),(reference.month-2)%12+1)]
     elif re.search(r'\bthang (?:nay|hien tai)\b',q):month_pairs=[(reference.year,reference.month)]
-    elif not month_pairs and re.search(r'\b(?:hai thang do|cung thang do|thang do|ky do|ky vua noi)\b',q):
+    elif not month_pairs and (re.search(r'\b(?:hai thang do|cung thang do|thang do|ky do|ky vua noi)\b',q)
+                              or re.search(r'\bcung thang\b(?!\s*(?:\d|nam (?:truoc|ngoai|sau)|cua nam|ky))',q)):
         month_pairs=[tuple(map(int,x.split('-'))) for x in previous_months]
     if 'quy truoc' in q:
         current=(reference.month-1)//3+1

@@ -6,6 +6,8 @@ lines are already labelled, so the server can pick them. Anything it is unsure o
 (a field it cannot name, a yes/no check, an opinion) returns None for the selector.
 """
 import re
+from functools import lru_cache
+from pathlib import Path
 from .retrieval import normalize
 
 # Labels the catalog keeps in English, longest wording first so "loại RAM" is not read as "RAM".
@@ -56,6 +58,40 @@ def _asked(q, labels):
             asked.append(label)
             q = re.sub(pattern, ' ', q)
     return asked
+
+
+@lru_cache(maxsize=256)
+def subject_field_labels(title):
+    """Normalized field labels from the latest catalog version for a title."""
+    if not isinstance(title, str) or not title:
+        return frozenset()
+    root = Path(__file__).resolve().parents[1] / 'data' / 'unstructured' / 'managed'
+    latest = {}
+    for path in root.rglob('catalog-*-v*.md'):
+        match = re.fullmatch(r'catalog-(.+)-v(\d+)\.md', path.name)
+        if not match:
+            continue
+        key, version = match[1], int(match[2])
+        if key not in latest or version > latest[key][0]:
+            latest[key] = (version, path)
+    matches = []
+    for version, path in latest.values():
+        lines = path.read_text(encoding='utf-8').splitlines()
+        if lines and lines[0] == f'# {title}':
+            matches.append((version, path.name, lines))
+    if not matches:
+        return frozenset()
+    _, _, lines = max(matches, key=lambda item: (item[0], item[1]))
+    labels = set()
+    for line in lines:
+        label = _label(dict(source=dict(title=title), text=line))
+        if label:
+            labels.add(label)
+    return frozenset(labels)
+
+
+def asked_subject_fields(question, title):
+    return _asked(normalize(question), subject_field_labels(title))
 
 
 def pick_fields(question, fragments, products):

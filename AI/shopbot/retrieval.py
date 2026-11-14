@@ -74,7 +74,11 @@ def about_model(document,question,products):
     # Containment keeps a regional variant: "b12m-081sg" belongs to the catalog's "b12m".
     if normalize(document.get('title','?')) in question:return True
     held=[code for product in products for code in product_codes(product.get('title',''))]
-    return any(re.search(r'(?<!\w)'+re.escape(token)+r'(?!\w)',question) and any(token in code or code in token for code in held)
+    return any((re.search(r'(?<!\w)'+re.escape(token)+r'(?!\w)',question) and any(token in code or code in token for code in held))
+               or (document.get('doc_type') in ('glossary','buying_guide') and any(
+                   token.startswith(code+'-') and re.search(r'(?<!\w)'+re.escape(code)+r'(?!\w)',question)
+                   and not any(asked.startswith(code+'-') and asked!=token for asked in re.findall(r'[a-z0-9-]+',question))
+                   for code in held))
                for token in product_codes(document.get('title','')))
 
 
@@ -158,6 +162,11 @@ def search(question, role, extra_dir=None, db_path=DB, as_of=None, doc_types=Non
         if names:
             documents=[d for d in documents if (d.get('doc_type')!='product' or d['document_id'] in names)
                        and (not product_codes(d.get('title','')) or not codes or bool(codes.intersection(product_codes(d.get('title',''))))
+                            or (d.get('doc_type') in ('glossary','buying_guide') and any(
+                                (variant.startswith(code+'-') and not any(
+                                    asked.startswith(code+'-') and asked!=variant for asked in re.findall(r'[a-z0-9-]+',q)))
+                                or code.startswith(variant+'-')
+                                for variant in product_codes(d.get('title','')) for code in codes))
                             or named_product(d,q))]
     for document in documents:
         import os

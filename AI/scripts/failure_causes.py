@@ -9,7 +9,7 @@ from collections import Counter, defaultdict
 from pathlib import Path, PurePosixPath
 
 EVAL_ROOT = Path(__file__).resolve().parents[1] / "evaluation"
-CAUSE_ORDER = ("ha_tang", "luat", "router", "tim_kiem", "chon_cau", "pham_vi", "khac")
+CAUSE_ORDER = ("ha_tang", "nhan_de_cu", "luat", "router", "tim_kiem", "chon_cau", "pham_vi", "khac")
 ZIP_RE = re.compile(r"^(?P<bank>.+)__kaggle_(?P<run>.+)_(?P<split>development|validation|all)\.zip$", re.I)
 LOCKED_BANKS = {"expansion_20261029", "offtopic_20261103"}
 HELDOUT_MARKER = "heldout_20261028"
@@ -103,6 +103,16 @@ def classify_failure(case, row):
     behavior = case.get("expected_behavior")
     if "INFRASTRUCTURE" in causes:
         return "ha_tang"
+    issues = checks.get("issues")
+    rag = result.get("rag") or {}
+    method = rag.get("method") if isinstance(rag, dict) else None
+    if (
+        isinstance(issues, list) and issues
+        and all(isinstance(issue, dict) and issue.get("cause") == "ROUTING" for issue in issues)
+        and behavior == "deferred"
+        and isinstance(method, str) and method.startswith("deterministic SQL")
+    ):
+        return "nhan_de_cu"
     wrong_handling = "ROUTING" in causes or (behavior == "facts" and action != "answer")
     if wrong_handling:
         return "luat" if has_law_trace(trace) else "router"
@@ -183,9 +193,12 @@ def summarize(results_dir, include_locked=False):
                 "steps": relevant_steps(sample),
             })
 
-    development_totals = {"do_model": 0, "do_code": 0, "other": 0}
+    development_totals = {"do_model": 0, "do_code": 0, "other": 0, "nhan_de_cu": 0}
     for record in case_records:
         cause = record["cause"]
+        if cause == "nhan_de_cu":
+            development_totals["nhan_de_cu"] += 1
+            continue
         target = "do_model" if cause in ("router", "chon_cau", "pham_vi") else "do_code" if cause in ("luat", "tim_kiem") else "other"
         development_totals[target] += 1
     group_rows = [

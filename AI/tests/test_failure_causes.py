@@ -167,3 +167,39 @@ def test_zip_without_results_json_is_reported_by_name(tmp_path, monkeypatch):
     assert sources == [] and skipped == [path.name] and locked == 0
     report = summarize(results_dir)
     assert report["skipped_missing_results"] == [path.name]
+
+
+def test_old_labels_and_totals_use_only_synthetic_archives(tmp_path, monkeypatch):
+    cases = [make_case(name, behavior) for name, behavior in (
+        ("old", "deferred"), ("router", "deferred"), ("law", "deferred"),
+        ("mixed", "deferred"), ("facts", "facts"), ("infra", "deferred"),
+        ("empty", "deferred"), ("malformed", "deferred"),
+        ("validation-private", "deferred"),
+    )]
+    cases[-1]["split"] = "validation"
+    rows = [make_row(case, cause="ROUTING") for case in cases]
+    for row in rows:
+        row["result"]["rag"] = {"method": "deterministic SQL custom calculation"}
+    rows[0]["result"]["trace"] = ["route guard: checked"]
+    rows[1]["result"]["rag"]["method"] = "model"
+    rows[2]["result"]["rag"]["method"] = None
+    rows[2]["result"]["trace"] = ["route guard: blocked"]
+    rows[3]["checks"]["issues"].append({"cause": "SELECTION_OR_CHUNKING"})
+    rows[5]["checks"]["issues"].append({"cause": "INFRASTRUCTURE"})
+    rows[6]["checks"]["issues"] = []
+    rows[7]["checks"]["issues"].append("invalid issue")
+    assert [classify_failure(case, row) for case, row in zip(cases, rows)] == [
+        "nhan_de_cu", "router", "luat", "router", "router", "ha_tang",
+        "khac", "router", "nhan_de_cu",
+    ]
+    results_dir = setup_eval(tmp_path, monkeypatch, "sample_bank", cases)
+    write_zip(results_dir / "sample_bank__kaggle_r1_all.zip", rows)
+    report = summarize(results_dir)
+    assert report["development_totals"] == {
+        "do_model": 4, "do_code": 1, "other": 2, "nhan_de_cu": 1,
+    }
+    assert report["validation_counts_by_cause"] == {
+        "nhan_de_cu": {"stable": 1, "fluctuating": 0},
+    }
+    assert "validation-private" not in render(report)
+    assert "validation-private" not in json.dumps(report)
